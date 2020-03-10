@@ -1,0 +1,58 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-PrescriptionType" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-PrescriptionType" />
+  <name value="ExtensionUKCorePrescriptionType" />
+  <title value="Extension UK Core Prescription Type" />
+  <status value="draft" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="To record the type of prescription." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationRequest" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="To record the type of prescription" />
+      <definition value="To record the type of prescription." />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-PrescriptionType" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="The type of prescription" />
+      <definition value="The type of prescription." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="A ValueSet to identify the type of prescription." />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PrescriptionType" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

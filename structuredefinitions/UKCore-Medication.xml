@@ -1,0 +1,99 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Medication" />
+  <meta>
+    <lastUpdated value="2020-02-07T10:24:47.575+00:00" />
+  </meta>
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
+  <version value="1.0.0" />
+  <name value="UKCoreMedication" />
+  <title value="UK Core Medication" />
+  <status value="draft" />
+  <date value="2020-02-07T10:24:47.0697605+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Defines the UK Core constraints and extensions on the Medication resource for the minimal set of data to query and retrieve medication information." />
+  <purpose value="This profile is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="script10.6" />
+    <uri value="http://ncpdp.org/SCRIPT10_6" />
+    <name value="Mapping to NCPDP SCRIPT 10.6" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication.identifier.assigner">
+      <path value="Medication.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a medication from the VTM/VMP/VMPP/AMP/AMPP subsets from the dm+d terminology." />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode" />
+      </binding>
+    </element>
+    <element id="Medication.manufacturer">
+      <path value="Medication.manufacturer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Medication.manufacturer.identifier.assigner">
+      <path value="Medication.manufacturer.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationForm" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

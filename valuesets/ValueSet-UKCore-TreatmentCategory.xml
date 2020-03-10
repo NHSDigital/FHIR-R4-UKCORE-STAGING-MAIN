@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="UKCore-TreatmentCategory" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-TreatmentCategory" />
+  <version value="1.0.0" />
+  <name value="UKCoreTreatmentCategory" />
+  <title value="UK Core Treatment Category" />
+  <status value="draft" />
+  <date value="2019-10-25T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A ValueSet that identifies the treatment category for a patient." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <compose>
+    <include>
+      <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-TreatmentCategory" />
+    </include>
+  </compose>
+</ValueSet>
