@@ -1,0 +1,29 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-AddressKeyType" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AddressKeyType" />
+  <version value="1.0.0" />
+  <name value="UKCoreAddressKeyType" />
+  <title value="UK Core Address Key Type" />
+  <status value="draft" />
+  <date value="2019-12-06T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the type of Address Key recorded." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <content value="complete" />
+  <concept>
+    <code value="PAF" />
+    <display value="Postal Address File Key" />
+  </concept>
+  <concept>
+    <code value="UPRN" />
+    <display value="Unique Property Reference Number" />
+  </concept>
+</CodeSystem>
