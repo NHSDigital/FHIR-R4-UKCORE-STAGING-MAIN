@@ -1,0 +1,111 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-CareTeam" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CareTeam" />
+  <version value="1.0.0" />
+  <name value="UKCoreCareTeam" />
+  <title value="UK Core CareTeam" />
+  <status value="draft" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Defines the UK Core constraints and extensions on the CareTeam resource for the minimal set of data to query and retrieve an individual’s care team. " />
+  <purpose value="This profile allows recording of the care team which includes all the people and organisations who plan to participate in the coordination and delivery of care for an individual. This is not limited to practitioners, but may include other caregivers such as family members, guardians, the individual themselves, or others. The care team, depending on where used, may include care team members specific to a particular care plan, an episode, an encounter, or may reflect all known team members across these perspectives. An individual's care team can be dynamic over time, such that there can be transience of team members, such as a rehabilitation team. " />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CareTeam" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CareTeam.identifier.assigner">
+      <path value="CareTeam.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="CareTeam.subject">
+      <path value="CareTeam.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="CareTeam.encounter">
+      <path value="CareTeam.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+      </type>
+    </element>
+    <element id="CareTeam.participant.member">
+      <path value="CareTeam.participant.member" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CareTeam" />
+      </type>
+    </element>
+    <element id="CareTeam.participant.onBehalfOf">
+      <path value="CareTeam.participant.onBehalfOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="CareTeam.reasonReference">
+      <path value="CareTeam.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition" />
+      </type>
+    </element>
+    <element id="CareTeam.managingOrganization">
+      <path value="CareTeam.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="CareTeam.note.author[x]">
+      <path value="CareTeam.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
