@@ -1,0 +1,33 @@
+<Location xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Location-Example" />
+  <meta>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+  </meta>
+  <identifier>
+    <system value="https://fhir.nhs.uk/Id/ods-site-code" />
+    <value value="RR8D7" />
+  </identifier>
+  <name value="CARDIOLOGY SJUH" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="CARD" />
+      <display value="Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities" />
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone" />
+    <value value="0113 243 3149" />
+  </telecom>
+  <address>
+    <line value="CARDIOLOGY SJUH" />
+    <line value="ST. JAMES'S UNIVERSITY HOSPITAL" />
+    <line value="BECKETT STREET" />
+    <city value="LEEDS" />
+    <postalCode value="LS9 7TF" />
+    <country value="ENGLAND" />
+  </address>
+  <managingOrganization>
+    <reference value="Organization/UKCore-Organization-Example" />
+  </managingOrganization>
+</Location>

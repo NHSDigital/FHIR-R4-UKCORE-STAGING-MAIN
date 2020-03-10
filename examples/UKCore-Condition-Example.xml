@@ -1,0 +1,37 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Condition-Example" />
+  <meta>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition" />
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+      <code value="active" />
+      <display value="Active" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+      <code value="confirmed" />
+      <display value="Confirmed" />
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
+      <code value="encounter-diagnosis" />
+      <display value="Encounter Diagnosis" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="26322001" />
+      <display value="Bleeding from ear" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-Example" />
+  </subject>
+</Condition>

@@ -1,0 +1,62 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-DischargeMethod" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DischargeMethod" />
+  <version value="1.0.0" />
+  <name value="ExtensionUKCoreDischargeMethod" />
+  <title value="Extension UK Core Discharge Method" />
+  <status value="draft" />
+  <date value="2019-11-28" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to support the method of discharge from a hospital." />
+  <purpose value="This extension has been developed to demonstrate the representation of the method by which a patient was discharged from hospital." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Encounter" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="An extension to record the method of discharge from hospital" />
+      <definition value="An extension to record the method of discharge from hospital." />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DischargeMethod" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="The method by which a patient was discharged from hospital" />
+      <definition value="The method by which a patient was discharged from hospital." />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="The method by which a patient was discharged from hospital" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeMethod" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
