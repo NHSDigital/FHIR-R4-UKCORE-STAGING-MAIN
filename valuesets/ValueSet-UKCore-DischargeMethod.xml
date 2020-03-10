@@ -1,0 +1,28 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="UKCore-DischargeMethod" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
+    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/d/disc/discharge_method_de.asp?shownav=1" />
+  </extension>
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeMethod" />
+  <version value="1.0.0" />
+  <name value="NHSDataModelandDictionaryDischargeMethod" />
+  <title value="NHS Data Model and Dictionary Discharge Method" />
+  <status value="draft" />
+  <date value="2019-11-05T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="The method of discharge from a Hospital Provider Spell." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <compose>
+    <include>
+      <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod" />
+    </include>
+  </compose>
+</ValueSet>
