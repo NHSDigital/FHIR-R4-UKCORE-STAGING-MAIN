@@ -1,0 +1,37 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ListWarningCode" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListWarningCode" />
+  <version value="1.0.0" />
+  <name value="UKCoreListWarningCode" />
+  <title value="UK Core List Warning Code" />
+  <status value="draft" />
+  <date value="2019-11-04T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the reason a list may be incomplete." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="confidential-items" />
+    <display value="Confidential Items" />
+    <definition value="Items excluded due to confidentiality and/or patient preferences." />
+  </concept>
+  <concept>
+    <code value="data-in-transit" />
+    <display value="Data in Transit" />
+    <definition value="Patient record transfer from previous GP practice not yet complete; any information recorded before dd-mmm-yyyy has been excluded." />
+  </concept>
+  <concept>
+    <code value="data-awaiting-filing" />
+    <display value="Data Awaiting Filing" />
+    <definition value="Patient data may be incomplete as there is data supplied by a third party awaiting review before becoming available." />
+  </concept>
+</CodeSystem>

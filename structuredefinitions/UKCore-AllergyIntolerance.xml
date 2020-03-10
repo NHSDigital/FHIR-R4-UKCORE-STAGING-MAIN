@@ -1,0 +1,158 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-AllergyIntolerance" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
+  <version value="1.0.0" />
+  <name value="UKCoreAllergyIntolerance" />
+  <title value="UK Core AllergyIntolerance" />
+  <status value="draft" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Defines the UK Core constraints and extensions on the AllergyIntolerance resource for the minimal set of data to query and retrieve allergy information." />
+  <purpose value="This profile allows a record of a clinical assessment of an allergy or intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance. &#xD;&#xA;&#xD;&#xA;Where a propensity is identified, to record information or evidence about a reaction event that is characterised by any harmful or undesirable physiological response that is specific to the individual and triggered by exposure of an individual to the identified substance or class of substance. &#xD;&#xA;&#xD;&#xA;Substances include but are not limited to a therapeutic substance administered correctly at an appropriate dosage for the individual; food; material derived from plants or animals; or venom from insect stings." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="AllergyIntolerance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="AllergyIntolerance.identifier.assigner">
+      <path value="AllergyIntolerance.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.code">
+      <path value="AllergyIntolerance.code" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A code from the SNOMED Clinical Terminology UK with the expression &lt;105590001 |Substance OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy), or a code from the v3 Code System NullFlavor specifying why a valid value is not present." />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyCode" />
+      </binding>
+    </element>
+    <element id="AllergyIntolerance.patient">
+      <path value="AllergyIntolerance.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.encounter">
+      <path value="AllergyIntolerance.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.recorder">
+      <path value="AllergyIntolerance.recorder" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.asserter">
+      <path value="AllergyIntolerance.asserter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.note.author[x]">
+      <path value="AllergyIntolerance.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation">
+      <path value="AllergyIntolerance.reaction.manifestation" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A code from the SNOMED Clinical Terminology UK hierarchy with concept id '404684003' to record an allergy manifestation or a value from the HL7 FHIR nullFlavors code system." />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyManifestation" />
+      </binding>
+    </element>
+    <element id="AllergyIntolerance.reaction.exposureRoute.coding">
+      <path value="AllergyIntolerance.reaction.exposureRoute.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.reaction.exposureRoute.coding:snomedCT">
+      <path value="AllergyIntolerance.reaction.exposureRoute.coding" />
+      <sliceName value="snomedCT" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100." />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyExposureRoute" />
+      </binding>
+    </element>
+    <element id="AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.system">
+      <path value="AllergyIntolerance.reaction.exposureRoute.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.code">
+      <path value="AllergyIntolerance.reaction.exposureRoute.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.display">
+      <path value="AllergyIntolerance.reaction.exposureRoute.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.note.author[x]">
+      <path value="AllergyIntolerance.reaction.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
