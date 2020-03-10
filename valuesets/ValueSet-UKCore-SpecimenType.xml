@@ -1,0 +1,30 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="UKCore-SpecimenType" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-SpecimenType" />
+  <version value="1.0.0" />
+  <name value="UKCoreSpecimenType" />
+  <title value="UK Core Specimen Type" />
+  <status value="draft" />
+  <date value="2020-02-10T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A code from the SNOMED Clinical Terminology UK coding system to record a specimen type." />
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;105590001 |Substance (in which case method and site should also be populated)|OR &lt;49755003 |Morphologically abnormal structure|OR &lt; 260787004 |Physical object|)" />
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

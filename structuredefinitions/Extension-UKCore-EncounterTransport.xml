@@ -1,0 +1,120 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-EncounterTransport" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EncounterTransport" />
+  <version value="1.0.0" />
+  <name value="ExtensionUKCoreEncounterTransport" />
+  <title value="Extension UK Core Encounter Transport" />
+  <status value="draft" />
+  <date value="2019-11-26" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to support the transport used by the individual who is the subject of an encounter." />
+  <purpose value="This extension has been developed to demonstrate the representation of the transport used by the subject for an encounter." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Encounter" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Encounter transport" />
+      <definition value="Encounter transport." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:transportType">
+      <path value="Extension.extension" />
+      <sliceName value="transportType" />
+      <short value="The type of transport used" />
+      <definition value="The type of transport used." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:transportType.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="transportType" />
+    </element>
+    <element id="Extension.extension:transportType.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="The type of transport used" />
+      <definition value="The type of transport used." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:transportPeriod">
+      <path value="Extension.extension" />
+      <sliceName value="transportPeriod" />
+      <short value="Period of time during which the transport was used" />
+      <definition value="Period of time during which the transport was used." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:transportPeriod.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="transportPeriod" />
+    </element>
+    <element id="Extension.extension:transportPeriod.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Period of time during which the transport was used" />
+      <definition value="Period of time during which the transport was used." />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Extension.extension:reasonForTransport">
+      <path value="Extension.extension" />
+      <sliceName value="reasonForTransport" />
+      <short value="The reason the transport was needed" />
+      <definition value="The reason the transport was needed." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reasonForTransport.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="reasonForTransport" />
+    </element>
+    <element id="Extension.extension:reasonForTransport.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="The reason the transport was needed" />
+      <definition value="The reason the transport was needed." />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EncounterTransport" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

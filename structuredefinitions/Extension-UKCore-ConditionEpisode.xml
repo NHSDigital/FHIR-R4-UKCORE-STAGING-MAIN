@@ -1,0 +1,58 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-ConditionEpisode" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ConditionEpisode" />
+  <version value="1.0.0" />
+  <name value="ExtensionUKCoreConditionEpisode" />
+  <title value="Extension UK Core Condition Episode" />
+  <status value="draft" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to support the episodicity status of a condition." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Condition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="The episodicity status of a condition" />
+      <definition value="The episodicity status of a condition." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ConditionEpisode" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="first | new | review | flare | end" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="A ValueSet to identify the episodicity of a condition." />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionEpisodicity" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
