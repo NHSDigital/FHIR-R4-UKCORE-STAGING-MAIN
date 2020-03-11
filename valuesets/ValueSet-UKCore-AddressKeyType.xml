@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="A ValueSet to identify the type of Address Key recorded." />
-  <copyright value="Copyright © 2019 NHS Digital" />
+  <copyright value="Copyright © 2020 HL7UK" />
   <compose>
     <include>
       <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AddressKeyType" />
