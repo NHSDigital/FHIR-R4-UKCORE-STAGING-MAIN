@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitHubRepo/schemas/valueset.xsd">
   <id value="UKCore-FindingCode" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-FindingCode" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/ValueSet-UKCore-FindingCode" />
   <version value="1.0.0" />
   <name value="UKCoreFindingCode" />
   <title value="UK Core Finding Code" />

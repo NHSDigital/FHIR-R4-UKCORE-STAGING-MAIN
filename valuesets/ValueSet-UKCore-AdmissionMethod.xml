@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-AdmissionMethod" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AdmissionMethod" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/ValueSet-UKCore-AdmissionMethod" />
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/a/add/admission_method_de.asp?shownav=1" />
   </extension>
