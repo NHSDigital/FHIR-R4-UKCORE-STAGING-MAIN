@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-ResidentialStatus" />
-  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ResidentialStatus" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/CodeSystem-UKCore-ResidentialStatus" />
   <version value="1.0.0" />
   <name value="UKCoreResidentialStatus" />
   <title value="UK Core Residential Status" />

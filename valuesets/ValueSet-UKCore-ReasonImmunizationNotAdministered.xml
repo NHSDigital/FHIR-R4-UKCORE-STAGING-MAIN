@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ReasonImmunizationNotAdministered" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/ValueSet-UKCore-ReasonImmunizationNotAdministered" />
   <version value="1.0.0" />
   <name value="UKCoreReasonImmunizationNotAdministered" />
   <title value="UK Core Reason Immunization Not Administered" />

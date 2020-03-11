@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-PreferredWrittenCommunicationFormat" />
-  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/CodeSystem-UKCore-PreferredWrittenCommunicationFormat" />
   <version value="1.0.0" />
   <name value="UKCorePreferredWrittenCommunicationFormat" />
   <title value="UK Core Preferred Written Communication Format" />
