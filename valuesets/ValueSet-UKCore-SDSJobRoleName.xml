@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-SDSJobRoleName" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/ValueSet-UKCore-SDSJobRoleName" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-SDSJobRoleName" />
   <version value="1.0.0" />
   <name value="UKCoreSDSJobRoleName" />
   <title value="UK Core SDS Job Role Name" />

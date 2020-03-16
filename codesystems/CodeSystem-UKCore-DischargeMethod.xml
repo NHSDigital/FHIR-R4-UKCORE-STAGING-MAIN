@@ -3,7 +3,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/d/disc/discharge_method_de.asp?shownav=1" />
   </extension>
-  <url value="https://fhir.nhs.uk/R4/CodeSystem/CodeSystem-UKCore-DischargeMethod" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod" />
   <version value="1.0.0" />
   <name value="NHSDataModelandDictionaryDischargeMethod" />
   <title value="NHS Data Model and Dictionary Discharge Method" />

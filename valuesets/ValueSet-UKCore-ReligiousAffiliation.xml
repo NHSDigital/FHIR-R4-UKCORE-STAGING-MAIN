@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ReligiousAffiliation" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/ValueSet-UKCore-ReligiousAffiliation" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReligiousAffiliation" />
   <identifier>
     <system value="urn:ietf:rfc:3986" />
     <value value="urn:oid:2.16.840.1.113883.2.1.3.2.4.16.21" />
