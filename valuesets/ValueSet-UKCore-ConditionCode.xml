@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ConditionCode" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/ValueSet-UKCore-ConditionCode" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionCode" />
   <version value="1.0.0" />
   <name value="UKCoreConditionCode" />
   <title value="UK Core Condition Code" />

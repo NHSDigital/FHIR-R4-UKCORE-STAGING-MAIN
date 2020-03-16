@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-HumanLanguage" />
-  <url value="https://fhir.nhs.uk/R4/CodeSystem/CodeSystem-UKCore-HumanLanguage" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-HumanLanguage" />
   <version value="1.0.0" />
   <name value="UKCoreHumanLanguage" />
   <title value="UK Core Human Language" />
