@@ -16,7 +16,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Defines the UK Core constraints and extensions on the EpisodeOfCare  resource for the minimal set of data to query and retrieve episode of care information." />
+  <description value="Defines the UK Core constraints and extensions on the EpisodeOfCare resource for the minimal set of data to query and retrieve episode of care information." />
   <purpose value="This profile allows exchange of information about an association between a patient and an organisation / healthcare provider(s) during which time encounters may occur. The managing organisation assumes a level of responsibility for the individual during this time." />
   <copyright value="Copyright © 2020 NHS Digital" />
   <fhirVersion value="4.0.0" />
