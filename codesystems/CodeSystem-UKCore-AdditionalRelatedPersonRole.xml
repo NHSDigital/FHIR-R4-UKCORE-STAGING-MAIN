@@ -26,4 +26,8 @@
     <code value="Guardian" />
     <display value="Guardian of patient" />
   </concept>
+  <concept>
+    <code value="Personal" />
+    <display value="Personal relationship with the patient" />
+  </concept>
 </CodeSystem>
