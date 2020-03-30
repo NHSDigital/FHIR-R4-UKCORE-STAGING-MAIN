@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CarePlan xmlns="http://hl7.org/fhir">
+	<id value="careplan-example"/>
+	<text>
+		<status value="additional"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>  A simple care plan to indicate a patient taking their weight once a day because of obesity.</p>
+		</div>
+	</text>
+	<contained>
+		<Observation>
+			<id value="22"/>
+			<status value="final"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="27113001"/>
+					<display value="Body weight (observable entity)"/>
+				</coding>
+			</code>
+			<effectiveDateTime value="2016-03-28"/>
+			<valueQuantity>
+				<value value="125"/>
+				<unit value="kilogram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="kg"/>
+			</valueQuantity>
+		</Observation>
+	</contained>
+	<identifier>
+		<value value="12345"/>
+	</identifier>
+	<basedOn>
+		<display value="Management of Type 2 Diabetes"/>
+	</basedOn>
+	<partOf>
+		<display value="Overall wellness plan"/>
+	</partOf>
+	<status value="active"/>
+	<intent value="plan"/>
+	<category>
+		<text value="Weight management plan"/>
+	</category>
+	<description value="Manage obesity and weight loss"/>
+	<subject>
+		<reference value="Patient/UKCore-Patient-Example"/>
+		<display value="Richard SMITH"/>
+	</subject>
+	<period>
+		<end value="2017-01-01"/>
+	</period>
+	<created value="2016-01-01"/>
+	<author>
+		<reference value="Practitioner/UKCore-Practitioner-Example"/>
+		<display value="Dr Paul Rastall"/>
+	</author>
+	<activity>
+		<outcomeCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="161832001"/>
+				<display value="Progressive weight loss"/>
+			</coding>
+		</outcomeCodeableConcept>
+		<outcomeReference>
+			<reference value="#22"/>
+			<display value="Weight Measured"/>
+		</outcomeReference>
+		<detail>
+			<code>
+				<!--       SNOMED CT Code     -->
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="27113001"/>
+					<display value="Body weight"/>
+				</coding>
+			</code>
+			<status value="completed"/>
+			<statusReason>
+				<text value="Achieved weight loss to mitigate diabetes risk."/>
+			</statusReason>
+			<doNotPerform value="false"/>
+			<scheduledTiming>
+				<repeat>
+					<frequency value="1"/>
+					<period value="1"/>
+					<periodUnit value="d"/>
+				</repeat>
+			</scheduledTiming>
+			<location>
+				<display value="Patient's home"/>
+			</location>
+			<performer>
+				<reference value="Patient/UKCore-Patient-Example"/>
+				<display value="Richard SMITH"/>
+			</performer>
+		</detail>
+	</activity>
+</CarePlan>
