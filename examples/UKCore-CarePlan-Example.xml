@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CarePlan xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CarePlan"/>
+	</meta>
 	<id value="careplan-example"/>
 	<text>
 		<status value="additional"/>
@@ -44,6 +47,7 @@
 	<description value="Manage obesity and weight loss"/>
 	<subject>
 		<reference value="Patient/UKCore-Patient-Example"/>
+		<type value="Patient"/> 
 		<display value="Richard SMITH"/>
 	</subject>
 	<period>
