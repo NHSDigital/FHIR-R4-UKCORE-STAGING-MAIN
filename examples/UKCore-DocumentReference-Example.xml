@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentReference xmlns="http://hl7.org/fhir">
+<id value="UKCore-DocumentReference-Example"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DocumentReference"/>
+	</meta>
+	<status value="current"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="718347000"/>
+			<display value="Mental health care plan"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/UKCore-Patient-Example"/>
+		<display value="Richard SMITH"/>
+	</subject>
+	<date value="2016-03-08T15:26:00+01:00"/>
+	<author>
+		<reference value="Practitioner/UKCore-Practitioner-Example"/>
+		<display value="Dr Paul Rastall"/>
+	</author>
+	<custodian>
+		<reference value="Organization/UKCore-Organisation-Example"/>
+		<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
+	</custodian>
+	<content>
+		<attachment>
+			<contentType value="application/pdf"/>
+			<url value="https://health.trust.uk/WeightLossPlanReport_443kfgd.pdf"/>
+			<title value="Weight Loss Plan Report"/>
+			<creation value="2016-03-08T15:26:00+01:00"/>
+		</attachment>
+	</content>
+</DocumentReference>
