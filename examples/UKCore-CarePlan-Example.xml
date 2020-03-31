@@ -3,7 +3,7 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CarePlan"/>
 	</meta>
-	<id value="careplan-example"/>
+	<id value="UKCore-CarePlan-Example"/>
 	<text>
 		<status value="additional"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
