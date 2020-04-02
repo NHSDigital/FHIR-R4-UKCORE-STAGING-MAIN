@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationStatement" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationStatement" />
@@ -15,10 +16,10 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Defines the UK Core constraints and extensions on the MedicationStatement resource for the minimal set of data to query and retrieve medication statement information. " />
-  <purpose value="This profile allows exchange of a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the individual may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The source of this information can be the individual, significant other (such as a family member or spouse), or a clinician. " />
+  <description value="Defines the UK Core constraints and extensions on the MedicationStatement resource for the minimal set of data to query and retrieve medication statement information." />
+  <purpose value="This profile allows exchange of a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the individual may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The source of this information can be the individual, significant other (such as a family member or spouse), or a clinician." />
   <copyright value="Copyright © 2020 NHS Digital" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -46,14 +47,32 @@
   <derivation value="constraint" />
   <differential>
     <element id="MedicationStatement.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.system" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.value" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.assigner" />
       <type>
         <code value="Reference" />
@@ -61,16 +80,40 @@
       </type>
     </element>
     <element id="MedicationStatement.basedOn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.basedOn" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CarePlan" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest" />
       </type>
     </element>
+    <element id="MedicationStatement.basedOn.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.basedOn.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="MedicationStatement.partOf">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.partOf" />
       <type>
         <code value="Reference" />
@@ -81,7 +124,26 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Procedure" />
       </type>
     </element>
+    <element id="MedicationStatement.partOf.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.partOf.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="MedicationStatement.medication[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.medication[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -92,6 +154,12 @@
       </type>
     </element>
     <element id="MedicationStatement.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.subject" />
       <type>
         <code value="Reference" />
@@ -99,7 +167,26 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
+    <element id="MedicationStatement.subject.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.subject.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="MedicationStatement.context">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.context" />
       <type>
         <code value="Reference" />
@@ -107,7 +194,26 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
       </type>
     </element>
+    <element id="MedicationStatement.context.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.context.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="MedicationStatement.informationSource">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.informationSource" />
       <type>
         <code value="Reference" />
@@ -117,7 +223,39 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
+    <element id="MedicationStatement.informationSource.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.informationSource.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="MedicationStatement.derivedFrom.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.derivedFrom.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="MedicationStatement.reasonReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.reasonReference" />
       <type>
         <code value="Reference" />
@@ -125,7 +263,26 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
       </type>
     </element>
+    <element id="MedicationStatement.reasonReference.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.reasonReference.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="MedicationStatement.note.author[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.note.author[x]" />
       <type>
         <code value="Reference" />
@@ -138,6 +295,12 @@
       </type>
     </element>
     <element id="MedicationStatement.dosage.route.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.route.coding" />
       <slicing>
         <discriminator>
@@ -148,6 +311,12 @@
       </slicing>
     </element>
     <element id="MedicationStatement.dosage.route.coding:snomedCT">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.route.coding" />
       <sliceName value="snomedCT" />
       <binding>
@@ -156,15 +325,36 @@
       </binding>
     </element>
     <element id="MedicationStatement.dosage.route.coding:snomedCT.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.route.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="MedicationStatement.dosage.route.coding:snomedCT.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.route.coding.code" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.dosage.route.coding:snomedCT.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="MedicationStatement.dosage.route.coding.display" />
       <min value="1" />
     </element>
