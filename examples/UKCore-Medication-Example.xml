@@ -1,13 +1,13 @@
-<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/supa1/Desktop/R4%20Schemas/medication.xsd">
+<Medication xmlns="http://hl7.org/fhir">
   <id value="UKCore-Medication-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
   </meta>
   <code>
     <coding>
-      <system value="http://hl7.org/fhir/sid/ndc" />
-      <code value="2501-813-16" />
-      <display value="Timoptic 5mg/ml solution" />
+      <system value="http://snomed.info/sct" />
+      <code value="5277811000001107" />
+      <display value="Timoptol 0.5% eye drops" />
     </coding>
   </code>
   <form>
@@ -17,27 +17,6 @@
       <display value="Opthalmic Solution (qualifier value)" />
     </coding>
   </form>
-  <ingredient>
-    <itemCodeableConcept>
-      <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="75359005" />
-        <display value="Timolol Maleate (substance)" />
-      </coding>
-    </itemCodeableConcept>
-    <strength>
-      <numerator>
-        <value value="5" />
-        <system value="http://unitsofmeasure.org" />
-        <code value="mg" />
-      </numerator>
-      <denominator>
-        <value value="1" />
-        <system value="http://unitsofmeasure.org" />
-        <code value="mL" />
-      </denominator>
-    </strength>
-  </ingredient>
   <batch>
     <lotNumber value="9494788" />
     <expirationDate value="2020-05-22" />
