@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EpisodeOfCare xmlns="http://hl7.org/fhir">
+<id value="UKCore-EpisodeOfCare-Example"/>
+<meta>
+	<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-EpisodeOfCare"/>
+</meta>
+	<status value="finished"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="710081004"/>
+			<display value="Smoking cessation therapy (regime/therapy)"/>
+		</coding>
+	</type>
+	<patient>
+		<reference value="Patient/UKCore-Patient-Example"/>
+	</patient>
+	<managingOrganization>
+		<reference value="Organization/UKCore-Organisation-Example"/>
+	</managingOrganization>
+</EpisodeOfCare>
