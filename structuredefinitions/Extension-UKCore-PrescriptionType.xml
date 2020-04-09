@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-PrescriptionType" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-PrescriptionType" />
@@ -15,7 +16,7 @@
   </contact>
   <description value="To record the type of prescription." />
   <copyright value="Copyright © 2020 NHS Digital" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -32,6 +33,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension" />
       <short value="To record the type of prescription" />
       <definition value="To record the type of prescription." />
@@ -42,9 +49,16 @@
       <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-PrescriptionType" />
     </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <short value="The type of prescription" />
       <definition value="The type of prescription." />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>

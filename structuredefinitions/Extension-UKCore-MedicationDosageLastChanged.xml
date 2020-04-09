@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-MedicationDosageLastChanged" />
   <url value="http://example.org/fhir/StructureDefinition/Extension-UKCore-MedicationDosageLastChanged" />
@@ -16,7 +17,7 @@
     </telecom>
   </contact>
   <copyright value="Copyright © 2020 NHS Digital" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -33,6 +34,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension" />
       <max value="1" />
     </element>
@@ -41,7 +48,14 @@
       <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-UKCore-MedicationDosageLastChanged" />
     </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
