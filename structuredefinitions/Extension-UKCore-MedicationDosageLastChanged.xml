@@ -52,6 +52,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
+      <short value="The date when the dosage instructions were last changed." />
+      <definition value="The date when the dosage instructions were last changed." />
       <max value="1" />
     </element>
     <element id="Extension.url">
