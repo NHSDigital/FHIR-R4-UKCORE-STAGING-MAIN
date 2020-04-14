@@ -55,6 +55,7 @@
       <path value="Extension" />
       <short value="The representation of a patient’s death notification (as held on Personal Demographics Service (PDS))" />
       <definition value="This extension is constrained to represent a patient’s death notification (as held on Personal Demographics Service (PDS))." />
+      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
