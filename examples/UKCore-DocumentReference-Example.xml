@@ -8,28 +8,25 @@
 	<type>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="718347000"/>
-			<display value="Mental health care plan"/>
+			<code value="734163000"/>
+			<display value="Care plan (record artifact)"/>
 		</coding>
 	</type>
 	<subject>
 		<reference value="Patient/UKCore-Patient-Example"/>
-		<display value="Richard SMITH"/>
 	</subject>
 	<date value="2016-03-08T15:26:00+01:00"/>
 	<author>
 		<reference value="Practitioner/UKCore-Practitioner-Example"/>
-		<display value="Dr Paul Rastall"/>
 	</author>
 	<custodian>
 		<reference value="Organization/UKCore-Organisation-Example"/>
-		<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
 	</custodian>
 	<content>
 		<attachment>
 			<contentType value="application/pdf"/>
-			<url value="https://health.trust.uk/WeightLossPlanReport_443kfgd.pdf"/>
-			<title value="Weight Loss Plan Report"/>
+			<url value="https://health.trust.uk/CarePlanReport_44301kfgd.pdf"/>
+			<title value="Care Plan Report"/>
 			<creation value="2016-03-08T15:26:00+01:00"/>
 		</attachment>
 	</content>
