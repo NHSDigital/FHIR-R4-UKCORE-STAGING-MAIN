@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A ValueSet to identify the preferred Contact Method of a Patient, contact or RelatedPerson." />
+  <description value="A ValueSet to identify the preferred contact method of a patient, contact or related person." />
   <copyright value="Copyright © 2019 NHS Digital" />
   <compose>
     <include>
