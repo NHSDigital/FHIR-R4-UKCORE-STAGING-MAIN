@@ -15,8 +15,9 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A CodeSystem to identify the preferred Contact Method of a Patient, contact or RelatedPerson." />
+  <description value="A CodeSystem to identify the preferred contact method of a patient, contact or related person." />
   <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
   <content value="complete" />
   <concept>
     <code value="1" />

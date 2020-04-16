@@ -122,7 +122,7 @@
       <path value="Extension.extension" />
       <sliceName value="PreferredContactTimes" />
       <short value="Preferred Contact times" />
-      <definition value="Preferred Contact time period" />
+      <definition value="Preferred Contact times" />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredContactTimes.url">

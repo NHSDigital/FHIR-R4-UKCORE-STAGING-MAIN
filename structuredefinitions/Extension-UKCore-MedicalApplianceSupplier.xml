@@ -69,8 +69,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.value[x]" />
-      <short value="The patient's medical appliance supplier" />
-      <definition value="The patient's medical appliance supplier." />
+      <short value="A patient's medical appliance supplier" />
+      <definition value="A patient's medical appliance supplier." />
       <min value="1" />
       <type>
         <code value="Reference" />
