@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-  <id value="UKCore-AllergyIntolerance-Extended-1-Example" />
+  <id value="UKCore-AllergyIntolerance-Ended-Example"/>
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
   </meta>
