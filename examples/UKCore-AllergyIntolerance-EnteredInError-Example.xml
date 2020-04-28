@@ -1,0 +1,50 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="UKCore-AllergyIntolerance-EnteredInError-Example"/>
+  <meta>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
+  </meta>
+  	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd">
+					<extension url="endDate">
+						<valueDateTime value="2020-03-11T13:00:00+00:00"/>
+					</extension>
+			 	<extension url="reasonEnded">
+						<valueString value="Administrative error corrected on patient record - confirmed that allergy not experienced with the patient."/>
+					</extension>
+			</extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+      <code value="inactive" />
+      <display value="Inactive" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+      <code value="entered-in-error" />
+      <display value="Entered In Error" />
+    </coding>
+  </verificationStatus>
+  <type value="allergy" />
+  <category value="medication" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="372687004" />
+      <display value="Amoxicillin" />
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/UKCore-Patient-Example" />
+  </patient>
+  <encounter>
+    <reference value="Encounter/UKCore-Encounter-Example" />
+  </encounter>
+  <recordedDate value="2019-12-10T13:00:00+00:00" />
+  <recorder>
+    <reference value="Practitioner/UKCore-Practitioner-Example" />
+  </recorder>
+  <asserter>
+    <reference value="Practitioner/UKCore-Practitioner-Example" />
+  </asserter>
+</AllergyIntolerance>
