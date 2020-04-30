@@ -5,8 +5,8 @@
   </extension>
   <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeDestination" />
   <version value="1.0.0" />
-  <name value="NHSDataModelandDictionaryDischargeDestination" />
-  <title value="NHS Data Model and Dictionary Discharge Destination" />
+  <name value="UKCoreDischargeDestination" />
+  <title value="UK Core Discharge Destination" />
   <status value="draft" />
   <date value="2019-11-05T00:00:00+00:00" />
   <publisher value="NHS Digital" />

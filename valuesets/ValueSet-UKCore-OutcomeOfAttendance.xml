@@ -5,8 +5,8 @@
   </extension>
   <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-OutcomeOfAttendance" />
   <version value="1.0.0" />
-  <name value="NHSDataModelandDictionaryOutcomeOfAttendance" />
-  <title value="NHS Data Model and Dictionary Outcome Of Attendance" />
+  <name value="UKCoreOutcomeOfAttendance" />
+  <title value="UK Core Outcome Of Attendance" />
   <status value="draft" />
   <date value="2019-11-05T00:00:00+00:00" />
   <publisher value="NHS Digital" />

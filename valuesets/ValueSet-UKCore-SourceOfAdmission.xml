@@ -5,8 +5,8 @@
   </extension>
   <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-SourceOfAdmission" />
   <version value="1.0.0" />
-  <name value="NHSDataModelandDictionarySourceOfAdmission" />
-  <title value="NHS Data Model and Dictionary Source Of Admission" />
+  <name value="UKCoreSourceOfAdmission" />
+  <title value="UK Core Source Of Admission" />
   <status value="draft" />
   <date value="2019-11-05T00:00:00+00:00" />
   <publisher value="NHS Digital" />

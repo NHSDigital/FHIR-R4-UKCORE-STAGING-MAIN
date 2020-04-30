@@ -1,12 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-NHSDataDictionary-PersonStatedGender" />
+  <id value="UKCore-PersonStatedGenderCode" />
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/p/person/person_stated_gender_code_de.asp?shownav=1" />
   </extension>
-  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-NHSDataDictionary-PersonStatedGender" />
+  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonStatedGenderCode" />
   <version value="1.0.0" />
-  <name value="NHSDataModelandDictionaryPersonStatedGenderCode" />
-  <title value="NHS Data Model and Dictionary Person Stated Gender Code" />
+  <name value="UKCorePersonStatedGenderCode" />
+  <title value="UK Core Person Stated Gender Code" />
   <status value="draft" />
   <date value="2019-10-18T12:00:00+00:00" />
   <publisher value="NHS Digital" />
