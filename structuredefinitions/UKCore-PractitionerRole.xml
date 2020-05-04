@@ -471,8 +471,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <short value="Business Identifiers that are specific to a role/location" />
-      <definition value="Business Identifiers that are specific to a role/location." />
+      <short value="An identifier that applies to this person in this role." />
+      <definition value="An identifier that applies to this person in this role." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
       <max value="*" />
@@ -527,7 +527,72 @@
         <map value="./Identifiers" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.id">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="sdsRoleProfileID" />
+      <short value="Business Identifiers that are specific to a role/location" />
+      <definition value="Business Identifiers that are specific to a role/location." />
+      <requirements value="Often, specific identities are assigned for the agent." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="PractitionerRole.identifier" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="CX / EI (occasionally, more often EI maps to a resource id or a URL)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="Identifier" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.identifier" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="PRD-7 (or XCN.1)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".id" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="./Identifiers" />
+      </mapping>
+    </element>
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.id">
       <path value="PractitionerRole.identifier.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -550,7 +615,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.extension">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -607,7 +672,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.use">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.use">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -662,7 +727,7 @@
         <map value="Role.code or implied by context" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.type">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.type">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -730,7 +795,7 @@
         <map value="Role.code or implied by context" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.system">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -742,7 +807,7 @@
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
       <comment value="Identifier.system is always case sensitive." />
       <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Identifier.system" />
@@ -783,7 +848,7 @@
         <map value="./IdentifierType" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.value">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.value">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -794,7 +859,7 @@
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
       <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Identifier.value" />
@@ -835,7 +900,7 @@
         <map value="./Value" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.period">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.period">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -899,7 +964,7 @@
         <map value="./StartDate and ./EndDate" />
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier.assigner">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.assigner">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -958,71 +1023,6 @@
       <mapping>
         <identity value="servd" />
         <map value="./IdentifierIssuingAuthority" />
-      </mapping>
-    </element>
-    <element id="PractitionerRole.identifier:sdsRoleProfileID">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="sdsRoleProfileID" />
-      <short value="An identifier that applies to this person in this role." />
-      <definition value="An identifier that applies to this person in this role." />
-      <requirements value="Often, specific identities are assigned for the agent." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="PractitionerRole.identifier" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Identifier" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-        <source value="Element" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="CX / EI (occasionally, more often EI maps to a resource id or a URL)" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" />
-      </mapping>
-      <mapping>
-        <identity value="servd" />
-        <map value="Identifier" />
-      </mapping>
-      <mapping>
-        <identity value="w5" />
-        <map value="FiveWs.identifier" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="PRD-7 (or XCN.1)" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".id" />
-      </mapping>
-      <mapping>
-        <identity value="servd" />
-        <map value="./Identifiers" />
       </mapping>
     </element>
     <element id="PractitionerRole.active">
@@ -6347,8 +6347,41 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="An identifier that applies to this person in this role." />
+      <definition value="An identifier that applies to this person in this role." />
     </element>
-    <element id="PractitionerRole.identifier.assigner">
+    <element id="PractitionerRole.identifier:sdsRoleProfileID">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="sdsRoleProfileID" />
+      <max value="1" />
+    </element>
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="PractitionerRole.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="PractitionerRole.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.identifier:sdsRoleProfileID.assigner">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -6360,18 +6393,6 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
       </type>
-    </element>
-    <element id="PractitionerRole.identifier:sdsRoleProfileID">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="sdsRoleProfileID" />
-      <short value="An identifier that applies to this person in this role." />
-      <definition value="An identifier that applies to this person in this role." />
     </element>
     <element id="PractitionerRole.practitioner">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
