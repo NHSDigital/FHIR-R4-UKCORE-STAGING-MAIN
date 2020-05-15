@@ -1,30 +1,40 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-CareSettingType" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-CareSettingType" />
-  <version value="1.0.0" />
-  <name value="UKCoreCareSettingType" />
-  <title value="UK Core Care Setting Type" />
-  <status value="draft" />
-  <date value="2019-11-04T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="Interoperability Team" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a correspondence care setting type. Any code from the SNOMED CT UK 'Correspondence Care setting type' subset with subset original id 43971000000130; the corresponding SNOMED CT UK Refset fully specified name is 'Correspondence care setting type simple reference set (foundation metadata concept)' with Refset Id 999000381000000107" />
-  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="concept" />
-        <op value="in" />
-        <value value="^999000381000000107" />
-      </filter>
-    </include>
-  </compose>
+	<id value="UKCore-CareSettingType"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-CareSettingType"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreCareSettingType"/>
+	<title value="UK Core Care Setting Type"/>
+	<status value="draft"/>
+	<date value="2019-11-04T00:00:00+00:00"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
+		</telecom>
+	</contact>
+	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes a correspondence care setting type. Any code from the SNOMED CT UK 'Correspondence Care setting type' subset with subset original id 43971000000130; the corresponding SNOMED CT UK Refset fully specified name is 'Correspondence care setting type simple reference set (foundation metadata concept)' with Refset Id 999000381000000107"/>
+	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="in"/>
+				<value value="^999000381000000107"/>
+			</filter>
+		</include>
+	</compose>
 </ValueSet>
