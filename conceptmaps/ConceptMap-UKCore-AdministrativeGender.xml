@@ -1,62 +1,72 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
-  <id value="UKCore-AdministrativeGender" />
-  <url value="https://fhir.nhs.uk/R4/ConceptMap/ConceptMap-UKCore-AdministrativeGender" />
-  <version value="1.0.0" />
-  <name value="ConceptMapUKCoreAdministrativeGender" />
-  <title value="Concept Map - UK Core Administrative Gender" />
-  <status value="draft" />
-  <date value="2019-10-18T12:00:00+00:00" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="Interoperability Team" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="A Concept Map from ValueSet Administrative Gender to NHS Data Dictionary Person Stated Gender to aid interpretation." />
-  <copyright value="Copyright © 2019 NHS Digital" />
-  <sourceUri value="http://hl7.org/fhir/ValueSet/administrative-gender" />
-  <targetUri value="https://fhir.nhs.uk/R4/ValueSet/UKCore-NHSDataDictionary-PersonStatedGender" />
-  <group>
-    <source value="http://hl7.org/fhir/administrative-gender" />
-    <target value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSDataDictionary-PersonStatedGender" />
-    <element>
-      <code value="male" />
-      <display value="Male" />
-      <target>
-        <code value="1" />
-        <display value="Male" />
-        <equivalence value="equivalent" />
-      </target>
-    </element>
-    <element>
-      <code value="female" />
-      <display value="Female" />
-      <target>
-        <code value="2" />
-        <display value="Female" />
-        <equivalence value="equivalent" />
-      </target>
-    </element>
-    <element>
-      <code value="other" />
-      <display value="Other" />
-      <target>
-        <code value="9" />
-        <display value="Indeterminate (unable to be classified as either male or female)" />
-        <equivalence value="equivalent" />
-      </target>
-    </element>
-    <element>
-      <code value="unknown" />
-      <display value="Unknown" />
-      <target>
-        <code value="X" />
-        <display value="Not Known (not recorded)" />
-        <equivalence value="equivalent" />
-      </target>
-    </element>
-  </group>
+	<id value="UKCore-AdministrativeGender"/>
+	<url value="https://fhir.nhs.uk/R4/ConceptMap/ConceptMap-UKCore-AdministrativeGender"/>
+	<version value="1.0.0"/>
+	<name value="ConceptMapUKCoreAdministrativeGender"/>
+	<title value="Concept Map - UK Core Administrative Gender"/>
+	<status value="draft"/>
+	<date value="2019-10-18T12:00:00+00:00"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
+		</telecom>
+	</contact>
+	<description value="A Concept Map from ValueSet Administrative Gender to NHS Data Dictionary Person Stated Gender to aid interpretation."/>
+	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<sourceUri value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+	<targetUri value="https://fhir.nhs.uk/R4/ValueSet/UKCore-NHSDataDictionary-PersonStatedGender"/>
+	<group>
+		<source value="http://hl7.org/fhir/administrative-gender"/>
+		<target value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSDataDictionary-PersonStatedGender"/>
+		<element>
+			<code value="male"/>
+			<display value="Male"/>
+			<target>
+				<code value="1"/>
+				<display value="Male"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="female"/>
+			<display value="Female"/>
+			<target>
+				<code value="2"/>
+				<display value="Female"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="other"/>
+			<display value="Other"/>
+			<target>
+				<code value="9"/>
+				<display value="Indeterminate (unable to be classified as either male or female)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="unknown"/>
+			<display value="Unknown"/>
+			<target>
+				<code value="X"/>
+				<display value="Not Known (not recorded)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
 </ConceptMap>
