@@ -1,28 +1,38 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-OutcomeOfAttendance" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
-    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/out/outcome_of_attendance_de.asp?shownav=1" />
-  </extension>
-  <url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-OutcomeOfAttendance" />
-  <version value="1.0.0" />
-  <name value="UKCoreOutcomeOfAttendance" />
-  <title value="UK Core Outcome Of Attendance" />
-  <status value="draft" />
-  <date value="2019-11-05T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="Interoperability Team" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="This records the outcome of an Out-Patient Attendance Consultant." />
-  <copyright value="Copyright © 2019 NHS Digital" />
-  <compose>
-    <include>
-      <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-OutcomeOfAttendance" />
-    </include>
-  </compose>
+	<id value="UKCore-OutcomeOfAttendance"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
+		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/out/outcome_of_attendance_de.asp?shownav=1"/>
+	</extension>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-OutcomeOfAttendance"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreOutcomeOfAttendance"/>
+	<title value="UK Core Outcome Of Attendance"/>
+	<status value="draft"/>
+	<date value="2019-11-05T00:00:00+00:00"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
+		</telecom>
+	</contact>
+	<description value="This records the outcome of an Out-Patient Attendance Consultant."/>
+	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-OutcomeOfAttendance"/>
+		</include>
+	</compose>
 </ValueSet>
