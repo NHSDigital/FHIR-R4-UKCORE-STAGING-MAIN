@@ -198,7 +198,7 @@
       <short value="The patient's nominated pharmacy" />
       <definition value="The patient's nominated pharmacy." />
       <comment value="A stream of bytes, base64 encoded" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -904,6 +904,7 @@
       <path value="Extension.value[x]" />
       <short value="The patient's nominated pharmacy" />
       <definition value="The patient's nominated pharmacy." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
