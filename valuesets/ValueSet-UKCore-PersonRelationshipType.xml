@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-RelatedPersonRelationshipType"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-RelatedPersonRelationshipType"/>
-	<version value="1.0.0"/>
-	<name value="UKCoreRelatedPersonRelationshipType"/>
-	<title value="UK Core Related Person Relationship Type"/>
+	<id value="UKCore-PersonRelationshipType"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonRelationshipType"/>
+	<version value="2.0.0"/>
+	<name value="UKCorePersonRelationshipType"/>
+	<title value="UK Core Person Relationship Type"/>
 	<status value="draft"/>
-	<date value="2020-05-14T00:00:00+00:00"/>
+	<date value="2020-05-29T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="Interoperability Team"/>
@@ -15,7 +15,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="A ValueSet that identifies the type of relationship a related person has to a patient."/>
+	<description value="A ValueSet that identifies the type of relationship a person has to a patient."/>
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
@@ -30,7 +30,7 @@
 			</filter>
 		</include>
 		<include>
-			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
 		</include>
 	</compose>
 </ValueSet>
