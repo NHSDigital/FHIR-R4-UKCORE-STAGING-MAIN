@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="UKCore-AdditionalRelatedPersonRole"/>
-    <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"/>
-    <version value="1.1.0"/>
-    <name value="UKCoreAdditionalRelatedPersonRole"/>
-  <title value="UK Core Additional Related Person Role" />
+    <id value="UKCore-AdditionalPersonRelationshipRole"/>
+    <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
+    <version value="2.0.0"/>
+    <name value="UKCoreAdditionalPersonRelationshipRole"/>
+  <title value="UK Core Additional Person Relationship Role" />
     <status value="draft"/>
-    <date value="2020-04-03T00:00:00+00:00"/>
+    <date value="2020-05-29T00:00:00+00:00"/>
     <publisher value="NHS Digital"/>
   <contact>
     <name value="Interoperability Team" />
@@ -16,7 +16,7 @@
       <use value="work" />
     </telecom>
   </contact>
-    <description value="A CodeSystem to identify the additional relationship roles for RelatedPerson resources."/>
+    <description value="A CodeSystem to identify additional person relationship roles."/>
     <copyright value="Copyright © 2020 NHS Digital"/>
   <caseSensitive value="true" />
     <content value="complete"/>
