@@ -79,7 +79,7 @@
         <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources" />
         <expression value="contained.contained.empty()" />
         <xpath value="not(parent::f:contained and f:contained)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="DomainResource" />
       </constraint>
       <constraint>
         <key value="dom-4" />
@@ -87,7 +87,7 @@
         <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" />
         <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" />
         <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="DomainResource" />
       </constraint>
       <constraint>
         <key value="dom-3" />
@@ -95,7 +95,7 @@
         <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource" />
         <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()" />
         <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="DomainResource" />
       </constraint>
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
@@ -109,7 +109,7 @@
         <human value="A resource should have narrative for robust management" />
         <expression value="text.`div`.exists()" />
         <xpath value="exists(f:text/h:div)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="DomainResource" />
       </constraint>
       <constraint>
         <key value="dom-5" />
@@ -117,7 +117,7 @@
         <human value="If a resource is contained in another resource, it SHALL NOT have a security label" />
         <expression value="contained.meta.security.empty()" />
         <xpath value="not(exists(f:contained/*/f:meta/f:security))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -153,6 +153,12 @@
       <isSummary value="true" />
     </element>
     <element id="Patient.meta">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.meta" />
       <short value="Metadata about the resource" />
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." />
@@ -173,7 +179,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -186,6 +192,12 @@
       </mapping>
     </element>
     <element id="Patient.implicitRules">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.implicitRules" />
       <short value="A set of rules under which this content was created" />
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." />
@@ -207,7 +219,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" />
@@ -218,6 +230,12 @@
       </mapping>
     </element>
     <element id="Patient.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.language" />
       <short value="Language of the resource content" />
       <definition value="The base language in which the resource is written." />
@@ -239,7 +257,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
@@ -261,6 +279,12 @@
       </mapping>
     </element>
     <element id="Patient.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.text" />
       <short value="Text summary of the resource, for human interpretation" />
       <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." />
@@ -286,7 +310,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -329,6 +353,12 @@
       </mapping>
     </element>
     <element id="Patient.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.extension" />
       <slicing>
         <discriminator>
@@ -360,7 +390,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -368,7 +398,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -380,6 +410,12 @@
       </mapping>
     </element>
     <element id="Patient.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.modifierExtension" />
       <slicing>
         <discriminator>
@@ -412,7 +448,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -420,7 +456,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" />
@@ -434,6 +470,12 @@
       </mapping>
     </element>
     <element id="Patient.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
@@ -463,7 +505,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -500,6 +542,12 @@
       </mapping>
     </element>
     <element id="Patient.identifier:nhsNumber">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier" />
       <sliceName value="nhsNumber" />
       <short value="The patient's NHS number" />
@@ -522,7 +570,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -619,7 +667,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -627,7 +675,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -670,7 +718,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -678,7 +726,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -690,6 +738,12 @@
       </mapping>
     </element>
     <element id="Patient.identifier:nhsNumber.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -712,7 +766,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
@@ -767,7 +821,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -807,6 +861,12 @@
       </mapping>
     </element>
     <element id="Patient.identifier:nhsNumber.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -834,7 +894,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -855,6 +915,12 @@
       </mapping>
     </element>
     <element id="Patient.identifier:nhsNumber.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -880,7 +946,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -928,7 +994,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -936,7 +1002,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="Period" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -993,7 +1059,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -1001,7 +1067,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1026,6 +1092,12 @@
       </mapping>
     </element>
     <element id="Patient.active">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.active" />
       <short value="Whether this patient's record is in active use" />
       <definition value="Whether this patient record is in active use. &#xA;Many systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organization's business rules.&#xA;&#xA;It is often used to filter patient lists to exclude inactive patients&#xA;&#xA;Deceased patients may also be marked as inactive for the same reasons, but may be active for some time after death." />
@@ -1049,7 +1121,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This element is labelled as a modifier because it is a status element that can indicate that a record should not be treated as valid" />
@@ -1072,6 +1144,12 @@
       </mapping>
     </element>
     <element id="Patient.name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.name" />
       <short value="A name associated with the patient" />
       <definition value="A name associated with the individual." />
@@ -1094,7 +1172,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1127,6 +1205,12 @@
       </mapping>
     </element>
     <element id="Patient.telecom">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.telecom" />
       <short value="A contact detail for the individual" />
       <definition value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted." />
@@ -1149,7 +1233,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="cpt-2" />
@@ -1157,7 +1241,7 @@
         <human value="A system is required if a value is provided." />
         <expression value="value.empty() or system.exists()" />
         <xpath value="not(exists(f:value)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactDetail" />
+        <source value="ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1190,6 +1274,12 @@
       </mapping>
     </element>
     <element id="Patient.gender">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.gender" />
       <short value="male | female | other | unknown" />
       <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes." />
@@ -1212,7 +1302,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -1244,6 +1334,12 @@
       </mapping>
     </element>
     <element id="Patient.birthDate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.birthDate" />
       <short value="The date of birth for the individual" />
       <definition value="The date of birth for the individual." />
@@ -1266,7 +1362,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1291,6 +1387,12 @@
       </mapping>
     </element>
     <element id="Patient.deceased[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.deceased[x]" />
       <short value="Indicates if the individual is deceased or not" />
       <definition value="Indicates if the individual is deceased or not." />
@@ -1316,7 +1418,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This element is labeled as a modifier because once a patient is marked as deceased, the actions that are appropriate to perform on the patient may be significantly different." />
@@ -1339,6 +1441,12 @@
       </mapping>
     </element>
     <element id="Patient.address">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.address" />
       <short value="An address for the individual" />
       <definition value="An address for the individual" />
@@ -1361,7 +1469,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1394,6 +1502,12 @@
       </mapping>
     </element>
     <element id="Patient.maritalStatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.maritalStatus" />
       <short value="Marital (civil) status of a patient" />
       <definition value="This field contains a patient's most recent marital (civil) status." />
@@ -1416,7 +1530,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -1459,6 +1573,12 @@
       </mapping>
     </element>
     <element id="Patient.multipleBirth[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.multipleBirth[x]" />
       <short value="Whether patient is part of a multiple birth" />
       <definition value="Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer)." />
@@ -1484,7 +1604,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1504,6 +1624,12 @@
       </mapping>
     </element>
     <element id="Patient.photo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.photo" />
       <short value="Image of the patient" />
       <definition value="Image of the patient." />
@@ -1526,7 +1652,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="att-1" />
@@ -1534,7 +1660,7 @@
         <human value="If the Attachment has data, it SHALL have a contentType" />
         <expression value="data.empty() or contentType.exists()" />
         <xpath value="not(exists(f:data)) or exists(f:contentType)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Consent" />
+        <source value="Attachment" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1562,6 +1688,12 @@
       </mapping>
     </element>
     <element id="Patient.contact">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Contact" />
       </extension>
@@ -1587,7 +1719,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="pat-1" />
@@ -1595,7 +1727,7 @@
         <human value="SHALL at least contain a contact's details or a reference to an organization" />
         <expression value="name.exists() or telecom.exists() or address.exists() or organization.exists()" />
         <xpath value="exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="Patient" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1634,6 +1766,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.extension" />
       <slicing>
         <discriminator>
@@ -1665,7 +1803,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -1673,7 +1811,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1685,6 +1823,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -1710,7 +1854,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -1718,7 +1862,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" />
@@ -1733,6 +1877,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.relationship">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.relationship" />
       <short value="The kind of relationship" />
       <definition value="The nature of the relationship between the patient and the contact person." />
@@ -1755,7 +1905,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -1763,7 +1913,7 @@
         </extension>
         <strength value="extensible" />
         <description value="The nature of the relationship between a patient and a contact person for that patient." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/patient-contactrelationship" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1795,6 +1945,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.name" />
       <short value="A name associated with the contact person" />
       <definition value="A name associated with the contact person." />
@@ -1817,7 +1973,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1849,6 +2005,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.telecom">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.telecom" />
       <short value="A contact detail for the person" />
       <definition value="A contact detail for the person, e.g. a telephone number or an email address." />
@@ -1871,7 +2033,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="cpt-2" />
@@ -1879,7 +2041,7 @@
         <human value="A system is required if a value is provided." />
         <expression value="value.empty() or system.exists()" />
         <xpath value="not(exists(f:value)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactDetail" />
+        <source value="ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1911,6 +2073,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.address">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.address" />
       <short value="Address for the contact person" />
       <definition value="Address for the contact person." />
@@ -1933,7 +2101,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1965,6 +2133,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.gender">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.gender" />
       <short value="male | female | other | unknown" />
       <definition value="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes." />
@@ -1987,7 +2161,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -2018,6 +2192,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization" />
       <short value="Organization that is associated with the contact" />
       <definition value="Organization on behalf of which the contact is acting or for which the contact is working." />
@@ -2042,7 +2222,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -2050,7 +2230,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2134,7 +2314,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -2142,7 +2322,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2154,6 +2334,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -2176,7 +2362,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2189,6 +2375,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -2210,7 +2402,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -2258,7 +2450,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2343,7 +2535,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -2351,7 +2543,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2363,6 +2555,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization.identifier.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -2385,7 +2583,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
@@ -2440,7 +2638,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -2480,6 +2678,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -2506,7 +2710,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2527,6 +2731,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -2552,7 +2762,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2600,7 +2810,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -2608,7 +2818,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="Period" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2665,7 +2875,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -2673,7 +2883,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2698,6 +2908,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.organization.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2722,7 +2938,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2735,6 +2951,12 @@
       </mapping>
     </element>
     <element id="Patient.contact.period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.period" />
       <short value="The period during which this contact person or organization is valid to be contacted relating to this patient" />
       <definition value="The period during which this contact person or organization is valid to be contacted relating to this patient." />
@@ -2756,7 +2978,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -2764,7 +2986,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="Period" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2788,6 +3010,12 @@
       </mapping>
     </element>
     <element id="Patient.communication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.communication" />
       <short value="A language which may be used to communicate with the patient about his or her health" />
       <definition value="A language which may be used to communicate with the patient about his or her health." />
@@ -2810,7 +3038,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2849,6 +3077,12 @@
       </mapping>
     </element>
     <element id="Patient.communication.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.communication.extension" />
       <slicing>
         <discriminator>
@@ -2880,7 +3114,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -2888,7 +3122,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2900,6 +3134,12 @@
       </mapping>
     </element>
     <element id="Patient.communication.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.communication.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -2925,7 +3165,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -2933,7 +3173,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" />
@@ -2948,6 +3188,12 @@
       </mapping>
     </element>
     <element id="Patient.communication.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.communication.language" />
       <short value="The language which can be used to communicate with the patient about his or her health" />
       <definition value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English." />
@@ -2970,7 +3216,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
@@ -3016,6 +3262,12 @@
       </mapping>
     </element>
     <element id="Patient.communication.preferred">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.communication.preferred" />
       <short value="Language preference indicator" />
       <definition value="Indicates whether or not the patient prefers this language (over other languages he masters up a certain level)." />
@@ -3038,7 +3290,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3058,6 +3310,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner" />
       <short value="Patient's nominated primary care provider" />
       <definition value="Patient's nominated care provider." />
@@ -3083,7 +3341,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -3091,7 +3349,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3175,7 +3433,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -3183,7 +3441,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3195,6 +3453,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -3217,7 +3481,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3230,6 +3494,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -3251,7 +3521,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -3299,7 +3569,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3384,7 +3654,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -3392,7 +3662,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3404,6 +3674,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner.identifier.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -3426,7 +3702,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
@@ -3481,7 +3757,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -3521,6 +3797,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -3547,7 +3829,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3568,6 +3850,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -3593,7 +3881,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3641,7 +3929,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -3649,7 +3937,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="Period" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3706,7 +3994,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -3714,7 +4002,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3739,6 +4027,12 @@
       </mapping>
     </element>
     <element id="Patient.generalPractitioner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3763,7 +4057,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3776,6 +4070,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization" />
       <short value="Organization that is the custodian of the patient record" />
       <definition value="Organization that is the custodian of the patient record." />
@@ -3799,7 +4099,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -3807,7 +4107,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3888,7 +4188,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -3896,7 +4196,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3908,6 +4208,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -3930,7 +4236,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3943,6 +4249,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -3964,7 +4276,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -4012,7 +4324,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4097,7 +4409,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -4105,7 +4417,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4117,6 +4429,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization.identifier.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -4139,7 +4457,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
@@ -4194,7 +4512,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -4234,6 +4552,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -4260,7 +4584,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4281,6 +4605,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -4306,7 +4636,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4354,7 +4684,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -4362,7 +4692,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="Period" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4419,7 +4749,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -4427,7 +4757,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4452,6 +4782,12 @@
       </mapping>
     </element>
     <element id="Patient.managingOrganization.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4476,7 +4812,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4489,6 +4825,12 @@
       </mapping>
     </element>
     <element id="Patient.link">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link" />
       <short value="Link to another patient resource that concerns the same actual person" />
       <definition value="Link to another patient resource that concerns the same actual patient." />
@@ -4511,7 +4853,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This element is labeled as a modifier because it might not be the main Patient resource, and the referenced patient should be used instead of this Patient record. This is when the link.type value is 'replaced-by'" />
@@ -4553,6 +4895,12 @@
       </mapping>
     </element>
     <element id="Patient.link.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.extension" />
       <slicing>
         <discriminator>
@@ -4584,7 +4932,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -4592,7 +4940,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4604,6 +4952,12 @@
       </mapping>
     </element>
     <element id="Patient.link.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -4629,7 +4983,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -4637,7 +4991,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" />
@@ -4652,6 +5006,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other" />
       <short value="The other patient or related person resource that the link refers to" />
       <definition value="The other patient resource that the link refers to." />
@@ -4678,7 +5038,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -4686,7 +5046,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4771,7 +5131,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -4779,7 +5139,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4791,6 +5151,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -4813,7 +5179,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4826,6 +5192,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -4847,7 +5219,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -4895,7 +5267,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4980,7 +5352,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -4988,7 +5360,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -5000,6 +5372,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other.identifier.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -5022,7 +5400,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
@@ -5077,7 +5455,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -5117,6 +5495,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -5143,7 +5527,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5164,6 +5548,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -5189,7 +5579,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5237,7 +5627,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -5245,7 +5635,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="Period" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5302,7 +5692,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ref-1" />
@@ -5310,7 +5700,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <source value="Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5335,6 +5725,12 @@
       </mapping>
     </element>
     <element id="Patient.link.other.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -5359,7 +5755,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5372,6 +5768,12 @@
       </mapping>
     </element>
     <element id="Patient.link.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.type" />
       <short value="replaced-by | replaces | refer | seealso" />
       <definition value="The type of link between this patient resource and another patient resource." />
@@ -5393,7 +5795,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <binding>
@@ -5420,6 +5822,12 @@
   </snapshot>
   <differential>
     <element id="Patient.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
@@ -5431,6 +5839,12 @@
       </slicing>
     </element>
     <element id="Patient.identifier:nhsNumber">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier" />
       <sliceName value="nhsNumber" />
       <short value="The patient's NHS number" />
@@ -5447,6 +5861,12 @@
       </slicing>
     </element>
     <element id="Patient.identifier:nhsNumber.extension:nhsNumberVerificationStatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.extension" />
       <sliceName value="nhsNumberVerificationStatus" />
       <min value="1" />
@@ -5457,15 +5877,33 @@
       </type>
     </element>
     <element id="Patient.identifier:nhsNumber.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.system" />
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
     </element>
     <element id="Patient.identifier:nhsNumber.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
     <element id="Patient.identifier:nhsNumber.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.identifier.assigner" />
       <type>
         <code value="Reference" />
@@ -5473,10 +5911,38 @@
       </type>
     </element>
     <element id="Patient.address">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.address" />
       <definition value="An address for the individual" />
     </element>
+    <element id="Patient.contact.relationship">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.contact.relationship" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ContactRelationship" />
+        </extension>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonRelationshipType" />
+      </binding>
+    </element>
     <element id="Patient.contact.organization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization" />
       <type>
         <code value="Reference" />
@@ -5484,6 +5950,12 @@
       </type>
     </element>
     <element id="Patient.contact.organization.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.contact.organization.identifier.assigner" />
       <type>
         <code value="Reference" />
@@ -5491,6 +5963,12 @@
       </type>
     </element>
     <element id="Patient.generalPractitioner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner" />
       <type>
         <code value="Reference" />
@@ -5500,6 +5978,12 @@
       </type>
     </element>
     <element id="Patient.generalPractitioner.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.generalPractitioner.identifier.assigner" />
       <type>
         <code value="Reference" />
@@ -5507,6 +5991,12 @@
       </type>
     </element>
     <element id="Patient.managingOrganization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization" />
       <type>
         <code value="Reference" />
@@ -5514,6 +6004,12 @@
       </type>
     </element>
     <element id="Patient.managingOrganization.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.managingOrganization.identifier.assigner" />
       <type>
         <code value="Reference" />
@@ -5521,6 +6017,12 @@
       </type>
     </element>
     <element id="Patient.link.other">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other" />
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
@@ -5532,6 +6034,12 @@
       </type>
     </element>
     <element id="Patient.link.other.identifier.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Patient.link.other.identifier.assigner" />
       <type>
         <code value="Reference" />
