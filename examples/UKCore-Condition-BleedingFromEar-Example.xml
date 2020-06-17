@@ -1,5 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Condition-Example" />
+  <id value="UKCore-Condition-BleedingFromEar-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition" />
   </meta>
@@ -32,6 +32,6 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
 </Condition>

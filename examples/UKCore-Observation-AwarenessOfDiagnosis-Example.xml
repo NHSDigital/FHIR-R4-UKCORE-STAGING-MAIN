@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-Example" />
+  <id value="UKCore-Observation-AwarenessOfDiagnosis-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
   </meta>
@@ -12,7 +12,7 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
   <effectiveInstant value="2019-12-10T13:00:00+00:00" />
 </Observation>

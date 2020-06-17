@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+ <id value="UKCore-DiagnosticReport-DiagnosticStudiesReport-Example"/>
+ <meta>
+  <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport"/>
+ </meta>
+ <status value="final"/>
+ <code>
+  <coding>
+   <system value="http://snomed.info/sct"/>
+   <code value="721981007"/>
+   <display value="Diagnostic studies report"/>
+  </coding>
+ </code>
+ <subject>
+  <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+ </subject>
+ <performer>
+  <actor>
+   <reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+   <display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
+  </actor>
+ </performer>
+ <specimen>
+  <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
+ </specimen>
+ <result>
+  <reference value="Observation\UKCore-Observation-WhiteCellCount-Example"/>
+ </result>
+</DiagnosticReport>

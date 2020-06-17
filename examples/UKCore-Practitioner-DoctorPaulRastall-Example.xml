@@ -1,5 +1,5 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Practitioner-Example" />
+  <id value="UKCore-Practitioner-DoctorPaulRastall-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
   </meta>

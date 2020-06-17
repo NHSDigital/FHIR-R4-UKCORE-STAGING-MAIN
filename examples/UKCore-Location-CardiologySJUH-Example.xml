@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Location-Example" />
+  <id value="UKCore-Location-CardiologySJUH-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
   </meta>
@@ -28,6 +28,6 @@
     <country value="ENGLAND" />
   </address>
   <managingOrganization>
-    <reference value="Organization/UKCore-Organization-Example" />
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
   </managingOrganization>
 </Location>

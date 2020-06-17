@@ -1,5 +1,5 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
-  <id value="UKCore-MedicationDispense-Example" />
+  <id value="UKCore-MedicationDispense-EyeDrops-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationDispense" />
   </meta>
@@ -9,18 +9,18 @@
   </identifier>
   <status value="in-progress" />
   <medicationReference>
-    <reference value="Medication/UKCore-Medication-Example" />
+    <reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example" />
   </medicationReference>
   <subject>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
   <performer>
     <actor>
-      <reference value="Practitioner/UKCore-Practitioner-Example" />
+      <reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example" />
     </actor>
   </performer>
   <authorizingPrescription>
-    <reference value="MedicationRequest/UKCore-MedicationRequest-Example" />
+    <reference value="MedicationRequest/UKCore-MedicationRequest-EyeDrops-Example" />
   </authorizingPrescription>
   <quantity>
     <value value="30" />
@@ -36,7 +36,7 @@
   </daysSupply>
   <whenPrepared value="2020-01-15T15:00:00+00:00" />
   <receiver>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </receiver>
   <dosageInstruction>
     <text value="1 drop in each affected eye twice daily, approximately 12 hours apart." />

@@ -1,5 +1,5 @@
 <Consent xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Consent-Example" />
+  <id value="UKCore-Consent-ForInformationAccess-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" />
   </meta>
@@ -19,14 +19,14 @@
     </coding>
   </category>
   <patient>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </patient>
   <dateTime value="2019-12-10T11:15:00+00:00" />
   <performer>
-    <reference value="Practitioner/UKCore-Practitioner-Example" />
+    <reference value="Practitioner/UKCore-Practitioner-PaulRastall-Example" />
   </performer>
   <organization>
-    <reference value="Organization/UKCore-Organisation-Example" />
+    <reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example" />
   </organization>
   <policy>
     <authority value="https://www.exampleauthority.nhs.uk" />

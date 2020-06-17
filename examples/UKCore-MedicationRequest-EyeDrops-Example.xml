@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationRequest-Example"/>
+	<id value="UKCore-MedicationRequest-EyeDrops-Example"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest"/>
 	</meta>
@@ -8,19 +8,16 @@
 	<intent value="order"/>
 	<priority value="routine"/>
 	<medicationReference>
-		<reference value="Medication/UKCore-Medication-Example"/>
+		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
 	</medicationReference>
 	<subject>
-		<reference value="Patient/UKCore-Patient-Example"/>
-		<display value="Richard SMITH"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<requester>
-		<reference value="Practitioner/UKCore-Practitioner-Example"/>
-		<display value="Dr Paul Rastall"/>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</requester>
 	<recorder>
-		<reference value="Practitioner/UKCore-Practitioner-Example"/>
-		<display value="Dr Paul Rastall"/>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</recorder>
 	<dosageInstruction>
 		<text value="One drop 3 times a day"/>

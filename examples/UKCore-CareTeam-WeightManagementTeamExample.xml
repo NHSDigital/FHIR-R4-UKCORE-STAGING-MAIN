@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CareTeam xmlns="http://hl7.org/fhir">
-	<id value="UKCore-CareTeam-Example"/>
+	<id value="UKCore-CareTeam-WeightManagementTeam-Example"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CareTeam"/>
 	</meta>
 	<status value="inactive"/>
 	<name value="Weight management team"/>
 	<subject>
-		<reference value="Patient/UKCore-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<participant>
 		<member>
-			<reference value="Practitioner/UKCore-Practitioner-Example"/>
+			<reference value="Practitioner/UKCore-Practitioner-PaulRastall-Example"/>
 		</member>
 	</participant>
 	<managingOrganization>
-		<reference value="Organization/UKCore-Organisation-Example"/>
+		<reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example"/>
 	</managingOrganization>
 </CareTeam>
