@@ -1,5 +1,5 @@
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <id value="123456" />
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Bundle-BundledAllergyList-Example" />
   <type value="collection" />
   <entry>
     <resource>
@@ -18,21 +18,22 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
         </subject>
         <date value="2019-12-10T13:00:00+00:00" />
         <entry>
           <item>
-            <reference value="AllergyIntolerance/UKCore-AllergyIntolerance-Example" />
+            <reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"/>
           </item>
         </entry>
       </List>
     </resource>
   </entry>
   <entry>
+  		<fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"/>
     <resource>
       <AllergyIntolerance>
-        <id value="UKCore-AllergyIntolerance-Example" />
+        <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
         </meta>
@@ -60,17 +61,17 @@
           </coding>
         </code>
         <patient>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
         </patient>
         <encounter>
-          <reference value="Encounter/UKCore-Encounter-Example" />
+          <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
         </encounter>
         <recordedDate value="2019-12-10T13:00:00+00:00" />
         <recorder>
-          <reference value="Practitioner/UKCore-Practitioner-Example" />
+          <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
         </recorder>
         <asserter>
-          <reference value="Practitioner/UKCore-Practitioner-Example" />
+          <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
         </asserter>
         <reaction>
           <manifestation>

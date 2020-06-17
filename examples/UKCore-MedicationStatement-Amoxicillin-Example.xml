@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationStatement-Example"/>
+	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationStatement"/>
 	</meta>
@@ -9,12 +9,11 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="27658006"/>
-			<display value="Amoxicillin (product)"/>
+			<display value="Amoxicillin"/>
 		</coding>
 	</medicationCodeableConcept>
 	<subject>
-		<reference value="Patient/UKCore-Patient-Example"/>
-		<display value="Richard SMITH"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<effectiveDateTime value="2017-01-23"/>
 	<dateAsserted value="2017-02-22"/>

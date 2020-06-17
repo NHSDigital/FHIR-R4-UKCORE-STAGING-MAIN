@@ -1,5 +1,5 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
-  <id value="UKCore-PractitionerRole-Example" />
+  <id value="UKCore-PractitionerRole-GeneralPractitioner-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
   </meta>
@@ -8,10 +8,10 @@
     <value value="100334993514" />
   </identifier>
   <practitioner>
-    <reference value="Practitioner/UKCore-Practitioner-Example" />
+    <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
   </practitioner>
   <organization>
-    <reference value="Organization/UKCore-Organisation-Example" />
+    <reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example" />
   </organization>
   <code>
     <coding>
@@ -27,9 +27,6 @@
       <display value="General medical practice" />
     </coding>
   </specialty>
-  <location>
-    <reference value="Location/UKCore-Location-Example" />
-  </location>
   <telecom>
     <system value="phone" />
     <value value="0113 6323200" />

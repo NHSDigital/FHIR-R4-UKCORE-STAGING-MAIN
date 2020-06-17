@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
     <id value="UKCore-AllergyIntolerance-EnteredInError-Example" />
     <meta>
@@ -36,16 +35,16 @@
         </coding>
     </code>
     <patient>
-        <reference value="Patient/UKCore-Patient-Example" />
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
     </patient>
     <encounter>
-        <reference value="Encounter/UKCore-Encounter-Example" />
+        <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
     </encounter>
     <recordedDate value="2019-12-10T13:00:00+00:00" />
     <recorder>
-        <reference value="Practitioner/UKCore-Practitioner-Example" />
+        <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
     </recorder>
     <asserter>
-        <reference value="Practitioner/UKCore-Practitioner-Example" />
+        <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
     </asserter>
 </AllergyIntolerance>

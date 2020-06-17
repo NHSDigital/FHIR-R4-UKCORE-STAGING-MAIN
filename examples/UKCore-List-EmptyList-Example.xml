@@ -1,5 +1,5 @@
-<List xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Git/SchemasR4/list.xsd">
-  <id value="UKCore-List-Example" />
+<List xmlns="http://hl7.org/fhir" >
+  <id value="UKCore-List-EmptyList-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
   </meta>
@@ -13,7 +13,7 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
   <date value="2019-12-10T13:00:00+00:00" />
   <emptyReason>

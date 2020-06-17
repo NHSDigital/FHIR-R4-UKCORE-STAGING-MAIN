@@ -1,5 +1,5 @@
 <Medication xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Medication-Example" />
+  <id value="UKCore-Medication-TimoptolEyeDrops-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
   </meta>
@@ -14,7 +14,7 @@
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="75359005" />
-      <display value="Opthalmic Solution (qualifier value)" />
+      <display value="Opthalmic Solution" />
     </coding>
   </form>
   <batch>

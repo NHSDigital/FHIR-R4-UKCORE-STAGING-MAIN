@@ -1,5 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Encounter-Example" />
+  <id value="UKCore-Encounter-InpatientEncounter-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
   </meta>
@@ -17,11 +17,11 @@
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="185212007" />
-      <display value="Seen in hospital ward (finding)" />
+      <display value="Seen in hospital ward" />
     </coding>
   </type>
   <subject>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
   <participant>
     <type>
@@ -32,7 +32,7 @@
       </coding>
     </type>
     <individual>
-      <reference value="Practitioner/UKCore-Practitioner-Example" />
+      <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
     </individual>
   </participant>
   <period>
@@ -43,7 +43,7 @@
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="7922000" />
-      <display value="General treatment (procedure)" />
+      <display value="General treatment" />
     </coding>
   </reasonCode>
   <hospitalization>
@@ -57,10 +57,10 @@
   </hospitalization>
   <location>
     <location>
-      <reference value="Location/UKCore-Location-Example" />
+      <reference value="Location/UKCore-Location-CardiologySJUH-Example" />
     </location>
   </location>
   <serviceProvider>
-    <reference value="Organization/UKCore-Organisation-Example" />
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
   </serviceProvider>
 </Encounter>

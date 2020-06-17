@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
-<id value="UKCore-DocumentReference-Example"/>
+<id value="UKCore-DocumentReference-CarePlanReportPDF-Example"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DocumentReference"/>
 	</meta>
@@ -9,18 +9,18 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="734163000"/>
-			<display value="Care plan (record artifact)"/>
+			<display value="Care plan"/>
 		</coding>
 	</type>
 	<subject>
-		<reference value="Patient/UKCore-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<date value="2016-03-08T15:26:00+01:00"/>
 	<author>
-		<reference value="Practitioner/UKCore-Practitioner-Example"/>
+		<reference value="Practitioner/UKCore-Practitioner-SandraGose-Example"/>
 	</author>
 	<custodian>
-		<reference value="Organization/UKCore-Organisation-Example"/>
+		<reference value="Organization/UKCore-Organisation-LeedsTeachingHospital-Example"/>
 	</custodian>
 	<content>
 		<attachment>

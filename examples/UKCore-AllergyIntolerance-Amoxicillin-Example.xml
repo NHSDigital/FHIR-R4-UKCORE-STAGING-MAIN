@@ -1,5 +1,5 @@
-<AllergyIntolerance xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Git/SchemasR4/allergyintolerance.xsd">
-  <id value="UKCore-AllergyIntolerance-Example" />
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="UKCore-AllergyIntolerance-Amoxicillin-Example" />
   <meta>
     <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
   </meta>
@@ -27,17 +27,17 @@
     </coding>
   </code>
   <patient>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/UKCore-RichardSmith-Patient-Example" />
   </patient>
   <encounter>
-    <reference value="Encounter/UKCore-Encounter-Example" />
+    <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
   </encounter>
   <recordedDate value="2019-12-10T13:00:00+00:00" />
   <recorder>
-    <reference value="Practitioner/UKCore-Practitioner-Example" />
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
   </recorder>
   <asserter>
-    <reference value="Practitioner/UKCore-Practitioner-Example" />
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
   </asserter>
   <reaction>
     <manifestation>
