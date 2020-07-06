@@ -33,7 +33,7 @@
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="(&lt;&lt;105590001 |Substance OR &lt;&lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>
+				<value value="(&lt;&lt;105590001 |Substance| OR &lt;&lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>		
 			</filter>
 		</include>
 		<include>
