@@ -33,7 +33,7 @@
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="constraint"/>
-				<op value="="/>
+				<op value="in"/>
 				<value value="(^999001721000000100 | Clinical record headings simple reference set (foundation metadata concept)|)"/>
 			</filter>
 		</include>
