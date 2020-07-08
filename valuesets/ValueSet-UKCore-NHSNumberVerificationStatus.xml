@@ -34,5 +34,8 @@
 		<include>
 			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
 		</include>
+		<include>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+		</include>
 	</compose>
 </ValueSet>
