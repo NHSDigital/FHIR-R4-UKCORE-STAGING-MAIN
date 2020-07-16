@@ -515,7 +515,7 @@
       <short value="Number of repeat prescriptions issued" />
       <definition value="Number of repeat prescriptions issued." />
       <comment value="A stream of bytes, base64 encoded" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -703,7 +703,7 @@
       <short value="Repeat prescription review date" />
       <definition value="Repeat prescription review date." />
       <comment value="A stream of bytes, base64 encoded" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -989,6 +989,7 @@
       <path value="Extension.extension.value[x]" />
       <short value="Number of repeat prescriptions issued" />
       <definition value="Number of repeat prescriptions issued." />
+      <min value="1" />
       <type>
         <code value="unsignedInt" />
       </type>
@@ -1008,6 +1009,7 @@
       <path value="Extension.extension.value[x]" />
       <short value="Repeat prescription review date" />
       <definition value="Repeat prescription review date." />
+      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
