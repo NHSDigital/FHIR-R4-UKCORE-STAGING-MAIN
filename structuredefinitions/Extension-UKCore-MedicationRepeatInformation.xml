@@ -9,21 +9,21 @@
   <date value="2020-07-13" />
   <publisher value="NHS Digital" />
   <contact>
-    <name value="Interoperability Team" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
       <value value="secretariat@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="2" />
     </telecom>
   </contact>
   <description value="Indicates the specific repeat information of a medication item." />
