@@ -6,7 +6,7 @@
   <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
     <valueCodeableConcept>
       <coding>
-        <system value="https://fhir.nhs.uk/R4/UKCore-EthnicCategory-1" />
+        <system value="https://fhir.nhs.uk/R4/UKCore-EthnicCategory" />
         <code value="A" />
         <display value="British, Mixed British" />
       </coding>
