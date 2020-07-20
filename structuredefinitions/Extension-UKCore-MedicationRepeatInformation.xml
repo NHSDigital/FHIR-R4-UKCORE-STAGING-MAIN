@@ -7,7 +7,7 @@
   <title value="Extension UK Core Medication Repeat Information" />
   <status value="draft" />
   <date value="2020-07-13" />
-  <publisher value="NHS Digital" />
+  <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <contact>
-    <name value="Interoperability Team" />
+    <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
