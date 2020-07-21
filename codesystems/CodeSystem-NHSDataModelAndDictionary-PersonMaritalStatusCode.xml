@@ -10,6 +10,14 @@
   <status value="active" />
   <date value="2019-10-18T12:00:00+00:00" />
   <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="An indicator to identify the legal marital status of a Person." />
   <copyright value="Copyright © 2019 NHS Digital" />
   <caseSensitive value="true" />

@@ -7,9 +7,9 @@
   <title value="UK Core Additional Person Relationship Role" />
     <status value="draft"/>
     <date value="2020-05-29T00:00:00+00:00"/>
-    <publisher value="NHS Digital"/>
+  <publisher value="NHS Digital" />
   <contact>
-    <name value="Interoperability Team" />
+    <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
