@@ -11,7 +11,7 @@
   <date value="2019-11-05T00:00:00+00:00" />
   <publisher value="NHS Digital" />
   <contact>
-    <name value="Interoperability Team" />
+    <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
