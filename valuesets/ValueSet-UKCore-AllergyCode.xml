@@ -25,47 +25,15 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="Allergy coding from SNOMED Clinical Terminology UK, or a code from the v3 Code System NullFlavor specifying why a valid value is not present."/>
+	<description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;105590001 |Substance OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy), or a code from the v3 Code System NullFlavor specifying why a valid value is not present."/>
 	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="constraint"/>
-				<op value="in"/>
-				<value value="&lt;&lt;105590001 |Substance| "/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="in"/>
-				<value value="&lt;&lt;373873005 |Pharmaceutical / biologic product| "/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
 				<op value="="/>
-				<value value="716186003 |No known allergy|"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="="/>
-				<value value="196461000000101 |Transfer-degraded drug allergy|"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="="/>
-				<value value="196471000000108 |Transfer-degraded non-drug allergy|"/>
+				<value value="(&lt;&lt;105590001 |Substance| OR &lt;&lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>		
 			</filter>
 		</include>
 		<include>
