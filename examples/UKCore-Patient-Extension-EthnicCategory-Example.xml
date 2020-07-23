@@ -1,4 +1,4 @@
-<Patient>
+<Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Patient-Extension-EthnicCategory-Example" />
   <!-- **************extension start************** -->
   <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
