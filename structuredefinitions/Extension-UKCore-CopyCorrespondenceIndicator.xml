@@ -4,9 +4,10 @@
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreCopyCorrespondenceIndicator" />
-  <title value="Extension UK Core CopyCorrespondenceIndicator" />
+  <title value="Extension UK Core Copy Correspondence Indicator" />
   <status value="draft" />
   <experimental value="false" />
+  <date value="2020-07-24" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -26,8 +27,8 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="To indicate correspondence must be copied to the contact or RelatedPerson" />
-  <purpose value="Indicates Copy Correspondence to be sent to Contact or RelatedPerson" />
+  <description value="To indicate correspondence must be copied to the contact or RelatedPerson." />
+  <purpose value="This extension extends the Patient.contact element to support the exchange of information to determine whether the correspondance is to be copied to the patient contact. This is currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
