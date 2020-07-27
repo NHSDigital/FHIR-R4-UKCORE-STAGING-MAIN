@@ -61,7 +61,7 @@
       <short value="Copy Correspondence Indicator" />
       <definition value="Extension for Copy Correspondence Indicator" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Extension" />
         <min value="0" />
@@ -237,6 +237,7 @@
       <path value="Extension" />
       <short value="Copy Correspondence Indicator" />
       <definition value="Extension for Copy Correspondence Indicator" />
+      <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
