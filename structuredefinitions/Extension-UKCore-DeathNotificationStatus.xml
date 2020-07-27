@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DeathNotificationStatus" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreDeathNotificationStatus" />
   <title value="Extension UK Core Death Notification Status" />
   <status value="draft" />
-  <date value="2019-10-28" />
+  <date value="2020-07-27" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -26,8 +26,8 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="An extension to support death notification for an individual. For example, as held on Personal Demographics Service (PDS)." />
-  <purpose value="This extension has been developed to demonstrate the representation of a patient's death notification status." />
+  <description value="The patient's death notification status." />
+  <purpose value="This extension extends the Patient resource to support the exchange of the patient's death notification status, which is currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -53,8 +53,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="The representation of a patient’s death notification (as held on Personal Demographics Service (PDS))" />
-      <definition value="This extension is constrained to represent a patient’s death notification (as held on Personal Demographics Service (PDS))." />
+      <short value="The patient's death notification status." />
+      <definition value="The patient's death notification status." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -177,8 +177,8 @@
       </extension>
       <path value="Extension.extension" />
       <sliceName value="deathNotificationStatus" />
-      <short value="To identify the type of death notice as held on Personal Demographics Service (PDS)" />
-      <definition value="To identify the type of death notice as held on Personal Demographics Service (PDS)." />
+      <short value="The patient's death notification status." />
+      <definition value="The patient's death notification status." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -325,8 +325,8 @@
     </element>
     <element id="Extension.extension:deathNotificationStatus.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="To identify the type of death notice as held on Personal Demographics Service (PDS)" />
-      <definition value="To identify the type of death notice as held on Personal Demographics Service (PDS)." />
+      <short value="The patient's death notification status." />
+      <definition value="The patient's death notification status." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -349,7 +349,7 @@
       </constraint>
       <binding>
         <strength value="extensible" />
-        <description value="To identify the type of death notice as held on Personal Demographics Service (PDS)." />
+        <description value="The patient's death notification status." />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DeathNotificationStatus" />
       </binding>
       <mapping>
@@ -370,8 +370,8 @@
       </extension>
       <path value="Extension.extension" />
       <sliceName value="systemEffectiveDate" />
-      <short value="System effective date for the death notification status" />
-      <definition value="System effective date for the death notification status." />
+      <short value="System effective date for patient's death notification status." />
+      <definition value="System effective date for patient's death notification status." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -518,8 +518,8 @@
     </element>
     <element id="Extension.extension:systemEffectiveDate.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="System effective date" />
-      <definition value="System effective date for the death notification status" />
+      <short value="System effective date for patient's death notification status." />
+      <definition value="System effective date for patient's death notification status." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -758,8 +758,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="The representation of a patient’s death notification (as held on Personal Demographics Service (PDS))" />
-      <definition value="This extension is constrained to represent a patient’s death notification (as held on Personal Demographics Service (PDS))." />
+      <short value="The patient's death notification status." />
+      <definition value="The patient's death notification status." />
       <max value="1" />
     </element>
     <element id="Extension.extension">
@@ -775,8 +775,8 @@
     <element id="Extension.extension:deathNotificationStatus">
       <path value="Extension.extension" />
       <sliceName value="deathNotificationStatus" />
-      <short value="To identify the type of death notice as held on Personal Demographics Service (PDS)" />
-      <definition value="To identify the type of death notice as held on Personal Demographics Service (PDS)." />
+      <short value="The patient's death notification status." />
+      <definition value="The patient's death notification status." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -786,23 +786,23 @@
     </element>
     <element id="Extension.extension:deathNotificationStatus.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="To identify the type of death notice as held on Personal Demographics Service (PDS)" />
-      <definition value="To identify the type of death notice as held on Personal Demographics Service (PDS)." />
+      <short value="The patient's death notification status." />
+      <definition value="The patient's death notification status." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="extensible" />
-        <description value="To identify the type of death notice as held on Personal Demographics Service (PDS)." />
+        <description value="The patient's death notification status." />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DeathNotificationStatus" />
       </binding>
     </element>
     <element id="Extension.extension:systemEffectiveDate">
       <path value="Extension.extension" />
       <sliceName value="systemEffectiveDate" />
-      <short value="System effective date for the death notification status" />
-      <definition value="System effective date for the death notification status." />
+      <short value="System effective date for patient's death notification status." />
+      <definition value="System effective date for patient's death notification status." />
       <max value="1" />
     </element>
     <element id="Extension.extension:systemEffectiveDate.url">
@@ -811,8 +811,8 @@
     </element>
     <element id="Extension.extension:systemEffectiveDate.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="System effective date" />
-      <definition value="System effective date for the death notification status" />
+      <short value="System effective date for patient's death notification status." />
+      <definition value="System effective date for patient's death notification status." />
       <min value="1" />
       <type>
         <code value="dateTime" />
