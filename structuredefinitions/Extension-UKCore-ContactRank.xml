@@ -6,6 +6,7 @@
   <name value="ExtensionUKCoreContactRank" />
   <title value="Extension UK Core Contact Rank" />
   <status value="draft" />
+  <experimental value="false" />
   <date value="2020-07-27" />
   <publisher value="HL7 UK" />
   <contact>
@@ -60,7 +61,7 @@
       <short value="Extension UK Core Contact Rank" />
       <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Extension" />
         <min value="0" />
@@ -236,6 +237,7 @@
       <path value="Extension" />
       <short value="Extension UK Core Contact Rank" />
       <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
