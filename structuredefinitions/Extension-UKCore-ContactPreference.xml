@@ -6,7 +6,6 @@
   <name value="ExtensionUKCoreContactPreference" />
   <title value="Extension UK Core Contact Preference" />
   <status value="draft" />
-  <experimental value="false" />
   <date value="2020-04-14" />
   <publisher value="HL7 UK" />
   <contact>
@@ -61,7 +60,7 @@
       <short value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <definition value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Extension" />
         <min value="0" />
@@ -961,6 +960,7 @@
       <path value="Extension" />
       <short value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <definition value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
+      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
