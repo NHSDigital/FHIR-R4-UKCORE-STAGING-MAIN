@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-PreferredContactMethod"/>
 	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredContactMethod"/>
@@ -5,7 +6,7 @@
 	<name value="UKCorePreferredContactMethod"/>
 	<title value="UK Core Preferred Contact Method"/>
 	<status value="draft"/>
-	<date value="2019-12-06T00:00:00+00:00"/>
+	<date value="2020-07-29T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
