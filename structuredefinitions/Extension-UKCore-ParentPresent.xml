@@ -7,16 +7,7 @@
   <title value="Extension UK Core Parent Present" />
   <status value="draft" />
   <date value="2020-03-10" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="Interoperability Team" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
+  <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
@@ -24,6 +15,15 @@
       <value value="secretariat@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
+    </telecom>
+  </contact>
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="2" />
     </telecom>
   </contact>
   <description value="This Extension resource is constrained to indicate whether a parent was present at the immunisation of a child." />
@@ -68,7 +68,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -76,7 +76,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="Extension" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -148,7 +148,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -156,7 +156,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="Extension" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -193,12 +193,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Was a parent present at an immunisation?" />
       <definition value="Was a parent present at an immunisation?" />
@@ -220,7 +214,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
-        <source value="Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -234,12 +228,6 @@
   </snapshot>
   <differential>
     <element id="Extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension" />
       <short value="Was a parent present at an immunisation?" />
       <definition value="Was a parent present at an immunisation?" />
@@ -250,12 +238,6 @@
       <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ParentPresent" />
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Was a parent present at an immunisation?" />
       <definition value="Was a parent present at an immunisation?" />

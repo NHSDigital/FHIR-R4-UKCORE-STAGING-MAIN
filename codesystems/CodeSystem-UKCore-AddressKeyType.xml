@@ -5,10 +5,10 @@
   <name value="UKCoreAddressKeyType" />
   <title value="UK Core Address Key Type" />
   <status value="draft" />
-  <date value="2019-12-06T00:00:00+00:00" />
+  <date value="2020-07-23T00:00:00+00:00" />
   <publisher value="NHS Digital" />
   <contact>
-    <name value="Interoperability Team" />
+    <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
@@ -20,7 +20,7 @@
   <content value="complete" />
   <concept>
     <code value="PAF" />
-    <display value="Postal Address File Key" />
+    <display value="Postcode Address File" />
   </concept>
   <concept>
     <code value="UPRN" />

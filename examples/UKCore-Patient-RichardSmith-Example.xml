@@ -1,48 +1,59 @@
 <Patient xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Patient-RichardSmith-Example" />
-  <meta>
-    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-  </meta>
-  <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
-    <valueCodeableConcept>
-      <coding>
-        <system value="https://fhir.nhs.uk/R4/UKCore-EthnicCategory-1" />
-        <code value="A" />
-        <display value="British, Mixed British" />
-      </coding>
-    </valueCodeableConcept>
-  </extension>
-  <identifier>
-    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
-      <valueCodeableConcept>
-        <coding>
-          <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-          <code value="01" />
-          <display value="Number present and verified" />
-        </coding>
-      </valueCodeableConcept>
-    </extension>
-    <system value="https://fhir.nhs.uk/Id/nhs-number" />
-    <value value="9912003888" />
-  </identifier>
-  <name>
-    <use value="official" />
-    <family value="SMITH" />
-    <given value="Richard" />
-  </name>
-  <telecom>
-    <system value="phone" />
-    <value value="01131231234" />
-  </telecom>
-  <gender value="male" />
-  <birthDate value="1970-09-11">
-    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-      <valueDateTime value="1970-09-11T13:46:00+00:00" />
-    </extension>
-  </birthDate>
-  <address>
-    <line value="4 Sandmoor Drive" />
-    <line value="LEEDS" />
-    <postalCode value="LS17 7DF" />
-  </address>
+	<id value="UKCore-Patient-RichardSmith-Example"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+	</meta>
+	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-EthnicCategory"/>
+				<code value="A"/>
+				<display value="British, Mixed British"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSCommunication">
+		<extension url="language">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-HumanLanguage"/>
+					<code value="en"/>
+					<display value="English"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<identifier>
+		<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+					<code value="01"/>
+					<display value="Number present and verified"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+		<value value="9912003888"/>
+	</identifier>
+	<name>
+		<use value="official"/>
+		<family value="SMITH"/>
+		<given value="Richard"/>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="01131231234"/>
+	</telecom>
+	<gender value="male"/>
+	<birthDate value="1970-09-11">
+		<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+			<valueDateTime value="1970-09-11T13:46:00+00:00"/>
+		</extension>
+	</birthDate>
+	<address>
+		<line value="4 Sandmoor Drive"/>
+		<line value="LEEDS"/>
+		<postalCode value="LS17 7DF"/>
+	</address>
 </Patient>

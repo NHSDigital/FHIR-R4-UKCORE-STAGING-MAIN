@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ContactRank" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreContactRank" />
-  <title value="Extension UK Core ContactRank" />
+  <title value="Extension UK Core Contact Rank" />
   <status value="draft" />
-  <experimental value="false" />
+  <date value="2020-07-27" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -26,7 +26,8 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="Extension UK Core ContactRank" />
+  <description value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+  <purpose value="This extension extends the Patient and RelatedPerson resources to support the exchange of the preferred ranking or order of contact applied to a contact on a Patient's contact list, which is currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -56,10 +57,10 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="Extension Contact Rank" />
-      <definition value="Extension to record preferred order of contact for a patient's contact list" />
+      <short value="Extension UK Core Contact Rank" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Extension" />
         <min value="0" />
@@ -198,8 +199,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Contact Rank" />
-      <definition value="positiveInt representing order to contact a patient's contact list" />
+      <short value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -233,8 +234,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Extension Contact Rank" />
-      <definition value="Extension to record preferred order of contact for a patient's contact list" />
+      <short value="Extension UK Core Contact Rank" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
@@ -242,8 +244,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Contact Rank" />
-      <definition value="positiveInt representing order to contact a patient's contact list" />
+      <short value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
       <min value="1" />
       <type>
         <code value="positiveInt" />

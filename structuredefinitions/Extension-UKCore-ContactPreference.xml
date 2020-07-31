@@ -2,11 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ContactPreference" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactPreference" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="ExtensionUKCoreContactPreference" />
   <title value="Extension UK Core Contact Preference" />
   <status value="draft" />
-  <experimental value="false" />
   <date value="2020-04-14" />
   <publisher value="HL7 UK" />
   <contact>
@@ -27,8 +26,8 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="UKCore Contact preferences for Patient, Patient.contact or RelatedPerson" />
-  <purpose value="To record contact preferences for Patient, Patient.contact or RelatedPerson" />
+  <description value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
+  <purpose value="This extension extends the Patient and RelatedPerson resources to support the exchange of their preferred method of contact, contact times and written communication format, which are currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -40,15 +39,11 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Patient.telecom" />
+    <expression value="Patient" />
   </context>
   <context>
     <type value="element" />
-    <expression value="RelatedPerson.telecom" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="Patient.contact" />
+    <expression value="RelatedPerson" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -62,10 +57,10 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="Contact preferences for Patient, Patient.contact or RelatedPerson" />
-      <definition value="To record contact preferences for Patient, Patient.contact or RelatedPerson" />
+      <short value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
+      <definition value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Extension" />
         <min value="0" />
@@ -187,7 +182,7 @@
       <path value="Extension.extension" />
       <sliceName value="PreferredContactMethod" />
       <short value="Preferred Contact Method" />
-      <definition value="Method of contact preference e.g. Letter, Visit, Telephone etc." />
+      <definition value="The preferred method of contact given by a Patient or Related Person." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -334,8 +329,8 @@
     </element>
     <element id="Extension.extension:PreferredContactMethod.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Method of contact preference e.g. Letter, Visit, Telephone etc." />
-      <definition value="Method of contact preference e.g. Letter, Visit, Telephone etc" />
+      <short value="Preferred Contact Method" />
+      <definition value="The preferred method of contact given by a Patient or Related Person." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -379,8 +374,8 @@
       </extension>
       <path value="Extension.extension" />
       <sliceName value="PreferredContactTimes" />
-      <short value="Preferred Contact times" />
-      <definition value="Preferred Contact times" />
+      <short value="Preferred Contact Times" />
+      <definition value="The preferred contact times given by a Patient or Related Person." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -527,8 +522,8 @@
     </element>
     <element id="Extension.extension:PreferredContactTimes.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Preferred Contact times" />
-      <definition value="Preferred Contact time period" />
+      <short value="Preferred Contact Times" />
+      <definition value="The preferred contact time period given by a Patient or Related Person." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -570,8 +565,8 @@
       </extension>
       <path value="Extension.extension" />
       <sliceName value="PreferredWrittenCommunicationFormat" />
-      <short value="Preferred written communication format" />
-      <definition value="Preferred written communication format, where different from standard text i.e. Large Print, Braille etc." />
+      <short value="Preferred Written Communication Format" />
+      <definition value="The preferred written communication format given by a Patient or Related Person." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -718,8 +713,8 @@
     </element>
     <element id="Extension.extension:PreferredWrittenCommunicationFormat.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Preferred written communication format" />
-      <definition value="Preferred written communication format" />
+      <short value="Preferred Written Communication Format" />
+      <definition value="The preferred written communication format given by a Patient or Related Person." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -963,8 +958,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Contact preferences for Patient, Patient.contact or RelatedPerson" />
-      <definition value="To record contact preferences for Patient, Patient.contact or RelatedPerson" />
+      <short value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
+      <definition value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
+      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -980,7 +976,7 @@
       <path value="Extension.extension" />
       <sliceName value="PreferredContactMethod" />
       <short value="Preferred Contact Method" />
-      <definition value="Method of contact preference e.g. Letter, Visit, Telephone etc." />
+      <definition value="The preferred method of contact given by a Patient or Related Person." />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredContactMethod.url">
@@ -989,8 +985,8 @@
     </element>
     <element id="Extension.extension:PreferredContactMethod.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Method of contact preference e.g. Letter, Visit, Telephone etc." />
-      <definition value="Method of contact preference e.g. Letter, Visit, Telephone etc" />
+      <short value="Preferred Contact Method" />
+      <definition value="The preferred method of contact given by a Patient or Related Person." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -1004,8 +1000,8 @@
     <element id="Extension.extension:PreferredContactTimes">
       <path value="Extension.extension" />
       <sliceName value="PreferredContactTimes" />
-      <short value="Preferred Contact times" />
-      <definition value="Preferred Contact times" />
+      <short value="Preferred Contact Times" />
+      <definition value="The preferred contact times given by a Patient or Related Person." />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredContactTimes.url">
@@ -1014,8 +1010,8 @@
     </element>
     <element id="Extension.extension:PreferredContactTimes.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Preferred Contact times" />
-      <definition value="Preferred Contact time period" />
+      <short value="Preferred Contact Times" />
+      <definition value="The preferred contact time period given by a Patient or Related Person." />
       <min value="1" />
       <type>
         <code value="string" />
@@ -1027,8 +1023,8 @@
     <element id="Extension.extension:PreferredWrittenCommunicationFormat">
       <path value="Extension.extension" />
       <sliceName value="PreferredWrittenCommunicationFormat" />
-      <short value="Preferred written communication format" />
-      <definition value="Preferred written communication format, where different from standard text i.e. Large Print, Braille etc." />
+      <short value="Preferred Written Communication Format" />
+      <definition value="The preferred written communication format given by a Patient or Related Person." />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredWrittenCommunicationFormat.url">
@@ -1037,8 +1033,8 @@
     </element>
     <element id="Extension.extension:PreferredWrittenCommunicationFormat.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Preferred written communication format" />
-      <definition value="Preferred written communication format" />
+      <short value="Preferred Written Communication Format" />
+      <definition value="The preferred written communication format given by a Patient or Related Person." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />

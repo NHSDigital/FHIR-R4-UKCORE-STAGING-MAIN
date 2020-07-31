@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-PreferredContactMethod" />
   <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PreferredContactMethod" />
@@ -5,10 +6,10 @@
   <name value="UKCorePreferredContactMethod" />
   <title value="UK Core Preferred Contact Method" />
   <status value="draft" />
-  <date value="2019-12-06T00:00:00+00:00" />
+  <date value="2020-07-29T00:00:00+00:00" />
   <publisher value="NHS Digital" />
   <contact>
-    <name value="Interoperability Team" />
+    <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
@@ -16,7 +17,7 @@
     </telecom>
   </contact>
   <description value="A CodeSystem to identify the preferred contact method of a patient, contact or related person." />
-  <copyright value="Copyright © 2019 NHS Digital" />
+  <copyright value="Copyright © 2020 NHS Digital" />
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
