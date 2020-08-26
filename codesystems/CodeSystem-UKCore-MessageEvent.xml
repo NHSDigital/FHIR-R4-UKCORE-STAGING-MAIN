@@ -1,0 +1,22 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-MessageEvent" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-MessageEvent" />
+  <version value="1.0.0" />
+  <name value="UKCoreMessageEvent" />
+  <title value="UK Core Message Event" />
+  <status value="draft" />
+  <date value="2020-08-26T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the type of event used by the message." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+</CodeSystem>
