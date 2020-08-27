@@ -19,4 +19,8 @@
   <copyright value="Copyright © 2020 NHS Digital" />
   <caseSensitive value="true" />
   <content value="complete" />
+   <concept>
+    <code value="Vaccinations" />
+    <display value="Vaccinations" />
+  </concept>
 </CodeSystem>
