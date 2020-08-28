@@ -20,7 +20,7 @@
   <caseSensitive value="true" />
   <content value="complete" />
    <concept>
-    <code value="Vaccinations" />
-    <display value="Vaccinations" />
+    <code value="family-history-1" />
+    <display value="Family History" />
   </concept>
 </CodeSystem>
