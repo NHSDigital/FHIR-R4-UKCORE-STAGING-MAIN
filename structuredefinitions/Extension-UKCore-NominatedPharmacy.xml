@@ -27,7 +27,7 @@
     </telecom>
   </contact>
   <description value="Individual's nominated pharmacy." />
-  <purpose value="This extension extends the Patient resource to hold the individuals nominated pharmacy, which is currently not supported by the FHIR standard." />
+  <purpose value="This extension extends the Patient resource to hold the individual's nominated pharmacy, which is currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -53,8 +53,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="A patient's nominated pharmacy" />
-      <definition value="A patient's nominated pharmacy." />
+      <short value="Individual's nominated pharmacy." />
+      <definition value="Individual's nominated pharmacy." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -827,7 +827,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
+        <source value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -892,8 +892,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="A patient's nominated pharmacy" />
-      <definition value="A patient's nominated pharmacy." />
+      <short value="Individual's nominated pharmacy." />
+      <definition value="Individual's nominated pharmacy." />
       <max value="1" />
     </element>
     <element id="Extension.url">
