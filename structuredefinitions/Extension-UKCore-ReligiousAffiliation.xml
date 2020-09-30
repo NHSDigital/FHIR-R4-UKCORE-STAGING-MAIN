@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ReligiousAffiliation" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreReligiousAffiliation" />
   <title value="Extension UK Core Religious Affiliation" />
   <status value="draft" />
@@ -26,8 +26,8 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="An extension to support the religious affiliation of an individual." />
-  <purpose value="This extension has been developed to demonstrate the representation of a patient's religious affiliation." />
+  <description value="Information about a patient's religious affiliation." />
+  <purpose value="This extension extends the Patient resource to support the exchange of information about a patient's religious affiliation, which is currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -54,7 +54,7 @@
       </extension>
       <path value="Extension" />
       <short value="Religious affiliation" />
-      <definition value="The religious affiliation of the subject." />
+      <definition value="The religious affiliation of the patient." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -195,8 +195,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="A code classifying the person's religious affiliation" />
-      <definition value="A code classifying the person's religious affiliation." />
+      <short value="A code classifying the patient's religious affiliation" />
+      <definition value="A code classifying the patient's religious affiliation." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -236,7 +236,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Religious affiliation" />
-      <definition value="The religious affiliation of the subject." />
+      <definition value="The religious affiliation of the patient." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
@@ -244,8 +244,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="A code classifying the person's religious affiliation" />
-      <definition value="A code classifying the person's religious affiliation." />
+      <short value="A code classifying the patient's religious affiliation" />
+      <definition value="A code classifying the patient's religious affiliation." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
