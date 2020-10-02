@@ -56,7 +56,7 @@
       <short value="SNOMED CT Description ID" />
       <definition value="The SNOMED CT description ID and display term" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Extension" />
         <min value="0" />
@@ -1170,7 +1170,6 @@
       <path value="Extension" />
       <short value="SNOMED CT Description ID" />
       <definition value="The SNOMED CT description ID and display term" />
-      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
