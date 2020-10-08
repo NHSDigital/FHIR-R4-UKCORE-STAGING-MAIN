@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A CodeSystem to identify the actual ContactPoint contact system intended by use of ContactPoint.system = @quot;other@quot; for any ContactPoint element in a UK Core or UK Core derived resource." />
+  <description value="A CodeSystem to identify other contact systems." />
   <copyright value="Copyright © 2020 NHS Digital" />
   <caseSensitive value="true" />
   <content value="complete" />
