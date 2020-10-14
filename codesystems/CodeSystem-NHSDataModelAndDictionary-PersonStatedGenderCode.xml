@@ -19,7 +19,7 @@
 		</telecom>
 	</contact>
 	<description value="The gender of a Person. Person Stated Gender Code is self declared or inferred by observation for those unable to declare their Person Stated Gender."/>
-	<copyright value="Copyright © 2019 NHS Digital"/>
+	<copyright value="Copyright © 2020 NHS Digital"/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
