@@ -1,0 +1,14 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Patient-Extension-OtherContactSystem-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-OtherContactSystem">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-OtherContactSystem"/>
+				<code value="textphone"/>
+				<display value="Minicom (Textphone)"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- *************extension end *****************-->
+</Patient>
