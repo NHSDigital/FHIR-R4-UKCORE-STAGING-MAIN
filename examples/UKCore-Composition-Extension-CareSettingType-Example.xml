@@ -1,0 +1,28 @@
+<Composition xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Composition-Extension-CareSettingType-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CareSettingType">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="893061000000109"/>
+				<display value="Cardiology service"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- *************extension end *****************-->
+	<status value="final"/>
+	<type>
+		<!--Discharge Summary document type-->
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="373942005"/>
+			<display value="Discharge summary"/>
+		</coding>
+	</type>
+	<date value="2020-11-11T21:30:00+00:00"/>
+	<author>
+		<reference value="urn:uuid:6555b7a7-380d-46ff-a1c5-7abc4e68f8bc"/>
+	</author>
+	<title value="Discharge summary"/>
+</Composition>
