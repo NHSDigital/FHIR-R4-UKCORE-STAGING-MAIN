@@ -4,7 +4,7 @@
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/d/disc/discharge_method_de.asp?shownav=1" />
   </extension>
   <url value="https://fhir.nhs.uk/R4/CodeSystem/NHSDataModelAndDictionary-DischargeMethod" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="NHSDataModelandDictionaryDischargeMethod" />
   <title value="NHS Data Model and Dictionary Discharge Method" />
   <status value="draft" />
@@ -20,6 +20,7 @@
   </contact>
   <description value="The method of discharge from a Hospital Provider Spell." />
   <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
   <content value="complete" />
   <concept>
     <code value="1" />

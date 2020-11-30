@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-ConsentUpdateMode" />
   <url value="https://fhir.nhs.uk/R4/Codesystem/UKCore-ConsentUpdateMode" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreConsentUpdateMode" />
   <title value="UK Core Consent Update Mode" />
   <status value="draft" />
@@ -17,6 +17,7 @@
   </contact>
   <description value="A CodeSystem to identify the whether this is the original or an amended resource." />
   <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
   <content value="complete" />
   <concept>
     <code value="added" />
