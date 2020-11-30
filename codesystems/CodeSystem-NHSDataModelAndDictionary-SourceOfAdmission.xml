@@ -4,7 +4,7 @@
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/s/smo/source_of_admission_de.asp?shownav=1" />
   </extension>
   <url value="https://fhir.nhs.uk/R4/CodeSystem/NHSDataModelAndDictionary-SourceOfAdmission" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="NHSDataModelandDictionarySourceOfAdmission" />
   <title value="NHS Data Model and Dictionary Source Of Admission" />
   <status value="draft" />
@@ -20,6 +20,7 @@
   </contact>
   <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home." />
   <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
   <content value="complete" />
   <concept>
     <code value="19" />

@@ -4,7 +4,7 @@
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/out/outcome_of_attendance_de.asp?shownav=1" />
   </extension>
   <url value="https://fhir.nhs.uk/R4/CodeSystem/NHSDataModelAndDictionary-OutcomeOfAttendance" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="NHSDataModelandDictionaryOutcomeofAttendance" />
   <title value="NHS Data Model and Dictionary Outcome of Attendance" />
   <status value="draft" />
@@ -20,6 +20,7 @@
   </contact>
   <description value="This records the outcome of an Out-Patient Attendance Consultant." />
   <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
   <content value="complete" />
   <concept>
     <code value="1" />
