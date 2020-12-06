@@ -27,4 +27,16 @@
     <code value="time-clinical-handover" />
     <display value="Time of Clinical Handover" />
   </concept>
+    <concept>
+    <code value="time-dispatch-code-established" />
+    <display value="Time Dispatch Code Established" />
+  </concept>
+     <concept>
+    <code value="time-arrived-receiving-location" />
+    <display value="Time Arrived at Receiving Location" />
+  </concept> 
+       <concept>
+    <code value="time-patient-handover" />
+    <display value="Time Patient Handover" />
+  </concept> 
 </CodeSystem>
