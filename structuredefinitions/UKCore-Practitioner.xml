@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Practitioner" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-  <version value="1.1.0" />
+  <version value="2.0.0" />
   <name value="UKCorePractitioner" />
   <title value="UK Core Practitioner" />
   <status value="draft" />

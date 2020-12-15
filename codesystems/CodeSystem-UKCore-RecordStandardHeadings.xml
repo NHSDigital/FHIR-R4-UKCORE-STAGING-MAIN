@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-RecordStandardHeadings" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCoreRecordStandardHeadings" />
   <title value="UK Core Record Standard Headings" />
   <status value="draft" />

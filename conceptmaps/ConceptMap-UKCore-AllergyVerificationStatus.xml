@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyVerificationStatus"/>
 	<url value="https://fhir.hl7.org.uk/ConceptMap/ConceptMap-UKCore-AllergyVerificationStatus"/>
-	<version value="1.0.0"/>
+	<version value="2.0.0"/>
 	<name value="ConceptMapUKCoreAllergyVerificationStatus"/>
 	<title value="Concept Map - UK Core Allergy Verification Status"/>
 	<status value="draft"/>

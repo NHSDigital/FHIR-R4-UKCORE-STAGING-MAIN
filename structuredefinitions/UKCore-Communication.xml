@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Communication" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCoreCommunication" />
   <title value="UK Core Communication" />
   <status value="draft" />

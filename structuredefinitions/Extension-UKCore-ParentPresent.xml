@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ParentPresent" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="ExtensionUKCoreParentPresent" />
   <title value="Extension UK Core Parent Present" />
   <status value="draft" />

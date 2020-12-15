@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AdministrativeGender"/>
 	<url value="https://fhir.hl7.org.uk/ConceptMap/ConceptMap-UKCore-AdministrativeGender"/>
-	<version value="1.0.0"/>
+	<version value="2.0.0"/>
 	<name value="ConceptMapUKCoreAdministrativeGender"/>
 	<title value="Concept Map - UK Core Administrative Gender"/>
 	<status value="draft"/>

@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-PrescriptionType" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrescriptionType" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCorePrescriptionType" />
   <title value="UK Core Prescription Type" />
   <status value="draft" />

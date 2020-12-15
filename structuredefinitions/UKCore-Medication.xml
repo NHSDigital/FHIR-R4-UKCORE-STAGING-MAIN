@@ -5,7 +5,7 @@
     <lastUpdated value="2020-02-07T10:24:47.575+00:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCoreMedication" />
   <title value="UK Core Medication" />
   <status value="draft" />
