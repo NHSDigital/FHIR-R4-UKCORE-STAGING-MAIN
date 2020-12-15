@@ -2,7 +2,7 @@
 <CareTeam xmlns="http://hl7.org/fhir">
 	<id value="UKCore-CareTeam-WeightManagementTeam-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CareTeam"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam"/>
 	</meta>
 	<status value="inactive"/>
 	<name value="Weight management team"/>

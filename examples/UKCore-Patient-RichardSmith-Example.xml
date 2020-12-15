@@ -1,22 +1,22 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-RichardSmith-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
 	</meta>
-	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 		<valueCodeableConcept>
 			<coding>
-				<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-EthnicCategory"/>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
 				<code value="A"/>
 				<display value="British, Mixed British"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSCommunication">
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication">
 		<extension url="language">
 			<valueCodeableConcept>
 				<coding>
-					<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-HumanLanguage"/>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
 					<code value="en"/>
 					<display value="English"/>
 				</coding>
@@ -24,10 +24,10 @@
 		</extension>
 	</extension>
 	<identifier>
-		<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 			<valueCodeableConcept>
 				<coding>
-					<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
 					<code value="01"/>
 					<display value="Number present and verified"/>
 				</coding>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-EmergencyCareDischargeStatus" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreEmergencyCareDischargeStatus" />
   <title value="Extension UK Core Emergency Care Discharge Status" />
@@ -187,7 +187,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -220,7 +220,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The status of a patient on discharge from an Emergency Care Department" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-EmergencyCareDischargeStatus" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EmergencyCareDischargeStatus" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -241,7 +241,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -254,7 +254,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The status of a patient on discharge from an Emergency Care Department" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-EmergencyCareDischargeStatus" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EmergencyCareDischargeStatus" />
       </binding>
     </element>
   </differential>

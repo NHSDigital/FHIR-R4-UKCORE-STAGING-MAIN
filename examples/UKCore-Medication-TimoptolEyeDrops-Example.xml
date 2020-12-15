@@ -1,7 +1,7 @@
 <Medication xmlns="http://hl7.org/fhir">
   <id value="UKCore-Medication-TimoptolEyeDrops-Example" />
   <meta>
-    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
   </meta>
   <code>
     <coding>

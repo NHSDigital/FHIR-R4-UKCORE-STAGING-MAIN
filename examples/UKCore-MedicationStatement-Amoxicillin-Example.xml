@@ -2,7 +2,7 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationStatement"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
 	</meta>
 	<status value="active"/>
 	<medicationCodeableConcept>

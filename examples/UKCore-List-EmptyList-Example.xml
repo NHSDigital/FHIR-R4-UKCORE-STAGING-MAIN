@@ -1,7 +1,7 @@
 <List xmlns="http://hl7.org/fhir" >
   <id value="UKCore-List-EmptyList-Example" />
   <meta>
-    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
   </meta>
   <status value="current" />
   <mode value="working" />
@@ -18,7 +18,7 @@
   <date value="2019-12-10T13:00:00+00:00" />
   <emptyReason>
     <coding>
-      <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListEmptyReasonCode" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListEmptyReasonCode" />
       <code value="no-content-recorded" />
       <display value="No Content Recorded" />
     </coding>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-MedicationRepeatInformation" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreMedicationRepeatInformation" />
   <title value="Extension UK Core Medication Repeat Information" />
@@ -751,7 +751,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1017,7 +1017,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

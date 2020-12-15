@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-TypedDateTime" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreTypedDateTime" />
   <title value="Extension UK Core Typed Date Time" />
@@ -354,7 +354,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The type of date time." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DateTimeType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DateTimeType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -572,7 +572,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -790,7 +790,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The type of date time." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DateTimeType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DateTimeType" />
       </binding>
     </element>
     <element id="Extension.extension:dateTime">
@@ -813,7 +813,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

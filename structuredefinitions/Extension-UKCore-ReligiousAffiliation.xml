@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ReligiousAffiliation" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreReligiousAffiliation" />
   <title value="Extension UK Core Religious Affiliation" />
@@ -187,7 +187,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -220,7 +220,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Religious Affiliation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReligiousAffiliation" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReligiousAffiliation" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -240,7 +240,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ReligiousAffiliation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -253,7 +253,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Religious Affiliation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReligiousAffiliation" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReligiousAffiliation" />
       </binding>
     </element>
   </differential>

@@ -1,6 +1,6 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ConditionEpisodicity"/>
-	<url value="https://fhir.nhs.uk/R4/ConceptMap/ConceptMap-UKCore-ConditionEpisodicity"/>
+	<url value="https://fhir.hl7.org.uk/ConceptMap/ConceptMap-UKCore-ConditionEpisodicity"/>
 	<version value="1.0.0"/>
 	<name value="ConceptMapUKCoreConditionEpisodicity"/>
 	<title value="ConceptMap - UK Core Condition Episodicity"/>
@@ -27,10 +27,10 @@
 	</contact>
 	<description value="A Concept Map from ValueSet Condition Episodicity Severity to equivalent Snomed CT codes"/>
 	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<sourceUri value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionEpisodicity"/>
-	<targetUri value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionEpisode"/>
+	<sourceUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionEpisodicity"/>
+	<targetUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionEpisode"/>
 	<group>
-		<source value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity"/>
+		<source value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity"/>
 		<target value="http://snomed.info/sct"/>
 		<element>
 			<code value="first"/>

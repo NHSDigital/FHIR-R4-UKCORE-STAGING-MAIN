@@ -2,7 +2,7 @@
 			<Observation>
  <id value="UKCore-Observation-WhiteCellCount-Example"/>
 				<meta>
-				  <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation"/>
+				  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

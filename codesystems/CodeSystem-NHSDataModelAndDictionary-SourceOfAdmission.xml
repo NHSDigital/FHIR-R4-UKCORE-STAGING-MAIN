@@ -3,7 +3,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/s/smo/source_of_admission_de.asp?shownav=1" />
   </extension>
-  <url value="https://fhir.nhs.uk/R4/CodeSystem/NHSDataModelAndDictionary-SourceOfAdmission" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-SourceOfAdmission" />
   <version value="1.0.1" />
   <name value="NHSDataModelandDictionarySourceOfAdmission" />
   <title value="NHS Data Model and Dictionary Source Of Admission" />

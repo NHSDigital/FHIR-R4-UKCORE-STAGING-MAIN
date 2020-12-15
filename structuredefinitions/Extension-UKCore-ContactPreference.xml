@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ContactPreference" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactPreference" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
   <version value="1.2.0" />
   <name value="ExtensionUKCoreContactPreference" />
   <title value="Extension UK Core Contact Preference" />
@@ -354,7 +354,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Preferred Contact Method" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredContactMethod" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PreferredContactMethod" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -738,7 +738,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Preferred written communication format" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredWrittenCommunicationFormat" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PreferredWrittenCommunicationFormat" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -768,7 +768,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactPreference" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -994,7 +994,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Preferred Contact Method" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredContactMethod" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PreferredContactMethod" />
       </binding>
     </element>
     <element id="Extension.extension:PreferredContactTimes">
@@ -1042,12 +1042,12 @@
       <binding>
         <strength value="extensible" />
         <description value="Preferred written communication format" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredWrittenCommunicationFormat" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PreferredWrittenCommunicationFormat" />
       </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactPreference" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

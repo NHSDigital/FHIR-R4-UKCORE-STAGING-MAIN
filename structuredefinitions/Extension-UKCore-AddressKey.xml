@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-AddressKey" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AddressKey" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreAddressKey" />
   <title value="Extension UK Core Address Key" />
@@ -350,7 +350,7 @@
       <binding>
         <strength value="extensible" />
         <description value="To identify the type of Address Key recorded" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AddressKeyType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AddressKeyType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -568,7 +568,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AddressKey" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -794,7 +794,7 @@
       <binding>
         <strength value="extensible" />
         <description value="To identify the type of Address Key recorded" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AddressKeyType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AddressKeyType" />
       </binding>
     </element>
     <element id="Extension.extension:value">
@@ -817,7 +817,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AddressKey" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient>
 	<id value="UKCore-Patient-Extension-PreferredDispenserOrganization-Example"/>
-	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
 		<valueReference>
 			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
 		</valueReference>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-RelatedPerson" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
   <version value="1.0.0" />
   <name value="UKCoreRelatedPerson" />
   <title value="UK Core RelatedPerson" />
@@ -845,7 +845,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -943,7 +943,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1012,7 +1012,7 @@
         </extension>
         <strength value="extensible" />
         <description value="The nature of the relationship between a patient and the related person." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonRelationshipType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1650,14 +1650,14 @@
       <path value="RelatedPerson.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
     <element id="RelatedPerson.relationship">
@@ -1667,7 +1667,7 @@
           <valueString value="PatientRelationshipType" />
         </extension>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonRelationshipType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
   </differential>

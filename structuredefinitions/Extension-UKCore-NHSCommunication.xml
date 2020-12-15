@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-NHSCommunication" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSCommunication" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreNHSCommunication" />
   <title value="Extension UK Core NHS Communication" />
@@ -358,7 +358,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Human Language" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-HumanLanguage" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -739,7 +739,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Language Ability Mode" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-LanguageAbilityMode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LanguageAbilityMode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -932,7 +932,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Language Ability Proficiency" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-LanguageAbilityProficiency" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LanguageAbilityProficiency" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1150,7 +1150,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSCommunication" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1375,7 +1375,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Human Language" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-HumanLanguage" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
       </binding>
     </element>
     <element id="Extension.extension:preferred">
@@ -1417,7 +1417,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Language Ability Mode" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-LanguageAbilityMode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LanguageAbilityMode" />
       </binding>
     </element>
     <element id="Extension.extension:communicationProficiency">
@@ -1441,7 +1441,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Language Ability Proficiency" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-LanguageAbilityProficiency" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LanguageAbilityProficiency" />
       </binding>
     </element>
     <element id="Extension.extension:interpreterRequired">
@@ -1465,7 +1465,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSCommunication" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

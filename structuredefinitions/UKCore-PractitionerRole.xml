@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-PractitionerRole" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
   <version value="1.1.0" />
   <name value="UKCorePractitionerRole" />
   <title value="UK Core PractitionerRole" />
@@ -929,7 +929,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1091,7 +1091,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1707,7 +1707,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1799,7 +1799,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2415,7 +2415,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2593,7 +2593,7 @@
       <binding>
         <strength value="required" />
         <description value="The role a person plays representing an organization." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-SDSJobRoleName" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SDSJobRoleName" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2861,7 +2861,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+      <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3185,7 +3185,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3809,7 +3809,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4520,7 +4520,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5837,7 +5837,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5947,35 +5947,35 @@
       <path value="PractitionerRole.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
       </type>
     </element>
     <element id="PractitionerRole.practitioner.identifier.assigner">
       <path value="PractitionerRole.practitioner.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="PractitionerRole.organization.identifier.assigner">
       <path value="PractitionerRole.organization.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="PractitionerRole.code">
@@ -5994,7 +5994,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-SDSJobRoleName" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SDSJobRoleName" />
       </binding>
     </element>
     <element id="PractitionerRole.code:sdsJobRoleName.coding">
@@ -6005,7 +6005,7 @@
     <element id="PractitionerRole.code:sdsJobRoleName.coding.system">
       <path value="PractitionerRole.code.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+      <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
     </element>
     <element id="PractitionerRole.code:sdsJobRoleName.coding.code">
       <path value="PractitionerRole.code.coding.code" />
@@ -6022,28 +6022,28 @@
       <path value="PractitionerRole.location" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
     </element>
     <element id="PractitionerRole.location.identifier.assigner">
       <path value="PractitionerRole.location.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="PractitionerRole.healthcareService.identifier.assigner">
       <path value="PractitionerRole.healthcareService.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="PractitionerRole.endpoint.identifier.assigner">
       <path value="PractitionerRole.endpoint.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>

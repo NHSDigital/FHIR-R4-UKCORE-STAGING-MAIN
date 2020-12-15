@@ -1,7 +1,7 @@
 <Organization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-Extension-MainLocation-Example"/>
 	<!-- **************extension start************** -->
-	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MainLocation">
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
 		<valueReference>
 			<reference value="Location/UKCore-Location-Cardiology-Anon-Hospital-Example"/>
 			<type value="Organization"/>

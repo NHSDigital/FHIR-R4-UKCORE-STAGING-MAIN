@@ -2,11 +2,11 @@
 	<id value="UKCore-Patient-Extension-AddressKey-Example"/>
 	<address>
 		<!-- **************extension start************** -->
-		<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AddressKey">
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
 			<extension url="type">
 				<valueCodeableConcept>
 					<coding>
-						<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AddressKey"/>
+						<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKey"/>
 						<code value="PAF"/>
 						<display value="Postcode Address File"/>
 					</coding>

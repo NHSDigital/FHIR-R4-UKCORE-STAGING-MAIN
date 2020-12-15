@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DeathNotificationStatus" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreDeathNotificationStatus" />
   <title value="Extension UK Core Death Notification Status" />
@@ -350,7 +350,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The patient's death notification status." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DeathNotificationStatus" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DeathNotificationStatus" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -568,7 +568,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -795,7 +795,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The patient's death notification status." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DeathNotificationStatus" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DeathNotificationStatus" />
       </binding>
     </element>
     <element id="Extension.extension:systemEffectiveDate">
@@ -820,7 +820,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

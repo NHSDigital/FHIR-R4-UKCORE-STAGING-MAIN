@@ -1,7 +1,7 @@
 <Location xmlns="http://hl7.org/fhir">
   <id value="UKCore-Location-CardiologySJUH-Example" />
   <meta>
-    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
   </meta>
   <identifier>
     <system value="https://fhir.nhs.uk/Id/ods-site-code" />

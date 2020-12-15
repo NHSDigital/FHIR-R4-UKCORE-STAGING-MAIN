@@ -1,7 +1,7 @@
 <Encounter xmlns="http://hl7.org/fhir">
   <id value="UKCore-Encounter-InpatientEncounter-Example" />
   <meta>
-    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
   </meta>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -49,7 +49,7 @@
   <hospitalization>
     <dischargeDisposition>
       <coding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeDestination" />
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestination" />
         <code value="19" />
         <display value="Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode." />
       </coding>
