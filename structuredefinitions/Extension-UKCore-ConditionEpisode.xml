@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ConditionEpisode" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="ExtensionUKCoreConditionEpisode" />
   <title value="Extension UK Core Condition Episode" />
   <status value="draft" />

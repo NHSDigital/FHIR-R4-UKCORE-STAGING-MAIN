@@ -5,7 +5,7 @@
     <lastUpdated value="2020-02-11T11:36:48.088+00:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCoreServiceRequest" />
   <title value="UK Core ServiceRequest" />
   <status value="draft" />

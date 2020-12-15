@@ -4,7 +4,7 @@
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/a/add/admission_method_de.asp?shownav=1" />
   </extension>
   <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-AdmissionMethod" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="NHSDataModelandDictionaryAdmissionMethod" />
   <title value="NHS Data Model and Dictionary Admission Method" />
   <status value="draft" />

@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-CareSettingType"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType"/>
-	<version value="2.0.0"/>
+	<version value="3.0.0"/>
 	<name value="UKCoreCareSettingType"/>
 	<title value="UK Core Care Setting Type"/>
 	<status value="draft"/>

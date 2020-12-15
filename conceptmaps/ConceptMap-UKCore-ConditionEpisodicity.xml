@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ConditionEpisodicity"/>
 	<url value="https://fhir.hl7.org.uk/ConceptMap/ConceptMap-UKCore-ConditionEpisodicity"/>
-	<version value="1.0.0"/>
+	<version value="2.0.0"/>
 	<name value="ConceptMapUKCoreConditionEpisodicity"/>
 	<title value="ConceptMap - UK Core Condition Episodicity"/>
 	<status value="draft"/>

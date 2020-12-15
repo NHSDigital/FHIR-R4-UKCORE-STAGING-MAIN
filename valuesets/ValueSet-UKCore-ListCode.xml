@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ListCode"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode"/>
-	<version value="1.4.0"/>
+	<version value="2.0.0"/>
 	<name value="UKCoreListCode"/>
 	<title value="UK Core List Code"/>
 	<status value="draft"/>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Composition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCoreComposition" />
   <title value="UK Core Composition" />
   <status value="draft" />

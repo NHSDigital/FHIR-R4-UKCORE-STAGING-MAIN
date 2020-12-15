@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergySeverity"/>
 	<url value="https://fhir.hl7.org.uk/ConceptMap/ConceptMap-UKCore-AllergySeverity"/>
-	<version value="1.0.0"/>
+	<version value="2.0.0"/>
 	<name value="ConceptMapUKCoreAllergySeverity"/>
 	<title value="Concept Map - UK Core Allergy Severity"/>
 	<status value="draft"/>

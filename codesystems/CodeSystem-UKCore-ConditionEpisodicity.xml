@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-ConditionEpisodicity" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCoreConditionEpisodicity" />
   <title value="UK Core Condition Episodicity" />
   <status value="draft" />

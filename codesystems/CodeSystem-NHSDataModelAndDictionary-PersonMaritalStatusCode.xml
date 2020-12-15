@@ -4,7 +4,7 @@
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/p/person/person_marital_status_code_de.asp?shownav=1" />
   </extension>
   <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-PersonMaritalStatusCode" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="NHSDataModelandDictionaryPersonMaritalStatusCode" />
   <title value="NHS Data Model and Dictionary Person Marital Status Code" />
   <status value="active" />

@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyCode"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode"/>
-	<version value="1.1.0"/>
+	<version value="2.0.0"/>
 	<name value="UKCoreAllergyCode"/>
 	<title value="UK Core Allergy Code"/>
 	<status value="draft"/>
