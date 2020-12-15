@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Practitioner" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
   <version value="1.1.0" />
   <name value="UKCorePractitioner" />
   <title value="UK Core Practitioner" />
@@ -3680,7 +3680,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6882,7 +6882,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8785,7 +8785,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9950,7 +9950,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11912,7 +11912,7 @@
       <path value="Practitioner.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Practitioner.identifier:sdsUserID.assigner.identifier.type.coding.display">
@@ -11955,7 +11955,7 @@
       <path value="Practitioner.qualification.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Practitioner.qualification.identifier.assigner.identifier.type.coding.display">
@@ -11992,7 +11992,7 @@
       <path value="Practitioner.qualification.issuer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Practitioner.qualification.issuer.identifier.type.coding.display">
@@ -12011,7 +12011,7 @@
       <path value="Practitioner.qualification.issuer.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Practitioner.qualification.issuer.identifier.assigner.identifier.type.coding.display">

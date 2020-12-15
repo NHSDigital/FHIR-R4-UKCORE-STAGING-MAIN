@@ -1,9 +1,9 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
     <id value="UKCore-AllergyIntolerance-EnteredInError-Example" />
     <meta>
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
     </meta>
-    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd">
         <extension url="endDate">
             <valueDateTime value="2020-03-11T13:00:00+00:00" />
         </extension>

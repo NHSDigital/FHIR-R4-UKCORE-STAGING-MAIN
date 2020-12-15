@@ -1,7 +1,7 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
   <id value="UKCore-AllergyIntolerance-Amoxicillin-Example" />
   <meta>
-    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
   </meta>
   <clinicalStatus>
     <coding>

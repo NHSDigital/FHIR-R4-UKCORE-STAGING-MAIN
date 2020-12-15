@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Consent" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
   <version value="1.0.0" />
   <name value="UKCoreConsent" />
   <title value="UK Core Consent" />
@@ -2438,7 +2438,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4925,7 +4925,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6248,11 +6248,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7525,7 +7525,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8799,7 +8799,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Contract" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9812,8 +9812,8 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12064,11 +12064,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -18050,11 +18050,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -29106,7 +29106,7 @@
       <path value="Consent.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Consent.identifier.assigner.identifier.type.coding.display">
@@ -29155,7 +29155,7 @@
       <path value="Consent.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
     <element id="Consent.patient.identifier.type.coding.display">
@@ -29180,11 +29180,11 @@
       <path value="Consent.performer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
     <element id="Consent.performer.identifier.type.coding.display">
@@ -29209,7 +29209,7 @@
       <path value="Consent.organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Consent.organization.identifier.type.coding.display">
@@ -29240,7 +29240,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Contract" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
       </type>
     </element>
     <element id="Consent.policyRule.coding.display">
@@ -29259,8 +29259,8 @@
       <path value="Consent.verification.verifiedWith" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
     <element id="Consent.verification.verifiedWith.identifier.type.coding.display">
@@ -29300,11 +29300,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
     <element id="Consent.provision.actor.reference.identifier.type.coding.display">
@@ -29404,11 +29404,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
     <element id="Consent.provision.provision.actor.reference.identifier.type.coding.display">

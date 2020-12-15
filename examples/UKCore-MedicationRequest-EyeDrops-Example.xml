@@ -2,7 +2,7 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationRequest-EyeDrops-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"/>
 	</meta>
 	<status value="completed"/>
 	<intent value="order"/>

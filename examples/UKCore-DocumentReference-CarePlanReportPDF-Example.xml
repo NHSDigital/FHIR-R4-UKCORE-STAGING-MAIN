@@ -2,7 +2,7 @@
 <DocumentReference xmlns="http://hl7.org/fhir">
 <id value="UKCore-DocumentReference-CarePlanReportPDF-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DocumentReference"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference"/>
 	</meta>
 	<status value="current"/>
 	<type>

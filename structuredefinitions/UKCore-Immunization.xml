@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Immunization" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Immunization" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
   <version value="1.0.0" />
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
@@ -865,7 +865,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -985,7 +985,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A ValueSet to identify the reason why an immunization was not administered." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1040,7 +1040,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccine or a null flavor value." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-VaccineCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1093,7 +1093,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1725,7 +1725,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1817,7 +1817,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2444,7 +2444,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2729,7 +2729,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3356,7 +3356,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3448,7 +3448,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4071,7 +4071,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4532,7 +4532,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationDosageRoute" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageRoute" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5205,9 +5205,9 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5398,10 +5398,10 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <type>
         <code value="string" />
@@ -5543,7 +5543,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The reason why a vaccine was administered." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ImmunizationExplanationReason" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5584,9 +5584,9 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6205,7 +6205,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7000,7 +7000,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7619,7 +7619,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7934,7 +7934,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8549,7 +8549,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8758,7 +8758,7 @@
       <path value="Immunization.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.statusReason">
@@ -8766,7 +8766,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A ValueSet to identify the reason why an immunization was not administered." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
       </binding>
     </element>
     <element id="Immunization.vaccineCode">
@@ -8774,63 +8774,63 @@
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccine or a null flavor value." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-VaccineCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
       </binding>
     </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
     <element id="Immunization.patient.identifier.assigner">
       <path value="Immunization.patient.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
       </type>
     </element>
     <element id="Immunization.encounter.identifier.assigner">
       <path value="Immunization.encounter.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.location">
       <path value="Immunization.location" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
     </element>
     <element id="Immunization.location.identifier.assigner">
       <path value="Immunization.location.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.manufacturer">
       <path value="Immunization.manufacturer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.manufacturer.identifier.assigner">
       <path value="Immunization.manufacturer.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.route.coding">
@@ -8849,7 +8849,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationDosageRoute" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageRoute" />
       </binding>
     </element>
     <element id="Immunization.route.coding:snomedCT.system">
@@ -8872,19 +8872,19 @@
       <path value="Immunization.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.note.author[x]">
       <path value="Immunization.note.author[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <type>
         <code value="string" />
@@ -8894,51 +8894,51 @@
       <path value="Immunization.reasonCode" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ImmunizationExplanationReason" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
       </binding>
     </element>
     <element id="Immunization.reasonReference">
       <path value="Immunization.reasonReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
       </type>
     </element>
     <element id="Immunization.reasonReference.identifier.assigner">
       <path value="Immunization.reasonReference.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.reaction.detail">
       <path value="Immunization.reaction.detail" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
     </element>
     <element id="Immunization.reaction.detail.identifier.assigner">
       <path value="Immunization.reaction.detail.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.protocolApplied.authority">
       <path value="Immunization.protocolApplied.authority" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Immunization.protocolApplied.authority.identifier.assigner">
       <path value="Immunization.protocolApplied.authority.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>

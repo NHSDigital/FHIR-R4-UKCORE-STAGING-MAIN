@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DischargeMethod" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DischargeMethod" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreDischargeMethod" />
   <title value="Extension UK Core Discharge Method" />
@@ -187,7 +187,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DischargeMethod" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -220,7 +220,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The method by which a patient was discharged from hospital" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeMethod" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeMethod" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -241,7 +241,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DischargeMethod" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -254,7 +254,7 @@
       <binding>
         <strength value="extensible" />
         <description value="The method by which a patient was discharged from hospital" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeMethod" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeMethod" />
       </binding>
     </element>
   </differential>

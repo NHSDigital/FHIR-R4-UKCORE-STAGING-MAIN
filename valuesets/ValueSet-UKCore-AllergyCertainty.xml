@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyCertainty"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyCertainty"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCertainty"/>
 	<version value="1.0.0"/>
 	<name value="UKCoreAllergyCertainty"/>
 	<title value="UK Core Allergy Certainty"/>

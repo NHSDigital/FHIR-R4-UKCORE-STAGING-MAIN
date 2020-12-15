@@ -3,7 +3,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
     <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/out/outcome_of_attendance_de.asp?shownav=1" />
   </extension>
-  <url value="https://fhir.nhs.uk/R4/CodeSystem/NHSDataModelAndDictionary-OutcomeOfAttendance" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-OutcomeOfAttendance" />
   <version value="1.0.1" />
   <name value="NHSDataModelandDictionaryOutcomeofAttendance" />
   <title value="NHS Data Model and Dictionary Outcome of Attendance" />

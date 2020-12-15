@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ResidentialStatus" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ResidentialStatus" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreResidentialStatus" />
   <title value="Extension UK Core Residential Status" />
@@ -187,7 +187,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ResidentialStatus" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -220,7 +220,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Residential Status" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ResidentialStatus" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ResidentialStatus" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -241,7 +241,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ResidentialStatus" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -254,7 +254,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Residential Status" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ResidentialStatus" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ResidentialStatus" />
       </binding>
     </element>
   </differential>

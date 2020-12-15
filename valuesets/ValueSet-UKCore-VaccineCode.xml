@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="UKCore-VaccineCode"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-VaccineCode"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode"/>
 	<version value="1.0.0"/>
 	<name value="UKCoreVaccineCode"/>
 	<title value="UK Core Vaccine Code"/>

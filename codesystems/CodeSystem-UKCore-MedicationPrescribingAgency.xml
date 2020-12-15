@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="UKCore-MedicationPrescribingAgency" />
-    <url value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-MedicationPrescribingAgency" />
+    <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingAgency" />
     <version value="1.0.0" />
     <name value="UKCoreMedicationPrescribingAgency" />
     <title value="UK Core Medication Prescribing Agency" />

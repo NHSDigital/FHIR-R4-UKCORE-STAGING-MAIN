@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-02-07T10:24:47.575+00:00" />
   </meta>
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
   <version value="1.0.0" />
   <name value="UKCoreMedication" />
   <title value="UK Core Medication" />
@@ -854,7 +854,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -923,7 +923,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a medication from the VTM/VMP/VMPP/AMP/AMPP subsets from the dm+d terminology." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1016,7 +1016,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1644,7 +1644,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1749,7 +1749,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A coded concept defining the form of a medication." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationForm" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2004,7 +2004,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2379,7 +2379,7 @@
       <path value="Medication.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Medication.code">
@@ -2387,28 +2387,28 @@
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a medication from the VTM/VMP/VMPP/AMP/AMPP subsets from the dm+d terminology." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
     </element>
     <element id="Medication.manufacturer">
       <path value="Medication.manufacturer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Medication.manufacturer.identifier.assigner">
       <path value="Medication.manufacturer.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Medication.form">
       <path value="Medication.form" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationForm" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm" />
       </binding>
     </element>
     <element id="Medication.ingredient.item[x]">
@@ -2419,7 +2419,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
       </type>
     </element>
   </differential>

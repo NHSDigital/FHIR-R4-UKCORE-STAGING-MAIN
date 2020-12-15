@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-List" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
   <version value="1.0.0" />
   <name value="UKCoreList" />
   <title value="UK Core List" />
@@ -2394,7 +2394,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3817,7 +3817,7 @@
       <binding>
         <strength value="extensible" />
         <description value="What the purpose of a list is." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ListCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4381,8 +4381,8 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5556,7 +5556,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6871,7 +6871,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8040,7 +8040,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9397,9 +9397,9 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -10569,7 +10569,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12585,10 +12585,10 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <type>
         <code value="string" />
@@ -14695,7 +14695,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -16025,7 +16025,7 @@
       <binding>
         <strength value="extensible" />
         <description value="If a list is empty, why it is empty." />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ListEmptyReasonCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListEmptyReasonCode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -16598,7 +16598,7 @@
       <path value="List.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="List.identifier.assigner.identifier.type.coding.display">
@@ -16623,7 +16623,7 @@
       <path value="List.code" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ListCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode" />
       </binding>
     </element>
     <element id="List.code.coding.display">
@@ -16644,8 +16644,8 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
     </element>
     <element id="List.subject.identifier.type.coding.display">
@@ -16664,7 +16664,7 @@
       <path value="List.subject.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="List.subject.identifier.assigner.identifier.type.coding.display">
@@ -16695,7 +16695,7 @@
       <path value="List.encounter" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
       </type>
     </element>
     <element id="List.encounter.identifier.type.coding.display">
@@ -16714,7 +16714,7 @@
       <path value="List.encounter.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="List.encounter.identifier.assigner.identifier.type.coding.display">
@@ -16746,9 +16746,9 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
     </element>
     <element id="List.source.identifier.type.coding.display">
@@ -16767,7 +16767,7 @@
       <path value="List.source.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="List.source.identifier.assigner.identifier.type.coding.display">
@@ -16810,10 +16810,10 @@
       <path value="List.note.author[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <type>
         <code value="string" />
@@ -16847,7 +16847,7 @@
       <path value="List.entry.item.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="List.entry.item.identifier.assigner.identifier.type.coding.display">
@@ -16878,7 +16878,7 @@
       <path value="List.emptyReason" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ListEmptyReasonCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListEmptyReasonCode" />
       </binding>
     </element>
     <element id="List.emptyReason.coding.display">

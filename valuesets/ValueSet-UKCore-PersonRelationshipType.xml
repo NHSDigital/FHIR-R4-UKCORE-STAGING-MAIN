@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-PersonRelationshipType"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/UKCore-PersonRelationshipType"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType"/>
 	<version value="2.0.0"/>
 	<name value="UKCorePersonRelationshipType"/>
 	<title value="UK Core Person Relationship Type"/>
@@ -40,7 +40,7 @@
 			</filter>
 		</include>
 		<include>
-			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
 		</include>
 	</compose>
 </ValueSet>
