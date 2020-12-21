@@ -1,0 +1,120 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="UKCore-VitalSignsObservationType" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-VitalSignsObservationType" />
+  <version value="2.0.0" />
+  <name value="UKCoreVitalSignsObservationType" />
+  <title value="UK Core Vital Signs Observation Type" />
+  <status value="draft" />
+  <date value="2020-12-21T12:00:00+00:00" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="secretariat@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="2" />
+    </telecom>
+  </contact>
+  <description value="A code from the SNOMED Clinical Terminology UK coding system for the type of vital sign." />
+  <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(75367002 | Blood pressure |)" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;&lt;75367002|Blood pressure (observable entity)| MINUS (&lt;&lt;271650006|Diastolic blood pressure (observable entity)| OR &lt;&lt;271649006|Systolic blood pressure (observable entity)| OR &lt;&lt;928021000000108|Baseline blood pressure (observable entity)| OR &lt;&lt;87541000000108|Highest brachial systolic pressure (observable entity)| OR &lt;&lt;723235005|Maximum blood pressure (observable entity)| OR &lt;&lt;723236006|Minimum blood pressure (observable entity)| OR &lt;&lt;314453003|Average diastolic blood pressure (observable entity)| OR &lt;&lt;314440001|Average systolic blood pressure (observable entity)| OR &lt;&lt;251073000|Invasive diastolic arterial pressure (observable entity)| OR &lt;&lt;251071003|Invasive systolic arterial pressure (observable entity)| OR &lt;&lt;276781007|Left ventricular end-diastolic pressure (observable entity)| OR &lt;&lt;276780008|Left ventricular systolic pressure (observable entity)| OR &lt;&lt;1036571000000105|Non-invasive central diastolic blood pressure (observable entity)| OR &lt;&lt;1036551000000101|Non-invasive central systolic blood pressure (observable entity)| OR &lt;&lt;174255007|Non-invasive diastolic arterial pressure (observable entity)| OR &lt;&lt;251070002|Non-invasive systolic arterial pressure (observable entity)| OR &lt;&lt;276772001|Right ventricular systolic pressure (observable entity)| OR &lt;&lt;276774000|Right ventricular end-diastolic pressure (observable entity)| OR &lt;&lt;399023006|Right ventricular peak systolic pressure (observable entity)| OR &lt;&lt;276773006|Right ventricular diastolic pressure (observable entity)|))" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(276885007 | Core body temperature |)" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;&lt;386725007|Body temperature (observable entity)| MINUS (&lt;&lt;248458005|Comparative temperature in limbs (observable entity)| OR &lt;&lt;852591000000107|Maximum body temperature (observable entity)| OR &lt;&lt;852601000000101|Minimum body temperature (observable entity)| OR &lt;&lt;852581000000105|Target body temperature (observable entity)| OR &lt;&lt;364419004|Temperature of cervical spine (observable entity)| OR &lt;&lt;364424001|Temperature of thoracic spine (observable entity)| OR &lt;&lt;364429006|Temperature of lumbar spine (observable entity)| OR &lt;&lt;248835004|Temperature of breast (observable entity)| OR &lt;&lt;250124002|Temperature of joint (observable entity)| OR &lt;&lt;431197002|Temperature of digit (observable entity)| OR &lt;&lt;364518005|Temperature of foot (observable entity)| OR &lt;&lt;363997004|Temperature of pinna (observable entity)| OR &lt;&lt;364537001|Temperature of skin (observable entity)|))" />
+       </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(1104441000000107 | Alert Confusion Voice Pain Unresponsive scale score |)" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(364075005 | Heart rate |)" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;&lt;364075005|Heart rate (observable entity)| MINUS (&lt;&lt;928001000000104|Baseline heart rate (observable entity)| OR &lt;&lt;428420003|Target heart rate (observable entity)| OR &lt;&lt;852341000000107|Maximum pulse rate (observable entity)| OR &lt;&lt;852351000000105|Minimum pulse rate (observable entity)| OR &lt;&lt;852331000000103|Target pulse rate (observable entity)|))" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(722742002 | Breathing room air | OR 371825009 | Patient on oxygen |)" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(103228002 | Blood oxygen saturation |)" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;&lt;103228002|Hemoglobin saturation with oxygen (observable entity)| MINUS (&lt;&lt;442349007|Venous oxygen saturation (observable entity)| OR &lt;&lt;927981000000106|Baseline oxygen saturation at periphery (observable entity)| OR &lt;&lt;852651000000100|Maximum peripheral oxygen saturation (observable entity)| OR &lt;&lt;852661000000102|Minimum peripheral oxygen saturation (observable entity)| OR &lt;&lt;852641000000103|Target peripheral oxygen saturation (observable entity)|))" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(86290005 | Respiratory rate |)" />
+      </filter>
+    </include>
+  </compose>
+</ValueSet>
