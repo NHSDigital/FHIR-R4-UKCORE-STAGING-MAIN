@@ -2729,10 +2729,6 @@
           <type value="value" />
           <path value="code" />
         </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
         <rules value="open" />
       </slicing>
       <short value="Code defined by a terminology system" />
@@ -11978,10 +11974,6 @@
         <discriminator>
           <type value="value" />
           <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
