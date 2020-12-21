@@ -2727,11 +2727,11 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="system" />
+          <path value="code" />
         </discriminator>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -11977,11 +11977,11 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="system" />
+          <path value="code" />
         </discriminator>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
