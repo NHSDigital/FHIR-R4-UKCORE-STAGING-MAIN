@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-VitalSignsObservationType" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-VitalSignsObservationType" />
-  <version value="2.0.0" />
+  <version value="2.0.1" />
   <name value="UKCoreVitalSignsObservationType" />
   <title value="UK Core Vital Signs Observation Type" />
   <status value="draft" />
-  <date value="2020-12-21T12:00:00+00:00" />
+  <date value="2020-12-22T15:10:00+00:00" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -42,6 +42,22 @@
         <property value="constraint" />
         <op value="=" />
         <value value="(&lt;&lt;75367002|Blood pressure (observable entity)| MINUS (&lt;&lt;271650006|Diastolic blood pressure (observable entity)| OR &lt;&lt;271649006|Systolic blood pressure (observable entity)| OR &lt;&lt;928021000000108|Baseline blood pressure (observable entity)| OR &lt;&lt;87541000000108|Highest brachial systolic pressure (observable entity)| OR &lt;&lt;723235005|Maximum blood pressure (observable entity)| OR &lt;&lt;723236006|Minimum blood pressure (observable entity)| OR &lt;&lt;314453003|Average diastolic blood pressure (observable entity)| OR &lt;&lt;314440001|Average systolic blood pressure (observable entity)| OR &lt;&lt;251073000|Invasive diastolic arterial pressure (observable entity)| OR &lt;&lt;251071003|Invasive systolic arterial pressure (observable entity)| OR &lt;&lt;276781007|Left ventricular end-diastolic pressure (observable entity)| OR &lt;&lt;276780008|Left ventricular systolic pressure (observable entity)| OR &lt;&lt;1036571000000105|Non-invasive central diastolic blood pressure (observable entity)| OR &lt;&lt;1036551000000101|Non-invasive central systolic blood pressure (observable entity)| OR &lt;&lt;174255007|Non-invasive diastolic arterial pressure (observable entity)| OR &lt;&lt;251070002|Non-invasive systolic arterial pressure (observable entity)| OR &lt;&lt;276772001|Right ventricular systolic pressure (observable entity)| OR &lt;&lt;276774000|Right ventricular end-diastolic pressure (observable entity)| OR &lt;&lt;399023006|Right ventricular peak systolic pressure (observable entity)| OR &lt;&lt;276773006|Right ventricular diastolic pressure (observable entity)|))" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;&lt;271649006|Systolic blood pressure (observable entity)| MINUS (&lt;&lt;716579001|Baseline systolic blood pressure (observable entity)| OR &lt;&lt;814101000000107|Systolic blood pressure centile (observable entity)| OR &lt;&lt;315612005|Target systolic blood pressure (observable entity)|))" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="(&lt;&lt;271650006|Diastolic blood pressure (observable entity)| MINUS (&lt;&lt;716632005|Baseline diastolic blood pressure (observable entity)| OR &lt;&lt;315613000|Target diastolic blood pressure (observable entity)| OR &lt;&lt;814081000000101|Diastolic blood pressure centile (observable entity)|))" />
       </filter>
     </include>
     <include>
