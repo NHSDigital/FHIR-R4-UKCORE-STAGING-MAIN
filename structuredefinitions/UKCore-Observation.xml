@@ -9810,6 +9810,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -10533,6 +10534,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12528,6 +12530,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
       </type>
     </element>
     <element id="Observation.hasMember.identifier.assigner">
@@ -12547,6 +12550,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
       </type>
     </element>
     <element id="Observation.derivedFrom.identifier.assigner">
