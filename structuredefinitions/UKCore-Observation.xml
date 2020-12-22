@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-  <version value="2.0.0" />
+  <version value="2.0.1" />
   <name value="UKCoreObservation" />
   <title value="UK Core Observation" />
   <status value="draft" />
-  <date value="2020-12-21" />
+  <date value="2020-12-22" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
