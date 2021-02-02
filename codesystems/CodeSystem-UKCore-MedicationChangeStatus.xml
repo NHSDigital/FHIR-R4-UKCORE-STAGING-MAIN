@@ -2,11 +2,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="UKCore-MedicationChangeStatus"/>
     <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationChangeStatus"/>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
     <name value="UKCoreMedicationChangeStatus"/>
   <title value="UK Core Medication Change Status" />
     <status value="draft"/>
-    <date value="2021-01-11T14:00:00+00:00"/>
+    <date value="2021-02-02T11:37:00+00:00"/>
   <publisher value="NHS Digital" />
   <contact>
     <name value="NHS Digital" />
@@ -21,19 +21,19 @@
   <caseSensitive value="true" />
     <content value="complete"/>
     <concept>
-        <code value="Continued" />
+        <code value="continued" />
         <display value="Continued" />
     </concept>
     <concept>
-        <code value="Added" />
+        <code value="added" />
         <display value="Added" />
     </concept>
     <concept>
-        <code value="Amended" />
+        <code value="amended" />
         <display value="Amended" />
     </concept>
     <concept>
-        <code value="On-hold" />
+        <code value="on-hold" />
         <display value="On-hold" />
     </concept>
 </CodeSystem>
