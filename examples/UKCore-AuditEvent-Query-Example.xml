@@ -9,6 +9,11 @@
 		<code value="110112"/>
 		<display value="Query"/>
 	</type>
+	<subtype>
+		<system value="http://hl7.org/fhir/restful-interaction"/>
+		<code value="search"/>
+		<display value="search"/>
+	</subtype>
 	<recorded value="2020-12-10T13:10:00+00:00"/>
 	<agent>
 		<role>
