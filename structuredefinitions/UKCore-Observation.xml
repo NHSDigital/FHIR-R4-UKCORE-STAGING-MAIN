@@ -2727,10 +2727,6 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
           <path value="system" />
         </discriminator>
         <rules value="open" />
@@ -12345,10 +12341,6 @@
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
         <discriminator>
           <type value="value" />
           <path value="system" />
