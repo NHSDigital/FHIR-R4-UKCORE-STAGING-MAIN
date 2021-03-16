@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiagnosticReport xmlns="http://hl7.org/fhir">
+<DiagnosticReport xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Git/SchemasR4/diagnosticreport.xsd">
 	<id value="UKCore-DiagnosticReport-DiagnosticStudiesReport-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"/>
 	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="727071dc-eb01-4224-8ee8-cc0a029787ac"/>
+	</identifier>
 	<status value="final"/>
 	<code>
 		<coding>
@@ -16,8 +20,8 @@
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<performer>
-			<reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-			<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
+		<reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
 	</performer>
 	<specimen>
 		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
