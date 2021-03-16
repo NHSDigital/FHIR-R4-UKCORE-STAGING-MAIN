@@ -27,6 +27,6 @@
 		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
 	</specimen>
 	<result>
-		<reference value="Observation\UKCore-Observation-WhiteCellCount-Example"/>
+		<reference value="Observation/UKCore-Observation-WhiteCellCount-Example"/>
 	</result>
 </DiagnosticReport>
