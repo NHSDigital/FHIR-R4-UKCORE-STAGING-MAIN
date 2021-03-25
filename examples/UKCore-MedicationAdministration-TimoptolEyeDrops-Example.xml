@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationAdministration-TimoptolEyeDrops-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration"/>
+	</meta>
+	<status value="completed"/>
+	<medicationReference>
+		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
+	</medicationReference>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<effectiveDateTime value="2021-03-25T13:00:00+00:00"/>
+	<request>
+		<reference value="MedicationRequest/UKCore-MedicationRequest-EyeDrops-Example"/>
+	</request>
+</MedicationAdministration>
