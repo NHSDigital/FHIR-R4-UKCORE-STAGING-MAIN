@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+	<contact>
+		<!-- **************extension start************** -->
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+			<valuePositiveInt value="1"/>
+		</extension>
+		<!-- **************extension end************** -->
+	</contact>
+</Patient>
