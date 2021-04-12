@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus"/>
+				<code value="H"/>
+				<display value="UK Resident"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+</Patient>

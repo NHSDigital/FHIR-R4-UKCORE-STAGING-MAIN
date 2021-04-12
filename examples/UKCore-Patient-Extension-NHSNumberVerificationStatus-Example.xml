@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+<identifier>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+				<code value="01"/>
+				<display value="Number present and verified"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+</identifier>
+
+</Patient>
