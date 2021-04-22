@@ -9,7 +9,7 @@
 	</identifier>
 	<status value="completed"/>
   <subject> 
-    <reference value="http://hl7.org/fhir/Patient/UKCore-Patient-BabyPatient-Example"/> 
+    <reference value="Patient/UKCore-Patient-BabyPatient-Example"/> 
     <type value="Patient"/> 
   </subject> 
   <authored value="2021-04-16T12:15:00+00:00"/> 
