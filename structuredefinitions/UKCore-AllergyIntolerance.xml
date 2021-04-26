@@ -2,10 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-AllergyIntolerance" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
-  <version value="2.0.0" />
+  <version value="3.0.0" />
   <name value="UKCoreAllergyIntolerance" />
   <title value="UK Core AllergyIntolerance" />
   <status value="draft" />
+  <date value="2021-04-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -157,6 +158,12 @@
       <isSummary value="true" />
     </element>
     <element id="AllergyIntolerance.meta">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.meta" />
       <short value="Metadata about the resource" />
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." />
@@ -265,6 +272,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.text" />
       <short value="Text summary of the resource, for human interpretation" />
       <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." />
@@ -333,6 +346,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.extension" />
       <slicing>
         <discriminator>
@@ -384,6 +403,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.modifierExtension" />
       <slicing>
         <discriminator>
@@ -438,6 +463,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.identifier" />
       <short value="External ids for this item" />
       <definition value="Business identifiers assigned to this AllergyIntolerance by the performer or other systems which remain constant as the resource is updated and propagates from server to server." />
@@ -908,6 +939,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.clinicalStatus" />
       <short value="active | inactive | resolved" />
       <definition value="The clinical status of the allergy or intolerance." />
@@ -970,6 +1007,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.verificationStatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.verificationStatus" />
       <short value="unconfirmed | confirmed | refuted | entered-in-error" />
       <definition value="Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product)." />
@@ -1192,12 +1235,18 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.code" />
       <short value="Code that identifies the allergy or intolerance" />
       <definition value="Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;), or a negated/excluded code for a specific substance or class (e.g., &quot;No latex allergy&quot;) or a general or categorical negated statement (e.g.,  &quot;No known allergy&quot;, &quot;No known drug allergies&quot;).  Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'.  If a receiving system is unable to confirm that AllergyIntolerance.reaction.substance falls within the semantic scope of AllergyIntolerance.code, then the receiving system should ignore AllergyIntolerance.reaction.substance." />
       <comment value="It is strongly recommended that this element be populated using a terminology, where possible. For example, some terminologies used include RxNorm, SNOMED CT, DM+D, NDFRT, ICD-9, IDC-10, UNII, and ATC. Plain text should only be used if there is no appropriate terminology available. Additional details can be specified in the text.&#xD;&#xD;When a substance or product code is specified for the 'code' element, the &quot;default&quot; semantic context is that this is a positive statement of an allergy or intolerance (depending on the value of the 'type' element, if present) condition to the specified substance/product.  In the corresponding SNOMED CT allergy model, the specified substance/product is the target (destination) of the &quot;Causative agent&quot; relationship.&#xD;&#xD;The 'substanceExposureRisk' extension is available as a structured and more flexible alternative to the 'code' element for making positive or negative allergy or intolerance statements.  This extension provides the capability to make &quot;no known allergy&quot; (or &quot;no risk of adverse reaction&quot;) statements regarding any coded substance/product (including cases when a pre-coordinated &quot;no allergy to x&quot; concept for that substance/product does not exist).  If the 'substanceExposureRisk' extension is present, the AllergyIntolerance.code element SHALL be omitted." />
       <alias value="Code" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="AllergyIntolerance.code" />
@@ -1252,6 +1301,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.patient" />
       <short value="Who the sensitivity is for" />
       <definition value="The patient who has the allergy or intolerance." />
@@ -1312,6 +1367,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.encounter">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.encounter" />
       <short value="Encounter when the allergy or intolerance was asserted" />
       <definition value="The encounter when the allergy or intolerance was asserted." />
@@ -1450,6 +1511,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.recorder">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.recorder" />
       <short value="Who recorded the sensitivity" />
       <definition value="Individual who recorded the record and takes responsibility for its content." />
@@ -1504,6 +1571,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.asserter">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.asserter" />
       <short value="Source of the information about the allergy" />
       <definition value="The source of the information about the allergy that is recorded." />
@@ -1597,6 +1670,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.note" />
       <short value="Additional text not captured in other fields" />
       <definition value="Additional narrative about the propensity for the Adverse Reaction, not captured in other fields." />
@@ -1856,6 +1935,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction" />
       <short value="Adverse Reaction Events linked to exposure to substance" />
       <definition value="Details about each adverse reaction event linked to exposure to the identified substance." />
@@ -1911,6 +1996,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.extension" />
       <slicing>
         <discriminator>
@@ -1962,6 +2053,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -2010,6 +2107,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.substance">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.substance" />
       <short value="Specific substance or pharmaceutical product considered to be responsible for event" />
       <definition value="Identification of the specific substance (or pharmaceutical product) considered to be responsible for the Adverse Reaction event. Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'.  If a receiving system is unable to confirm that AllergyIntolerance.reaction.substance falls within the semantic scope of AllergyIntolerance.code, then the receiving system should ignore AllergyIntolerance.reaction.substance." />
@@ -2034,12 +2137,9 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SubstanceCode" />
-        </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="Codes defining the type of the substance (including pharmaceutical products)." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/substance-code" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2063,6 +2163,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.manifestation" />
       <short value="Clinical symptoms/signs associated with the Event" />
       <definition value="Clinical symptoms and/or signs that are observed or associated with the adverse reaction event." />
@@ -2231,6 +2337,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.exposureRoute">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.exposureRoute" />
       <short value="How the subject was exposed to the substance" />
       <definition value="Identification of the route by which the subject was exposed to the substance." />
@@ -2843,6 +2955,12 @@
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.note" />
       <short value="Text about event not captured in other fields" />
       <definition value="Additional text about the adverse reaction event not captured in other fields." />
@@ -3112,6 +3230,7 @@
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
+      <min value="1" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression &lt;105590001 |Substance OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy), or a code from the v3 Code System NullFlavor specifying why a valid value is not present." />
@@ -3165,6 +3284,13 @@
         <code value="string" />
       </type>
     </element>
+    <element id="AllergyIntolerance.reaction.substance">
+      <path value="AllergyIntolerance.reaction.substance" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance" />
+      </binding>
+    </element>
     <element id="AllergyIntolerance.reaction.manifestation">
       <path value="AllergyIntolerance.reaction.manifestation" />
       <binding>
@@ -3202,9 +3328,6 @@
       <min value="1" />
     </element>
     <element id="AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="AllergyIntolerance.reaction.exposureRoute.coding.display" />
       <min value="1" />
     </element>

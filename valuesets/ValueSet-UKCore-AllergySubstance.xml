@@ -1,13 +1,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyCode"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode"/>
-	<version value="2.0.1"/>
-	<name value="UKCoreAllergyCode"/>
-	<title value="UK Core Allergy Code"/>
+	<id value="UKCore-AllergySubstance"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreAllergySubstance"/>
+	<title value="UK Core Allergy Substance"/>
 	<status value="draft"/>
-	<date value="2020-05-13T00:00:00+00:00"/>
+	<date value="2021-04-23T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
-	<contact>
+	<contact> 
 		<name value="HL7 UK"/>
 		<telecom>
 			<system value="email"/>
@@ -25,7 +25,7 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;105590001 |Substance| OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|), or a code from the v3 Code System NullFlavor specifying why a valid value is not present."/>
+	<description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;105590001 |Substance| OR &lt;373873005 |Pharmaceutical / biologic product| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>
 	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
@@ -33,15 +33,7 @@
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="(&lt;105590001 |Substance| OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>		
-			</filter>
-		</include>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-			<filter>
-				<property value="concept"/>
-				<op value="="/>
-				<value value="NI"/>
+				<value value="(&lt;105590001 |Substance| OR &lt;373873005 |Pharmaceutical / biologic product| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>		
 			</filter>
 		</include>
 	</compose>
