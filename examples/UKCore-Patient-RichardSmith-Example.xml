@@ -12,17 +12,6 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication">
-		<extension url="language">
-			<valueCodeableConcept>
-				<coding>
-					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
-					<code value="en"/>
-					<display value="English"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
 	<identifier>
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 			<valueCodeableConcept>
@@ -56,4 +45,13 @@
 		<line value="LEEDS"/>
 		<postalCode value="LS17 7DF"/>
 	</address>
+	<communication>
+		<language>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+				<code value="en"/>
+				<display value="English"/>
+			</coding>
+		</language>
+	</communication>
 </Patient>
