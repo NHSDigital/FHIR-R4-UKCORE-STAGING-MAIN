@@ -33,7 +33,7 @@
 			<filter>                
 				<property value="constraint" />                
 				<op value="=" />                
-				<value value="(memberOf 1127581000000103) or 196411000000103" />            
+				<value value="((memberOf 1127581000000103) or 196411000000103)" />            
 			</filter>        
 		</include>
 	</compose>
