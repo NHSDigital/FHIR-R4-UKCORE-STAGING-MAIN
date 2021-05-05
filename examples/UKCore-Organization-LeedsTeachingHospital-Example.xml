@@ -1,28 +1,28 @@
-<Organization xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Organization-LeedsTeachingHospital-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-  </meta>
-  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
-    <valueReference>
-      <reference value="Location/UKCore-Location-CardiologySJUH-Example" />
-    </valueReference>
-  </extension>
-  <identifier>
-    <use value="official" />
-    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-    <value value="RR8" />
-  </identifier>
-  <name value="LEEDS TEACHING HOSPITALS NHS TRUST" />
-  <telecom>
-    <system value="phone" />
-    <value value="0113 243 3144" />
-  </telecom>
-  <address>
-    <line value="ST. JAMES'S UNIVERSITY HOSPITAL" />
-    <line value="BECKETT STREET" />
-    <city value="LEEDS" />
-    <postalCode value="LS9 7TF" />
-    <country value="ENGLAND" />
-  </address>
+<Organization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/supa1/Desktop/R4%20Schemas/organization.xsd">
+	<id value="UKCore-Organization-LeedsTeachingHospital-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+	</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
+		<valueReference>
+			<reference value="Location/UKCore-Location-CardiologySJUH-Example"/>
+		</valueReference>
+	</extension>
+	<identifier>
+		<use value="official"/>
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+		<value value="RR8"/>
+	</identifier>
+	<name value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
+	<telecom>
+		<system value="phone"/>
+		<value value="0113 243 3144"/>
+	</telecom>
+	<address>
+		<line value="ST. JAMES'S UNIVERSITY HOSPITAL"/>
+		<line value="BECKETT STREET"/>
+		<city value="LEEDS"/>
+		<postalCode value="LS9 7TF"/>
+		<country value="ENGLAND"/>
+	</address>
 </Organization>
