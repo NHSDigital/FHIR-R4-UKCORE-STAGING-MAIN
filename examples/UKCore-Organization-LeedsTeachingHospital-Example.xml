@@ -1,4 +1,4 @@
-<Organization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/supa1/Desktop/R4%20Schemas/organization.xsd">
+<Organization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Organization-LeedsTeachingHospital-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
