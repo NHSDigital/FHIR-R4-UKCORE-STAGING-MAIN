@@ -1,21 +1,52 @@
 <RelatedPerson xmlns="http://hl7.org/fhir">
-  <id value="UKCore-RelatedPerson-JoySmith-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-  </meta>
-  <patient>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </patient>
-  <relationship>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
-      <code value="WIFE" />
-      <display value="wife" />
-    </coding>
-  </relationship>
-  <name>
-    <use value="official" />
-    <family value="SMITH" />
-    <given value="Joy" />
-  </name>
+	<id value="UKCore-RelatedPerson-JoySmith-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"/>
+	</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
+		<extension url="PreferredContactMethod">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+					<code value="3"/>
+					<display value="Telephone"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		  <extension url="PreferredContactTimes">
+            <valuePeriod>
+                <start value="2017-01-01T00:00:00.000Z" />
+            </valuePeriod>
+        </extension>
+        <extension url="PreferredWrittenCommunicationFormat">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
+                    <code value="11" />
+                    <display value="Large print" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+        <valuePositiveInt value="1" />
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
+        <valueBoolean value="true" />
+    </extension>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</patient>
+	<relationship>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+			<code value="WIFE"/>
+			<display value="wife"/>
+		</coding>
+	</relationship>
+	<name>
+		<use value="official"/>
+		<family value="SMITH"/>
+		<given value="Joy"/>
+	</name>
 </RelatedPerson>
