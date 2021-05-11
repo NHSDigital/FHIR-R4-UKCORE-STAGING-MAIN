@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
+	</meta>
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="27658006"/>
+			<display value="Amoxicillin"/>
+		</coding>
+	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<effectiveDateTime value="2017-01-23"/>
+	<dateAsserted value="2017-02-22"/>
+	<reasonCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="65363002"/>
+			<display value="Otitis Media"/>
+		</coding>
+	</reasonCode>
+</MedicationStatement>

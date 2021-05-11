@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+<id value="UKCore-Patient-Extension-DeathNotificationStatus-Example" />
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus">
+		<extension url="deathNotificationStatus">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
+					<code value="U"/>
+					<display value="Removed"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="systemEffectiveDate">
+			<valueDateTime value="2019-08-01T00:00:00.000Z"/>
+		</extension>
+	</extension>
+	<!-- **************extension end************** -->
+</Patient>

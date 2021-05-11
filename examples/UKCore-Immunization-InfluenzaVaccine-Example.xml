@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir">
+ <id value="UKCore-Immunization-InfluenzaVaccine-Example"/>
+ <meta>
+  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
+ </meta>
+ <status value="completed"/>
+ <vaccineCode>
+  <coding>
+   <system value="http://snomed.info/sct"/>
+   <code value="46233009"/>
+   <display value="Influenza virus vaccine"/>
+  </coding>
+ </vaccineCode>
+ <patient>
+  <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+ </patient>
+ <occurrenceDateTime value="2013-01-10"/>
+ <location>
+  <reference value="UKCore-Location-GeneralPracticeNurseClinic-Example"/>
+ </location>
+</Immunization>

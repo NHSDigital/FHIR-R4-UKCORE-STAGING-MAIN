@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationStatement-Extension-ChangeSummary-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
+	</meta>
+	<!--Change details extension-->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationChangeSummary">
+		<extension url="status">
+			<valueCoding>
+				<code value="amended"/>
+				<display value="Amended"/>
+			</valueCoding>
+		</extension>
+		<extension url="indicationForChange">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="275929009"/>
+					<display value="Tablets too large to swallow"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="dateChanged">
+			<valueDateTime value="2020-07-21"/>
+		</extension>
+		<extension url="detailsOfAmendment">
+			<valueString value="Changed from tablet form to solution as tablet were being crushed before taking"/>
+		</extension>
+	</extension>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="urn:uuid:811a38a0-5612-47f5-8d5b-5a0287e8e72b"/>
+	</medicationReference>
+	<subject>
+		<reference value="urn:uuid:9a3f9f21-1275-49d2-ad14-39f21e6e9ac0"/>
+	</subject>
+</MedicationStatement>

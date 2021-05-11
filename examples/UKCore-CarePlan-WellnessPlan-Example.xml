@@ -1,0 +1,69 @@
+<CarePlan xmlns="http://hl7.org/fhir">
+ <id value="UKCore-CarePlan-WellnessPlan-Example"/>
+ <meta>
+  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan"/>
+ </meta>
+ <identifier>
+  <value value="7d9955bc-afe0-11ea-b3de-0242ac130004"/>
+ </identifier>
+ <basedOn>
+  <display value="Management of Type 2 Diabetes"/>
+ </basedOn>
+ <partOf>
+  <display value="Overall wellness plan"/>
+ </partOf>
+ <status value="active"/>
+ <intent value="plan"/>
+ <category>
+  <text value="Weight management plan"/>
+ </category>
+ <description value="Manage obesity and weight loss"/>
+ <subject>
+  <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+  <type value="Patient"/>
+  <display value="Richard SMITH"/>
+ </subject>
+ <period>
+  <end value="2020-01-01"/>
+ </period>
+ <created value="2020-02-01"/>
+ <author>
+  <reference value="Practitioner/UKCore-Practitioner-PaulRastall-Example"/>
+ </author>
+ <activity>
+  <outcomeCodeableConcept>
+   <coding>
+    <system value="http://snomed.info/sct"/>
+    <code value="161832001"/>
+    <display value="Progressive weight loss"/>
+   </coding>
+  </outcomeCodeableConcept>
+  <detail>
+   <code>
+    <coding>
+     <system value="http://snomed.info/sct"/>
+     <code value="27113001"/>
+     <display value="Body weight"/>
+    </coding>
+   </code>
+   <status value="completed"/>
+   <statusReason>
+    <text value="Achieved weight loss to mitigate diabetes risk."/>
+   </statusReason>
+   <doNotPerform value="false"/>
+   <scheduledTiming>
+    <repeat>
+     <frequency value="1"/>
+     <period value="1"/>
+     <periodUnit value="d"/>
+    </repeat>
+   </scheduledTiming>
+   <location>
+    <display value="Patient's home"/>
+   </location>
+   <performer>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+   </performer>
+  </detail>
+ </activity>
+</CarePlan>
