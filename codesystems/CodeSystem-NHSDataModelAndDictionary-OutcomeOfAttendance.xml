@@ -1,0 +1,37 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="NHSDataModelAndDictionary-OutcomeOfAttendance" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
+    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/out/outcome_of_attendance_de.asp?shownav=1" />
+  </extension>
+  <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-OutcomeOfAttendance" />
+  <version value="2.0.0" />
+  <name value="NHSDataModelandDictionaryOutcomeofAttendance" />
+  <title value="NHS Data Model and Dictionary Outcome of Attendance" />
+  <status value="draft" />
+  <date value="2019-11-05T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This records the outcome of an Out-Patient Attendance Consultant." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="Discharged from Consultant's care (last attendance)" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Another Appointment given" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Appointment to be made at a later date" />
+  </concept>
+</CodeSystem>

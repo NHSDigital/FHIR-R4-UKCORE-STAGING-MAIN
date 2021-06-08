@@ -1,0 +1,21 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Patient-Extension-AddressKey-Example"/>
+	<address>
+		<!-- **************extension start************** -->
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+			<extension url="type">
+				<valueCodeableConcept>
+					<coding>
+						<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKey"/>
+						<code value="PAF"/>
+						<display value="Postcode Address File"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<extension url="value">
+				<valueString value="LS10ABC"/>
+			</extension>
+		</extension>
+		<!-- *************extension end *****************-->
+	</address>
+</Patient>

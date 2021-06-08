@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-PreferredWrittenCommunicationFormat" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
+  <version value="2.0.0" />
+  <name value="UKCorePreferredWrittenCommunicationFormat" />
+  <title value="UK Core Preferred Written Communication Format" />
+  <status value="draft" />
+  <date value="2020-07-29T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the preferred written communication format of a patient, contact or related person." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="11" />
+    <display value="Large print" />
+  </concept>
+  <concept>
+    <code value="12" />
+    <display value="Braille" />
+  </concept>
+  <concept>
+    <code value="13" />
+    <display value="Audio tape" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,124 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Patient-RichardSmith-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
+	</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
+				<code value="A"/>
+				<display value="British, Mixed British"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
+		<extension url="PreferredContactMethod">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+					<code value="3"/>
+					<display value="Telephone"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		  <extension url="PreferredContactTimes">
+            <valuePeriod>
+                <start value="2017-01-01T00:00:00.000Z" />
+            </valuePeriod>
+        </extension>
+        <extension url="PreferredWrittenCommunicationFormat">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
+                    <code value="11" />
+                    <display value="Large print" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus">
+        <extension url="deathNotificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+                    <code value="U" />
+                    <display value="Removed" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="systemEffectiveDate">
+            <valueDateTime value="2019-08-01T00:00:00.000Z" />
+        </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">
+		<valueReference>
+			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
+		</valueReference>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
+        <valueReference>
+            <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
+        </valueReference>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus" />
+                <code value="H" />
+                <display value="UK Resident" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+	<identifier>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+					<code value="01"/>
+					<display value="Number present and verified"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+		<value value="9912003888"/>
+	</identifier>
+	<name>
+		<use value="official"/>
+		<family value="SMITH"/>
+		<given value="Richard"/>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="01131231234"/>
+	</telecom>
+	<gender value="male"/>
+	<birthDate value="1970-09-11">
+		<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+			<valueDateTime value="1970-09-11T13:46:00+00:00"/>
+		</extension>
+	</birthDate>
+	<address>
+		<line value="4 Sandmoor Drive"/>
+		<line value="LEEDS"/>
+		<postalCode value="LS17 7DF"/>
+	</address>
+	<contact>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+            <valuePositiveInt value="1" />
+        </extension>
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
+            <valueBoolean value="true" />
+        </extension>
+	</contact>
+	<communication>
+		<language>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+				<code value="en"/>
+				<display value="English"/>
+			</coding>
+		</language>
+	</communication>
+	
+</Patient>
