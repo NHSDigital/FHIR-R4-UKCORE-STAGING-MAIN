@@ -22,54 +22,54 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		  <extension url="PreferredContactTimes">
-            <valuePeriod>
-                <start value="2017-01-01T00:00:00.000Z" />
-            </valuePeriod>
-        </extension>
-        <extension url="PreferredWrittenCommunicationFormat">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
-                    <code value="11" />
-                    <display value="Large print" />
-                </coding>
-            </valueCodeableConcept>
-        </extension>
+		<extension url="PreferredContactTimes">
+			<valuePeriod>
+				<start value="2017-01-01T00:00:00.000Z"/>
+			</valuePeriod>
+		</extension>
+		<extension url="PreferredWrittenCommunicationFormat">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
+					<code value="11"/>
+					<display value="Large print"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
 	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus">
-        <extension url="deathNotificationStatus">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
-                    <code value="U" />
-                    <display value="Removed" />
-                </coding>
-            </valueCodeableConcept>
-        </extension>
-        <extension url="systemEffectiveDate">
-            <valueDateTime value="2019-08-01T00:00:00.000Z" />
-        </extension>
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">
+		<extension url="deathNotificationStatus">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
+					<code value="U"/>
+					<display value="Removed"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="systemEffectiveDate">
+			<valueDateTime value="2019-08-01T00:00:00.000Z"/>
+		</extension>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">
 		<valueReference>
 			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
 		</valueReference>
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
-        <valueReference>
-            <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
-        </valueReference>
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus">
-        <valueCodeableConcept>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus" />
-                <code value="H" />
-                <display value="UK Resident" />
-            </coding>
-        </valueCodeableConcept>
-    </extension>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
+		<valueReference>
+			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
+		</valueReference>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus"/>
+				<code value="H"/>
+				<display value="UK Resident"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
 	<identifier>
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 			<valueCodeableConcept>
@@ -105,11 +105,38 @@
 	</address>
 	<contact>
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
-            <valuePositiveInt value="1" />
-        </extension>
-        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
-            <valueBoolean value="true" />
-        </extension>
+			<valuePositiveInt value="1"/>
+		</extension>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
+			<valueBoolean value="true"/>
+		</extension>
+		<relationship>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
+				<code value="Personal"/>
+				<display value="Personal relationship with the patient"/>
+			</coding>
+		</relationship>
+		<name>
+			<use value="official"/>
+			<text value="JACKSON Jane (Miss)"/>
+			<family value="Jackson"/>
+			<given value="Jane"/>
+			<prefix value="Miss"/>
+		</name>
+		<telecom>
+			<system value="phone"/>
+			<value value="07777123123"/>
+			<use value="mobile"/>
+		</telecom>
+		<address>
+			<use value="home"/>
+			<type value="physical"/>
+			<line value="5 Alwoodley Road"/>
+			<line value="LEEDS"/>
+			<postalCode value="LS17 6EH"/>
+		</address>
+		<gender value="female"/>
 	</contact>
 	<communication>
 		<language>
@@ -120,5 +147,4 @@
 			</coding>
 		</language>
 	</communication>
-	
 </Patient>
