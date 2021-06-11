@@ -57,8 +57,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="Extension UK Core Contact Rank" />
-      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <short value="Preferred ranking or order of contact applied to a contact on a patient's contact list" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a patient's contact list." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -199,8 +199,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
-      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <short value="The preferred ranking or order of contact applied to a contact on a patient's contact list" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a patient's contact list." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -234,8 +234,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Extension UK Core Contact Rank" />
-      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <short value="Preferred ranking or order of contact applied to a contact on a patient's contact list" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a patient's contact list." />
       <max value="1" />
     </element>
     <element id="Extension.url">
@@ -244,8 +244,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
-      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <short value="The preferred ranking or order of contact applied to a contact on a patient's contact list" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a patient's contact list." />
       <min value="1" />
       <type>
         <code value="positiveInt" />
