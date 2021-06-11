@@ -57,8 +57,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="Copy Correspondence Indicator" />
-      <definition value="Extension for Copy Correspondence Indicator" />
+      <short value="Indicator showing that a patient's contact or related person must be copied in to patient correspondence" />
+      <definition value="Extension carrying a boolean indicator showing that a patient's contact or related person must be copied in to patient correspondence." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -81,7 +81,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -161,7 +161,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -198,15 +198,9 @@
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Copy Correspondence Indicator" />
-      <definition value="Boolean element representing CopyCorrespondenceIndicator" />
+      <definition value="Boolean element representing Copy Correspondence Indicator." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -240,8 +234,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Copy Correspondence Indicator" />
-      <definition value="Extension for Copy Correspondence Indicator" />
+      <short value="Indicator showing that a patient's contact or related person must be copied in to patient correspondence" />
+      <definition value="Extension carrying a boolean indicator showing that a patient's contact or related person must be copied in to patient correspondence." />
       <max value="1" />
     </element>
     <element id="Extension.url">
@@ -251,7 +245,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="Copy Correspondence Indicator" />
-      <definition value="Boolean element representing CopyCorrespondenceIndicator" />
+      <definition value="Boolean element representing Copy Correspondence Indicator." />
       <min value="1" />
       <type>
         <code value="boolean" />

@@ -54,8 +54,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="EfectiveDate" />
-      <definition value="To record effective start and end dates" />
+      <short value="To carry effective start and end dates" />
+      <definition value="An extension which carries effective start and end dates." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -231,8 +231,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="EfectiveDate" />
-      <definition value="To record effective start and end dates" />
+      <short value="To carry effective start and end dates" />
+      <definition value="An extension which carries effective start and end dates." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
