@@ -13,5 +13,17 @@
 			<display value="Main Location: Cardiology Department, Anon Hospital"/>
 		</valueReference>
 	</extension>
+	<name value="ANON HOSPITALS NHS TRUST"/>
+	<telecom>
+		<system value="phone"/>
+		<value value="0119 22 3155"/>
+	</telecom>
+	<address>
+		<line value="ANON HOSPITALS NHS TRUST"/>
+		<line value="ANON STREET"/>
+		<city value="ANON"/>
+		<postalCode value="AN9 7JK"/>
+		<country value="ENGLAND"/>
+	</address>
 	<!-- *************extension end *****************-->
 </Organization>
