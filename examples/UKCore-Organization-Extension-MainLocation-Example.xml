@@ -1,0 +1,29 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Patient-Extension-MainLocation-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
+		<valueReference>
+			<reference value="Location/UKCore-Location-Cardiology-Anon-Hospital-Example"/>
+			<type value="Organization"/>
+			<identifier>
+				<use value="official"/>
+				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+				<value value="JZ7"/>
+			</identifier>
+			<display value="Main Location: Cardiology Department, Anon Hospital"/>
+		</valueReference>
+	</extension>
+	<name value="ANON HOSPITALS NHS TRUST"/>
+	<telecom>
+		<system value="phone"/>
+		<value value="0119 22 3155"/>
+	</telecom>
+	<address>
+		<line value="ANON HOSPITALS NHS TRUST"/>
+		<line value="ANON STREET"/>
+		<city value="ANON"/>
+		<postalCode value="AN9 7JK"/>
+		<country value="ENGLAND"/>
+	</address>
+	<!-- *************extension end *****************-->
+</Organization>
