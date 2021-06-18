@@ -1,0 +1,32 @@
+<Location xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Location-HospitalSJUH-Example" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+  </meta>
+  <identifier>
+    <system value="https://fhir.nhs.uk/Id/ods-site-code" />
+    <value value="RR813" />
+  </identifier>
+  <name value="ST JAMES'S UNIVERSITY HOSPITAL" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="HOSP" />
+      <display value="Hospital" />
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone" />
+    <value value="0113 243 3144" />
+  </telecom>
+  <address>
+    <line value="ST. JAMES'S UNIVERSITY HOSPITAL" />
+    <line value="BECKETT STREET" />
+    <city value="LEEDS" />
+    <postalCode value="LS9 7TF" />
+    <country value="ENGLAND" />
+  </address>
+  <managingOrganization>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </managingOrganization>
+</Location>

@@ -3,11 +3,6 @@
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
 	</meta>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
-		<valueReference>
-			<reference value="Location/UKCore-Location-CardiologySJUH-Example"/>
-		</valueReference>
-	</extension>
 	<identifier>
 		<use value="official"/>
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
