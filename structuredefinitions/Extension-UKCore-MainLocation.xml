@@ -195,8 +195,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Reference to the main location for an organization" />
-      <definition value="Reference to the main location for an organization." />
+      <short value="Reference to the main location of an organization" />
+      <definition value="Reference to the main location of an organization." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -901,8 +901,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Reference to the main location for an organization" />
-      <definition value="Reference to the main location for an organization." />
+      <short value="Reference to the main location of an organization" />
+      <definition value="Reference to the main location of an organization." />
       <min value="1" />
       <type>
         <code value="Reference" />
