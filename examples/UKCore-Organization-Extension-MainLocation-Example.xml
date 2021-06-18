@@ -3,27 +3,20 @@
 	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
 		<valueReference>
-			<reference value="Location/UKCore-Location-Cardiology-Anon-Hospital-Example"/>
-			<type value="Organization"/>
+			<reference value="Location/UKCore-Location-HospitalSJUH-Example"/>
+			<type value="Location"/>
 			<identifier>
 				<use value="official"/>
-				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-				<value value="JZ7"/>
+				<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+				<value value="RR813"/>
 			</identifier>
-			<display value="Main Location: Cardiology Department, Anon Hospital"/>
 		</valueReference>
 	</extension>
-	<name value="ANON HOSPITALS NHS TRUST"/>
-	<telecom>
-		<system value="phone"/>
-		<value value="0119 22 3155"/>
-	</telecom>
-	<address>
-		<line value="ANON HOSPITALS NHS TRUST"/>
-		<line value="ANON STREET"/>
-		<city value="ANON"/>
-		<postalCode value="AN9 7JK"/>
-		<country value="ENGLAND"/>
-	</address>
 	<!-- *************extension end *****************-->
+	<identifier>
+		<use value="official"/>
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+		<value value="RR8"/>
+	</identifier>
+	<name value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
 </Organization>
