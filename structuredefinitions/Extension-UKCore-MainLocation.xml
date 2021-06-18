@@ -53,8 +53,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="Main location" />
-      <definition value="The main location of the organisation." />
+      <short value="The main location of the organisation" />
+      <definition value="An extension which references the main location of the organisation." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -195,7 +195,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Main location" />
+      <short value="Reference to the main location for an organization" />
       <definition value="Reference to the main location for an organization." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
@@ -827,7 +827,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -892,8 +892,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Main location" />
-      <definition value="The main location of the organisation." />
+      <short value="The main location of the organisation" />
+      <definition value="An extension which references the main location of the organisation." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
@@ -901,7 +901,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Main location" />
+      <short value="Reference to the main location for an organization" />
       <definition value="Reference to the main location for an organization." />
       <min value="1" />
       <type>
