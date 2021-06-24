@@ -54,7 +54,7 @@
       </extension>
       <path value="Extension" />
       <short value="Other contact system" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <definition value="Other contact system value which extends the system element in the ContactPoint datatype." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -195,8 +195,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <short value="Value for other contact system" />
+      <definition value="A value to extend the system element in the ContactPoint datatype." />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -236,6 +236,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Other contact system" />
+      <definition value="Other contact system value which extends the system element in the ContactPoint datatype." />
       <max value="1" />
     </element>
     <element id="Extension.url">
@@ -244,6 +245,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <short value="Value for other contact system" />
+      <definition value="A value to extend the system element in the ContactPoint datatype." />
       <min value="1" />
       <type>
         <code value="Coding" />
