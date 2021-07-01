@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Patient" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCorePatient" />
   <title value="UK Core Patient" />
   <status value="draft" />
-  <date value="2021-05-04" />
+  <date value="2021-07-01" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -559,7 +559,7 @@
       </extension>
       <path value="Patient.extension" />
       <sliceName value="preferredDispenserOrganization" />
-      <short value="A patient's preferred dispensing organisation" />
+      <short value="A patient's preferred dispensing organisation." />
       <definition value="A patient's preferred dispensing organisation." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -610,7 +610,7 @@
       </extension>
       <path value="Patient.extension" />
       <sliceName value="residentialStatus" />
-      <short value="The residential status of the patient" />
+      <short value="The residential status of the patient." />
       <definition value="The residential status of the patient. For example if this patient is a UK resident." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -625,6 +625,57 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Patient.extension:birthSex">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.extension" />
+      <sliceName value="birthSex" />
+      <short value="The patient's phenotypic sex at birth." />
+      <definition value="The patient's phenotypic sex at birth." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1239,7 +1290,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1304,7 +1355,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1472,7 +1523,7 @@
         <human value="A system is required if a value is provided." />
         <expression value="value.empty() or system.exists()" />
         <xpath value="not(exists(f:value)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactDetail" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2038,8 +2089,8 @@
       </extension>
       <path value="Patient.contact.extension" />
       <sliceName value="contactRank" />
-      <short value="Extension UK Core Contact Rank" />
-      <definition value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
+      <short value="Preferred ranking or order of contact applied to a contact on a patient's contact list" />
+      <definition value="The preferred ranking or order of contact applied to a contact on a patient's contact list." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2089,8 +2140,8 @@
       </extension>
       <path value="Patient.contact.extension" />
       <sliceName value="copyCorrespondenceIndicator" />
-      <short value="Copy Correspondence Indicator" />
-      <definition value="Extension for Copy Correspondence Indicator" />
+      <short value="Indicator showing that a patient's contact or related person must be copied in to patient correspondence" />
+      <definition value="Extension carrying a boolean indicator showing that a patient's contact or related person must be copied in to patient correspondence." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2217,6 +2268,9 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ContactRelationship" />
+        </extension>
         <strength value="extensible" />
         <description value="The nature of the relationship between a patient and a contact person for that patient." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
@@ -2347,7 +2401,7 @@
         <human value="A system is required if a value is provided." />
         <expression value="value.empty() or system.exists()" />
         <xpath value="not(exists(f:value)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactDetail" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2530,7 +2584,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3088,7 +3142,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3153,7 +3207,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3250,7 +3304,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3483,6 +3537,15 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
         <strength value="extensible" />
         <description value="A ValueSet that identifies the language used by a person." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
@@ -3598,7 +3661,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4156,7 +4219,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4221,7 +4284,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4320,7 +4383,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4875,7 +4938,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4940,7 +5003,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5223,7 +5286,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5782,7 +5845,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5847,7 +5910,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5993,6 +6056,7 @@
     <element id="Patient.extension:preferredDispenserOrganization">
       <path value="Patient.extension" />
       <sliceName value="preferredDispenserOrganization" />
+      <short value="A patient's preferred dispensing organisation." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -6002,9 +6066,20 @@
     <element id="Patient.extension:residentialStatus">
       <path value="Patient.extension" />
       <sliceName value="residentialStatus" />
+      <short value="The residential status of the patient." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
+      </type>
+    </element>
+    <element id="Patient.extension:birthSex">
+      <path value="Patient.extension" />
+      <sliceName value="birthSex" />
+      <short value="The patient's phenotypic sex at birth." />
+      <definition value="The patient's phenotypic sex at birth." />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex" />
       </type>
     </element>
     <element id="Patient.identifier">
