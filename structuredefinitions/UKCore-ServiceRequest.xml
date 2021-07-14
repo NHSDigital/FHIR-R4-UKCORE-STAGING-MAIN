@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest" />
-  <meta>
-    <lastUpdated value="2020-02-11T11:36:48.088+00:00" />
-  </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
   <version value="2.0.0" />
   <name value="UKCoreServiceRequest" />
