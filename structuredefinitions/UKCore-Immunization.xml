@@ -6,6 +6,7 @@
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
   <status value="draft" />
+  <date value="2021-07-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,7 +28,7 @@
   </contact>
   <description value="Defines the UK Core constraints and extensions on the Immunization resource for the minimal set of data to query and retrieve an individual’s immunisation information." />
   <purpose value="This profile is intended to cover the recording of current and historical administration of vaccines to individuals across all healthcare disciplines in all care settings and all regions. This profile does not support the administration of non-vaccine agents, even those that may have or claim to have immunological effects. While the terms &quot;immunisation&quot; and &quot;vaccination&quot; are not clinically identical, for the purposes of the FHIR profile, the terms are used synonymously." />
-  <copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -155,6 +156,12 @@
       <isSummary value="true" />
     </element>
     <element id="Immunization.meta">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.meta" />
       <short value="Metadata about the resource" />
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." />
@@ -263,6 +270,12 @@
       </mapping>
     </element>
     <element id="Immunization.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.text" />
       <short value="Text summary of the resource, for human interpretation" />
       <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." />
@@ -331,6 +344,12 @@
       </mapping>
     </element>
     <element id="Immunization.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.extension" />
       <slicing>
         <discriminator>
@@ -382,6 +401,12 @@
       </mapping>
     </element>
     <element id="Immunization.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.modifierExtension" />
       <slicing>
         <discriminator>
@@ -436,6 +461,12 @@
       </mapping>
     </element>
     <element id="Immunization.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.identifier" />
       <short value="Business identifier" />
       <definition value="A unique identifier assigned to this immunization record." />
@@ -817,7 +848,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -882,7 +913,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -959,6 +990,12 @@
       </mapping>
     </element>
     <element id="Immunization.statusReason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.statusReason" />
       <short value="Reason not done" />
       <definition value="Indicates the reason the immunization event was not performed." />
@@ -983,6 +1020,9 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ImmunizationStatusReason" />
+        </extension>
         <strength value="extensible" />
         <description value="A ValueSet to identify the reason why an immunization was not administered." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
@@ -1013,6 +1053,12 @@
       </mapping>
     </element>
     <element id="Immunization.vaccineCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.vaccineCode" />
       <short value="Vaccine product administered" />
       <definition value="Vaccine that was administered or was to be administered." />
@@ -1038,6 +1084,9 @@
       </constraint>
       <isSummary value="true" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="VaccineCode" />
+        </extension>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccine or a null flavor value." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
@@ -1080,6 +1129,12 @@
       </mapping>
     </element>
     <element id="Immunization.patient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.patient" />
       <short value="Who was immunized" />
       <definition value="The patient who either received or did not receive the immunization." />
@@ -1110,7 +1165,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1677,7 +1732,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1742,7 +1797,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1804,6 +1859,12 @@
       </mapping>
     </element>
     <element id="Immunization.encounter">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.encounter" />
       <short value="Encounter immunization was part of" />
       <definition value="The visit or admission or other contact between patient and health care provider the immunization was performed as part of." />
@@ -1834,7 +1895,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2396,7 +2457,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2461,7 +2522,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2655,6 +2716,12 @@
       </mapping>
     </element>
     <element id="Immunization.reportOrigin">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reportOrigin" />
       <short value="Indicates the source of a secondarily reported record" />
       <definition value="The source of the data when the report of the immunization event is not based on information from the person who administered the vaccine." />
@@ -2716,6 +2783,12 @@
       </mapping>
     </element>
     <element id="Immunization.location">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.location" />
       <short value="Where immunization occurred" />
       <definition value="The service delivery location where the vaccine administration occurred." />
@@ -2746,7 +2819,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3308,7 +3381,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3373,7 +3446,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3435,6 +3508,12 @@
       </mapping>
     </element>
     <element id="Immunization.manufacturer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.manufacturer" />
       <short value="Vaccine manufacturer" />
       <definition value="Name of vaccine manufacturer." />
@@ -3465,7 +3544,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4023,7 +4102,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4088,7 +4167,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4227,6 +4306,12 @@
       </mapping>
     </element>
     <element id="Immunization.site">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.site" />
       <short value="Body site vaccine  was administered" />
       <definition value="Body site where vaccine was administered." />
@@ -4288,6 +4373,12 @@
       </mapping>
     </element>
     <element id="Immunization.route">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.route" />
       <short value="How vaccine entered body" />
       <definition value="The path by which the vaccine product is taken into the body." />
@@ -4908,6 +4999,12 @@
       </mapping>
     </element>
     <element id="Immunization.doseQuantity">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.doseQuantity" />
       <short value="Amount of vaccine administered" />
       <definition value="The quantity of vaccine product that was administered." />
@@ -4938,7 +5035,7 @@
         <human value="If a code for the unit is present, the system SHALL also be present" />
         <expression value="code.empty() or system.exists()" />
         <xpath value="not(exists(f:code)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <constraint>
         <key value="sqty-1" />
@@ -4946,7 +5043,7 @@
         <human value="The comparator is not used on a SimpleQuantity" />
         <expression value="comparator.empty()" />
         <xpath value="not(exists(f:comparator))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Immunization" />
       </constraint>
       <isModifier value="false" />
       <mapping>
@@ -4971,6 +5068,12 @@
       </mapping>
     </element>
     <element id="Immunization.performer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.performer" />
       <short value="Who performed event" />
       <definition value="Indicates who performed the immunization event." />
@@ -5035,6 +5138,12 @@
       </mapping>
     </element>
     <element id="Immunization.performer.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.performer.extension" />
       <slicing>
         <discriminator>
@@ -5086,6 +5195,12 @@
       </mapping>
     </element>
     <element id="Immunization.performer.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.performer.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -5134,6 +5249,12 @@
       </mapping>
     </element>
     <element id="Immunization.performer.function">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.performer.function" />
       <short value="What type of performance was done" />
       <definition value="Describes the type of performance (e.g. ordering provider, administering provider, etc.)." />
@@ -5192,6 +5313,12 @@
       </mapping>
     </element>
     <element id="Immunization.performer.actor">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.performer.actor" />
       <short value="Individual or organization who was performing" />
       <definition value="The practitioner or organization who performed the action." />
@@ -5224,7 +5351,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5249,6 +5376,12 @@
       </mapping>
     </element>
     <element id="Immunization.note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.note" />
       <short value="Additional immunization notes" />
       <definition value="Extra information about the immunization that is not conveyed by the other attributes." />
@@ -5415,14 +5548,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <constraint>
-        <key value="ref-1" />
-        <severity value="error" />
-        <human value="SHALL have a contained resource if a local reference is provided" />
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
-      </constraint>
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -5517,6 +5642,12 @@
       </mapping>
     </element>
     <element id="Immunization.reasonCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reasonCode" />
       <short value="Why immunization occurred" />
       <definition value="Reasons why the vaccine was administered." />
@@ -5541,6 +5672,9 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ImmunizationReason" />
+        </extension>
         <strength value="extensible" />
         <description value="The reason why a vaccine was administered." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
@@ -5571,6 +5705,12 @@
       </mapping>
     </element>
     <element id="Immunization.reasonReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reasonReference" />
       <short value="Why immunization occurred" />
       <definition value="Condition, Observation or DiagnosticReport that supports why the immunization was administered." />
@@ -5603,7 +5743,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -6157,7 +6297,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6222,7 +6362,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6325,6 +6465,12 @@
       </mapping>
     </element>
     <element id="Immunization.subpotentReason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.subpotentReason" />
       <short value="Reason for being subpotent" />
       <definition value="Reason why a dose is considered to be subpotent." />
@@ -6378,6 +6524,12 @@
       </mapping>
     </element>
     <element id="Immunization.education">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.education" />
       <short value="Educational material presented to patient" />
       <definition value="Educational material presented to the patient (or guardian) at the time of vaccine administration." />
@@ -6441,6 +6593,12 @@
       </mapping>
     </element>
     <element id="Immunization.education.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.education.extension" />
       <slicing>
         <discriminator>
@@ -6492,6 +6650,12 @@
       </mapping>
     </element>
     <element id="Immunization.education.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.education.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -6682,6 +6846,12 @@
       </mapping>
     </element>
     <element id="Immunization.programEligibility">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.programEligibility" />
       <short value="Patient eligibility for a vaccination program" />
       <definition value="Indicates a patient's eligibility for a funding program." />
@@ -6739,6 +6909,12 @@
       </mapping>
     </element>
     <element id="Immunization.fundingSource">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.fundingSource" />
       <short value="Funding source for the vaccine" />
       <definition value="Indicates the source of the vaccine actually administered. This may be different than the patient eligibility (e.g. the patient may be eligible for a publically purchased vaccine but due to inventory issues, vaccine purchased with private funds was actually administered)." />
@@ -6792,6 +6968,12 @@
       </mapping>
     </element>
     <element id="Immunization.reaction">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reaction" />
       <short value="Details of a reaction that follows immunization" />
       <definition value="Categorical data indicating that an adverse event is associated in time to an immunization." />
@@ -6852,6 +7034,12 @@
       </mapping>
     </element>
     <element id="Immunization.reaction.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reaction.extension" />
       <slicing>
         <discriminator>
@@ -6903,6 +7091,12 @@
       </mapping>
     </element>
     <element id="Immunization.reaction.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reaction.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -6987,6 +7181,12 @@
       </mapping>
     </element>
     <element id="Immunization.reaction.detail">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.reaction.detail" />
       <short value="Additional information on reaction" />
       <definition value="Details of the reaction." />
@@ -7017,7 +7217,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -7571,7 +7771,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7636,7 +7836,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7734,6 +7934,12 @@
       </mapping>
     </element>
     <element id="Immunization.protocolApplied">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.protocolApplied" />
       <short value="Protocol followed by the provider" />
       <definition value="The protocol (set of recommendations) being followed by the provider who administered the dose." />
@@ -7789,6 +7995,12 @@
       </mapping>
     </element>
     <element id="Immunization.protocolApplied.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.protocolApplied.extension" />
       <slicing>
         <discriminator>
@@ -7840,6 +8052,12 @@
       </mapping>
     </element>
     <element id="Immunization.protocolApplied.modifierExtension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.protocolApplied.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -7921,6 +8139,12 @@
       </mapping>
     </element>
     <element id="Immunization.protocolApplied.authority">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.protocolApplied.authority" />
       <short value="Who is responsible for publishing the recommendations" />
       <definition value="Indicates the authority who published the protocol (e.g. ACIP) that is being followed." />
@@ -7951,7 +8175,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -8501,7 +8725,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8566,7 +8790,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <source value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8628,6 +8852,12 @@
       </mapping>
     </element>
     <element id="Immunization.protocolApplied.targetDisease">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Immunization.protocolApplied.targetDisease" />
       <short value="Vaccine preventatable disease being targetted" />
       <definition value="The vaccine preventable disease the dose is being administered against." />
@@ -8862,9 +9092,6 @@
       <min value="1" />
     </element>
     <element id="Immunization.route.coding:snomedCT.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Immunization.route.coding.display" />
       <min value="1" />
     </element>

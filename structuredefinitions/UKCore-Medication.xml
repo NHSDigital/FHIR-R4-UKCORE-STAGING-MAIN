@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Medication" />
-  <meta>
-    <lastUpdated value="2020-02-07T10:24:47.575+00:00" />
-  </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
   <version value="2.0.0" />
   <name value="UKCoreMedication" />
   <title value="UK Core Medication" />
   <status value="draft" />
-  <date value="2020-02-07T10:24:47.0697605+00:00" />
+  <date value="2020-02-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
