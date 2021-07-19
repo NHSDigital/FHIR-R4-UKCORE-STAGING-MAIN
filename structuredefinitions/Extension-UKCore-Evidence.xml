@@ -6,7 +6,7 @@
   <name value="ExtensionUKCoreEvidence" />
   <title value="Extension UK Core Evidence" />
   <status value="draft" />
-  <date value="2021-07-16" />
+  <date value="2021-07-19" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,7 +27,7 @@
     </telecom>
   </contact>
   <description value="A reference to results of investigations that confirmed the certainty of the diagnosis.  Examples might include results of skin prick allergy tests." />
-  <purpose value="This extension extends the AllergyIntolerance resource to support a reference to results of investigations that confirmed the certainty of the diagnosis." />
+  <purpose value="This extension extends the AllergyIntolerance resource to support the exchange of information describing the reference to results of investigations that confirmed the certainty of the diagnosis, which is currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2021 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -77,7 +77,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -157,7 +157,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -194,12 +194,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="A reference to results of investigations that confirmed the certainty of the diagnosis" />
       <definition value="A reference to results of investigations that confirmed the certainty of the diagnosis." />
@@ -302,7 +296,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -314,12 +308,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x].reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -355,12 +343,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x].type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -523,7 +505,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -535,12 +517,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x].identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -658,12 +634,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x].identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -711,12 +681,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x].identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -863,7 +827,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -888,12 +852,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
