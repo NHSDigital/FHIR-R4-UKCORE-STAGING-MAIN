@@ -47,8 +47,8 @@ jobs:
         with:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
-          PATH_TO_CONFORMANCE_RESOURCES: CapabilityStatement CodeSystem MessageDefinition NamingSystem SearchParameter StructureDefinition ValueSet
-          PATH_TO_EXAMPLES: Examples
+          PATH_TO_CONFORMANCE_RESOURCES: codesystems conceptmaps structuredefinitions valuesets
+          PATH_TO_EXAMPLES: examples
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
