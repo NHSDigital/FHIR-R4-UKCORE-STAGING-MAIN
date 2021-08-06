@@ -43,7 +43,7 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.2.0
+        uses: FirelyTeam/firely-terminal-pipeline@v0.2.1
         with:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
