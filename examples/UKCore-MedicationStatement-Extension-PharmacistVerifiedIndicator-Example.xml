@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../SchemasR4/medicationstatement.xsd">
-	<id value="UKCore-MedicationStatement-Extension-PharmacistVerifiedIndicator-Example"/>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationStatement-Extension-PharmacistVerified-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
 	</meta>
@@ -11,10 +11,14 @@
 	</extension>
 			<!-- **************extension end************** -->
 	<status value="active"/>
-	<medicationReference>
-		<reference value="urn:uuid:811a38a0-5612-47f5-8d5b-5a0287e8e72b"/>
-	</medicationReference>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="27658006"/>
+			<display value="Amoxicillin"/>
+		</coding>
+	</medicationCodeableConcept>
 	<subject>
-		<reference value="urn:uuid:9a3f9f21-1275-49d2-ad14-39f21e6e9ac0"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 </MedicationStatement>
