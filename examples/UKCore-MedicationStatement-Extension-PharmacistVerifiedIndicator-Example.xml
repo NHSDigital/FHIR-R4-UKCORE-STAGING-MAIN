@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationStatement-Extension-PharmacistVerified-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
+	</meta>
+		<!-- **************extension start************** -->
+	<!--Pharmacist Verified Indicator extension details-->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator">
+		<valueBoolean value="true"/>
+	</extension>
+			<!-- **************extension end************** -->
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="27658006"/>
+			<display value="Amoxicillin"/>
+		</coding>
+	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</MedicationStatement>
