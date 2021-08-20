@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-LanguageAbilityMode" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-LanguageAbilityMode" />
@@ -43,4 +44,51 @@
     <code value="RWR" />
     <display value="Received written" />
   </concept>
+=======
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-LanguageAbilityMode" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-LanguageAbilityMode" />
+  <version value="2.0.0" />
+  <name value="UKCoreLanguageAbilityMode" />
+  <title value="UK Core Language Ability Mode" />
+  <status value="draft" />
+  <date value="2019-10-25T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem that identifies the mode the patient can communicate in, representing the method of expression of the language." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="ESGN" />
+    <display value="Expressed signed" />
+  </concept>
+  <concept>
+    <code value="ESP" />
+    <display value="Expressed spoken" />
+  </concept>
+  <concept>
+    <code value="EWR" />
+    <display value="Expressed written" />
+  </concept>
+  <concept>
+    <code value="RSGN" />
+    <display value="Received signed" />
+  </concept>
+  <concept>
+    <code value="RSP" />
+    <display value="Received spoken" />
+  </concept>
+  <concept>
+    <code value="RWR" />
+    <display value="Received written" />
+  </concept>
+>>>>>>> ukcore-draft/develop
 </CodeSystem>

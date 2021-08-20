@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="NHSDataModelAndDictionary-DischargeDestination" />
   <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
@@ -97,4 +98,105 @@
     <code value="88" />
     <display value="Non-NHS (other than Local Authority) run Hospice" />
   </concept>
+=======
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="NHSDataModelAndDictionary-DischargeDestination" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
+    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/d/disc/discharge_destination_de.asp?shownav=1" />
+  </extension>
+  <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-DischargeDestination" />
+  <version value="2.0.0" />
+  <name value="NHSDataModelandDictionaryDischargeDestination" />
+  <title value="NHS Data Model and Dictionary Discharge Destination" />
+  <status value="draft" />
+  <date value="2019-11-05T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="The destination of a Patient on completion of a Hospital Provider Spell, or a note that the Patient died or was a still birth." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <content value="complete" />
+  <concept>
+    <code value="19" />
+    <display value="Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode." />
+  </concept>
+  <concept>
+    <code value="29" />
+    <display value="Temporary place of residence when usually resident elsewhere (e.g. hotels, residential Educational Establishment)" />
+  </concept>
+  <concept>
+    <code value="30" />
+    <display value="Repatriation from high security psychiatric accommodation in an NHS Hospital Provider (NHS Trust or NHS Foundation Trust)" />
+  </concept>
+  <concept>
+    <code value="37" />
+    <display value="Court" />
+  </concept>
+  <concept>
+    <code value="38" />
+    <display value="Penal establishment or police station" />
+  </concept>
+  <concept>
+    <code value="48" />
+    <display value="High Security Psychiatric Hospital, Scotland" />
+  </concept>
+  <concept>
+    <code value="49" />
+    <display value="NHS other Hospital Provider - high security psychiatric accommodation" />
+  </concept>
+  <concept>
+    <code value="50" />
+    <display value="NHS other Hospital Provider - medium secure unit" />
+  </concept>
+  <concept>
+    <code value="51" />
+    <display value="NHS other Hospital Provider - Ward for general Patients or the younger physically disabled" />
+  </concept>
+  <concept>
+    <code value="52" />
+    <display value="NHS other Hospital Provider - Ward for maternity Patients or Neonates" />
+  </concept>
+  <concept>
+    <code value="53" />
+    <display value="NHS other Hospital Provider - Ward for Patients who are mentally ill or have Learning Disabilities" />
+  </concept>
+  <concept>
+    <code value="54" />
+    <display value="NHS run Care Home" />
+  </concept>
+  <concept>
+    <code value="65" />
+    <display value="Local Authority residential accommodation i.e. where care is provided" />
+  </concept>
+  <concept>
+    <code value="66" />
+    <display value="Local Authority foster care" />
+  </concept>
+  <concept>
+    <code value="79" />
+    <display value="Not applicable - Patient died or still birth" />
+  </concept>
+  <concept>
+    <code value="84" />
+    <display value="Non-NHS run hospital - medium secure unit" />
+  </concept>
+  <concept>
+    <code value="85" />
+    <display value="Non-NHS (other than Local Authority) run Care Home" />
+  </concept>
+  <concept>
+    <code value="87" />
+    <display value="Non NHS run hospital" />
+  </concept>
+  <concept>
+    <code value="88" />
+    <display value="Non-NHS (other than Local Authority) run Hospice" />
+  </concept>
+>>>>>>> ukcore-draft/develop
 </CodeSystem>
