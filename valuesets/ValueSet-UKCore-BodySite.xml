@@ -6,10 +6,10 @@
     <name value="UKCoreBodySite" />
     <title value="UK Core Body Site" />
     <status value="draft" />
-    <date value="2021-10-20T00:00:00+00:00" />
+    <date value="2021-08-20T00:00:00+00:00" />
     <publisher value="HL7 UK" />
     <contact>
-        <name value="HL7 UK" />
+        <name value="HL7 UK"/>
         <telecom>
             <system value="email" />
             <value value="secretariat@hl7.org.uk" />
