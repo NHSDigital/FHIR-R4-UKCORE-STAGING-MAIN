@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="UKCore-Bundle-BundledAllergyList-Example" />
   <type value="collection" />

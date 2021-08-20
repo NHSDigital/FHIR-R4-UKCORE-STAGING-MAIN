@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-ListWarningCode" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode" />

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="NHSDataModelAndDictionary-OutcomeOfAttendance" />
   <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
