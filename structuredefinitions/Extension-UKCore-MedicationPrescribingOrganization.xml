@@ -225,7 +225,7 @@
       </constraint>
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingAgency" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingOrganization" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -258,7 +258,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingAgency" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingOrganization" />
       </binding>
     </element>
   </differential>
