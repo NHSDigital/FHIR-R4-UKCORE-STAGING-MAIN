@@ -1,58 +1,72 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
-  <id value="UKCore-MedicationDispense-EyeDrops-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
-  </meta>
-  <identifier>
-    <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="5c92c1dc-06a9-4729-b8c9-222cf769f8dc" />
-  </identifier>
-  <status value="in-progress" />
-  <medicationReference>
-    <reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example" />
-  </medicationReference>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <performer>
-    <actor>
-      <reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example" />
-    </actor>
-  </performer>
-  <authorizingPrescription>
-    <reference value="MedicationRequest/UKCore-MedicationRequest-EyeDrops-Example" />
-  </authorizingPrescription>
-  <quantity>
-    <value value="30" />
-    <unit value="ml" />
-    <system value="http://unitsofmeasure.org" />
-    <code value="ml" />
-  </quantity>
-  <daysSupply>
-    <value value="30" />
-    <unit value="Day" />
-    <system value="http://unitsofmeasure.org" />
-    <code value="d" />
-  </daysSupply>
-  <whenPrepared value="2020-01-15T15:00:00+00:00" />
-  <receiver>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </receiver>
-  <dosageInstruction>
-    <text value="1 drop in each affected eye twice daily, approximately 12 hours apart." />
-    <timing>
-      <repeat>
-        <frequency value="1" />
-        <period value="12" />
-        <periodUnit value="h" />
-      </repeat>
-    </timing>
-    <route>
-      <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="54485002" />
-        <display value="Ophthalmic" />
-      </coding>
-    </route>
-  </dosageInstruction>
+	<id value="UKCore-MedicationDispense-EyeDrops-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="5c92c1dc-06a9-4729-b8c9-222cf769f8dc"/>
+	</identifier>
+	<status value="in-progress"/>
+	<medicationReference>
+		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
+	</medicationReference>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<performer>
+		<actor>
+			<reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example"/>
+		</actor>
+	</performer>
+	<authorizingPrescription>
+		<reference value="MedicationRequest/UKCore-MedicationRequest-EyeDrops-Example"/>
+	</authorizingPrescription>
+	<quantity>
+		<value value="30"/>
+		<unit value="ml"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="ml"/>
+	</quantity>
+	<daysSupply>
+		<value value="30"/>
+		<unit value="Day"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="d"/>
+	</daysSupply>
+	<whenPrepared value="2020-01-15T15:00:00+00:00"/>
+	<receiver>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</receiver>
+	<dosageInstruction>
+		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="12"/>
+				<periodUnit value="h"/>
+			</repeat>
+		</timing>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="362508001"/>
+				<display value="Both eyes, entire"/>
+			</coding>
+		</site>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="54485002"/>
+				<display value="Ophthalmic"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="421984009"/>
+				<display value="Until finished"/>
+			</coding>
+		</method>
+	</dosageInstruction>
 </MedicationDispense>
