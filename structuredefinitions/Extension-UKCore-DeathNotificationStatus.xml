@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DeathNotificationStatus" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
-  <version value="2.0.1" />
+  <version value="2.1.0" />
   <name value="ExtensionUKCoreDeathNotificationStatus" />
   <title value="Extension UK Core Death Notification Status" />
   <status value="draft" />
-  <date value="2021-08-19" />
+  <date value="2021-08-20" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -77,7 +77,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -157,7 +157,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -207,7 +207,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -287,7 +287,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -324,6 +324,12 @@
       </mapping>
     </element>
     <element id="Extension.extension:deathNotificationStatus.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="The patient's death notification status." />
       <definition value="The patient's death notification status." />
@@ -399,7 +405,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -479,7 +485,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -516,6 +522,12 @@
       </mapping>
     </element>
     <element id="Extension.extension:systemEffectiveDate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="System effective date for patient's death notification status." />
       <definition value="System effective date for patient's death notification status." />
@@ -574,6 +586,12 @@
       </mapping>
     </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
