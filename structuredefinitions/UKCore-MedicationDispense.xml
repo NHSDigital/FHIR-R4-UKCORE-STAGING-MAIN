@@ -1880,9 +1880,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationCode" />
         </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="A coded concept identifying which substance or product can be dispensed." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/medication-codes" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -12131,6 +12131,10 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
+      </binding>
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
