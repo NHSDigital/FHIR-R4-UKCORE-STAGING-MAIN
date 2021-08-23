@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A CodeSystem to identify the type of death notice as held on Personal Demographics Service (PDS)." />
+  <description value="A CodeSystem to identify the type of death notice as held on Personal Demographics Service (PDS) or any other source system."/>
   <copyright value="Copyright © 2019 NHS Digital" />
   <caseSensitive value="true" />
   <content value="complete" />
