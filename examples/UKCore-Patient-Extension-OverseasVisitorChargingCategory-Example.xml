@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+<id value="UKCore-Patient-Extension-OverseasVisitorChargingCategory-Example" />
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OverseasVisitorChargingCategory">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OverseasVisitorChargingCategory"/>
+				<code value="D"/>
+				<display value="Chargeable European Economic Area patient"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+</Patient>

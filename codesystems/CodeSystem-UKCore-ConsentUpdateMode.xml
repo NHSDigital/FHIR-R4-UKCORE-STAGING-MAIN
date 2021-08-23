@@ -27,4 +27,35 @@
     <code value="altered" />
     <display value="Resource altered" />
   </concept>
+=======
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ConsentUpdateMode" />
+  <url value="https://fhir.hl7.org.uk/Codesystem/UKCore-ConsentUpdateMode" />
+  <version value="2.0.0" />
+  <name value="UKCoreConsentUpdateMode" />
+  <title value="UK Core Consent Update Mode" />
+  <status value="draft" />
+  <date value="2019-12-06T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the whether this is the original or an amended resource." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="added" />
+    <display value="Resource added" />
+  </concept>
+  <concept>
+    <code value="altered" />
+    <display value="Resource altered" />
+  </concept>
+>>>>>>> ukcore-draft/develop
 </CodeSystem>

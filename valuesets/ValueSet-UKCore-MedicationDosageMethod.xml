@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationDosageMethod"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreMedicationDosageMethod"/>
+	<title value="UK Core Medication Dosage Method"/>
+	<status value="draft"/>
+	<date value="2021-08-20T00:00:00+00:00"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
+		</telecom>
+	</contact>
+	<description value="A set of codes from that define a medication dosage method. Selected from the 'ePrescribing method' simple reference set of the SNOMED CT UK coding system."/>
+	<copyright value="Copyright &#169; 2021 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7  The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="memberOf 999000041000001103"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>
