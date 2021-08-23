@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+	<id value="UKCore-QuestionnaireResponse-InpatientSurvey-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+	</meta>
+	<identifier>
+		<value value="6d47d8c4-2f05-4dbb-93f8-6863e6d2975b"/>
+	</identifier>
+	<questionnaire value="Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
+	<status value="completed"/>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<encounter>
+	<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
+	</encounter>
+	<authored value="2021-03-18T00:00:00+00:00"/>
+	<author>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+	</author>
+	<source>
+				<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</source>
+	<item>
+		<linkId value="1"/>
+				<text value="Do you have allergies?"/>
+			<answer>
+				<valueString value="I am allergic to amoxicillin."/>
+			</answer>
+			</item>
+	<item>
+		<linkId value="2"/>
+		<text value="General questions"/>
+		<item>
+			<linkId value="2.1"/>
+			<text value="What is your gender?"/>
+			<answer>
+				<valueString value="male"/>
+			</answer>
+		</item>
+		<item>
+			<linkId value="2.2"/>
+			<text value="What is your date of birth?"/>
+			<answer>
+				<valueDate value="1970-09-11"/>
+			</answer>
+		</item>
+		<item>
+			<linkId value="2.3"/>
+			<text value="What is your country of birth?"/>
+			<answer>
+				<valueString value="The United Kingdom"/>
+			</answer>
+		</item>
+		<item>
+			<linkId value="2.4"/>
+			<text value="What is your marital status?"/>
+			<answer>
+				<valueString value="married"/>
+			</answer>
+		</item>
+	</item>
+	<item>
+		<linkId value="3"/>
+		<text value="Intoxications"/>
+		<item>
+			<linkId value="3.1"/>
+			<text value="Do you smoke?"/>
+			<answer>
+				<valueBoolean value="true"/>
+			</answer>
+		</item>
+		<item>
+			<linkId value="3.2"/>
+			<text value="Do you drink alchohol?"/>
+			<answer>
+				<valueBoolean value="false"/>
+			</answer>
+		</item>
+	</item>
+</QuestionnaireResponse>

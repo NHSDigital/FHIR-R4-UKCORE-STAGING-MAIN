@@ -1,0 +1,87 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="UKCore-DateTimeType"/>
+	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
+	<version value="2.0.0"/>
+	<name value="UKCoreDateTimeType"/>
+	<title value="UK Core Date Time Type"/>
+	<status value="draft"/>
+	<date value="2020-06-30T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="CodeSystem to identify the type of date and time being recorded."/>
+	<copyright value="Copyright © 2020 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="time-clear"/>
+		<display value="Time Clear"/>
+		<definition value="The time the resource is clear from a call, and is available to be allocated to another call (either from receiving location or scene if no transport or stood down)"/>
+	</concept>
+	<concept>
+		<code value="time-clinical-handover"/>
+		<display value="Time of Clinical Handover"/>
+		<definition value="The time the conveyed patient is handed over to the receiving location, often a hospital, who take over clinical responsibility for the patient from this time"/>
+	</concept>
+	<concept>
+		<code value="time-dispatch-code-established"/>
+		<display value="Time Dispatch Code Established"/>
+		<definition value="The time that the Pathways Triage Disposition code or AMPDS Triage disposition code is established"/>
+	</concept>
+	<concept>
+		<code value="time-arrived-receiving-location"/>
+		<display value="Time Arrived at Receiving Location"/>
+		<definition value="The time the resource arrives with the conveyed patient at the receiving location, often a hospital,or other place of care"/>
+	</concept>
+	<concept>
+		<code value="time-patient-handover"/>
+		<display value="Time Patient Handover"/>
+		<definition value="The time the conveyed patient is handed over to the receiving location, often a hospital, who take over clinical responsibility for the patient from this time"/>
+	</concept>
+	<concept>
+		<code value="time-resource-mobilised"/>
+		<display value="Time Resource Mobilised"/>
+		<definition value="The date time the resource starts moving towards the incident location that has been requested to attend"/>
+	</concept>
+	<concept>
+		<code value="time-resource-arrived-on-scene"/>
+		<display value="Time Resource Arrived On Scene"/>
+		<definition value="The date/time the resource arrives at the incident location they have been requested to attend"/>
+	</concept>
+	<concept>
+		<code value="time-stood-down"/>
+		<display value="Time Stood Down"/>
+		<definition value="The date/time the vehicle was removed from a call whilst travelling towards an incident location if they are no longer required to attend"/>
+	</concept>
+	<concept>
+		<code value="time-resource-left-scene"/>
+		<display value="Time Resource Left Scene"/>
+		<definition value="The date/time the resource leaves the incident location in order to transport the patient to hospital"/>
+	</concept>
+	<concept>
+		<code value="clock-start-date-time"/>
+		<display value="Clock Start Date Time"/>
+		<definition value="The date/time that the clock started for Ambulance Quality Indicator performance reporting and other purposes"/>
+	</concept>
+	<concept>
+		<code value="time-call-answered"/>
+		<display value="Time Call Answered"/>
+		<definition value="The date/time that the call was answered in the ambulance control room"/>
+	</concept>
+	<concept>
+		<code value="time-call-ended"/>
+		<display value="Time Call Ended"/>
+		<definition value="The date/time that the call ended in the ambulance control room"/>
+	</concept>
+	<concept>
+		<code value="clock-stop-date-time"/>
+		<display value="Clock Stop Date Time"/>
+		<definition value="The date/time that the first response arrived at the incident location that counts as the arrival time based on the National Ambulance Quality Indicator definitions"/>
+	</concept>
+</CodeSystem>

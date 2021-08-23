@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Device-ColostomyBag-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"/>
+	</meta>
+	<identifier>
+		<system value="https://www.leedsth.nhs.uk/identifier/devices"/>
+		<value value="DEV1999990567"/>
+		<assigner>
+			<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		</assigner>
+	</identifier>
+	<status value="active"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="5794211000001104"/>
+			<display value="Unique 2 Mini two piece ostomy system colostomy bag 503-55 55mm Opaque (Dansac Ltd) 30 device"/>
+		</coding>
+	</type>
+	<owner>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+	</owner>
+	<location>
+		<reference value="Location/UKCore-Location-CardiologySJUH-Example"/>
+	</location>
+	<note>
+		<time value="2021-01-10T16:10:00+00:00"/>
+		<text value="Pack of 50 currently stored in SJUH Cardiology."/>
+	</note>
+</Device>

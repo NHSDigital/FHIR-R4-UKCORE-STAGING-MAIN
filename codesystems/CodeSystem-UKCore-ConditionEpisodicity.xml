@@ -39,4 +39,47 @@
     <display value="End" />
     <definition value="Marks the end of an existing condition episode." />
   </concept>
+=======
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ConditionEpisodicity" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity" />
+  <version value="2.0.0" />
+  <name value="UKCoreConditionEpisodicity" />
+  <title value="UK Core Condition Episodicity" />
+  <status value="draft" />
+  <date value="2019-11-11T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the episodicity of a condition." />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="first" />
+    <display value="First" />
+    <definition value="The first episode of a condition." />
+  </concept>
+  <concept>
+    <code value="new" />
+    <display value="New" />
+    <definition value="A new episode of a previously recorded condition." />
+  </concept>
+  <concept>
+    <code value="review" />
+    <display value="Review" />
+    <definition value="A review of an existing condition episode." />
+  </concept>
+  <concept>
+    <code value="end" />
+    <display value="End" />
+    <definition value="Marks the end of an existing condition episode." />
+  </concept>
+>>>>>>> ukcore-draft/develop
 </CodeSystem>
