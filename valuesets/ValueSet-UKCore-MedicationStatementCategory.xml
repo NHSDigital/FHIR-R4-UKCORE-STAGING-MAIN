@@ -1,5 +1,4 @@
-<!--<ValueSet xmlns="http://hl7.org/fhir">-->
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/R4-Schemas/fhir-all-xsd/valueset.xsd">
+<ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationStatementCategory"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationStatementCategory"/>
 	<version value="1.0.0"/>
