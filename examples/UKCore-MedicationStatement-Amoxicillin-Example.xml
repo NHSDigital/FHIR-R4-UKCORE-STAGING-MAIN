@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
 	<meta>
@@ -7,9 +6,9 @@
 	<status value="active"/>
 	<medicationCodeableConcept>
 		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="27658006"/>
-			<display value="Amoxicillin"/>
+			<system value="https://dmd.nhs.uk/"/>
+			<code value="39732311000001104"/>
+			<display value="Amoxicillin 250mg capsules"/>
 		</coding>
 	</medicationCodeableConcept>
 	<subject>
@@ -24,4 +23,36 @@
 			<display value="Otitis Media"/>
 		</coding>
 	</reasonCode>
+	<dosage>
+		<text value="2 capsules 4 times a day."/>
+		<timing>
+			<repeat>
+				<frequency value="4"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="Oral"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="421984009"/>
+				<display value="Until finished"/>
+			</coding>
+		</method>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="500"/>
+				<unit value="mg"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</doseQuantity>
+		</doseAndRate>
+	</dosage>
 </MedicationStatement>
