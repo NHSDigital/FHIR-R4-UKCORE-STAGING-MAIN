@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationRequest-EyeDrops-Example"/>
 	<meta>
@@ -6,6 +5,13 @@
 	</meta>
 	<status value="completed"/>
 	<intent value="order"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+			<code value="outpatient"/>
+			<display value="Outpatient"/>
+		</coding>
+	</category>
 	<priority value="routine"/>
 	<medicationReference>
 		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
@@ -19,11 +25,18 @@
 	<recorder>
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</recorder>
+	<courseOfTherapyType>
+		<coding>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy"/>
+			<code value="continuous-repeating-dispensing"/>
+			<display value="Continuous long term (repeat dispensing)"/>
+		</coding>
+	</courseOfTherapyType>
 	<dosageInstruction>
 		<text value="One drop 3 times a day"/>
 		<timing>
 			<repeat>
-				<frequency value="4"/>
+				<frequency value="3"/>
 				<period value="1"/>
 				<periodUnit value="d"/>
 			</repeat>
