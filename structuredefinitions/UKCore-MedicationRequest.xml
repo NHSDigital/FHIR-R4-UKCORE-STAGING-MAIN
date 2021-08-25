@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-  <version value="2.0.0" />
+  <version value="2.1.0" />
   <name value="UKCoreMedicationRequest" />
   <title value="UK Core MedicationRequest" />
   <status value="draft" />
-  <date value="2021-07-14" />
+  <date value="2021-08-25" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -28,7 +28,7 @@
   </contact>
   <description value="Defines the UK Core constraints and extensions on the MedicationRequest resource for the minimal set of data to query and retrieve prescription information." />
   <purpose value="An order or request for both supply of the medication and the instructions for administration of the medication to an individual. This profile covers inpatient medication orders as well as community orders (whether filled by the prescriber or by a pharmacy). It also includes orders for over-the-counter medications (e.g. Aspirin), total parenteral nutrition and diet/ vitamin supplements. It may be used to support the order of medication-related devices. It is not intended for use in prescribing particular diets, or for ordering non-medication-related items (eyeglasses, supplies, etc)." />
-  <copyright value="Copyright © 2021 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -375,6 +375,57 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="MedicationRequest.extension:medicationRepeatInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationRequest.extension" />
+      <sliceName value="medicationRepeatInformation" />
+      <short value="Medication repeat information" />
+      <definition value="Medication repeat information." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1150,7 +1201,7 @@
           <valueString value="MedicationRequestCategory" />
         </extension>
         <strength value="extensible" />
-        <description value="A coded concept identifying the category of medication request." />
+        <description value="A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
       </binding>
       <mapping>
@@ -1348,9 +1399,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationCode" />
         </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="A coded concept identifying substance or product that can be ordered." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/medication-codes" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3643,7 +3694,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -4370,7 +4421,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -7959,7 +8010,7 @@
           <valueString value="MedicationRequestCourseOfTherapy" />
         </extension>
         <strength value="extensible" />
-        <description value="A set of codes to define a course of therapy for a medication request" />
+        <description value="Identifies the overall pattern of medication administratio." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" />
       </binding>
       <mapping>
@@ -9409,9 +9460,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationAsNeededReason" />
         </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example &quot;pain&quot;, &quot;30 minutes prior to sexual intercourse&quot;, &quot;on flare-up&quot; etc." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/medication-as-needed-reason" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9462,9 +9513,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationAdministrationSite" />
         </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="A coded concept describing the site location the medicine enters into or onto the body." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/approach-site-codes" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9644,75 +9695,6 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="MedicationRequest.dosageInstruction.route.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <short value="Code defined by a terminology system" />
-      <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
-      <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="CodeableConcept.coding" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Coding" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CV" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.1-8, C*E.10-22" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="union(., ./translation)" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
-      </mapping>
-    </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="MedicationRequest.dosageInstruction.route.coding" />
-      <sliceName value="snomedCT" />
       <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
@@ -9739,8 +9721,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageRoute" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9771,7 +9752,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.id">
+    <element id="MedicationRequest.dosageInstruction.route.coding.id">
       <path value="MedicationRequest.dosageInstruction.route.coding.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -9794,7 +9775,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.extension">
+    <element id="MedicationRequest.dosageInstruction.route.coding.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -9851,7 +9832,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.system">
+    <element id="MedicationRequest.dosageInstruction.route.coding.system">
       <path value="MedicationRequest.dosageInstruction.route.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -9895,7 +9876,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.version">
+    <element id="MedicationRequest.dosageInstruction.route.coding.version">
       <path value="MedicationRequest.dosageInstruction.route.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -9937,7 +9918,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.code">
+    <element id="MedicationRequest.dosageInstruction.route.coding.code">
       <path value="MedicationRequest.dosageInstruction.route.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -9980,7 +9961,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.display">
+    <element id="MedicationRequest.dosageInstruction.route.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -10026,7 +10007,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.userSelected">
+    <element id="MedicationRequest.dosageInstruction.route.coding.userSelected">
       <path value="MedicationRequest.dosageInstruction.route.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -10151,9 +10132,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationAdministrationMethod" />
         </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="A coded concept describing the technique by which the medicine is administered." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/administration-method-codes" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -12219,7 +12200,7 @@
       <path value="MedicationRequest.substitution" />
       <short value="Any restrictions on medication substitution" />
       <definition value="Indicates whether or not substitution can or should be part of the dispense. In some cases, substitution must happen, in other cases substitution must not happen. This block explains the prescriber's intent. If nothing is specified substitution may be done." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="MedicationRequest.substitution" />
@@ -12388,7 +12369,7 @@
     <element id="MedicationRequest.substitution.allowed[x]">
       <path value="MedicationRequest.substitution.allowed[x]" />
       <short value="Whether substitution is allowed or not" />
-      <definition value="True if the prescriber allows a different drug to be dispensed from what was prescribed." />
+      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed.  For use  in the UK a default value for substitution.allowedBoolean is specified as 'false' to reflect the UK default position of no substitution. Where a substitution is required to be specified, either the substitution.allowedBoolean must be set to 'true' or the substitution.allowedCodeableConcept will be used instead of substitution.allowedBoolean to specify the type of substitution required." />
       <comment value="This element is labeled as a modifier because whether substitution is allow or not, it cannot be ignored." />
       <min value="1" />
       <max value="1" />
@@ -13863,7 +13844,6 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <condition value="ele-1" />
@@ -14661,6 +14641,24 @@
     </element>
   </snapshot>
   <differential>
+    <element id="MedicationRequest.extension">
+      <path value="MedicationRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationRequest.extension:medicationRepeatInformation">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="medicationRepeatInformation" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+      </type>
+    </element>
     <element id="MedicationRequest.identifier.assigner">
       <path value="MedicationRequest.identifier.assigner" />
       <type>
@@ -14672,7 +14670,6 @@
       <path value="MedicationRequest.category" />
       <binding>
         <strength value="extensible" />
-        <description value="A coded concept identifying the category of medication request." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
       </binding>
     </element>
@@ -14699,6 +14696,10 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
+      </binding>
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
@@ -14740,7 +14741,7 @@
       <path value="MedicationRequest.requester" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -14759,7 +14760,7 @@
       <path value="MedicationRequest.performer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -14835,7 +14836,6 @@
       <definition value="The description of the course of therapy for a medication request." />
       <binding>
         <strength value="extensible" />
-        <description value="A set of codes to define a course of therapy for a medication request" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" />
       </binding>
     </element>
@@ -14859,38 +14859,47 @@
         <code value="string" />
       </type>
     </element>
+    <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
+      <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
+      </binding>
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site">
+      <path value="MedicationRequest.dosageInstruction.site" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
+      </binding>
+    </element>
     <element id="MedicationRequest.dosageInstruction.route.coding">
       <path value="MedicationRequest.dosageInstruction.route.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT">
-      <path value="MedicationRequest.dosageInstruction.route.coding" />
-      <sliceName value="snomedCT" />
       <max value="1" />
       <binding>
         <strength value="extensible" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageRoute" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.system">
+    <element id="MedicationRequest.dosageInstruction.route.coding.system">
       <path value="MedicationRequest.dosageInstruction.route.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.code">
+    <element id="MedicationRequest.dosageInstruction.route.coding.code">
       <path value="MedicationRequest.dosageInstruction.route.coding.code" />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.display">
+    <element id="MedicationRequest.dosageInstruction.route.coding.display">
       <path value="MedicationRequest.dosageInstruction.route.coding.display" />
       <min value="1" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.method">
+      <path value="MedicationRequest.dosageInstruction.method" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
+      </binding>
     </element>
     <element id="MedicationRequest.dispenseRequest.performer">
       <path value="MedicationRequest.dispenseRequest.performer" />
@@ -14905,6 +14914,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="MedicationRequest.substitution">
+      <path value="MedicationRequest.substitution" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.substitution.allowed[x]">
+      <path value="MedicationRequest.substitution.allowed[x]" />
+      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed.  For use  in the UK a default value for substitution.allowedBoolean is specified as 'false' to reflect the UK default position of no substitution. Where a substitution is required to be specified, either the substitution.allowedBoolean must be set to 'true' or the substitution.allowedCodeableConcept will be used instead of substitution.allowedBoolean to specify the type of substitution required." />
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription" />
@@ -14924,7 +14941,6 @@
       <path value="MedicationRequest.detectedIssue.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
