@@ -15,9 +15,9 @@
   </organization>
   <code>
     <coding>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
-      <code value="R0260" />
-      <display value="General Medical Practitioner" />
+      <system value="http://snomed.info/sct" />
+      <code value="62247001" />
+      <display value="General practitioner" />
     </coding>
   </code>
   <specialty>
