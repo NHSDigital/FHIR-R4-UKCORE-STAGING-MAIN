@@ -3,7 +3,7 @@
 <id value="UKCore-MedicationRequestCategory"/>
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory"/>
   <version value="1.0.0" />
-  <name value="MedicationRequestCategory"/>
+  <name value="UKCoreMedicationRequestCategory"/>
   <title value="UK Core Medication Request Category"/>
   <status value="draft" />
   <date value="2021-08-24T00:00:00+00:00" />
