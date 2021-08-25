@@ -6,7 +6,7 @@
   <name value="UKCoreAllergyIntolerance" />
   <title value="UK Core AllergyIntolerance" />
   <status value="draft" />
-  <date value="2021-08-23" />
+  <date value="2021-08-25" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -468,7 +468,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -951,7 +951,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3268,7 +3268,6 @@
       <path value="AllergyIntolerance.extension" />
       <sliceName value="evidence" />
       <short value="A reference to results of investigations that confirmed the certainty of the diagnosis." />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence" />
