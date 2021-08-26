@@ -88,7 +88,6 @@
       <min value="1" />
       <binding>
         <strength value="extensible" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a medication from the VTM/VMP/VMPP/AMP/AMPP subsets from the dm+d terminology." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
     </element>

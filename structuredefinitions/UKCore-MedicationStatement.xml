@@ -70,9 +70,6 @@
       <path value="MedicationStatement.extension" />
       <sliceName value="pharmacistVerifiedIndicator" />
       <short value="Indicates whether a pharmacist verified a medication" />
-      <definition value="This extension is used to indicate whether a pharmacist verified a medication." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator" />
@@ -81,10 +78,6 @@
     <element id="MedicationStatement.extension:medicationPrescribingOrganization">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationPrescribingOrganization" />
-      <short value="The type of organisation or setting responsible for authorising and issuing a medication" />
-      <definition value="This extension carries the type of organisation or setting responsible for authorising and issuing a medication." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganization" />
@@ -93,19 +86,10 @@
     <element id="MedicationStatement.extension:medicationStatementLastIssueDate">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationStatementLastIssueDate" />
-      <short value="The date when a prescription was last issued" />
-      <definition value="This extension supports the exchange of the date information when a prescription was last issued." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:medicationStatementLastIssueDate.value[x]">
-      <path value="MedicationStatement.extension.value[x]" />
-      <short value="The date when a prescription was last issued" />
-      <definition value="This carries the date when a prescription was last issued." />
     </element>
     <element id="MedicationStatement.identifier.system">
       <path value="MedicationStatement.identifier.system" />
