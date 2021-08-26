@@ -70,7 +70,7 @@
 		<doseAndRate>
 			<doseQuantity>
 				<value value="500"/>
-				<unit value="mg"/>
+				<unit value="milligram"/>
 				<system value="http://unitsofmeasure.org"/>
 				<code value="mg"/>
 			</doseQuantity>
