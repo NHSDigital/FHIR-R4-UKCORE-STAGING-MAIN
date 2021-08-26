@@ -1,9 +1,16 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
+<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
 	</meta>
 	<status value="active"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+			<code value="outpatient"/>
+			<display value="Outpatient"/>
+		</coding>
+	</category>
 	<medicationCodeableConcept>
 		<coding>
 			<system value="https://dmd.nhs.uk/"/>
@@ -32,6 +39,20 @@
 				<periodUnit value="d"/>
 			</repeat>
 		</timing>
+		<asNeededCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="16001004"/>
+				<display value="Otalgia"/>
+			</coding>
+		</asNeededCodeableConcept>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="123851003"/>
+				<display value="Mouth region structure"/>
+			</coding>
+		</site>
 		<route>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -49,7 +70,7 @@
 		<doseAndRate>
 			<doseQuantity>
 				<value value="500"/>
-				<unit value="mg"/>
+				<unit value="milligram"/>
 				<system value="http://unitsofmeasure.org"/>
 				<code value="mg"/>
 			</doseQuantity>
