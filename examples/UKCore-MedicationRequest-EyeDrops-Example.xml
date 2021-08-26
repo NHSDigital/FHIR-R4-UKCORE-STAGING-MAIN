@@ -33,13 +33,30 @@
 		</coding>
 	</courseOfTherapyType>
 	<dosageInstruction>
-		<text value="One drop 3 times a day"/>
+		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
 		<timing>
 			<repeat>
-				<frequency value="3"/>
-				<period value="1"/>
-				<periodUnit value="d"/>
+				<frequency value="1"/>
+				<period value="12"/>
+				<periodUnit value="h"/>
 			</repeat>
 		</timing>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="362508001"/>
+				<display value="Both eyes, entire"/>
+			</coding>
+		</site>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="421984009"/>
+				<display value="Until finished"/>
+			</coding>
+		</method>
 	</dosageInstruction>
+	<substitution>
+		<allowedBoolean value="true"/>
+	</substitution>
 </MedicationRequest>
