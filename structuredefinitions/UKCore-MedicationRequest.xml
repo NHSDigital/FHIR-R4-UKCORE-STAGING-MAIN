@@ -12369,7 +12369,7 @@
     <element id="MedicationRequest.substitution.allowed[x]">
       <path value="MedicationRequest.substitution.allowed[x]" />
       <short value="Whether substitution is allowed or not" />
-      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed.  For use  in the UK a default value for substitution.allowedBoolean is specified as 'false' to reflect the UK default position of no substitution. Where a substitution is required to be specified, either the substitution.allowedBoolean must be set to 'true' or the substitution.allowedCodeableConcept will be used instead of substitution.allowedBoolean to specify the type of substitution required." />
+      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed." />
       <comment value="This element is labeled as a modifier because whether substitution is allow or not, it cannot be ignored." />
       <min value="1" />
       <max value="1" />
@@ -14921,7 +14921,7 @@
     </element>
     <element id="MedicationRequest.substitution.allowed[x]">
       <path value="MedicationRequest.substitution.allowed[x]" />
-      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed.  For use  in the UK a default value for substitution.allowedBoolean is specified as 'false' to reflect the UK default position of no substitution. Where a substitution is required to be specified, either the substitution.allowedBoolean must be set to 'true' or the substitution.allowedCodeableConcept will be used instead of substitution.allowedBoolean to specify the type of substitution required." />
+      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed." />
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription" />
