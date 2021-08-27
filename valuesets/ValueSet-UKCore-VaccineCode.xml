@@ -1,4 +1,4 @@
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-VaccineCode"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode"/>
 	<version value="2.0.0"/>
@@ -25,80 +25,31 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccine or a null flavor value."/>
+	<description value="A set of codes from the following dm+d (dictionary of medicines and devices) concept classes that define a vaccine:
+&#13; - AMP – Actual Medicinal Product (preferred);&#13; - VMP – Virtual Medicinal Product;&#13; - Where no dm+d coded information is available, a specific code from the nullFlavor Code System can be used instead to indicate this."/>
 	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="concept"/>
-				<op value="in"/>
-				<value value="^999000811000001105"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="concept"/>
-				<op value="in"/>
-				<value value="^12465201000001105"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="concept"/>
-				<op value="in"/>
-				<value value="^999000831000001104"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="concept"/>
-				<op value="in"/>
-				<value value="^999000841000001106"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="concept"/>
-				<op value="in"/>
-				<value value="^999000821000001101"/>
-			</filter>
+			<system value="https://dmd.nhs.uk/"/>
 		</include>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-			<filter>
-				<property value="concept"/>
-				<op value="="/>
-				<value value="NAVU"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-			<filter>
-				<property value="concept"/>
-				<op value="="/>
-				<value value="UNC"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-			<filter>
-				<property value="concept"/>
-				<op value="="/>
-				<value value="UNK"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-			<filter>
-				<property value="concept"/>
-				<op value="="/>
-				<value value="NA"/>
-			</filter>
+			<concept>
+				<code value="NAVU"/>
+				<display value="Not available"/>
+			</concept>
+			<concept>
+				<code value="UNC"/>
+				<display value="un-encoded"/>
+			</concept>
+			<concept>
+				<code value="UNK"/>
+				<display value="unknown"/>
+			</concept>
+			<concept>
+				<code value="NA"/>
+				<display value="not applicable"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>
