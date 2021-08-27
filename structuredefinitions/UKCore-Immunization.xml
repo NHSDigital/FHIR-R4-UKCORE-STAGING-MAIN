@@ -100,6 +100,7 @@
         <key value="ukcore-imm-1" />
         <severity value="error" />
         <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
+        <expression value="status != 'not-done' or (status = 'not-done' and statusReason.exists())" />
         <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
       </constraint>
     </element>
@@ -109,6 +110,7 @@
         <key value="ukcore-imm-1" />
         <severity value="error" />
         <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
+        <expression value="status != 'not-done' or (status = 'not-done' and statusReason.exists())" />
         <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
       </constraint>
       <binding>
