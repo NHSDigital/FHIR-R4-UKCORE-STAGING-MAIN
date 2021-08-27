@@ -1,57 +1,71 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="UKCore-NHSNumberVerificationStatus" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
-    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/n/nhs/nhs_number_status_indicator_code_de.asp?shownav=1" />
-  </extension>
-  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-  <version value="2.0.0" />
-  <name value="UKCoreNHSNumberVerificationStatus" />
-  <title value="UK Core NHS Number Verification Status" />
-  <status value="draft" />
-  <date value="2019-10-14T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="A CodeSystem that identifies the trace status of the NHS number. This CodeSystem is comprised of codes from the NHS Data Model and Dictionary: NHS Number Status Indicator Code." />
-  <copyright value="Copyright © 2019 NHS Digital" />
-  <caseSensitive value="true" />
-  <content value="complete" />
-  <concept>
-    <code value="01" />
-    <display value="Number present and verified" />
-  </concept>
-  <concept>
-    <code value="02" />
-    <display value="Number present but not traced" />
-  </concept>
-  <concept>
-    <code value="03" />
-    <display value="Trace required" />
-  </concept>
-  <concept>
-    <code value="04" />
-    <display value="Trace attempted - No match or multiple match found" />
-  </concept>
-  <concept>
-    <code value="05" />
-    <display value="Trace needs to be resolved - (NHS number or patient detail conflict)" />
-  </concept>
-  <concept>
-    <code value="06" />
-    <display value="Trace in progress" />
-  </concept>
-  <concept>
-    <code value="07" />
-    <display value="Number not present and trace not required" />
-  </concept>
-  <concept>
-    <code value="08" />
-    <display value="Trace postponed (baby under six weeks old)" />
-  </concept>
+	<id value="UKCore-NHSNumberVerificationStatus"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
+		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/n/nhs/nhs_number_status_indicator_code_de.asp?shownav=1"/>
+	</extension>
+	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+	<version value="2.1.0"/>
+	<name value="UKCoreNHSNumberVerificationStatus"/>
+	<title value="UK Core NHS Number Verification Status"/>
+	<status value="draft"/>
+	<date value="2021-08-27T15:13:00+00:00"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem that identifies the trace status of an NHS Number with respect to a national source of NHS Numbers."/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="number-present-and-verified"/>
+		<display value="Number present and verified"/>
+	</concept>
+	<concept>
+		<code value="number-present-but-not-traced"/>
+		<display value="Number present but not traced"/>
+	</concept>
+	<concept>
+		<code value="trace-required"/>
+		<display value="Trace required"/>
+	</concept>
+	<concept>
+		<code value="trace-attempted"/>
+		<display value="Trace attempted - No match or multiple match found"/>
+	</concept>
+	<concept>
+		<code value="trace-needs-to-be-resolved"/>
+		<display value="Trace needs to be resolved - (NHS number or patient detail conflict)"/>
+	</concept>
+	<concept>
+		<code value="trace-in-progress"/>
+		<display value="Trace in progress"/>
+	</concept>
+	<concept>
+		<code value="number-not-present-and-trace-not-required"/>
+		<display value="Number not present and trace not required"/>
+	</concept>
+	<concept>
+		<code value="trace-postponed"/>
+		<display value="Trace postponed (baby under six weeks old)"/>
+	</concept>
+	<concept>
+		<code value="number-present-and-traced-using-welsh-nhs-ar"/>
+		<display value="Number present and traced using Welsh NHS AR"/>
+	</concept>
 </CodeSystem>
