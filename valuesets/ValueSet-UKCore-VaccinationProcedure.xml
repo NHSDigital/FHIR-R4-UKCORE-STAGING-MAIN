@@ -25,7 +25,7 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED Clinical Terminology UK coding system to record a vaccination procedure."/>
+	<description value="A set of codes that define a vaccination procedure. Selected from the SNOMED CT UK coding system."/>
 	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
@@ -33,7 +33,7 @@
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="(&lt;&lt;33879002 OR &lt;&lt;713404003 OR &lt;&lt;955641000000103 OR &lt;&lt;955691000000108 OR &lt;&lt;955701000000108 OR &lt;&lt;957581000000102 OR &lt;&lt;957751000000103 OR &lt;&lt;1066171000000108 OR &lt;&lt;140611000119104 OR &lt;&lt;15483003 OR &lt;&lt;39343008 OR &lt;&lt;34631000 OR &lt;&lt;72093006 OR &lt;&lt;425897001 OR &lt;&lt;8605003 OR &lt;&lt;428502009 OR &lt;&lt;283451000000105 OR &lt;&lt;308753004 OR &lt;&lt;572481000119103 OR &lt;&lt;965851000000105 OR &lt;&lt;761841000 OR &lt;&lt;16300531000119107 OR &lt;&lt;14747002 OR &lt;&lt;283431000000103 OR &lt;&lt;427633002) MINUS (&lt;&lt;304250009 OR &lt;&lt;51116004 OR &lt;&lt;296811004 OR &lt;&lt;294631000 OR &lt;&lt;425457005 OR &lt;&lt;291705006 OR &lt;&lt;417451006 OR &lt;&lt;47988006 OR &lt;&lt;293095001 OR &lt;&lt;601000000100 OR &lt;&lt;123471000119103 OR &lt;&lt;266758009 OR &lt;&lt;223464006 OR &lt;&lt;185324002 OR &lt;&lt;416064006 OR &lt;&lt;428119001 OR &lt;&lt;308433002 OR &lt;&lt;183944003 OR &lt;&lt;408864009 OR &lt;&lt;202111000000106 OR &lt;&lt;708538000 OR &lt;&lt;418019003 OR &lt;&lt;416237000 OR &lt;&lt;400999005 OR &lt;&lt;309370004)"/>
+				<value value="descendantOrSelfOf 127785005 OR descendantOrSelfOf 1066171000000108 OR descendantOrSelfOf 713404003"/>
 			</filter>
 		</include>
 	</compose>
