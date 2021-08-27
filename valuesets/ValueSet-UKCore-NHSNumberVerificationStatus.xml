@@ -4,11 +4,11 @@
 		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/n/nhs/nhs_number_status_indicator_code_de.asp?shownav=1"/>
 	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-NHSNumberVerificationStatus"/>
-	<version value="2.0.0"/>
+	<version value="2.1.0"/>
 	<name value="UKCoreNHSNumberVerificationStatus"/>
 	<title value="UK Core NHS Number Verification Status"/>
 	<status value="draft"/>
-	<date value="2019-10-14T00:00:00+00:00"/>
+	<date value="2021-08-27T15:42:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -28,15 +28,19 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A ValueSet that identifies the trace status of the NHS number. The CodeSystem is comprised of codes from the NHS Data Model and Dictionary: NHS Number Status Indicator Code. Where the trace status is not available or supported the CodeSystem for NullFlavor must be used instead to allow the sending of an appropriate HL7 NullFlavor value. "/>
-	<purpose value="This ValueSet also includes codes from the HL7 NullFlavor CodeSystem to cover use cases where a verification status is not supported."/>	
-	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<description value=" &#13; A set of codes that indicate the trace status of an NHS Number with respect to a national source of NHS Numbers. &#13;&#13;
+ &#13; Where there is no information about the trace status available, a specific code from the nullFlavor Code System can be used instead to indicate this. &#13;&#13;"/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
 		</include>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+			<concept>
+				<code value="NI"/>
+				<display value="NoInformation"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>
