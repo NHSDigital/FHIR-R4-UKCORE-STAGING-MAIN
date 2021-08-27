@@ -6,7 +6,7 @@
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
   <status value="draft" />
-  <date value="2021-08-26" />
+  <date value="2021-08-27" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -74,8 +74,6 @@
     <element id="Immunization.extension:parentPresent">
       <path value="Immunization.extension" />
       <sliceName value="parentPresent" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent" />
@@ -84,21 +82,9 @@
     <element id="Immunization.extension:vaccinationProcedure">
       <path value="Immunization.extension" />
       <sliceName value="vaccinationProcedure" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure" />
-      </type>
-    </element>
-    <element id="Immunization.extension:effectivePeriod">
-      <path value="Immunization.extension" />
-      <sliceName value="effectivePeriod" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EffectivePeriod" />
       </type>
     </element>
     <element id="Immunization.identifier.assigner">
@@ -114,6 +100,7 @@
         <key value="ukcore-imm-1" />
         <severity value="error" />
         <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
+        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
       </constraint>
     </element>
     <element id="Immunization.statusReason">
@@ -122,6 +109,7 @@
         <key value="ukcore-imm-1" />
         <severity value="error" />
         <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
+        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
       </constraint>
       <binding>
         <strength value="extensible" />
