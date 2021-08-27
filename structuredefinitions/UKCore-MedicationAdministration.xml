@@ -207,6 +207,13 @@
         <code value="string" />
       </type>
     </element>
+    <element id="MedicationAdministration.dosage.site">
+      <path value="MedicationAdministration.dosage.site" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
+      </binding>
+    </element>
     <element id="MedicationAdministration.dosage.route.coding">
       <path value="MedicationAdministration.dosage.route.coding" />
       <slicing>
