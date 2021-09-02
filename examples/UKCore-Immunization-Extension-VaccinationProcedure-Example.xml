@@ -6,8 +6,8 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="59108006"/>
-				<display value="Injection"/>
+				<code value="73701000119109"/>
+				<display value="Influenza vaccination given"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
