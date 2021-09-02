@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyCode"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode"/>
-	<version value="2.0.1"/>
+	<version value="2.1.1"/>
 	<name value="UKCoreAllergyCode"/>
 	<title value="UK Core Allergy Code"/>
 	<status value="draft"/>
-	<date value="2021-05-04T00:00:00+00:00"/>
+	<date value="2021-09-02T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -25,15 +25,34 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;105590001 |Substance| OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|), or a code from the v3 Code System NullFlavor specifying why a valid value is not present."/>
-	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<description value="A set of codes from the following dm+d (dictionary of medicines and devices) concept classes that define a medication or medication ingredient that the patient has an allergy or intolerance to:
+
+&#13; - VTM – Virtual Therapeutic Moiety
+&#13; - VMP – Virtual Medicinal Product
+&#13; - AMP – Actual Medicinal Product
+&#13; - Ingredient &#13;&#13;
+
+A set of codes from the SNOMED CT UK coding system that:
+
+&#13; - identify a substance or pharmaceutical or biologic product that the patient has an allergy or intolerance to
+&#13; - identify a trade family to allow recording of an allergy or intolerance to a brand without identifying any formulation or size for both medicine products and devices/appliances
+&#13; - state that the patient has no known allergy or does not have a specific allergy
+&#13; - provide a degrade of information about a drug or non-drug allergy &#13;&#13;
+
+Where no dm+d or SNOMED coded information is available, a specific code from the nullFlavor Code System can be used instead to indicate this.
+
+"/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
+		<include>
+			<system value="http://[URI-for-dm+d-TBD]"/>
+		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="(&lt;105590001 |Substance| OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)"/>		
+				<value value="descendantOf 105590001 OR descendantOf 373873005 OR memberOf 999000631000001100 OR descendantOrSelfOf 716186003 OR 196461000000101 OR 196471000000108"/>
 			</filter>
 		</include>
 		<include>
