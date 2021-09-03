@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationForm"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm"/>
-	<version value="2.0.0"/>
+	<version value="2.1.0"/>
 	<name value="UKCoreMedicationForm"/>
 	<title value="UK Core Medication Form"/>
 	<status value="draft"/>
-	<date value="2020-07-20T00:00:00+00:00"/>
+	<date value="2021-09-03T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -25,16 +25,1112 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value=" A code from the SNOMED Clinical Terminology UK coding system that describes a medication dose form."/>
-	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<description value="A set of codes from that define a medication dose form. Selected from the 'NHS dm+d (dictionary of medicines and devices) dose form' simple reference set of the SNOMED CT UK coding system."/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="^999000781000001107 |NHS dm+d (dictionary of medicines and devices) dose form simple reference set|"/>
+				<value value="memberOf 999000781000001107"/>
 			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+			<valueBoolean value="true"/>
+		</extension>
+		<identifier value="1fb9f4cd-5623-4a2f-a92c-5f6e02cf630f"/>
+		<timestamp value="2021-09-03T12:50:09+00:00"/>
+		<total value="191"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="39572811000001106"/>
+			<display value="12-hour modified-release capsule"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="39572911000001101"/>
+			<display value="12-hour modified-release tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="39573011000001109"/>
+			<display value="24-hour modified-release capsule"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="39573111000001105"/>
+			<display value="24-hour modified-release tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35367611000001109"/>
+			<display value="Aerosol generator"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35366811000001106"/>
+			<display value="Bath additive"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="36407611000001102"/>
+			<display value="Bladder irrigation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="443424002"/>
+			<display value="Buccal film"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385085006"/>
+			<display value="Buccal tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385048003"/>
+			<display value="Cachet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385049006"/>
+			<display value="Capsule"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="419202002"/>
+			<display value="Cement"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="32356811000001101"/>
+			<display value="Chewable capsule"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="66076007"/>
+			<display value="Chewable tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385115001"/>
+			<display value="Collodion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="36407411000001100"/>
+			<display value="Colloidal suspension for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="37981711000001101"/>
+			<display value="Concentrate and solvent for solution for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="19276111000001108"/>
+			<display value="Concentrate for oral solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385099005"/>
+			<display value="Cream"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385111005"/>
+			<display value="Cutaneous emulsion"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="17309711000001108"/>
+			<display value="Cutaneous patch"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385108009"/>
+			<display value="Cutaneous solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385119007"/>
+			<display value="Cutaneous sponge"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385106008"/>
+			<display value="Cutaneous spray solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385088008"/>
+			<display value="Dental gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385090009"/>
+			<display value="Dental insert"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385095004"/>
+			<display value="Dental suspension"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="35366911000001101"/>
+			<display value="Dispersible tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="36104911000001101"/>
+			<display value="Dispersion for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34538111000001100"/>
+			<display value="Dispersion for injection"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="426684005"/>
+			<display value="Drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385136004"/>
+			<display value="Ear drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="17960711000001109"/>
+			<display value="Ear/eye drops solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="17960811000001101"/>
+			<display value="Ear/eye/nose drops solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385044001"/>
+			<display value="Effervescent granules"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="36407811000001103"/>
+			<display value="Effervescent powder"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="764780001"/>
+			<display value="Effervescent tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385179002"/>
+			<display value="Effervescent vaginal tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="15647811000001107"/>
+			<display value="Emulsion and suspension for emulsion for injection"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="14955111000001100"/>
+			<display value="Emulsion for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385221006"/>
+			<display value="Emulsion for injection"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="385186005"/>
+			<display value="Enema"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="4751611000001101"/>
+			<display value="Epidural infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385124005"/>
+			<display value="Eye drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385122009"/>
+			<display value="Eye gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385130005"/>
+			<display value="Eye lotion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385123004"/>
+			<display value="Eye ointment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421166008"/>
+			<display value="Foam"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385065007"/>
+			<display value="Gargle"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34012811000001100"/>
+			<display value="Gas and solvent for dispersion for injection/infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385052003"/>
+			<display value="Gastro-resistant capsule"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385045000"/>
+			<display value="Gastro-resistant granules"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385059007"/>
+			<display value="Gastro-resistant tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35367711000001100"/>
+			<display value="Gastroenteral liquid"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385100002"/>
+			<display value="Gel"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="17644011000001108"/>
+			<display value="Gel for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385043007"/>
+			<display value="Granules"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385029002"/>
+			<display value="Granules for oral suspension"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385037005"/>
+			<display value="Herbal tea"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421145000"/>
+			<display value="Homeopathic cream"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421936000"/>
+			<display value="Homeopathic drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421404002"/>
+			<display value="Homeopathic elixir"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="420358004"/>
+			<display value="Homeopathic granules"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="423983005"/>
+			<display value="Homeopathic liquid"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35367411000001106"/>
+			<display value="Homeopathic liquid potency"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="35367511000001105"/>
+			<display value="Homeopathic ointment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="420602001"/>
+			<display value="Homeopathic oral powder"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="420954008"/>
+			<display value="Homeopathic pillule"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421595009"/>
+			<display value="Homeopathic tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385286003"/>
+			<display value="Implant"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="16602411000001103"/>
+			<display value="Implantation suspension"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="11564111000001107"/>
+			<display value="Impregnated cigarette"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385120001"/>
+			<display value="Impregnated dressing"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="14964511000001102"/>
+			<display value="Infusion"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="3092311000001108"/>
+			<display value="Inhalation gas"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385207009"/>
+			<display value="Inhalation powder"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="420641004"/>
+			<display value="Inhalation solution"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="385210002"/>
+			<display value="Inhalation vapour"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="3092611000001103"/>
+			<display value="Injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385040005"/>
+			<display value="Instant herbal tea"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="21012211000001108"/>
+			<display value="Intestinal gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="16175111000001109"/>
+			<display value="Intrauterine device"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="3092811000001104"/>
+			<display value="Intravenous infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385242008"/>
+			<display value="Intravesical solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="3092911000001109"/>
+			<display value="Irrigation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="16605211000001107"/>
+			<display value="Irrigation solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385256005"/>
+			<display value="Kit for radiopharmaceutical preparation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="420699003"/>
+			<display value="Liquid"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34875411000001103"/>
+			<display value="Living tissue equivalent"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385087003"/>
+			<display value="Lozenge"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35367011000001102"/>
+			<display value="Medicated chewing-gum"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35367111000001101"/>
+			<display value="Medicated nail lacquer"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="10984111000001107"/>
+			<display value="Medicated plaster"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385054002"/>
+			<display value="Modified-release capsule"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="427609008"/>
+			<display value="Modified-release drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385047008"/>
+			<display value="Modified-release granules"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="13892311000001106"/>
+			<display value="Modified-release muco-adhesive buccal tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385061003"/>
+			<display value="Modified-release tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="70409003"/>
+			<display value="Mouthwash"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385086007"/>
+			<display value="Muco-adhesive buccal tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385152001"/>
+			<display value="Nasal drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385150009"/>
+			<display value="Nasal gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385151008"/>
+			<display value="Nasal ointment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385159005"/>
+			<display value="Nasal spray suspension"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="39574611000001104"/>
+			<display value="Nebuliser dispersion"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="385197005"/>
+			<display value="Nebuliser liquid"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="3097611000001100"/>
+			<display value="Not applicable"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385101003"/>
+			<display value="Ointment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385132002"/>
+			<display value="Ophthalmic insert"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719200003"/>
+			<display value="Ophthalmic strip"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385018001"/>
+			<display value="Oral drops"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385025008"/>
+			<display value="Oral emulsion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385038000"/>
+			<display value="Oral gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385063000"/>
+			<display value="Oral gum"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385062005"/>
+			<display value="Oral lyophilisate"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385023001"/>
+			<display value="Oral solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385024007"/>
+			<display value="Oral suspension"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="447050008"/>
+			<display value="Orodispersible film"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="447079001"/>
+			<display value="Orodispersible tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385078007"/>
+			<display value="Oromucosal gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385070000"/>
+			<display value="Oromucosal solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="3095111000001104"/>
+			<display value="Paint"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="37937005"/>
+			<display value="Paste"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421079001"/>
+			<display value="Pastille"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35313411000001100"/>
+			<display value="Periodontal insert"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385174007"/>
+			<display value="Pessary"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385064006"/>
+			<display value="Pillules"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385117009"/>
+			<display value="Poultice"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="739005008"/>
+			<display value="Powder"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="33491111000001107"/>
+			<display value="Powder and gel for gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="8006811000001100"/>
+			<display value="Powder and solvent for dispersion for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34582011000001107"/>
+			<display value="Powder and solvent for intravesical solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="17406411000001100"/>
+			<display value="Powder and solvent for nebuliser solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="32779711000001100"/>
+			<display value="Powder and solvent for prolonged-release suspension for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="14955211000001106"/>
+			<display value="Powder and solvent for solution for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="7375911000001101"/>
+			<display value="Powder and solvent for solution for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="11377411000001104"/>
+			<display value="Powder and solvent for solution for instillation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="16756411000001100"/>
+			<display value="Powder and solvent for suspension for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="7376011000001109"/>
+			<display value="Powder and solvent for suspension for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="31867311000001102"/>
+			<display value="Powder and solvent for suspension for instillation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="17036711000001108"/>
+			<display value="Powder and suspension for suspension for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="38023711000001106"/>
+			<display value="Powder for dispersion for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="14945811000001105"/>
+			<display value="Powder for gastroenteral liquid"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="385222004"/>
+			<display value="Powder for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="37981811000001109"/>
+			<display value="Powder for intravesical solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385201005"/>
+			<display value="Powder for nebuliser solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="8062811000001100"/>
+			<display value="Powder for reconstitution for instillation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="764843001"/>
+			<display value="Powder for solution for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385223009"/>
+			<display value="Powder for solution for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="21829711000001102"/>
+			<display value="Powder for solution for iontophoresis"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="15621311000001106"/>
+			<display value="Powder for suspension for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385224003"/>
+			<display value="Powder for suspension for injection"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="385203008"/>
+			<display value="Pressurised inhalation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="36713011000001106"/>
+			<display value="Prolonged-release solution for injection"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="32860611000001109"/>
+			<display value="Prolonged-release suspension for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="9247011000001107"/>
+			<display value="Radionuclide generator"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="39816711000001105"/>
+			<display value="Radiopharmaceutical precursor, solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385184008"/>
+			<display value="Rectal ointment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="35367211000001107"/>
+			<display value="Shampoo"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="35367311000001104"/>
+			<display value="Soluble tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34937011000001105"/>
+			<display value="Solution for blood fraction modification"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="23670511000001101"/>
+			<display value="Solution for cardioplegia"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="13559211000001104"/>
+			<display value="Solution for dispersion for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385240000"/>
+			<display value="Solution for haemodialysis"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="424211001"/>
+			<display value="Solution for haemofiltration"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385229008"/>
+			<display value="Solution for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385219001"/>
+			<display value="Solution for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385113008"/>
+			<display value="Solution for iontophoresis"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385238005"/>
+			<display value="Solution for peritoneal dialysis"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="18269211000001103"/>
+			<display value="Solution for sealant"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="15881311000001107"/>
+			<display value="Solution for skin-prick test"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="37238811000001105"/>
+			<display value="Solvent for BCG Vaccine AJV"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421720008"/>
+			<display value="Spray"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="9246911000001108"/>
+			<display value="Sterile solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="739007000"/>
+			<display value="Stick"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="38871211000001101"/>
+			<display value="Sublingual film"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385074009"/>
+			<display value="Sublingual spray"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385084005"/>
+			<display value="Sublingual tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385194003"/>
+			<display value="Suppository"/>
+		</contains>
+		<contains>
+			<extension url="http://ontoserver.csiro.au/profiles/expansion">
+				<extension url="inactive">
+					<valueBoolean value="true"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<inactive value="true"/>
+			<code value="15850011000001106"/>
+			<display value="Suspension for infusion"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385220007"/>
+			<display value="Suspension for injection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385055001"/>
+			<display value="Tablet"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="422201009"/>
+			<display value="Tablet for cutaneous solution"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="420243009"/>
+			<display value="Tampon"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385114002"/>
+			<display value="Transdermal patch"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="421716009"/>
+			<display value="Transdermal system"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="15362911000001102"/>
+			<display value="Vaginal delivery system"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385181000"/>
+			<display value="Vaginal device"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="385166006"/>
+			<display value="Vaginal gel"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="424552006"/>
+			<display value="Vaginal sponge"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="3097511000001104"/>
+			<display value="Wash"/>
+		</contains>
+	</expansion>
 </ValueSet>

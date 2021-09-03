@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ReasonImmunizationNotAdministered"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered"/>
-	<version value="2.0.0"/>
+	<version value="2.1.0"/>
 	<name value="UKCoreReasonImmunizationNotAdministered"/>
 	<title value="UK Core Reason Immunization Not Administered"/>
 	<status value="draft"/>
-	<date value="2020-07-20T00:00:00+00:00"/>
+	<date value="2021-09-03T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -25,31 +25,62 @@
 			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A ValueSet to identify the reason why an immunization was not administered."/>
-	<copyright value="Copyright © 2020 HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<description value="A set of codes that define the reason why an immunization was not administered. Selected from the SNOMED CT UK coding system."/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-			<concept>
-				<code value="201741000000102"/>
-				<display value="Did not attend child immunisation (finding)"/>
-			</concept>
-			<concept>
-				<code value="281399006"/>
-				<display value="Did not attend (finding)"/>
-			</concept>
-			<concept>
-				<code value="213257006"/>
-				<display value="Generally unwell (finding)"/>
-			</concept>
-			<concept>
-				<code value="266758009"/>
-				<display value="Immunization contraindicated (situation)"/>
-			</concept>
-			<concept>
-				<code value="310376006"/>
-				<display value="Immunization consent not given (finding)"/>
-			</concept>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="201741000000102 OR 281399006 OR 213257006 OR 266758009 OR 310376006"/>
+			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+			<valueBoolean value="true"/>
+		</extension>
+		<identifier value="9991d0d3-62e7-4204-9bc8-553f4a39d8ac"/>
+		<timestamp value="2021-09-03T12:38:51+00:00"/>
+		<total value="5"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="281399006"/>
+			<display value="Did not attend"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="201741000000102"/>
+			<display value="Did not attend child immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="213257006"/>
+			<display value="Generally unwell"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="310376006"/>
+			<display value="Immunisation consent not given"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="266758009"/>
+			<display value="Immunisation contraindicated"/>
+		</contains>
+	</expansion>
 </ValueSet>
