@@ -57,11 +57,10 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 		</include>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-			<filter>
-				<property value="concept"/>
-				<op value="="/>
-				<value value="NI"/>
-			</filter>
+			<concept>
+				<code value="NI"/>
+				<display value="NoInformation"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>
