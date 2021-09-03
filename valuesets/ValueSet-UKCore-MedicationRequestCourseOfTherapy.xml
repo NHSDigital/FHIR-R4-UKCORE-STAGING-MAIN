@@ -2,11 +2,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationRequestCourseOfTherapy"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy"/>
-	<version value="1.0.0"/>
+	<version value="1.1.0"/>
 	<name value="UKCoreMedicationRequestCourseOfTherapy"/>
 	<title value="UK Core Medication Request Course Of Therapy"/>
 	<status value="draft"/>
-	<date value="2021-08-24T00:00:00+00:00"/>
+	<date value="2021-09-03T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -41,7 +41,7 @@
 			</concept>
 		</include>
 		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapyExtension"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy"/>
 			<concept>
 				<code value="continuous-repeating-dispensing"/>
 				<display value="Continuous long term (repeat dispensing)"/>
