@@ -20,71 +20,71 @@
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
-    <code value="A"" />
+    <code value="A" />
     <display value="Any White Background, including Welsh, English, Scottish, Northern Irish, Irish, British" />
   </concept>
   <concept>
-    <code value="B"" />
+    <code value="B" />
     <display value="Gypsy or Irish Traveller" />
   </concept>
   <concept>
-    <code value="D"" />
+    <code value="D" />
     <display value="White and Black Caribbean" />
   </concept>
   <concept>
-    <code value="E"" />
+    <code value="E" />
     <display value="White and Black African" />
   </concept>
   <concept>
-    <code value="F"" />
+    <code value="F" />
     <display value="White and Asian" />
   </concept>
   <concept>
-    <code value="G"" />
+    <code value="G" />
     <display value="Any other mixed background / multiple ethnic background" />
   </concept>
   <concept>
-    <code value="H"" />
+    <code value="H" />
     <display value="Indian" />
   </concept>
   <concept>
-    <code value="J"" />
+    <code value="J" />
     <display value="Pakistani" />
   </concept>
   <concept>
-    <code value="K"" />
+    <code value="K" />
     <display value="Bangladeshi" />
   </concept>
   <concept>
-    <code value="L"" />
+    <code value="L" />
     <display value="Any other Asian background" />
   </concept>
   <concept>
-    <code value="M"" />
+    <code value="M" />
     <display value="Caribbean" />
   </concept>
   <concept>
-    <code value="N"" />
+    <code value="N" />
     <display value="African" />
   </concept>
   <concept>
-    <code value="P"" />
+    <code value="P" />
     <display value="Any other Black background" />
   </concept>
   <concept>
-    <code value="R"" />
+    <code value="R" />
     <display value="Chinese" />
   </concept>
   <concept>
-    <code value="S"" />
+    <code value="S" />
     <display value="Any other ethnic group" />
   </concept>
   <concept>
-    <code value="T"" />
+    <code value="T" />
     <display value="Arab" />
   </concept>
   <concept>
-    <code value="Z"" />
+    <code value="Z" />
     <display value="Not stated" />
   </concept>
 </CodeSystem>
