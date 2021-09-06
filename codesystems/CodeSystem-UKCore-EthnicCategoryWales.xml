@@ -1,0 +1,90 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-EthnicCategoryWales" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales" />
+  <version value="1.0.0" />
+  <name value="UKCoreEthnicCategoryWales" />
+  <title value="UK Core Ethnic Category Wales" />
+  <status value="draft" />
+  <date value="2019-10-17T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the ethnicity of a person, as specified by the person. These concepts are specifically for use in Wales." />
+  <copyright value="Copyright © 2021 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="A"" />
+    <display value="Any White Background, including Welsh, English, Scottish, Northern Irish, Irish, British" />
+  </concept>
+  <concept>
+    <code value="B"" />
+    <display value="Gypsy or Irish Traveller" />
+  </concept>
+  <concept>
+    <code value="D"" />
+    <display value="White and Black Caribbean" />
+  </concept>
+  <concept>
+    <code value="E"" />
+    <display value="White and Black African" />
+  </concept>
+  <concept>
+    <code value="F"" />
+    <display value="White and Asian" />
+  </concept>
+  <concept>
+    <code value="G"" />
+    <display value="Any other mixed background / multiple ethnic background" />
+  </concept>
+  <concept>
+    <code value="H"" />
+    <display value="Indian" />
+  </concept>
+  <concept>
+    <code value="J"" />
+    <display value="Pakistani" />
+  </concept>
+  <concept>
+    <code value="K"" />
+    <display value="Bangladeshi" />
+  </concept>
+  <concept>
+    <code value="L"" />
+    <display value="Any other Asian background" />
+  </concept>
+  <concept>
+    <code value="M"" />
+    <display value="Caribbean" />
+  </concept>
+  <concept>
+    <code value="N"" />
+    <display value="African" />
+  </concept>
+  <concept>
+    <code value="P"" />
+    <display value="Any other Black background" />
+  </concept>
+  <concept>
+    <code value="R"" />
+    <display value="Chinese" />
+  </concept>
+  <concept>
+    <code value="S"" />
+    <display value="Any other ethnic group" />
+  </concept>
+  <concept>
+    <code value="T"" />
+    <display value="Arab" />
+  </concept>
+  <concept>
+    <code value="Z"" />
+    <display value="Not stated" />
+  </concept>
+</CodeSystem>
