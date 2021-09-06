@@ -5,7 +5,7 @@
 	<name value="UKCoreAllergySubstance"/>
 	<title value="UK Core Allergy Substance"/>
 	<status value="draft"/>
-	<date value="2021-09-03T00:00:00+00:00"/>
+	<date value="2021-09-06T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -48,7 +48,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="descendantOf 105590001 OR descendantOf 373873005 OR memberOf 999000631000001100 OR 196461000000101 OR 196471000000108"/>
+				<value value="descendantOf 105590001 OR descendantOf 373873005 OR 196461000000101 OR 196471000000108"/>
 			</filter>
 		</include>
 		<include>
