@@ -20,75 +20,75 @@
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
-    <code value="A"" />
+    <code value="A" />
     <display value="White - British" />
   </concept>
   <concept>
-    <code value="B"" />
+    <code value="B" />
     <display value="White - Irish" />
   </concept>
   <concept>
-    <code value="C"" />
+    <code value="C" />
     <display value="White - Any other White background" />
   </concept>
   <concept>
-    <code value="D"" />
+    <code value="D" />
     <display value="Mixed - White and Black Caribbean" />
   </concept>
   <concept>
-    <code value="E"" />
+    <code value="E" />
     <display value="Mixed - White and Black African" />
   </concept>
   <concept>
-    <code value="F"" />
+    <code value="F" />
     <display value="Mixed - White and Asian" />
   </concept>
   <concept>
-    <code value="G"" />
+    <code value="G" />
     <display value="Mixed - Any other mixed background" />
   </concept>
   <concept>
-    <code value="H"" />
+    <code value="H" />
     <display value="Asian or Asian British - Indian" />
   </concept>
   <concept>
-    <code value="J"" />
+    <code value="J" />
     <display value="Asian or Asian British - Pakistani" />
   </concept>
   <concept>
-    <code value="K"" />
+    <code value="K" />
     <display value="Asian or Asian British - Bangladeshi" />
   </concept>
   <concept>
-    <code value="L"" />
+    <code value="L" />
     <display value="Asian or Asian British - Any other Asian background" />
   </concept>
   <concept>
-    <code value="M"" />
+    <code value="M" />
     <display value="Black or Black British - Caribbean" />
   </concept>
   <concept>
-    <code value="N"" />
+    <code value="N" />
     <display value="Black or Black British - African" />
   </concept>
   <concept>
-    <code value="P"" />
+    <code value="P" />
     <display value="Black or Black British - Any other Black background" />
   </concept>
   <concept>
-    <code value="R"" />
+    <code value="R" />
     <display value="Other Ethnic Groups - Chinese" />
   </concept>
   <concept>
-    <code value="S"" />
+    <code value="S" />
     <display value="Other Ethnic Groups - Any other ethnic group" />
   </concept>
   <concept>
-    <code value="Z"" />
+    <code value="Z" />
     <display value="Not stated" />
   </concept>
   <concept>
-    <code value="99"" />
+    <code value="99" />
     <display value="Not known" />
   </concept>
 </CodeSystem>
