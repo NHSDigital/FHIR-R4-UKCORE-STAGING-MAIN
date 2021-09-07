@@ -1,0 +1,117 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-PersonMaritalStatus" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatus" />
+  <version value="1.0.0" />
+  <name value="UKCorePersonMaritalStatus" />
+  <title value="UK Core Person Marital Status" />
+  <status value="draft" />
+  <date value="2019-10-17T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A set of code from Data Dictionaries used within the UK not already covered by more specific concepts in the HL7 FHIR standard Value Set" />
+  <copyright value="Copyright © 2021 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <filter>
+    <code value="ApplicableCountry"/>
+    <description value="Filter to identify an applicable country for a concept"/>
+    <operator value="="/>
+    <value value="ApplicableCountry"/>
+  </filter>
+  <property>
+    <code value="ApplicableCountry"/>
+    <description value="A UK country where the concept is known to be applicable based on the source information used to construct this CodeSystem as identified within the CodeSystem.identifier fields. In each case this can be one of: England | Scotland | Wales | Northern Ireland"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="married-or-civil-partner" />
+    <display value="Married/Civil Partner" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="England"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="civil-partner" />
+    <display value="Civil Partner" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Scotland"/>
+    </property>
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Wales"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="never-married-nor-registered-civil-partnership" />
+    <display value="Never married nor registered civil partnership" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Scotland"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="divorced-or-civil-partnership-dissolved" />
+    <display value="Divorced/Person whose Civil Partnership has been dissolved" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="England"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="civil-partnership-dissolved" />
+    <display value="Person whose Civil Partnership has been dissolved" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Scotland"/>
+    </property>
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Wales"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="widowed-or-surviving-civil-partner" />
+    <display value="Widowed/Surviving Civil Partner" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="England"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="surviving-civil-partner" />
+    <display value="Surviving Civil Partner" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Scotland"/>
+    </property>
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Wales"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="not-disclosed-or-unknown" />
+    <display value="Not disclosed or unknown" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="Wales"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="not-disclosed" />
+    <display value="Not disclosed" />
+    <property>
+      <code value="ApplicableCountry"/>
+      <valueString value="England"/>
+    </property>
+  </concept>
+</CodeSystem>
