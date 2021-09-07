@@ -5,7 +5,7 @@
 	<name value="UKCoreAllergyCode"/>
 	<title value="UK Core Allergy Code"/>
 	<status value="draft"/>
-	<date value="2021-09-03T00:00:00+00:00"/>
+	<date value="2021-09-07T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -35,7 +35,6 @@
 A set of codes from the SNOMED CT UK coding system that:
 
 &#13; - identify a substance or pharmaceutical or biologic product that the patient has an allergy or intolerance to
-&#13; - identify a trade family to allow recording of an allergy or intolerance to a brand without identifying any formulation or size for both medicine products and devices/appliances
 &#13; - state that the patient has no known allergy or does not have a specific allergy
 &#13; - provide a degrade of information about a drug or non-drug allergy &#13;&#13;
 
@@ -52,7 +51,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="descendantOf 105590001 OR descendantOf 373873005 OR memberOf 999000631000001100 OR descendantOrSelfOf 716186003 OR 196461000000101 OR 196471000000108"/>
+				<value value="descendantOf 105590001 OR descendantOf 373873005 OR descendantOrSelfOf 716186003 OR 196461000000101 OR 196471000000108"/>
 			</filter>
 		</include>
 		<include>

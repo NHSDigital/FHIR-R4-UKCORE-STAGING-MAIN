@@ -6,7 +6,7 @@
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
   <status value="draft" />
-  <date value="2021-08-27" />
+  <date value="2021-09-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -216,25 +216,12 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationAdministrationBodySite" />
       </binding>
     </element>
-    <element id="Immunization.route.coding">
-      <path value="Immunization.route.coding" />
+    <element id="Immunization.route">
+      <path value="Immunization.route" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
-    </element>
-    <element id="Immunization.route.coding.system">
-      <path value="Immunization.route.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Immunization.route.coding.code">
-      <path value="Immunization.route.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Immunization.route.coding.display">
-      <path value="Immunization.route.coding.display" />
-      <min value="1" />
     </element>
     <element id="Immunization.performer.actor">
       <path value="Immunization.performer.actor" />
