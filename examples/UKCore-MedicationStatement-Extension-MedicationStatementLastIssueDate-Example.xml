@@ -1,18 +1,12 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-<id value="UKCore-MedicationStatement-Extension-PrescribingOrg-Example"/>
+<id value="UKCore-MedicationStatement-Extension-LastIssueDate-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
 	</meta>
 	<!-- **************extension start************** -->
-	<!--Medication Prescribing Organization extension details-->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganization">
-		<valueCodeableConcept>
-		<coding>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
-			<code value="prescribed-at-gp-practice"/>
-			<display value="Prescribed at GP practice"/>
-			</coding>
-		</valueCodeableConcept>
+	<!--MedicationStatement Last Issue Date extension details-->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate">
+		<valueDateTime value="2017-02-24"/>
 	</extension>
 	<!-- **************extension end************** -->
 	<status value="active"/>
