@@ -1,0 +1,29 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+<id value="UKCore-MedicationStatement-Extension-PrescribingOrg-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
+	</meta>
+	<!-- **************extension start************** -->
+	<!--Medication Prescribing Organization extension details-->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganization">
+		<valueCodeableConcept>
+		<coding>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
+			<code value="prescribed-at-gp-practice"/>
+			<display value="Prescribed at GP practice"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="https://dmd.nhs.uk/"/>
+			<code value="39732311000001104"/>
+			<display value="Amoxicillin 250mg capsules"/>
+		</coding>
+	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</MedicationStatement>
