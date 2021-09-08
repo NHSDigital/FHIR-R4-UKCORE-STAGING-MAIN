@@ -1,0 +1,15 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="Patient-Extension-BirthPlace-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+		<valueAddress>
+			<line value="MATERNITY UNIT"/>
+			<line value="ST. LEONARD'S UNIVERSITY HOSPITAL"/>
+			<line value="BEWLEY STREET"/>
+			<city value="LENVILLE"/>
+			<postalCode value="LEN 7TF"/>
+			<country value="ENGLAND"/>
+		</valueAddress>
+	</extension>
+	<!-- **************extension end************** -->
+</Patient>
