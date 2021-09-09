@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A set of codes that define the ethnicity of a person, as specified by the person. These concepts are specifically for use in Wales." />
+  <description value="A set of codes that define the ethnic group of the patient, as selected by the patient. These concepts are specifically for use in Wales." />
   <copyright value="Copyright © 2021 NHS Digital" />
   <caseSensitive value="true" />
   <content value="complete" />
