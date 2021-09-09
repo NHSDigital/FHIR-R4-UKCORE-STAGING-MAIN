@@ -3,6 +3,8 @@
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
 	</meta>
+	<!-- **************extension start************** -->
+	<!--This supports the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid..-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd">
 		<extension url="endDate">
 			<valueDateTime value="2021-07-20T17:10:00+00:00"/>
@@ -11,6 +13,14 @@
 			<valueString value="Administrative error corrected on patient record - confirmed that allergy not experienced with the patient."/>
 		</extension>
 	</extension>
+	<!-- **************extension end************** -->
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+			<code value="active"/>
+			<display value="Active"/>
+		</coding>
+	</clinicalStatus>
 	<verificationStatus>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
