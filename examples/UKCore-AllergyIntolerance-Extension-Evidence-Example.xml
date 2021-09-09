@@ -1,0 +1,58 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+	<id value="UKCore-AllergyIntolerance-Extension-Evidence-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
+	</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence">
+		<valueReference>
+			<reference value="DiagnosticReport/UKCore-DiagnosticReport-DiagnosticStudiesReport-Example"/>
+			<type value="DiagnosticReport"/>
+		</valueReference>
+	</extension>
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+			<code value="active"/>
+			<display value="Active"/>
+		</coding>
+	</clinicalStatus>
+	<verificationStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+			<code value="confirmed"/>
+			<display value="Confirmed"/>
+		</coding>
+	</verificationStatus>
+	<type value="allergy"/>
+	<category value="medication"/>
+	<code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="372687004"/>
+      <display value="Amoxicillin"/>
+    </coding>
+  </code>
+	<patient>
+		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+	</patient>
+	<encounter>
+		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
+	</encounter>
+	<recordedDate value="2019-12-10T13:00:00+00:00"/>
+	<recorder>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+	</recorder>
+	<asserter>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+	</asserter>
+	<reaction>
+		<manifestation>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="247472004"/>
+				<display value="Urticarial rash"/>
+			</coding>
+		</manifestation>
+		<severity value="mild"/>
+	</reaction>
+</AllergyIntolerance>
