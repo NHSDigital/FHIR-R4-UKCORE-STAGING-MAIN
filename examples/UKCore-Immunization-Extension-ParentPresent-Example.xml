@@ -16,7 +16,7 @@
 		</coding>
 	</vaccineCode>
 	<patient>
-		<reference value="Patient/UKCore-Patient-BabyPatient-Examplee"/>
+		<reference value="Patient/UKCore-Patient-BabyPatient-Example"/>
 	</patient>
 	<occurrenceDateTime value="2021-07-20"/>
 </Immunization>
