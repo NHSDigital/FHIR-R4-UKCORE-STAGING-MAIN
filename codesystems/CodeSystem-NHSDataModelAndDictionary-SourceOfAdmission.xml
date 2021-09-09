@@ -1,25 +1,32 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="NHSDataModelAndDictionary-SourceOfAdmission" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
-    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/s/smo/source_of_admission_de.asp?shownav=1" />
-  </extension>
   <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-SourceOfAdmission" />
   <version value="2.0.0" />
   <name value="NHSDataModelandDictionarySourceOfAdmission" />
   <title value="NHS Data Model and Dictionary Source Of Admission" />
   <status value="draft" />
-  <date value="2019-11-05T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
+  <date value="2021-09-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="secretariat@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
   <contact>
     <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
       <use value="work" />
+      <rank value="2" />
     </telecom>
   </contact>
   <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home." />
-  <copyright value="Copyright © 2019 NHS Digital" />
+  <copyright value="Copyright &copy; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&reg; FHIR&reg; standard Copyright &copy; 2011+ HL7 The HL7&reg; FHIR&reg; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
@@ -79,87 +86,4 @@
     <code value="88" />
     <display value="Non-NHS (other than Local Authority) run Hospice" />
   </concept>
-=======
-<CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="NHSDataModelAndDictionary-SourceOfAdmission" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
-    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/s/smo/source_of_admission_de.asp?shownav=1" />
-  </extension>
-  <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-SourceOfAdmission" />
-  <version value="2.0.0" />
-  <name value="NHSDataModelandDictionarySourceOfAdmission" />
-  <title value="NHS Data Model and Dictionary Source Of Admission" />
-  <status value="draft" />
-  <date value="2019-11-05T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home." />
-  <copyright value="Copyright © 2019 NHS Digital" />
-  <caseSensitive value="true" />
-  <content value="complete" />
-  <concept>
-    <code value="19" />
-    <display value="Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode." />
-  </concept>
-  <concept>
-    <code value="29" />
-    <display value="Temporary place of residence when usually resident elsewhere (e.g. hotels, residential Educational Establishments)" />
-  </concept>
-  <concept>
-    <code value="39" />
-    <display value="Penal establishment, Court, or Police Station / Police Custody Suite" />
-  </concept>
-  <concept>
-    <code value="49" />
-    <display value="NHS other Hospital Provider - high security psychiatric accommodation in an NHS Hospital Provider (NHS Trust or NHS Foundation Trust)" />
-  </concept>
-  <concept>
-    <code value="51" />
-    <display value="NHS other Hospital Provider - Ward for general Patients or the younger physically disabled or A and E department" />
-    <definition value="National Code 51 'NHS other hospital provider - Ward for general Patients or the younger physically disabled or A and E department' should not be used if the Patient arrives at an Accident and Emergency Department and is admitted to the same Hospital Provider." />
-  </concept>
-  <concept>
-    <code value="52" />
-    <display value="NHS other Hospital Provider - Ward for maternity Patients or Neonates" />
-  </concept>
-  <concept>
-    <code value="53" />
-    <display value="NHS other Hospital Provider - Ward for Patients who are mentally ill or have Learning Disabilities" />
-  </concept>
-  <concept>
-    <code value="54" />
-    <display value="NHS run Care Home" />
-  </concept>
-  <concept>
-    <code value="65" />
-    <display value="Local Authority residential accommodation i.e. where care is provided" />
-  </concept>
-  <concept>
-    <code value="66" />
-    <display value="Local Authority foster care" />
-  </concept>
-  <concept>
-    <code value="79" />
-    <display value="Babies born in or on the way to hospital" />
-  </concept>
-  <concept>
-    <code value="85" />
-    <display value="Non-NHS (other than Local Authority) run Care Home" />
-  </concept>
-  <concept>
-    <code value="87" />
-    <display value="Non NHS run hospital" />
-  </concept>
-  <concept>
-    <code value="88" />
-    <display value="Non-NHS (other than Local Authority) run Hospice" />
-  </concept>
->>>>>>> ukcore-draft/develop
 </CodeSystem>
