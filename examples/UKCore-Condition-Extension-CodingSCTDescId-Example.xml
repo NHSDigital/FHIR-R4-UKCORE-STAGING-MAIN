@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId -Example"/>
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-Example"/>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
 		<extension url="descriptionId">
 			<valueIdentifier>
