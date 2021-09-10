@@ -32,4 +32,32 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="7c6b6561-0f1a-4ee3-9358-cb7ea299f513"/>
+		<timestamp value="2021-09-10T07:42:15+00:00"/>
+		<total value="2"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus"/>
+			<code value="O"/>
+			<display value="Overseas Resident"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus"/>
+			<code value="H"/>
+			<display value="UK Resident"/>
+		</contains>
+	</expansion>
 </ValueSet>

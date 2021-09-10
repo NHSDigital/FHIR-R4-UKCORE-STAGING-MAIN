@@ -38,4 +38,65 @@
 			</filter>
 		</include>
 	</compose>
+    <expansion>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+        </extension>
+        <identifier value="af8a5a59-4c96-4e40-9b71-b6948d860981"/>
+        <timestamp value="2021-09-09T12:35:14+00:00"/>
+        <total value="8"/>
+        <offset value="0"/>
+        <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
+        </parameter>
+        <parameter>
+            <name value="count"/>
+            <valueInteger value="2147483647"/>
+        </parameter>
+        <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+        </parameter>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368208006"/>
+            <display value="Left upper arm structure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279549004"/>
+            <display value="Nasal cavity structure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74262004"/>
+            <display value="Oral cavity structure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368209003"/>
+            <display value="Right upper arm structure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723979003"/>
+            <display value="Structure of left buttock"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61396006"/>
+            <display value="Structure of left thigh"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723980000"/>
+            <display value="Structure of right buttock"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11207009"/>
+            <display value="Structure of right thigh"/>
+        </contains>
+    </expansion>
 </ValueSet>

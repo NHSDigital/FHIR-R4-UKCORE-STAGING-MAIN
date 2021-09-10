@@ -32,4 +32,27 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="7b2f119c-8cc2-4454-914e-daa7c0c2991b"/>
+		<timestamp value="2021-09-10T07:09:20+00:00"/>
+		<total value="1"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem"/>
+			<code value="textphone"/>
+			<display value="Minicom (Textphone)"/>
+		</contains>
+	</expansion>
 </ValueSet>

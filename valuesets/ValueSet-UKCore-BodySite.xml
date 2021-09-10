@@ -38,4 +38,3025 @@
             </filter>
         </include>
     </compose>
+    <expansion>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+        </extension>
+        <identifier value="cc303958-0fd9-4d90-8a68-87204c35377a"/>
+        <timestamp value="2021-09-09T12:32:23+00:00"/>
+        <total value="35061"/>
+        <offset value="0"/>
+        <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
+        </parameter>
+        <parameter>
+            <name value="count"/>
+            <valueInteger value="600"/>
+        </parameter>
+        <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+        </parameter>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="113359008"/>
+            <display value="Agranular endoplasmic reticulum membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="328133002"/>
+            <display value="All bone marrow bony trabeculae"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731583008"/>
+            <display value="All bone marrow of ulna"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="19121000"/>
+            <display value="All medium arteries"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9379006"/>
+            <display value="All permanent teeth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="328436002"/>
+            <display value="All transplanted bone marrow"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="125216004"/>
+            <display value="Anastomosis, leaking"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279752005"/>
+            <display value="Anterior triangle cervical lymph node group"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110759007"/>
+            <display value="Aorta and duodenum, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="66604008"/>
+            <display value="Azurophilic granules"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4677002"/>
+            <display value="Basal lamina, inclusion in subepithelial location"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="263430008"/>
+            <display value="Base of middle phalanx of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72060002"/>
+            <display value="Bipolar cells of retina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272890008"/>
+            <display value="BL13"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762856007"/>
+            <display value="Bone structure of middle phalanx of left middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762855006"/>
+            <display value="Bone structure of proximal phalanx of right middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723550002"/>
+            <display value="Bone structure of right navicular"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="724221004"/>
+            <display value="Bone structure of right rib"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57172001"/>
+            <display value="Both thighs"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110731006"/>
+            <display value="Bronchus and liver, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110732004"/>
+            <display value="Bronchus and skin of thorax, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="246013003"/>
+            <display value="C3-C4 interspinalis cervicis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="713852002"/>
+            <display value="Cephalometric gnathion point"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="79229009"/>
+            <display value="Chromosome pair 22"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90604005"/>
+            <display value="Dendrite"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110864002"/>
+            <display value="Duodenum and abdominal wall, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361655004"/>
+            <display value="Eleventh left posterior intercostal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="277050003"/>
+            <display value="Entire abdomen, peritoneum and retroperitoneum (combined site)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1017209009"/>
+            <display value="Entire abdominal lumbar region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="180941005"/>
+            <display value="Entire abducens nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727191009"/>
+            <display value="Entire accessory gluteal muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="169601003"/>
+            <display value="Entire accessory phrenic nerves"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731479005"/>
+            <display value="Entire acromion region of shoulder"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729658005"/>
+            <display value="Entire adductor of carpometacarpal joint of thumb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727103003"/>
+            <display value="Entire adipose tissue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245497001"/>
+            <display value="Entire ampulla of fallopian tube"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728879000"/>
+            <display value="Entire anatomic ventriculopulmonary junction"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43967001"/>
+            <display value="Entire anterior cardiac vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728856001"/>
+            <display value="Entire anterior division of middle trunk of brachial plexus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728684009"/>
+            <display value="Entire anterior horn of longitudinal segment of meniscus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63858006"/>
+            <display value="Entire anterior inferior renal segment"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727257004"/>
+            <display value="Entire anterior insula"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729185004"/>
+            <display value="Entire anterior left Hjortso liver segment"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="178783003"/>
+            <display value="Entire anterior nasopharynx"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244349005"/>
+            <display value="Entire anterior papillary muscle of left ventricle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729184000"/>
+            <display value="Entire anterior right Hjortso liver segment"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362543000"/>
+            <display value="Entire antitragus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="307870002"/>
+            <display value="Entire anulus fibrosus of intervertebral disc of second lumbar vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367845006"/>
+            <display value="Entire anulus fibrosus of intervertebral disc of seventh cervical vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="162032002"/>
+            <display value="Entire anulus fibrosus of intervertebral disc of third cervical vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279174006"/>
+            <display value="Entire anulus fibrosus of mitral orifice"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="174452008"/>
+            <display value="Entire apex of cervical spinal cord posterior horn"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="186853001"/>
+            <display value="Entire apical branch of inferior left pulmonary vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="312803002"/>
+            <display value="Entire arch of fourth cervical vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="312789008"/>
+            <display value="Entire arch of second thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731109002"/>
+            <display value="Entire artery of neck"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729806002"/>
+            <display value="Entire articular cartilage of distal radius"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731173002"/>
+            <display value="Entire articular cartilage of lower limb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="771129009"/>
+            <display value="Entire articular cartilage of vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731199009"/>
+            <display value="Entire articular facet of clavicle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="214303009"/>
+            <display value="Entire articular facet of head of fibula"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731238006"/>
+            <display value="Entire articular surface of phalanx of foot"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244217007"/>
+            <display value="Entire ascending pharyngeal artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727234005"/>
+            <display value="Entire back of trunk"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727704004"/>
+            <display value="Entire base of distal phalanx of finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728577009"/>
+            <display value="Entire base of middle phalanx of middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728578004"/>
+            <display value="Entire base of middle phalanx of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368323004"/>
+            <display value="Entire base of phalanx of middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="182461002"/>
+            <display value="Entire bifurcated ligament"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361354009"/>
+            <display value="Entire biliary system"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731816004"/>
+            <display value="Entire blood vessel of abdominal organ"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731777008"/>
+            <display value="Entire blood vessel of neck"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279620001"/>
+            <display value="Entire body of epididymis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280858003"/>
+            <display value="Entire body of fifth lumbar vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="897658005"/>
+            <display value="Entire bone of frontal sinus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730739005"/>
+            <display value="Entire bone tissue of bone organ of proximal carpus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730697000"/>
+            <display value="Entire bone tissue of distal phalanx of little finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730694007"/>
+            <display value="Entire bone tissue of distal phalanx of little toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730695008"/>
+            <display value="Entire bone tissue of sacral vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730711009"/>
+            <display value="Entire bone tissue of second coccygeal vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730303001"/>
+            <display value="Entire border of third rib"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362097008"/>
+            <display value="Entire border of tongue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309321003"/>
+            <display value="Entire brain dura mater"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729292004"/>
+            <display value="Entire branch of anterior trunk of mandibular nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730092005"/>
+            <display value="Entire branch of dorsalis pedis artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731451004"/>
+            <display value="Entire branch of femoral nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730091003"/>
+            <display value="Entire branch of posterior tibial artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="384791005"/>
+            <display value="Entire Brodmann area 36"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="384794002"/>
+            <display value="Entire Brodmann area 39"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="384795001"/>
+            <display value="Entire Brodmann area 40"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256682009"/>
+            <display value="Entire buccal mucosa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367781000"/>
+            <display value="Entire capsule of costovertebral joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="207166008"/>
+            <display value="Entire cardiac thoracic nerves"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362005005"/>
+            <display value="Entire cardiopulmonary circulatory system"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="897659002"/>
+            <display value="Entire cavity of frontal sinus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731476003"/>
+            <display value="Entire cavity of lesser sac of peritoneum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361593004"/>
+            <display value="Entire cerebellar cortex"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362412009"/>
+            <display value="Entire cerebellar white matter"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245494008"/>
+            <display value="Entire cervical canal"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="254991008"/>
+            <display value="Entire cervical lamina propria"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245405004"/>
+            <display value="Entire cervical oesophagus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="161553004"/>
+            <display value="Entire cervical portion of internal carotid artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730260003"/>
+            <display value="Entire cervical region of longitudinal ligament"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="180966009"/>
+            <display value="Entire cervical spinal nerve root"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280274004"/>
+            <display value="Entire chorda tympani"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362843009"/>
+            <display value="Entire chorionic cavity"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42214001"/>
+            <display value="Entire choroid plexus of fourth ventricle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727813009"/>
+            <display value="Entire collateral ligament of fourth metatarsophalangeal joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276162008"/>
+            <display value="Entire collateral ligament of interphalangeal joint of foot"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727812004"/>
+            <display value="Entire collateral ligament of third metatarsophalangeal joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361930008"/>
+            <display value="Entire columella"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="192827009"/>
+            <display value="Entire commissure of tricuspid valve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="308783008"/>
+            <display value="Entire common cardinal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729487003"/>
+            <display value="Entire corneal surface zone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244691004"/>
+            <display value="Entire coronoid process of mandible"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258132006"/>
+            <display value="Entire corpus fibrosum of ovary"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368048007"/>
+            <display value="Entire costal part of diaphragm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731215008"/>
+            <display value="Entire cuneiform facet of intermediate cuneiform"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369235005"/>
+            <display value="Entire cuneiform nucleus of midbrain"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727389005"/>
+            <display value="Entire cystic duct junction at common bile duct"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281059001"/>
+            <display value="Entire cystic vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362841006"/>
+            <display value="Entire decidua basalis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245641008"/>
+            <display value="Entire deciduous mandibular left lateral incisor tooth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727128006"/>
+            <display value="Entire deep cervical plexus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181614006"/>
+            <display value="Entire diaphragm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="201149001"/>
+            <display value="Entire diaphragmatic surface of lung"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369195004"/>
+            <display value="Entire diencephalon of fetus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731280005"/>
+            <display value="Entire digestive system mucous membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280016000"/>
+            <display value="Entire distal epiphysis of femur"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280013008"/>
+            <display value="Entire distal epiphysis of radius"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729932007"/>
+            <display value="Entire distal lower limb artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="193304002"/>
+            <display value="Entire distal portion of anterior descending branch of left coronary artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="182054005"/>
+            <display value="Entire distal shaft of femur"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="263394002"/>
+            <display value="Entire distal shaft of radius"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728381005"/>
+            <display value="Entire distal surface of root"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730840000"/>
+            <display value="Entire distobuccal groove of tooth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726927005"/>
+            <display value="Entire ear hair"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362544006"/>
+            <display value="Entire ear lobule"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730540005"/>
+            <display value="Entire eighth anterior intercostal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726925002"/>
+            <display value="Entire elastic tissue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="783829008"/>
+            <display value="Entire embryo at stage 14"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="66432005"/>
+            <display value="Entire embryo at stage 8"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="278867007"/>
+            <display value="Entire endometrium"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729222009"/>
+            <display value="Entire epiphysis of middle phalanx of finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729200002"/>
+            <display value="Entire epiphysis transverse process"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244991001"/>
+            <display value="Entire extensor carpi radialis brevis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244990000"/>
+            <display value="Entire extensor carpi radialis longus muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276166006"/>
+            <display value="Entire extensor carpi radialis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244995005"/>
+            <display value="Entire extensor pollicis brevis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727363005"/>
+            <display value="Entire extracranial and intracranial arteries"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369406000"/>
+            <display value="Entire facial nerve motor branch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280380009"/>
+            <display value="Entire falx cerebelli"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727664008"/>
+            <display value="Entire fascia of upper arm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="243673000"/>
+            <display value="Entire fatty capsule of kidney"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="265797005"/>
+            <display value="Entire female perineum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731645000"/>
+            <display value="Entire femoral vessel"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361896003"/>
+            <display value="Entire fibrous sheath of toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1010582002"/>
+            <display value="Entire fifth extensor compartment of wrist region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="238650008"/>
+            <display value="Entire fifth metatarsal facet of cuboid bone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728850007"/>
+            <display value="Entire fifth sacral spinal cord segment"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282415001"/>
+            <display value="Entire first costochondral junction"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1004132001"/>
+            <display value="Entire first flexor annular pulley of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="193540004"/>
+            <display value="Entire first septal perforator branch of anterior descending branch of left coronary artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264476003"/>
+            <display value="Entire flexor compartment of upper arm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730459005"/>
+            <display value="Entire fourth branchial cleft"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264479005"/>
+            <display value="Entire fovea centralis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80673002"/>
+            <display value="Entire fungiform papillae of tongue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362131005"/>
+            <display value="Entire gastric mucous membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="322249004"/>
+            <display value="Entire gastrointestinal mucous membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727470006"/>
+            <display value="Entire greater curvature of antrum of stomach"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362711003"/>
+            <display value="Entire greater omentum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="182050001"/>
+            <display value="Entire greater trochanter of femur"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361355005"/>
+            <display value="Entire head and neck"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730568009"/>
+            <display value="Entire head of adductor pollicis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730564006"/>
+            <display value="Entire head of flexor carpi ulnaris muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730565007"/>
+            <display value="Entire head of flexor digitorum superficialis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368926004"/>
+            <display value="Entire head of malleus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730563000"/>
+            <display value="Entire head of pronator teres muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730972001"/>
+            <display value="Entire Healey and Schroy lateral inferior left liver segment"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="319322001"/>
+            <display value="Entire Henle's layer"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="345857009"/>
+            <display value="Entire Hertwig's sheath"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="327052008"/>
+            <display value="Entire hilum of lymph node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728039008"/>
+            <display value="Entire horn of knee meniscus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731990007"/>
+            <display value="Entire hypothenar region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="732149007"/>
+            <display value="Entire ileal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368152009"/>
+            <display value="Entire inferior collateral ulnar artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362396005"/>
+            <display value="Entire inferior colliculus of corpora quadrigemina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728314008"/>
+            <display value="Entire inferior parathyroid gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729635007"/>
+            <display value="Entire inferior pituitary vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729631003"/>
+            <display value="Entire inferior surface of soft palate"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280554007"/>
+            <display value="Entire inferior wall of orbit"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="38536005"/>
+            <display value="Entire inner surface of sixth rib"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="60545001"/>
+            <display value="Entire innominate lymph node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281056008"/>
+            <display value="Entire internal thoracic vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368990004"/>
+            <display value="Entire internasal suture of skull"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46302005"/>
+            <display value="Entire interosseous crural nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="182225005"/>
+            <display value="Entire interphalangeal joint of toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362670000"/>
+            <display value="Entire interscapular region of back"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="323131003"/>
+            <display value="Entire interstitial tissue of gastrointestinal tract"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361760006"/>
+            <display value="Entire intervertebral disc of eighth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361761005"/>
+            <display value="Entire intervertebral disc of ninth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361764002"/>
+            <display value="Entire intervertebral disc of twelfth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281895008"/>
+            <display value="Entire intervertebral foramen of fourth lumbar vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281872004"/>
+            <display value="Entire intervertebral foramen of third cervical vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="714804002"/>
+            <display value="Entire intervertebral syndesmosis of C5 and C6"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361358007"/>
+            <display value="Entire intestinal tract"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="269922006"/>
+            <display value="Entire intralobular bile duct"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="254584004"/>
+            <display value="Entire intramural part of myometrium"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181446000"/>
+            <display value="Entire introitus of vagina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245498006"/>
+            <display value="Entire isthmus of fallopian tube"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727192002"/>
+            <display value="Entire jejunal submucosa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="732087001"/>
+            <display value="Entire joint and tendon synovial membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244519009"/>
+            <display value="Entire joint between bodies of T1 and T2"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729057004"/>
+            <display value="Entire junction of vas deferens"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362847005"/>
+            <display value="Entire junctional zone of implantation"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="197932000"/>
+            <display value="Entire juxtaductal region of aortic arch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730975004"/>
+            <display value="Entire Killian's dehiscence"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362240001"/>
+            <display value="Entire labium minus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368995009"/>
+            <display value="Entire lacrimal suture of skull"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368994008"/>
+            <display value="Entire lacrimoconchal suture of skull"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368993002"/>
+            <display value="Entire lacrimomaxillary suture of skull"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282414002"/>
+            <display value="Entire lacteal"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726993004"/>
+            <display value="Entire lamina muscularis of duodenal mucous membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280790003"/>
+            <display value="Entire lamina of eighth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727060000"/>
+            <display value="Entire lateral pterygoid nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728278003"/>
+            <display value="Entire lateral sacral node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181747008"/>
+            <display value="Entire latissimus dorsi muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729228008"/>
+            <display value="Entire leaf of central tendon"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="763899007"/>
+            <display value="Entire left Achilles tendon"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="203525004"/>
+            <display value="Entire left axillary region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368587002"/>
+            <display value="Entire left nasolacrimal duct"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="314150007"/>
+            <display value="Entire left occipital lobe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368756001"/>
+            <display value="Entire left parotid gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362001001"/>
+            <display value="Entire left pleura"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368758000"/>
+            <display value="Entire left submaxillary gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362303006"/>
+            <display value="Entire leptomeninges"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362133008"/>
+            <display value="Entire lesser curvature of stomach"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731176005"/>
+            <display value="Entire ligament of incus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729183006"/>
+            <display value="Entire ligament of ovary"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728420005"/>
+            <display value="Entire lingual sulcus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730394004"/>
+            <display value="Entire linguodental sulcus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727086005"/>
+            <display value="Entire longitudinal layer of gastric muscularis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727127001"/>
+            <display value="Entire longitudinal layer of small intestine muscularis propria"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70951001"/>
+            <display value="Entire lower anterior segmental branch of renal artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727773009"/>
+            <display value="Entire lumbar interspinous ligament"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727770007"/>
+            <display value="Entire lumbar region of posterior longitudinal ligament"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="714290005"/>
+            <display value="Entire lumbosacral facet joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728984007"/>
+            <display value="Entire lumen of male urethra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728987000"/>
+            <display value="Entire lumen of membranous urethra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728988005"/>
+            <display value="Entire lumen of penile urethra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="788118009"/>
+            <display value="Entire lumen of upper gastrointestinal tract"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="47216009"/>
+            <display value="Entire lymph node ring of cardia of stomach"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="327828000"/>
+            <display value="Entire lymph nodes of body as a whole"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731170004"/>
+            <display value="Entire lymphatic vessel of lower limb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1106008"/>
+            <display value="Entire major calyx"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362715007"/>
+            <display value="Entire major pelvis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362264000"/>
+            <display value="Entire male external genitalia"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362265004"/>
+            <display value="Entire male internal genitalia"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727366002"/>
+            <display value="Entire maxillary vestibule"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362397001"/>
+            <display value="Entire medial longitudinal fasciculus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369103002"/>
+            <display value="Entire medial olfactory gyrus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731041005"/>
+            <display value="Entire medial surface of upper arm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="33702004"/>
+            <display value="Entire medial vein of the lateral ventricle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181010001"/>
+            <display value="Entire median nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728724002"/>
+            <display value="Entire median nerve branch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728277008"/>
+            <display value="Entire median sacral node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369063002"/>
+            <display value="Entire medulla oblongata medial lemniscus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727361007"/>
+            <display value="Entire medullary arteries of the brain"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730132009"/>
+            <display value="Entire mesenteric plexus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730868001"/>
+            <display value="Entire mesiobuccal tooth root"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730843003"/>
+            <display value="Entire mesiolingual groove of tooth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731213001"/>
+            <display value="Entire metatarsal facet of cuboid bone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="732127001"/>
+            <display value="Entire microscopic exocrine pancreas"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="732126005"/>
+            <display value="Entire microscopic pancreas"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="732123002"/>
+            <display value="Entire microscopic thyroid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730607006"/>
+            <display value="Entire mid inferoseptal segment of left cardiac ventricle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728014004"/>
+            <display value="Entire mid-zone retina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="35050005"/>
+            <display value="Entire middle haemorrhoidal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279345006"/>
+            <display value="Entire middle temporal sulcus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422544009"/>
+            <display value="Entire mimetic muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728445008"/>
+            <display value="Entire mucosa of labial surface of mandibular gingiva"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728446009"/>
+            <display value="Entire mucosa of lingual surface of mandibular gingiva"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728449002"/>
+            <display value="Entire mucosa of tip of tongue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787441006"/>
+            <display value="Entire mucous membrane of endocervix"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362566004"/>
+            <display value="Entire mucous membrane of Eustachian tube"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782852003"/>
+            <display value="Entire mucous membrane of left colic flexure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731754008"/>
+            <display value="Entire musculoskeletal system of thoracic spine"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729870007"/>
+            <display value="Entire musculotendinous junction of peroneus longus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="254752009"/>
+            <display value="Entire myometrial blood vessel"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181578005"/>
+            <display value="Entire nail bed"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727641006"/>
+            <display value="Entire nail bed of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="770860002"/>
+            <display value="Entire nail plate of middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368887006"/>
+            <display value="Entire nasal fossae"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368992007"/>
+            <display value="Entire nasal suture of skull"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729464006"/>
+            <display value="Entire near periphery of retina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727706002"/>
+            <display value="Entire neck of distal phalanx of finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="85412006"/>
+            <display value="Entire neck of fifth rib"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730000007"/>
+            <display value="Entire neck of finger metacarpal bone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368927008"/>
+            <display value="Entire neck of malleus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729332000"/>
+            <display value="Entire nerve to hyoglossus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729354003"/>
+            <display value="Entire nerve to longus colli"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731751000"/>
+            <display value="Entire nervous system of head and neck"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367849000"/>
+            <display value="Entire nucleus pulposus of intervertebral disc of fourth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279516008"/>
+            <display value="Entire oblique line of thyroid cartilage"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="304046009"/>
+            <display value="Entire oesophageal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369102007"/>
+            <display value="Entire olfactory trigone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728982006"/>
+            <display value="Entire opening of lacuna magna"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368862004"/>
+            <display value="Entire orbital opening"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181143004"/>
+            <display value="Entire orbital region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362606005"/>
+            <display value="Entire organ cavity"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="78727000"/>
+            <display value="Entire orifice of duct of anterior lingual gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280684007"/>
+            <display value="Entire outer plexiform layer of retina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76692002"/>
+            <display value="Entire outer surface of ninth rib"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726861008"/>
+            <display value="Entire palatine gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="323907009"/>
+            <display value="Entire parasympathetic fibres to external genitalia"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="249904004"/>
+            <display value="Entire paravesical fossa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727967004"/>
+            <display value="Entire parietal meninges"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729460002"/>
+            <display value="Entire pars caeca retinae"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731519003"/>
+            <display value="Entire pars interarticularis of cervical vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731518006"/>
+            <display value="Entire pars interarticularis of vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245534008"/>
+            <display value="Entire pars intermedia of pituitary gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280749001"/>
+            <display value="Entire pedicle of tenth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727498009"/>
+            <display value="Entire pelvic appendix"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369233003"/>
+            <display value="Entire periaqueductal grey matter"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729463000"/>
+            <display value="Entire perifoveal region of retina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181616008"/>
+            <display value="Entire peritoneal cavity"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729189005"/>
+            <display value="Entire peritoneal connection of liver"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726992009"/>
+            <display value="Entire periventricular white matter"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729801007"/>
+            <display value="Entire peroneus brevis tendon sheath"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181721004"/>
+            <display value="Entire peroneus longus muscle tendon"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361804008"/>
+            <display value="Entire phalanx of fourth toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361787005"/>
+            <display value="Entire phalanx of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362094001"/>
+            <display value="Entire pharyngeal portion of dorsum of tongue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730159001"/>
+            <display value="Entire pituitary portal veins"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730436004"/>
+            <display value="Entire pituitary short portal vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="231382006"/>
+            <display value="Entire plantar venous arch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255125003"/>
+            <display value="Entire plica palmata"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141400004"/>
+            <display value="Entire posterior atlantooccipital membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730025003"/>
+            <display value="Entire posterior cerebellar lobe fissure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181314001"/>
+            <display value="Entire posterior communicating artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729630002"/>
+            <display value="Entire posterior margin of nasal septum and choanae"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727944001"/>
+            <display value="Entire posterior mitral chordae"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="405008"/>
+            <display value="Entire posterior temporal diploic vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361936002"/>
+            <display value="Entire posterior wall of nasopharynx"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730028001"/>
+            <display value="Entire posterolateral cerebellar fissure"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726889006"/>
+            <display value="Entire precentral fissure of cerebellum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245640009"/>
+            <display value="Entire primary lower left incisor tooth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244731008"/>
+            <display value="Entire procerus muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367713008"/>
+            <display value="Entire processus vaginalis testis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91778006"/>
+            <display value="Entire proper volar digital arteries"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730157004"/>
+            <display value="Entire prostate and vas deferens"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="263396000"/>
+            <display value="Entire proximal shaft of ulna"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362137009"/>
+            <display value="Entire proximal stomach"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728552008"/>
+            <display value="Entire proximal third of patella"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728317001"/>
+            <display value="Entire quadrant of dental arch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61219003"/>
+            <display value="Entire quadrate ligament of elbow"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729763004"/>
+            <display value="Entire radial collateral ligament of metacarpophalangeal joint of index finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729767003"/>
+            <display value="Entire radial collateral ligament of metacarpophalangeal joint of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729829005"/>
+            <display value="Entire radial insertion of biceps brachii"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181011002"/>
+            <display value="Entire radial nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728746005"/>
+            <display value="Entire ray of foot"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369234009"/>
+            <display value="Entire reticular formation of midbrain"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276598009"/>
+            <display value="Entire retrovaginal region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368455003"/>
+            <display value="Entire right hand"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="161251001"/>
+            <display value="Entire right internal carotid artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="735264009"/>
+            <display value="Entire right knee joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="252078006"/>
+            <display value="Entire right seminal vesicle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728851006"/>
+            <display value="Entire root of brachial plexus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729355002"/>
+            <display value="Entire root of lumbar plexus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245495009"/>
+            <display value="Entire round ligament of uterus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362675005"/>
+            <display value="Entire sacrococcygeal region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362540002"/>
+            <display value="Entire scaphoid fossa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280686009"/>
+            <display value="Entire semilunar fold of conjunctiva"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730433007"/>
+            <display value="Entire septum intermedium"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726888003"/>
+            <display value="Entire septum of maxillary sinus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181748003"/>
+            <display value="Entire serratus anterior muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181919003"/>
+            <display value="Entire shaft of clavicle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727709009"/>
+            <display value="Entire shaft of distal phalanx of thumb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="302528006"/>
+            <display value="Entire shaft of fibula"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368324005"/>
+            <display value="Entire shaft of phalanx of middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368929006"/>
+            <display value="Entire short process of incus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="732191009"/>
+            <display value="Entire skeletal muscle and tendon"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762721003"/>
+            <display value="Entire skin and subcutaneous tissue of face"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731880003"/>
+            <display value="Entire skin and subcutaneous tissue of sole of foot"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731883001"/>
+            <display value="Entire skin and/or subcutaneous tissue of palmar area of hand"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731925006"/>
+            <display value="Entire skin of Achilles region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727838004"/>
+            <display value="Entire skin of eardrum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244153000"/>
+            <display value="Entire skin of lateral margin of forearm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727837009"/>
+            <display value="Entire skin of rim of external ear"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368348001"/>
+            <display value="Entire skin of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731948001"/>
+            <display value="Entire skin of shoulder and upper arm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280423005"/>
+            <display value="Entire skin of thumb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="318439008"/>
+            <display value="Entire small subcutaneous artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726886004"/>
+            <display value="Entire space of Disse"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367717009"/>
+            <display value="Entire spermatogenic epithelium"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727538009"/>
+            <display value="Entire spinal nerve root T9"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244863005"/>
+            <display value="Entire spinalis thoracis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726929008"/>
+            <display value="Entire splenic red pulp"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="278029005"/>
+            <display value="Entire splenic vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="334174000"/>
+            <display value="Entire squamous suture"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264199009"/>
+            <display value="Entire stapes"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368049004"/>
+            <display value="Entire sternal part of diaphragm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418563001"/>
+            <display value="Entire stratum granulosum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787573002"/>
+            <display value="Entire structure of lateral part of body of tongue"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244584005"/>
+            <display value="Entire stylomandibular ligament of temporomandibular joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="182486006"/>
+            <display value="Entire subacromial bursa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="196314000"/>
+            <display value="Entire subcarinal lymph node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368177005"/>
+            <display value="Entire subcutaneous acromial bursa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="212915000"/>
+            <display value="Entire subcutaneous tissue of anterior surface of lower leg"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="287377005"/>
+            <display value="Entire subcutaneous tissue of coccygeal region"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367677006"/>
+            <display value="Entire subcutaneous tissue of frenulum of clitoris"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731922009"/>
+            <display value="Entire subcutaneous tissue of limb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368690002"/>
+            <display value="Entire subcutaneous tissue of lower lip"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368284005"/>
+            <display value="Entire subcutaneous tissue of palmar surface of little finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368280001"/>
+            <display value="Entire subcutaneous tissue of palmar surface of middle finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368349009"/>
+            <display value="Entire subcutaneous tissue of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368626002"/>
+            <display value="Entire subcutaneous tissue of scaphoid fossa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368691003"/>
+            <display value="Entire subcutaneous tissue of vermilion border"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362308002"/>
+            <display value="Entire subdural space"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727125009"/>
+            <display value="Entire sublingual fold"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361357002"/>
+            <display value="Entire submandibular area"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731044002"/>
+            <display value="Entire submucosa of anal canal"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="331914007"/>
+            <display value="Entire submuscular bursa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="214710000"/>
+            <display value="Entire subtendinous bursa of anterior tibial muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22993006"/>
+            <display value="Entire superficial anterior cervical lymph node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729910003"/>
+            <display value="Entire superficial terminal branch of ulnar nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244759009"/>
+            <display value="Entire superior auricularis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727195000"/>
+            <display value="Entire superior choroid vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368151002"/>
+            <display value="Entire superior collateral ulnar artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362395009"/>
+            <display value="Entire superior colliculus of corpora quadrigemina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="286596001"/>
+            <display value="Entire superior epigastric vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727102008"/>
+            <display value="Entire superior gemellus muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="212204002"/>
+            <display value="Entire superior medial genicular artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="19424004"/>
+            <display value="Entire superior pancreaticoduodenal lymph node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="198713000"/>
+            <display value="Entire superior thoracic artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729503004"/>
+            <display value="Entire suprachoroidal space of ciliary body"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="171853006"/>
+            <display value="Entire supraglottic space"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730302006"/>
+            <display value="Entire surface of eighth rib"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729160008"/>
+            <display value="Entire surface of labium minorum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730264007"/>
+            <display value="Entire surface of uterus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="300062009"/>
+            <display value="Entire sympathetic plexus of vas deferens"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362909001"/>
+            <display value="Entire synarthrosis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731819006"/>
+            <display value="Entire synovial membrane of upper limb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727063003"/>
+            <display value="Entire synovial villus of joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181878001"/>
+            <display value="Entire T11/T12 facet joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730905000"/>
+            <display value="Entire T4/T5 intertransverse ligament"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728918003"/>
+            <display value="Entire taste area"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361893006"/>
+            <display value="Entire tendon and tendon sheath of knee"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728168007"/>
+            <display value="Entire tendon of abductor pollicis longus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728169004"/>
+            <display value="Entire tendon of extensor pollicis brevis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728146002"/>
+            <display value="Entire tendon of pronator teres"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230087002"/>
+            <display value="Entire tendon of toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728140008"/>
+            <display value="Entire tendon of upper arm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244888002"/>
+            <display value="Entire tenth external intercostal muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729592003"/>
+            <display value="Entire tenth intercostal nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244281003"/>
+            <display value="Entire testicular artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="15913000"/>
+            <display value="Entire thoracic nerve lateral cutaneous branch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="180967000"/>
+            <display value="Entire thoracic spinal nerve root"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="118507000"/>
+            <display value="Entire thymus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="730396002"/>
+            <display value="Entire thyroglossal diverticulum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="308822005"/>
+            <display value="Entire thyroglossal duct"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="197486000"/>
+            <display value="Entire tracheal lumen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="197249003"/>
+            <display value="Entire tracheal membranous wall"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731347000"/>
+            <display value="Entire tributary of internal thoracic vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731344007"/>
+            <display value="Entire tributary of superior thyroid vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728852004"/>
+            <display value="Entire trunk of brachial plexus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227596004"/>
+            <display value="Entire tuberosity of distal phalanx of fourth toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="727406001"/>
+            <display value="Entire tunica adventitia of artery"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729053000"/>
+            <display value="Entire tunica vasculosa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="728720006"/>
+            <display value="Entire ulnar nerve branch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368219009"/>
+            <display value="Entire ulnar tuberosity"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="767380008"/>
+            <display value="Entire undescended left testis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="302526005"/>
+            <display value="Entire upper end of tibia"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279477005"/>
+            <display value="Entire urethral gland"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4549001"/>
+            <display value="Entire vagus nerve parasympathetic fibres to liver, gallbladder, bile ducts and pancreas"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181681008"/>
+            <display value="Entire vastus lateralis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181680009"/>
+            <display value="Entire vastus medialis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="31699002"/>
+            <display value="Entire vein of the caudate nucleus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="212741000"/>
+            <display value="Entire vein of the knee"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="18067007"/>
+            <display value="Entire vein of the medulla oblongata"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362372000"/>
+            <display value="Entire ventral nuclear group of thalamus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369088005"/>
+            <display value="Entire vertical occipital fasciculus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="244450009"/>
+            <display value="Entire vestibular ganglion"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="361891008"/>
+            <display value="Entire vincula tendinum of tendons of fingers"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="729899002"/>
+            <display value="Entire vitelline vein system"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731622006"/>
+            <display value="Entire wall of aortic arch"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279883004"/>
+            <display value="Entire wall of cervical canal"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272677004"/>
+            <display value="Entire wormian bone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280577007"/>
+            <display value="Fascial sheath of eyeball"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110627005"/>
+            <display value="Female genital fluids and spaces, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91451005"/>
+            <display value="Gap junction"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273021006"/>
+            <display value="GB14"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273022004"/>
+            <display value="GB15"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273023009"/>
+            <display value="GB16"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273027005"/>
+            <display value="GB20"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273091002"/>
+            <display value="GV24"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12626005"/>
+            <display value="Hemidesmosome"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272848002"/>
+            <display value="HT1"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273155006"/>
+            <display value="Huatuochiachi S4"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17998009"/>
+            <display value="Intranuclear body, concentrically laminated"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272957009"/>
+            <display value="KI12"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76322003"/>
+            <display value="Langerhans' cell"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245366004"/>
+            <display value="Lateral sacral node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="263303004"/>
+            <display value="Level of the fifth lumbar vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="263289004"/>
+            <display value="Level of the fourth thoracic vertebra"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117557005"/>
+            <display value="Lymphocyte positive for both CD16C antigen and CD56 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="116816001"/>
+            <display value="Lymphocyte positive for both CD8 antigen and CD56 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117551006"/>
+            <display value="Lymphocyte positive for CD13 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117554003"/>
+            <display value="Lymphocyte positive for CD16 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117385006"/>
+            <display value="Lymphocyte positive for CD50 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117386007"/>
+            <display value="Lymphocyte positive for CD51 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117422005"/>
+            <display value="Lymphocyte positive for CD95 antigen"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245365000"/>
+            <display value="Median sacral node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23499007"/>
+            <display value="Microbody membrane"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="113357005"/>
+            <display value="Mitotic spindle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782611005"/>
+            <display value="Nail unit part"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280316008"/>
+            <display value="Nerve to styloglossus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110860006"/>
+            <display value="Oesophagus and abdominal wall, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="283391000000106"/>
+            <display value="Other lymph node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90459004"/>
+            <display value="Outer mesothelial cell"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="196272006"/>
+            <display value="Paramolar"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57882002"/>
+            <display value="Pencil cell"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280617008"/>
+            <display value="Perifoveal region of retina"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="69465001"/>
+            <display value="Platypelloid pelvis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="740430007"/>
+            <display value="Population of all cells positive for CD16 antigen and CD56 antigen in portion of fluid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="741069004"/>
+            <display value="Population of all cells positive for CD19 antigen and IgD antigen in portion of fluid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="740433009"/>
+            <display value="Population of all cells positive for CD19 antigen and Lambda antigen in portion of fluid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="740434003"/>
+            <display value="Population of all cells positive for CD2 antigen in portion of fluid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="725439004"/>
+            <display value="Population of all immature basophils in portion of fluid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="279649009"/>
+            <display value="Prepubic part of spermatic cord"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726586008"/>
+            <display value="Progressive spermatozoa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="789094000"/>
+            <display value="Skin and/or subcutaneous tissue structure of right upper arm"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="295701000000100"/>
+            <display value="Skin structure of central lower back"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28404007"/>
+            <display value="Skin structure of palmar surface of ring finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="771100007"/>
+            <display value="Skin structure of right wrist"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272826008"/>
+            <display value="SP1"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273159000"/>
+            <display value="Spinal acupuncture C3"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272781005"/>
+            <display value="ST3"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272783008"/>
+            <display value="ST5"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272786000"/>
+            <display value="ST8"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110863008"/>
+            <display value="Stomach and abdominal wall, CS"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10636005"/>
+            <display value="Stomatocyte"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737364008"/>
+            <display value="Structure of anterior horn of lateral meniscus of left knee"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67779000"/>
+            <display value="Structure of apex of cervical spinal cord posterior horn"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2687004"/>
+            <display value="Structure of Bowman's space"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="781060004"/>
+            <display value="Structure of bursa of left scapulothoracic joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="764112006"/>
+            <display value="Structure of capsule of left temporomandibular joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="724181005"/>
+            <display value="Structure of carpometacarpal joint of left index finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722387000"/>
+            <display value="Structure of central portion of left female breast"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67647003"/>
+            <display value="Structure of diencephalon of fetus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="369192001"/>
+            <display value="Structure of endopeduncular nucleus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="38259003"/>
+            <display value="Structure of extensor pollicis brevis muscle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="879908004"/>
+            <display value="Structure of fascial compartment of right upper limb"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762011001"/>
+            <display value="Structure of fifth metacarpal bone of right hand"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="421354007"/>
+            <display value="Structure of first left lumbar vein"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726047004"/>
+            <display value="Structure of flexor tendon of left index finger"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="764651000"/>
+            <display value="Structure of lateral condyle of left humerus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723615004"/>
+            <display value="Structure of lateral epicondyle of left humerus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723614000"/>
+            <display value="Structure of lateral epicondyle of right humerus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="761946009"/>
+            <display value="Structure of lateral malleolus of left fibula"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="774110002"/>
+            <display value="Structure of left anterior inferior iliac spine"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422569009"/>
+            <display value="Structure of left half of scalp"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="734761008"/>
+            <display value="Structure of left hemiscrotum"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="763871003"/>
+            <display value="Structure of left mastoid bone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="734526004"/>
+            <display value="Structure of left pudendal nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737835006"/>
+            <display value="Structure of left subdeltoid bursa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="771089009"/>
+            <display value="Structure of left trochlear nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="764547006"/>
+            <display value="Structure of lesser trochanter of left femur"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="764548001"/>
+            <display value="Structure of lesser trochanter of right femur"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="764480002"/>
+            <display value="Structure of ligament of interphalangeal joint of right hand"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="890255001"/>
+            <display value="Structure of ligament of right elbow joint"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="879972002"/>
+            <display value="Structure of lymphatic vessel of left foot"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787208006"/>
+            <display value="Structure of metaphysis of distal right radius"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737061006"/>
+            <display value="Structure of midtarsal joint of left foot"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762013003"/>
+            <display value="Structure of neck of fifth metacarpal bone of right hand"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787144006"/>
+            <display value="Structure of orbital portion of right zygomatic bone"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737123005"/>
+            <display value="Structure of posterior horn of lateral meniscus of left knee"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="758636002"/>
+            <display value="Structure of posterior pole of lens of right eye"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737838008"/>
+            <display value="Structure of right deep infrapatellar bursa"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="778057007"/>
+            <display value="Structure of right flexor hallucis longus tendon"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="420853003"/>
+            <display value="Structure of right intervertebral vein at L2"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="771088001"/>
+            <display value="Structure of right vagus nerve"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762014009"/>
+            <display value="Structure of shaft of fifth metacarpal bone of left hand"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721046007"/>
+            <display value="Structure of skin of left upper eyelid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721045006"/>
+            <display value="Structure of skin of right upper eyelid"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="879997003"/>
+            <display value="Structure of subcutaneous tissue of left ankle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="879998008"/>
+            <display value="Structure of subcutaneous tissue of right ankle"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782445007"/>
+            <display value="Structure of sweat gland bearing skin of face"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23461000087108"/>
+            <display value="Structure of tarsometatarsal joint of left fourth toe"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737530005"/>
+            <display value="Structure of thoracolumbar spinal cord nerve root"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="789095004"/>
+            <display value="Structure of tunica intima of basilar sinus"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="30930005"/>
+            <display value="Structure of ulnar tuberosity"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245362002"/>
+            <display value="Subaortic node"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59059009"/>
+            <display value="Sublingual fold"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245259003"/>
+            <display value="Submandibular lymph node group"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="707064002"/>
+            <display value="Supernumerary permanent mandibular right first premolar tooth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="707068004"/>
+            <display value="Supernumerary permanent mandibular right third molar tooth"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="246010000"/>
+            <display value="T11-T12 rotator thoracis"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="50482005"/>
+            <display value="Thymic reticulum cell"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281162000"/>
+            <display value="Urinary reservoir"/>
+        </contains>
+    </expansion>
 </ValueSet>

@@ -40,4 +40,50 @@
 			</concept>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="04934610-6905-4799-a11a-9ec063477c32"/>
+		<timestamp value="2021-09-09T13:58:59+00:00"/>
+		<total value="4"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|2018-08-12"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2018-08-12"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+			<version value="2018-08-12"/>
+			<code value="UNK"/>
+			<display value="unknown"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+			<version value="2018-08-12"/>
+			<code value="F"/>
+			<display value="Female"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+			<version value="2018-08-12"/>
+			<code value="M"/>
+			<display value="Male"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+			<version value="2018-08-12"/>
+			<code value="UN"/>
+			<display value="Undifferentiated"/>
+		</contains>
+	</expansion>
 </ValueSet>

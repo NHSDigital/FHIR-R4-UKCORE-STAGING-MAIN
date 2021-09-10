@@ -55,4 +55,56 @@
 			</concept>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="3bf5dffe-83c9-42ce-a17c-55137aafdc94"/>
+		<timestamp value="2021-09-09T15:09:43+00:00"/>
+		<total value="5"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/medication-statement-category|4.0.1"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+			<version value="4.0.1"/>
+			<code value="inpatient"/>
+			<display value="Inpatient"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+			<version value="4.0.1"/>
+			<code value="outpatient"/>
+			<display value="Outpatient"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+			<version value="4.0.1"/>
+			<code value="community"/>
+			<display value="Community"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory"/>
+			<version value="1.0.0"/>
+			<code value="discharge"/>
+			<display value="Discharge"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory"/>
+			<version value="1.0.0"/>
+			<code value="leave"/>
+			<display value="Leave"/>
+		</contains>
+	</expansion>
 </ValueSet>

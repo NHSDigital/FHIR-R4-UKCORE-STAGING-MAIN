@@ -33,4 +33,32 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="ecf148bc-2e81-4fd0-b411-d54020d64198"/>
+		<timestamp value="2021-09-10T07:49:44+00:00"/>
+		<total value="2"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+			<code value="PAF"/>
+			<display value="Postcode Address File"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+			<code value="UPRN"/>
+			<display value="Unique Property Reference Number"/>
+		</contains>
+	</expansion>
 </ValueSet>

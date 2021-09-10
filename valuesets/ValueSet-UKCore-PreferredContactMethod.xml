@@ -33,4 +33,62 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="4dc72d2e-fcbd-4590-9864-56d0724c62fc"/>
+		<timestamp value="2021-09-10T07:33:41+00:00"/>
+		<total value="8"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="4"/>
+			<display value="E-mail"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="1"/>
+			<display value="Letter"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="5"/>
+			<display value="Minicom (Textphone)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="8"/>
+			<display value="No Telephone contact"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="7"/>
+			<display value="Sign language"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="3"/>
+			<display value="Telephone"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="6"/>
+			<display value="Telephone contact via proxy"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="2"/>
+			<display value="Visit"/>
+		</contains>
+	</expansion>
 </ValueSet>

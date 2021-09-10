@@ -40,4 +40,37 @@
 			</concept>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="4c79b32b-2583-4eef-bc95-e4e450bac2f6"/>
+		<timestamp value="2021-09-09T14:07:46+00:00"/>
+		<total value="3"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
+			<code value="2"/>
+			<display value="Formal - death notice received from Registrar of Deaths"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
+			<code value="1"/>
+			<display value="Informal - death notice received via an update from a local NHS Organisation such as GP or Trust"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
+			<code value="U"/>
+			<display value="Removed"/>
+		</contains>
+	</expansion>
 </ValueSet>

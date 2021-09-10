@@ -33,4 +33,37 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="a3e36d92-18a1-4e20-b90a-68b2ba94bd69"/>
+		<timestamp value="2021-09-10T07:37:55+00:00"/>
+		<total value="3"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
+			<code value="13"/>
+			<display value="Audio tape"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
+			<code value="12"/>
+			<display value="Braille"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
+			<code value="11"/>
+			<display value="Large print"/>
+		</contains>
+	</expansion>
 </ValueSet>

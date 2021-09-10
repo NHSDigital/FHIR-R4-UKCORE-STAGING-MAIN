@@ -32,4 +32,32 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="61e31258-4a1e-4ba1-b201-77a18d7be65a"/>
+		<timestamp value="2021-09-09T14:30:20+00:00"/>
+		<total value="2"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
+			<code value="prescribed-at-gp-practice"/>
+			<display value="Prescribed at GP practice"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
+			<code value="prescribed-by-another-organisation"/>
+			<display value="Prescribed by another organisation"/>
+		</contains>
+	</expansion>
 </ValueSet>
