@@ -27,10 +27,68 @@
 		</telecom>
 	</contact>
 	<description value="A set of codes that define the method by which a person would prefer to be contacted."/>
-	<copyright value="Copyright &copy; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&reg; FHIR&reg; standard Copyright &copy; 2011+ HL7 The HL7&reg; FHIR&reg; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
 	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="4dc72d2e-fcbd-4590-9864-56d0724c62fc"/>
+		<timestamp value="2021-09-10T07:33:41+00:00"/>
+		<total value="8"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="4"/>
+			<display value="E-mail"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="1"/>
+			<display value="Letter"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="5"/>
+			<display value="Minicom (Textphone)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="8"/>
+			<display value="No Telephone contact"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="7"/>
+			<display value="Sign language"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="3"/>
+			<display value="Telephone"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="6"/>
+			<display value="Telephone contact via proxy"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="2"/>
+			<display value="Visit"/>
+		</contains>
+	</expansion>
 </ValueSet>

@@ -26,7 +26,7 @@
 		</telecom>
 	</contact>
 	<description value="A set of codes from that define a medication dose form. Selected from the 'NHS dm+d (dictionary of medicines and devices) dose form' simple reference set of the SNOMED CT UK coding system."/>
-	<copyright value="Copyright &copy; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&reg; FHIR&reg; standard Copyright &copy; 2011+ HL7 The HL7&reg; FHIR&reg; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
@@ -158,11 +158,6 @@
 			<display value="Cutaneous emulsion"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="17309711000001108"/>
@@ -199,11 +194,6 @@
 			<display value="Dental suspension"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="35366911000001101"/>
@@ -220,11 +210,6 @@
 			<display value="Dispersion for injection"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="426684005"/>
@@ -271,11 +256,6 @@
 			<display value="Emulsion and suspension for emulsion for injection"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="14955111000001100"/>
@@ -287,11 +267,6 @@
 			<display value="Emulsion for injection"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="385186005"/>
@@ -363,11 +338,6 @@
 			<display value="Gel"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="17644011000001108"/>
@@ -419,11 +389,6 @@
 			<display value="Homeopathic liquid potency"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="35367511000001105"/>
@@ -470,11 +435,6 @@
 			<display value="Infusion"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="3092311000001108"/>
@@ -491,22 +451,12 @@
 			<display value="Inhalation solution"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="385210002"/>
 			<display value="Inhalation vapour"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="3092611000001103"/>
@@ -528,11 +478,6 @@
 			<display value="Intrauterine device"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="3092811000001104"/>
@@ -594,11 +539,6 @@
 			<display value="Modified-release capsule"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="427609008"/>
@@ -655,11 +595,6 @@
 			<display value="Nebuliser dispersion"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="385197005"/>
@@ -746,11 +681,6 @@
 			<display value="Paint"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="37937005"/>
@@ -857,11 +787,6 @@
 			<display value="Powder for gastroenteral liquid"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="385222004"/>
@@ -898,11 +823,6 @@
 			<display value="Powder for solution for iontophoresis"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="15621311000001106"/>
@@ -914,11 +834,6 @@
 			<display value="Powder for suspension for injection"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="385203008"/>
@@ -930,11 +845,6 @@
 			<display value="Prolonged-release solution for injection"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="32860611000001109"/>
@@ -961,11 +871,6 @@
 			<display value="Shampoo"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="35367311000001104"/>
@@ -1067,11 +972,6 @@
 			<display value="Suppository"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="15850011000001106"/>

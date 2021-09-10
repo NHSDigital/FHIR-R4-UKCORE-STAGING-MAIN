@@ -27,7 +27,7 @@
 		</telecom>
 	</contact>
 	<description value="A set of codes to define a course of therapy for a medication request."/>
-	<copyright value="Copyright &copy; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&reg; FHIR&reg; standard Copyright &copy; 2011+ HL7 The HL7&reg; FHIR&reg; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
 	<compose>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
@@ -48,4 +48,44 @@
 			</concept>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="6fb36f9d-bddd-4fe5-9ed8-a9b1a8ca6d80"/>
+		<timestamp value="2021-09-09T15:02:07+00:00"/>
+		<total value="3"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy|4.0.1"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+			<version value="4.0.1"/>
+			<code value="continuous"/>
+			<display value="Continuous long term therapy"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+			<version value="4.0.1"/>
+			<code value="acute"/>
+			<display value="Short course (acute) therapy"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy"/>
+			<version value="1.0.0"/>
+			<code value="continuous-repeating-dispensing"/>
+			<display value="Continuous long term (repeat dispensing)"/>
+		</contains>
+	</expansion>
 </ValueSet>

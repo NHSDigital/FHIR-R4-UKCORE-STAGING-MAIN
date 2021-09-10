@@ -30,11 +30,978 @@
 		</telecom>
 	</contact>
 	<description value="A ValueSet that identifies the language used by a person."/>
-	<copyright value="Copyright &copy; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&reg; FHIR&reg; standard Copyright &copy; 2011+ HL7 The HL7&reg; FHIR&reg; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
 	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="7ed29ed3-c1d9-442e-91c3-8c5eb31ea10e"/>
+		<timestamp value="2021-09-09T14:24:53+00:00"/>
+		<total value="190"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ab"/>
+			<display value="Abkhazian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="aa"/>
+			<display value="Afar"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="af"/>
+			<display value="Afrikaans"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ak"/>
+			<display value="Akan"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sq"/>
+			<display value="Albanian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="q2"/>
+			<display value="American Sign Language"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="am"/>
+			<display value="Amharic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ar"/>
+			<display value="Arabic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="an"/>
+			<display value="Aragonese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="hy"/>
+			<display value="Armenian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="as"/>
+			<display value="Assamese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="q3"/>
+			<display value="Australian Sign Language"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="av"/>
+			<display value="Avaric"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ae"/>
+			<display value="Avestan"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ay"/>
+			<display value="Aymara"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="az"/>
+			<display value="Azerbaijani"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bm"/>
+			<display value="Bambara"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ba"/>
+			<display value="Bashkir"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="eu"/>
+			<display value="Basque"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="be"/>
+			<display value="Belarusian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bn"/>
+			<display value="Bengali"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bh"/>
+			<display value="Bihari"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bi"/>
+			<display value="Bislama"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="nb"/>
+			<display value="Bokmal, Norwegian; Norwegian Bokmal"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bs"/>
+			<display value="Bosnian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="q1"/>
+			<display value="Braille"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="br"/>
+			<display value="Breton"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="q4"/>
+			<display value="British Sign Language"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bg"/>
+			<display value="Bulgarian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="my"/>
+			<display value="Burmese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ca"/>
+			<display value="Catalan; Valencian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="km"/>
+			<display value="Central Khmer"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ch"/>
+			<display value="Chamorro"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ce"/>
+			<display value="Chechen"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ny"/>
+			<display value="Chichewa; Chewa; Nyanja"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="zh"/>
+			<display value="Chinese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="cu"/>
+			<display value="Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="cv"/>
+			<display value="Chuvash"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kw"/>
+			<display value="Cornish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="co"/>
+			<display value="Corsican"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="cr"/>
+			<display value="Cree"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="hr"/>
+			<display value="Croatian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="cs"/>
+			<display value="Czech"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="da"/>
+			<display value="Danish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="dv"/>
+			<display value="Divehi; Dhivehi; Maldivian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="nl"/>
+			<display value="Dutch; Flemish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="dz"/>
+			<display value="Dzongkha"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="en"/>
+			<display value="English"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="eo"/>
+			<display value="Esperanto"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="et"/>
+			<display value="Estonian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ee"/>
+			<display value="Ewe"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="fo"/>
+			<display value="Faroese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="fj"/>
+			<display value="Fijian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="fi"/>
+			<display value="Finnish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="fr"/>
+			<display value="French"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ff"/>
+			<display value="Fulah"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="gd"/>
+			<display value="Gaelic; Scottish Gaelic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="gl"/>
+			<display value="Galician"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="lg"/>
+			<display value="Ganda"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ka"/>
+			<display value="Georgian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="de"/>
+			<display value="German"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="el"/>
+			<display value="Greek, Modern (1453-)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="gn"/>
+			<display value="Guarani"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="gu"/>
+			<display value="Gujarati"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ht"/>
+			<display value="Haitian; Haitian Creole"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ha"/>
+			<display value="Hausa"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="he"/>
+			<display value="Hebrew"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="hz"/>
+			<display value="Herero"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="hi"/>
+			<display value="Hindi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ho"/>
+			<display value="Hiri Motu"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="hu"/>
+			<display value="Hungarian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="is"/>
+			<display value="Icelandic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="io"/>
+			<display value="Ido"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ig"/>
+			<display value="Igbo"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="id"/>
+			<display value="Indonesian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ia"/>
+			<display value="Interlingua (International Auxiliary Language Association)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ie"/>
+			<display value="Interlingue"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="iu"/>
+			<display value="Inuktitut"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ik"/>
+			<display value="Inupiaq"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ga"/>
+			<display value="Irish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="it"/>
+			<display value="Italian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ja"/>
+			<display value="Japanese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="jv"/>
+			<display value="Javanese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kl"/>
+			<display value="Kalaallisut; Greenlandic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kn"/>
+			<display value="Kannada"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kr"/>
+			<display value="Kanuri"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ks"/>
+			<display value="Kashmiri"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kk"/>
+			<display value="Kazakh"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ki"/>
+			<display value="Kikuyu; Gikuyu"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="rw"/>
+			<display value="Kinyarwanda"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ky"/>
+			<display value="Kirghiz; Kyrgyz"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kv"/>
+			<display value="Komi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kg"/>
+			<display value="Kongo"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ko"/>
+			<display value="Korean"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="kj"/>
+			<display value="Kuanyama; Kwanyama"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ku"/>
+			<display value="Kurdish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="lo"/>
+			<display value="Lao"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="la"/>
+			<display value="Latin"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="lv"/>
+			<display value="Latvian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="li"/>
+			<display value="Limburgan; Limburger; Limburgish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ln"/>
+			<display value="Lingala"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="lt"/>
+			<display value="Lithuanian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="lu"/>
+			<display value="Luba-Katanga"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="lb"/>
+			<display value="Luxembourgish; Letzeburgesch"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mk"/>
+			<display value="Macedonian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="q5"/>
+			<display value="Makaton"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mg"/>
+			<display value="Malagasy"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ms"/>
+			<display value="Malay"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ml"/>
+			<display value="Malayalam"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mt"/>
+			<display value="Maltese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="gv"/>
+			<display value="Manx"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mi"/>
+			<display value="Maori"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mr"/>
+			<display value="Marathi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mh"/>
+			<display value="Marshallese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mo"/>
+			<display value="Moldavian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="mn"/>
+			<display value="Mongolian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="na"/>
+			<display value="Nauru"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="nv"/>
+			<display value="Navajo; Navaho"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="nd"/>
+			<display value="Ndebele, North; North Ndebele"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="nr"/>
+			<display value="Ndebele, South; South Ndebele"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ng"/>
+			<display value="Ndonga"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ne"/>
+			<display value="Nepali"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="se"/>
+			<display value="Northern Sami"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="no"/>
+			<display value="Norwegian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="nn"/>
+			<display value="Norwegian Nynorsk; Nynorsk, Norwegian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="oc"/>
+			<display value="Occitan (post1500); Provencal"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="oj"/>
+			<display value="Ojibwa"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="or"/>
+			<display value="Oriya"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="om"/>
+			<display value="Oromo"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="os"/>
+			<display value="Ossetian; Ossetic"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="pi"/>
+			<display value="Pali"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="pa"/>
+			<display value="Panjabi; Punjabi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="fa"/>
+			<display value="Persian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="pl"/>
+			<display value="Polish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="pt"/>
+			<display value="Portuguese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ps"/>
+			<display value="Pushto"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="qu"/>
+			<display value="Quechua"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ro"/>
+			<display value="Romanian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="rm"/>
+			<display value="Romansh"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="rn"/>
+			<display value="Rundi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ru"/>
+			<display value="Russian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sm"/>
+			<display value="Samoan"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sg"/>
+			<display value="Sango"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sa"/>
+			<display value="Sanskrit"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sc"/>
+			<display value="Sardinian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sr"/>
+			<display value="Serbian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sn"/>
+			<display value="Shona"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ii"/>
+			<display value="Sichuan Yi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sd"/>
+			<display value="Sindhi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="si"/>
+			<display value="Sinhala; Sinhalese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sk"/>
+			<display value="Slovak"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sl"/>
+			<display value="Slovenian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="so"/>
+			<display value="Somali"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="st"/>
+			<display value="Sotho, Southern"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="es"/>
+			<display value="Spanish; Castilian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="su"/>
+			<display value="Sundanese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sw"/>
+			<display value="Swahili"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ss"/>
+			<display value="Swati"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="sv"/>
+			<display value="Swedish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tl"/>
+			<display value="Tagalog"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ty"/>
+			<display value="Tahitian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tg"/>
+			<display value="Tajik"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ta"/>
+			<display value="Tamil"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tt"/>
+			<display value="Tatar"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="te"/>
+			<display value="Telugu"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="th"/>
+			<display value="Thai"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="bo"/>
+			<display value="Tibetan"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ti"/>
+			<display value="Tigrinya"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="to"/>
+			<display value="Tonga (Tonga Islands)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ts"/>
+			<display value="Tsonga"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tn"/>
+			<display value="Tswana"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tr"/>
+			<display value="Turkish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tk"/>
+			<display value="Turkmen"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="tw"/>
+			<display value="Twi"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ug"/>
+			<display value="Uighur; Uyghur"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="uk"/>
+			<display value="Ukrainian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ur"/>
+			<display value="Urdu"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="uz"/>
+			<display value="Uzbek"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="ve"/>
+			<display value="Venda"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="vi"/>
+			<display value="Vietnamese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="vo"/>
+			<display value="Volapuk"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="wa"/>
+			<display value="Walloon"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="cy"/>
+			<display value="Welsh"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="fy"/>
+			<display value="Western Frisian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="wo"/>
+			<display value="Wolof"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="xh"/>
+			<display value="Xhosa"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="yi"/>
+			<display value="Yiddish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="yo"/>
+			<display value="Yoruba"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="za"/>
+			<display value="Zhuang; Chuang"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+			<code value="zu"/>
+			<display value="Zulu"/>
+		</contains>
+	</expansion>
 </ValueSet>
->>>>>>> ukcore-draft/develop
