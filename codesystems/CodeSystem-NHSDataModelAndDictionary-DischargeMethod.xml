@@ -1,25 +1,32 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="NHSDataModelAndDictionary-DischargeMethod" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
-    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/d/disc/discharge_method_de.asp?shownav=1" />
-  </extension>
   <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-DischargeMethod" />
   <version value="2.0.0" />
   <name value="NHSDataModelandDictionaryDischargeMethod" />
   <title value="NHS Data Model and Dictionary Discharge Method" />
   <status value="draft" />
-  <date value="2019-11-05T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
+  <date value="2021-09-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="secretariat@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
   <contact>
     <name value="NHS Digital" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
       <use value="work" />
+      <rank value="2" />
     </telecom>
   </contact>
   <description value="The method of discharge from a Hospital Provider Spell." />
-  <copyright value="Copyright © 2019 NHS Digital" />
+  <copyright value="Copyright &copy; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&reg; FHIR&reg; standard Copyright &copy; 2011+ HL7 The HL7&reg; FHIR&reg; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
@@ -52,60 +59,4 @@
     <display value="Patient discharged by a relative or advocate" />
     <definition value="National Codes 6 and 7 have been introduced for the Mental Health Services Data Set only to add further granularity to National Code 2. However, National Code 2 is still valid for the Mental Health Services Data Set where extra detail cannot be collected. National Codes 6 and 7 are NOT valid in any other data set including Commissioning Data Set version 6-2." />
   </concept>
-=======
-<CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="NHSDataModelAndDictionary-DischargeMethod" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
-    <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/d/disc/discharge_method_de.asp?shownav=1" />
-  </extension>
-  <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-DischargeMethod" />
-  <version value="2.0.0" />
-  <name value="NHSDataModelandDictionaryDischargeMethod" />
-  <title value="NHS Data Model and Dictionary Discharge Method" />
-  <status value="draft" />
-  <date value="2019-11-05T00:00:00+00:00" />
-  <publisher value="NHS Digital" />
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="The method of discharge from a Hospital Provider Spell." />
-  <copyright value="Copyright © 2019 NHS Digital" />
-  <caseSensitive value="true" />
-  <content value="complete" />
-  <concept>
-    <code value="1" />
-    <display value="Patient discharged on clinical advice or with clinical consent" />
-  </concept>
-  <concept>
-    <code value="2" />
-    <display value="Patient discharged him/herself or was discharged by a relative or advocate" />
-  </concept>
-  <concept>
-    <code value="3" />
-    <display value="Patient discharged by mental health review tribunal, Home Secretary or Court" />
-  </concept>
-  <concept>
-    <code value="4" />
-    <display value="Patient died" />
-  </concept>
-  <concept>
-    <code value="5" />
-    <display value="Stillbirth" />
-  </concept>
-  <concept>
-    <code value="6" />
-    <display value="Patient discharged him/herself" />
-    <definition value="National Codes 6 and 7 have been introduced for the Mental Health Services Data Set only to add further granularity to National Code 2. However, National Code 2 is still valid for the Mental Health Services Data Set where extra detail cannot be collected. National Codes 6 and 7 are NOT valid in any other data set including Commissioning Data Set version 6-2." />
-  </concept>
-  <concept>
-    <code value="7" />
-    <display value="Patient discharged by a relative or advocate" />
-    <definition value="National Codes 6 and 7 have been introduced for the Mental Health Services Data Set only to add further granularity to National Code 2. However, National Code 2 is still valid for the Mental Health Services Data Set where extra detail cannot be collected. National Codes 6 and 7 are NOT valid in any other data set including Commissioning Data Set version 6-2." />
-  </concept>
->>>>>>> ukcore-draft/develop
 </CodeSystem>
