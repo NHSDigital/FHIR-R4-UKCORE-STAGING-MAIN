@@ -131,11 +131,6 @@
 			<display value="aunt"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
 			<inactive value="true"/>
 			<version value="2.9"/>
@@ -173,11 +168,6 @@
 			<display value="child-in-law"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
 			<inactive value="true"/>
 			<version value="2.9"/>
@@ -221,11 +211,6 @@
 			<display value="Emergency Contact"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
 			<inactive value="true"/>
 			<version value="2.9"/>
@@ -689,11 +674,6 @@
 			<display value="paternal uncle"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
 			<inactive value="true"/>
 			<version value="2.9"/>

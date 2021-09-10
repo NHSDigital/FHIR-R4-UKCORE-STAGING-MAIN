@@ -194,11 +194,6 @@ Selected from the 'ePrescribing route of administration' simple reference set of
             <display value="Intracerebroventricular"/>
         </contains>
         <contains>
-            <extension url="http://ontoserver.csiro.au/profiles/expansion">
-                <extension url="inactive">
-                    <valueBoolean value="true"/>
-                </extension>
-            </extension>
             <system value="http://snomed.info/sct"/>
             <inactive value="true"/>
             <code value="19537211000001108"/>

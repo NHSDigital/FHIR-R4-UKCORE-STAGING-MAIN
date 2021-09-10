@@ -73,484 +73,264 @@
 			<valueInteger value="0"/>
 		</parameter>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="868241000000109"/>
 			<display value="Administration of intranasal influenza vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="572421000119102"/>
 			<display value="Administration of oral typhoid live vaccine"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="626071000119103"/>
 			<display value="Administration of subcutaneous zoster virus live vaccine"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="16298561000119108"/>
 			<display value="Administration of tetanus, diphtheria, and acellular pertussis vaccine"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="571611000119101"/>
 			<display value="Administration of varicella live vaccine"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170415002"/>
 			<display value="Booster diphtheria and tetanus double and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170408005"/>
 			<display value="Booster diphtheria and tetanus double vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="412743000"/>
 			<display value="Booster hepatitis A junior vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="7141001"/>
 			<display value="Brucellosis vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="270898008"/>
 			<display value="Diphtheria and tetanus double and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170399005"/>
 			<display value="Diphtheria, pertussis and tetanus triple and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170412004"/>
 			<display value="First diphtheria and tetanus double and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170405008"/>
 			<display value="First diphtheria and tetanus double vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170400003"/>
 			<display value="First diphtheria, pertussis and tetanus triple and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170395004"/>
 			<display value="First diphtheria, pertussis and tetanus triple vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="313188000"/>
 			<display value="First hepatitis A junior vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="51572002"/>
 			<display value="Haemophilus influenzae immunisation"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="8605003"/>
 			<display value="Immunisation for bordetella"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="39568006"/>
 			<display value="Immunisation for encephalitis virus"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="275849001"/>
 			<display value="Infective hepatitis immunisation"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="390892002"/>
 			<display value="Meningitis ACW &amp; Y vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="281040003"/>
 			<display value="Pre-school diphtheria and tetanus double and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="275841003"/>
 			<display value="Pre-school diphtheria and tetanus double vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="777611000000100"/>
 			<display value="Quadrivalent human papillomavirus vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="1240491000000103"/>
 			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170413009"/>
 			<display value="Second diphtheria and tetanus double and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170406009"/>
 			<display value="Second diphtheria and tetanus double vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170401004"/>
 			<display value="Second diphtheria, pertussis and tetanus triple and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170396003"/>
 			<display value="Second diphtheria, pertussis and tetanus triple vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="313189008"/>
 			<display value="Second hepatitis A junior vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="308753004"/>
 			<display value="Subcutaneous injection of Pneumovax II"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170409002"/>
 			<display value="Tetanus and low dose diphtheria double vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170414003"/>
 			<display value="Third diphtheria and tetanus double and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170407000"/>
 			<display value="Third diphtheria and tetanus double vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170402006"/>
 			<display value="Third diphtheria, pertussis and tetanus triple and polio vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170397007"/>
 			<display value="Third diphtheria, pertussis and tetanus triple vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="412742005"/>
 			<display value="Third hepatitis A junior vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170425007"/>
 			<display value="Typhoid and Paratyphoid first dose"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170427004"/>
 			<display value="Typhoid and Paratyphoid reinforcing dose"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="170426008"/>
 			<display value="Typhoid and Paratyphoid second dose"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="312867004"/>
 			<display value="Typhoid and paratyphoid vaccination"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="570001"/>
 			<display value="Vaccination for arthropod-borne viral encephalitis"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="787438002"/>
 			<display value="Vaccination for diphtheria, pertussis, tetanus, poliomyelitis, Hepatitis B virus and Haemophilus influenzae type b"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="428570002"/>
@@ -627,22 +407,12 @@
 			<display value="Pertussis vaccination in pregnancy given by other healthcare provider"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="310578008"/>
 			<display value="Pneumococcal vaccination given"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="382551000000109"/>
@@ -794,11 +564,6 @@
 			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination first dose not given"/>
 		</contains>
 		<contains>
-			<extension url="http://ontoserver.csiro.au/profiles/expansion">
-				<extension url="inactive">
-					<valueBoolean value="true"/>
-				</extension>
-			</extension>
 			<system value="http://snomed.info/sct"/>
 			<inactive value="true"/>
 			<code value="1240681000000103"/>
