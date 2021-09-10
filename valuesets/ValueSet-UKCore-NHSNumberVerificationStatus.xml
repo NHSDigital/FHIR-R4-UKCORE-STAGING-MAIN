@@ -41,13 +41,17 @@
 		</include>
 	</compose>
 	<expansion>
-		<identifier value="4c79b32b-2583-4eef-bc95-e4e450bac2f6"/>
-		<timestamp value="2021-09-09T14:07:46+00:00"/>
-		<total value="3"/>
+		<identifier value="daa45a58-75cf-42a6-ac98-8cbee912c065"/>
+		<timestamp value="2021-09-09T15:39:30+00:00"/>
+		<total value="10"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
-			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus|2.1.0"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2018-08-12"/>
 		</parameter>
 		<parameter>
 			<name value="count"/>
@@ -58,19 +62,64 @@
 			<valueInteger value="0"/>
 		</parameter>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-			<code value="2"/>
-			<display value="Formal - death notice received from Registrar of Deaths"/>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+			<version value="2018-08-12"/>
+			<code value="NI"/>
+			<display value="NoInformation"/>
 		</contains>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-			<code value="1"/>
-			<display value="Informal - death notice received via an update from a local NHS Organisation such as GP or Trust"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="number-not-present-and-trace-not-required"/>
+			<display value="Number not present and trace not required"/>
 		</contains>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-			<code value="U"/>
-			<display value="Removed"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="number-present-and-traced-using-welsh-nhs-ar"/>
+			<display value="Number present and traced using Welsh NHS AR"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="number-present-and-verified"/>
+			<display value="Number present and verified"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="number-present-but-not-traced"/>
+			<display value="Number present but not traced"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="trace-attempted"/>
+			<display value="Trace attempted - No match or multiple match found"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="trace-in-progress"/>
+			<display value="Trace in progress"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="trace-needs-to-be-resolved"/>
+			<display value="Trace needs to be resolved - (NHS number or patient detail conflict)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="trace-postponed"/>
+			<display value="Trace postponed (baby under six weeks old)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+			<version value="2.1.0"/>
+			<code value="trace-required"/>
+			<display value="Trace required"/>
 		</contains>
 	</expansion>
 </ValueSet>
