@@ -257,7 +257,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/VisionPrescription" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RequestGroup" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
       </type>
     </element>
     <element id="CarePlan.activity.reference.identifier.assigner">
