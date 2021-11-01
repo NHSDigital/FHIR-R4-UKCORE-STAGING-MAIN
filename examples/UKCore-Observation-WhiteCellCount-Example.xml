@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-			<Observation>
- <id value="UKCore-Observation-WhiteCellCount-Example"/>
-				<meta>
-				  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
-				</identifier>
-				<status value="final"/>
-				<category>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="394595002"/>
-						<display value="Pathology"/>
-					</coding>
-				</category>
-				<code>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="1022541000000102"/>
-						<display value="Total white cell count"/>
-					</coding>
-				</code>
-				<performer>
-					<reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-				</performer>
-				<valueQuantity>
-					<value value="11.2"/>
-					<unit value="10*9/L"/>
-				</valueQuantity>
-				<specimen>
-					<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
-				</specimen>
-				<referenceRange>
-					<low>
-						<value value="4.0"/>
-					</low>
-					<high>
-						<value value="17.0"/>
-					</high>
-				</referenceRange>
-			</Observation>
+<Observation>
+	<id value="UKCore-Observation-WhiteCellCount-Example" />
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122" />
+		<value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+	</identifier>
+	<status value="final" />
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="394595002" />
+			<display value="Pathology" />
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="1022541000000102" />
+			<display value="Total white cell count" />
+		</coding>
+	</code>
+	<performer>
+		<reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example" />
+	</performer>
+	<valueQuantity>
+		<value value="11.2" />
+		<unit value="10*9/L" />
+	</valueQuantity>
+	<specimen>
+		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
+	</specimen>
+	<referenceRange>
+		<low>
+			<value value="4.0" />
+		</low>
+		<high>
+			<value value="17.0" />
+		</high>
+	</referenceRange>
+</Observation>
