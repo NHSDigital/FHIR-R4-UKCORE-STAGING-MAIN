@@ -7,7 +7,7 @@
 	<identifier>
 		<value value="6d47d8c4-2f05-4dbb-93f8-6863e6d2975b"/>
 	</identifier>
-	<questionnaire value="Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
+	<questionnaire value="https://example.com/base/Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
 	<status value="completed"/>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
