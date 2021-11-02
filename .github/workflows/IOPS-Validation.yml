@@ -5,7 +5,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   # Allows you to run this workflow manually from the Actions tab
   push:
-    branches: [ feature/validation_fixes ]
+    branches: [ feature/validation_fixes, testing ]
     
   workflow_dispatch:
      
@@ -34,6 +34,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: NHSDigital/validation-service-fhir-r4
+          ref: testing
           path: validation-service-fhir-r4
         
       - name: Install Python 3.8
@@ -82,7 +83,7 @@ jobs:
       - name: Run FHIR Validator
         run: 
           nohup java -jar validation-service-fhir-r4/target/fhir-validator-0.0.1-SNAPSHOT.jar &
-          sleep 30
+          sleep 120
         
       - name: Run Test
         run: make -C validation test
