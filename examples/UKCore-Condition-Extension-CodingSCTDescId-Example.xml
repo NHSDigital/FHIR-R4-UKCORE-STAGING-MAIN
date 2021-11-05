@@ -6,16 +6,15 @@
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
 				<extension url="descriptionId">
 					<valueIdentifier>
-						<value value="580135014"/>
 					</valueIdentifier>
 				</extension>
 				<extension url="descriptionDisplay">
-					<valueString value="Asthma (disorder)"/>
+					<valueString value="Asthma (disorder)" />
 				</extension>
 			</extension>
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example" />
 	</subject>
 </Condition>
