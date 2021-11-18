@@ -12,7 +12,7 @@
 				<category>
 					<coding>
 						<system value="http://snomed.info/sct"/>
-						<code value="394595002 "/>
+						<code value="394595002"/>
 						<display value="Pathology"/>
 					</coding>
 				</category>
