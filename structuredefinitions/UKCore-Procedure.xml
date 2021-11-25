@@ -6,7 +6,7 @@
   <name value="UKCoreProcedure" />
   <title value="UK Core Procedure" />
   <status value="active" />
-  <date value="2022-01-12" />
+  <date value="2022-01-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -86,33 +86,22 @@
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.code.coding:snomedCT">
-      <path value="Procedure.code.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;71388002 |Procedure|&lt;&lt;129125009 |Procedure with explicit context|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
     </element>
-    <element id="Procedure.code.coding:snomedCT.system">
+    <element id="Procedure.code.coding.system">
       <path value="Procedure.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Procedure.code.coding:snomedCT.code">
+    <element id="Procedure.code.coding.code">
       <path value="Procedure.code.coding.code" />
       <min value="1" />
     </element>
-    <element id="Procedure.code.coding:snomedCT.display">
+    <element id="Procedure.code.coding.display">
       <path value="Procedure.code.coding.display" />
       <min value="1" />
     </element>
@@ -190,33 +179,22 @@
     </element>
     <element id="Procedure.bodySite.coding">
       <path value="Procedure.bodySite.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.bodySite.coding:snomedCT">
-      <path value="Procedure.bodySite.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
-    <element id="Procedure.bodySite.coding:snomedCT.system">
+    <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Procedure.bodySite.coding:snomedCT.code">
+    <element id="Procedure.bodySite.coding.code">
       <path value="Procedure.bodySite.coding.code" />
       <min value="1" />
     </element>
-    <element id="Procedure.bodySite.coding:snomedCT.display">
+    <element id="Procedure.bodySite.coding.display">
       <path value="Procedure.bodySite.coding.display" />
       <min value="1" />
     </element>
@@ -231,33 +209,22 @@
     </element>
     <element id="Procedure.complication.coding">
       <path value="Procedure.complication.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.complication.coding:snomedCT">
-      <path value="Procedure.complication.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>
     </element>
-    <element id="Procedure.complication.coding:snomedCT.system">
+    <element id="Procedure.complication.coding.system">
       <path value="Procedure.complication.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Procedure.complication.coding:snomedCT.code">
+    <element id="Procedure.complication.coding.code">
       <path value="Procedure.complication.coding.code" />
       <min value="1" />
     </element>
-    <element id="Procedure.complication.coding:snomedCT.display">
+    <element id="Procedure.complication.coding.display">
       <path value="Procedure.complication.coding.display" />
       <min value="1" />
     </element>
