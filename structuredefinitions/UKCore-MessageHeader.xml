@@ -51,26 +51,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
   <derivation value="constraint" />
   <differential>
-    <element id="MessageHeader.extension">
-      <path value="MessageHeader.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="MessageHeader.extension:messageHeaderResponseRequest">
-      <path value="MessageHeader.extension" />
-      <sliceName value="messageHeaderResponseRequest" />
-      <min value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/messageheader-response-request" />
-      </type>
-    </element>
     <element id="MessageHeader.event[x]">
       <path value="MessageHeader.event[x]" />
       <binding>
