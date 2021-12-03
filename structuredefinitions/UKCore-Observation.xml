@@ -80,18 +80,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Observation.partOf">
-      <path value="Observation.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationDispense" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Immunization" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-      </type>
-    </element>
     <element id="Observation.partOf.identifier.assigner">
       <path value="Observation.partOf.identifier.assigner" />
       <type>
