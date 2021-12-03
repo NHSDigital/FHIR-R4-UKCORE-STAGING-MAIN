@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-CareSettingType" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType" />
-  <version value="2.0.0" />
+  <version value="2.1.0" />
   <name value="ExtensionUKCoreCareSettingType" />
   <title value="Extension UK Core Care Setting Type" />
-  <status value="draft" />
-  <date value="2021-09-10" />
+  <status value="active" />
+  <date value="2022-01-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,8 +27,8 @@
     </telecom>
   </contact>
   <description value="The care setting type provides the originating care setting for the document." />
-  <purpose value="This extension extends the Composition resource to support the exchange of information about the originating care setting for the document which is currently not supported by the FHIR standard." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <purpose value="This extension has been developed to support the exchange of information about the type of care setting associated with the resource being extended, which is currently not supported by the FHIR standard." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -40,6 +40,10 @@
   <context>
     <type value="extension" />
     <expression value="Composition" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="List" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -56,6 +60,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <short value="The type of care setting." />
+      <definition value="The type of care setting expressed as a code and display value defined in the SNOMED CT UK Refset of the valueSet used." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
