@@ -73,7 +73,6 @@
       <short value="An extension to support the method by which an individual was admitted into hospital." />
       <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />
@@ -85,7 +84,6 @@
       <short value="An extension to support the method of discharge from a hospital." />
       <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was discharged from hospital." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod" />
@@ -97,7 +95,6 @@
       <short value="An extension to support the status of an individual on discharge from an Emergency Care Department." />
       <definition value="This extension has been developed to demonstrate the representation of the status of a patient on discharge from an Emergency Care Department." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
@@ -109,7 +106,6 @@
       <short value="An extension to support the outcome of an Outpatient attendance." />
       <definition value="This extension has been developed to demonstrate the representation of the outcome of an Outpatient attendance." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
@@ -290,19 +286,6 @@
         <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission" />
       </binding>
-    </element>
-    <element id="Encounter.hospitalization.reAdmission.coding.system">
-      <path value="Encounter.hospitalization.reAdmission.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Encounter.hospitalization.reAdmission.coding.code">
-      <path value="Encounter.hospitalization.reAdmission.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Encounter.hospitalization.reAdmission.coding.display">
-      <path value="Encounter.hospitalization.reAdmission.coding.display" />
-      <min value="1" />
     </element>
     <element id="Encounter.hospitalization.destination">
       <path value="Encounter.hospitalization.destination" />
