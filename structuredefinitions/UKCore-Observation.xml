@@ -28,7 +28,7 @@
   </contact>
   <description value="Defines the UK Core constraints and extensions on the observation resource for the minimal set of data to query and retrieve generic observation information." />
   <purpose value="This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject. Note: this profile MUST not be used where a more specific UK Core profile exists." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -78,18 +78,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Observation.partOf">
-      <path value="Observation.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationDispense" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Immunization" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
       </type>
     </element>
     <element id="Observation.partOf.identifier.assigner">
@@ -282,7 +270,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
       </type>
     </element>
     <element id="Observation.hasMember.identifier.assigner">
@@ -302,7 +289,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
       </type>
     </element>
     <element id="Observation.derivedFrom.identifier.assigner">

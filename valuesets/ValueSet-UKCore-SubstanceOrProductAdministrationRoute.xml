@@ -337,7 +337,7 @@ Selected from the 'ePrescribing route of administration' simple reference set of
         <contains>
             <system value="http://snomed.info/sct"/>
             <code value="54485002"/>
-            <display value="Ophthalmic"/>
+            <display value="Ophthalmic route"/>
         </contains>
         <contains>
             <system value="http://snomed.info/sct"/>

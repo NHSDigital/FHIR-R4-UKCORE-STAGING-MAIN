@@ -27,7 +27,7 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="65363002"/>
-			<display value="Otitis Media"/>
+			<display value="Otitis media"/>
 		</coding>
 	</reasonCode>
 	<dosage>

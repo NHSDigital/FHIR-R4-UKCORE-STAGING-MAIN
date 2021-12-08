@@ -161,7 +161,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
-    </element>
+    </element>   
     <element id="Encounter.episodeOfCare">
       <path value="Encounter.episodeOfCare" />
       <type>
@@ -174,13 +174,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.basedOn">
-      <path value="Encounter.basedOn" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       </type>
     </element>
     <element id="Encounter.basedOn.identifier.assigner">
@@ -213,16 +206,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Encounter.reasonReference">
-      <path value="Encounter.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-      </type>
-    </element>
     <element id="Encounter.reasonReference.identifier.assigner">
       <path value="Encounter.reasonReference.identifier.assigner" />
       <type>
@@ -234,14 +217,6 @@
       <path value="Encounter.diagnosis" />
       <short value="The list of diagnoses relevant to this encounter" />
       <definition value="The list of diagnoses relevant to this encounter." />
-    </element>
-    <element id="Encounter.diagnosis.condition">
-      <path value="Encounter.diagnosis.condition" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-      </type>
     </element>
     <element id="Encounter.diagnosis.condition.identifier.assigner">
       <path value="Encounter.diagnosis.condition.identifier.assigner" />

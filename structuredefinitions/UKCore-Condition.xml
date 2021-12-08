@@ -172,15 +172,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
-    <element id="Condition.stage.assessment">
-      <path value="Condition.stage.assessment" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      </type>
-    </element>
     <element id="Condition.note.author[x]">
       <path value="Condition.note.author[x]" />
       <type>
