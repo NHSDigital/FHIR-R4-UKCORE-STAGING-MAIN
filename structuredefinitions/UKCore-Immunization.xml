@@ -61,6 +61,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Immunization">
+      <path value="Immunization" />
+      <constraint>
+        <key value="ukcore-imm-1" />
+        <severity value="error" />
+        <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
+        <expression value="(status != 'not-done') or (status = 'not-done' and statusReason.exists())" />
+        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
+      </constraint>
+    </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension" />
       <slicing>
@@ -96,13 +106,6 @@
     </element>
     <element id="Immunization.status">
       <path value="Immunization.status" />
-      <constraint>
-        <key value="ukcore-imm-1" />
-        <severity value="error" />
-        <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
-        <expression value="status != 'not-done' or (status = 'not-done' and statusReason.exists())" />
-        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
-      </constraint>
     </element>
     <element id="Immunization.statusReason">
       <path value="Immunization.statusReason" />
