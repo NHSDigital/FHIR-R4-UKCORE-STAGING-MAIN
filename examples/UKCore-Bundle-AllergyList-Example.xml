@@ -2,6 +2,7 @@
 	<id value="UKCore-Bundle-BundledAllergyList-Example"/>
 	<type value="collection"/>
 	<entry>
+		<fullUrl value="urn:uuid:d043d2b6-5782-4536-88b6-e537973a09fb"/>
 		<resource>
 			<List>
 				<id value="UKCore-Allergy-List-Example"/>
