@@ -57,8 +57,8 @@
 		<route>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="54485002"/>
-				<display value="Ophthalmic route"/>
+				<code value="372472002"/>
+				<display value="Ocular"/>
 			</coding>
 		</route>
 		<method>
