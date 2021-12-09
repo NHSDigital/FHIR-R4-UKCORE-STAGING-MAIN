@@ -5,7 +5,7 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="893061000000109"/>
+				<code value="789718008"/>
 				<display value="Cardiology service"/>
 			</coding>
 		</valueCodeableConcept>
