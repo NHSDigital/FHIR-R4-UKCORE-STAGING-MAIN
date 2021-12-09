@@ -32,9 +32,9 @@
     <include>
       <system value="http://snomed.info/sct"/>
       <filter>
-        <property value="concept"/>
-        <op value="in"/>
-        <value value="^999000401000000107"/>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="memberOf 999000401000000107"/>
       </filter>
     </include>
   </compose>
