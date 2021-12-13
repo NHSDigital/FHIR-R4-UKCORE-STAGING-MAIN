@@ -58,13 +58,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="EpisodeOfCare.diagnosis.condition">
-      <path value="EpisodeOfCare.diagnosis.condition" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-      </type>
-    </element>
     <element id="EpisodeOfCare.diagnosis.condition.identifier.assigner">
       <path value="EpisodeOfCare.diagnosis.condition.identifier.assigner" />
       <type>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  <version value="2.0.0" />
+  <version value="2.1.0" />
   <name value="UKCoreCondition" />
   <title value="UK Core Condition" />
-  <status value="draft" />
-  <date value="2021-09-10" />
+  <status value="active" />
+  <date value="2022-01-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -28,7 +28,7 @@
   </contact>
   <description value="Defines the UK Core constraints and extensions on the Condition resource for the minimal set of data to query and retrieve problems and health concerns information." />
   <purpose value="This profile allows recording of detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. The condition could be a point in time diagnosis in the context of an encounter, it could be an item on the practitioner’s problem list, or it could be a concern that doesn’t exist on the practitioner’s problem list. Often, a condition is about a clinician's assessment and assertion of a particular aspect of an individual's state of health. It can be used to record information about a disease/illness identified from application of clinical reasoning over the pathologic and pathophysiologic findings (diagnosis), or identification of health issues/situations that a practitioner considers harmful, potentially harmful and may be investigated and managed (problem), or other health issue/situation that may require ongoing monitoring and/or management (health issue/concern)." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -66,6 +66,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.extension">
+      <path value="Condition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Condition.extension:conditionEpisode">
+      <path value="Condition.extension" />
+      <sliceName value="conditionEpisode" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
+      </type>
+    </element>
     <element id="Condition.identifier.assigner">
       <path value="Condition.identifier.assigner" />
       <type>
@@ -73,67 +94,53 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A ValueSet to identify the category of a condition." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory" />
+      </binding>
+    </element>
     <element id="Condition.code.coding">
       <path value="Condition.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.code.coding:snomedCT">
-      <path value="Condition.code.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>
     </element>
-    <element id="Condition.code.coding:snomedCT.system">
+    <element id="Condition.code.coding.system">
       <path value="Condition.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Condition.code.coding:snomedCT.code">
+    <element id="Condition.code.coding.code">
       <path value="Condition.code.coding.code" />
       <min value="1" />
     </element>
-    <element id="Condition.code.coding:snomedCT.display">
+    <element id="Condition.code.coding.display">
       <path value="Condition.code.coding.display" />
       <min value="1" />
     </element>
     <element id="Condition.bodySite.coding">
       <path value="Condition.bodySite.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.bodySite.coding:snomedCT">
-      <path value="Condition.bodySite.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
-    <element id="Condition.bodySite.coding:snomedCT.system">
+    <element id="Condition.bodySite.coding.system">
       <path value="Condition.bodySite.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Condition.bodySite.coding:snomedCT.code">
+    <element id="Condition.bodySite.coding.code">
       <path value="Condition.bodySite.coding.code" />
       <min value="1" />
     </element>
-    <element id="Condition.bodySite.coding:snomedCT.display">
+    <element id="Condition.bodySite.coding.display">
       <path value="Condition.bodySite.coding.display" />
       <min value="1" />
     </element>
@@ -170,15 +177,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="Condition.stage.assessment">
-      <path value="Condition.stage.assessment" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
     </element>
     <element id="Condition.note.author[x]">

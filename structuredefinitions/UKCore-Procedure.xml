@@ -90,23 +90,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Procedure.basedOn">
-      <path value="Procedure.basedOn" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
-      </type>
-    </element>
-    <element id="Procedure.partOf">
-      <path value="Procedure.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-      </type>
-    </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
       <binding>
@@ -189,17 +172,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
     </element>
-    <element id="Procedure.reasonReference">
-      <path value="Procedure.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
-      </type>
-    </element>
     <element id="Procedure.bodySite.coding">
       <path value="Procedure.bodySite.coding" />
       <binding>
@@ -250,13 +222,6 @@
     <element id="Procedure.complication.coding.display">
       <path value="Procedure.complication.coding.display" />
       <min value="1" />
-    </element>
-    <element id="Procedure.complicationDetail">
-      <path value="Procedure.complicationDetail" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-      </type>
     </element>
     <element id="Procedure.note.author[x]">
       <path value="Procedure.note.author[x]" />

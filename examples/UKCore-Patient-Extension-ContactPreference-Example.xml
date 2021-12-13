@@ -13,9 +13,9 @@
 		</valueCodeableConcept>
 	</extension>
 	<extension url="PreferredContactTimes">
-		<valuePeriod>
-			<start value="2017-01-01T00:00:00.000Z"/>
-		</valuePeriod>
+		<valueTiming>
+			<event value="2017-01-01T00:00:00.000Z"/>
+		</valueTiming>
 	</extension>
 	<extension url="PreferredWrittenCommunicationFormat">
 		<valueCodeableConcept>

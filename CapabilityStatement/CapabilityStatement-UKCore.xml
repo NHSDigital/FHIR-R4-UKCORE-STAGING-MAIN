@@ -1,0 +1,61 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="apim-conformance" />
+    <url value="https://fhir.hl7.org.uk/CapabilityStatement/ukcore-conformance" />
+    <version value="3.0.0" />
+    <name value="UKCore" />
+    <status value="active" />
+    <date value="2021-11-28T00:00:00+00:00" />
+    <publisher value="digital.nhs.uk" />
+    <description value="Conformance requirements for UKCore" />
+    <kind value="requirements" />
+    <fhirVersion value="4.0.1" />
+    <format value="application/fhir+json" />
+    <format value="application/fhir+xml" />
+    <rest>
+        <mode value="server" />
+        <resource>
+            <type value="AllergyIntolerance" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
+        </resource>
+        <resource>
+            <type value="Immunization" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
+        </resource>
+        <resource>
+            <type value="Location" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+        </resource>
+        <resource>
+            <type value="MedicationAdministration" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
+        </resource>
+        <resource>
+            <type value="MedicationDispense" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
+        </resource>
+        <resource>
+            <type value="MedicationRequest" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+        </resource>
+        <resource>
+            <type value="MedicationStatement" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
+        </resource>
+        <resource>
+            <type value="Organization" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </resource>
+        <resource>
+            <type value="Patient" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        </resource>
+        <resource>
+            <type value="Practitioner" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        </resource>
+        <resource>
+            <type value="PractitionerRole" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        </resource>
+    </rest>
+</CapabilityStatement>
