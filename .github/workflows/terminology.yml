@@ -6,7 +6,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   
   push:
-    branches: [ testing ]
+    branches: [ testing, develop ]
   
   workflow_dispatch:
      
