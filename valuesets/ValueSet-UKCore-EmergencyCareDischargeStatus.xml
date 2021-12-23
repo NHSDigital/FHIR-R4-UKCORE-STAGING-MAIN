@@ -37,7 +37,7 @@
 			</filter>
 		</include>
 		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AccidentAndEmergencyAttendanceOutcomeWales" />
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales" />
 		</include>
 	</compose>
 </ValueSet>
