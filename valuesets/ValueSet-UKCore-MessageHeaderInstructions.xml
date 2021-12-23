@@ -4,7 +4,7 @@
 	<version value="1.0.0" />
 	<name value="UKCoreMessageHeaderInstructions" />
 	<title value="UK Core Message Header Instructions" />
-	<Header value="active" />
+	<status value="active" />
 	<date value="2022-01-07" />
 	<publisher value="HL7 UK" />
 	<contact>
