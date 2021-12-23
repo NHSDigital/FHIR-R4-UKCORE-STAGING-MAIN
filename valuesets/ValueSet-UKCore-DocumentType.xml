@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-DocumentType"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType"/>
-	<version value="3.0.0"/>
+	<version value="3.1.0"/>
 	<name value="UKCoreDocumentType"/>
 	<title value="UK Core Document Type"/>
-	<status value="draft" />
-	<date value="2021-09-10" />
+	<status value="active" />
+	<date value="2022-01-07" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
@@ -25,15 +25,15 @@
 			<rank value="2" />
 		</telecom>
 	</contact>
-	<description value="Any code from the SNOMED CT UK Refset with fully specified name 'Record composition type simple reference set (foundation metadata concept)' with Refset Id 1127551000000109."/>
+	<description value="A set of codes that describe a type of document. Selected from the 'Record composition type' simple reference set of the SNOMED CT UK coding system."/>
 	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
 	<compose>
 		<include>
-			<system value="http://snomed.info/sct"/>
+			<system value="http://snomed.info/sct" />
 			<filter>
-				<property value="concept"/>
-				<op value="in"/>
-				<value value="^1127551000000109"/>
+				<property value="constraint" />
+				<op value="=" />
+				<value value="memberOf 1127551000000109" />
 			</filter>
 		</include>
 	</compose>
