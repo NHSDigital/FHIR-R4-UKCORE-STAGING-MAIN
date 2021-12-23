@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="NHSDataModelAndDictionary-OutcomeOfAttendance" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-OutcomeOfAttendance" />
-  <version value="2.0.0" />
+  <version value="2.1.0" />
   <name value="NHSDataModelandDictionaryOutcomeofAttendance" />
   <title value="NHS Data Model and Dictionary Outcome of Attendance" />
-  <status value="draft" />
-  <date value="2021-09-10" />
+  <status value="retired" />
+  <date value="2022-01-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

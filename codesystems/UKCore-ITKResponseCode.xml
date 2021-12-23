@@ -1,0 +1,144 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="UKCore-ITKResponseCode" />
+	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode" />
+	<version value="1.0.0" />
+	<name value="UKCoreITKResponseCode" />
+	<title value="UK Core ITK Response Code" />
+	<status value="active" />
+	<date value="2022-01-07" />
+	<publisher value="HL7 UK" />
+	<contact>
+		<name value="HL7 UK" />
+		<telecom>
+			<system value="email" />
+			<value value="secretariat@hl7.org.uk" />
+			<use value="work" />
+			<rank value="1" />
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital" />
+		<telecom>
+			<system value="email" />
+			<value value="interoperabilityteam@nhs.net" />
+			<use value="work" />
+			<rank value="2" />
+		</telecom>
+	</contact>
+	<description value="A set of codes that define the ITK response returned to a sender." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<caseSensitive value="true" />
+	<content value="complete" />
+	<concept>
+		<code value="10001"/>
+		<display value="Handling Specification Error"/>
+	</concept>
+	<concept>
+		<code value="10002"/>
+		<display value="Infrastructure Level Response Value - Processing Error"/>
+	</concept>
+	<concept>
+		<code value="10003"/>
+		<display value="Business Level Response Value - Processing Error"/>
+	</concept>
+	<concept>
+		<code value="10004"/>
+		<display value="Message Definition Value - Processing Error"/>
+	</concept>
+	<concept>
+		<code value="10005"/>
+		<display value="Message Definition Version Value - Processing Error"/>
+	</concept>
+	<concept>
+		<code value="10007"/>
+		<display value="Sender Reference Value - Processing Error"/>
+	</concept>
+	<concept>
+		<code value="10008"/>
+		<display value="Handling Specification Business Rule Error"/>
+	</concept>
+	<concept>
+		<code value="10009"/>
+		<display value="Unreadable message received"/>
+	</concept>
+	<concept>
+		<code value="10010"/>
+		<display value="Recipient Type - Processing Error"/>
+	</concept>
+	<concept>
+		<code value="20001"/>
+		<display value="Unrecognised Recipient Person"/>
+	</concept>
+	<concept>
+		<code value="20002"/>
+		<display value="Unrecognised Recipient Organisation"/>
+	</concept>
+	<concept>
+		<code value="20003"/>
+		<display value="Unrecognised Sender"/>
+	</concept>
+	<concept>
+		<code value="20004"/>
+		<display value="Non-Approved file type received as an attachment"/>
+	</concept>
+	<concept>
+		<code value="20005"/>
+		<display value="Unsupported file type received as an attachment"/>
+	</concept>
+	<concept>
+		<code value="20006"/>
+		<display value="ITK header validation failure"/>
+	</concept>
+	<concept>
+		<code value="20007"/>
+		<display value="Duplicate Message received"/>
+	</concept>
+	<concept>
+		<code value="20008"/>
+		<display value="Duplicate Document received"/>
+	</concept>
+	<concept>
+		<code value="20009"/>
+		<display value="Payload validation failure"/>
+	</concept>
+	<concept>
+		<code value="20010"/>
+		<display value="Unrecognised Payload Recipient Organisation"/>
+	</concept>
+	<concept>
+		<code value="20011"/>
+		<display value="Unrecognised Payload Recipient Person"/>
+	</concept>
+	<concept>
+		<code value="20012"/>
+		<display value="Unauthorised Sender"/>
+	</concept>
+	<concept>
+		<code value="20013"/>
+		<display value="Success"/>
+	</concept>
+	<concept>
+		<code value="20014"/>
+		<display value="Unable to Process Replacement Document"/>
+	</concept>
+	<concept>
+		<code value="20015"/>
+		<display value="Message too large"/>
+	</concept>
+	<concept>
+		<code value="30001"/>
+		<display value="Patient known here. (e.g. Patient is registered here)"/>
+	</concept>
+	<concept>
+		<code value="30002"/>
+		<display value="Patient not known here. (aka 'patient record not present in system')"/>
+	</concept>
+	<concept>
+		<code value="30003"/>
+		<display value="Patient no longer at this clinical setting"/>
+	</concept>
+	<concept>
+		<code value="30004"/>
+		<display value="Patient known here and recently deceased (i.e. patient record current in GP practice system at time of patient’s death and deduction subsequently occurred for this reason)"/>
+	</concept>
+</CodeSystem>

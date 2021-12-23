@@ -1,47 +1,47 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="UKCore-ListWarningCode" />
-  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode" />
-  <version value="2.0.0" />
-  <name value="UKCoreListWarningCode" />
-  <title value="UK Core List Warning Code" />
-  <status value="draft" />
-  <date value="2021-09-10" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="A CodeSystem to identify the reason a list may be incomplete." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <caseSensitive value="true" />
-  <content value="complete" />
-  <concept>
-    <code value="confidential-items" />
-    <display value="Confidential Items" />
-    <definition value="Items excluded due to confidentiality and/or patient preferences." />
-  </concept>
-  <concept>
-    <code value="data-in-transit" />
-    <display value="Data in Transit" />
-    <definition value="Patient record transfer from previous GP practice not yet complete; any information recorded before dd-mmm-yyyy has been excluded." />
-  </concept>
-  <concept>
-    <code value="data-awaiting-filing" />
-    <display value="Data Awaiting Filing" />
-    <definition value="Patient data may be incomplete as there is data supplied by a third party awaiting review before becoming available." />
-  </concept>
+	<id value="UKCore-ListWarningCode" />
+	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode" />
+	<version value="2.1.0" />
+	<name value="UKCoreListWarningCode" />
+	<title value="UK Core List Warning Code" />
+	<status value="active" />
+	<date value="2022-01-07" />
+	<publisher value="HL7 UK" />
+	<contact>
+		<name value="HL7 UK" />
+		<telecom>
+			<system value="email" />
+			<value value="secretariat@hl7.org.uk" />
+			<use value="work" />
+			<rank value="1" />
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital" />
+		<telecom>
+			<system value="email" />
+			<value value="interoperabilityteam@nhs.net" />
+			<use value="work" />
+			<rank value="2" />
+		</telecom>
+	</contact>
+	<description value="A set of codes that define the reason a list may be incomplete." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<caseSensitive value="true" />
+	<content value="complete" />
+	<concept>
+		<code value="confidential-items" />
+		<display value="Confidential Items" />
+		<definition value="Items excluded due to confidentiality and/or patient preferences." />
+	</concept>
+	<concept>
+		<code value="data-in-transit" />
+		<display value="Data in Transit" />
+		<definition value="Patient record transfer from previous GP practice not yet complete; any information recorded before dd-mmm-yyyy has been excluded." />
+	</concept>
+	<concept>
+		<code value="data-awaiting-filing" />
+		<display value="Data Awaiting Filing" />
+		<definition value="Patient data may be incomplete as there is data supplied by a third party awaiting review before becoming available." />
+	</concept>
 </CodeSystem>

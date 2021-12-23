@@ -1,0 +1,62 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="UKCore-ConditionRelationship" />
+	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionRelationship" />
+	<version value="1.0.0" />
+	<name value="UKCoreConditionRelationship" />
+	<title value="UK Core Condition Relationship" />
+	<status value="active" />
+	<date value="2022-01-07" />
+	<publisher value="HL7 UK" />
+	<contact>
+		<name value="HL7 UK" />
+		<telecom>
+			<system value="email" />
+			<value value="secretariat@hl7.org.uk" />
+			<use value="work" />
+			<rank value="1" />
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital" />
+		<telecom>
+			<system value="email" />
+			<value value="interoperabilityteam@nhs.net" />
+			<use value="work" />
+			<rank value="2" />
+		</telecom>
+	</contact>
+	<description value="A set of codes that define the kind of relationship that exists with a target condition or problem." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<caseSensitive value="true" />
+	<content value="complete" />
+	<concept>
+		<code value="merge-combine" />
+		<display value="Merge/Combine" />
+		<definition value="This condition is merged/combined with the target condition to form a single logical condition." />
+	</concept>
+	<concept>
+		<code value="nesting" />
+		<display value="Nesting" />
+		<definition value="This target condition is a component problem of this condition." />
+	</concept>
+	<concept>
+		<code value="evolve" />
+		<display value="Evolve" />
+		<definition value="This condition has evolved from the target condition." />
+	</concept>
+	<concept>
+		<code value="parent" />
+		<display value="Parent" />
+		<definition value="The problem referenced is the parent of the problem/item in the resource." />
+	</concept>
+	<concept>
+		<code value="child" />
+		<display value="Child" />
+		<definition value="The problem referenced is the child of the problem/item in the resource." />
+	</concept>
+	<concept>
+		<code value="sibling" />
+		<display value="Sibling" />
+		<definition value="The problem referenced is a sibling of the problem/item in the resource." />
+	</concept>
+</CodeSystem>
