@@ -77,14 +77,49 @@
       </slicing>
       <min value="0" />
     </element>
+    <element id="Condition.extension:actualProblem">
+      <path value="Condition.extension" />
+      <sliceName value="actualProblem" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ActualProblem" />
+      </type>
+    </element>
     <element id="Condition.extension:conditionEpisode">
       <path value="Condition.extension" />
       <sliceName value="conditionEpisode" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
+      </type>
+    </element>
+    <element id="Condition.extension:problemSignificance">
+      <path value="Condition.extension" />
+      <sliceName value="problemSignificance" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ProblemSignificance" />
+      </type>
+    </element>
+    <element id="Condition.extension:relatedClinicalContent">
+      <path value="Condition.extension" />
+      <sliceName value="relatedClinicalContent" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent" />
+      </type>
+    </element>
+    <element id="Condition.extension:relatedProblemHeader">
+      <path value="Condition.extension" />
+      <sliceName value="relatedProblemHeader" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedProblemHeader" />
       </type>
     </element>
     <element id="Condition.identifier.assigner">
@@ -102,8 +137,8 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory" />
       </binding>
     </element>
-    <element id="Condition.code.coding">
-      <path value="Condition.code.coding" />
+    <element id="Condition.code">
+      <path value="Condition.code" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
@@ -123,8 +158,8 @@
       <path value="Condition.code.coding.display" />
       <min value="1" />
     </element>
-    <element id="Condition.bodySite.coding">
-      <path value="Condition.bodySite.coding" />
+    <element id="Condition.bodySite">
+      <path value="Condition.bodySite" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
