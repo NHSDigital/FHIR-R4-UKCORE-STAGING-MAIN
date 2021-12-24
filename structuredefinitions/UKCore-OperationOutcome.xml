@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-OperationOutcome" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreOperationOutcome" />
   <title value="UK Core OperationOutcome" />
-  <status value="draft" />
-  <date value="2021-09-10" />
+  <status value="active" />
+  <date value="2022-01-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -46,6 +46,14 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
   <derivation value="constraint" />
   <differential>
+    <element id="OperationOutcome.issue.details">
+      <path value="OperationOutcome.issue.details" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define details of the exact issue." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OperationOutcomeIssueDetails" />
+      </binding>
+    </element>
     <element id="OperationOutcome.issue.location">
       <path value="OperationOutcome.issue.location" />
       <definition value="This element is deprecated because it is XML specific. It is replaced by issue.expression, which is format independent, and simpler to parse.&#xA;For resource issues, this will be a simple XPath limited to element names, repetition indicators and the default child accessor that identifies one of the elements in the resource that caused this issue to be raised.  For HTTP errors, will be &quot;http.&quot; + the parameter name." />
