@@ -118,8 +118,8 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Encounter.type.coding">
-      <path value="Encounter.type.coding" />
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
       <binding>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)." />
@@ -161,7 +161,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
-    </element>   
+    </element>
     <element id="Encounter.episodeOfCare">
       <path value="Encounter.episodeOfCare" />
       <type>
