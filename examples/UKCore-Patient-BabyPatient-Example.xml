@@ -6,9 +6,9 @@
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 		<valueCodeableConcept>
 			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
-				<code value="CA"/>
-				<display value="English"/>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+				<code value="A"/>
+				<display value="White - British"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
