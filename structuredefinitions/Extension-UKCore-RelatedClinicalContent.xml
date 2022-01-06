@@ -58,6 +58,7 @@
       <definition value="A reference to any resource that provides related clinical content to the Condition." />
       <type>
         <code value="Reference" />
+        <targetProfile value="Resource" />
       </type>
     </element>
   </differential>
