@@ -81,6 +81,7 @@
       <path value="Condition.extension" />
       <sliceName value="actualProblem" />
       <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ActualProblem" />
@@ -99,6 +100,7 @@
       <path value="Condition.extension" />
       <sliceName value="problemSignificance" />
       <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ProblemSignificance" />
@@ -212,6 +214,16 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+      </type>
+    </element>
+    <element id="Condition.stage.assessment">
+      <path value="Condition.stage.assessment" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
     </element>
     <element id="Condition.note.author[x]">
