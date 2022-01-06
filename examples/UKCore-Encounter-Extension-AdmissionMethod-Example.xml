@@ -1,5 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Encounter-AdmissionMethod-Example"/>
+	<id value="UKCore-Encounter-Extension-AdmissionMethod-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter"/>
 	</meta>
