@@ -64,7 +64,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="The outcome of an outpatient attendance" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OutcomeOfAttendance" />
       </binding>

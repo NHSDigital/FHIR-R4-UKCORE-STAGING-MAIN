@@ -147,19 +147,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>
     </element>
-    <element id="Condition.code.coding.system">
-      <path value="Condition.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Condition.code.coding.code">
-      <path value="Condition.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Condition.code.coding.display">
-      <path value="Condition.code.coding.display" />
-      <min value="1" />
-    </element>
     <element id="Condition.bodySite">
       <path value="Condition.bodySite" />
       <binding>
@@ -167,19 +154,6 @@
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
-    </element>
-    <element id="Condition.bodySite.coding.system">
-      <path value="Condition.bodySite.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Condition.bodySite.coding.code">
-      <path value="Condition.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Condition.bodySite.coding.display">
-      <path value="Condition.bodySite.coding.display" />
-      <min value="1" />
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
