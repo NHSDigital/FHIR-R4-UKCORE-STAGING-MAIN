@@ -64,7 +64,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="The method by which a patient was discharged from hospital" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeMethod" />
       </binding>

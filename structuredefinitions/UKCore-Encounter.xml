@@ -126,19 +126,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterType" />
       </binding>
     </element>
-    <element id="Encounter.type.coding.system">
-      <path value="Encounter.type.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Encounter.type.coding.code">
-      <path value="Encounter.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Encounter.type.coding.display">
-      <path value="Encounter.type.coding.display" />
-      <min value="1" />
-    </element>
     <element id="Encounter.serviceType">
       <path value="Encounter.serviceType" />
       <binding>
@@ -174,6 +161,13 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Encounter.basedOn">
+      <path value="Encounter.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       </type>
     </element>
     <element id="Encounter.basedOn.identifier.assigner">
@@ -257,7 +251,7 @@
     <element id="Encounter.hospitalization.admitSource">
       <path value="Encounter.hospitalization.admitSource" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission" />
       </binding>
@@ -280,7 +274,7 @@
     <element id="Encounter.hospitalization.dischargeDisposition">
       <path value="Encounter.hospitalization.dischargeDisposition" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="The destination of a Patient on completion of a Hospital Provider Spell, or a note that the Patient died or was a still birth." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination" />
       </binding>
@@ -298,6 +292,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="Encounter.location.physicalType">
+      <path value="Encounter.location.physicalType" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define the physical type of location where an encounter takes place." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType" />
+      </binding>
     </element>
     <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider" />

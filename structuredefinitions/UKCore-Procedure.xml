@@ -114,19 +114,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
     </element>
-    <element id="Procedure.code.coding.system">
-      <path value="Procedure.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Procedure.code.coding.code">
-      <path value="Procedure.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.code.coding.display">
-      <path value="Procedure.code.coding.display" />
-      <min value="1" />
-    </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
       <type>
@@ -207,19 +194,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
-    <element id="Procedure.bodySite.coding.system">
-      <path value="Procedure.bodySite.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Procedure.bodySite.coding.code">
-      <path value="Procedure.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.bodySite.coding.display">
-      <path value="Procedure.bodySite.coding.display" />
-      <min value="1" />
-    </element>
     <element id="Procedure.report">
       <path value="Procedure.report" />
       <type>
@@ -236,19 +210,6 @@
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>
-    </element>
-    <element id="Procedure.complication.coding.system">
-      <path value="Procedure.complication.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Procedure.complication.coding.code">
-      <path value="Procedure.complication.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.complication.coding.display">
-      <path value="Procedure.complication.coding.display" />
-      <min value="1" />
     </element>
     <element id="Procedure.note.author[x]">
       <path value="Procedure.note.author[x]" />
