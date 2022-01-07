@@ -32,4 +32,42 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="7a8d1bd2-f0f6-4fb6-879b-a1195833a329"/>
+		<timestamp value="2022-01-07T11:32:50+00:00"/>
+		<total value="4"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity"/>
+			<code value="end"/>
+			<display value="End"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity"/>
+			<code value="first"/>
+			<display value="First"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity"/>
+			<code value="new"/>
+			<display value="New"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity"/>
+			<code value="review"/>
+			<display value="Review"/>
+		</contains>
+	</expansion>
 </ValueSet>

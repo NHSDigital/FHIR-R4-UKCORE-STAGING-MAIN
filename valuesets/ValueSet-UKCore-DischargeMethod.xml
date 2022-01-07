@@ -35,4 +35,110 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="ea46e5cb-e35c-4625-b792-905c85b85397"/>
+		<timestamp value="2022-01-07T12:50:27+00:00"/>
+		<total value="14"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="9"/>
+			<display value="Method of discharge not known"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="8"/>
+			<display value="Not applicable (Hospital Provider Spell not finished at episode end (i.e. not discharged) or current episode unfinished)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
+			<version value="1.0.0"/>
+			<code value="8"/>
+			<display value="Not applicable - hospital provider spell not yet finished (i.e. not discharged)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="4"/>
+			<display value="Patient died"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
+			<version value="1.0.0"/>
+			<code value="4"/>
+			<display value="Patient died"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="7"/>
+			<display value="Patient discharged by a relative or advocate"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
+			<version value="1.0.0"/>
+			<code value="3"/>
+			<display value="Patient discharged by Mental Health Review Tribunal (MHRT), Home Secretary or court"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="3"/>
+			<display value="Patient discharged by mental health review tribunal, Home Secretary or Court"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="6"/>
+			<display value="Patient discharged him/herself"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
+			<version value="1.0.0"/>
+			<code value="2"/>
+			<display value="Patient discharged him/herself or was discharged by a relative or advocate"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="1"/>
+			<display value="Patient discharged on clinical advice or with clinical consent"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
+			<version value="1.0.0"/>
+			<code value="1"/>
+			<display value="Patient discharged on clinical advice or with clinical consent"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
+			<version value="1.0.0"/>
+			<code value="5"/>
+			<display value="Stillbirth"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
+			<version value="1.0.0"/>
+			<code value="5"/>
+			<display value="Stillbirth"/>
+		</contains>
+	</expansion>
 </ValueSet>
