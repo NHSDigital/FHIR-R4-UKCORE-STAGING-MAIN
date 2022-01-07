@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="NHSDataModelAndDictionary-AdmissionMethod" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-AdmissionMethod" />
-  <version value="2.1.0" />
+  <version value="2.0.0" />
   <name value="NHSDataModelandDictionaryAdmissionMethod" />
   <title value="NHS Data Model and Dictionary Admission Method" />
   <status value="retired" />

@@ -26,7 +26,7 @@
 		</telecom>
 	</contact>
 	<description value="A set of codes that describe the outcome of, or status of a patient on discharge from, an Emergency Care Department attendance."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html. This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct" />
@@ -40,4 +40,194 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales" />
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="16f5170b-e51b-44ba-aec9-4ff307a50da6"/>
+		<timestamp value="2022-01-07T12:54:35+00:00"/>
+		<total value="28"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20211222"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="02"/>
+			<display value="Admitted to other Hospital within Local Health Board"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="01"/>
+			<display value="Admitted to same Hospital within Local Health Board"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="63238001"/>
+			<display value="Dead on arrival at hospital"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="10"/>
+			<display value="Died in Department"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="75004002"/>
+			<display value="Emergency room admission, died in emergency room"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1066311000000101"/>
+			<display value="Left care setting after initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1066301000000103"/>
+			<display value="Left care setting before initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1066321000000107"/>
+			<display value="Left care setting before treatment completed"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="07"/>
+			<display value="No Planned Follow-up"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="11"/>
+			<display value="Patient Dead on Arrival"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="09"/>
+			<display value="Patient Self Discharged without Clinical Consent"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="08"/>
+			<display value="Planned Follow-up at Accident and Emergency Department"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="05"/>
+			<display value="Referred to GP"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="06"/>
+			<display value="Referred to Other Healthcare Professional"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="04"/>
+			<display value="Referred to Outpatient Department"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077081000000104"/>
+			<display value="Streamed from emergency department to ambulatory emergency care service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077051000000105"/>
+			<display value="Streamed from emergency department to dental service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077091000000102"/>
+			<display value="Streamed from emergency department to falls service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077101000000105"/>
+			<display value="Streamed from emergency department to frailty service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077021000000100"/>
+			<display value="Streamed from emergency department to general practitioner following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1324201000000109"/>
+			<display value="Streamed from emergency department to inpatient unit following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077041000000107"/>
+			<display value="Streamed from emergency department to mental health service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077061000000108"/>
+			<display value="Streamed from emergency department to ophthalmology service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077071000000101"/>
+			<display value="Streamed from emergency department to pharmacy service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077031000000103"/>
+			<display value="Streamed from emergency department to urgent care service following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="1077781000000101"/>
+			<display value="Streamed to emergency department following initial assessment"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales"/>
+			<version value="1.0.0"/>
+			<code value="03"/>
+			<display value="Transferred to different Local Health Board"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/83821000000107/version/20211222"/>
+			<code value="182992009"/>
+			<display value="Treatment completed"/>
+		</contains>
+	</expansion>
 </ValueSet>

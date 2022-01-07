@@ -35,4 +35,56 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="f58136c1-c9c1-4291-9e65-97063f443668"/>
+		<timestamp value="2022-01-07T11:31:39+00:00"/>
+		<total value="5"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/condition-category|4.0.1"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory"/>
+			<version value="1.0.0"/>
+			<code value="co-morbidity"/>
+			<display value="Co-morbidity"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+			<version value="4.0.1"/>
+			<code value="encounter-diagnosis"/>
+			<display value="Encounter Diagnosis"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory"/>
+			<version value="1.0.0"/>
+			<code value="issue"/>
+			<display value="Issue"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory"/>
+			<version value="1.0.0"/>
+			<code value="presenting-complaint"/>
+			<display value="Presenting Complaint"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+			<version value="4.0.1"/>
+			<code value="problem-list-item"/>
+			<display value="Problem List Item"/>
+		</contains>
+	</expansion>
 </ValueSet>
