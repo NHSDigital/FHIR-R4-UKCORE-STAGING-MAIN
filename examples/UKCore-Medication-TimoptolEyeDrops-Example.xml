@@ -13,8 +13,8 @@
 	<form>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="75359005"/>
-			<display value="Opthalmic Solution"/>
+			<code value="17960711000001109"/>
+			<display value="Ear/eye drops solution"/>
 		</coding>
 	</form>
 	<batch>

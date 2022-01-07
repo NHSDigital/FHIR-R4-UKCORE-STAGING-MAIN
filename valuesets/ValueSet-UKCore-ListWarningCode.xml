@@ -32,4 +32,37 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="8879d362-e498-43dd-8e29-d59ac1d05bf3"/>
+		<timestamp value="2022-01-07T13:40:18+00:00"/>
+		<total value="3"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListWarningCode|2.1.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListWarningCode"/>
+			<code value="confidential-items"/>
+			<display value="Confidential Items"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListWarningCode"/>
+			<code value="data-awaiting-filing"/>
+			<display value="Data Awaiting Filing"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListWarningCode"/>
+			<code value="data-in-transit"/>
+			<display value="Data in Transit"/>
+		</contains>
+	</expansion>
 </ValueSet>

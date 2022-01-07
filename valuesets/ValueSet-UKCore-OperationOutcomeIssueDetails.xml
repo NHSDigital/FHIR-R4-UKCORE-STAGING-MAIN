@@ -26,7 +26,7 @@
 		</telecom>
 	</contact>
 	<description value="A set of codes that define details of the exact issue." />
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
 	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode" />
@@ -38,4 +38,468 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode" />
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="9972f31d-7df5-4610-82f1-f923774354af"/>
+		<timestamp value="2022-01-07T13:46:03+00:00"/>
+		<total value="73"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="ACCESS_DENIED"/>
+			<display value="Access has been denied to process this request"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="ADDITIONAL_PROPERTIES"/>
+			<display value="Additional properties"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10003"/>
+			<display value="Business Level Response Value - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="CLAIM_AMEND_PERIOD_ISSUE"/>
+			<display value="Claim amendment is not permitted outside of the claim period"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="MISSING_DIGITAL_SIGNATURE"/>
+			<display value="Digital signature not found"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="DISPENSE_AMEND_IDENTIFIER_MISMATCH"/>
+			<display value="Dispense Amendment/Cancellation Request does not pertain to Last Dispense"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20008"/>
+			<display value="Duplicate Document received"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="DUPLICATE_MEDICATIONREQUEST_ID"/>
+			<display value="Duplicate item ID exists"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20007"/>
+			<display value="Duplicate Message received"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="DUPLICATE_PRESCRIPTION_ID"/>
+			<display value="Duplicate prescription ID exists"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_CHECK_DIGIT"/>
+			<display value="Error in check digit"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="FAILURE_TO_PROCESS_MESSAGE"/>
+			<display value="Failure to process message"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="FORBIDDEN_UPDATE"/>
+			<display value="Forbidden update"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_DATE_FORMAT"/>
+			<display value="Format of date passed is invalid"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="SERVICE_DISABLED"/>
+			<display value="functionality disabled in spine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10008"/>
+			<display value="Handling Specification Business Rule Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10001"/>
+			<display value="Handling Specification Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10002"/>
+			<display value="Infrastructure Level Response Value - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="CLAIM_INVALID_NOT_DISPENSED"/>
+			<display value="Invalid Claim. Prescription is not Dispensed"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_MESSAGE"/>
+			<display value="Invalid message"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_RESOURCE_ID"/>
+			<display value="Invalid resource ID"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_SEARCH_DATA"/>
+			<display value="Invalid search data"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PRESCRIPTION_INVALID_STATE_TRANSITION"/>
+			<display value="Invalid State Transition for Prescription"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="MEDICATIONREQUEST_INVALID_STATE_TRANSITION"/>
+			<display value="Invalid State Transition for Prescription Item"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_UPDATE"/>
+			<display value="Invalid update"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_VALUE"/>
+			<display value="Invalid value"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALIDATED_RESOURCE"/>
+			<display value="Invalidated resource"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20006"/>
+			<display value="ITK header validation failure"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10004"/>
+			<display value="Message Definition Value - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10005"/>
+			<display value="Message Definition Version Value - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20015"/>
+			<display value="Message too large"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="MISMATCH_AUTHORISED_REPEAT_COUNT"/>
+			<display value="Mismatch in authorised repeat counts"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="MISSING_VALUE"/>
+			<display value="Missing value"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="NO_MORE_PRESCRIPTIONS"/>
+			<display value="No more prescriptions available"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20004"/>
+			<display value="Non-Approved file type received as an attachment"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_NUMBER_MEDICATIONREQUESTS"/>
+			<display value="Number of items on a prescription should be between 1 and 4"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PATIENT_DECEASED"/>
+			<display value="Patient is recorded as dead"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30004"/>
+			<display value="Patient known here and recently deceased (i.e. patient record current in GP practice system at time of patient’s death and deduction subsequently occurred for this reason)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30001"/>
+			<display value="Patient known here. (e.g. Patient is registered here)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30003"/>
+			<display value="Patient no longer at this clinical setting"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30002"/>
+			<display value="Patient not known here. (aka 'patient record not present in system')"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20009"/>
+			<display value="Payload validation failure"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="POLLING_ID_NOT_FOUND"/>
+			<display value="Polling ID not found"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="POLLING_MESSAGE_FAILURE"/>
+			<display value="Polling message failure"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="PRECONDITION_FAILED"/>
+			<display value="Precondition failed"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PRESCRIPTION_NOT_FOUND"/>
+			<display value="Prescription can not be found. Contact prescriber"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PRESCRIPTION_CANCELLED"/>
+			<display value="Prescription has been cancelled"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PRESCRIPTION_DISPENSED"/>
+			<display value="Prescription has been dispensed"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PRESCRIPTION_EXPIRED"/>
+			<display value="Prescription has expired"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="PRESCRIPTION_WITH_ANOTHER_DISPENSER"/>
+			<display value="Prescription is with another dispenser"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="MEDICATIONREQUEST_NOT_FOUND"/>
+			<display value="Prescription Item Not found"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10010"/>
+			<display value="Recipient Type - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
+			<version value="1.0.0"/>
+			<code value="INVALID_REPEAT_COUNT"/>
+			<display value="Repeat count should be between 1 and 99"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="RESOURCE_NOT_FOUND"/>
+			<display value="Resource not found"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="RESOURCE_VERSION_MISMATCH"/>
+			<display value="Resource version mismatch"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10007"/>
+			<display value="Sender Reference Value - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20013"/>
+			<display value="Success"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="TOO_FEW_VALUES_SUBMITTED"/>
+			<display value="Too few values submitted"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="TOO_MANY_MATCHES"/>
+			<display value="Too many matches"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="TOO_MANY_VALUES_SUBMITTED"/>
+			<display value="Too many values submitted"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="UNABLE_TO_CALL_SERVICE"/>
+			<display value="Unable to call service"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20014"/>
+			<display value="Unable to Process Replacement Document"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20012"/>
+			<display value="Unauthorised Sender"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="10009"/>
+			<display value="Unreadable message received"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20010"/>
+			<display value="Unrecognised Payload Recipient Organisation"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20011"/>
+			<display value="Unrecognised Payload Recipient Person"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20002"/>
+			<display value="Unrecognised Recipient Organisation"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20001"/>
+			<display value="Unrecognised Recipient Person"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20003"/>
+			<display value="Unrecognised Sender"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="20005"/>
+			<display value="Unsupported file type received as an attachment"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="UNSUPPORTED_SERVICE"/>
+			<display value="Unsupported service"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="UNSUPPORTED_VALUE"/>
+			<display value="Unsupported value"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
+			<version value="1.0.0"/>
+			<code value="VALIDATION_ERROR"/>
+			<display value="Validation error"/>
+		</contains>
+	</expansion>
 </ValueSet>
