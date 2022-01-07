@@ -1,0 +1,12 @@
+<MessageHeader xmlns="http://hl7.org/fhir">
+  <id value="UKCore-MessageHeader-Extension-MessageHeaderInstructions-Example" />
+  <!-- **************extension start************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstructions">
+    <coding>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageHeaderInstructions" />
+      <code value="ForAction" />
+      <display value="For Action" />
+    </coding>
+  </extension>
+  <!-- *************extension end *****************-->
+</MessageHeader>
