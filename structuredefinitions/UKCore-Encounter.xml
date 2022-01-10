@@ -111,6 +111,17 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
       </type>
     </element>
+    <element id="Encounter.extension:legalStatus">
+      <path value="Encounter.extension" />
+      <sliceName value="legalStatus" />
+      <short value="Information relating to a patient's legal status on admission or discharge." />
+      <definition value="This extension extends the Encounter Resource to support the exchange of information relating to a patient's legal status on admission or discharge, which is currently not supported by the FHIR standard." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus" />
+      </type>
+    </element>
     <element id="Encounter.identifier.assigner">
       <path value="Encounter.identifier.assigner" />
       <type>
@@ -200,6 +211,16 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Encounter.reasonReference">
+      <path value="Encounter.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
+      </type>
+    </element>
     <element id="Encounter.reasonReference.identifier.assigner">
       <path value="Encounter.reasonReference.identifier.assigner" />
       <type>
@@ -211,6 +232,14 @@
       <path value="Encounter.diagnosis" />
       <short value="The list of diagnoses relevant to this encounter" />
       <definition value="The list of diagnoses relevant to this encounter." />
+    </element>
+    <element id="Encounter.diagnosis.condition">
+      <path value="Encounter.diagnosis.condition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
+      </type>
     </element>
     <element id="Encounter.diagnosis.condition.identifier.assigner">
       <path value="Encounter.diagnosis.condition.identifier.assigner" />
