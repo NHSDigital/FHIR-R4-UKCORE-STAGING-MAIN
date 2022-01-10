@@ -51,6 +51,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
   <derivation value="constraint" />
   <differential>
+    <element id="MessageHeader.extension">
+      <path value="MessageHeader.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MessageHeader.extension:messageHeaderInstruction">
+      <path value="MessageHeader.extension" />
+      <sliceName value="messageHeaderInstruction" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstruction" />
+      </type>
+    </element>
     <element id="MessageHeader.event[x]">
       <path value="MessageHeader.event[x]" />
       <binding>
