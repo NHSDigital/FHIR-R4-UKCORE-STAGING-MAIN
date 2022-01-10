@@ -9,4 +9,15 @@
     </coding>
   </extension>
   <!-- *************extension end *****************-->
+  <eventCoding>
+    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageEvent"/>
+    <code value="003D"/>
+    <display value="eDischarge"/>
+  </eventCoding>
+  <sender>
+    <reference value="https://directory.spineservices.nhs.uk/Organization/X26"/>
+  </sender>
+  <source>
+    <endpoint value="NOROT003"/>
+  </source>
 </MessageHeader>
