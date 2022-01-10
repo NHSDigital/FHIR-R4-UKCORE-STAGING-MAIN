@@ -198,7 +198,7 @@
       <path value="Procedure.report" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
       </type>
@@ -210,6 +210,13 @@
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>
+    </element>
+    <element id="Procedure.complicationDetail">
+      <path value="Procedure.complicationDetail" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+      </type>
     </element>
     <element id="Procedure.note.author[x]">
       <path value="Procedure.note.author[x]" />
