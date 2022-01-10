@@ -1,9 +1,9 @@
 <MessageHeader xmlns="http://hl7.org/fhir">
-  <id value="UKCore-MessageHeader-Extension-MessageHeaderInstructions-Example" />
+  <id value="UKCore-MessageHeader-Extension-MessageHeaderInstruction-Example" />
   <!-- **************extension start************** -->
-  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstructions">
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstruction">
     <coding>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageHeaderInstructions" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageHeaderInstruction" />
       <code value="ForAction" />
       <display value="For Action" />
     </coding>
