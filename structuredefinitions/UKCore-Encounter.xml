@@ -100,17 +100,6 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
       </type>
     </element>
-    <element id="Encounter.extension:OutcomeOfAttendance">
-      <path value="Encounter.extension" />
-      <sliceName value="OutcomeOfAttendance" />
-      <short value="An extension to support the outcome of an Outpatient attendance." />
-      <definition value="This extension has been developed to demonstrate the representation of the outcome of an Outpatient attendance." />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
-      </type>
-    </element>
     <element id="Encounter.extension:legalStatus">
       <path value="Encounter.extension" />
       <sliceName value="legalStatus" />
@@ -120,6 +109,17 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus" />
+      </type>
+    </element>
+    <element id="Encounter.extension:OutcomeOfAttendance">
+      <path value="Encounter.extension" />
+      <sliceName value="OutcomeOfAttendance" />
+      <short value="An extension to support the outcome of an Outpatient attendance." />
+      <definition value="This extension has been developed to demonstrate the representation of the outcome of an Outpatient attendance." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
       </type>
     </element>
     <element id="Encounter.identifier.assigner">

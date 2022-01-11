@@ -54,14 +54,15 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="2" />
     </element>
     <element id="Extension.extension:legalStatusContext">
       <path value="Extension.extension" />
       <sliceName value="legalStatusContext" />
       <short value="The context of the legal status." />
       <definition value="The context of the legal status in which a mental health legal status is being used." />
-      <min value="0" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:legalStatusContext.url">
       <path value="Extension.extension.url" />
@@ -80,18 +81,19 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LegalStatusContext" />
       </binding>
     </element>
-    <element id="Extension.extension:LegalStatusClassification">
+    <element id="Extension.extension:legalStatusClassification">
       <path value="Extension.extension" />
-      <sliceName value="LegalStatusClassification" />
+      <sliceName value="legalStatusClassification" />
       <short value="The classification of a patient's legal status." />
       <definition value="The classification of a patient's legal status, which is either informal or as designated in the Mental Health Act 1983 or other acts." />
-      <min value="0" />
+      <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Extension.extension:LegalStatusClassification.url">
+    <element id="Extension.extension:legalStatusClassification.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="LegalStatusClassification" />
+      <fixedUri value="legalStatusClassification" />
     </element>
-    <element id="Extension.extension:LegalStatusClassification.value[x]">
+    <element id="Extension.extension:legalStatusClassification.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Codes that define the classification of a patient's legal status" />
       <type>
@@ -109,7 +111,6 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="A set of codes that define the context in which a mental health legal status is being used." />
       <max value="0" />
     </element>
   </differential>
