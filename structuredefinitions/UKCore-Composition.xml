@@ -80,7 +80,7 @@
       <path value="Composition.extension" />
       <sliceName value="careSettingType" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType" />
