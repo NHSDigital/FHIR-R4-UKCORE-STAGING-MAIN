@@ -63,6 +63,7 @@
       <short value="An extension to carry the Care setting type." />
       <definition value="An extension to carry the Care setting type." />
       <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType" />
