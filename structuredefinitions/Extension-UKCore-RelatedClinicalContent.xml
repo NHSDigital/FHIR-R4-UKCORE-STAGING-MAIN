@@ -59,7 +59,7 @@
       <definition value="A reference to any resource that provides related clinical content to the Condition." />
       <type>
         <code value="Reference" />
-        <targetProfile value="Resource" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
       </type>
     </element>
   </differential>
