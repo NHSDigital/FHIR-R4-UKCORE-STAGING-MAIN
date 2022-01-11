@@ -110,5 +110,26 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
+    <element id="RelatedPerson.telecom.system.extension">
+      <path value="RelatedPerson.telecom.system.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="RelatedPerson.telecom.system.extension:otherContactSystem">
+      <path value="RelatedPerson.telecom.system.extension" />
+      <sliceName value="otherContactSystem" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
