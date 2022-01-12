@@ -20,7 +20,7 @@
 					<periodUnit value="d"/>
 					<dayOfWeek value="mon"/>
 					<dayOfWeek value="wed"/>
-					<dayOfWeek value="fri	"/>
+					<dayOfWeek value="fri"/>
 					<when value="MORN"/>
 				</repeat>
 			</valueTiming>
