@@ -24,7 +24,15 @@
 		</extension>
 		<extension url="PreferredContactTimes">
 			<valueTiming>
-				<event value="2017-01-01T00:00:00.000Z"/>
+				<repeat>
+					<frequency value="1"/>
+					<period value="1"/>
+					<periodUnit value="d"/>
+					<dayOfWeek value="mon"/>
+					<dayOfWeek value="wed"/>
+					<dayOfWeek value="fri	"/>
+					<when value="MORN"/>
+				</repeat>
 			</valueTiming>
 		</extension>
 		<extension url="PreferredWrittenCommunicationFormat">

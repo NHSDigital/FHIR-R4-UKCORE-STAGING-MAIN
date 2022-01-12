@@ -39,9 +39,9 @@
 		</include>
 	</compose>
 	<expansion>
-		<identifier value="9972f31d-7df5-4610-82f1-f923774354af"/>
-		<timestamp value="2022-01-07T13:46:03+00:00"/>
-		<total value="73"/>
+		<identifier value="0f3cdbf7-e14e-475f-8bd8-b9dc66721d05"/>
+		<timestamp value="2022-01-12T09:32:58+00:00"/>
+		<total value="87"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -64,6 +64,12 @@
 			<valueInteger value="0"/>
 		</parameter>
 		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30016"/>
+			<display value="Accept"/>
+		</contains>
+		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
 			<version value="1.0.0"/>
 			<code value="ACCESS_DENIED"/>
@@ -78,6 +84,12 @@
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
 			<version value="1.0.0"/>
+			<code value="30011"/>
+			<display value="Advised to go elsewhere/self-referral"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
 			<code value="10003"/>
 			<display value="Business Level Response Value - Processing Error"/>
 		</contains>
@@ -86,6 +98,54 @@
 			<version value="1.0.0"/>
 			<code value="CLAIM_AMEND_PERIOD_ISSUE"/>
 			<display value="Claim amendment is not permitted outside of the claim period"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30009"/>
+			<display value="Clinical escalation to 111/GPOOH"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30007"/>
+			<display value="Clinical escalation to GP"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30010"/>
+			<display value="Clinical escalation to UTC/A&amp;E or 999"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30015"/>
+			<display value="Closure (duplicate referral)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30014"/>
+			<display value="Closure (service not accepted)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30013"/>
+			<display value="Closure (service not needed)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30006"/>
+			<display value="Completed"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30018"/>
+			<display value="Did Not Attend"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
@@ -280,6 +340,12 @@
 			<display value="Number of items on a prescription should be between 1 and 4"/>
 		</contains>
 		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30005"/>
+			<display value="Open"/>
+		</contains>
+		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="PATIENT_DECEASED"/>
@@ -376,6 +442,12 @@
 			<display value="Recipient Type - Processing Error"/>
 		</contains>
 		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30017"/>
+			<display value="Reject"/>
+		</contains>
+		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="INVALID_REPEAT_COUNT"/>
@@ -398,6 +470,12 @@
 			<version value="1.0.0"/>
 			<code value="10007"/>
 			<display value="Sender Reference Value - Processing Error"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30008"/>
+			<display value="Signposting to GP (non-urgent)"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
@@ -428,6 +506,12 @@
 			<version value="1.0.0"/>
 			<code value="UNABLE_TO_CALL_SERVICE"/>
 			<display value="Unable to call service"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
+			<version value="1.0.0"/>
+			<code value="30012"/>
+			<display value="Unable to contact the patient"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
