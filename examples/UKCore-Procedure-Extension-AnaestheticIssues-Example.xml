@@ -1,0 +1,20 @@
+<Procedure xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Procedure-Extension-AnaestheticIssues-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"/>
+	</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AnaestheticIssues">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="31860008"/>
+				<display value="Acute bacterial peritonitis"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<status value="completed"/>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<performedDateTime value="2019-12-10T13:00:00+00:00"/>
+</Procedure>
