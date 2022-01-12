@@ -1,0 +1,19 @@
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Condition-Extension-RelatedProblemHeader-Example" />
+    <!--  **************extension start**************  -->
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedProblemHeader">
+        <extension url="type">
+            <value value="child" />
+        </extension>
+        <extension url="target">
+            <valueReference>
+                <reference value="Condition/UKCore-Condition-BleedingFromEar-Example" />
+                <type value="Condition" />
+            </valueReference>
+        </extension>
+    </extension>
+    <!--  **************extension end**************  -->
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+</Condition>
