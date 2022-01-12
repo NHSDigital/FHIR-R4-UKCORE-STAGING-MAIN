@@ -1,0 +1,14 @@
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Condition-Extension-RelatedClinicalContent-Example" />
+    <!--  **************extension start**************  -->
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent">
+        <valueReference>
+            <reference value="Observation/UKCore-Observation-AwarenessOfDiagnosis-Example" />
+            <type value="Observation" />
+        </valueReference>
+    </extension>
+    <!--  **************extension end**************  -->
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+</Condition>
