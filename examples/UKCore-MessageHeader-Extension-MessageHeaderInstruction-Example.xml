@@ -2,11 +2,11 @@
   <id value="UKCore-MessageHeader-Extension-MessageHeaderInstruction-Example" />
   <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstruction">
-    <coding>
+    <valueCoding>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageHeaderInstruction" />
       <code value="ForAction" />
       <display value="For Action" />
-    </coding>
+    </valueCoding>
   </extension>
   <!-- *************extension end *****************-->
   <eventCoding>
