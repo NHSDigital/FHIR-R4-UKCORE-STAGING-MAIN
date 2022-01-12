@@ -13,27 +13,35 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		  <extension url="PreferredContactTimes">
-            <valueTiming>
-                <event value="2017-01-01T00:00:00.000Z" />
-            </valueTiming>
-        </extension>
-        <extension url="PreferredWrittenCommunicationFormat">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
-                    <code value="11" />
-                    <display value="Large print" />
-                </coding>
-            </valueCodeableConcept>
-        </extension>
+		<extension url="PreferredContactTimes">
+			<valueTiming>
+				<repeat>
+					<frequency value="1"/>
+					<period value="1"/>
+					<periodUnit value="d"/>
+					<dayOfWeek value="mon"/>
+					<dayOfWeek value="wed"/>
+					<dayOfWeek value="fri"/>
+					<when value="AFT"/>
+				</repeat>
+			</valueTiming>
+		</extension>
+		<extension url="PreferredWrittenCommunicationFormat">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
+					<code value="11"/>
+					<display value="Large print"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
 	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
-        <valuePositiveInt value="1" />
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
-        <valueBoolean value="true" />
-    </extension>
+		<valuePositiveInt value="1"/>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
+		<valueBoolean value="true"/>
+	</extension>
 	<patient>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
