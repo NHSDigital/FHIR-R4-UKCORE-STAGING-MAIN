@@ -104,7 +104,7 @@
       <path value="Encounter.extension" />
       <sliceName value="legalStatus" />
       <short value="Information relating to a patient's legal status on admission or discharge." />
-      <definition value="This extension extends the Encounter Resource to support the exchange of information relating to a patient's legal status on admission or discharge, which is currently not supported by the FHIR standard." />
+      <definition value="Information relating to a patient's legal status on admission or discharge." />
       <min value="0" />
       <type>
         <code value="Extension" />
