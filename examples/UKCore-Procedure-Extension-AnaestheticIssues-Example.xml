@@ -3,6 +3,7 @@
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"/>
 	</meta>
+	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AnaestheticIssues">
 		<valueCodeableConcept>
 			<coding>
@@ -12,6 +13,7 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
+	<!-- **************extension end************** -->
 	<status value="completed"/>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
