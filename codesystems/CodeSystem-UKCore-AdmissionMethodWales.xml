@@ -5,7 +5,6 @@
 	<name value="UKCoreAdmissionMethodWales" />
 	<title value="UK Core Admission Method Wales" />
 	<status value="active" />
-	<experimental value="true" />
 	<date value="2022-01-07" />
 	<publisher value="HL7 UK" />
 	<contact>
