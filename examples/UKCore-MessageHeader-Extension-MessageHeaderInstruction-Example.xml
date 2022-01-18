@@ -10,9 +10,9 @@
   </extension>
   <!-- *************extension end *****************-->
   <eventCoding>
-    <system value="https://fhir.nhs.uk/CodeSystem/message-event"/>
-    <code value="unsolicited-observations"/>
-    <display value="Unsolicited Observations"/>
+    <system value="http://example.org/fhir/message-events"/>
+    <code value="prescription-order"/>
+    <display value="Prescription Order"/>
   </eventCoding>
   <sender>
     <reference value="https://directory.spineservices.nhs.uk/Organization/X26"/>
