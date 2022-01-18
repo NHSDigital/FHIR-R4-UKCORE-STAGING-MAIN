@@ -1,47 +1,47 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-OperationOutcomeIssueDetails" />
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-OperationOutcomeIssueDetails" />
-	<version value="1.0.0" />
-	<name value="UKCoreOperationOutcomeIssueDetails" />
-	<title value="UK Core Operation Outcome Issue Details" />
-	<status value="active" />
-	<date value="2022-01-07" />
-	<publisher value="HL7 UK" />
+	<id value="UKCore-OperationOutcomeIssueDetails"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-OperationOutcomeIssueDetails"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreOperationOutcomeIssueDetails"/>
+	<title value="UK Core Operation Outcome Issue Details"/>
+	<status value="active"/>
+	<date value="2022-01-07"/>
+	<publisher value="HL7 UK"/>
 	<contact>
-		<name value="HL7 UK" />
+		<name value="HL7 UK"/>
 		<telecom>
-			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
 		</telecom>
 	</contact>
 	<contact>
-		<name value="NHS Digital" />
+		<name value="NHS Digital"/>
 		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
 		</telecom>
 	</contact>
-	<description value="A set of codes that define details of the exact issue." />
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<description value="A set of codes that define details of the exact issue."/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode" />
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
 		</include>
 		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode" />
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 		</include>
 		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode" />
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
 		</include>
 	</compose>
 	<expansion>
 		<identifier value="0f3cdbf7-e14e-475f-8bd8-b9dc66721d05"/>
 		<timestamp value="2022-01-12T09:32:58+00:00"/>
-		<total value="87"/>
+		<total value="73"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -64,12 +64,6 @@
 			<valueInteger value="0"/>
 		</parameter>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30016"/>
-			<display value="Accept"/>
-		</contains>
-		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
 			<version value="1.0.0"/>
 			<code value="ACCESS_DENIED"/>
@@ -84,12 +78,6 @@
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
 			<version value="1.0.0"/>
-			<code value="30011"/>
-			<display value="Advised to go elsewhere/self-referral"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
 			<code value="10003"/>
 			<display value="Business Level Response Value - Processing Error"/>
 		</contains>
@@ -98,54 +86,6 @@
 			<version value="1.0.0"/>
 			<code value="CLAIM_AMEND_PERIOD_ISSUE"/>
 			<display value="Claim amendment is not permitted outside of the claim period"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30009"/>
-			<display value="Clinical escalation to 111/GPOOH"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30007"/>
-			<display value="Clinical escalation to GP"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30010"/>
-			<display value="Clinical escalation to UTC/A&amp;E or 999"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30015"/>
-			<display value="Closure (duplicate referral)"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30014"/>
-			<display value="Closure (service not accepted)"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30013"/>
-			<display value="Closure (service not needed)"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30006"/>
-			<display value="Completed"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30018"/>
-			<display value="Did Not Attend"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
@@ -340,12 +280,6 @@
 			<display value="Number of items on a prescription should be between 1 and 4"/>
 		</contains>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30005"/>
-			<display value="Open"/>
-		</contains>
-		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="PATIENT_DECEASED"/>
@@ -442,12 +376,6 @@
 			<display value="Recipient Type - Processing Error"/>
 		</contains>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30017"/>
-			<display value="Reject"/>
-		</contains>
-		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="INVALID_REPEAT_COUNT"/>
@@ -470,12 +398,6 @@
 			<version value="1.0.0"/>
 			<code value="10007"/>
 			<display value="Sender Reference Value - Processing Error"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30008"/>
-			<display value="Signposting to GP (non-urgent)"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
@@ -506,12 +428,6 @@
 			<version value="1.0.0"/>
 			<code value="UNABLE_TO_CALL_SERVICE"/>
 			<display value="Unable to call service"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
-			<version value="1.0.0"/>
-			<code value="30012"/>
-			<display value="Unable to contact the patient"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ITKResponseCode"/>
