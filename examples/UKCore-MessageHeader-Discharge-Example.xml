@@ -7,11 +7,9 @@
 		<valueCode value="always"/>
 	</extension>
 	<eventCoding>
-		<eventCoding>
 			<system value="https://fhir.nhs.uk/CodeSystem/message-event"/>
 			<code value="unsolicited-observations"/>
 			<display value="Unsolicited Observations"/>
-		  </eventCoding>
 	</eventCoding>
 	<destination>
 		<endpoint value="urn:nhs:addressing:asid:477121007825"/>
