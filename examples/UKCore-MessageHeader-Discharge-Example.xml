@@ -7,9 +7,11 @@
 		<valueCode value="always"/>
 	</extension>
 	<eventCoding>
-		<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageEvent"/>
-		<code value="003D"/>
-		<display value="eDischarge"/>
+		<eventCoding>
+			<system value="https://fhir.nhs.uk/CodeSystem/message-event"/>
+			<code value="unsolicited-observations"/>
+			<display value="Unsolicited Observations"/>
+		  </eventCoding>
 	</eventCoding>
 	<destination>
 		<endpoint value="urn:nhs:addressing:asid:477121007825"/>
