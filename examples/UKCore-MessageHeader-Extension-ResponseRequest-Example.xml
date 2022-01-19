@@ -1,8 +1,13 @@
 <MessageHeader xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MessageHeader-Discharge-Example"/>
+	<id value="UKCore-MessageHeader-Extension-ResponseRequest-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
 	</meta>
+  <!-- **************extension start************** -->
+	<extension url="http://hl7.org/fhir/StructureDefinition/messageheader-response-request">
+		<valueCode value="always"/>
+	</extension>
+  <!-- **************extension end************** -->
 	<eventCoding>
 		<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageEvent"/>
 		<code value="003D"/>
