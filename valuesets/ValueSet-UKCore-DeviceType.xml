@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-DeviceType"/>
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DeviceType"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="UKCoreDeviceType"/>
   <title value="UK Core Device Type"/>
   <status value="draft" />
-  <date value="2021-09-10" />
+  <date value="2022-01-22" />
 <publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK" />
