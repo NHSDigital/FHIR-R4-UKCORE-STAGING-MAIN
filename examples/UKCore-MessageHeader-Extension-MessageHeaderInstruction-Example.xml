@@ -5,7 +5,7 @@
     <valueCoding>
       <system value="http://snomed.info/sct" />
       <code value="821301000000103" />
-      <display value="Liaison with general medical practitioner" />
+      <display value="Liaison with GP (general practitioner)" />
     </valueCoding>
   </extension>
   <!-- *************extension end *****************-->
