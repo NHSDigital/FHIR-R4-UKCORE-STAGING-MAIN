@@ -3,16 +3,16 @@
   <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstruction">
     <valueCoding>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageHeaderInstruction" />
-      <code value="ForAction" />
-      <display value="For Action" />
+      <system value="http://snomed.info/sct" />
+      <code value="821301000000103" />
+      <display value="Liaison with general medical practitioner" />
     </valueCoding>
   </extension>
   <!-- *************extension end *****************-->
   <eventCoding>
-    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageEvent"/>
-    <code value="003D"/>
-    <display value="eDischarge"/>
+    <system value="http://snomed.info/sct"/>
+    <code value="306689006"/>
+    <display value="Discharge to home"/>
   </eventCoding>
   <sender>
     <reference value="https://directory.spineservices.nhs.uk/Organization/X26"/>

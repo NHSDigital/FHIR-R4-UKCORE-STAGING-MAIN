@@ -4,9 +4,9 @@
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
 	</meta>
 	<eventCoding>
-		<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MessageEvent"/>
-		<code value="003D"/>
-		<display value="eDischarge"/>
+		<system value="http://snomed.info/sct"/>
+		<code value="306689006"/>
+		<display value="Discharge to home"/>
 	</eventCoding>
 	<destination>
 		<endpoint value="urn:nhs:addressing:asid:477121007825"/>
