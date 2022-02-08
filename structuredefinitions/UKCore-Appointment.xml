@@ -50,41 +50,50 @@
     <uri value="http://hl7.org/v2" />
     <name value="HL7 v2 Mapping" />
   </mapping>
+  <mapping>
+    <identity value="iCalendar" />
+    <uri value="http://ietf.org/rfc/2445" />
+    <name value="iCalendar" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Appointment" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
-    <element id="Appointment.extension">
-      <path value="Appointment.extension" />
+    <element id="Appointment.identifier.assigner">
+      <path value="Appointment.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Appointment.identifier.assigner.identifier">
+      <path value="Appointment.identifier.assigner.identifier" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="url" />
+          <path value="system" />
         </discriminator>
+        <ordered value="false" />
         <rules value="open" />
       </slicing>
-      <min value="0" />
     </element>
-    <element id="Appointment.extension:bookingOrganization">
-      <path value="Appointment.extension" />
-      <sliceName value="bookingOrganization" />
-      <min value="0" />
-      <max value="1" />
+    <element id="Appointment.reasonReference">
+      <path value="Appointment.reasonReference" />
       <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
       </type>
     </element>
-    <element id="Appointment.extension:deliveryChannel">
-      <path value="Appointment.extension" />
-      <sliceName value="deliveryChannel" />
-      <min value="0" />
-      <max value="1" />
+    <element id="Appointment.basedOn">
+      <path value="Appointment.basedOn" />
       <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel" />
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       </type>
     </element>
   </differential>
