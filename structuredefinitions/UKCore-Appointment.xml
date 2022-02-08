@@ -65,19 +65,8 @@
       <path value="Appointment.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
-    </element>
-    <element id="Appointment.identifier.assigner.identifier">
-      <path value="Appointment.identifier.assigner.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Appointment.reasonReference">
       <path value="Appointment.reasonReference" />
