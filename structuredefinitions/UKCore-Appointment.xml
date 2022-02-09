@@ -51,7 +51,7 @@
     <name value="HL7 v2 Mapping" />
   </mapping>
   <mapping>
-    <identity value="iCalendar" />
+    <identity value="ical" />
     <uri value="http://ietf.org/rfc/2445" />
     <name value="iCalendar" />
   </mapping>
