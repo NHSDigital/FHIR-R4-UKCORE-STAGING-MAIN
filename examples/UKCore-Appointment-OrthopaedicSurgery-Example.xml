@@ -1,5 +1,5 @@
 <Appointment xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Appointment-Example"/>
+	<id value="UKCore-Appointment-OrthopaedicSurgery-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"/>
 	</meta>
@@ -12,7 +12,7 @@
 	</extension>
 	<!--This describes the delivery channel of a scheduled appointment.-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
-		<valueCode value="	In-person"/>
+		<valueCode value="In-person"/>
 	</extension>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
