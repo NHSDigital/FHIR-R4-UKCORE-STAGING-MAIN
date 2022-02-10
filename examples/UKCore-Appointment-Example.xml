@@ -1,0 +1,94 @@
+<Appointment xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Appointment-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"/>
+	</meta>
+	<!--This supports the recording of the organisation booking the appointment.-->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization">
+		<valueReference>
+			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
+			<type value="Organization"/>
+		</valueReference>
+	</extension>
+	<!--This describes the delivery channel of a scheduled appointment.-->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
+		<valueCode value="	In-person"/>
+	</extension>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="e7c54d06-c5b5-4ecb-91c3-5c1e68d3b923"/>
+	</identifier>
+	<status value="booked"/>
+	<serviceCategory>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/service-category"/>
+			<code value="31"/>
+			<display value="Specialist Surgical"/>
+		</coding>
+	</serviceCategory>
+	<serviceType>
+		<coding>
+			<system value="http://hl7.org/fhir/valueset-service-type.html"/>
+			<code value="218"/>
+			<display value="Orthopaedic Surgery"/>
+		</coding>
+	</serviceType>
+	<specialty>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/c80-practice-codes"/>
+			<code value="394801008"/>
+			<display value="Surgery-Trauma and orthopedics"/>
+		</coding>
+	</specialty>
+	<appointmentType>
+		<coding>
+			<system value="https://www.hl7.org/fhir/v2/0276/index.html"/>
+			<code value="FOLLOWUP"/>
+			<display value="A follow up visit from a previous appointment"/>
+		</coding>
+	</appointmentType>
+	<reasonReference>
+		<reference value="Condition/UKCore-Condition-HipReplacement-Example"/>
+		<display value="Pain in hips"/>
+	</reasonReference>
+	<priority value="1"/>
+	<description value="Follow up visit with the orthopaedic surgery team"/>
+	<start value="2022-03-11T10:46:00+00:00"/>
+	<end value="2022-03-11T13:20:00+00:00"/>
+	<created value="2022-02-14"/>
+	<comment value="Further expand on the results of the X-ray and determine the next actions that may be appropriate."/>
+	<patientInstruction value="Please do not eat anything for 1 hour prior to the appointment."/>
+	<basedOn>
+		<reference value="ServiceRequest/UKCore-ServiceRequest-HipReplacement-Example"/>
+	</basedOn>
+	<participant>
+		<actor>
+			<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+			<display value="Richard Smith"/>
+		</actor>
+		<required value="required"/>
+		<status value="accepted"/>
+	</participant>
+	<participant>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+				<code value="ATND"/>
+			</coding>
+		</type>
+		<actor>
+			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+			<display value="Dr Sandra Gose"/>
+		</actor>
+		<required value="required"/>
+		<status value="accepted"/>
+	</participant>
+	<participant>
+		<actor>
+			<reference value="Location/UKCore-Location-HospitalSJUH-Example"/>
+			<display value="Orthopaedic Trauma Department, St James' University Hospital, Leeds"/>
+		</actor>
+		<required value="required"/>
+		<status value="accepted"/>
+	</participant>
+</Appointment>
