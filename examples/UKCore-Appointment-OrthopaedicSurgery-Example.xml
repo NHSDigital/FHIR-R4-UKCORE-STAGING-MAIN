@@ -37,7 +37,7 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="394801008"/>
-			<display value="Surgery-Trauma and orthopedics"/>
+			<display value="Trauma &amp; orthopaedics"/>
 		</coding>
 	</specialty>
 	<appointmentType>
