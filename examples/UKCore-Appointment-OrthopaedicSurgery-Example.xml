@@ -21,38 +21,38 @@
 	<status value="booked"/>
 	<serviceCategory>
 		<coding>
-			<system value="http://hl7.org/fhir/ValueSet/service-category"/>
+			<system value="http://terminology.hl7.org/CodeSystem/service-category"/>
 			<code value="31"/>
 			<display value="Specialist Surgical"/>
 		</coding>
 	</serviceCategory>
 	<serviceType>
 		<coding>
-			<system value="http://hl7.org/fhir/valueset-service-type.html"/>
+			<system value="http://terminology.hl7.org/CodeSystem/service-type"/>
 			<code value="218"/>
 			<display value="Orthopaedic Surgery"/>
 		</coding>
 	</serviceType>
 	<specialty>
 		<coding>
-			<system value="http://hl7.org/fhir/ValueSet/c80-practice-codes"/>
+			<system value="http://snomed.info/sct"/>
 			<code value="394801008"/>
 			<display value="Surgery-Trauma and orthopedics"/>
 		</coding>
 	</specialty>
 	<appointmentType>
 		<coding>
-			<system value="https://www.hl7.org/fhir/v2/0276/index.html"/>
+			<system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
 			<code value="FOLLOWUP"/>
 			<display value="A follow up visit from a previous appointment"/>
 		</coding>
 	</appointmentType>
 	<reasonReference>
 		<reference value="Condition/UKCore-Condition-HipReplacement-Example"/>
-		<display value="Pain in hips"/>
+		<display value="Pain in both hips"/>
 	</reasonReference>
 	<priority value="1"/>
-	<description value="Follow up visit with the orthopaedic surgery team"/>
+	<description value="Appointment to investigate the pain in both hips"/>
 	<start value="2022-03-11T10:46:00+00:00"/>
 	<end value="2022-03-11T13:20:00+00:00"/>
 	<created value="2022-02-14"/>
