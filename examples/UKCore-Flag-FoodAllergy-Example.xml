@@ -1,0 +1,46 @@
+<Flag xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Flag-FoodAllergy-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinitionUKCore-Flag"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Food Allergy Warning</div>
+	</text>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="f4f703a9-ef92-4515-a7b0-99271428c84e"/>
+	</identifier>
+	<status value="active"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/flag-category"/>
+			<code value="diet"/>
+			<display value="Diet"/>
+		</coding>
+		<text value="Diet"/>
+	</category>
+	<code>
+	<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="226201008"/>
+			<display value="Peanut-free diet"/>
+		</coding>
+		<text value="Patient has a severe peanut allergy."/>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+		<display value="Richard Smith"/>
+	</subject>
+	<period>
+		<start value="2019-12-10T13:00:00+00:00"/>
+	</period>
+	<encounter>
+		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
+		<display value="Leeds Teaching Hospital Inpatient Encounter"/>
+	</encounter>
+	<author>
+		<reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example"/>
+		<display value="Dr Paul Rastrall"/>
+	</author>
+</Flag>
