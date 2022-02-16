@@ -51,11 +51,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Slot" />
   <derivation value="constraint" />
   <differential>
-    <element id="Slot.identifier">
-      <path value="Slot.identifier" />
-      <min value="1" />
-      <max value="1" />
-    </element>
     <element id="Slot.identifier.assigner">
       <path value="Slot.identifier.assigner" />
       <type>
@@ -68,6 +63,13 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule" />
+      </type>
+    </element>
+    <element id="Slot.schedule.identifier.assigner">
+      <path value="Slot.schedule.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>
