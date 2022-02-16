@@ -76,5 +76,12 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
+    <element id="Schedule.actor.identifier.assigner">
+      <path value="Schedule.actor.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

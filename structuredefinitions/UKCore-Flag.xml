@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Flag" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinitionUKCore-Flag" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
   <version value="1.0.0" />
   <name value="UKCoreFlag" />
   <title value="UK Core Flag" />
@@ -46,14 +46,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Flag" />
   <derivation value="constraint" />
   <differential>
-    <element id="Flag.identifier.system">
-      <path value="Flag.identifier.system" />
-      <min value="1" />
-    </element>
-    <element id="Flag.identifier.value">
-      <path value="Flag.identifier.value" />
-      <min value="1" />
-    </element>
     <element id="Flag.identifier.assigner">
       <path value="Flag.identifier.assigner" />
       <type>
@@ -75,11 +67,25 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
       </type>
     </element>
+    <element id="Flag.subject.identifier.assigner">
+      <path value="Flag.subject.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Flag.encounter">
       <path value="Flag.encounter" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+      </type>
+    </element>
+    <element id="Flag.encounter.identifier.assigner">
+      <path value="Flag.encounter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Flag.author">
@@ -91,6 +97,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+      </type>
+    </element>
+    <element id="Flag.author.identifier.assigner">
+      <path value="Flag.author.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>
