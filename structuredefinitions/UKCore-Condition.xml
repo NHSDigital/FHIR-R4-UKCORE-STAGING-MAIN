@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreCondition" />
   <title value="UK Core Condition" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2022-03-01" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -163,6 +163,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
+    <element id="Condition.subject.identifier.assigner">
+      <path value="Condition.subject.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Condition.encounter">
       <path value="Condition.encounter" />
       <type>
@@ -170,14 +177,28 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
       </type>
     </element>
+    <element id="Condition.encounter.identifier.assigner">
+      <path value="Condition.encounter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Condition.recorder">
       <path value="Condition.recorder" />
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+      </type>
+    </element>
+    <element id="Condition.recorder.identifier.assigner">
+      <path value="Condition.recorder.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Condition.asserter">
@@ -190,6 +211,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
+    <element id="Condition.asserter.identifier.assigner">
+      <path value="Condition.asserter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Condition.stage.assessment">
       <path value="Condition.stage.assessment" />
       <type>
@@ -197,6 +225,20 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+      </type>
+    </element>
+    <element id="Condition.stage.assessment.identifier.assigner">
+      <path value="Condition.stage.assessment.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Condition.evidence.detail.identifier.assigner">
+      <path value="Condition.evidence.detail.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Condition.note.author[x]">

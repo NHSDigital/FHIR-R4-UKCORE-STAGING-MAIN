@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Procedure" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreProcedure" />
   <title value="UK Core Procedure" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2022-03-01" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -97,6 +97,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       </type>
     </element>
+    <element id="Procedure.basedOn.identifier.assigner">
+      <path value="Procedure.basedOn.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.partOf">
       <path value="Procedure.partOf" />
       <type>
@@ -104,6 +111,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
+      </type>
+    </element>
+    <element id="Procedure.partOf.identifier.assigner">
+      <path value="Procedure.partOf.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Procedure.code">
@@ -122,11 +136,25 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
+    <element id="Procedure.subject.identifier.assigner">
+      <path value="Procedure.subject.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+      </type>
+    </element>
+    <element id="Procedure.encounter.identifier.assigner">
+      <path value="Procedure.encounter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Procedure.recorder">
@@ -139,6 +167,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
     </element>
+    <element id="Procedure.recorder.identifier.assigner">
+      <path value="Procedure.recorder.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.asserter">
       <path value="Procedure.asserter" />
       <type>
@@ -149,20 +184,41 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
     </element>
+    <element id="Procedure.asserter.identifier.assigner">
+      <path value="Procedure.asserter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.performer.actor">
       <path value="Procedure.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+      </type>
+    </element>
+    <element id="Procedure.performer.actor.identifier.assigner">
+      <path value="Procedure.performer.actor.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Procedure.performer.onBehalfOf">
       <path value="Procedure.performer.onBehalfOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Procedure.performer.onBehalfOf.identifier.assigner">
+      <path value="Procedure.performer.onBehalfOf.identifier.assigner" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -175,6 +231,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
       </type>
     </element>
+    <element id="Procedure.location.identifier.assigner">
+      <path value="Procedure.location.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.reasonReference">
       <path value="Procedure.reasonReference" />
       <type>
@@ -184,6 +247,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
+      </type>
+    </element>
+    <element id="Procedure.reasonReference.identifier.assigner">
+      <path value="Procedure.reasonReference.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Procedure.bodySite">
@@ -203,6 +273,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
       </type>
     </element>
+    <element id="Procedure.report.identifier.assigner">
+      <path value="Procedure.report.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
       <binding>
@@ -216,6 +293,13 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+      </type>
+    </element>
+    <element id="Procedure.complicationDetail.identifier.assigner">
+      <path value="Procedure.complicationDetail.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Procedure.note.author[x]">
@@ -238,6 +322,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
     </element>
+    <element id="Procedure.focalDevice.manipulated.identifier.assigner">
+      <path value="Procedure.focalDevice.manipulated.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Procedure.usedReference">
       <path value="Procedure.usedReference" />
       <type>
@@ -245,6 +336,13 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+      </type>
+    </element>
+    <element id="Procedure.usedReference.identifier.assigner">
+      <path value="Procedure.usedReference.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>
