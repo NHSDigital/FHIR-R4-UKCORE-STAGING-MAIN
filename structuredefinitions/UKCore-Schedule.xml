@@ -51,11 +51,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Schedule" />
   <derivation value="constraint" />
   <differential>
-    <element id="Schedule.identifier">
-      <path value="Schedule.identifier" />
-      <min value="1" />
-      <max value="1" />
-    </element>
     <element id="Schedule.identifier.assigner">
       <path value="Schedule.identifier.assigner" />
       <type>
