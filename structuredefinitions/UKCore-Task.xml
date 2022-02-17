@@ -63,6 +63,14 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Task.basedOn.identifier.assigner">
+      <path value="Task.basedOn.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="Task.partOf">
       <path value="Task.partOf" />
       <type>
