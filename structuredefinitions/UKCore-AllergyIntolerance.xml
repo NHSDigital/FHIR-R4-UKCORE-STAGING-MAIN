@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-AllergyIntolerance" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreAllergyIntolerance" />
   <title value="UK Core AllergyIntolerance" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2022-03-01" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -28,7 +28,7 @@
   </contact>
   <description value="Defines the UK Core constraints and extensions on the AllergyIntolerance resource for the minimal set of data to query and retrieve allergy information." />
   <purpose value="This profile allows a record of a clinical assessment of an allergy or intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance. &#xD;&#xA;Where a propensity is identified, to record information or evidence about a reaction event that is characterised by any harmful or undesirable physiological response that is specific to the individual and triggered by exposure of an individual to the identified substance or class of substance. &#xD;&#xA;Substances include but are not limited to a therapeutic substance administered correctly at an appropriate dosage for the individual; food; material derived from plants or animals; or venom from insect stings." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -60,10 +60,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="AllergyIntolerance.extension:allergyIntoleranceEnd">
       <path value="AllergyIntolerance.extension" />
       <sliceName value="allergyIntoleranceEnd" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd" />
@@ -73,6 +75,7 @@
       <path value="AllergyIntolerance.extension" />
       <sliceName value="evidence" />
       <short value="A reference to results of investigations that confirmed the certainty of the diagnosis." />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence" />
@@ -100,11 +103,25 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
+    <element id="AllergyIntolerance.patient.identifier.assigner">
+      <path value="AllergyIntolerance.patient.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="AllergyIntolerance.encounter">
       <path value="AllergyIntolerance.encounter" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.encounter.identifier.assigner">
+      <path value="AllergyIntolerance.encounter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="AllergyIntolerance.recorder">
@@ -117,6 +134,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
+    <element id="AllergyIntolerance.recorder.identifier.assigner">
+      <path value="AllergyIntolerance.recorder.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="AllergyIntolerance.asserter">
       <path value="AllergyIntolerance.asserter" />
       <type>
@@ -125,6 +149,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.asserter.identifier.assigner">
+      <path value="AllergyIntolerance.asserter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="AllergyIntolerance.note.author[x]">

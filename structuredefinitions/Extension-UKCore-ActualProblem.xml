@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ActualProblem" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ActualProblem" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreActualProblem" />
   <title value="Extension UK Core Actual Problem" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2022-03-01" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -64,6 +64,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
+      </type>
+    </element>
+    <element id="Extension.value[x].identifier.assigner">
+      <path value="Extension.value[x].identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-RelatedClinicalContent" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreRelatedClinicalContent" />
   <title value="Extension UK Core Related Clinical Content" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2022-03-01" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
@@ -60,6 +60,13 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+    </element>
+    <element id="Extension.value[x].identifier.assigner">
+      <path value="Extension.value[x].identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
   </differential>
