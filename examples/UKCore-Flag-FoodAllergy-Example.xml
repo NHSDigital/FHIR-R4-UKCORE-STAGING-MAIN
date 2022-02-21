@@ -41,6 +41,6 @@
 	</encounter>
 	<author>
 		<reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example"/>
-		<display value="Dr Paul Rastrall"/>
+		<display value="Dr Paul Rastall"/>
 	</author>
 </Flag>
