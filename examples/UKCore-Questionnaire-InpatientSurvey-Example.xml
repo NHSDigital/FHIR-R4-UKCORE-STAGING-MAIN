@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Questionnaire-InpatientSurvey-Example"/>
 	<meta>
@@ -7,13 +6,16 @@
 	<url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
 	<identifier>
 		<value value="dbba41f5-2905-4a5f-baba-e5987cbd9cca"/>
+		<assigner>
+			<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		</assigner>
 	</identifier>
-<status value="active"/> 
-<experimental value="false"/>
-  <subjectType value="Patient"/> 
-  <date value="2021-02-15T13:50:00+00:00"/>
-  <publisher value="Leeds Teaching Hospitals NHS Trust"/>
- <contact>
+	<status value="active"/>
+	<experimental value="false"/>
+	<subjectType value="Patient"/>
+	<date value="2021-02-15T13:50:00+00:00"/>
+	<publisher value="Leeds Teaching Hospitals NHS Trust"/>
+	<contact>
 		<name value="Leeds Teaching Hospitals NHS Trust"/>
 		<telecom>
 			<system value="phone"/>
@@ -24,52 +26,52 @@
 	</contact>
 	<purpose value="A questionnaire used as part of a survey of new patient admissions to Acute Medicine."/>
 	<effectivePeriod>
-	<start value="2021-02-15"/>
-	<end value="2021-05-15"/>
+		<start value="2021-02-15T13:50:00+00:00"/>
+		<end value="2021-05-15T13:50:00+00:00"/>
 	</effectivePeriod>
-  <item> 
-    <linkId value="1"/> 
-    <text value="Do you have allergies?"/> 
-    <type value="boolean"/> 
-  </item> 
-  <item> 
-    <linkId value="2"/> 
-    <text value="General questions"/> 
-    <type value="group"/> 
-    <item> 
-      <linkId value="2.1"/> 
-      <text value="What is your gender?"/> 
-      <type value="string"/> 
-    </item> 
-    <item> 
-      <linkId value="2.2"/> 
-      <text value="What is your date of birth?"/> 
-      <type value="date"/> 
-    </item> 
-    <item> 
-      <linkId value="2.3"/> 
-      <text value="What is your country of birth?"/> 
-      <type value="string"/> 
-    </item> 
-    <item> 
-      <linkId value="2.4"/> 
-      <text value="What is your marital status?"/> 
-      <type value="string"/> 
-    </item> 
-  </item> 
-  <item> 
-    <linkId value="3"/> 
-    <text value="Intoxications"/> 
-    <type value="group"/> 
-    <item> 
-      <linkId value="3.1"/> 
-      <text value="Do you smoke?"/> 
-      <type value="boolean"/> 
-    </item> 
-    <item> 
-      <linkId value="3.2"/> 
-      <text value="Do you drink alchohol?"/> 
-      <type value="boolean"/> 
-    </item> 
-  </item> 
+	<item>
+		<linkId value="1"/>
+		<text value="Do you have allergies?"/>
+		<type value="boolean"/>
+	</item>
+	<item>
+		<linkId value="2"/>
+		<text value="General questions"/>
+		<type value="group"/>
+		<item>
+			<linkId value="2.1"/>
+			<text value="What is your gender?"/>
+			<type value="string"/>
+		</item>
+		<item>
+			<linkId value="2.2"/>
+			<text value="What is your date of birth?"/>
+			<type value="date"/>
+		</item>
+		<item>
+			<linkId value="2.3"/>
+			<text value="What is your country of birth?"/>
+			<type value="string"/>
+		</item>
+		<item>
+			<linkId value="2.4"/>
+			<text value="What is your marital status?"/>
+			<type value="string"/>
+		</item>
+	</item>
+	<item>
+		<linkId value="3"/>
+		<text value="Intoxications"/>
+		<type value="group"/>
+		<item>
+			<linkId value="3.1"/>
+			<text value="Do you smoke?"/>
+			<type value="boolean"/>
+		</item>
+		<item>
+			<linkId value="3.2"/>
+			<text value="Do you drink alchohol?"/>
+			<type value="boolean"/>
+		</item>
+	</item>
 </Questionnaire>
