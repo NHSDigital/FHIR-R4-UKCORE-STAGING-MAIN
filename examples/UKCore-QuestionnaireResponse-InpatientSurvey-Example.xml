@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
 	<id value="UKCore-QuestionnaireResponse-InpatientSurvey-Example"/>
 	<meta>
@@ -6,6 +5,9 @@
 	</meta>
 	<identifier>
 		<value value="6d47d8c4-2f05-4dbb-93f8-6863e6d2975b"/>
+		<assigner>
+			<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		</assigner>
 	</identifier>
 	<questionnaire value="https://example.com/base/Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
 	<status value="completed"/>
@@ -13,22 +15,22 @@
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<encounter>
-	<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
+		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
 	</encounter>
 	<authored value="2021-03-18T00:00:00+00:00"/>
 	<author>
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</author>
 	<source>
-				<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</source>
 	<item>
 		<linkId value="1"/>
-				<text value="Do you have allergies?"/>
-			<answer>
-				<valueString value="I am allergic to amoxicillin."/>
-			</answer>
-			</item>
+		<text value="Do you have allergies?"/>
+		<answer>
+			<valueString value="I am allergic to amoxicillin."/>
+		</answer>
+	</item>
 	<item>
 		<linkId value="2"/>
 		<text value="General questions"/>
