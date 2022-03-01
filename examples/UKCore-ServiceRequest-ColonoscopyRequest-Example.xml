@@ -4,16 +4,40 @@
 		<lastUpdated value="2021-11-26T15:15:15+00:00"/>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"/>
 	</meta>
+	<!--The source of the service request.-->
+	<!-- ***************extension start*************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="108161000000109"/>
+				<display value="Referred by general practitioner"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end ****************** -->
+	<!--	The method used to send or receive a service request.-->
+	<!-- ***************extension start*************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ServiceRequestMethod">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ServiceRequestMethod"/>
+				<code value="6"/>
+				<display value="NHS E-Referral Service"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end ****************** -->
 	<status value="active"/>
 	<intent value="order"/>
-	<code> 
-    <coding> 
-      <system value="http://snomed.info/sct"/> 
-      <code value="73761001"/> 
-      <display value="Colonoscopy"/> 
-    </coding> 
-    <text value="Colonoscopy requested"/> 
-  </code>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="73761001"/>
+			<display value="Colonoscopy"/>
+		</coding>
+		<text value="Colonoscopy requested"/>
+	</code>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
