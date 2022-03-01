@@ -1,6 +1,6 @@
 <Appointment xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Appointment-Extension-BookingOrganization-Example"/>
-	<!-- **************extension start************** -->
+	<!-- ***************extension start*************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization">
 		<valueReference>
 			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
@@ -23,7 +23,7 @@
 			</identifier>
 		</valueReference>
 	</extension>
-	<!-- *************extension end *****************-->
+	<!-- **************extension end ****************** -->
 	<status value="booked"/>
 	<start value="2022-03-11T10:46:00+00:00"/>
 	<end value="2022-03-11T13:20:00+00:00"/>
