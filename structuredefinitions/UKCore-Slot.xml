@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Slot" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreSlot" />
   <title value="UK Core Slot" />
-  <status value="draft" />
-  <date value="2022-03-01" />
+  <status value="active" />
+  <date value="2022-05-20" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -51,6 +51,28 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Slot" />
   <derivation value="constraint" />
   <differential>
+    <element id="Slot.extension">
+      <path value="Slot.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Slot.extension:deliveryChannel">
+      <path value="Slot.extension" />
+      <sliceName value="deliveryChannel" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Slot.identifier.assigner">
       <path value="Slot.identifier.assigner" />
       <type>

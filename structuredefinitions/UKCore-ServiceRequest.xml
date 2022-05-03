@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreServiceRequest" />
   <title value="UK Core ServiceRequest" />
-  <status value="draft" />
-  <date value="2022-03-01" />
+  <status value="active" />
+  <date value="2022-05-20" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -61,6 +61,39 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="ServiceRequest.extension">
+      <path value="ServiceRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ServiceRequest.extension:serviceRequestMethod">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="serviceRequestMethod" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ServiceRequestMethod" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.extension:sourceOfServiceRequest">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="sourceOfServiceRequest" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="ServiceRequest.identifier.assigner">
       <path value="ServiceRequest.identifier.assigner" />
       <type>
@@ -104,6 +137,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
+      </binding>
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
@@ -234,6 +275,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="ServiceRequest.bodySite">
+      <path value="ServiceRequest.bodySite" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A set of codes that define an anatomical or acquired body structure site. Selected from the SNOMED CT UK coding system." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
+      </binding>
     </element>
     <element id="ServiceRequest.relevantHistory">
       <path value="ServiceRequest.relevantHistory" />
