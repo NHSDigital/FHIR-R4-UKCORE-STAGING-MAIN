@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Appointment" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreAppointment" />
   <title value="UK Core Appointment" />
-  <status value="draft" />
-  <date value="2022-03-01" />
+  <status value="active" />
+  <date value="2022-05-20" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -61,12 +61,53 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
+    <element id="Appointment.extension">
+      <path value="Appointment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Appointment.extension:bookingOrganization">
+      <path value="Appointment.extension" />
+      <sliceName value="bookingOrganization" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Appointment.extension:deliveryChannel">
+      <path value="Appointment.extension" />
+      <sliceName value="deliveryChannel" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Appointment.identifier.assigner">
       <path value="Appointment.identifier.assigner" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="Appointment.appointmentType">
+      <path value="Appointment.appointmentType" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A set of codes that define an appointment reason." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AppointmentReasonCode" />
+      </binding>
     </element>
     <element id="Appointment.reasonReference">
       <path value="Appointment.reasonReference" />
