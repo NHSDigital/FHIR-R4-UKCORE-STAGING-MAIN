@@ -4,8 +4,8 @@
 	<version value="1.0.0"/>
 	<name value="UKCoreServiceRequestMethod"/>
 	<title value="UK Core Service Request Method"/>
-	<status value="draft" />
-	<date value="2022-03-01" />
+	<status value="retired" />
+	<date value="2022-05-20" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />

@@ -76,7 +76,6 @@
       <path value="Appointment.extension" />
       <sliceName value="bookingOrganization" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
@@ -87,7 +86,7 @@
       <path value="Appointment.extension" />
       <sliceName value="deliveryChannel" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel" />
@@ -100,6 +99,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="Appointment.specialty">
+      <path value="Appointment.specialty" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes identifying each main specialty designated by Royal Colleges." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MainSpecialty" />
+      </binding>
     </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
