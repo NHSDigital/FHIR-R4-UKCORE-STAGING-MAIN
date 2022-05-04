@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Schedule" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreSchedule" />
   <title value="UK Core Schedule" />
-  <status value="draft" />
-  <date value="2022-03-01" />
+  <status value="active" />
+  <date value="2022-05-20" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -57,6 +57,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="Schedule.specialty">
+      <path value="Schedule.specialty" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes identifying each main specialty designated by Royal Colleges." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MainSpecialty" />
+      </binding>
     </element>
     <element id="Schedule.actor">
       <path value="Schedule.actor" />

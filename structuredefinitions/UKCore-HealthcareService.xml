@@ -57,6 +57,14 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="HealthcareService.specialty">
+      <path value="HealthcareService.specialty" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes identifying each main specialty designated by Royal Colleges." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MainSpecialty" />
+      </binding>
+    </element>
     <element id="HealthcareService.location">
       <path value="HealthcareService.location" />
       <type>
@@ -88,7 +96,7 @@
     <element id="HealthcareService.communication">
       <path value="HealthcareService.communication" />
       <binding>
-        <strength value="preferred" />
+        <strength value="extensible" />
         <description value="A ValueSet that identifies the language used by a person." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
       </binding>
