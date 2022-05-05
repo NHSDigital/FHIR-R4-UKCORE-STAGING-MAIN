@@ -75,5 +75,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
       </type>
     </element>
+    <element id="Questionnaire.code">
+      <path value="Questionnaire.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define questions or groups of questions, consisting of the entirety of the SNOMED CT UK Coding System. This set of codes may not necessarily be complete or appropriate and may require further discussion in the future." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-QuestionnaireQuestionCodes" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
