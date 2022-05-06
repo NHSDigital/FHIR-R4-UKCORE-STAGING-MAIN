@@ -11,23 +11,23 @@
 	<active value="true"/>
 	<serviceCategory>
 		<coding>
-		<system value="http://terminology.hl7.org/CodeSystem/service-category"/>
+			<system value="http://terminology.hl7.org/CodeSystem/service-category"/>
 			<code value="17"/>
 			<display value="General Practice"/>
 		</coding>
 	</serviceCategory>
 	<serviceType>
 		<coding>
-		<system value="http://snomed.info/sct"/>
+			<system value="http://snomed.info/sct"/>
 			<code value="708190004"/>
 			<display value="Immunology service"/>
 		</coding>
 	</serviceType>
 	<specialty>
 		<coding>
-		<system value="http://snomed.info/sct"/>
-			<code value="408480009"/>
-			<display value="Clinical immunology"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MainSpecialtyCodeEngland"/>
+			<code value="313"/>
+			<display value="Clinical Immunology"/>
 		</coding>
 	</specialty>
 	<actor>

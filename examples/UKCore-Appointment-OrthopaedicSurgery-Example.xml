@@ -35,9 +35,9 @@
 	</serviceType>
 	<specialty>
 		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="394801008"/>
-			<display value="Trauma &amp; orthopaedics"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MainSpecialtyCodeEngland"/>
+			<code value="110"/>
+			<display value="Trauma and Orthopaedics"/>
 		</coding>
 	</specialty>
 	<appointmentType>

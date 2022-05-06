@@ -16,18 +16,6 @@
 		</valueCodeableConcept>
 	</extension>
 	<!-- **************extension end ****************** -->
-	<!--	The method used to send or receive a service request.-->
-	<!-- ***************extension start*************** -->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ServiceRequestMethod">
-		<valueCodeableConcept>
-			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ServiceRequestMethod"/>
-				<code value="6"/>
-				<display value="NHS E-Referral Service"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
-	<!-- **************extension end ****************** -->
 	<status value="active"/>
 	<intent value="order"/>
 	<code>
