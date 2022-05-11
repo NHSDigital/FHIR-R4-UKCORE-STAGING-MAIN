@@ -58,14 +58,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Schedule.specialty">
-      <path value="Schedule.specialty" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A set of codes identifying each main specialty designated by Royal Colleges." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MainSpecialty" />
-      </binding>
-    </element>
     <element id="Schedule.actor">
       <path value="Schedule.actor" />
       <type>

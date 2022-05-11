@@ -26,9 +26,9 @@
 	</serviceType>
 	<specialty>
 		<coding>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MainSpecialtyCodeEngland"/>
-			<code value="313"/>
-			<display value="Clinical Immunology"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="408480009"/>
+			<display value="Clinical immunology"/>
 		</coding>
 	</specialty>
 	<appointmentType>
