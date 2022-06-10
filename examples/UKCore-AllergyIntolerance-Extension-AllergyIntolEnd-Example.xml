@@ -17,8 +17,8 @@
 	<clinicalStatus>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
-			<code value="active"/>
-			<display value="Active"/>
+			<code value="inactive"/>
+			<display value="Inactive"/>
 		</coding>
 	</clinicalStatus>
 	<verificationStatus>

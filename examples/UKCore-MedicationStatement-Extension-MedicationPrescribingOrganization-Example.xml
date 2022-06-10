@@ -18,7 +18,7 @@
 	<status value="active"/>
 	<medicationCodeableConcept>
 		<coding>
-			<system value="https://dmd.nhs.uk/"/>
+			<system value="https://dmd.nhs.uk"/>
 			<code value="39732311000001104"/>
 			<display value="Amoxicillin 250mg capsules"/>
 		</coding>
