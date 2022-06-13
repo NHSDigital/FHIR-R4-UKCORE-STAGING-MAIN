@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Immunization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Immunization-Extension-VaccinationProcedure-COVID-Example"/>
 	<!-- **************extension start************** -->
@@ -17,7 +16,7 @@
 		<coding>
 			<system value="https://dmd.nhs.uk"/>
 			<code value="39116211000001106"/>
-			<display value="Generic COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose suspension for injection multidose vials"/>
+			<display value="Generic COVID-19 Vaccine Vaxzevria (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose suspension for injection multidose vials"/>
 		</coding>
 	</vaccineCode>
 	<patient>
