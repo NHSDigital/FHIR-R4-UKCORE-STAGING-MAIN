@@ -19,6 +19,7 @@
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
+	<authoredOn value="2022-09-10T15:00:00.000Z"/>
 	<requester>
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</requester>
