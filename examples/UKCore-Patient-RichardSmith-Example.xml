@@ -59,16 +59,6 @@
 			<valueDateTime value="2019-08-01T00:00:00.000Z"/>
 		</extension>
 	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">
-		<valueReference>
-			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
-		</valueReference>
-	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
-		<valueReference>
-			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
-		</valueReference>
-	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus">
 		<valueCodeableConcept>
 			<coding>
