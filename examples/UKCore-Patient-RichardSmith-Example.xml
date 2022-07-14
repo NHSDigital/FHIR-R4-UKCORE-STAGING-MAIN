@@ -1,4 +1,4 @@
-<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitHub/SchemasR4/fhir-all-xsd%20(1)/fhir-all-xsd/patient.xsd">
+<Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-RichardSmith-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
