@@ -1,4 +1,4 @@
-<Patient xmlns="http://hl7.org/fhir">
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitHub/SchemasR4/fhir-all-xsd%20(1)/fhir-all-xsd/patient.xsd">
 	<id value="UKCore-Patient-RichardSmith-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
@@ -58,16 +58,6 @@
 		<extension url="systemEffectiveDate">
 			<valueDateTime value="2019-08-01T00:00:00.000Z"/>
 		</extension>
-	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">
-		<valueReference>
-			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
-		</valueReference>
-	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
-		<valueReference>
-			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
-		</valueReference>
 	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus">
 		<valueCodeableConcept>
