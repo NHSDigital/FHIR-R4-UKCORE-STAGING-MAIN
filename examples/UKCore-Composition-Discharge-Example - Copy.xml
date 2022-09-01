@@ -44,7 +44,7 @@ not necessarily who typed it in-->
         <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
     </author>
     <title value="Accident &amp; Emergency Discharge summary"/>
-    <!--Identifies the organisation responsible for ongoing maintenance of and 
+    <!--Identifies the organization responsible for ongoing maintenance of and 
 access to the composition/document information.-->
     <custodian>
         <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc"/>
