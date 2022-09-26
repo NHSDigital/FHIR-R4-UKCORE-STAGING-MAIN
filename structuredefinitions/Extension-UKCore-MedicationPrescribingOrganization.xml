@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-MedicationPrescribingOrganization" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganization" />
+  <id value="Extension-UKCore-MedicationPrescribingOrganizationType" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType" />
   <version value="1.0.0" />
-  <name value="ExtensionUKCoreMedicationPrescribingOrganization" />
-  <title value="Extension UK Core Medication Prescribing Organization" />
+  <name value="ExtensionUKCoreMedicationPrescribingOrganizationType" />
+  <title value="Extension UK Core Medication Prescribing Organization Type" />
   <status value="active" />
   <date value="2021-09-10" />
   <publisher value="HL7 UK" />
@@ -53,7 +53,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganization" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

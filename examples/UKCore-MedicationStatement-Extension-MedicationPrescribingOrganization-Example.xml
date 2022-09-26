@@ -5,7 +5,7 @@
 	</meta>
 	<!-- **************extension start************** -->
 	<!--Medication Prescribing Organization extension details-->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganization">
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType">
 		<valueCodeableConcept>
 		<coding>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
