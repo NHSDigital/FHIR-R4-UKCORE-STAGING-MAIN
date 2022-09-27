@@ -52,8 +52,6 @@
 						<display value="Confirmed"/>
 					</coding>
 				</verificationStatus>
-				<type value="allergy"/>
-				<category value="medication"/>
 				<code>
 					<coding>
 						<system value="http://snomed.info/sct"/>
