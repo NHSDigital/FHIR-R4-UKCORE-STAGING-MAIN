@@ -23,15 +23,13 @@
 			<display value="Confirmed"/>
 		</coding>
 	</verificationStatus>
-	<type value="allergy"/>
-	<category value="medication"/>
 	<code>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="372687004"/>
-      <display value="Amoxicillin"/>
-    </coding>
-  </code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="372687004"/>
+			<display value="Amoxicillin"/>
+		</coding>
+	</code>
 	<patient>
 		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
 	</patient>
