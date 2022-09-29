@@ -65,7 +65,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingOrganization" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingOrganizationType" />
       </binding>
     </element>
   </differential>
