@@ -75,9 +75,9 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:medicationPrescribingOrganization">
+    <element id="MedicationStatement.extension:medicationPrescribingOrganizationType">
       <path value="MedicationStatement.extension" />
-      <sliceName value="medicationPrescribingOrganization" />
+      <sliceName value="medicationPrescribingOrganizationType" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType" />
