@@ -91,11 +91,7 @@
 		<value value="01131231234"/>
 	</telecom>
 	<gender value="male"/>
-	<birthDate value="1970-09-11">
-		<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-			<valueDateTime value="1970-09-11T13:46:00+00:00"/>
-		</extension>
-	</birthDate>
+	<birthDate value="1970-09-11"/>
 	<address>
 		<line value="4 Sandmoor Drive"/>
 		<line value="LEEDS"/>
