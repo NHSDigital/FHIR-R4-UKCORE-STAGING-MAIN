@@ -4,9 +4,9 @@
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
     <valueCodeableConcept>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory" />
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland" />
         <code value="A" />
-        <display value="British, Mixed British" />
+        <display value="White - British" />
       </coding>
     </valueCodeableConcept>
   </extension>
