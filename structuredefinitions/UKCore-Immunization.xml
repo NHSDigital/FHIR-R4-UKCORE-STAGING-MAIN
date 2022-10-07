@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Immunization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
