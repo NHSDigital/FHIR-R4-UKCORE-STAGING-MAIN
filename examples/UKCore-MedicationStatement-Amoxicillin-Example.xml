@@ -42,8 +42,8 @@
 		<asNeededCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="16001004"/>
-				<display value="Otalgia"/>
+				<code value="301354004"/>
+				<display value="pain in ear"/>
 			</coding>
 		</asNeededCodeableConcept>
 		<site>
