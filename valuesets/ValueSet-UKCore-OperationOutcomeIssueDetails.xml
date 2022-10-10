@@ -277,7 +277,7 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="INVALID_NUMBER_MEDICATIONREQUESTS"/>
-			<display value="Number of items on a prescription should be between 1 and 4"/>
+			<display value="Number of items on a prescription SHALL be between 1 and 4"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
@@ -379,7 +379,7 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="INVALID_REPEAT_COUNT"/>
-			<display value="Repeat count should be between 1 and 99"/>
+			<display value="Repeat count SHALL be between 1 and 99"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>
