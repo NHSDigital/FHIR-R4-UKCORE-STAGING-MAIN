@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="UKCore-EPSIssueCode" />
 	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode" />
-	<version value="1.0.0" />
+	<version value="1.1.0" />
 	<name value="UKCoreEPSIssueCode" />
 	<title value="UK Core EPS Issue Code" />
 	<status value="active" />
-	<date value="2022-01-07" />
+	<date value="2022-08-26" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
