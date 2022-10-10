@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="UKCore-EPSIssueCode" />
 	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode" />
-	<version value="1.0.0" />
+	<version value="1.1.0" />
 	<name value="UKCoreEPSIssueCode" />
 	<title value="UK Core EPS Issue Code" />
 	<status value="active" />
-	<date value="2022-01-07" />
+	<date value="2022-08-26" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
@@ -37,22 +37,22 @@
 	<concept>
 		<code value="DUPLICATE_PRESCRIPTION_ID" />
 		<display value="Duplicate prescription ID exists" />
-		<definition value="The System must create a new prescription UUID and re-submit the prescription to the Spine." />
+		<definition value="The System SHALL create a new prescription UUID and re-submit the prescription to the Spine." />
 	</concept>
 	<concept>
 		<code value="MISSING_DIGITAL_SIGNATURE" />
 		<display value="Digital signature not found" />
-		<definition value="The System must create and apply a digital signature to the prescription and re-submit the prescription to the Spine" />
+		<definition value="The System SHALL create and apply a digital signature to the prescription and re-submit the prescription to the Spine" />
 	</concept>
 	<concept>
 		<code value="INVALID_MESSAGE" />
 		<display value="Invalid message" />
-		<definition value="The prescription message has failed structural validation at the Spine. A defect report should be raised against the local System or the Spine (whichever is in error). The prescriber must be notified accordingly to use a paper FP10 prescription." />
+		<definition value="The prescription message has failed structural validation at the Spine. A defect report SHOULD be raised against the local System or the Spine (whichever is in error). The prescriber SHALL be notified accordingly to use a paper FP10 prescription." />
 	</concept>
 	<concept>
 		<code value="INVALID_NUMBER_MEDICATIONREQUESTS" />
-		<display value="Number of items on a prescription should be between 1 and 4" />
-		<definition value="The prescriber must be notified accordingly and asked to split the items across separate prescriptions." />
+		<display value="Number of items on a prescription SHALL be between 1 and 4" />
+		<definition value="The prescriber SHALL be notified accordingly and asked to split the items across separate prescriptions." />
 	</concept>
 	<concept>
 		<code value="MISMATCH_AUTHORISED_REPEAT_COUNT" />
@@ -61,23 +61,23 @@
 	</concept>
 	<concept>
 		<code value="INVALID_REPEAT_COUNT" />
-		<display value="Repeat count should be between 1 and 99" />
+		<display value="Repeat count SHALL be between 1 and 99" />
 		<definition value="The maximum “high” value for the “repeatNumber” attribute is 99." />
 	</concept>
 	<concept>
 		<code value="DUPLICATE_MEDICATIONREQUEST_ID" />
 		<display value="Duplicate item ID exists" />
-		<definition value="The System must create a new line item UUID and re-submit the prescription to the Spine." />
+		<definition value="The System SHALL create a new line item UUID and re-submit the prescription to the Spine." />
 	</concept>
 	<concept>
 		<code value="INVALID_CHECK_DIGIT" />
 		<display value="Error in check digit" />
-		<definition value="The System must re-calculate / correct the check digit and re-submit the prescription to the Spine." />
+		<definition value="The System SHALL re-calculate / correct the check digit and re-submit the prescription to the Spine." />
 	</concept>
 	<concept>
 		<code value="INVALID_DATE_FORMAT" />
 		<display value="Format of date passed is invalid" />
-		<definition value="The format of a date/time attribute with the prescription does not confirm with the format defined within the DMS. The System must correct the date/time attribute and re-submit the prescription to the Spine." />
+		<definition value="The format of a date/time attribute with the prescription does not confirm with the format defined within the DMS. The System SHALL correct the date/time attribute and re-submit the prescription to the Spine." />
 	</concept>
 	<concept>
 		<code value="PRESCRIPTION_CANCELLED" />
@@ -107,7 +107,7 @@
 	<concept>
 		<code value="SERVICE_DISABLED" />
 		<display value="functionality disabled in spine" />
-		<definition value="The Spine nomination functionality has been disabled at the request of the Authority and the message is rejected. The request will not be processed. However, the prescription request by prescription unique identifier should be available." />
+		<definition value="The Spine nomination functionality has been disabled at the request of the Authority and the message is rejected. The request will not be processed. However, the prescription request by prescription unique identifier SHOULD be available." />
 	</concept>
 	<concept>
 		<code value="PRESCRIPTION_NOT_FOUND" />

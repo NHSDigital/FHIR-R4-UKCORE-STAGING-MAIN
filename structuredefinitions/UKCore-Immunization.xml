@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Immunization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -66,7 +66,7 @@
       <constraint>
         <key value="ukcore-imm-1" />
         <severity value="error" />
-        <human value="If the immunization was not given then Immunization.status value MUST = 'not-done', and the Immunization.statusReason MUST be populated" />
+        <human value="If the immunization was not given then Immunization.status value SHALL = 'not-done', and the Immunization.statusReason SHALL be populated" />
         <expression value="(status != 'not-done') or (status = 'not-done' and statusReason.exists())" />
         <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
       </constraint>
