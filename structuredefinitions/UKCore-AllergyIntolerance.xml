@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-AllergyIntolerance" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreAllergyIntolerance" />
   <title value="UK Core AllergyIntolerance" />
   <status value="active" />
-  <date value="2022-03-01" />
+  <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -62,15 +62,6 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="AllergyIntolerance.extension:allergyIntoleranceEnd">
-      <path value="AllergyIntolerance.extension" />
-      <sliceName value="allergyIntoleranceEnd" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd" />
-      </type>
-    </element>
     <element id="AllergyIntolerance.extension:evidence">
       <path value="AllergyIntolerance.extension" />
       <sliceName value="evidence" />
@@ -87,6 +78,28 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="AllergyIntolerance.clinicalStatus.extension">
+      <path value="AllergyIntolerance.clinicalStatus.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="AllergyIntolerance.clinicalStatus.extension:myExtension">
+      <path value="AllergyIntolerance.clinicalStatus.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
