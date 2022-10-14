@@ -38,4 +38,168 @@
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>  
     </include> 
   </compose>
+  <expansion>
+        <identifier value="3368b10a-72be-4c8c-9d57-133c63bbd41a"/>
+        <timestamp value="2022-10-14T14:04:59+00:00"/>
+        <total value="25"/>
+        <offset value="0"/>
+        <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+        </parameter>
+        <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+        </parameter>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+            <version value="1.0.0"/>
+            <code value="S"/>
+            <display value="Single"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+            <version value="1.0.0"/>
+            <code value="M"/>
+            <display value="Married/Civil Partner"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+            <version value="1.0.0"/>
+            <code value="D"/>
+            <display value="Divorced/Person whose Civil Partnership has been dissolved"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+            <version value="1.0.0"/>
+            <code value="W"/>
+            <display value="Widowed/Surviving Civil Partner"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+            <version value="1.0.0"/>
+            <code value="P"/>
+            <display value="Separated"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+            <version value="1.0.0"/>
+            <code value="N"/>
+            <display value="Not disclosed"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="A"/>
+            <display value="Never married nor registered civil partnership"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="B"/>
+            <display value="Married"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="C"/>
+            <display value="Registered civil partnership"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="D"/>
+            <display value="Separated, but still married"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="E"/>
+            <display value="Separated, but still in civil partnership"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="F"/>
+            <display value="Divorced"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="G"/>
+            <display value="Dissolved civil partnership"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="H"/>
+            <display value="Widowed"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="J"/>
+            <display value="Surviving civil partner"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="Y"/>
+            <display value="Other"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusScotland"/>
+            <version value="1.0.0"/>
+            <code value="Z"/>
+            <display value="Not known"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="S"/>
+            <display value="Single"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="M"/>
+            <display value="Married / Civil Partner"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="D"/>
+            <display value="Divorced / Person whose Civil Partnership has been dissolved"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="W"/>
+            <display value="Widowed / Surviving Civil Partner"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="P"/>
+            <display value="Separated"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="N"/>
+            <display value="Not disclosed"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="8"/>
+            <display value="Not applicable"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+            <version value="1.0.0"/>
+            <code value="9"/>
+            <display value="Not known"/>
+        </contains>
+    </expansion>
 </ValueSet>
