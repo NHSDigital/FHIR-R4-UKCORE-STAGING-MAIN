@@ -12,11 +12,6 @@
 				<valueString value="Administrative error corrected on patient record - confirmed that allergy not experienced with the patient." />
 			</extension>
 		</extension>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
-			<code value = "inactive" />
-			<display value = "Inactive" />
-		</coding>
 	</clinicalStatus>
     <verificationStatus>
         <coding>
