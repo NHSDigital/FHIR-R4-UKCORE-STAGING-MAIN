@@ -1,0 +1,12 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Bundle-Snippet-NoAllergyData-Example"/>
+	<meta>
+		<lastUpdated value="2021-07-21T12:00:00+00:00"/>
+	</meta>
+	<type value="searchset"/>
+	<total value="0"/>
+	<link>
+		<relation value="self"/>
+		<url value="https://[base]/AllergyIntolerance?patient%3Aidentifier=9912003888"/>
+	</link>
+</Bundle>
