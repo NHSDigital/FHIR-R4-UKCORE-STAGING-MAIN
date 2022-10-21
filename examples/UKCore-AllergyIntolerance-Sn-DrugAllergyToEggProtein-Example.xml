@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyIntolerance-Snippet-DrugAllergy-Example"/>
+	<id value="UKCore-AllergyIntolerance-Sn-DrugAllergyToEggProtein-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
 	</meta>
@@ -22,9 +22,9 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="196461000000101"/>
-			<display value="transfer-degraded non-drug allergy(record artifact)"/>
+			<display value="Transfer-degraded drug allergy (record artifact)"/>
 		</coding>
-		<text value="9339101000001105 | Septrin"/>
+		<text value="213020009 | Allergy to egg protein"/>
 	</code>
 	<!-- **************Snippet end************** -->
 	<patient>
