@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyIntolerance-Snippet-NegationHandlingOfNoKnownAllergies-Example"/>
+	<id value="UKCore-AllergyIntolerance-Sn-DrugAllergy-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
 	</meta>
@@ -21,9 +21,10 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="409137002"/>
-			<display value="No known drug allergy (situation)"/>
+			<code value="196461000000101"/>
+			<display value="Transfer-degraded drug allergy (record artifact)"/>
 		</coding>
+		<text value="9339101000001105 | Septrin"/>
 	</code>
 	<!-- **************Snippet end************** -->
 	<patient>

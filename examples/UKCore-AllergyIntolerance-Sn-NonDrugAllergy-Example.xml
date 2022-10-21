@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyIntolerance-Snippet-DrugAllergyToEggProtein-Example"/>
+	<id value="UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
 	</meta>
@@ -21,10 +21,10 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="196461000000101"/>
-			<display value="transfer-degraded drug allergy (record artifact)"/>
+			<code value="196471000000108"/>
+			<display value="Transfer-degraded non-drug allergy (record artifact)"/>
 		</coding>
-		<text value="213020009 | Allergy to egg protein"/>
+		<text value="Latex"/>
 	</code>
 	<!-- **************Snippet end************** -->
 	<patient>

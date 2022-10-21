@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyIntolerance-Snippet-NonDrugAllergy-Example"/>
+	<id value="UKCore-AllergyIntolerance-Sn-NegHandlNoKnownAllergies-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
 	</meta>
@@ -21,10 +21,9 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="196471000000108"/>
-			<display value="transfer-degraded non-drug allergy(record artifact)"/>
+			<code value="409137002"/>
+			<display value="No known drug allergy (situation)"/>
 		</coding>
-		<text value="Latex"/>
 	</code>
 	<!-- **************Snippet end************** -->
 	<patient>
