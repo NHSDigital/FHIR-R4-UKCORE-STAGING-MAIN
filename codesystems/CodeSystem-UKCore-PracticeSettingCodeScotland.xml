@@ -1,0 +1,408 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-PracticeSettingCodeScotland" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCodeScotland" />
+  <version value="1.0.0" />
+  <name value="UKCorePracticeSettingCodeScotland" />
+  <title value="UKCore Practice Setting Code Scotland" />
+  <status value="active" />
+  <date value="2022-08-26" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="secretariat@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="2" />
+    </telecom>
+  </contact>
+  <description value="This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in Scotland and are copied from the content of the Public Health Scotland web page at https://www.opendata.nhs.scot/dataset/specialty-codes on 20/10/2022." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+<concept>
+	<code value = "A1" />
+	display value = "General Medicine" />
+</concept>
+<concept>
+	<code value = "A11" />
+	display value = "Acute Medicine" />
+</concept>
+<concept>
+	<code value = "A2" />
+	display value = "Cardiology" />
+</concept>
+<concept>
+	<code value = "A21" />
+	display value = "Paediatric Cardiology" />
+</concept>
+<concept>
+	<code value = "A3" />
+	display value = "Clinical Genetics" />
+</concept>
+<concept>
+	<code value = "A4" />
+	display value = "Tropical Medicine" />
+</concept>
+<concept>
+	<code value = "A5" />
+	display value = "Clinical Pharmacology &amp; Therapeutics" />
+</concept>
+<concept>
+	<code value = "A6" />
+	display value = "Infectious Diseases" />
+</concept>
+<concept>
+	<code value = "A7" />
+	display value = "Dermatology" />
+</concept>
+<concept>
+	<code value = "A8" />
+	display value = "Endocrinology &amp; Diabetes" />
+</concept>
+<concept>
+	<code value = "A81" />
+	display value = "Endocrinology" />
+</concept>
+<concept>
+	<code value = "A82" />
+	display value = "Diabetes" />
+</concept>
+<concept>
+	<code value = "A9" />
+	display value = "Gastroenterology" />
+</concept>
+<concept>
+	<code value = "AA" />
+	display value = "Genito-Urinary Medicine" />
+</concept>
+<concept>
+	<code value = "AB" />
+	display value = "Geriatric Medicine" />
+</concept>
+<concept>
+	<code value = "AC" />
+	display value = "Homeopathy" />
+</concept>
+<concept>
+	<code value = "AD" />
+	display value = "Medical Oncology" />
+</concept>
+<concept>
+	<code value = "AF" />
+	display value = "Paediatrics" />
+</concept>
+<concept>
+	<code value = "AFA" />
+	display value = "Community Child Health" />
+</concept>
+<concept>
+	<code value = "AG" />
+	display value = "Renal Medicine" />
+</concept>
+<concept>
+	<code value = "AH" />
+	display value = "Neurology" />
+</concept>
+<concept>
+	<code value = "AJ" />
+	display value = "Integrative Care" />
+</concept>
+<concept>
+	<code value = "AK" />
+	display value = "Occupational Medicine" />
+</concept>
+<concept>
+	<code value = "AM" />
+	display value = "Palliative Medicine" />
+</concept>
+<concept>
+	<code value = "AN" />
+	display value = "Public Health Medicine" />
+</concept>
+<concept>
+	<code value = "AP" />
+	display value = "Rehabilitation Medicine" />
+</concept>
+<concept>
+	<code value = "AQ" />
+	display value = "Respiratory Medicine" />
+</concept>
+<concept>
+	<code value = "AR" />
+	display value = "Rheumatology" />
+</concept>
+<concept>
+	<code value = "AS" />
+	display value = "Sport &amp; Exercise Medicine" />
+</concept>
+<concept>
+	<code value = "AT" />
+	display value = "Medical Ophthalmology" />
+</concept>
+<concept>
+	<code value = "AV" />
+	display value = "Clinical Neurophysiology" />
+</concept>
+<concept>
+	<code value = "AW" />
+	display value = "Allergy" />
+</concept>
+<concept>
+	<code value = "C1" />
+	display value = "General Surgery" />
+</concept>
+<concept>
+	<code value = "C11" />
+	display value = "General Surgery (excl Vascular)" />
+</concept>
+<concept>
+	<code value = "C12" />
+	display value = "Vascular Surgery" />
+</concept>
+<concept>
+	<code value = "C13" />
+	display value = "Oral and Maxillofacial Surgery" />
+</concept>
+<concept>
+	<code value = "C2" />
+	display value = "Accident &amp; Emergency" />
+</concept>
+<concept>
+	<code value = "C3" />
+	display value = "Anaesthetics" />
+</concept>
+<concept>
+	<code value = "C31" />
+	display value = "Pain Management" />
+</concept>
+<concept>
+	<code value = "C4" />
+	display value = "Cardiothoracic Surgery" />
+</concept>
+<concept>
+	<code value = "C41" />
+	display value = "Cardiac Surgery" />
+</concept>
+<concept>
+	<code value = "C42" />
+	display value = "Thoracic Surgery" />
+</concept>
+<concept>
+	<code value = "C5" />
+	display value = "Ear, Nose &amp; Throat (ENT)" />
+</concept>
+<concept>
+	<code value = "C51" />
+	display value = "Audiological Medicine" />
+</concept>
+<concept>
+	<code value = "C6" />
+	display value = "Neurosurgery" />
+</concept>
+<concept>
+	<code value = "C7" />
+	display value = "Ophthalmology" />
+</concept>
+<concept>
+	<code value = "C8" />
+	display value = "Trauma and Orthopaedic Surgery" />
+</concept>
+<concept>
+	<code value = "C9" />
+	display value = "Plastic Surgery" />
+</concept>
+<concept>
+	<code value = "C91" />
+	display value = "Cleft Lip and Palate Surgery" />
+</concept>
+<concept>
+	<code value = "CA" />
+	display value = "Paediatric Surgery" />
+</concept>
+<concept>
+	<code value = "CB" />
+	display value = "Urology" />
+</concept>
+<concept>
+	<code value = "CC" />
+	display value = "Intensive Care Medicine" />
+</concept>
+<concept>
+	<code value = "D1" />
+	display value = "Community Dental Practice" />
+</concept>
+<concept>
+	<code value = "D2" />
+	display value = "General Dental Practice" />
+</concept>
+<concept>
+	<code value = "D3" />
+	display value = "Oral Surgery" />
+</concept>
+<concept>
+	<code value = "D4" />
+	display value = "Oral Medicine" />
+</concept>
+<concept>
+	<code value = "D5" />
+	display value = "Orthodontics" />
+</concept>
+<concept>
+	<code value = "D6" />
+	display value = "Restorative Dentistry" />
+</concept>
+<concept>
+	<code value = "D61" />
+	display value = "Restorative Dentistry - Endodontics" />
+</concept>
+<concept>
+	<code value = "D62" />
+	display value = "Restorative Dentistry - Periodontics" />
+</concept>
+<concept>
+	<code value = "D63" />
+	display value = "Restorative Dentistry - Prosthodontics" />
+</concept>
+<concept>
+	<code value = "D7" />
+	display value = "Dental Public Health" />
+</concept>
+<concept>
+	<code value = "D8" />
+	display value = "Paediatric Dentistry" />
+</concept>
+<concept>
+	<code value = "D9" />
+	display value = "Oral Pathology" />
+</concept>
+<concept>
+	<code value = "DA" />
+	display value = "Oral Microbiology" />
+</concept>
+<concept>
+	<code value = "DB" />
+	display value = "Dental &amp; Maxillofacial Radiology" />
+</concept>
+<concept>
+	<code value = "DC" />
+	display value = "Surgical Dentistry" />
+</concept>
+<concept>
+	<code value = "DD" />
+	display value = "Fixed &amp; Removable Prosthodontics" />
+</concept>
+<concept>
+	<code value = "DE" />
+	display value = "Special Care Dentistry" />
+</concept>
+<concept>
+	<code value = "E1" />
+	display value = "General Practice" />
+</concept>
+<concept>
+	<code value = "E11" />
+	display value = "GP Obstetrics" />
+</concept>
+<concept>
+	<code value = "E12" />
+	display value = "GP Other than Obstetrics" />
+</concept>
+<concept>
+	<code value = "F1" />
+	display value = "Obstetrics &amp; Gynaecology" />
+</concept>
+<concept>
+	<code value = "F1A" />
+	display value = "Well Woman Service" />
+</concept>
+<concept>
+	<code value = "F1B" />
+	display value = "Family Planning Service" />
+</concept>
+<concept>
+	<code value = "F2" />
+	display value = "Gynaecology" />
+</concept>
+<concept>
+	<code value = "F3" />
+	display value = "Obstetrics" />
+</concept>
+<concept>
+	<code value = "F31" />
+	display value = "Obstetrics Ante-Natal" />
+</concept>
+<concept>
+	<code value = "F32" />
+	display value = "Obstetrics Post-Natal" />
+</concept>
+<concept>
+	<code value = "F4" />
+	display value = "Community Sexual &amp; Reproductive Health" />
+</concept>
+<concept>
+	<code value = "G1" />
+	display value = "General Psychiatry (Mental Illness)" />
+</concept>
+<concept>
+	<code value = "G1A" />
+	display value = "Community Psychiatry" />
+</concept>
+<concept>
+	<code value = "G2" />
+	display value = "Child &amp; Adolescent Psychiatry" />
+</concept>
+<concept>
+	<code value = "G21" />
+	display value = "Child Psychiatry" />
+</concept>
+<concept>
+	<code value = "G22" />
+	display value = "Adolescent Psychiatry" />
+</concept>
+<concept>
+	<code value = "G3" />
+	display value = "Forensic Psychiatry" />
+</concept>
+<concept>
+	<code value = "G4" />
+	display value = "Psychiatry of Old Age" />
+</concept>
+<concept>
+	<code value = "G5" />
+	display value = "Learning Disability" />
+</concept>
+<concept>
+	<code value = "G6" />
+	display value = "Psychotherapy" />
+</concept>
+<concept>
+	<code value = "G61" />
+	display value = "Behavioural Psychotherapy" />
+</concept>
+<concept>
+	<code value = "G62" />
+	display value = "Child &amp; Adolescent Psychotherapy" />
+</concept>
+<concept>
+	<code value = "G63" />
+	display value = "Adult Psychotherapy" />
+</concept>
+<concept>
+	<code value = "H1" />
+	display value = "Clinical Radiology" />
+</concept>
+<concept>
+	<code value = "H1A" />
+	display value = "Breast Screening Service" />
+</concept>
+</CodeSystem>
