@@ -1,5 +1,5 @@
 <List xmlns="http://hl7.org/fhir">
-	<id value="UKCore-List-Snippet-NoAllergyData-Example"/>
+	<id value="UKCore-List-Sn-NoAllergyData-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List"/>
 	</meta>

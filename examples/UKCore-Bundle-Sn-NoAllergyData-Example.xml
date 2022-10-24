@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Bundle-Snippet-NoAllergyData-Example"/>
+	<id value="UKCore-Bundle-Sn-NoAllergyData-Example"/>
 	<meta>
 		<lastUpdated value="2021-07-21T12:00:00+00:00"/>
 	</meta>
