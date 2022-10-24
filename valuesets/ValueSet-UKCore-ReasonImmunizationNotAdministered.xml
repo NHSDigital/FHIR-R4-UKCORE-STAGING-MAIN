@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ReasonImmunizationNotAdministered"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered"/>
-	<version value="2.2.0" />
+	<version value="2.3.0" />
 	<name value="UKCoreReasonImmunizationNotAdministered"/>
 	<title value="UK Core Reason Immunization Not Administered"/>
 	<status value="active" />
-	<date value="2022-08-26" />
+	<date value="2022-10-24" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
@@ -33,11 +33,30 @@
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="201741000000102 OR 281399006 OR 213257006 OR 266758009 OR 310376006"/>
+				<value value="201741000000102 OR 281399006 OR 213257006 OR descendantOrSelfOf 266758009 OR descendantOrSelfOf 310376006 OR descendantOrSelfOf 591000119102"/>
 			</filter>
 		</include>
 	</compose>
-	<expansion>
+    <expansion>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+        </extension>
+        <identifier value="d78843bf-e92d-42a6-8955-18a4cb38210e"/>
+        <timestamp value="2021-09-09T12:52:29+00:00"/>
+        <total value="159"/>
+        <offset value="0"/>
+        <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20220928"/>
+        </parameter>
+        <parameter>
+            <name value="count"/>
+            <valueInteger value="2147483647"/>
+        </parameter>
+        <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+        </parameter>
 		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
 			<valueBoolean value="true"/>
 		</extension>
@@ -59,6 +78,56 @@
 		</parameter>
 		<contains>
 			<system value="http://snomed.info/sct"/>
+			<code value="942561000000105"/>
+			<display value="Anthrax vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="715166006"/>
+			<display value="Bacillus Calmette-Guerin vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="408791003"/>
+			<display value="BCG vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="722396000"/>
+			<display value="Booster meningitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="700359005"/>
+			<display value="Booster meningitis C vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719469002"/>
+			<display value="Cholera vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="894681000000107"/>
+			<display value="Cholera vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719324009"/>
+			<display value="Combined hepatitis A and B vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="827101000000105"/>
+			<display value="Combined hepatitis A and B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="183936003"/>
+			<display value="Contraindication to live immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
 			<code value="281399006"/>
 			<display value="Did not attend"/>
 		</contains>
@@ -69,8 +138,138 @@
 		</contains>
 		<contains>
 			<system value="http://snomed.info/sct"/>
+			<code value="715163003"/>
+			<display value="Diphtheria vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1083421000000107"/>
+			<display value="Diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1082521000000100"/>
+			<display value="Diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="897351000000102"/>
+			<display value="Diphtheria, tetanus, acellular pertussis and inactivated polio vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="511531000000109"/>
+			<display value="Diphtheria, tetanus, acellular pertussis, inactivated polio vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="898291000000101"/>
+			<display value="Diphtheria, tetanus, acellular pertussis, inactivated polio vaccine, Haemophilus influenzae type b vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="511571000000106"/>
+			<display value="Diphtheria, tetanus, acellular pertussis, inactivated polio vaccine, haemophilus influenzae type b vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="903241000000108"/>
+			<display value="Diphtheria, tetanus, inactivated polio vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="903281000000100"/>
+			<display value="Diphtheria, tetanus, inactivated polio vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1086431000000100"/>
+			<display value="First diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="871521000000104"/>
+			<display value="First intranasal influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="885991000000104"/>
+			<display value="First intranasal pandemic influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="885971000000103"/>
+			<display value="First intranasal seasonal influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="722397009"/>
+			<display value="First meningitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="882201000000107"/>
+			<display value="First rotavirus vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
 			<code value="213257006"/>
 			<display value="Generally unwell"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="897331000000109"/>
+			<display value="Haemophilus influenzae type b and meningitis C vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="299161000000100"/>
+			<display value="Haemophilus influenzae type B and meningitis C vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719886001"/>
+			<display value="Haemophilus influenzae type b vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719330009"/>
+			<display value="Hepatitis A vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="11121000175106"/>
+			<display value="Hepatitis A vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="408778004"/>
+			<display value="Hepatitis B immunisation declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="699037006"/>
+			<display value="Hepatitis B vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="868531000000103"/>
+			<display value="Herpes zoster vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="9691000175102"/>
+			<display value="Herpes zoster vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="761844008"/>
+			<display value="Human papilloma virus vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="438765003"/>
+			<display value="Human papillomavirus vaccination declined"/>
 		</contains>
 		<contains>
 			<system value="http://snomed.info/sct"/>
@@ -81,6 +280,596 @@
 			<system value="http://snomed.info/sct"/>
 			<code value="266758009"/>
 			<display value="Immunisation contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157198004"/>
+			<display value="Inactivated whole SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157200005"/>
+			<display value="Inactivated whole SARS-CoV-2 antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="698950001"/>
+			<display value="Influenza A virus subtype H1N1 vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="390796006"/>
+			<display value="Influenza vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="315640000"/>
+			<display value="Influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="130651000119102"/>
+			<display value="Influenza vaccination declined by caregiver"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719458000"/>
+			<display value="Japanese encephalitis vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1239871000000107"/>
+			<display value="Live attenuated influenza vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="505031000000103"/>
+			<display value="Measles mumps rubella catch-up vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719467000"/>
+			<display value="Measles vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="9711000175104"/>
+			<display value="Measles, mumps and rubella vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="275974002"/>
+			<display value="Measles/mumps/rubella vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="957771000000107"/>
+			<display value="Meningitis ACW &amp; Y vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="957791000000106"/>
+			<display value="Meningitis ACW &amp; Y vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="957601000000106"/>
+			<display value="Meningitis B vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="720548009"/>
+			<display value="Meningitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="395703005"/>
+			<display value="Meningitis C immunisation declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719598000"/>
+			<display value="Meningitis C vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="23691000175109"/>
+			<display value="Meningococcal vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171271006"/>
+			<display value="No consent - BCG"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171266004"/>
+			<display value="No consent - diphtheria immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171272004"/>
+			<display value="No consent - influenza immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171269006"/>
+			<display value="No consent - measles immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171265000"/>
+			<display value="No consent - pertussis immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171268003"/>
+			<display value="No consent - polio immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171285001"/>
+			<display value="No consent - pre-school vaccinations"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171270007"/>
+			<display value="No consent - rubella immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171286000"/>
+			<display value="No consent - school exit vaccinations"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171267008"/>
+			<display value="No consent - tetanus immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171257003"/>
+			<display value="No consent - Tetanus/low dose diphtheria vaccine"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314769006"/>
+			<display value="No consent DT immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314768003"/>
+			<display value="No consent DTP immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="268559007"/>
+			<display value="No consent for any immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171283008"/>
+			<display value="No consent for any primary immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171291004"/>
+			<display value="No consent for Haemophilus influenzae type b immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="198811000000100"/>
+			<display value="No consent for hepatitis A vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="198041000000109"/>
+			<display value="No consent for hepatitis B vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="868601000000108"/>
+			<display value="No consent for herpes zoster vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="375821000000103"/>
+			<display value="No consent for human papillomavirus vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="515371000000101"/>
+			<display value="No consent for influenza A (H1N1v) 2009 vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314936001"/>
+			<display value="No consent for meningitis C immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171280006"/>
+			<display value="No consent for MMR"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="310839003"/>
+			<display value="No consent for MMR1"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="310840001"/>
+			<display value="No consent for MMR2"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171293001"/>
+			<display value="No consent for MR - Measles/rubella vaccine"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="868731000000107"/>
+			<display value="No consent for rotavirus vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="868491000000103"/>
+			<display value="No consent for seasonal influenza vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="88381000000109"/>
+			<display value="No consent for second Haemophilus influenzae type B booster"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="407598009"/>
+			<display value="No consent for third Haemophilus influenzae type b vaccine booster"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171292006"/>
+			<display value="No consent pneumococcal immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="380631000000100"/>
+			<display value="Pandemic influenza vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="380381000000108"/>
+			<display value="Pandemic influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="21131000175102"/>
+			<display value="Pertussis vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="957291000000102"/>
+			<display value="Pertussis vaccination in pregnancy contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="866641000000105"/>
+			<display value="Pertussis vaccination in pregnancy declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171284002"/>
+			<display value="Pertussis vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="390795005"/>
+			<display value="Pneumococcal vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="401086001"/>
+			<display value="Pneumococcal vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="139731000119106"/>
+			<display value="Pneumococcal vaccination declined by caregiver"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719476007"/>
+			<display value="Polio vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="842881000000105"/>
+			<display value="Post exposure diphtheria, tetanus, acellular pertussis and inactivated polio vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719472009"/>
+			<display value="Rabies vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="868691000000101"/>
+			<display value="Rotavirus vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="868711000000104"/>
+			<display value="Rotavirus vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719473004"/>
+			<display value="Rubella vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157110005"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) non-replicating viral vector vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1324721000000108"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1363851000000101"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination fifth dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1324741000000101"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination first dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1363811000000100"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination fourth dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1324751000000103"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination second dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1363781000000103"/>
+			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination third dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1145023008"/>
+			<display value="SARS-CoV-2 antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1145033000"/>
+			<display value="SARS-CoV-2 antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1193584006"/>
+			<display value="SARS-CoV-2 DNA plasmid encoding spike protein vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1193582005"/>
+			<display value="SARS-CoV-2 DNA plasmid encoding spike protein vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1145022003"/>
+			<display value="SARS-CoV-2 mRNA vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1145032005"/>
+			<display value="SARS-CoV-2 mRNA vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157118003"/>
+			<display value="SARS-CoV-2 non-replicating viral vector vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1162647000"/>
+			<display value="SARS-CoV-2 recombinant spike protein antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1162649002"/>
+			<display value="SARS-CoV-2 recombinant spike protein antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1156270003"/>
+			<display value="SARS-CoV-2 vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1156265005"/>
+			<display value="SARS-CoV-2 vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1179498004"/>
+			<display value="SARS-CoV-2 virus-like particle antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1179500003"/>
+			<display value="SARS-CoV-2 virus-like particle antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="822951000000107"/>
+			<display value="Seasonal influenza vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="822931000000100"/>
+			<display value="Seasonal influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1086441000000109"/>
+			<display value="Second diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157199007"/>
+			<display value="Second dose of inactivated whole SARS-CoV-2 antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157201009"/>
+			<display value="Second dose of inactivated whole SARS-CoV-2 antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1162648005"/>
+			<display value="Second dose of recombinant spike protein SARS-CoV-2 antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1145035007"/>
+			<display value="Second dose of SARS-CoV-2 mRNA vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1145034006"/>
+			<display value="Second dose of SARS-CoV-2 mRNA vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157113007"/>
+			<display value="Second dose of SARS-CoV-2 non-replicating viral vector vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1157120000"/>
+			<display value="Second dose of SARS-CoV-2 non-replicating viral vector vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1162650002"/>
+			<display value="Second dose of SARS-CoV-2 recombinant spike protein antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1179501004"/>
+			<display value="Second dose of SARS-CoV-2 virus-like particle antigen vaccine declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1179499007"/>
+			<display value="Second dose of virus-like particle SARS-CoV-2 antigen vaccine contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="871541000000106"/>
+			<display value="Second intranasal influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="886031000000106"/>
+			<display value="Second intranasal pandemic influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="886011000000103"/>
+			<display value="Second intranasal seasonal influenza vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="722338002"/>
+			<display value="Second meningitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="882221000000103"/>
+			<display value="Second rotavirus vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171277005"/>
+			<display value="Sensitivity contraindicated - immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719325005"/>
+			<display value="Smallpox vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1373621000000100"/>
+			<display value="Smallpox virus vaccination dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1373651000000105"/>
+			<display value="Smallpox virus vaccination first dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1373661000000108"/>
+			<display value="Smallpox virus vaccination second dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1373671000000101"/>
+			<display value="Smallpox virus vaccination third dose declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="16472341000119108"/>
+			<display value="Tetanus diphtheria and acellular pertussis vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719474005"/>
+			<display value="Tetanus vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="723061000"/>
+			<display value="Tetanus vaccination declined by patient"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1086451000000107"/>
+			<display value="Third diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination declined"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719457005"/>
+			<display value="Tick-borne encephalitis vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719470001"/>
+			<display value="Typhoid vaccination contraindicated"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="591000119102"/>
+			<display value="Vaccine declined by patient"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="723062007"/>
+			<display value="Varicella zoster vaccination declined by patient"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="719320000"/>
+			<display value="Yellow fever vaccination contraindicated"/>
 		</contains>
 	</expansion>
 </ValueSet>
