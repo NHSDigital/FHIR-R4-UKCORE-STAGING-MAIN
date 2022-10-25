@@ -47,7 +47,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="memberOf 999000581000001102 OR memberOf 999000561000001109 OR memberOf 999000541000001108 OR memberOf 999000791000001109 OR descendantOf 105590001 OR descendantOf 373873005 OR descendantOrSelfOf 716186003 OR 196461000000101 OR 196471000000108"/>
+				<value value="memberOf 999000581000001102 OR memberOf 999000561000001109 OR memberOf 999000541000001108 OR memberOf 999000791000001109 OR descendantOf 105590001 OR descendantOf 373873005 OR descendantOrSelfOf 716186003 OR 196461000000101 OR 196471000000108 OR descendantOrSelfOf 418634005 OR descendantOrSelfOf 293104008 "/>
 			</filter>
 		</include>
 		<include>
