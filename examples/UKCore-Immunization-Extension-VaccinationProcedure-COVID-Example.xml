@@ -14,7 +14,7 @@
 	<status value="completed"/>
 	<vaccineCode>
 		<coding>
-			<system value="https://dmd.nhs.uk"/>
+			<system value="http://snomed.info/sct"/>
 			<code value="39116211000001106"/>
 			<display value="Generic COVID-19 Vaccine Vaxzevria (ChAdOx1 S [recombinant]) not less than 2.5x100,000,000 infectious units/0.5ml dose suspension for injection multidose vials"/>
 		</coding>
