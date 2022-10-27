@@ -39,7 +39,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="coding-sctdescid.value[x]" />
+    <expression value="coding-sctdescid.value" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
