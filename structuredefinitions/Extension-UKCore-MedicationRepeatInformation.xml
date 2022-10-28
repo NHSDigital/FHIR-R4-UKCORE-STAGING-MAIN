@@ -26,7 +26,7 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="The specific repeat information of a medication item." />
+  <description value="The specific number of times a repeat prescription has been issued." />
   <purpose value="This extension extends the MedicationRequest resource to support the exchange of the number of times a repeat medication has been issued, which are currently not supported by the FHIR standard." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -47,7 +47,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Medication repeat information" />
+      <short value="Medication repeat issued information" />
       <definition value="Medication repeat information." />
       <max value="1" />
     </element>
@@ -66,7 +66,7 @@
       <path value="Extension.extension" />
       <sliceName value="numberOfPrescriptionsIssued" />
       <short value="Number of prescriptions issued" />
-      <definition value="Number of prescriptions issued." />
+      <definition value="An integer recording the number of times a repeat prescription has been issued. This integer does not include the original order dispense." />
       <min value="0" />
       <max value="1" />
     </element>
