@@ -7,7 +7,7 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland"/>
-				<code value="number-present-and-verified"/>
+				<code value="01"/>
 				<display value="Number present and verified"/>
 			</coding>
 		</valueCodeableConcept>
