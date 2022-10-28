@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-MedicationRepeatInformation" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
@@ -26,8 +27,8 @@
     </telecom>
   </contact>
   <description value="The specific repeat information of a medication item." />
-  <purpose value="This extension extends the MedicationRequest resource to support the exchange of repeat medication data items, which are currently not supported by the FHIR standard." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <purpose value="This extension extends the MedicationRequest resource to support the exchange of the number of times a repeat medication has been issued, which are currently not supported by the FHIR standard." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -59,12 +60,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:numberOfPrescriptionsIssued">
       <path value="Extension.extension" />
       <sliceName value="numberOfPrescriptionsIssued" />
       <short value="Number of prescriptions issued" />
       <definition value="Number of prescriptions issued." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:numberOfPrescriptionsIssued.url">
@@ -78,26 +81,6 @@
       <min value="1" />
       <type>
         <code value="unsignedInt" />
-      </type>
-    </element>
-    <element id="Extension.extension:authorisationExpiryDate">
-      <path value="Extension.extension" />
-      <sliceName value="authorisationExpiryDate" />
-      <short value="Repeat prescription review date" />
-      <definition value="Repeat prescription review date." />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:authorisationExpiryDate.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="authorisationExpiryDate" />
-    </element>
-    <element id="Extension.extension:authorisationExpiryDate.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <short value="Repeat prescription review date" />
-      <definition value="Repeat prescription review date." />
-      <min value="1" />
-      <type>
-        <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.url">
