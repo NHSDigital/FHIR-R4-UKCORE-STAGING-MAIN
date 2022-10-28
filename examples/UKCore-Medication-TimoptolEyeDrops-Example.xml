@@ -5,7 +5,7 @@
 	</meta>
 	<code>
     <coding>
-    			<system value="https://dmd.nhs.uk"/>
+    			<system value="http://snomed.info/sct"/>
       <code value="18616211000001106"/>
       <display value="Timoptol 0.5% eye drops (DE Pharmaceuticals)"/>
     </coding>
