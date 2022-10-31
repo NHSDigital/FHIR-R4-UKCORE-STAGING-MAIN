@@ -3,10 +3,12 @@
 	<code>
 		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<valueid value="301480018"/>
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDesc">
-					<valueString value="Bronchial asthma"/>
-				</extension>
+				<valueid>
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDesc">
+						<valueString value="Bronchial asthma"/>
+					</extension>
+					<value value="301480018"/>
+				</valueid> 
 			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="195967001"/>
