@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-OperationOutcomeIssueDetails"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-OperationOutcomeIssueDetails"/>
-	<version value="1.0.0"/>
+	<version value="1.1.0"/>
 	<name value="UKCoreOperationOutcomeIssueDetails"/>
 	<title value="UK Core Operation Outcome Issue Details"/>
 	<status value="active"/>
-	<date value="2022-01-07"/>
+	<date value="2022-08-26"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -277,7 +277,7 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="INVALID_NUMBER_MEDICATIONREQUESTS"/>
-			<display value="Number of items on a prescription should be between 1 and 4"/>
+			<display value="Number of items on a prescription SHALL be between 1 and 4"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
@@ -379,7 +379,7 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EPSIssueCode"/>
 			<version value="1.0.0"/>
 			<code value="INVALID_REPEAT_COUNT"/>
-			<display value="Repeat count should be between 1 and 99"/>
+			<display value="Repeat count SHALL be between 1 and 99"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SpineErrorOrWarningCode"/>

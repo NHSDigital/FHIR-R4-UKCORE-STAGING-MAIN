@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Organization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCoreOrganization" />
   <title value="UK Core Organization" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -79,8 +79,8 @@
     <element id="Organization.extension:organizationPeriod">
       <path value="Organization.extension" />
       <sliceName value="organizationPeriod" />
-      <short value="The date range that this organization should be considered available." />
-      <definition value="The date range that this organization should be considered available." />
+      <short value="The date range that this organization SHOULD be considered available." />
+      <definition value="The date range that this organization SHOULD be considered available." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -90,8 +90,8 @@
     </element>
     <element id="Organization.extension:organizationPeriod.value[x]">
       <path value="Organization.extension.value[x]" />
-      <short value="The date range that this organization should be considered available." />
-      <definition value="The date range that this organization should be considered available." />
+      <short value="The date range that this organization SHOULD be considered available." />
+      <definition value="The date range that this organization SHOULD be considered available." />
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
