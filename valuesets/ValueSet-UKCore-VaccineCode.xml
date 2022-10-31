@@ -36,8 +36,11 @@ Where no dm+d coded information is available, a specific code from the nullFlavo
 	<compose>
 		<include>
 			<system value="https://dmd.nhs.uk"/>
-			<valueSet value = "https://dmd.nhs.uk/ValueSet/VMP"/>
 			<valueSet value = "https://dmd.nhs.uk/ValueSet/AMP"/>
+		</include>
+		<include>
+			<system value="https://dmd.nhs.uk"/>
+			<valueSet value = "https://dmd.nhs.uk/ValueSet/VMP"/>
 		</include>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>

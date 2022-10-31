@@ -45,8 +45,17 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
         <include>
             <system value="https://dmd.nhs.uk" />
 			<valueSet value = "https://dmd.nhs.uk/ValueSet/VTM"/>
+        </include>
+		<include>
+            <system value="https://dmd.nhs.uk" />
 			<valueSet value = "https://dmd.nhs.uk/ValueSet/VMP"/>
+        </include>
+		<include>
+            <system value="https://dmd.nhs.uk" />
 			<valueSet value = "https://dmd.nhs.uk/ValueSet/AMP"/>
+        </include>
+		<include>
+            <system value="https://dmd.nhs.uk" />
 			<valueSet value = "https://dmd.nhs.uk/ValueSet/INGREDIENT"/>
         </include>
         <include>
