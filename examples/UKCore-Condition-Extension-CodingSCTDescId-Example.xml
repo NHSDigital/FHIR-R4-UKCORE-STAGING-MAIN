@@ -4,7 +4,7 @@
 		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
 				<valueid>
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDesc">
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
 						<valueString value="Bronchial asthma"/>
 					</extension>
 					<value value="301480018"/>
