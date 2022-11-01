@@ -84,7 +84,7 @@
       <path value="Extension.extension" />
       <sliceName value="authorisationExpiryDate" />
       <short value="Repeat prescription review date" />
-      <definition value="Repeat prescription review date." />
+      <definition value="The date a prescriber must review a repeat prescription with the patient. This is distinct from dispenseRequest.validityPeriod.end, which marks when a dispensing cycle ends e.g. in Electronic Repeat Dispensing" />
       <max value="1" />
     </element>
     <element id="Extension.extension:authorisationExpiryDate.url">
