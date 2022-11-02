@@ -63,8 +63,8 @@
     <element id="Extension.extension:numberOfPrescriptionsIssued">
       <path value="Extension.extension" />
       <sliceName value="numberOfPrescriptionsIssued" />
-      <short value="Number of prescriptions issued" />
-      <definition value="Number of prescriptions issued." />
+      <short value="The specific number of times a repeat prescription has been issued" />
+      <definition value="An integer recording the number of times a repeat prescription has been issued. This integer does not include the original order dispense." />
       <max value="1" />
     </element>
     <element id="Extension.extension:numberOfPrescriptionsIssued.url">
@@ -73,8 +73,8 @@
     </element>
     <element id="Extension.extension:numberOfPrescriptionsIssued.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Number of prescriptions issued" />
-      <definition value="Number of prescriptions issued." />
+      <short value="The specific number of times a repeat prescription has been issued" />
+      <definition value="An integer recording the number of times a repeat prescription has been issued. This integer does not include the original order dispense." />
       <min value="1" />
       <type>
         <code value="unsignedInt" />
