@@ -9,6 +9,9 @@
 		<extension url="numberOfPrescriptionsIssued">
 			<valueUnsignedInt value="1"/>
 		</extension>
+		<extension url="authorisationExpiryDate">
+			<valueDateTime value="2022-09-10T19:00:00.000Z"/>
+		</extension>
 	</extension>
 	<!-- **************extension end************** -->
 	<status value="completed"/>
@@ -64,13 +67,6 @@
 			</coding>
 		</method>
 	</dosageInstruction>
-	<dispenseRequest>
-		<validityPeriod>
-			<start value="2022-09-10"/>
-			<end value="2023-03-10"/>
-		</validityPeriod>
-		<numberOfRepeatsAllowed value="4"/> 
-	</dispenseRequest>
 	<substitution>
 		<allowedBoolean value="true"/>
 	</substitution>
