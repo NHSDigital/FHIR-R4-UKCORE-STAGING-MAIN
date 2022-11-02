@@ -91,5 +91,33 @@
       <path value="Extension.value[x]" />
       <max value="0" />
     </element>
+    <element id="Extension.extension:authorisationExpiryDate">
+      <path value="Extension.extension" />
+      <sliceName value="authorisationExpiryDate" />
+      <short value="Repeat prescription review date" />
+      <definition value="Repeat prescription review date." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:authorisationExpiryDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="authorisationExpiryDate" />
+    </element>
+    <element id="Extension.extension:authorisationExpiryDate.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Repeat prescription review date" />
+      <definition value="Repeat prescription review date." />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
   </differential>
 </StructureDefinition>
