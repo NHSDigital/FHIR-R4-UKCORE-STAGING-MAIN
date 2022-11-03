@@ -42,7 +42,7 @@
 	</birthDate>
 	<address>
 		<line value="10 Fearnville Grove"/>
-		<line value="LEEDS"/>
+		<city value="LEEDS"/>
 		<postalCode value="LS8 3DR"/>
 	</address>
 </Patient>
