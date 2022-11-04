@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-EthnicCategoryScotland" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryScotland" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreEthnicCategoryScotland" />
   <title value="UK Core Ethnic Category Scotland" />
   <status value="active" />
