@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationPrescribingOrganizationType"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrescribingOrganizationType"/>
-	<version value="1.2.0" />
+	<version value="1.0.0" />
 	<name value="UKCoreMedicationPrescribingOrganizationType"/>
 	<title value="UK Core Medication Prescribing Organization Type"/>
 	<status value="active" />
