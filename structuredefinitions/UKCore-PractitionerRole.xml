@@ -104,13 +104,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="PractitionerRole.code">
-      <path value="PractitionerRole.code" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PractitionerRoleCode" />
-      </binding>
-    </element>
 	<element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
       <binding>
