@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-PractitionerRole" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-  <version value="2.1.0" />
+  <version value="2.2.0" />
   <name value="UKCorePractitionerRole" />
   <title value="UK Core PractitionerRole" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -104,11 +104,11 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="PractitionerRole.code">
-      <path value="PractitionerRole.code" />
+	<element id="PractitionerRole.specialty">
+      <path value="PractitionerRole.specialty" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PractitionerRoleCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
       </binding>
     </element>
     <element id="PractitionerRole.location">
