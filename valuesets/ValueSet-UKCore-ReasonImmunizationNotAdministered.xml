@@ -57,25 +57,6 @@
             <name value="offset"/>
             <valueInteger value="0"/>
         </parameter>
-		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
-			<valueBoolean value="true"/>
-		</extension>
-		<identifier value="9991d0d3-62e7-4204-9bc8-553f4a39d8ac"/>
-		<timestamp value="2021-09-03T12:38:51+00:00"/>
-		<total value="5"/>
-		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
 		<contains>
 			<system value="http://snomed.info/sct"/>
 			<code value="942561000000105"/>
