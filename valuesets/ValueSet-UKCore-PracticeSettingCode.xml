@@ -2,8 +2,8 @@
 	<id value="UKCore-PracticeSettingCode"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode"/>
 	<version value="1.0.0" />
-	<name value="UKCoreMainSpecialty"/>
-	<title value="UK Core Main Specialty"/>
+	<name value="UKCorePracticeSettingCode"/>
+	<title value="UK Core Practice Setting Code"/>
 	<status value="active" />
 	<date value="2022-08-26" />
 	<publisher value="HL7 UK" />
