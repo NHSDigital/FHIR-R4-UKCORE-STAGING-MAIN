@@ -1,13 +1,13 @@
 <Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-TrDegMedEnt-Ex"/>
 	<code>
-  <coding>
+  		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="196421000000109"/>
 			<display value="Transfer-degraded medication entry"/>
 		</coding>
-  <text value="Aspirin 75mg dispersible tablet"/>
-</code>
+  	<text value="Aspirin 75mg dispersible tablet"/>
+	</code>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
