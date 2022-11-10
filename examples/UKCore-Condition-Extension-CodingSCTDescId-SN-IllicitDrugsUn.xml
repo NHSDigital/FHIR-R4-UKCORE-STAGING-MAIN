@@ -1,0 +1,28 @@
+<Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-IllicitDrugsUn-Ex"/>
+	<code>
+		<coding>
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
+				<extension url="descriptionId">
+					<valueId value="253790221000087110"/>
+					<!-- from Canadian extension -->
+				</extension>
+				<extension url="descriptionDisplay">
+					<valueString value="Use of illicit drugs unknown"/>
+					<!-- synonym from Canadian extension -->
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<code value="186782131000087106"/>
+			<!-- conceptId from Canadian extension -->
+			<display value="Use of illicit type drug unknown"/>
+			<!-- preferred term from Canadian extension -->
+			<userSelected value="true"/>
+		</coding>
+		<text value=" Not known whether uses illicit drugs"/>
+		<!-- what the user saw on screen, from a data entry template -->
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>

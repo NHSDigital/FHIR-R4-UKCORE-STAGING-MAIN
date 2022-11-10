@@ -1,0 +1,26 @@
+<Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-IdealWeight-Ex"/>
+	<code>
+	  <coding>
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
+				<extension url="descriptionId">
+					<valueIdentifier>
+						<value value="787121000006116"/>
+						<!-- descriptionId from EMIS namespace -->
+					</valueIdentifier>
+				</extension>
+				<extension url="descriptionDisplay">
+					<valueString value="Ideal weight"/>
+				</extension>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<code value="170804003"/>
+			<!-- conceptId from SNOMED International CORE -->
+			<display value="Ideal body weight"/>
+			<userSelected value="true"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>
