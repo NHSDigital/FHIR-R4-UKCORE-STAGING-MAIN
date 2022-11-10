@@ -1,0 +1,14 @@
+<Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-TrDegDrgAll-Ex"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="196461000000101"/>
+			<display value="Transfer-degraded drug allergy"/>
+		</coding>
+		<text value="Amoxicillin 250mg capsules"/>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>
