@@ -1,0 +1,24 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Medication-TimoptolEyeDrops-Example" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+    </meta>
+    <code>
+        <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="85591001" />
+            <display value="Timolol" />
+        </coding>
+    </code>
+    <form>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="17960711000001109" />
+            <display value="Ear/eye drops solution" />
+        </coding>
+    </form>
+    <batch>
+        <lotNumber value="9494788" />
+        <expirationDate value="2020-05-22" />
+    </batch>
+</Medication>
