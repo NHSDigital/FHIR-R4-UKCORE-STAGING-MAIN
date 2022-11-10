@@ -3,13 +3,29 @@
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
-			<system value="https://dmd.nhs.uk/"/>
-			<code value="323509004"/>
-			<display value="Amoxicillin 250mg capsules"/>
+	
+
 			<userSelected value="true"/>
 		</coding>
 	</code>
 	<!-- **************Snippet end************** -->
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>
+
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-Example"/>
+	<code>
+		<coding>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<system value="https://dmd.nhs.uk/"/>
+				<code value="323509004"/>
+				<display value="Amoxicillin 250mg capsules"/>
+				<userSelected value="true"/>
+			</extension>
+		</coding>
+	</code>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
