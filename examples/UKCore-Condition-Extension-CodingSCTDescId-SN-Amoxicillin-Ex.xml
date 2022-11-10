@@ -1,20 +1,4 @@
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-Amoxicillin-Ex"/>
-	<!-- **************Snippet start************** -->
-	<code>
-		<coding>
-	
-
-			<userSelected value="true"/>
-		</coding>
-	</code>
-	<!-- **************Snippet end************** -->
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-</Condition>
-
-<Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-Example"/>
 	<code>
 		<coding>
