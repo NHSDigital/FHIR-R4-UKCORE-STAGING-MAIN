@@ -1,27 +1,17 @@
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-Heartattack-Ex"/>
-	
-	<!-- **************Snippet start************** -->
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-Example"/>
 	<code>
-	<coding>
-			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
-				<extension url="descriptionId">
-					<valueIdentifier>
-						<value value="37443015"/>
-					</valueIdentifier>
-				</extension>
-				<extension url="descriptionDisplay">
-					<valueString value="Heart attack"/>
-				</extension>
+		<coding>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<valueid>
+					<value value="22298006"/>
+				</valueid> 
 			</extension>
 			<system value="http://snomed.info/sct"/>
-			<code value="22298006"/>
 			<display value="Myocardial infarction"/>
 			<userSelected value="true"/>
 		</coding>
-</code>
-	<!-- **************Snippet end************** -->
-	
+	</code>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
