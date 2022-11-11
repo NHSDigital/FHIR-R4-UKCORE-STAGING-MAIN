@@ -1,5 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-MoleOfSkin-Ex"/>
+	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
@@ -21,6 +22,7 @@
 		<text value="Moles"/>
 		<!-- what user saw on screen, from data entry template -->
 	</code>
+	<!-- **************Snippet end************** -->
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
