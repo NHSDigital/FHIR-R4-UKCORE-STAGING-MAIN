@@ -5,14 +5,14 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
                 <value>
                     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-                        <value value="Serum potassium"/>
+                        <value value="Serum potassium measurement"/>
                     </extension>
-                    <value value="1000651000000109"/>
+                    <value value="405941011"/>
                 </value>
             </extension>
             <system value="http://snomed.info/sct"/>
-            <code value="405941011"/>
-            <display value=" Serum potassium measurement"/>
+            <code value="1000651000000109"/>
+            <display value="Serum potassium level"/>
             <userSelected value="true"/>
         </coding>
     </code>
