@@ -44,35 +44,35 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 	<compose>
 		<include>
 			<system value="https://dmd.nhs.uk"/>
-				<filter>
-					<property value = "parent"/>
-					<op value = "="/>
-					<value value = "VTM"/>
-				</filter>
+			<filter>
+				<property value="parent"/>
+				<op value="="/>
+				<value value="VTM"/>
+			</filter>
 		</include>
 		<include>
 			<system value="https://dmd.nhs.uk"/>
-				<filter>
-					<property value = "parent"/>
-					<op value = "="/>
-					<value value = "VMP"/>
-				</filter>
+			<filter>
+				<property value="parent"/>
+				<op value="="/>
+				<value value="VMP"/>
+			</filter>
 		</include>
 		<include>
 			<system value="https://dmd.nhs.uk"/>
-				<filter>
-					<property value = "parent"/>
-					<op value = "="/>
-					<value value = "AMP"/>
-				</filter>
+			<filter>
+				<property value="parent"/>
+				<op value="="/>
+				<value value="AMP"/>
+			</filter>
 		</include>
 		<include>
 			<system value="https://dmd.nhs.uk"/>
-				<filter>
-					<property value = "parent"/>
-					<op value = "="/>
-					<value value = "INGREDIENT"/>
-				</filter>
+			<filter>
+				<property value="parent"/>
+				<op value="="/>
+				<value value="INGREDIENT"/>
+			</filter>
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
