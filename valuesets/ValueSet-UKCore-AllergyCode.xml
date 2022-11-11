@@ -44,19 +44,26 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 	<compose>
 		<include>
 			<system value="https://dmd.nhs.uk"/>
-			<valueSet value="https://dmd.nhs.uk/ValueSet/VTM"/>
-		</include>
-		<include>
-			<system value="https://dmd.nhs.uk"/>
-			<valueSet value="https://dmd.nhs.uk/ValueSet/VMP"/>
-		</include>
-		<include>
-			<system value="https://dmd.nhs.uk"/>
-			<valueSet value="https://dmd.nhs.uk/ValueSet/AMP"/>
-		</include>
-		<include>
-			<system value="https://dmd.nhs.uk"/>
-			<valueSet value="https://dmd.nhs.uk/ValueSet/INGREDIENT"/>
+				<filter>
+					<property value = "parent"/>
+					<op value = "="/>
+					<value value = "VTM"></value>
+				</filter>
+				<filter>
+					<property value = "parent"/>
+					<op value = "="/>
+					<value value = "VMP"></value>
+				</filter>
+				<filter>
+					<property value = "parent"/>
+					<op value = "="/>
+					<value value = "AMP"></value>
+				</filter>
+				<filter>
+					<property value = "parent"/>
+					<op value = "="/>
+					<value value = "INGREDIENT"></value>
+				</filter>
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
