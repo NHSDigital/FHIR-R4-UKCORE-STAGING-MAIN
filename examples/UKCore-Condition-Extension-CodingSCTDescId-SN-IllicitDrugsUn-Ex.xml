@@ -1,5 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId"/>
+	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
@@ -16,7 +17,9 @@
 			<userSelected value="true"/>
 		</coding>
 		<text value=" Not known whether uses illicit drugs"/>
+		<!-- what the user saw on screen, from a data entry template -->
 	</code>
+	<!-- **************Snippet end************** -->
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
