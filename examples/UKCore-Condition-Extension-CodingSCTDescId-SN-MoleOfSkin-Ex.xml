@@ -1,22 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-MoleOfSkin-Ex"/>
-	<code>
-		<coding>
-			<system value="http://read.info/readv2"/>
-			<code value="B76..14"/>
-			<!-- term code = 14 ie not V2 Preferred term -->
-			<display value="Mole of skin"/>
-			<!-- text for V2 term code = 14 -->
-			<userSelected value="true"/>
-			<!-- coding actually selected by user -->
-		</coding>
-		<coding>
-			<system value="http://read.info/ctv3"/>
-			<code value="X78Uv"/>
-			<!-- no term code, so CTV3 PT is implied? -->
-			<display value="Benign melanocytic naevus of skin"/>
-			<!-- text of V3 PT -->
-		</coding>
 		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
 				<value>
