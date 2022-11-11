@@ -17,6 +17,7 @@
             <userSelected value="true"/>
         </coding>
     </code>
+    <!-- **************Snippet end************** -->
     <subject>
         <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
     </subject>
