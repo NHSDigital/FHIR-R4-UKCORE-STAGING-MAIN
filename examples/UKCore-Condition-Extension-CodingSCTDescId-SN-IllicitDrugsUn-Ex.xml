@@ -1,14 +1,14 @@
-<Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-IllicitDrugsUn-Ex"/>
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId"/>
 	<code>
 		<coding>
-			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
-				<extension url="descriptionId">
-					<valueId value="702771005"/>
-				</extension>
-				<extension url="descriptionDisplay">
-					<valueString value="Use of illegal drugs"/>
-				</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<value>
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+						<value value="Illicit medication use unknown"/>
+					</extension>
+					<value value="3449865011"/>
+				</value> 	
 			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="702771005"/>
