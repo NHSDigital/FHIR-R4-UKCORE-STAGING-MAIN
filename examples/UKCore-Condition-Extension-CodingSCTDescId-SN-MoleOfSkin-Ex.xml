@@ -3,6 +3,15 @@
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
+			<system value="http://read.info/readv2"/>
+			<code value="B76..14"/>
+			<!-- term code = 14 ie not V2 Preferred term -->
+			<display value="Mole of skin"/>
+			<!-- text for V2 term code = 14 -->
+			<userSelected value="true"/>
+			<!-- coding actually selected by user -->
+		</coding>
+		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
 				<value>
 					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
