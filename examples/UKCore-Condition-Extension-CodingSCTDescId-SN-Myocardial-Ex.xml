@@ -5,7 +5,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
                 <value>
                     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-                        <valueString value="Myocardial infarction"/>
+                        <value value="Myocardial infarction"/>
                     </extension>
                     <value value="337436014"/>
                 </value>
