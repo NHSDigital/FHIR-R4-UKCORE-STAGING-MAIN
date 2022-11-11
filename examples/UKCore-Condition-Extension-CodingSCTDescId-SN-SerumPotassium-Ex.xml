@@ -11,8 +11,8 @@
                 </value>
             </extension>
             <system value="http://snomed.info/sct"/>
-            <code value="2573011000000117"/>
-            <display value="Serum potassium level"/>
+            <code value="405941011"/>
+            <display value=" Serum potassium measurement"/>
             <userSelected value="true"/>
         </coding>
     </code>
