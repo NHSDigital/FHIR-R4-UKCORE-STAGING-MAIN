@@ -1,5 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Condition-Extension-CodingSCTDescId-SN-Myocardial-Ex.xml"/>
+    <id value="UKCore-Condition-Extension-CodingSCTDescId-SN-Myocardial-Ex"/>
+    <!-- **************Snippet start************** -->
     <code>
         <coding>
             <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
