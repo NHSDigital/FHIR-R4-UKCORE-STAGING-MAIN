@@ -1,5 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-IdealWeight-Ex"/>
+	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
@@ -7,17 +8,18 @@
 					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
 						<valueString value="Ideal weight"/>
 					</extension>
-					<!-- descriptionId from EMIS namespace -->
 					<value value="787121000006116"/>
+					<!-- descriptionId from EMIS namespace -->
 				</value> 
 			</extension>
 			<system value="http://snomed.info/sct"/>
-			<!-- conceptId from SNOMED International CORE -->
 			<code value="170804003"/>
+			<!-- conceptId from SNOMED International CORE -->
 			<display value="Ideal body weight"/>
 			<userSelected value="true"/>
 		</coding>
 	</code>
+	<!-- **************Snippet end************** -->
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
