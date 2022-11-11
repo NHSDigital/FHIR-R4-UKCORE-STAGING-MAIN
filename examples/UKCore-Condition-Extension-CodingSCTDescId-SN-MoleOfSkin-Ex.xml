@@ -1,7 +1,7 @@
 <Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-MoleOfSkin-Ex"/>
 	<code>
-	<coding>
+		<coding>
 			<system value="http://read.info/readv2"/>
 			<code value="B76..14"/>
 			<!-- term code = 14 ie not V2 Preferred term -->
@@ -10,23 +10,23 @@
 			<userSelected value="true"/>
 			<!-- coding actually selected by user -->
 		</coding>
-	<coding>
+		<coding>
 			<system value="http://read.info/ctv3"/>
 			<code value="X78Uv"/>
 			<!-- no term code, so CTV3 PT is implied? -->
 			<display value="Benign melanocytic naevus of skin"/>
 			<!-- text of V3 PT -->
 		</coding>
-	<coding>
-			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
-				<extension url="descriptionId">
-					<valueId value="1787065011"/>
+		<coding>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<value>
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+						<value value="Mole of skin"/>
+						<!-- text for id = 1787065011 -->
+					</extension>
+					<value value="1787065011"/>
 					<!-- not the SNOMED PT -->
-				</extension>
-				<extension url="descriptionDisplay">
-					<valueString value="Mole of skin"/>
-					<!-- text for id = 1787065011 -->
-				</extension>
+				</value>
 			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="400010006"/>
@@ -34,9 +34,9 @@
 			<display value="Melanocytic naevus of skin"/>
 			<!-- text of SNOMED PT -->
 		</coding>
-	<text value="Moles"/>
-	<!-- what user saw on screen, from data entry template -->
-</code>
+		<text value="Moles"/>
+		<!-- what user saw on screen, from data entry template -->
+	</code>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
