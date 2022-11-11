@@ -4,12 +4,12 @@
     <code>
         <coding>
             <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-                <valueid>
+                <value>
                     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
                         <valueString value="Heart attack"/>
                     </extension>
                     <value value="37443015"/>
-                </valueid>
+                </value>
             </extension>
             <system value="http://snomed.info/sct"/>
             <code value="22298006"/>
