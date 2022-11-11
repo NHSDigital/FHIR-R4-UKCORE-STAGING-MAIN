@@ -1,4 +1,4 @@
-<Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-TrDegMedEnt-Ex"/>
 	<code>
   		<coding>
