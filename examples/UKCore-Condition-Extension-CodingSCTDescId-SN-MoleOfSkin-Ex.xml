@@ -8,7 +8,7 @@
 			<!-- term code = 14 ie not V2 Preferred term -->
 			<display value="Mole of skin"/>
 			<!-- text for V2 term code = 14 -->
-			<userSelected value="True"/>
+			<userSelected value="true"/>
 			<!-- coding actually selected by user -->
 		</coding>
 		<coding>
