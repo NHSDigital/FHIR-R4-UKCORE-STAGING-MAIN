@@ -1,5 +1,5 @@
 <Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value=" UKCore-Condition-Extension-CodingSCTDescId-SN-MoleOfSkin-Ex"/>
+	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-MoleOfSkin-Ex"/>
 	<code>
 	<coding>
 			<system value="http://read.info/readv2"/>
