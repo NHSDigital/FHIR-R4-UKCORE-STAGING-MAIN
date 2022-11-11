@@ -49,16 +49,25 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 					<op value = "="/>
 					<value value = "VTM"/>
 				</filter>
+		</include>
+		<include>
+			<system value="https://dmd.nhs.uk"/>
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
 					<value value = "VMP"/>
 				</filter>
+		</include>
+		<include>
+			<system value="https://dmd.nhs.uk"/>
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
 					<value value = "AMP"/>
 				</filter>
+		</include>
+		<include>
+			<system value="https://dmd.nhs.uk"/>
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
