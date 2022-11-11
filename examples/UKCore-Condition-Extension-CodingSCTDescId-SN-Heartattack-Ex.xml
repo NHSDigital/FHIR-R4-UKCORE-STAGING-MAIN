@@ -1,5 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
     <id value="UKCore-Condition-Extension-CodingSCTDescId-SN-Heartattack-Ex"/>
+    <!-- **************Snippet start************** -->
     <code>
         <coding>
             <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
@@ -16,6 +17,7 @@
             <userSelected value="true"/>
         </coding>
     </code>
+    <!-- **************Snippet end************** -->
     <subject>
         <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
     </subject>
