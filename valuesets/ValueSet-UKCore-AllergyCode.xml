@@ -47,7 +47,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
-					<value value = "VTM"></value>
+					<value value = "VTM"/>
 				</filter>
 		</include>
 		<include>
@@ -55,7 +55,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
-					<value value = "VMP"></value>
+					<value value = "VMP"/>
 				</filter>
 		</include>
 		<include>
@@ -63,7 +63,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
-					<value value = "AMP"></value>
+					<value value = "AMP"/>
 				</filter>
 		</include>
 		<include>
@@ -71,7 +71,7 @@ Where no dm+d or SNOMED coded information is available, a specific code from the
 				<filter>
 					<property value = "parent"/>
 					<op value = "="/>
-					<value value = "INGREDIENT"></value>
+					<value value = "INGREDIENT"/>
 				</filter>
 		</include>
 		<include>
