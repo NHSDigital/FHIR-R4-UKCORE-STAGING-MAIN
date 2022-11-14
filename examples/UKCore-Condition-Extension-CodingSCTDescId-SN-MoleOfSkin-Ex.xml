@@ -10,15 +10,13 @@
 			<!-- text of V3 PT -->
 		</coding>
 		<coding>
+			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<value value="Mole of skin"/>
+				<!-- text for id = 1787065011 -->
+			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<value>
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-						<value value="Mole of skin"/>
-						<!-- text for id = 1787065011 -->
-					</extension>
-					<value value="1787065011"/>
-					<!-- not the SNOMED PT -->
-				</value>
+				<value value="1787065011"/>
+				<!-- not the SNOMED PT -->
 			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="400010006"/>
