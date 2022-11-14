@@ -3,13 +3,11 @@
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
+			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<value value="Illicit medication use unknown"/>
+			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<value>
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-						<value value="Illicit medication use unknown"/>
-					</extension>
-					<value value="3449865011"/>
-				</value> 	
+				<value value="3449865011"/>	
 			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="702771005"/>
