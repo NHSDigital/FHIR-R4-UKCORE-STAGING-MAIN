@@ -2,9 +2,6 @@
 	<id value="UKCore-Condition-Extension-CodingSCTDescId-Example"/>
 	<code>
 		<coding>
-			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<valueId value="301480018"/>
-			</extension>
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
 				<valueString value="Bronchial asthma"/>
 			</extension>
