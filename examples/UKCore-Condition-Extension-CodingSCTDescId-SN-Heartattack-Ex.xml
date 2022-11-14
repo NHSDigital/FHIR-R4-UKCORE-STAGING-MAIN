@@ -3,13 +3,11 @@
     <!-- **************Snippet start************** -->
     <code>
         <coding>
-            <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-                <value>
-                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-                        <value value="Heart attack"/>
-                    </extension>
-                    <value value="37443015"/>
-                </value>
+            <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+                <value value="Heart attack"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">                  
+                <value value="37443015"/>
             </extension>
             <system value="http://snomed.info/sct"/>
             <code value="22298006"/>
