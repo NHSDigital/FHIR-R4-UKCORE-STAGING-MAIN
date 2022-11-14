@@ -5,6 +5,9 @@
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
 				<valueString value="Bronchial asthma"/>
 			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<valueId value="301480018"/>
+			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="195967001"/>
 			<display value="Asthma"/>
