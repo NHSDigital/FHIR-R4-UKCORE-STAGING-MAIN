@@ -3,13 +3,11 @@
     <!-- **************Snippet start************** -->
     <code>
         <coding>
+            <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+                <value value="Serum potassium measurement"/>
+            </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-                <value>
-                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-                        <value value="Serum potassium measurement"/>
-                    </extension>
-                    <value value="405941011"/>
-                </value>
+                <value value="405941011"/>
             </extension>
             <system value="http://snomed.info/sct"/>
             <code value="1000651000000109"/>
