@@ -3,14 +3,12 @@
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
+			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<valueString value="Ideal weight"/>
+			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<value>
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-						<valueString value="Ideal weight"/>
-					</extension>
-					<value value="787121000006116"/>
-					<!-- descriptionId from EMIS namespace -->
-				</value> 
+				<value value="787121000006116"/>
+				<!-- descriptionId from EMIS namespace -->
 			</extension>
 			<system value="http://snomed.info/sct"/>
 			<code value="170804003"/>
