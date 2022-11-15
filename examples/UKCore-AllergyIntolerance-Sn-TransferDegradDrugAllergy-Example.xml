@@ -1,5 +1,6 @@
-<Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-TrDegDrgAll-Ex"/>
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+	<id value="UKCore-AllergyIntolerance-Sn-TransferDegradDrugAllergy-Example"/>
+	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -8,7 +9,8 @@
 		</coding>
 		<text value="Amoxicillin 250mg capsules"/>
 	</code>
-	<subject>
+	<!-- **************Snippet end************** -->
+	<patient>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-</Condition>
+	</patient>
+</AllergyIntolerance>

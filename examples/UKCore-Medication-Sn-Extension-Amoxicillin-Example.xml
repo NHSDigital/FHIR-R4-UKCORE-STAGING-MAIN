@@ -1,5 +1,8 @@
-<Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-Amoxicillin-Ex"/>
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Medication-Sn-Extension-Amoxicillin-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"/>
+	</meta>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
@@ -10,8 +13,4 @@
 		</coding>
 	</code>
 	<!-- **************Snippet end************** -->
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-</Condition>
-
+</Medication>
