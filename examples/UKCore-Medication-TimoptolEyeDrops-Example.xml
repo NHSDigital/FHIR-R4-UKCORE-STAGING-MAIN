@@ -4,14 +4,10 @@
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"/>
 	</meta>
 	<code>
-    <coding>
-    			<system value="https://dmd.nhs.uk"/>
-      <code value="18616211000001106"/>
-      <display value="Timoptol 0.5% eye drops (DE Pharmaceuticals)"/>
-    </coding>
-  </code>
-	<batch>
-		<lotNumber value="9494788"/>
-		<expirationDate value="2020-05-22"/>
-	</batch>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="18616211000001106"/>
+			<display value="Timoptol 0.5% eye drops (DE Pharmaceuticals)"/>
+		</coding>
+	</code>
 </Medication>
