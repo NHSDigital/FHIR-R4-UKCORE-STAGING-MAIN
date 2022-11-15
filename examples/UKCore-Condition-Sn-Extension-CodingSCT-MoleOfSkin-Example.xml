@@ -1,21 +1,21 @@
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-MoleOfSkin-Ex"/>
+	<id value="UKCore-Condition-Sn-Extension-CodingSCT-MoleOfSkin-Example"/>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="http://read.info/ctv3"/>
-			<code value="X78Uv"/>
+			<code value="XUYz6"/>
 			<!-- no term code, so CTV3 PT is implied? -->
 			<display value="Benign melanocytic naevus of skin"/>
 			<!-- text of V3 PT -->
 		</coding>
 		<coding>
 			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-				<value value="Mole of skin"/>
+				<valueString value="Mole of skin"/>
 				<!-- text for id = 1787065011 -->
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<value value="1787065011"/>
+				<valueId value="1787065011"/>
 				<!-- not the SNOMED PT -->
 			</extension>
 			<system value="http://snomed.info/sct"/>

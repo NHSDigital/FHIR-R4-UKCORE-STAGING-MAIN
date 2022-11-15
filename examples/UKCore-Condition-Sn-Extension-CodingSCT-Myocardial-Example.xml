@@ -1,19 +1,17 @@
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Extension-CodingSCTDescId-SN-IdealWeight-Ex"/>
+	<id value="UKCore-Condition-Sn-Extension-CodingSCT-Myocardial-Example"/>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
-			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-				<valueString value="Ideal weight"/>
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<valueString value="Myocardial infarction"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
-				<value value="787121000006116"/>
-				<!-- descriptionId from EMIS namespace -->
+				<valueId value="337436014"/>
 			</extension>
 			<system value="http://snomed.info/sct"/>
-			<code value="170804003"/>
-			<!-- conceptId from SNOMED International CORE -->
-			<display value="Ideal body weight"/>
+			<code value="22298006"/>
+			<display value="Myocardial infarction"/>
 			<userSelected value="true"/>
 		</coding>
 	</code>
