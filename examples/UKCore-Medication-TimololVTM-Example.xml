@@ -17,8 +17,4 @@
             <display value="Ear/eye drops solution" />
         </coding>
     </form>
-    <batch>
-        <lotNumber value="9494788" />
-        <expirationDate value="2020-05-22" />
-    </batch>
 </Medication>
