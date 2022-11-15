@@ -9,7 +9,7 @@
 			<system value="http://read.info/ctv3"/>
 			<code value="X78uv"/>
 			<!-- no term code, so CTV3 PT is implied? -->
-			<display value="Benign melanocytic naevus of skin"/>
+			<display value="Late inspiration"/>
 			<!-- text of V3 PT -->
 		</coding>
 		<coding>
