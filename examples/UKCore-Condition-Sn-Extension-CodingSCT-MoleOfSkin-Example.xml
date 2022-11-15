@@ -1,10 +1,13 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Sn-Extension-CodingSCT-MoleOfSkin-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition"/>
+	</meta>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="http://read.info/ctv3"/>
-			<code value="XUYz6"/>
+			<code value="X78Uv"/>
 			<!-- no term code, so CTV3 PT is implied? -->
 			<display value="Benign melanocytic naevus of skin"/>
 			<!-- text of V3 PT -->
