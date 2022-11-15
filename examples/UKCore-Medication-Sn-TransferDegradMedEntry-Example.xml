@@ -1,5 +1,8 @@
 <Medication xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Medication-Sn-TransferDegradMedEntry-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"/>
+	</meta>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>

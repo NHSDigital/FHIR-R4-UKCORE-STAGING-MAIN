@@ -1,11 +1,14 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-Sn-Extension-CodingSCT-Potassium-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+	</meta>
 	<status value="final"/>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
-				<valueId value="Serumpotassiummeasurement"/>
+				<valueString value="Serum potassium measurement"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
 				<valueId value="405941011"/>
