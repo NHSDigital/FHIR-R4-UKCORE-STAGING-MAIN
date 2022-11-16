@@ -1,32 +1,32 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-EthnicCategory"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory"/>
-	<version value="2.2.0"/>
+	<version value="2.2.0" />
 	<name value="UKCoreEthnicCategory"/>
 	<title value="UK Core Ethnic Category"/>
-	<status value="active"/>
-	<date value="2022-08-26"/>
-	<publisher value="HL7 UK"/>
+	<status value="active" />
+	<date value="2022-08-26" />
+	<publisher value="HL7 UK" />
 	<contact>
-		<name value="HL7 UK"/>
+		<name value="HL7 UK" />
 		<telecom>
-			<system value="email"/>
-			<value value="secretariat@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
+			<system value="email" />
+			<value value="secretariat@hl7.org.uk" />
+			<use value="work" />
+			<rank value="1" />
 		</telecom>
 	</contact>
 	<contact>
-		<name value="NHS Digital"/>
+		<name value="NHS Digital" />
 		<telecom>
-			<system value="email"/>
-			<value value="interoperabilityteam@nhs.net"/>
-			<use value="work"/>
-			<rank value="2"/>
+			<system value="email" />
+			<value value="interoperabilityteam@nhs.net" />
+			<use value="work" />
+			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A set of codes that define the ethnicity of a person, as specified by the person."/>
-	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
 	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
@@ -36,180 +36,235 @@
 		</include>
 	</compose>
 	<expansion>
+		<identifier value="b5d7321a-cc47-4d0b-aeda-35f3a230f043"/>
+		<timestamp value="2021-09-09T14:17:34+00:00"/>
+		<total value="35"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="K"/>
-			<display value="Bangladeshi"/>
+			<version value="1.0.0"/>
+			<code value="N"/>
+			<display value="African"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
 			<code value="L"/>
 			<display value="Any other Asian background"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="J"/>
-			<display value="Pakistani"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
 			<code value="P"/>
 			<display value="Any other Black background"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="M"/>
-			<display value="Caribbean"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="N"/>
-			<display value="African"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="C"/>
-			<display value="White - Any other White background"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="B"/>
-			<display value="White - Irish"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="D"/>
-			<display value="White and Black Caribbean"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="A"/>
-			<display value="White - British"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="A"/>
-			<display value="Any White Background, including Welsh, English, Scottish, Northern Irish, Irish, British"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="B"/>
-			<display value="Gypsy or Irish Traveller"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="G"/>
-			<display value="Any other mixed background / multiple ethnic background"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="H"/>
-			<display value="Indian"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="E"/>
-			<display value="White and Black African"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="F"/>
-			<display value="White and Asian"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="Z"/>
-			<display value="Not stated"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
 			<code value="S"/>
 			<display value="Any other ethnic group"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="G"/>
+			<display value="Any other mixed background / multiple ethnic background"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="A"/>
+			<display value="Any White Background, including Welsh, English, Scottish, Northern Irish, Irish, British"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
 			<code value="T"/>
 			<display value="Arab"/>
 		</contains>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
-			<code value="R"/>
-			<display value="Chinese"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="L"/>
+			<display value="Asian or Asian British - Any other Asian background"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="Z"/>
-			<display value="Not stated"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="99"/>
-			<display value="Not known"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
 			<code value="K"/>
 			<display value="Asian or Asian British - Bangladeshi"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="J"/>
-			<display value="Asian or Asian British - Pakistani"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
 			<code value="H"/>
 			<display value="Asian or Asian British - Indian"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="G"/>
-			<display value="Mixed - Any other mixed background"/>
+			<version value="1.0.0"/>
+			<code value="J"/>
+			<display value="Asian or Asian British - Pakistani"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="K"/>
+			<display value="Bangladeshi"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="F"/>
-			<display value="Mixed - White and Asian"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="E"/>
-			<display value="Mixed - White and Black African"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="D"/>
-			<display value="Mixed - White and Black Caribbean"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="S"/>
-			<display value="Other Ethnic Groups - Any other ethnic group"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="R"/>
-			<display value="Other Ethnic Groups - Chinese"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="P"/>
-			<display value="Black or Black British - Any other Black background"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
 			<code value="N"/>
 			<display value="Black or Black British - African"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="P"/>
+			<display value="Black or Black British - Any other Black background"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
 			<code value="M"/>
 			<display value="Black or Black British - Caribbean"/>
 		</contains>
 		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="M"/>
+			<display value="Caribbean"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="R"/>
+			<display value="Chinese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="B"/>
+			<display value="Gypsy or Irish Traveller"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="H"/>
+			<display value="Indian"/>
+		</contains>
+		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
-			<code value="L"/>
-			<display value="Asian or Asian British - Any other Asian background"/>
+			<version value="1.0.0"/>
+			<code value="G"/>
+			<display value="Mixed - Any other mixed background"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="F"/>
+			<display value="Mixed - White and Asian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="E"/>
+			<display value="Mixed - White and Black African"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="D"/>
+			<display value="Mixed - White and Black Caribbean"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="99"/>
+			<display value="Not known"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="Z"/>
+			<display value="Not stated"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="Z"/>
+			<display value="Not stated"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="S"/>
+			<display value="Other Ethnic Groups - Any other ethnic group"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="R"/>
+			<display value="Other Ethnic Groups - Chinese"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="J"/>
+			<display value="Pakistani"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="C"/>
+			<display value="White - Any other White background"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="A"/>
+			<display value="White - British"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"/>
+			<version value="1.0.0"/>
+			<code value="B"/>
+			<display value="White - Irish"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="F"/>
+			<display value="White and Asian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="E"/>
+			<display value="White and Black African"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales"/>
+			<version value="1.0.0"/>
+			<code value="D"/>
+			<display value="White and Black Caribbean"/>
 		</contains>
 	</expansion>
 </ValueSet>
