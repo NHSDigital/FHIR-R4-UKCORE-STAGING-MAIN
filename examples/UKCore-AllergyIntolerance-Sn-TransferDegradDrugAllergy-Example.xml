@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example"/>
+	<id value="UKCore-AllergyIntolerance-Sn-TransferDegradDrugAllergy-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
 	</meta>
@@ -21,13 +21,13 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="196471000000108"/>
-			<display value="Transfer-degraded non-drug allergy (record artifact)"/>
+			<code value="196461000000101"/>
+			<display value="Transfer-degraded drug allergy"/>
 		</coding>
-		<text value="Latex"/>
+		<text value="Amoxicillin 250mg capsules"/>
 	</code>
 	<!-- **************Snippet end************** -->
 	<patient>
-		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 </AllergyIntolerance>

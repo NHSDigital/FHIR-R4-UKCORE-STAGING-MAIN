@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/R4-Schemas/fhir-all-xsd/medication.xsd">
-<id value="UKCore-Medication-Extension-MedicationTradeFamily-Example"/>
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Medication-Extension-MedicationTradeFamily-Example"/>
 	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily">
 		<valueCodeableConcept>
 			<coding>
-   <system value="http://snomed.info/sct"/>
-   <code value="9298001000001101"/>
-   <display value="Panadol Extra"/>
-  </coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="9298001000001101"/>
+				<display value="Panadol Extra"/>
+			</coding>
 		</valueCodeableConcept>
 	</extension>
 	<!-- **************extension end************** -->
-	</Medication>
+	<code>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="18677911000001109"/>
+			<display value="Panadol Extra Advance 500mg/65mg tablets (GlaxoSmithKline Consumer Healthcare UK Ltd)"/>
+		</coding>
+	</code>
+</Medication>

@@ -1,0 +1,16 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Medication-Sn-Extension-Amoxicillin-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"/>
+	</meta>
+	<!-- **************Snippet start************** -->
+	<code>
+		<coding>
+			<system value="https://dmd.nhs.uk/"/>
+			<code value="323509004"/>
+			<display value="Amoxicillin 250mg capsules"/>
+			<userSelected value="true"/>
+		</coding>
+	</code>
+	<!-- **************Snippet end************** -->
+</Medication>
