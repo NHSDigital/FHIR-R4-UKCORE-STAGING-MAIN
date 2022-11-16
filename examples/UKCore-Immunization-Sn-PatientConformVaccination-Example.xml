@@ -1,4 +1,4 @@
-<Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitHub/SchemasR4/fhir-all-xsd%20(1)/fhir-all-xsd/immunization.xsd">
+<Immunization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Immunization-Sn-PatientConformVaccination-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
@@ -8,7 +8,7 @@
 		<coding>
 			<system value="https://dmd.nhs.uk"/>
 			<code value="39114911000001105"/>
-			<display value="COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"/>
+			<display value="COVID-19 Vaccine Vaxzevria (ChAdOx1 S [recombinant]) not less than 2.5x100,000,000 infectious units/0.5ml dose suspension for injection multidose vials (AstraZeneca UK Ltd)"/>
 		</coding>
 	</vaccineCode>
 	<!--  **************snippet start**************  -->
