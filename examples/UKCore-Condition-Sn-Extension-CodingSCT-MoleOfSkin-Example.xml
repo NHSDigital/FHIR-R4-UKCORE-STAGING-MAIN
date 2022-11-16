@@ -7,9 +7,9 @@
 	<code>
 		<coding>
 			<system value="http://read.info/ctv3"/>
-			<code value="X78uv"/>
+			<code value="X78Uv"/>
 			<!-- no term code, so CTV3 PT is implied? -->
-			<display value="Late inspiration"/>
+			<display value="Benign melanocytic naevus skin"/>
 			<!-- text of V3 PT -->
 		</coding>
 		<coding>
