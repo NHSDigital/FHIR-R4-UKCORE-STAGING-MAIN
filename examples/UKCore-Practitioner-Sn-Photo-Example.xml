@@ -1,0 +1,12 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Practitioner-Sn-Photo-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"/>
+	</meta>
+	<!-- **************snippet start************** -->
+	<photo>
+		<contentType value="image/png"/>
+		<data value="base64Binary"/>
+	</photo>
+	<!-- **************snippet end************** -->
+</Practitioner>
