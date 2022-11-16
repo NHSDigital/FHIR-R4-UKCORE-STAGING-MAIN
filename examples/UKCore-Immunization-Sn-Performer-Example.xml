@@ -1,0 +1,40 @@
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Immunization-Sn-Performer-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
+	</meta>
+	<status value="completed"/>
+	<vaccineCode>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="39114911000001105"/>
+			<display value="COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"/>
+		</coding>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</patient>
+	<occurrenceDateTime value="2021-07-20"/>
+	<!-- **************snippet start************** -->
+	<performer>
+		<actor>
+			<type value="Practitioner"/>
+			<identifier>
+				<system value="https://fhir.hl7.org.uk/Id/nmc-number"/>
+				<value value="5566789"/>
+			</identifier>
+			<display value="HOLDING, Rafferty"/>
+		</actor>
+	</performer>
+	<performer>
+		<actor>
+			<type value="Organization"/>
+			<identifier>
+				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+				<value value="C4B2A"/>
+			</identifier>
+			<display value="ELLAND ROAD STADIUM - COVID VACCINATION CENTRE"/>
+		</actor>
+	</performer>
+	<!-- **************snippet end************** -->
+</Immunization>
