@@ -13,7 +13,7 @@
 	</vaccineCode>
 	<!--  **************snippet start**************  -->
 	<patient>
-		<reference value="urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 		<type value="Patient"/>
 		<identifier>
 			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
