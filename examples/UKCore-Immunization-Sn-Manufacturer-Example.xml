@@ -1,0 +1,23 @@
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Immunization-Sn-Manufacturer-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
+	</meta>
+	<status value="completed"/>
+	<vaccineCode>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="39114911000001105"/>
+			<display value="COVID-19 Vaccine Vaxzevria (ChAdOx1 S [recombinant]) not less than 2.5x100,000,000 infectious units/0.5ml dose suspension for injection multidose vials (AstraZeneca UK Ltd)"/>
+		</coding>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</patient>
+	<occurrenceDateTime value="2021-07-20"/>
+	<!-- **************snippet start************** -->
+	<manufacturer>
+		<display value="DREAMLAND Pharmaceuticals Ltd"/>
+	</manufacturer>
+	<!-- **************snippet end************** -->
+</Immunization>

@@ -8,7 +8,7 @@
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType">
 		<valueCodeableConcept>
 		<coding>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganization"/>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganizationType"/>
 			<code value="prescribed-at-gp-practice"/>
 			<display value="Prescribed at GP practice"/>
 			</coding>

@@ -1,0 +1,19 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="UKCore-PractitionerRole-Sn-Organization-Code-Example"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"/>
+	</meta>
+		<!-- **************snippet start************** -->
+	<identifier>
+	    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
+		<value value="7d107ed2-70c6-43d9-9cbe-f19c319d1456"/>
+	</identifier>
+	<organization>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+			<value value="RD8"/>
+		</identifier>
+		<display value="MILTON KEYNES UNIVERSITY HOSPITAL NHS FOUNDATION TRUST"/>
+	</organization>
+<!-- **************snippet end************** -->
+</PractitionerRole>
