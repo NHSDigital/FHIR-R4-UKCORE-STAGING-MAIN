@@ -152,20 +152,6 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
       </type>
     </element>
-    <element id="Patient.extension:patientReligion">
-      <path value="Patient.extension" />
-      <sliceName value="patientReligion" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/patient-religion" />
-      </type>
-    </element>
-    <element id="Patient.extension:patientReligion.value[x]">
-      <path value="Patient.extension.value[x]" />
-      <short value="The religious affiliation of the patient" />
-      <definition value="The religious affiliation of the patient." />
-    </element>
     <element id="Patient.extension:patientInterpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="patientInterpreterRequired" />
