@@ -1,5 +1,5 @@
 <Immunization xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Immunization-Sn-ProtocolApplied-Example"/>
+	<id value="UKCore-Immunization-Sn-PatientConformVaccination-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
 	</meta>
@@ -11,20 +11,15 @@
 			<display value="COVID-19 Vaccine Vaxzevria (ChAdOx1 S [recombinant]) not less than 2.5x100,000,000 infectious units/0.5ml dose suspension for injection multidose vials (AstraZeneca UK Ltd)"/>
 		</coding>
 	</vaccineCode>
+	<!--  **************snippet start**************  -->
 	<patient>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+		<reference value="urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002"/>
+		<type value="Patient"/>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9912003888"/>
+		</identifier>
 	</patient>
+	<!--  **************snippet end**************  -->
 	<occurrenceDateTime value="2021-07-20"/>
-	<!-- **************snippet start************** -->
-	<protocolApplied>
-		<targetDisease>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="840539006"/>
-				<display value="COVID-19"/>
-			</coding>
-		</targetDisease>
-		<doseNumberPositiveInt value="1"/>
-	</protocolApplied>
-	<!-- **************snippet end************** -->
 </Immunization>

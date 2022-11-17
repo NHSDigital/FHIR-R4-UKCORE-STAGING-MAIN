@@ -1,5 +1,5 @@
 <Immunization xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Immunization-Sn-ProtocolApplied-Example"/>
+	<id value="UKCore-Immunization-Sn-Performer-Example"/>
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
 	</meta>
@@ -16,15 +16,25 @@
 	</patient>
 	<occurrenceDateTime value="2021-07-20"/>
 	<!-- **************snippet start************** -->
-	<protocolApplied>
-		<targetDisease>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="840539006"/>
-				<display value="COVID-19"/>
-			</coding>
-		</targetDisease>
-		<doseNumberPositiveInt value="1"/>
-	</protocolApplied>
+	<performer>
+		<actor>
+			<type value="Practitioner"/>
+			<identifier>
+				<system value="https://fhir.hl7.org.uk/Id/nmc-number"/>
+				<value value="5566789"/>
+			</identifier>
+			<display value="HOLDING, Rafferty"/>
+		</actor>
+	</performer>
+	<performer>
+		<actor>
+			<type value="Organization"/>
+			<identifier>
+				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+				<value value="C4B2A"/>
+			</identifier>
+			<display value="ELLAND ROAD STADIUM - COVID VACCINATION CENTRE"/>
+		</actor>
+	</performer>
 	<!-- **************snippet end************** -->
 </Immunization>
