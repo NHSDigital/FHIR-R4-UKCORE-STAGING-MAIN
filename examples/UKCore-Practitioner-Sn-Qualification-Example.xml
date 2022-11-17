@@ -15,6 +15,7 @@
 				<code value="BS"/>
 				<display value="Bachelor of Science"/>
 			</coding>
+			<text value="Bachelor of Science"/>
 		</code>
 		<period>
 			<start value="1995"/>
