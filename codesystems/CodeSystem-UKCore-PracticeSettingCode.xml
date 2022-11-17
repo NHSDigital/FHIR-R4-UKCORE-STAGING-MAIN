@@ -106,10 +106,6 @@
 		<display value = "Paediatric Surgery" />
 	</concept>
 	<concept>
-		<code value = "191" />
-		<display value = "Pain Management (Retired 1 April 2004)" />
-	</concept>
-	<concept>
 		<code value = "180" />
 		<display value = "Emergency Medicine" />
 	</concept>
@@ -156,10 +152,6 @@
 	<concept>
 		<code value = "311" />
 		<display value = "Clinical Genetics" />
-	</concept>
-	<concept>
-		<code value = "312" />
-		<display value = "CLINICAL CYTOGENETICS and MOLECULAR GENETICS (Retired 1 April 2010) National Code 312 is retained for CONSULTANTS qualified in this Main Specialty prior to 1 April 2010" />
 	</concept>
 	<concept>
 		<code value = "313" />
@@ -278,14 +270,6 @@
 		<display value = "Community Sexual and Reproductive Health" />
 	</concept>
 	<concept>
-		<code value = "510" />
-		<display value = "Antenatal Clinic (Retired 1 April 2004)" />
-	</concept>
-	<concept>
-		<code value = "520" />
-		<display value = "Postnatal Clinic (Retired 1 April 2004)" />
-	</concept>
-	<concept>
 		<code value = "560" />
 		<display value = "Midwifery" />
 	</concept>
@@ -296,14 +280,6 @@
 	<concept>
 		<code value = "601" />
 		<display value = "General Dental Practice" />
-	</concept>
-	<concept>
-		<code value = "610" />
-		<display value = "Maternity Function (Retired 1 April 2004)" />
-	</concept>
-	<concept>
-		<code value = "620" />
-		<display value = "Other than Maternity (Retired 1 April 2004)" />
 	</concept>
 	<concept>
 		<code value = "700" />
@@ -366,10 +342,6 @@
 		<display value = "Medical Microbiology and Virology" />
 	</concept>
 	<concept>
-		<code value = "832" />
-		<display value = "Neuropathology (Retired 1 April 2004)" />
-	</concept>
-	<concept>
 		<code value = "833" />
 		<display value = "Medical Microbiology" />
 	</concept>
@@ -404,9 +376,5 @@
 	<concept>
 		<code value = "960" />
 		<display value = "Allied Health Professional" />
-	</concept>
-	<concept>
-		<code value = "990" />
-		<display value = "Joint Consultant Clinics (Retired 1 April 2004)" />
 	</concept>
 </CodeSystem>
