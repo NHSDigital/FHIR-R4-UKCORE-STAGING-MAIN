@@ -22,9 +22,9 @@
   </code>
   <specialty>
     <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="408443003" />
-      <display value="General medical practice" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
+      <code value="600" />
+      <display value="General Medical Practice" />
     </coding>
   </specialty>
   <telecom>

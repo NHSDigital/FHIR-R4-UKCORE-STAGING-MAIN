@@ -1,10 +1,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="UKCore-PracticeSettingCodeWales" />
-  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCodeWales" />
+  <id value="UKCore-PracticeSettingCode" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
   <version value="1.0.0" />
-  <name value="UKCorePracticeSettingCodeWales" />
-  <title value="UKCore Practice Setting Code Wales" />
-  <status value="draft" />
+  <name value="UKCorePracticeSettingCode" />
+  <title value="UKCore Practice Setting Code" />
+  <status value="active" />
   <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
@@ -25,7 +25,7 @@
       <rank value="2" />
     </telecom>
   </contact>
-  <description value="This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in Wales and are copied from the content of the NHS Wales Data Dictionary web page at http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/mainspecialtyconsultant.htm on 20/10/2022." />
+  <description value="This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in England and Wales and are copied from the content of the NHS Data Dictionary web page at https://www.datadictionary.nhs.uk/attributes/main_specialty_code.html and Wales Data Dictionary page at http://www.datadictionary.wales.nhs.uk/#!WordDocuments/mainspecialtyconsultant.htm on 20/10/2022." />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <caseSensitive value="true" />
   <content value="complete" />
@@ -106,7 +106,7 @@
 		<display value = "Paediatric Surgery" />
 	</concept>
 	<concept>
-		<code value = "1801" />
+		<code value = "180" />
 		<display value = "Emergency Medicine" />
 	</concept>
 	<concept>
@@ -270,24 +270,16 @@
 		<display value = "Community Sexual and Reproductive Health" />
 	</concept>
 	<concept>
+		<code value = "560" />
+		<display value = "Midwifery" />
+	</concept>
+	<concept>
 		<code value = "600" />
 		<display value = "General Medical Practice" />
 	</concept>
 	<concept>
 		<code value = "601" />
 		<display value = "General Dental Practice" />
-	</concept>
-	<concept>
-		<code value = "8311" />
-		<display value = "Medical Microbiology and Virology" />
-	</concept>
-	<concept>
-		<code value = "8331" />
-		<display value = "Medical Microbiology" />
-	</concept>
-	<concept>
-		<code value = "8341" />
-		<display value = "Medical Virology" />
 	</concept>
 	<concept>
 		<code value = "700" />
@@ -314,40 +306,48 @@
 		<display value = "Old Age Psychiatry" />
 	</concept>
 	<concept>
-		<code value = "5601" />
-		<display value = "Midwifery" />
-	</concept>
-	<concept>
-		<code value = "8001" />
+		<code value = "800" />
 		<display value = "Clinical Oncology" />
 	</concept>
 	<concept>
-		<code value = "8101" />
+		<code value = "810" />
 		<display value = "Radiology" />
 	</concept>
 	<concept>
-		<code value = "8201" />
+		<code value = "820" />
 		<display value = "General Pathology" />
 	</concept>
 	<concept>
-		<code value = "8211" />
+		<code value = "821" />
 		<display value = "Blood Transfusion" />
 	</concept>
 	<concept>
-		<code value = "8221" />
+		<code value = "822" />
 		<display value = "Chemical Pathology" />
 	</concept>
 	<concept>
-		<code value = "8231" />
+		<code value = "823" />
 		<display value = "Haematology" />
 	</concept>
 	<concept>
-		<code value = "8241" />
+		<code value = "824" />
 		<display value = "Histopathology" />
 	</concept>
 	<concept>
-		<code value = "8301" />
+		<code value = "830" />
 		<display value = "Immunopathology" />
+	</concept>
+	<concept>
+		<code value = "831" />
+		<display value = "Medical Microbiology and Virology" />
+	</concept>
+	<concept>
+		<code value = "833" />
+		<display value = "Medical Microbiology" />
+	</concept>
+	<concept>
+		<code value = "834" />
+		<display value = "Medical Virology" />
 	</concept>
 	<concept>
 		<code value = "900" />
@@ -377,5 +377,4 @@
 		<code value = "960" />
 		<display value = "Allied Health Professional" />
 	</concept>
-
 </CodeSystem>
