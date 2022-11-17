@@ -107,7 +107,7 @@
 	<element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
       </binding>
     </element>
