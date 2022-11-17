@@ -17,6 +17,13 @@
 	<occurrenceDateTime value="2021-07-20"/>
 	<!-- **************snippet start************** -->
 	<protocolApplied>
+		<targetDisease>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="840539006"/>
+				<display value="COVID-19"/>
+			</coding>
+		</targetDisease>
 		<doseNumberPositiveInt value="1"/>
 	</protocolApplied>
 	<!-- **************snippet end************** -->
