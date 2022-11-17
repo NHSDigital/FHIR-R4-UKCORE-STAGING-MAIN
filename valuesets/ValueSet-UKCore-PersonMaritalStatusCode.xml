@@ -28,6 +28,16 @@
 	<description value="A set of codes that define the legal marital status of a person."/>
 	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <concept>
+                <code value="UNK" />
+                <display value="unknown" />
+            </concept>
+        </include>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
 		</include>
@@ -48,6 +58,72 @@
 			<name value="count"/>
 			<valueInteger value="1000"/>
 		</parameter>
+		<contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <version value="2018-08-12" />
+            <code value="UNK" />
+            <display value="unknown" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="A" />
+            <display value="Annulled" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="D" />
+            <display value="Divorced" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="T" />
+            <display value="Domestic partner" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="I" />
+            <display value="Interlocutory" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="L" />
+            <display value="Legally Separated" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="M" />
+            <display value="Married" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="S" />
+            <display value="Never Married" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="P" />
+            <display value="Polygamous" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="U" />
+            <display value="unmarried" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <version value="2018-08-12" />
+            <code value="W" />
+            <display value="Widowed" />
+        </contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
 			<version value="1.0.0"/>
