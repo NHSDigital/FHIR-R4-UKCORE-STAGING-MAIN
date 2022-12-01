@@ -6,9 +6,6 @@
 		<resource>
 			<List>
 				<id value="UKCore-Allergy-List-Example"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List"/>
-				</meta>
 				<status value="current"/>
 				<mode value="snapshot"/>
 				<code>
@@ -35,9 +32,6 @@
 		<resource>
 			<AllergyIntolerance>
 				<id value="efae5859-28df-4e7d-be91-6df56d8215e4"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
-				</meta>
 				<clinicalStatus>
 					<coding>
 						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
