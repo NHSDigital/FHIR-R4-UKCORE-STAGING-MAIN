@@ -74,7 +74,7 @@
     <element id="MessageHeader.event[x]">
       <path value="MessageHeader.event[x]" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="Message event" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MessageEvent" />
       </binding>
