@@ -140,7 +140,7 @@
     <element id="Encounter.serviceType">
       <path value="Encounter.serviceType" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="Any code from the SNOMED CT UK Refset with fully specified name 'Services simple reference set (foundation metadata concept)' with Refset Id 1127531000000102." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" />
       </binding>

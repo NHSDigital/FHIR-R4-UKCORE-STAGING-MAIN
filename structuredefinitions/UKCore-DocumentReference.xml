@@ -191,7 +191,7 @@
     <element id="DocumentReference.context.practiceSetting">
       <path value="DocumentReference.context.practiceSetting" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="UK Core Care setting type of the document" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" />
       </binding>
