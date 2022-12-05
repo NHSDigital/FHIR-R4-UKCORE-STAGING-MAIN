@@ -1,8 +1,5 @@
 <List xmlns="http://hl7.org/fhir">
     <id value="UKCore-List-Extension-ListWarningCode-Example" />
-    <meta>
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
-    </meta>
     <!--  **************extension start**************  -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode">
         <valueCode value="data-in-transit"/>

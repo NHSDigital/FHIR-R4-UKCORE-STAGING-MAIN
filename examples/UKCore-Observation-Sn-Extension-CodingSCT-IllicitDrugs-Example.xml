@@ -1,8 +1,5 @@
-<Observation xmlns="http://hl7.org/fhir">
+ <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-Sn-Extension-CodingSCT-IllicitDrugs-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-	</meta>
 	<status value="final"/>
 	<!-- **************Snippet start************** -->
 	<code>
