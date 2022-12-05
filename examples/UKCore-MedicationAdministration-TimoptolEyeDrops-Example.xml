@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationAdministration xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationAdministration-TimoptolEyeDrops-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration"/>
-	</meta>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="e8779393-9b7c-4654-a8df-0ba4cc9b28ce"/>

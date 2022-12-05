@@ -1,8 +1,5 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
-	</meta>
+	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="ac0ffbdf-3289-41d5-84d9-068a1f5937db"/>

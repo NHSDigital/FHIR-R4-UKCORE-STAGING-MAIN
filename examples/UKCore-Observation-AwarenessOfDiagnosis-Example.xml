@@ -1,8 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-AwarenessOfDiagnosis-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-  </meta>
   <status value="final" />
   <code>
     <coding>

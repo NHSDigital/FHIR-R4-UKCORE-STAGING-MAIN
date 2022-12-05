@@ -1,8 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition-BleedingFromEar-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  </meta>
   <clinicalStatus>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />

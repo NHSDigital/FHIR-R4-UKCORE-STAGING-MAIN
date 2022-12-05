@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
-<id value="UKCore-DocumentReference-CarePlanReportPDF-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference"/>
-	</meta>
+	<id value="UKCore-DocumentReference-CarePlanReportPDF-Example"/>
 	<status value="current"/>
 	<type>
 		<coding>

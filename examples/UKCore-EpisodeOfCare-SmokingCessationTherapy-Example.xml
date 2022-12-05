@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EpisodeOfCare xmlns="http://hl7.org/fhir">
-<id value="UKCore-EpisodeOfCare-SmokingCessationTherapy-Example"/>
-<meta>
-	<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare"/>
-</meta>
+	<id value="UKCore-EpisodeOfCare-SmokingCessationTherapy-Example"/>
 	<status value="finished"/>
 	<type>
 		<coding>
