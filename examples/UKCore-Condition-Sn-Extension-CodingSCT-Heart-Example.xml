@@ -1,8 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Condition-Sn-Extension-CodingSCT-Heart-Example"/>
-	 <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  </meta>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>

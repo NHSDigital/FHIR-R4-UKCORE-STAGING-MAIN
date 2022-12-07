@@ -1,8 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="UKCore-Organization-WhiteRoseMedicalCentre-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-  </meta>
   <identifier>
     <use value="official" />
     <system value="https://fhir.nhs.uk/Id/ods-organization-code" />

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
  <id value="UKCore-Specimen-BloodSpecimen-Example"/>
- <meta>
-  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"/>
- </meta>
  <status value="available"/>
  <type>
   <coding>

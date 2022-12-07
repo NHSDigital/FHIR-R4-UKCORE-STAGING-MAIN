@@ -1,8 +1,5 @@
 <Immunization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Immunization-Sn-Performer-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
-	</meta>
 	<status value="completed"/>
 	<vaccineCode>
 		<coding>

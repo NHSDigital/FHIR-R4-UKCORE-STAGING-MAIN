@@ -1,8 +1,5 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
 	<id value="UKCore-QuestionnaireResponse-BabyPatientSurvey-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
-	</meta>
 	<identifier>
 		<value value="51f09892-d552-4265-8734-db6c7adbf4a4"/>
 		<assigner>

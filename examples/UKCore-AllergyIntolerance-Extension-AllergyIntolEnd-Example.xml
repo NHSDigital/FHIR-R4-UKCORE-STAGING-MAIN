@@ -1,8 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyIntolerance-Extension-AllergyIntolEnd-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
-	</meta>
 	<clinicalStatus>
 		<!-- **************extension start************** -->
 		<!--This supports the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid..-->
