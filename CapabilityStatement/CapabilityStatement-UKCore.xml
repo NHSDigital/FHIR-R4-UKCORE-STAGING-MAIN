@@ -118,9 +118,10 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
 		</resource>
 		<resource>
-			<type value="Observation"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-		</resource>
+            <type value="Observation"/>
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+            <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation"/>
+        </resource>
 		<resource>
 			<type value="OperationOutcome"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"/>
