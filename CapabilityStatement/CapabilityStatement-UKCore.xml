@@ -182,7 +182,7 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"/>
 		</resource>
 		<resource>
-			<type value="Observation"/>
+			<type value="VitalSigns-Observation"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation"/>
 		</resource>
 	</rest>
