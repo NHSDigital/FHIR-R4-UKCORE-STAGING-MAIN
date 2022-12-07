@@ -22,48 +22,12 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"/>
 		</resource>
 		<resource>
-			<type value="AuditEvent"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent"/>
-		</resource>
-		<resource>
-			<type value="Bundle"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"/>
-		</resource>
-		<resource>
-			<type value="CarePlan"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan"/>
-		</resource>
-		<resource>
-			<type value="CareTeam"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam"/>
-		</resource>
-		<resource>
-			<type value="Communication"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication"/>
-		</resource>
-		<resource>
 			<type value="Composition"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition"/>
 		</resource>
 		<resource>
 			<type value="Condition"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition"/>
-		</resource>
-		<resource>
-			<type value="Consent"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"/>
-		</resource>
-		<resource>
-			<type value="Device"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"/>
-		</resource>
-		<resource>
-			<type value="DiagnosticReport"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"/>
-		</resource>
-		<resource>
-			<type value="DocumentReference"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference"/>
 		</resource>
 		<resource>
 			<type value="Encounter"/>
@@ -118,10 +82,6 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
 		</resource>
 		<resource>
-			<type value="Observation"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-		</resource>
-		<resource>
 			<type value="OperationOutcome"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"/>
 		</resource>
@@ -146,10 +106,6 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"/>
 		</resource>
 		<resource>
-			<type value="Provenance"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance"/>
-		</resource>
-		<resource>
 			<type value="Questionnaire"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"/>
 		</resource>
@@ -172,10 +128,6 @@
 		<resource>
 			<type value="Slot"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot"/>
-		</resource>
-		<resource>
-			<type value="Specimen"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"/>
 		</resource>
 		<resource>
 			<type value="Task"/>
