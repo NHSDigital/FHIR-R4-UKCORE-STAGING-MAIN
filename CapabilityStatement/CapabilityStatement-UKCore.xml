@@ -120,7 +120,7 @@
 		<resource>
             		<type value="Observation"/>
             		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-            		<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation"/>
+            		<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
         	</resource>
 		<resource>
 			<type value="OperationOutcome"/>
