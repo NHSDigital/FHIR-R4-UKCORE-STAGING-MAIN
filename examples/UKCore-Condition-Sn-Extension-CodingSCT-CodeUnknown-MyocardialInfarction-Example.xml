@@ -1,5 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Condition-Sn-Extension-CodingSCT-CodeUnknown-Example"/>
+	<id value="UKCore-Condition-Sn-Extension-CodingSCT-CodeUnknown-MyocardialInfarction-Example"/>
 	<!-- **************Snippet start************** -->
 	<code>
 			<text value="Myocardial infarction"/>
