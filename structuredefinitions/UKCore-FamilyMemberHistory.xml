@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-FamilyMemberHistory" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory" />
+  <version value="1.0.0" />
+  <name value="UKCoreFamilyMemberHistory" />
+  <title value="UKCore FamilyMemberHistory" />
+  <status value="draft" />
+  <date value="2022-12-15" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="secretariat@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="2" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [FamilyMemberHistory](https://hl7.org/fhir/R4/familymemberhistory.html)." />
+  <purpose value="This profile allows exchange of information about health events and conditions for a person related to the patient relevant in the context of care." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="FamilyMemberHistory" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="FamilyMemberHistory.instantiatesCanonical">
+      <path value="FamilyMemberHistory.instantiatesCanonical" />
+      <type>
+        <code value="canonical" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+      </type>
+    </element>
+    <element id="FamilyMemberHistory.patient">
+      <path value="FamilyMemberHistory.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="FamilyMemberHistory.reasonReference">
+      <path value="FamilyMemberHistory.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
