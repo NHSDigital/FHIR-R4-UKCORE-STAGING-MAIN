@@ -100,6 +100,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+	<element id="Appointment.specialty">
+      <path value="Appointment.specialty" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
+      </binding>
+    </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <binding>
