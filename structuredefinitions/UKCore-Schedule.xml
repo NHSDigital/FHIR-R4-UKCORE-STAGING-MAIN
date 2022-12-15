@@ -1,82 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Schedule" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule" />
-  <version value="1.2.0" />
-  <name value="UKCoreSchedule" />
-  <title value="UK Core Schedule" />
-  <status value="active" />
-  <date value="2022-12-16" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Schedule](https://hl7.org/fhir/R4/Schedule.html)." />
-  <purpose value="Schedule resources provide a container for time-slots that can be booked using an appointment. It provides the window of time (period) that slots are defined for and what type of appointments can be booked.&#xD;&#xA;&#xD;&#xA;The schedule does not provide any information about actual appointments. This separation greatly assists where access to the appointments would not be permitted for security or privacy reasons, while still being able to determine if an appointment might be available." />
-  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="ical" />
-    <uri value="http://ietf.org/rfc/2445" />
-    <name value="iCalendar" />
-  </mapping>
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Schedule" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Schedule" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Schedule.identifier.assigner">
-      <path value="Schedule.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Schedule.actor">
-      <path value="Schedule.actor" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="Schedule.actor.identifier.assigner">
-      <path value="Schedule.actor.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-  </differential>
+	<id value="UKCore-Schedule"/>
+	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule"/>
+	<version value="1.2.0"/>
+	<name value="UKCoreSchedule"/>
+	<title value="UK Core Schedule"/>
+	<status value="active"/>
+	<date value="2022-12-16"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="secretariat@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="2"/>
+		</telecom>
+	</contact>
+	<description value="This profile defines the UK constraints and extensions on the International FHIR resource [Schedule](https://hl7.org/fhir/R4/Schedule.html)."/>
+	<purpose value="Schedule resources provide a container for time-slots that can be booked using an appointment. It provides the window of time (period) that slots are defined for and what type of appointments can be booked.&#xD;&#xA;&#xD;&#xA;The schedule does not provide any information about actual appointments. This separation greatly assists where access to the appointments would not be permitted for security or privacy reasons, while still being able to determine if an appointment might be available."/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="w5"/>
+		<uri value="http://hl7.org/fhir/fivews"/>
+		<name value="FiveWs Pattern Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="ical"/>
+		<uri value="http://ietf.org/rfc/2445"/>
+		<name value="iCalendar"/>
+	</mapping>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Schedule"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Schedule"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Schedule.identifier.assigner">
+			<path value="Schedule.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+			</type>
+		</element>
+		<element id="Schedule.specialty">
+			<path value="Schedule.specialty"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode"/>
+			</binding>
+		</element>
+		<element id="Schedule.actor">
+			<path value="Schedule.actor"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"/>
+			</type>
+		</element>
+		<element id="Schedule.actor.identifier.assigner">
+			<path value="Schedule.actor.identifier.assigner"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>
