@@ -5,7 +5,7 @@
 	<name value="UKCore"/>
 	<status value="active"/>
 	<date value="2022-12-16T00:00:00+00:00"/>
-	<publisher value="digital.nhs.uk"/>
+	<publisher value="HL7 UK"/>
 	<description value="Conformance requirements for UKCore"/>
 	<kind value="requirements"/>
 	<fhirVersion value="4.0.1"/>
@@ -118,10 +118,10 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
 		</resource>
 		<resource>
-            		<type value="Observation"/>
-            		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-            		<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
-        	</resource>
+			<type value="Observation"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
+		</resource>
 		<resource>
 			<type value="OperationOutcome"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"/>
