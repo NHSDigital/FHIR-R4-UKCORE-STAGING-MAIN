@@ -1,8 +1,5 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationDispense-EyeDrops-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense"/>
-	</meta>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="5c92c1dc-06a9-4729-b8c9-222cf769f8dc"/>

@@ -1,8 +1,5 @@
 <Procedure xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Procedure-Extension-AnaestheticIssues-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"/>
-	</meta>
 	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AnaestheticIssues">
 		<valueCodeableConcept>

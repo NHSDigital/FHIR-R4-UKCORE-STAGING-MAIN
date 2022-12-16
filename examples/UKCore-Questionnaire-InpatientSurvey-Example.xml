@@ -1,8 +1,5 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Questionnaire-InpatientSurvey-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"/>
-	</meta>
 	<url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
 	<identifier>
 		<value value="dbba41f5-2905-4a5f-baba-e5987cbd9cca"/>
