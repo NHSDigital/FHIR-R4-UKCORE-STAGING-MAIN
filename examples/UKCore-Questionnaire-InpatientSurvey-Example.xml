@@ -29,7 +29,7 @@
 	<item>
 		<linkId value="1"/>
 		<text value="Do you have allergies?"/>
-		<type value="boolean"/>
+		<type value="string"/>
 	</item>
 	<item>
 		<linkId value="2"/>
