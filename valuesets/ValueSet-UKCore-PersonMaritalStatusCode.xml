@@ -189,7 +189,6 @@
 			<display value="Civil Partner"/>
 		</contains>
 		<contains>
-		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
 			<version value="1.0.0"/>
 			<code value="32"/>
