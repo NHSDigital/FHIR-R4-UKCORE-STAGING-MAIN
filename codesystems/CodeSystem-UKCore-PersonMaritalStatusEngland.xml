@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-PersonMaritalStatusEngland" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCorePersonMaritalStatusEngland" />
   <title value="UK Core Person Marital Status England" />
   <status value="active" />
@@ -52,5 +52,13 @@
   <concept>
     <code value="N" />
     <display value="Not disclosed" />
+  </concept>
+  <concept>
+    <code value="8" />
+    <display value="Not applicable" />
+  </concept>
+  <concept>
+    <code value="9" />
+    <display value="Not known" />
   </concept>
 </CodeSystem>
