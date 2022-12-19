@@ -5,7 +5,7 @@
 	<name value="UKCorePersonMaritalStatusCode"/>
 	<title value="UK Core Person Marital Status Code"/>
 	<status value="active"/>
-	<date value="2022-12-16"/>
+	<date value="2022-08-26"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -57,6 +57,10 @@
 				<display value="Not disclosed"/>
 			</concept>
 			<concept>
+				<code value="P"/>
+				<display value="Separated"/>
+			</concept>
+			<concept>
 				<code value="8"/>
 				<display value="Not applicable"/>
 			</concept>
@@ -76,6 +80,10 @@
 				<display value="Surviving Civil Partner"/>
 			</concept>
 			<concept>
+				<code value="51"/>
+				<display value="Separated"/>
+			</concept>
+			<concept>
 				<code value="91"/>
 				<display value="Not disclosed or unknown"/>
 			</concept>
@@ -84,7 +92,7 @@
 	<expansion>
 		<identifier value="3368b10a-72be-4c8c-9d57-133c63bbd41a"/>
 		<timestamp value="2022-11-17T13:12:59+00:00"/>
-		<total value="20"/>
+		<total value="22"/>
 		<offset value="0"/>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
@@ -179,6 +187,12 @@
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
 			<version value="1.1.0"/>
+			<code value="P"/>
+			<display value="Separated"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>
+			<version value="1.1.0"/>
 			<code value="8"/>
 			<display value="Not applicable"/>
 		</contains>
@@ -199,6 +213,12 @@
 			<version value="1.0.0"/>
 			<code value="42"/>
 			<display value="Surviving Civil Partner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+			<version value="1.0.0"/>
+			<code value="51"/>
+			<display value="Separated"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
