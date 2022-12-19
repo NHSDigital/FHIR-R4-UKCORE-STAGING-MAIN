@@ -1,8 +1,5 @@
 <Procedure xmlns="http://hl7.org/fhir">
   <id value="UKCore-Procedure-ExaminationOfSkin-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-  </meta>
   <status value="completed" />
   <code>
     <coding>

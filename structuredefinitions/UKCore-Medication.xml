@@ -87,7 +87,7 @@
       <path value="Medication.code" />
       <min value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
     </element>
