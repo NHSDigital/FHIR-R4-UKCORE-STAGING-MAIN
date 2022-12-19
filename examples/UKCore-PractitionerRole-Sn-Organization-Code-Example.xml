@@ -1,8 +1,5 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
 	<id value="UKCore-PractitionerRole-Sn-Organization-Code-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"/>
-	</meta>
 		<!-- **************snippet start************** -->
 	<identifier>
 	    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>

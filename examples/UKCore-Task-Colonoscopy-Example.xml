@@ -1,8 +1,5 @@
 <Task xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Task-Colonoscopy-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"/>
-	</meta>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="b269d1d7-1acf-47bb-8b3c-e38b583d9a07"/>
