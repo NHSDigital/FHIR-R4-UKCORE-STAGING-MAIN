@@ -1,8 +1,5 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-RichardSmith-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
-	</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 		<valueCodeableConcept>
 			<coding>
