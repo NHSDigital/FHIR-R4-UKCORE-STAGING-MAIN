@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationStatement-Extension-ChangeSummary-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
-	</meta>
 	<!--Change details extension-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationChangeSummary">
 		<extension url="status">
