@@ -1,8 +1,5 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="UKCore-Practitioner-DoctorPaulRastall-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-  </meta>
   <identifier>
     <system value="https://fhir.nhs.uk/Id/sds-user-id" />
     <value value="G12345678" />

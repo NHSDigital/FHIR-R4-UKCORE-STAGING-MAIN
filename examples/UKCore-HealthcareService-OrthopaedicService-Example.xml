@@ -1,8 +1,5 @@
 <HealthcareService xmlns="http://hl7.org/fhir">
 	<id value="UKCore-HealthcareService-OrthopaedicService-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"/>
-	</meta>
 	<identifier>
 		<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 		<value value="RR813"/>

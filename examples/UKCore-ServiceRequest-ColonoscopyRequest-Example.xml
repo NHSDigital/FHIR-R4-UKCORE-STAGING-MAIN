@@ -1,9 +1,5 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ServiceRequest-ColonoscopyRequest-Example"/>
-	<meta>
-		<lastUpdated value="2021-11-26T15:15:15+00:00"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"/>
-	</meta>
 	<!--The source of the service request.-->
 	<!-- ***************extension start*************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
