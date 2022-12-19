@@ -90,6 +90,10 @@
 		</include>
 	</compose>
 	<expansion>
+		<identifier value="3368b10a-72be-4c8c-9d57-133c63bbd41a"/>
+		<timestamp value="2022-11-17T13:12:59+00:00"/>
+		<total value="22"/>
+		<offset value="0"/>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
 			<code value="A"/>
