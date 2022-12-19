@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreMedicationRequest" />
   <title value="UK Core MedicationRequest" />
   <status value="active" />
