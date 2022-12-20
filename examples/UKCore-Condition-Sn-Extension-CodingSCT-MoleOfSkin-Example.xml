@@ -10,7 +10,7 @@
 			<!-- text of V3 PT -->
 		</coding>
 		<coding>
-			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
 				<valueString value="Mole of skin"/>
 				<!-- text for id = 1787065011 -->
 			</extension>
