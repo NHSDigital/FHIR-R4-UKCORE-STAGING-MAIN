@@ -4,7 +4,7 @@
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
-			<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
 				<valueString value="Illicit medication use unknown"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
