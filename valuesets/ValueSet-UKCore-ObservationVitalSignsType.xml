@@ -1,10 +1,10 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-VitalSignsObservationType" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-VitalSignsObservationType" />
-  <version value="2.0.1" />
-  <name value="UKCoreVitalSignsObservationType" />
-  <title value="UK Core Vital Signs Observation Type" />
-  <status value="retired" />
+  <id value="UKCore-ObservationVitalSignsType" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+  <version value="1.0.0" />
+  <name value="UKCoreObservationVitalSignsType" />
+  <title value="UK Core Observation Vital Signs Type" />
+  <status value="draft" />
   <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
