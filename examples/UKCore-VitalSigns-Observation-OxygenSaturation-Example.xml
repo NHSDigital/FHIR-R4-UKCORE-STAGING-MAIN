@@ -25,7 +25,7 @@
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
 	<performer>
