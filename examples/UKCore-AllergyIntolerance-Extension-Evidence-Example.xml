@@ -28,7 +28,7 @@
 		</coding>
 	</code>
 	<patient>
-		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 	<encounter>
 		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
