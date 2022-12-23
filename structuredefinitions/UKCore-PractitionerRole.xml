@@ -125,6 +125,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="PractitionerRole.healthcareService">
+      <path value="PractitionerRole.healthcareService" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+      </type>
+    </element>
     <element id="PractitionerRole.healthcareService.identifier.assigner">
       <path value="PractitionerRole.healthcareService.identifier.assigner" />
       <type>
