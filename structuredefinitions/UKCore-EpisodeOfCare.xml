@@ -27,7 +27,13 @@
     </telecom>
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [EpisodeOfCare](https://hl7.org/fhir/R4/EpisodeOfCare.html)." />
-  <purpose value="This profile allows exchange of information about an association between a patient and an organisation / healthcare provider(s) during which time encounters may occur. The managing organisation assumes a level of responsibility for the individual during this time." />
+  <purpose value="This profile allows exchange of information about an association between a patient and an organisation / healthcare providers during which time encounters may occur. The managing organisation assumes a level of responsibility for the individual during this time.&#xD;&#xA;&#xD;&#xA;
+  ## Relationship to Encounter &#xD;&#xA;
+The EpisodeOfCare Resource contains information about an association of a Patient with a Healthcare Provider for a period of time under which related healthcare activities may occur.
+In many cases, this represents a period of time where the Healthcare Provider has some level of responsibility for the care of the patient regarding a specific condition or problem, even if not currently participating in an encounter.
+These resources are typically known in existing systems as:
+- &#13;**EpisodeOfCare:** Case, Program, Problem, Episode
+- &#13;**Encounter:** Visit, Contact." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
