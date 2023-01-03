@@ -36,15 +36,22 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
   <derivation value="constraint" />
   <differential>
+    <element id="FamilyMemberHistory.identifier.assigner">
+      <path value="FamilyMemberHistory.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="FamilyMemberHistory.instantiatesCanonical">
       <path value="FamilyMemberHistory.instantiatesCanonical" />
       <type>
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
       </type>
     </element>
     <element id="FamilyMemberHistory.patient">
@@ -64,6 +71,19 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+      </type>
+    </element>
+    <element id="FamilyMemberHistory.note.author[x]">
+      <path value="FamilyMemberHistory.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+      <type>
+        <code value="string" />
       </type>
     </element>
   </differential>
