@@ -2,28 +2,19 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 <id value="UKCore-MedicationRequestCategory"/>
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory"/>
-  <version value="1.1.0" />
+  <version value="1.0.0" />
   <name value="UKCoreMedicationRequestCategory"/>
   <title value="UK Core Medication Request Category"/>
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2021-09-10" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="A set of codes to define additional category concepts for a medication request."/>
@@ -34,10 +25,5 @@
     <code value="leave"/>
     <display value="Leave"/>
     <definition value="Requests for medications that the patient will take away with him/her during any short break from inpatient care. Typically requests would be dispensed by the hospital pharmacy to be self-administered at home with or without the assistance of community based nursing staff."/>
-  </concept>
-  <concept>
-    <code value="primarycare"/>
-    <display value="Primary Care"/>
-    <definition value="Requests for medications originating in a primary care setting. Typically requests would be dispensed by the patients nominated pharmacy to be self-administered at home with or without the assistance of community based nursing staff."/>
   </concept>
   </CodeSystem>

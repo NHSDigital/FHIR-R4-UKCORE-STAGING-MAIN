@@ -2,32 +2,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  <version value="2.3.0" />
+  <version value="2.2.0" />
   <name value="UKCoreCondition" />
   <title value="UK Core Condition" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2022-03-01" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
     </telecom>
   </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Condition](https://hl7.org/fhir/R4/Condition.html)." />
-  <purpose value="This profile allows recording of detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. &#xD;&#xA;&#xD;&#xA;The condition could be a point in time diagnosis in the context of an encounter, it could be an item on the practitioner’s problem list, or it could be a concern that doesn’t exist on the practitioner’s problem list. Often, a condition is about a clinician's assessment and assertion of a particular aspect of an individual's state of health. &#xD;&#xA;&#xD;&#xA;It can be used to record information about a disease/illness identified from application of clinical reasoning over the pathologic and pathophysiologic findings (diagnosis), or identification of health issues/situations that a practitioner considers harmful, potentially harmful and may be investigated and managed (problem), or other health issue/situation that may require ongoing monitoring and/or management (health issue/concern)." />
+  <description value="Defines the UK Core constraints and extensions on the Condition resource for the minimal set of data to query and retrieve problems and health concerns information." />
+  <purpose value="This profile allows recording of detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. The condition could be a point in time diagnosis in the context of an encounter, it could be an item on the practitioner’s problem list, or it could be a concern that doesn’t exist on the practitioner’s problem list. Often, a condition is about a clinician's assessment and assertion of a particular aspect of an individual's state of health. It can be used to record information about a disease/illness identified from application of clinical reasoning over the pathologic and pathophysiologic findings (diagnosis), or identification of health issues/situations that a practitioner considers harmful, potentially harmful and may be investigated and managed (problem), or other health issue/situation that may require ongoing monitoring and/or management (health issue/concern)." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>

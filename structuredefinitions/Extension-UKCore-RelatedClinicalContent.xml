@@ -1,74 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Extension-UKCore-RelatedClinicalContent"/>
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent"/>
-	<version value="1.2.0"/>
-	<name value="ExtensionUKCoreRelatedClinicalContent"/>
-	<title value="Extension UK Core Related Clinical Content"/>
-	<status value="active"/>
-	<date value="2022-12-16"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="secretariat@hl7.org.uk"/>
-			<use value="mobile"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital"/>
-		<telecom>
-			<system value="email"/>
-			<value value="interoperabilityteam@nhs.net"/>
-			<use value="work"/>
-			<rank value="2"/>
-		</telecom>
-	</contact>
-	<description value="An extension to support a reference to any resource that provides related clinical content to the Condition."/>
-	<purpose value="This extension extends the Condition Resource to support the exchange of information supporting a reference to any resource that provides related clinical content to the Condition which is currently not supported by the FHIR standard."/>
-	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<fhirVersion value="4.0.1"/>
-	<mapping>
-		<identity value="rim"/>
-		<uri value="http://hl7.org/v3"/>
-		<name value="RIM Mapping"/>
-	</mapping>
-	<kind value="complex-type"/>
-	<abstract value="false"/>
-	<context>
-		<type value="element"/>
-		<expression value="Condition"/>
-	</context>
-	<type value="Extension"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Extension">
-			<path value="Extension"/>
-			<short value="A reference to any resource that provides related clinical content to the Condition."/>
-			<definition value="A reference to any resource that provides related clinical content to the Condition."/>
-		</element>
-		<element id="Extension.url">
-			<path value="Extension.url"/>
-			<fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent"/>
-		</element>
-		<element id="Extension.value[x]">
-			<path value="Extension.value[x]"/>
-			<short value="A reference to any resource that provides related clinical content to the Condition."/>
-			<definition value="A reference to any resource that provides related clinical content to the Condition."/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
-			</type>
-		</element>
-		<element id="Extension.value[x].identifier.assigner">
-			<path value="Extension.value[x].identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-	</differential>
+  <id value="Extension-UKCore-RelatedClinicalContent" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent" />
+  <version value="1.1.0" />
+  <name value="ExtensionUKCoreRelatedClinicalContent" />
+  <title value="Extension UK Core Related Clinical Content" />
+  <status value="active" />
+  <date value="2022-03-01" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="mobile" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to support a reference to any resource that provides related clinical content to the Condition." />
+  <purpose value="This extension extends the Condition Resource to support the exchange of information supporting a reference to any resource that provides related clinical content to the Condition which is currently not supported by the FHIR standard." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Condition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="A reference to any resource that provides related clinical content to the Condition." />
+      <definition value="A reference to any resource that provides related clinical content to the Condition." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="A reference to any resource that provides related clinical content to the Condition." />
+      <definition value="A reference to any resource that provides related clinical content to the Condition." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+    </element>
+    <element id="Extension.value[x].identifier.assigner">
+      <path value="Extension.value[x].identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
