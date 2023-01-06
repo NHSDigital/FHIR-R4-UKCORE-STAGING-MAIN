@@ -11,18 +11,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="The destination of a Patient on completion of a Hospital Provider Spell, or a note that the Patient died or was a still birth." />
@@ -105,3 +96,4 @@
     <display value="Non-NHS (other than Local Authority) run Hospice" />
   </concept>
 </CodeSystem>
+ 

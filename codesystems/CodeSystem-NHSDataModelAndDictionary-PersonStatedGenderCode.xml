@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="The gender of a Person. Person Stated Gender Code is self declared or inferred by observation for those unable to declare their Person Stated Gender."/>
@@ -46,3 +37,4 @@
 		<display value="Not Known (not recorded)"/>
 	</concept>
 </CodeSystem>
+ 

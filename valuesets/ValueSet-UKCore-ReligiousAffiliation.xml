@@ -15,18 +15,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes the religious or other belief system affiliation of a person. Any code from the SNOMED CT UK 'Religious Affiliation SnCT' subset with subset original id 10791000000130; the corresponding SNOMED CT UK Refset fully specified name is 'Religious or other belief system affiliation simple reference set (foundation metadata concept)' with Refset Id 999000531000000100."/>
@@ -42,3 +33,4 @@
 		</include>
 	</compose>
 </ValueSet>
+ 

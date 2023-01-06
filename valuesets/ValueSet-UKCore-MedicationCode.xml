@@ -11,18 +11,9 @@
 		<name value="HL7 UK"/>
 		<telecom>
 			<system value="email"/>
-			<value value="secretariat@hl7.org.uk"/>
+			<value value="ukcore@hl7.org.uk"/>
 			<use value="work"/>
 			<rank value="1"/>
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital"/>
-		<telecom>
-			<system value="email"/>
-			<value value="interoperabilityteam@nhs.net"/>
-			<use value="work"/>
-			<rank value="2"/>
 		</telecom>
 	</contact>
 	<description value="A set of codes from the following dm+d (dictionary of medicines and devices) concept classes that define a medication:
@@ -76,3 +67,4 @@
 		</include>
 	</compose>
 </ValueSet>
+ 

@@ -21,7 +21,7 @@
     <telecom>
       <system value="email">
       </system>
-      <value value="secretariat@hl7.org.uk">
+      <value value="ukcore@hl7.org.uk">
       </value>
       <use value="work">
       </use>
@@ -31,15 +31,6 @@
   </contact>
   <contact>
     <name value="NHS Digital">
-    </name>
-    <telecom>
-      <system value="email">
-      </system>
-      <value value="interoperabilityteam@nhs.net">
-      </value>
-      <use value="work">
-      </use>
-      <rank value="2">
       </rank>
     </telecom>
   </contact>
@@ -186,3 +177,4 @@
     </contains>
   </expansion>
 </ValueSet>
+ 

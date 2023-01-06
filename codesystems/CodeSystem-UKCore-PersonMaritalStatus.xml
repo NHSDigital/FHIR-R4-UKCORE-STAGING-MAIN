@@ -11,18 +11,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="A set of code from Data Dictionaries used within the UK not already covered by more specific concepts in the HL7 FHIR standard Value Set" />
@@ -125,3 +116,4 @@
     </property>
   </concept>
 </CodeSystem>
+ 

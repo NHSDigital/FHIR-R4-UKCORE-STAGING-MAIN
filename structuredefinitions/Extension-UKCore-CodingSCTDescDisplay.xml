@@ -12,18 +12,9 @@
 		<name value="HL7 UK"/>
 		<telecom>
 			<system value="email"/>
-			<value value="secretariat@hl7.org.uk"/>
+			<value value="ukcore@hl7.org.uk"/>
 			<use value="work"/>
 			<rank value="1"/>
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital"/>
-		<telecom>
-			<system value="email"/>
-			<value value="interoperabilityteam@nhs.net"/>
-			<use value="work"/>
-			<rank value="2"/>
 		</telecom>
 	</contact>
 	<description value="The description display term for a SNOMED CT concept.  The description display term associated with the ID within the sctdescid extension is important to enable the representation of the exact term that was entered by the clinician that recorded the data, or the exact term that a legacy code e.g. a Read v2 code has been translated to using an assured mapping table."/>
@@ -77,3 +68,4 @@
 		</element>
 	</differential>
 </StructureDefinition>
+ 

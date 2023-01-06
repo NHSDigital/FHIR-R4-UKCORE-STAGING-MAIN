@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A set of codes that define the source of admission to a hospital provider spell or a nursing episode when the patient is in a hospital site or a care home." />
@@ -232,3 +223,4 @@
 		</contains>
 	</expansion>
 </ValueSet>
+ 

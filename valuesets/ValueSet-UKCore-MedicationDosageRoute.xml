@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100."/>
@@ -38,3 +29,4 @@
 		</include>
 	</compose>
 </ValueSet>
+ 

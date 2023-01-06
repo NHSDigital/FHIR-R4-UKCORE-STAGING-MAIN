@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A set of codes that define the classification of location type.  These codes and their descriptions represent concepts used in Wales and are copied from the content of the NHS Wales Data Dictionary Location Type Code web page at http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/locationtypecode.htm on 18/11/2021." />
@@ -182,3 +173,4 @@
 		<display value="Other Residential Care Homes managed by the NHS" />
 	</concept>
 </CodeSystem>
+ 

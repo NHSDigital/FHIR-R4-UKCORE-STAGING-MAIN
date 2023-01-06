@@ -11,18 +11,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="A set of codes that define the marital status of a person, as specified by the person. These codes and their descriptions represent concepts used in Wales and are copied from the content of the Digital Health and Care Wales web page at https://dhcw.nhs.wales/information-services/information-standards/data-standards/data-standards-files/data-standard-change-notices-docs/dscns-2020/20200622-dscn-2020-06-core-reference-data-d2-3-pdf on 17/11/2022." />
@@ -70,3 +61,4 @@
     <display value="Not disclosed or unknown" />
   </concept>
 </CodeSystem>
+ 

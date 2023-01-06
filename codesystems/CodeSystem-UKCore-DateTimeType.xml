@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="CodeSystem to identify the type of date and time being recorded."/>
@@ -95,3 +86,4 @@
 		<definition value="The date/time that the first response arrived at the incident location that counts as the arrival time based on the National Ambulance Quality Indicator definitions"/>
 	</concept>
 </CodeSystem>
+ 

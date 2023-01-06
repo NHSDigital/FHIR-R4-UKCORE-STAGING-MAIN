@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A set of codes that define the classification of a patient's legal status which is either informal or as designated in the Mental Health Act 1983 or other acts.  These codes and their descriptions represent concepts used in England and are copied from the content of the NHS Data Dictionary Mental Health Legal Status Classification Code web page at https://datadictionary.nhs.uk/data_elements/mental_health_act_legal_status_classification_code.html on 18/11/2021." />
@@ -138,3 +129,4 @@
 		<display value="Not Known" />
 	</concept>
 </CodeSystem>
+ 

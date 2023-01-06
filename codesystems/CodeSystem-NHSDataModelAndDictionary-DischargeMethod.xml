@@ -11,18 +11,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="The method of discharge from a Hospital Provider Spell." />
@@ -60,3 +51,4 @@
     <definition value="National Codes 6 and 7 have been introduced for the Mental Health Services Data Set only to add further granularity to National Code 2. However, National Code 2 is still valid for the Mental Health Services Data Set where extra detail cannot be collected. National Codes 6 and 7 are NOT valid in any other data set including Commissioning Data Set version 6-2." />
   </concept>
 </CodeSystem>
+ 

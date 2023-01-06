@@ -11,18 +11,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="A set of codes that may have been used by systems in the past that represent:&#13;- Individual vaccination procedure concepts that are no longer active in SNOMED but may have been used by IT systems in the past;&#13;- Hierarchies of pre-co-ordinated concepts in SNOMED that indicate vaccination procedures that were carried out by another provider, both active and inactive concepts;&#13;- Hierarchies of pre-co-ordinated concepts in SNOMED that indicate vaccination procedures that were not done but which were part of the Care Connect Vaccination Procedure ValueSet to support the Digital Child Health Programme to record where a child had attended a vaccination clinic but did not actually receive a vaccination.&#13;&#13;Selected from a number of hierarchies and individual concepts within the SNOMED CT UK coding system.&#13;&#13;This ValueSet may be used by suppliers to supplement the (extensible) UKCoreVaccinationProcedure ValueSet for the purposes of identifying record entries within systems that may also be relevant to the population of the UKCoreVaccinationProcedure extension within Immunization profile instances." />
@@ -651,3 +642,4 @@
 		</contains>
 	</expansion>
 </ValueSet>
+ 
