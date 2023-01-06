@@ -12,18 +12,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="A set of codes to define additional category concepts for a medication request."/>
@@ -40,4 +31,4 @@
     <display value="Primary Care"/>
     <definition value="Requests for medications originating in a primary care setting. Typically requests would be dispensed by the patients nominated pharmacy to be self-administered at home with or without the assistance of community based nursing staff."/>
   </concept>
-  </CodeSystem>
+</CodeSystem>
