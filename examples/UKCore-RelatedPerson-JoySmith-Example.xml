@@ -33,9 +33,6 @@
 			</valueCodeableConcept>
 		</extension>
 	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
-		<valuePositiveInt value="1"/>
-	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
 		<valueBoolean value="true"/>
 	</extension>
