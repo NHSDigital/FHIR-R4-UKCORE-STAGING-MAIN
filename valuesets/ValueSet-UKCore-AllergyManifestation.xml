@@ -38,4 +38,3 @@ Where no SNOMED CT coded information is available, a specific code from the null
 		</include>
 	</compose>
 </ValueSet>
- 

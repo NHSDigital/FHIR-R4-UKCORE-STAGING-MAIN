@@ -131,4 +131,3 @@
 		<definition value="When polling an ID, a message was found to be in a failed state, so there is nothing else to be done and should be considered a failure." />
 	</concept>
 </CodeSystem>
- 
