@@ -93,51 +93,61 @@
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
 			<code value="A"/>
 			<display value="Annulled"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
 			<code value="D"/>
 			<display value="Divorced"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-			<code value="I"/>
-			<display value="Interlocutory"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-			<code value="L"/>
-			<display value="Legally Separated"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-			<code value="M"/>
-			<display value="Married"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-			<code value="P"/>
-			<display value="Polygamous"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-			<code value="S"/>
-			<display value="Never Married"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
 			<code value="T"/>
 			<display value="Domestic partner"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
+			<code value="I"/>
+			<display value="Interlocutory"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
+			<code value="L"/>
+			<display value="Legally Separated"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
+			<code value="M"/>
+			<display value="Married"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
+			<code value="S"/>
+			<display value="Never Married"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
+			<code value="P"/>
+			<display value="Polygamous"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
 			<code value="U"/>
 			<display value="unmarried"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2018-08-12"/>
 			<code value="W"/>
 			<display value="Widowed"/>
 		</contains>
@@ -179,6 +189,7 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+			<version value="1.0.0"/>
 			<code value="22"/>
 			<display value="Civil Partner"/>
 		</contains>
@@ -196,11 +207,13 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+			<version value="1.0.0"/>
 			<code value="51"/>
 			<display value="Separated"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+			<version value="1.0.0"/>
 			<code value="91"/>
 			<display value="Not disclosed or unknown"/>
 		</contains>
