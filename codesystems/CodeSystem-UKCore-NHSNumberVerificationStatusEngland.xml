@@ -11,18 +11,9 @@
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A CodeSystem for England that identifies the trace status of an NHS Number with respect to a national source of NHS Numbers. These codes and their descriptions represent concepts used in England and are copied from the content of the NHS Data Dictionary NHS number status indicator code web page at https://www.datadictionary.nhs.uk/data_elements/nhs_number_status_indicator_code.html on 22/12/2022."/>
