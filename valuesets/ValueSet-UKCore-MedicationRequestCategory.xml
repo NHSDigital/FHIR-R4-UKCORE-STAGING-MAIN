@@ -1,28 +1,19 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 <id value="UKCore-MedicationRequestCategory"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory"/>
-	<version value="1.0.0" />
+	<version value="1.1.0" />
 	<name value="UKCoreMedicationRequestCategory"/>
 	<title value="UK Core Medication Request Category"/>
 	<status value="active" />
-	<date value="2021-09-10" />
+	<date value="2022-12-16" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
 		<telecom>
 			<system value="email" />
-			<value value="secretariat@hl7.org.uk" />
+			<value value="ukcore@hl7.org.uk" />
 			<use value="work" />
 			<rank value="1" />
-		</telecom>
-	</contact>
-	<contact>
-		<name value="NHS Digital" />
-		<telecom>
-			<system value="email" />
-			<value value="interoperabilityteam@nhs.net" />
-			<use value="work" />
-			<rank value="2" />
 		</telecom>
 	</contact>
 	<description value="A set of codes to define a category for a medication request."/>
@@ -30,81 +21,45 @@
 	<compose>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-			<concept>
-				<code value="inpatient"/>
-				<display value="Inpatient"/>
-			</concept>
-				<concept>
-				<code value="outpatient"/>
-				<display value="Outpatient"/>
-			</concept>
-			<concept>
-				<code value="community"/>
-				<display value="Community"/>
-			</concept>
-			<concept>
-				<code value="discharge"/>
-				<display value="Discharge"/>
-			</concept>
 		</include>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory"/>
-			<concept>
-				<code value="leave"/>
-				<display value="Leave"/>
-			</concept>
 		</include>
 	</compose>
 	<expansion>
 		<identifier value="242c10eb-0ecc-47b2-9f97-78e80577a16e"/>
 		<timestamp value="2021-09-09T14:37:59+00:00"/>
-		<total value="5"/>
+		<total value="6"/>
 		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://terminology.hl7.org/CodeSystem/medicationrequest-category|4.0.1"/>
-		</parameter>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory|1.0.0"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-			<version value="4.0.1"/>
 			<code value="inpatient"/>
 			<display value="Inpatient"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-			<version value="4.0.1"/>
 			<code value="outpatient"/>
 			<display value="Outpatient"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-			<version value="4.0.1"/>
 			<code value="community"/>
 			<display value="Community"/>
 		</contains>
 		<contains>
 			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-			<version value="4.0.1"/>
 			<code value="discharge"/>
 			<display value="Discharge"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory"/>
-			<version value="1.0.0"/>
 			<code value="leave"/>
 			<display value="Leave"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory"/>
+			<code value="primarycare"/>
+			<display value="Primary Care"/>
 		</contains>
 	</expansion>
 </ValueSet>
