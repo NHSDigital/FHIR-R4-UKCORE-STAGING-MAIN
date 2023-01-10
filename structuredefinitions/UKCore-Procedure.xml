@@ -12,18 +12,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Procedure](https://hl7.org/fhir/R4/Procedure.html)." />
@@ -89,6 +80,17 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Procedure.instantiatesCanonical">
+      <path value="Procedure.instantiatesCanonical" />
+      <type>
+        <code value="canonical" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+      </type>
+    </element>
     <element id="Procedure.basedOn">
       <path value="Procedure.basedOn" />
       <type>
@@ -123,6 +125,9 @@
     <element id="Procedure.code">
       <path value="Procedure.code" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureCode" />
+        </extension>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;71388002 |Procedure|&lt;&lt;129125009 |Procedure with explicit context|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
@@ -259,6 +264,9 @@
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="BodySite" />
+        </extension>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
@@ -283,6 +291,9 @@
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureComplication" />
+        </extension>
         <strength value="extensible" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />

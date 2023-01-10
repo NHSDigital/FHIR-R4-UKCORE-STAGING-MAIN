@@ -12,18 +12,9 @@
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [RelatedPerson](https://hl7.org/fhir/R4/RelatedPerson.html)." />
@@ -69,15 +60,6 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
-      </type>
-    </element>
-    <element id="RelatedPerson.extension:contactRank">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="contactRank" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank" />
       </type>
     </element>
     <element id="RelatedPerson.extension:copyCorrespondenceIndicator">
