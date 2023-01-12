@@ -6,7 +6,7 @@
   <name value="ExtensionUKCoreRecorder" />
   <title value="Extension UKCore Recorder" />
   <status value="draft" />
-  <date value="2023-01-12T13:20:06.4905183+00:00" />
+  <date value="2023-01-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -36,6 +36,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="An extension to reference a practitioner that recorded an event." />
+      <definition value="An extension to reference a practitioner that recorded an event." />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Recorder" />

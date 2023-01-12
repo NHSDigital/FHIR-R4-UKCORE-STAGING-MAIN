@@ -6,7 +6,7 @@
   <name value="ExtensionUKCoreAssociatedEncounter" />
   <title value="Extension UKCore AssociatedEncounter" />
   <status value="draft" />
-  <date value="2023-12-16" />
+  <date value="2023-01-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -38,6 +38,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="An associated encounter reference." />
+      <definition value="An associated encounter reference." />
       <max value="1" />
     </element>
     <element id="Extension.url">
