@@ -52,7 +52,7 @@
 			<display value="Patient Specified"/>
 		</contains>
 		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory"/>>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory"/>
 			<code value="discharge"/>
 			<display value="Discharge"/>
 		</contains>
