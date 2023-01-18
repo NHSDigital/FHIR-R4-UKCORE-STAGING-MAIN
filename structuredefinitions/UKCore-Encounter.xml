@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Encounter" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreEncounter" />
   <title value="UK Core Encounter" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -193,13 +193,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.appointment">
-      <path value="Encounter.appointment" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
       </type>
     </element>
     <element id="Encounter.appointment.identifier.assigner">
