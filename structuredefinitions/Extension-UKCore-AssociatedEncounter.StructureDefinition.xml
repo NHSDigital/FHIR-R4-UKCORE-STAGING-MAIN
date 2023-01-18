@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-Recorder" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ExtensionUKCoreAssociatedEncounter" />
+  <id value="Extension-UKCore-AssociatedEncounter" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreAssociatedEncounter" />
   <title value="Extension UKCore AssociatedEncounter" />
