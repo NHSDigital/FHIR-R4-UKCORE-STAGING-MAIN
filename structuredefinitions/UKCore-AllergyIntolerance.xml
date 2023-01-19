@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-AllergyIntolerance" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCoreAllergyIntolerance" />
   <title value="UK Core AllergyIntolerance" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -96,7 +96,7 @@
       <path value="AllergyIntolerance.code" />
       <min value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode" />
       </binding>
     </element>
@@ -178,21 +178,21 @@
     <element id="AllergyIntolerance.reaction.substance">
       <path value="AllergyIntolerance.reaction.substance" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance" />
       </binding>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation">
       <path value="AllergyIntolerance.reaction.manifestation" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation" />
       </binding>
     </element>
     <element id="AllergyIntolerance.reaction.exposureRoute">
       <path value="AllergyIntolerance.reaction.exposureRoute" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>

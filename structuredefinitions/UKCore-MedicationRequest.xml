@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreMedicationRequest" />
   <title value="UK Core MedicationRequest" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -273,28 +273,28 @@
     <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
       <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.site">
       <path value="MedicationRequest.dosageInstruction.site" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.route">
       <path value="MedicationRequest.dosageInstruction.route" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.method">
       <path value="MedicationRequest.dosageInstruction.method" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
     </element>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Composition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreComposition" />
   <title value="UK Core Composition" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -88,7 +88,7 @@
       <path value="Composition.type" />
       <short value="Kind of composition (SNOMED CT)" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="SNOMED CT Document Type" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType" />
       </binding>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreCondition" />
   <title value="UK Core Condition" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -133,7 +133,7 @@
     <element id="Condition.code">
       <path value="Condition.code" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>
@@ -141,7 +141,7 @@
     <element id="Condition.bodySite">
       <path value="Condition.bodySite" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationAdministration" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreMedicationAdministration" />
   <title value="UK Core MedicationAdministration" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -210,21 +210,21 @@
     <element id="MedicationAdministration.dosage.site">
       <path value="MedicationAdministration.dosage.site" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.method">
       <path value="MedicationAdministration.dosage.method" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
     </element>
