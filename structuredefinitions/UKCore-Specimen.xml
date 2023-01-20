@@ -167,7 +167,7 @@
       <sliceName value="snomedCT" />
       <max value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite" />
       </binding>
