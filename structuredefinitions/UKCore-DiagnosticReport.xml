@@ -113,7 +113,7 @@
       <path value="DiagnosticReport.code.coding" />
       <sliceName value="snomedCT" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCodeSnCT" />
       </binding>
@@ -259,7 +259,7 @@
       <path value="DiagnosticReport.conclusionCode.coding" />
       <sliceName value="snomedCT" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-FindingCode" />
       </binding>
