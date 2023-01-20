@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="UKCore-ACVPU"/>
    <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ACVPU"/>
-   <version value="2.0.0"/>
+   <version value="2.1.0"/>
    <name value="UKCoreACVPU"/>
    <title value="UK Core ACVPU"/>
    <status value="draft" />
-   <date value="2021-09-10" />
+   <date value="2023-02-14" />
    <publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
@@ -24,7 +24,7 @@
          <filter>
             <property value="constraint"/>
             <op value="="/>
-            <value value="(248234008 |Mentally alert| OR 300202002 |Responds to voice| OR 450847001 |Responds to pain| OR 422768004 |Unresponsive| 130987000 |Acute confusion|)"/>
+            <value value="(248234008 |Mentally alert| OR 300202002 |Responds to voice| OR 450847001 |Responds to pain| OR 422768004 |Unresponsive| OR 130987000 |Acute confusion|)"/>
          </filter>
       </include>
    </compose>
