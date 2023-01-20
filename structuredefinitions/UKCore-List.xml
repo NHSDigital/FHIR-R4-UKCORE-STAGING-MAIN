@@ -92,7 +92,7 @@
     <element id="List.code">
       <path value="List.code" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode" />
       </binding>
     </element>

@@ -101,14 +101,14 @@
     <element id="Immunization.statusReason">
       <path value="Immunization.statusReason" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
       </binding>
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
       </binding>
     </element>
@@ -200,14 +200,14 @@
     <element id="Immunization.site">
       <path value="Immunization.site" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationAdministrationBodySite" />
       </binding>
     </element>
     <element id="Immunization.route">
       <path value="Immunization.route" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>
@@ -236,7 +236,7 @@
     <element id="Immunization.reasonCode">
       <path value="Immunization.reasonCode" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
       </binding>
     </element>

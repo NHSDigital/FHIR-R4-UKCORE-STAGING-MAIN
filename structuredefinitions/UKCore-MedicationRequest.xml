@@ -273,28 +273,28 @@
     <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
       <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.site">
       <path value="MedicationRequest.dosageInstruction.site" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.route">
       <path value="MedicationRequest.dosageInstruction.route" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.method">
       <path value="MedicationRequest.dosageInstruction.method" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
     </element>

@@ -214,7 +214,7 @@
     <element id="ServiceRequest.reasonCode">
       <path value="ServiceRequest.reasonCode" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A set of codes that define a reason for a service request." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode" />
       </binding>
@@ -267,7 +267,7 @@
     <element id="ServiceRequest.bodySite">
       <path value="ServiceRequest.bodySite" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A set of codes that define an anatomical or acquired body structure site. Selected from the SNOMED CT UK coding system." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
