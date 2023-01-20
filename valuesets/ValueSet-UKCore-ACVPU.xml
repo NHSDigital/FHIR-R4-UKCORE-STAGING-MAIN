@@ -16,9 +16,7 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A set of codes that define a patients level of consciousness. Selected from the SNOMED CT UK coding system.
-
-&#13;SNOMED CT filtered to the following concepts:
+	<description value="A set of codes that define a patients level of consciousness. Selected from the SNOMED CT UK coding system:
 &#13; - 248234008 | Mentally alert
 &#13; - 300202002 | Responds to voice
 &#13; - 450847001 | Responds to pain
