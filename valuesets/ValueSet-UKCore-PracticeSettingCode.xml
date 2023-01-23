@@ -26,192 +26,12 @@
 	<expansion>
 		<identifier value="a2fd6fc7-80a8-46b2-aa43-0ef08bd01373"/>
 		<timestamp value="2023-01-23T14:16:59+00:00"/>
-		<total value="88"/>
+		<total value="87"/>
 		<offset value="0"/>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="810"/>
-			<display value="Radiology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="410"/>
-			<display value="Rheumatology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="330"/>
-			<display value="Dermatology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="451"/>
-			<display value="Special Care Dentistry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="450"/>
-			<display value="Dental Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="130"/>
-			<display value="Ophthalmology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="371"/>
-			<display value="Nuclear Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="370"/>
-			<display value="Medical Oncology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="171"/>
-			<display value="Paediatric Surgery"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="170"/>
-			<display value="Cardiothoracic Surgery"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="904"/>
-			<display value="Public Health Dental"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="903"/>
-			<display value="Public Health Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="902"/>
-			<display value="Community Health Services Dental"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="824"/>
-			<display value="Histopathology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="901"/>
-			<display value="Occupational Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="504"/>
-			<display value="Community Sexual and Reproductive Health"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="823"/>
-			<display value="Haematology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="900"/>
-			<display value="Community Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="107"/>
-			<display value="Vascular Surgery"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="305"/>
-			<display value="Clinical Pharmacology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="822"/>
-			<display value="Chemical Pathology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="304"/>
-			<display value="Clinical Physiology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="502"/>
-			<display value="Gynaecology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="700"/>
-			<display value="Learning Disability"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="821"/>
-			<display value="Blood Transfusion"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="149"/>
-			<display value="Surgical Dentistry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="303"/>
-			<display value="Clinical Haematology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="501"/>
-			<display value="Obstetrics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="820"/>
-			<display value="General Pathology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="148"/>
-			<display value="Prosthodontics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="302"/>
-			<display value="Endocrinology and Diabetes"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="500"/>
-			<display value="Obstetrics and Gynaecology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="147"/>
-			<display value="Periodontics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="301"/>
-			<display value="Gastroenterology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="146"/>
-			<display value="Endodontics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="300"/>
-			<display value="General Internal Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="421"/>
-			<display value="Paediatric Neurology"/>
+			<code value="100"/>
+			<display value="General Surgery"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -220,138 +40,8 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="145"/>
-			<display value="Oral and Maxillofacial Surgery"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="420"/>
-			<display value="Paediatrics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="100"/>
-			<display value="General Surgery"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="143"/>
-			<display value="Orthodontics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="142"/>
-			<display value="Paediatric Dentistry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="340"/>
-			<display value="Respiratory Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="141"/>
-			<display value="Restorative Dentistry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="460"/>
-			<display value="Medical Ophthalmology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="140"/>
-			<display value="Oral Surgery"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="180"/>
-			<display value="Emergency Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="715"/>
-			<display value="Old Age Psychiatry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="317"/>
-			<display value="Allergy"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="713"/>
-			<display value="Medical Psychotherapy"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="834"/>
-			<display value="Medical Virology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="712"/>
-			<display value="Forensic Psychiatry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="833"/>
-			<display value="Medical Microbiology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="315"/>
-			<display value="Palliative Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="711"/>
-			<display value="Child and Adolescent Psychiatry"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="314"/>
-			<display value="Rehabilitation Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="710"/>
-			<display value="Adult Mental Illness"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="831"/>
-			<display value="Medical Microbiology and Virology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="313"/>
-			<display value="Clinical Immunology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="830"/>
-			<display value="Immunopathology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="950"/>
-			<display value="Nursing"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="311"/>
-			<display value="Clinical Genetics"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="310"/>
-			<display value="Audio Vestibular Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="430"/>
-			<display value="Geriatric Medicine"/>
+			<code value="107"/>
+			<display value="Vascular Surgery"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -360,13 +50,58 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="352"/>
-			<display value="Tropical Medicine"/>
+			<code value="120"/>
+			<display value="Ear Nose and Throat"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="350"/>
-			<display value="Infectious Diseases"/>
+			<code value="130"/>
+			<display value="Ophthalmology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="140"/>
+			<display value="Oral Surgery"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="141"/>
+			<display value="Restorative Dentistry"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="142"/>
+			<display value="Paediatric Dentistry"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="143"/>
+			<display value="Orthodontics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="145"/>
+			<display value="Oral and Maxillofacial Surgery"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="146"/>
+			<display value="Endodontics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="147"/>
+			<display value="Periodontics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="148"/>
+			<display value="Prosthodontics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="149"/>
+			<display value="Surgical Dentistry"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -375,8 +110,23 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="192"/>
-			<display value="Intensive Care Medicine"/>
+			<code value="160"/>
+			<display value="Plastic Surgery"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="170"/>
+			<display value="Cardiothoracic Surgery"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="171"/>
+			<display value="Paediatric Surgery"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="180"/>
+			<display value="Emergency Medicine"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -385,43 +135,8 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="800"/>
-			<display value="Clinical Oncology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="326"/>
-			<display value="Acute Internal Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="601"/>
-			<display value="General Dental Practice"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="325"/>
-			<display value="Sport and Exercise Medicine"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="600"/>
-			<display value="General Medical Practice"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="401"/>
-			<display value="Clinical Neurophysiology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="400"/>
-			<display value="Neurology"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="960"/>
-			<display value="Allied Health Professional"/>
+			<code value="192"/>
+			<display value="Intensive Care Medicine"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -430,8 +145,63 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="321"/>
-			<display value="Paediatric Cardiology"/>
+			<code value="300"/>
+			<display value="General Internal Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="301"/>
+			<display value="Gastroenterology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="302"/>
+			<display value="Endocrinology and Diabetes"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="303"/>
+			<display value="Clinical Haematology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="304"/>
+			<display value="Clinical Physiology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="305"/>
+			<display value="Clinical Pharmacology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="310"/>
+			<display value="Audio Vestibular Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="311"/>
+			<display value="Clinical Genetics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="313"/>
+			<display value="Clinical Immunology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="314"/>
+			<display value="Rehabilitation Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="315"/>
+			<display value="Palliative Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="317"/>
+			<display value="Allergy"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -440,18 +210,38 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="120"/>
-			<display value="Ear Nose and Throat"/>
+			<code value="321"/>
+			<display value="Paediatric Cardiology"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="560"/>
-			<display value="Midwifery"/>
+			<code value="325"/>
+			<display value="Sport and Exercise Medicine"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="361"/>
-			<display value="Renal Medicine"/>
+			<code value="326"/>
+			<display value="Acute Internal Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="330"/>
+			<display value="Dermatology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="340"/>
+			<display value="Respiratory Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="350"/>
+			<display value="Infectious Diseases"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="352"/>
+			<display value="Tropical Medicine"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
@@ -460,8 +250,218 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
-			<code value="160"/>
-			<display value="Plastic Surgery"/>
+			<code value="361"/>
+			<display value="Renal Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="370"/>
+			<display value="Medical Oncology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="371"/>
+			<display value="Nuclear Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="400"/>
+			<display value="Neurology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="401"/>
+			<display value="Clinical Neurophysiology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="410"/>
+			<display value="Rheumatology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="420"/>
+			<display value="Paediatrics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="421"/>
+			<display value="Paediatric Neurology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="430"/>
+			<display value="Geriatric Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="450"/>
+			<display value="Dental Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="451"/>
+			<display value="Special Care Dentistry"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="460"/>
+			<display value="Medical Ophthalmology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="500"/>
+			<display value="Obstetrics and Gynaecology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="501"/>
+			<display value="Obstetrics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="502"/>
+			<display value="Gynaecology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="504"/>
+			<display value="Community Sexual and Reproductive Health"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="560"/>
+			<display value="Midwifery"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="600"/>
+			<display value="General Medical Practice"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="601"/>
+			<display value="General Dental Practice"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="700"/>
+			<display value="Learning Disability"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="710"/>
+			<display value="Adult Mental Illness"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="711"/>
+			<display value="Child and Adolescent Psychiatry"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="712"/>
+			<display value="Forensic Psychiatry"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="713"/>
+			<display value="Medical Psychotherapy"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="715"/>
+			<display value="Old Age Psychiatry"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="800"/>
+			<display value="Clinical Oncology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="810"/>
+			<display value="Radiology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="820"/>
+			<display value="General Pathology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="821"/>
+			<display value="Blood Transfusion"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="822"/>
+			<display value="Chemical Pathology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="823"/>
+			<display value="Haematology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="824"/>
+			<display value="Histopathology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="830"/>
+			<display value="Immunopathology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="831"/>
+			<display value="Medical Microbiology and Virology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="833"/>
+			<display value="Medical Microbiology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="834"/>
+			<display value="Medical Virology"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="900"/>
+			<display value="Community Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="901"/>
+			<display value="Occupational Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="902"/>
+			<display value="Community Health Services Dental"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="903"/>
+			<display value="Public Health Medicine"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="904"/>
+			<display value="Public Health Dental"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="950"/>
+			<display value="Nursing"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"/>
+			<code value="960"/>
+			<display value="Allied Health Professional"/>
 		</contains>
 	</expansion>
 </ValueSet>
