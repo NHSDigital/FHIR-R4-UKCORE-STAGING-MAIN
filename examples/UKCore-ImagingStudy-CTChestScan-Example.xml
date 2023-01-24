@@ -20,7 +20,7 @@
 		<bodySite>
 			<system value="http://snomed.info/sct"/>
 			<code value="67734004"/>
-			<display value="Upper Trunk Structure"/>
+			<display value="Thoracic segment of trunk"/>
 		</bodySite>
 		<instance>
 			<uid value="2.16.124.113543.6003.189642796.63084.16748.2599092903"/>
