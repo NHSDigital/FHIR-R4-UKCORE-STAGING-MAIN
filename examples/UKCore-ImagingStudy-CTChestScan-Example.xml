@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImagingStudy xmlns="http://hl7.org/fhir">
+	<id value="UKCore-ImagingStudy-CTChestScan-Example"/> 
+  <status value="available"/> 
+  <subject> 
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example"/> 
+  </subject> 
+  <started value="2023-01-24T09:01:20+00:00"/> 
+  <numberOfSeries value="1"/> 
+  <numberOfInstances value="1"/> 
+  <series> 
+    <uid value="2.16.124.113543.6003.2588828330.45298.17418.2723805630"/> 
+    <number value="3"/> 
+    <modality> 
+      <coding> 
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/> 
+      <code value="CT"/> 
+      </coding> 
+    </modality>  
+    <description value="CT Surview 180"/> 
+    <numberOfInstances value="1"/> 
+    <bodySite> 
+      <concept> 
+      <coding> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="67734004"/> 
+      <display value="Upper Trunk Structure"/> 
+      </coding> 
+      </concept> 
+    </bodySite> 
+    <instance> 
+      <uid value="2.16.124.113543.6003.189642796.63084.16748.2599092903"/> 
+      <sopClass> 
+        <system value="urn:ietf:rfc:3986"/> 
+        <code value="urn:oid:1.2.840.10008.5.1.4.1.1.2"/> 
+      </sopClass>  
+      <number value="1"/> 
+    </instance> 
+  </series>    
+</ImagingStudy>
