@@ -1,0 +1,31 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Patient-CHINumber-Example"/>
+	<identifier>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+					<code value="NI"/>
+					<display value="NoInformation"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<system value="https://fhir.nhs.uk/Id/chi-number"/>
+		<value value="0402568877"/>
+	</identifier>
+	<name>
+		<use value="official"/>
+		<given value="David"/>
+		<family value="McDonald"/>
+	</name>
+	<gender value="male"/>
+	<communication>
+		<language>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+				<code value="en"/>
+				<display value="English"/>
+			</coding>
+		</language>
+	</communication>
+</Patient>
