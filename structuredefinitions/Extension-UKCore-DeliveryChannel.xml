@@ -53,6 +53,7 @@
 			<path value="Extension.value[x]"/>
 			<short value="A code that identifies the delivery channel of an appointment"/>
 			<definition value="A code that identifies the delivery channel of an appointment."/>
+			<min value="1" />
 			<type>
 				<code value="code"/>
 			</type>

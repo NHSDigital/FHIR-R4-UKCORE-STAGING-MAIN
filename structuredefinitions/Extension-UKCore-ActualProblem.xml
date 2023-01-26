@@ -49,6 +49,7 @@
       <path value="Extension.value[x]" />
       <short value="A reference to a resource that is the actual problem." />
       <definition value="A reference to a resource that is the actual problem." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />

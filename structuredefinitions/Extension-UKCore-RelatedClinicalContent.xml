@@ -49,6 +49,7 @@
 			<path value="Extension.value[x]"/>
 			<short value="A reference to any resource that provides related clinical content to the Condition."/>
 			<definition value="A reference to any resource that provides related clinical content to the Condition."/>
+			<min value="1" />
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
