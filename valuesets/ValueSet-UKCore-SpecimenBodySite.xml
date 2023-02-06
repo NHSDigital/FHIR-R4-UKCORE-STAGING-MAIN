@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-SpecimenBodySite"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite"/>
-	<version value="2.0.0"/>
+	<version value="2.1.0"/>
 	<name value="UKCoreSpecimenBodySite"/>
 	<title value="UK Core Specimen Body Site"/>
 	<status value="draft" />
-	<date value="2021-09-10" />
+	<date value="2023-02-14" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
