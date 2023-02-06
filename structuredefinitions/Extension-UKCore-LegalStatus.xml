@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-LegalStatus" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreLegalStatus" />
   <title value="Extension UK Core Legal Status" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -63,6 +63,7 @@
       <path value="Extension.extension.value[x]" />
       <short value="The context in which a mental health legal status is being used." />
       <definition value="The context in which a mental health legal status is being used." />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -87,6 +88,7 @@
     <element id="Extension.extension:legalStatusClassification.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Codes that define the classification of a patient's legal status" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
