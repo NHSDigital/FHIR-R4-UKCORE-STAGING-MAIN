@@ -1,9 +1,5 @@
 <FamilyMemberHistory xmlns="http://hl7.org/fhir">
 	<id value="UKCore-FamilyMemberHistory-FatherDiabetes-Example"/>
-	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="aed45ceb-3aea-4f35-afb9-0c9ab024eeb7"/>
-	</identifier>
 	<status value="partial"/>
 	<patient>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
