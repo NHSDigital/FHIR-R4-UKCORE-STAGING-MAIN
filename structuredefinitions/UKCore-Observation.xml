@@ -116,7 +116,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType" />
       </binding>
@@ -240,7 +240,7 @@
       <sliceName value="snomedCT" />
       <max value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
@@ -346,7 +346,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="snomedCT" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType" />
       </binding>
