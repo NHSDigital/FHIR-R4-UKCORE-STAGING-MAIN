@@ -9,9 +9,9 @@
 			<display value="Outpatient"/>
 		</coding>
 	</category>
-	<medicationCodeableConcept>
+	<medicationReference>
 		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
-	</medicationCodeableConcept>
+	</medicationReference>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
