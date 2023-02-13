@@ -9,10 +9,9 @@
 			<display value="Outpatient"/>
 		</coding>
 	</category>
-	<priority value="routine"/>
-	<medicationReference>
+	<medicationCodeableConcept>
 		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
-	</medicationReference>
+	</medicationCodeableConcept>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
@@ -20,23 +19,20 @@
 	<requester>
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</requester>
-	<recorder>
-		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-	</recorder>
 	<courseOfTherapyType>
 		<coding>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy"/>
-			<code value="continuous-repeating-dispensing"/>
-			<display value="Continuous long term (repeat dispensing)"/>
+			<code value="acute"/>
+			<display value="Short course (acute) therapy"/>
 		</coding>
 	</courseOfTherapyType>
 	<dosageInstruction>
-		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
+		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart, until finished."/>
 		<timing>
 			<repeat>
-				<frequency value="1"/>
-				<period value="12"/>
-				<periodUnit value="h"/>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
 			</repeat>
 		</timing>
 		<site>
