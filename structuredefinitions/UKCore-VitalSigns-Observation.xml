@@ -106,6 +106,7 @@
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
       <type>
+        <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-VitalSigns-Observation" />
