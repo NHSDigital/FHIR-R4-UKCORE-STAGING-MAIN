@@ -1,174 +1,111 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-ImmunizationExplanationReason">
-  </id>
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason">
-  </url>
-  <version value="2.2.0">
-  </version>
-  <name value="UKCoreImmunizationExplanationReason">
-  </name>
-  <title value="UK Core Immunization Explanation Reason">
-  </title>
-  <status value="active">
-  </status>
-  <date value="2022-08-26">
-  </date>
-  <publisher value="HL7 UK">
-  </publisher>
-  <contact>
-    <name value="HL7 UK">
-    </name>
-    <telecom>
-      <system value="email">
-      </system>
-      <value value="ukcore@hl7.org.uk">
-      </value>
-      <use value="work">
-      </use>
-      <rank value="1">
-      </rank>
-    </telecom>
-  </contact>
-  <description value="A set of codes that define a clinical indication or reason for administering a vaccine. Selected from the SNOMED CT UK coding system.">
-  </description>
-  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.">
-  </copyright>
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct">
-      </system>
-      <filter>
-        <property value="constraint">
-        </property>
-        <op value="=">
-        </op>
-        <value value="171279008 OR 414448007 OR 161096004 OR 506931000000109 OR 78648007 OR 14679004 OR 134436002 OR 398192003 OR 443684005 OR 183995001 OR 444107005 OR 723620004">
-        </value>
-      </filter>
-    </include>
-  </compose>
-  <expansion>
-    <identifier value="7399f0e8-e85f-4ea6-aaac-7fb443de944f">
-    </identifier>
-    <timestamp value="2022-10-19T07:57:49+00:00">
-    </timestamp>
-    <total value="12">
-    </total>
-    <offset value="0">
-    </offset>
-    <parameter>
-      <name value="version">
-      </name>
-      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20220928">
-      </valueUri>
-    </parameter>
-    <parameter>
-      <name value="count">
-      </name>
-      <valueInteger value="2147483647">
-      </valueInteger>
-    </parameter>
-    <parameter>
-      <name value="offset">
-      </name>
-      <valueInteger value="0">
-      </valueInteger>
-    </parameter>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="78648007">
-      </code>
-      <display value="At risk for infection">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="398192003">
-      </code>
-      <display value="Co-morbid conditions">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="443684005">
-      </code>
-      <display value="Disease outbreak">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="444107005">
-      </code>
-      <display value="Exposure to communicable disease">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="161096004">
-      </code>
-      <display value="Going to travel abroad">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="414448007">
-      </code>
-      <display value="Identified as high risk for travel immunisation">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="171279008">
-      </code>
-      <display value="Immunisation due">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="134436002">
-      </code>
-      <display value="Lifestyle">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="14679004">
-      </code>
-      <display value="Occupation">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="183995001">
-      </code>
-      <display value="Patient requested procedure">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="506931000000109">
-      </code>
-      <display value="Recent travel to disease affected area">
-      </display>
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct">
-      </system>
-      <code value="723620004">
-      </code>
-      <display value="Requires vaccination">
-      </display>
-    </contains>
-  </expansion>
+	<id value="UKCore-ImmunizationExplanationReason"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason"/>
+	<version value="2.3.0"/>
+	<name value="UKCoreImmunizationExplanationReason"/>
+	<title value="UK Core Immunization Explanation Reason"/>
+	<status value="active"/>
+	<date value="2023-02-14"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="A set of codes that define a clinical indication or reason for administering a vaccine. Selected from the SNOMED CT UK coding system."/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="171279008 OR 414448007 OR 161096004 OR 506931000000109 OR 78648007 OR 14679004 OR 134436002 OR 398192003 OR 443684005 OR 183995001 OR 444107005 OR 723620004 OR 429060002 OR 281657000"/>
+			</filter>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="7399f0e8-e85f-4ea6-aaac-7fb443de944f"/>
+		<timestamp value="2023-02-27T09:11:49+00:00"/>
+		<total value="14"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20220928"/>
+		</parameter>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="78648007"/>
+			<display value="At risk for infection"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="398192003"/>
+			<display value="Co-morbid conditions"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="443684005"/>
+			<display value="Disease outbreak"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="444107005"/>
+			<display value="Exposure to communicable disease"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="161096004"/>
+			<display value="Going to travel abroad"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="414448007"/>
+			<display value="Identified as high risk for travel immunisation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="171279008"/>
+			<display value="Immunisation due"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="134436002"/>
+			<display value="Lifestyle"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="14679004"/>
+			<display value="Occupation"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="183995001"/>
+			<display value="Patient requested procedure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="506931000000109"/>
+			<display value="Recent travel to disease affected area"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="723620004"/>
+			<display value="Requires vaccination"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="429060002"/>
+			<display value="Procedure to meet occupational requirement"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="281657000"/>
+			<display value="Travel vaccinations"/>
+		</contains>
+	</expansion>
 </ValueSet>
