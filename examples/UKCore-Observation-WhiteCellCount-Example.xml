@@ -21,7 +21,7 @@
 		</coding>
 	</code>
 	<performer>
-		<reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example" />
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
 	</performer>
 	<valueQuantity>
 		<value value="11.2" />

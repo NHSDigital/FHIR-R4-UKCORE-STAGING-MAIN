@@ -72,7 +72,7 @@
 		</item>
 		<item>
 			<linkId value="3.2"/>
-			<text value="Do you drink alchohol?"/>
+			<text value="Do you drink alcohol?"/>
 			<answer>
 				<valueBoolean value="false"/>
 			</answer>
