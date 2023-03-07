@@ -23,7 +23,7 @@
     <reference value="Practitioner/UKCore-Practitioner-PaulRastall-Example" />
   </performer>
   <organization>
-    <reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example" />
+    <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
   </organization>
   <policy>
     <authority value="https://www.exampleauthority.nhs.uk" />

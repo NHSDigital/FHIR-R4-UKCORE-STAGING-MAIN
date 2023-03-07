@@ -17,7 +17,7 @@
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<performer>
-		<reference value="Oranization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 		<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
 	</performer>
 	<specimen>
