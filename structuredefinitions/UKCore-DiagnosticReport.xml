@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreDiagnosticReport" />
   <title value="UK Core DiagnosticReport" />
   <status value="draft" />
@@ -115,7 +115,7 @@
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED UK Clinical Terminology coding system" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCodeSnCT" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
       </binding>
     </element>
     <element id="DiagnosticReport.code.coding:snomedCT.system">
