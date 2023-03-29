@@ -141,6 +141,14 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Organization.type.coding">
+      <path value="Organization.type.coding" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A set of concepts indicating the organisation type, derived from the base CodeSystem, and Genomics specific concepts" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" />
+      </binding>
+    </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
       <type>
