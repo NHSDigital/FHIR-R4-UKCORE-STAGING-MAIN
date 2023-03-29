@@ -2,28 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-SourceOfServiceRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="ExtensionUKCoreSourceOfServiceRequest" />
   <title value="Extension UK Core Source Of Service Request" />
   <status value="active" />
-  <date value="2022-05-20" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="This extension describes the source of the Service Request." />
@@ -63,7 +54,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A set of codes that describe the source of the service request." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfServiceRequest" />
       </binding>

@@ -1,0 +1,17 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Medication-TimololVTM-Example" />
+    <code>
+        <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="777773007" />
+            <display value="Timolol" />
+        </coding>
+    </code>
+    <form>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="17960711000001109" />
+            <display value="Ear/eye drops solution" />
+        </coding>
+    </form>
+</Medication>

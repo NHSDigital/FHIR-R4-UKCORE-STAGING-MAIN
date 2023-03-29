@@ -1,8 +1,5 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-RichardSmith-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
-	</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 		<valueCodeableConcept>
 			<coding>
@@ -72,8 +69,8 @@
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 			<valueCodeableConcept>
 				<coding>
-					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
-					<code value="number-present-and-verified"/>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland"/>
+					<code value="01"/>
 					<display value="Number present and verified"/>
 				</coding>
 			</valueCodeableConcept>
@@ -94,7 +91,7 @@
 	<birthDate value="1970-09-11"/>
 	<address>
 		<line value="4 Sandmoor Drive"/>
-		<line value="LEEDS"/>
+		<city value="LEEDS"/>
 		<postalCode value="LS17 7DF"/>
 	</address>
 	<contact>
@@ -127,7 +124,7 @@
 			<use value="home"/>
 			<type value="physical"/>
 			<line value="5 Alwoodley Road"/>
-			<line value="LEEDS"/>
+			<city value="LEEDS"/>
 			<postalCode value="LS17 6EH"/>
 		</address>
 		<gender value="female"/>

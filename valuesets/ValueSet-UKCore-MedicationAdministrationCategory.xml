@@ -1,0 +1,91 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="UKCore-MedicationAdministrationCategory"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationAdministrationCategory"/>
+	<version value="1.0.0" />
+	<name value="UKCoreMedicationAdministrationCategory"/>
+	<title value="UK Core Medication Administration Category"/>
+	<status value="active" />
+	<date value="2022-12-16" />
+	<publisher value="HL7 UK" />
+	<contact>
+		<name value="HL7 UK" />
+		<telecom>
+			<system value="email" />
+			<value value="ukcore@hl7.org.uk" />
+			<use value="work" />
+			<rank value="1" />
+		</telecom>
+	</contact>
+	<description value="A set of codes to define a category for a medication administration."/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<compose>
+		<include>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+			<concept>
+				<code value="inpatient"/>
+				<display value="Inpatient"/>
+			</concept>
+				<concept>
+				<code value="outpatient"/>
+				<display value="Outpatient"/>
+			</concept>
+			<concept>
+				<code value="community"/>
+				<display value="Community"/>
+			</concept>
+		</include>
+		<include>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationAdministrationCategory"/>
+			<concept>
+				<code value="discharge"/>
+				<display value="Discharge"/>
+			</concept>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="242c10eb-0ecc-47b2-9f97-78e80577a16f"/>
+		<timestamp value="2022-12-12T09:57:59+00:00"/>
+		<total value="4"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://terminology.hl7.org/CodeSystem/medication-admin-category|4.0.1"/>
+		</parameter>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationAdministrationCategory|1.0.0"/>
+		</parameter>
+		<parameter>
+			<name value="count"/>
+			<valueInteger value="2147483647"/>
+		</parameter>
+		<parameter>
+			<name value="offset"/>
+			<valueInteger value="0"/>
+		</parameter>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+			<version value="4.0.1"/>
+			<code value="inpatient"/>
+			<display value="Inpatient"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+			<version value="4.0.1"/>
+			<code value="outpatient"/>
+			<display value="Outpatient"/>
+		</contains>
+		<contains>
+			<system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+			<version value="4.0.1"/>
+			<code value="community"/>
+			<display value="Community"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationAdministrationCategory"/>
+			<version value="1.0.0"/>
+			<code value="discharge"/>
+			<display value="Discharge"/>
+		</contains>
+	</expansion>
+</ValueSet>

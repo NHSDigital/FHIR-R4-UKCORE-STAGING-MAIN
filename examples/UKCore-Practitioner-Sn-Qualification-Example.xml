@@ -1,0 +1,25 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Practitioner-Sn-Qualification-Example"/>
+	<!-- **************snippet start************** -->
+	<qualification>
+		<identifier>
+			<system value="http://example.org/UniversityIdentifier"/>
+			<value value="12345"/>
+		</identifier>
+		<code>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0360/2.7"/>
+				<code value="BS"/>
+				<display value="Bachelor of Science"/>
+			</coding>
+			<text value="Bachelor of Science"/>
+		</code>
+		<period>
+			<start value="1995"/>
+		</period>
+		<issuer>
+			<display value="Example University"/>
+		</issuer>
+	</qualification>
+	<!-- **************snippet end************** -->
+</Practitioner>

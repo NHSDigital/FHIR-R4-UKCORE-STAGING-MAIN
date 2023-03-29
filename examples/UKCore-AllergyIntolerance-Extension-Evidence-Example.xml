@@ -1,8 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyIntolerance-Extension-Evidence-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
-	</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence">
 		<valueReference>
 			<reference value="DiagnosticReport/UKCore-DiagnosticReport-DiagnosticStudiesReport-Example"/>
@@ -31,7 +28,7 @@
 		</coding>
 	</code>
 	<patient>
-		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 	<encounter>
 		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>

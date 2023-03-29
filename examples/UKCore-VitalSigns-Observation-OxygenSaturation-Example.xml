@@ -1,8 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-VitalSigns-Observation-OxygenSaturation-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-	</meta>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="f0297f56-48a4-43da-8e54-58146ef36b51"/>
@@ -28,7 +25,7 @@
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
 	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
 	<performer>

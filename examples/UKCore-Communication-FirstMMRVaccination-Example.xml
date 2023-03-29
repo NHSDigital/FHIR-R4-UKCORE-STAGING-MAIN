@@ -1,11 +1,8 @@
 <Communication xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Communication-FirstMMRVaccination-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication"/>
-	</meta>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">First MMR vacinnation administered to Melanie.</div>
+		<div xmlns="http://www.w3.org/1999/xhtml">First MMR vaccination administered to Melanie.</div>
 	</text>
 	<status value="completed"/>
 	<category>
@@ -43,6 +40,6 @@
 		<display value="Dr Paul Rastall"/>
 	</sender>
 	<payload>
-		<contentString value="First MMR vacinnation administered to Melanie"/>
+		<contentString value="First MMR vaccination administered to Melanie"/>
 	</payload>
 </Communication>

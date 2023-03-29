@@ -1,8 +1,5 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <id value="UKCore-PractitionerRole-GeneralPractitioner-Example" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-  </meta>
   <identifier>
     <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
     <value value="100334993514" />
@@ -11,7 +8,7 @@
     <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
   </practitioner>
   <organization>
-    <reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example" />
+    <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
   </organization>
   <code>
     <coding>
@@ -22,9 +19,9 @@
   </code>
   <specialty>
     <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="408443003" />
-      <display value="General medical practice" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
+      <code value="600" />
+      <display value="General Medical Practice" />
     </coding>
   </specialty>
   <telecom>

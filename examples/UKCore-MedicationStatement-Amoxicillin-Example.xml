@@ -1,8 +1,9 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
-	</meta>
+	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="ac0ffbdf-3289-41d5-84d9-068a1f5937db"/>
+	</identifier>
 	<status value="active"/>
 	<category>
 		<coding>
@@ -21,7 +22,10 @@
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
-	<effectiveDateTime value="2017-01-23"/>
+	<effectivePeriod>
+		<start value="2021-02-15T13:50:00+00:00"/>
+		<end value="2021-05-15T13:50:00+00:00"/>
+	</effectivePeriod>
 	<dateAsserted value="2017-02-22"/>
 	<reasonCode>
 		<coding>

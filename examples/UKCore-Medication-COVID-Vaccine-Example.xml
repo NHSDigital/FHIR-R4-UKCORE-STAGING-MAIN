@@ -1,0 +1,14 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Medication-COVID-Vaccine-Example"/>
+	<code>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="39115611000001103"/>
+			<display value="Comirnaty COVID-19 mRNA Vaccine 30micrograms/0.3ml dose concentrate for dispersion for injection multidose vials (Pfizer Ltd)"/>
+		</coding>
+	</code>
+	<batch>
+		<lotNumber value="FK0112"/>
+		<expirationDate value="2021-10-26"/>
+	</batch>
+</Medication>

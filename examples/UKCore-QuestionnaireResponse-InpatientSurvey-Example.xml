@@ -1,8 +1,5 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
 	<id value="UKCore-QuestionnaireResponse-InpatientSurvey-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
-	</meta>
 	<identifier>
 		<value value="6d47d8c4-2f05-4dbb-93f8-6863e6d2975b"/>
 		<assigner>
@@ -75,7 +72,7 @@
 		</item>
 		<item>
 			<linkId value="3.2"/>
-			<text value="Do you drink alchohol?"/>
+			<text value="Do you drink alcohol?"/>
 			<answer>
 				<valueBoolean value="false"/>
 			</answer>

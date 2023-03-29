@@ -2,32 +2,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Encounter" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-  <version value="2.1.0" />
+  <version value="2.3.0" />
   <name value="UKCoreEncounter" />
   <title value="UK Core Encounter" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2023-02-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
     </telecom>
   </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="Defines the UK Core constraints and extensions on the Encounter resource for the minimal set of data to query and retrieve encounter information." />
-  <purpose value="This profile allows exchange of information about an interaction between an individual and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of an individual." />
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Encounter](https://hl7.org/fhir/R4/Encounter.html)." />
+  <purpose value="This profile allows exchange of information about an interaction between an individual and healthcare providers for the purpose of providing healthcare services or assessing the health status of an individual." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -132,7 +123,7 @@
     <element id="Encounter.type">
       <path value="Encounter.type" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterType" />
       </binding>
@@ -140,7 +131,7 @@
     <element id="Encounter.serviceType">
       <path value="Encounter.serviceType" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="Any code from the SNOMED CT UK Refset with fully specified name 'Services simple reference set (foundation metadata concept)' with Refset Id 1127531000000102." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" />
       </binding>
@@ -202,6 +193,13 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
       </type>
     </element>
     <element id="Encounter.appointment.identifier.assigner">

@@ -1,8 +1,5 @@
 <Provenance xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Provenance-RARecordConsent-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance"/>
-	</meta>
 	<target>
 		<reference value="Consent/UKCore-Consent-ForInformationAccess-Example"/>
 	</target>

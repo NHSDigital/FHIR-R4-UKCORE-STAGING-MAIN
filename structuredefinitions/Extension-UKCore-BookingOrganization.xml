@@ -2,28 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-BookingOrganization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="ExtensionUKCoreBookingOrganization" />
   <title value="Extension UK Core Booking Organization" />
   <status value="active" />
-  <date value="2022-05-20" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="This supports the recording of the organisation booking the appointment." />
@@ -59,6 +50,7 @@
       <path value="Extension.value[x]" />
       <short value="The organisation booking the appointment" />
       <definition value="The organisation booking the appointment." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />

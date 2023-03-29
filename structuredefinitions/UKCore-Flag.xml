@@ -2,32 +2,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Flag" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="UKCoreFlag" />
   <title value="UK Core Flag" />
   <status value="active" />
-  <date value="2022-05-20" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
     </telecom>
   </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="Defines the UK Core constraints on the Flag resource to provide information on prospective warnings of potential issues when providing care to the patient." />
-  <purpose value="A flag is a warning or notification of some sort presented to the user - who may be a clinician or some other person involve in patient care. It usually represents something of sufficient significance to warrant a special display of some sort - rather than just a note in the resource. A flag has a subject representing the resource that will trigger its display.&#xD;&#xA;&#xD;&#xA;This subject can be of different types, as described in the examples below:&#xD;&#xA;&#xD;&#xA;- A note that a patient has an overdue account, which the provider may wish to discuss with them - in case of hardship for example (subject = Patient)&#xD;&#xA;- An outbreak of Ebola in a particular region (subject=Location) so that all patients from that region have a higher risk of having that condition&#xD;&#xA;- A particular provider is unavailable for referrals over a given period (subject = Practitioner)&#xD;&#xA;- A patient who is enrolled in a clinical trial (subject=Group)&#xD;&#xA;- Special guidance or caveats to be aware of when following a protocol (subject=PlanDefinition)&#xD;&#xA;- Warnings about using a drug in a formulary requires special approval (subject=Medication)&#xD;&#xA;- etc." />
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Flag](https://hl7.org/fhir/R4/Flag.html)." />
+  <purpose value="A flag is a warning or notification of some sort presented to the user - who may be a clinician or some other person involve in patient care. It usually represents something of sufficient significance to warrant a special display of some sort - rather than just a note in the resource. A flag has a subject representing the resource that will trigger its display.&#xD;&#xA;&#xD;&#xA;This subject can be of different types, as described in the examples below:&#xD;&#xA;&#xD;&#xA;- A note that a patient has an overdue account, which the provider may wish to discuss with them - in case of hardship, for example (`subject = Patient`)&#xD;&#xA;- An outbreak of Ebola in a particular region (`subject=Location`) so that all patients from that region have a higher risk of having that condition&#xD;&#xA;- A particular provider is unavailable for referrals over a given period (`subject = Practitioner`)&#xD;&#xA;- A patient who is enrolled in a clinical trial (`subject=Group`)&#xD;&#xA;- Special guidance or caveats to be aware of when following a protocol (`subject=PlanDefinition`)&#xD;&#xA;- Warnings about using a drug in a formulary requires special approval (`subject=Medication`)" />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>

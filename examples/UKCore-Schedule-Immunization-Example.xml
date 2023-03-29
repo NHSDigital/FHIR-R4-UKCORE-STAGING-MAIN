@@ -1,9 +1,5 @@
 <Schedule xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Schedule-Immunization-Example"/>
-	<meta>
-		<lastUpdated value="2021-10-13T11:20:00+07:00"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule"/>
-	</meta>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="4c8b068a-d610-427f-a508-6b7f90d47bf2"/>
