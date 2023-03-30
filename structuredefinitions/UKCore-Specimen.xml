@@ -136,9 +136,9 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.collection.bodySite.extension:myExtension">
+    <element id="Specimen.collection.bodySite.extension:BodySiteReference">
       <path value="Specimen.collection.bodySite.extension" />
-      <sliceName value="myExtension" />
+      <sliceName value="BodySiteReference" />
       <min value="0" />
       <max value="1" />
       <type>
