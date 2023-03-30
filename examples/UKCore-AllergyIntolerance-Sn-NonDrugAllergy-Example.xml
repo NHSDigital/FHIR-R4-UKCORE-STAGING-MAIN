@@ -1,8 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
 	<id value="UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"/>
-	</meta>
 	<clinicalStatus>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
@@ -28,6 +25,6 @@
 	</code>
 	<!-- **************Snippet end************** -->
 	<patient>
-		<reference value="Patient/UKCore-RichardSmith-Patient-Example"/>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 </AllergyIntolerance>

@@ -1,8 +1,5 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-BabyPatient-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
-	</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 		<valueCodeableConcept>
 			<coding>
@@ -16,8 +13,8 @@
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 			<valueCodeableConcept>
 				<coding>
-					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
-					<code value="number-present-and-verified"/>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland"/>
+					<code value="01"/>
 					<display value="Number present and verified"/>
 				</coding>
 			</valueCodeableConcept>
@@ -42,7 +39,7 @@
 	</birthDate>
 	<address>
 		<line value="10 Fearnville Grove"/>
-		<line value="LEEDS"/>
+		<city value="LEEDS"/>
 		<postalCode value="LS8 3DR"/>
 	</address>
 </Patient>

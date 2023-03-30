@@ -2,32 +2,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Immunization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreImmunization" />
   <title value="UK Core Immunization" />
   <status value="active" />
-  <date value="2022-08-26" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
     </telecom>
   </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="Defines the UK Core constraints and extensions on the Immunization resource for the minimal set of data to query and retrieve an individual’s immunisation information." />
-  <purpose value="This profile is intended to cover the recording of current and historical administration of vaccines to individuals across all healthcare disciplines in all care settings and all regions. This profile does not support the administration of non-vaccine agents, even those that may have or claim to have immunological effects. While the terms &quot;immunisation&quot; and &quot;vaccination&quot; are not clinically identical, for the purposes of the FHIR profile, the terms are used synonymously." />
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Immunization](https://hl7.org/fhir/R4/Immunization.html)." />
+  <purpose value="This profile is intended to cover the recording of current and historical administration of vaccines to individuals across all healthcare disciplines in all care settings and all regions. &#xD;&#xA;&#xD;&#xA;This profile does not support the administration of non-vaccine agents, even those that may have or claim to have immunological effects. While the terms &quot;immunisation&quot; and &quot;vaccination&quot; are not clinically identical, for the purposes of the FHIR profile, the terms are used synonymously." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -110,14 +101,14 @@
     <element id="Immunization.statusReason">
       <path value="Immunization.statusReason" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
       </binding>
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
       </binding>
     </element>
@@ -209,14 +200,14 @@
     <element id="Immunization.site">
       <path value="Immunization.site" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationAdministrationBodySite" />
       </binding>
     </element>
     <element id="Immunization.route">
       <path value="Immunization.route" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
     </element>
@@ -245,7 +236,7 @@
     <element id="Immunization.reasonCode">
       <path value="Immunization.reasonCode" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
       </binding>
     </element>

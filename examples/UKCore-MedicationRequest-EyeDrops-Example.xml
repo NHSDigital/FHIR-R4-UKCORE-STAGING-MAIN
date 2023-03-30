@@ -1,8 +1,5 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationRequest-EyeDrops-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"/>
-	</meta>
 	<status value="completed"/>
 	<intent value="order"/>
 	<category>
@@ -12,7 +9,6 @@
 			<display value="Outpatient"/>
 		</coding>
 	</category>
-	<priority value="routine"/>
 	<medicationReference>
 		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
 	</medicationReference>
@@ -23,23 +19,20 @@
 	<requester>
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</requester>
-	<recorder>
-		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-	</recorder>
 	<courseOfTherapyType>
 		<coding>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy"/>
-			<code value="continuous-repeating-dispensing"/>
-			<display value="Continuous long term (repeat dispensing)"/>
+			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+			<code value="acute"/>
+			<display value="Short course (acute) therapy"/>
 		</coding>
 	</courseOfTherapyType>
 	<dosageInstruction>
-		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
+		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart, until finished."/>
 		<timing>
 			<repeat>
-				<frequency value="1"/>
-				<period value="12"/>
-				<periodUnit value="h"/>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
 			</repeat>
 		</timing>
 		<site>
@@ -49,6 +42,13 @@
 				<display value="Both eyes, entire"/>
 			</coding>
 		</site>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="58831000052108"/>
+				<display value="Subretinal route"/>
+			</coding>
+		</route>
 		<method>
 			<coding>
 				<system value="http://snomed.info/sct"/>

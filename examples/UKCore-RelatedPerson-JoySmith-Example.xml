@@ -1,8 +1,5 @@
 <RelatedPerson xmlns="http://hl7.org/fhir">
 	<id value="UKCore-RelatedPerson-JoySmith-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"/>
-	</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
 		<extension url="PreferredContactMethod">
 			<valueCodeableConcept>
@@ -35,9 +32,6 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-	</extension>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
-		<valuePositiveInt value="1"/>
 	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator">
 		<valueBoolean value="true"/>

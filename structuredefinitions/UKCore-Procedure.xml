@@ -2,31 +2,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Procedure" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreProcedure" />
   <title value="UK Core Procedure" />
   <status value="active" />
-  <date value="2022-03-01" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
     </telecom>
   </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
-    </telecom>
-  </contact>
-  <description value="Defines the UK Core constraints and extensions on the Procedure resource for the minimal set of data to query and retrieve the patient’s procedure information." />
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Procedure](https://hl7.org/fhir/R4/Procedure.html)." />
   <purpose value="This profile allows exchange of details of current and historical procedures performed on or for an individual. A procedure is an activity that is performed on, with, or for an individual as part of the provision of care. Examples include surgical procedures, diagnostic procedures, endoscopic procedures, biopsies, counselling, physiotherapy, personal support services, adult day care services, non-emergency transportation, home modification, exercise, etc. Procedures may be performed by a healthcare professional, a service provider, a friend or relative or in some cases by themselves." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -89,6 +80,17 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Procedure.instantiatesCanonical">
+      <path value="Procedure.instantiatesCanonical" />
+      <type>
+        <code value="canonical" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+      </type>
+    </element>
     <element id="Procedure.basedOn">
       <path value="Procedure.basedOn" />
       <type>
@@ -123,7 +125,10 @@
     <element id="Procedure.code">
       <path value="Procedure.code" />
       <binding>
-        <strength value="extensible" />
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureCode" />
+        </extension>
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;71388002 |Procedure|&lt;&lt;129125009 |Procedure with explicit context|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
@@ -259,7 +264,10 @@
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <binding>
-        <strength value="extensible" />
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="BodySite" />
+        </extension>
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
@@ -283,7 +291,10 @@
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
       <binding>
-        <strength value="extensible" />
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureComplication" />
+        </extension>
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
       </binding>

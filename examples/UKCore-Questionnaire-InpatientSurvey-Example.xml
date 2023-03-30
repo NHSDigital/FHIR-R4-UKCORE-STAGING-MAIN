@@ -1,8 +1,5 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Questionnaire-InpatientSurvey-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"/>
-	</meta>
 	<url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example"/>
 	<identifier>
 		<value value="dbba41f5-2905-4a5f-baba-e5987cbd9cca"/>
@@ -32,7 +29,7 @@
 	<item>
 		<linkId value="1"/>
 		<text value="Do you have allergies?"/>
-		<type value="boolean"/>
+		<type value="string"/>
 	</item>
 	<item>
 		<linkId value="2"/>
@@ -70,7 +67,7 @@
 		</item>
 		<item>
 			<linkId value="3.2"/>
-			<text value="Do you drink alchohol?"/>
+			<text value="Do you drink alcohol?"/>
 			<type value="boolean"/>
 		</item>
 	</item>

@@ -2,28 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ProblemSignificance" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ProblemSignificance" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreProblemSignificance" />
   <title value="Extension UK Core Problem Significance" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="Information that describes the significance of the problem header condition." />
@@ -57,6 +48,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="Describes the significance of a Condition that is a Problem Header." />
+      <min value="1" />
       <type>
         <code value="code" />
       </type>

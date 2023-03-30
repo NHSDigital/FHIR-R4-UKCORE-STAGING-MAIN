@@ -4,25 +4,16 @@
   <version value="1.0.0" />
   <name value="UKCorePracticeSettingCodeWales" />
   <title value="UKCore Practice Setting Code Wales" />
-  <status value="active" />
+  <status value="draft" />
   <date value="2022-08-26" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in Wales and are copied from the content of the NHS Wales Data Dictionary web page at http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/mainspecialtyconsultant.htm on 20/10/2022." />

@@ -2,28 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-MedicationTradeFamily" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreMedicationTradeFamily" />
   <title value="Extension UK Core Medication Trade Family" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2022-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>
       <system value="email" />
-      <value value="secretariat@hl7.org.uk" />
+      <value value="ukcore@hl7.org.uk" />
       <use value="work" />
       <rank value="1" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NHS Digital" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="2" />
     </telecom>
   </contact>
   <description value="This Extension is used to identify a Trade Family or brand associated with a Medication, in particular a Virtual Therapeutic Moiety (VTM)." />
@@ -64,7 +55,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationTradeFamily" />
       </binding>
     </element>

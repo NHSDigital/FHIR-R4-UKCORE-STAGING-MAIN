@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Immunization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Immunization-InfluenzaVaccine-Example"/>
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"/>
-	</meta>
 	<status value="completed"/>
 	<vaccineCode>
 		<coding>
-			<system value="http://snomed.info/sct"/>
+			<system value="https://dmd.nhs.uk"/>
 			<code value="11278411000001109"/>
 			<display value="Influenza vaccine (split virion, inactivated) suspension for injection 0.5ml pre-filled syringes (Pfizer Ltd)"/>
 		</coding>
