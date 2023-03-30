@@ -43,13 +43,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-      </type>
-    </element>
-    <element id="Extension.value[x].type">
-      <path value="Extension.value[x].type" />
-      <type>
-        <code value="uri" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/BodyStructure" />
+        <targetProfile value="BodyStructure" />
       </type>
     </element>
   </differential>
