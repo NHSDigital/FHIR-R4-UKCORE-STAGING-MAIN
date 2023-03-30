@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreServiceRequest" />
   <title value="UK Core ServiceRequest" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -123,6 +123,13 @@
       <binding>
         <strength value="preferred" />
         <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.orderDetail">
+      <path value="ServiceRequest.orderDetail" />
+      <binding>
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
     </element>
