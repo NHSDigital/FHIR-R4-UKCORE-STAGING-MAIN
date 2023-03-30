@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Specimen" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreSpecimen" />
   <title value="UK Core Specimen" />
-  <status value="draft" />
-  <date value="2023-02-14" />
+  <status value="active" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -56,40 +56,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Specimen.type.coding">
-      <path value="Specimen.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Specimen.type.coding:snomedCT">
-      <path value="Specimen.type.coding" />
-      <sliceName value="snomedCT" />
+    <element id="Specimen.type">
+      <path value="Specimen.type" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED UK Clinical Terminology coding system" />
+        <description value="A code from the SNOMED CT UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenType" />
       </binding>
-    </element>
-    <element id="Specimen.type.coding:snomedCT.system">
-      <path value="Specimen.type.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Specimen.type.coding:snomedCT.code">
-      <path value="Specimen.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Specimen.type.coding:snomedCT.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Specimen.type.coding.display" />
-      <min value="1" />
     </element>
     <element id="Specimen.subject">
       <path value="Specimen.subject" />
