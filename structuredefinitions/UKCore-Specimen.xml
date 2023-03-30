@@ -177,6 +177,9 @@
       <min value="1" />
     </element>
     <element id="Specimen.collection.bodySite.coding:snomedCT.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Specimen.collection.bodySite.coding.display" />
       <min value="1" />
     </element>
