@@ -72,33 +72,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="DiagnosticReport.category.coding">
-      <path value="DiagnosticReport.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT">
-      <path value="DiagnosticReport.category.coding" />
-      <sliceName value="snomedCT" />
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT.system">
-      <path value="DiagnosticReport.category.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT.code">
-      <path value="DiagnosticReport.category.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT.display">
-      <path value="DiagnosticReport.category.coding.display" />
-      <min value="1" />
-    </element>
     <element id="DiagnosticReport.code.coding">
       <path value="DiagnosticReport.code.coding" />
       <slicing>
