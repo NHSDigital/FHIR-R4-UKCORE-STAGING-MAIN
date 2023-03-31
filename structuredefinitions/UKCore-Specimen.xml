@@ -114,11 +114,31 @@
       <path value="Specimen.collection.collector" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
+    </element>
+    <element id="Specimen.collection.collector.extension">
+      <path value="Specimen.collection.collector.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.collection.collector.extension:patientAndRelatedPersonReferenceR5Backport">
+      <path value="Specimen.collection.collector.extension" />
+      <sliceName value="patientAndRelatedPersonReferenceR5Backport" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PatientAndRelatedPersonReferenceR5Backport" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
       <path value="Specimen.collection.collector.identifier.assigner" />
