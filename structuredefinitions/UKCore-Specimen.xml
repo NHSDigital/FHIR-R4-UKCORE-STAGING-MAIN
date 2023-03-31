@@ -132,6 +132,28 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite" />
       </binding>
     </element>
+    <element id="Specimen.collection.bodySite.extension">
+      <path value="Specimen.collection.bodySite.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.collection.bodySite.extension:bodySiteReference">
+      <path value="Specimen.collection.bodySite.extension" />
+      <sliceName value="bodySiteReference" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Specimen.processing.additive.identifier.assigner">
       <path value="Specimen.processing.additive.identifier.assigner" />
       <type>
