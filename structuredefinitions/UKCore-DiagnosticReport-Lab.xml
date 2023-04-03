@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-DiagnosticReport-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+  <version value="1.0.0" />
+  <name value="UKCoreDiagnosticReportLab" />
+  <title value="UK Core DiagnosticReport Lab" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Defines the DiagnosticReport constraints and extensions on the UK Core Profile {{pagelink:Profile-DiagnosticReport-54417}}" />
+  <purpose value="To provide implementers with additional support when implementing test result data and to provide a consistant structure to this data." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.category">
+      <path value="DiagnosticReport.category" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.effective[x]">
+      <path value="DiagnosticReport.effective[x]" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
