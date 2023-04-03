@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the DiagnosticReport constraints and extensions on the UK Core Profile {{pagelink:Profile-DiagnosticReport-54417}}" />
+  <description value="Defines the DiagnosticReport constraints and extensions on the UK Core Profile DiagnosticReport" />
   <purpose value="To provide implementers with additional support when implementing test result data and to provide a consistant structure to this data." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -41,7 +41,7 @@
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]" />
       <constraint>
-        <key value="ukcore-vit-lab-001" />
+        <key value="ukcore-diag-lab-001" />
         <severity value="error" />
         <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
         <expression value="(effective.empty() and ((status != 'partial') or (status != 'preliminary') or (status != 'final') or (status != 'amended') or (status != 'corrected') or (status != 'appended'))) or effective.exists()" />
