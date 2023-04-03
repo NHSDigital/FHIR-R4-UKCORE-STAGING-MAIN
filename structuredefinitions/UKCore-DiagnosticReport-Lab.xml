@@ -40,7 +40,13 @@
     </element>
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]" />
-      <min value="1" />
+      <constraint>
+        <key value="ukcore-vit-lab-001" />
+        <severity value="error" />
+        <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
+        <expression value="(status != 'partial') or (status != 'preliminary') or (status != 'final') or (status != 'amended') or (status != 'corrected') or (status != 'appended')" />
+        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+      </constraint>
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
