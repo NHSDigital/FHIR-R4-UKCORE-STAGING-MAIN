@@ -72,37 +72,12 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="DiagnosticReport.code.coding">
-      <path value="DiagnosticReport.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT">
-      <path value="DiagnosticReport.code.coding" />
-      <sliceName value="snomedCT" />
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
       </binding>
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT.system">
-      <path value="DiagnosticReport.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT.code">
-      <path value="DiagnosticReport.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT.display">
-      <path value="DiagnosticReport.code.coding.display" />
-      <min value="1" />
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
@@ -218,37 +193,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="DiagnosticReport.conclusionCode.coding">
-      <path value="DiagnosticReport.conclusionCode.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT">
-      <path value="DiagnosticReport.conclusionCode.coding" />
-      <sliceName value="snomedCT" />
+    <element id="DiagnosticReport.conclusionCode">
+      <path value="DiagnosticReport.conclusionCode" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-FindingCode" />
       </binding>
     </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT.system">
-      <path value="DiagnosticReport.conclusionCode.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT.code">
-      <path value="DiagnosticReport.conclusionCode.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT.display">
-      <path value="DiagnosticReport.conclusionCode.coding.display" />
-      <min value="1" />
-    </element>
   </differential>
+</StructureDefinition>
 </StructureDefinition>
