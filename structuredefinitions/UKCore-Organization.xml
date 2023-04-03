@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Organization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreOrganization" />
   <title value="UK Core Organization" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -140,6 +140,14 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A set of concepts indicating the organisation type, derived from the base CodeSystem, and Genomics specific concepts" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" />
+      </binding>
     </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
