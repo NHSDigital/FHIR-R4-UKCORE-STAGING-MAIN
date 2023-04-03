@@ -84,6 +84,16 @@
       </type>
       <isModifier value="false" />
     </element>
+	<element id="ServiceRequest.extension:priorityReason">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="priorityReason" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="ServiceRequest.identifier.assigner">
       <path value="ServiceRequest.identifier.assigner" />
       <type>
