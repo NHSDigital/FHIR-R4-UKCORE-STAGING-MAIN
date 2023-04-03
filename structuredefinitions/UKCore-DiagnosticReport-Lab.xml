@@ -44,7 +44,7 @@
         <key value="ukcore-vit-lab-001" />
         <severity value="error" />
         <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
-        <expression value="(status != 'partial') or (status != 'preliminary') or (status != 'final') or (status != 'amended') or (status != 'corrected') or (status != 'appended')" />
+        <expression value="(effective.empty() and ((status != 'partial') or (status != 'preliminary') or (status != 'final') or (status != 'amended') or (status != 'corrected') or (status != 'appended'))) or effective.exists()" />
         <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
       </constraint>
     </element>
