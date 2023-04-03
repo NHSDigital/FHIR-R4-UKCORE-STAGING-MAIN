@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Patient" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCorePatient" />
   <title value="UK Core Patient" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -156,6 +156,18 @@
       <path value="Patient.extension.value[x]" />
       <short value="Indicator showing whether the patient needs an interpreter" />
       <definition value="Indicator showing if this Patient requires an interpreter to communicate healthcare information to the practitioner." />
+    </element>
+    <element id="Patient.extension:nhsNumberUnavailableReason">
+      <path value="Patient.extension" />
+      <sliceName value="nhsNumberUnavailableReason" />
+      <short value="Reason why this Patient does not include an NHS Number identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
