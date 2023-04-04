@@ -1,0 +1,42 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="UKCore-NHSNumberUnavailableReason"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-NHSNumberUnavailableReason"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreNHSNumberUnavailableReason"/>
+	<title value="UK Core NHS Number Unavailable Reason"/>
+	<status value="active"/>
+	<date value="2023-04-28"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="A set of codes that define the reason why a patient does not have an NHS Number."/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="a130430a-9572-4a68-9952-87907c3c2915"/>
+		<timestamp value="2023-03-29T15:09:15+00:00"/>
+		<total value="2"/>
+		<offset value="0"/>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
+			<code value="Overseas"/>
+			<display value="Overseas patient"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
+			<code value="NotKnown"/>
+			<display value="NHS Number not known"/>
+		</contains>
+	</expansion>
+</ValueSet>
