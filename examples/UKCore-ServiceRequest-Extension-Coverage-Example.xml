@@ -1,12 +1,12 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
-	<id value="UKCore-ServiceRequest-Extension-SourceOfServiceRequest-Example"/>
+	<id value="UKCore-ServiceRequest-Extension-Coverage-Example"/>
 	<!-- ***************extension start*************** -->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="108161000000109"/>
-				<display value="Referred by general practitioner"/>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
+				<code value="Private"/>
+				<display value="Private"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
