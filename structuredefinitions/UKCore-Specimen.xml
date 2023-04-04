@@ -117,6 +117,12 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
+      <constraint>
+        <key value="ukcore-spec-001" />
+        <severity value="error" />
+        <human value="Only one reference SHALL be allowed between collection.collector and extension:patientAndRelatedPersonReferenceR5Backport." />
+        <expression value="Specimen.collection.collector.extension.empty()" />
+      </constraint>
     </element>
     <element id="Specimen.collection.collector.extension">
       <path value="Specimen.collection.collector.extension" />
@@ -138,6 +144,12 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PatientAndRelatedPersonReferenceR5Backport" />
       </type>
+      <constraint>
+        <key value="ukcore-spec-002" />
+        <severity value="error" />
+        <human value="Only one reference SHALL be allowed between collection.collector and extension:patientAndRelatedPersonReferenceR5Backport." />
+        <expression value="collection.collector.empty()" />
+      </constraint>
       <isModifier value="false" />
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
