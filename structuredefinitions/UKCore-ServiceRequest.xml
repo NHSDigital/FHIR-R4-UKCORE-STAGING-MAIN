@@ -84,16 +84,6 @@
 			</type>
 			<isModifier value="false"/>
 		</element>
-		<element id="ServiceRequest.extension:priorityReason">
-			<path value="ServiceRequest.extension"/>
-			<sliceName value="priorityReason"/>
-			<min value="0"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason"/>
-			</type>
-			<isModifier value="false"/>
-		</element>
 		<element id="ServiceRequest.identifier.assigner">
 			<path value="ServiceRequest.identifier.assigner"/>
 			<type>
@@ -137,6 +127,16 @@
 				<code value="Reference"/>
 				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
 			</type>
+		</element>
+		<element id="ServiceRequest.priority.extension:priorityReason">
+			<path value="ServiceRequest.priority.extension"/>
+			<sliceName value="priorityReason"/>
+			<min value="0"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason"/>
+			</type>
+			<isModifier value="false"/>
 		</element>
 		<element id="ServiceRequest.code">
 			<path value="ServiceRequest.code"/>
