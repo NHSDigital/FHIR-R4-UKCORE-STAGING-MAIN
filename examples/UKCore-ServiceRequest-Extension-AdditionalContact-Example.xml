@@ -2,7 +2,9 @@
 	<id value="UKCore-ServiceRequest-Extension-AdditionalContact-Example"/>
 	<!-- ***************extension start*************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact">
-		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+		<valueReference>
+			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+		</valueReference>
 	</extension>
 	<!-- **************extension end ****************** -->
 	<status value="active"/>
