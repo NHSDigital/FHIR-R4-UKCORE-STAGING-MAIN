@@ -6,7 +6,7 @@
 			<valueCodeableConcept>
 				<coding>
 					<system value="http://snomed.info/sct"/>
-					<code value="1321851000000109 "/>
+					<code value="1321851000000109"/>
 					<display value="Provision of advice, assessment or treatment delayed due to COVID-19 pandemic"/>
 				</coding>
 			</valueCodeableConcept>
