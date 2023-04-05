@@ -127,6 +127,16 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+	<element id="DiagnosticReport.performer.extension:devicePerformer">
+		<path value="DiagnosticReport.performer.extension"/>
+		<sliceName value="devicePerformer"/>
+		<min value="0"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference"/>
+		</type>
+		<isModifier value="false"/>
+	</element>
     <element id="DiagnosticReport.resultsInterpreter">
       <path value="DiagnosticReport.resultsInterpreter" />
       <type>
@@ -144,6 +154,16 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+	<element id="DiagnosticReport.resultsInterpreter.extension:deviceInterpreter">
+		<path value="DiagnosticReport.resultsInterpreter.extension"/>
+		<sliceName value="deviceInterpreter"/>
+		<min value="0"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference"/>
+		</type>
+		<isModifier value="false"/>
+	</element>
     <element id="DiagnosticReport.specimen">
       <path value="DiagnosticReport.specimen" />
       <type>
