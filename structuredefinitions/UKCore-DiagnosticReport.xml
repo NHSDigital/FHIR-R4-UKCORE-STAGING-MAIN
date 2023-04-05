@@ -120,13 +120,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
       </type>
     </element>
-    <element id="DiagnosticReport.performer.identifier.assigner">
-      <path value="DiagnosticReport.performer.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="DiagnosticReport.performer.extension">
       <path value="DiagnosticReport.performer.extension" />
       <slicing>
@@ -149,6 +142,13 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="DiagnosticReport.performer.identifier.assigner">
+      <path value="DiagnosticReport.performer.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="DiagnosticReport.resultsInterpreter">
       <path value="DiagnosticReport.resultsInterpreter" />
       <type>
@@ -157,13 +157,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.resultsInterpreter.identifier.assigner">
-      <path value="DiagnosticReport.resultsInterpreter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="DiagnosticReport.resultsInterpreter.extension">
@@ -187,6 +180,13 @@
 		</type>
 		<isModifier value="false"/>
 	</element>
+    <element id="DiagnosticReport.resultsInterpreter.identifier.assigner">
+      <path value="DiagnosticReport.resultsInterpreter.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
     <element id="DiagnosticReport.specimen">
       <path value="DiagnosticReport.specimen" />
       <type>

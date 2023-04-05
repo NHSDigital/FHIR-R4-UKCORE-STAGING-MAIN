@@ -15,7 +15,9 @@
 	<performer>
 		<display value="Software as a medical device"/>
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference">
-			<reference value="Device/UKCore-Device-SoftwareAsAMedicalDevice-Example" />
+			<valueReference>
+				<reference value="Device/UKCore-Device-SoftwareAsAMedicalDevice-Example" />
+			</valueReference>
 		</extension>
 	</performer>
 	<specimen>
