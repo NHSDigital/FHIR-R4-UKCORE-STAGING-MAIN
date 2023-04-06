@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Patient-Extension-NHSNumberUnavailableReason-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
+				<code value="Overseas"/>
+				<display value="Overseas patient"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+	<name>
+		<use value="official"/>
+		<family value="BAPTISTE"/>
+		<given value="Jean"/>
+	</name>
+</Patient>
