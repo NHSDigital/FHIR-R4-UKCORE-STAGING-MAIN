@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+	<id value="UKCore-Observation-Lab-WhiteCellCount-Example" />
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122" />
+		<value value="3b809516-a294-4de9-a4ce-0c24c7b5f796" />
+	</identifier>
+	<status value="final" />
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+			<code value="laboratory" />
+			<display value="Laboratory" />
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="1110441000000100" />
+			<display value="White blood cell count in blood" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+	</subject>
+	<performer>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+	</performer>
+	<valueQuantity>
+		<value value="11.2" />
+		<unit value="10*9/L" />
+		<system value="http://unitsofmeasure.org"/>
+	</valueQuantity>
+	<specimen>
+		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
+	</specimen>
+	<referenceRange>
+		<low>
+			<value value="4.0" />
+		</low>
+		<high>
+			<value value="17.0" />
+		</high>
+	</referenceRange>
+</Observation>
