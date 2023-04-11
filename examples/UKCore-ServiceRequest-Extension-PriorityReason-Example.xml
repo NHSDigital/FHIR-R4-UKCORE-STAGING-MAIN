@@ -1,0 +1,24 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+	<id value="UKCore-ServiceRequest-Extension-PriorityReason-Example"/>
+	<priority value="urgent">
+		<!-- ***************extension start*************** -->
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="1321851000000109"/>
+					<display value="Provision of advice, assessment or treatment delayed due to COVID-19 pandemic"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<!-- **************extension end ****************** -->
+	</priority>
+	<status value="active"/>
+	<intent value="order"/>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<requester>
+		<reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example"/>
+	</requester>
+</ServiceRequest>

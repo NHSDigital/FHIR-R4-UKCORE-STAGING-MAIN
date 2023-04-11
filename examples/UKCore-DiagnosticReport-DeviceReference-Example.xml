@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+	<id value="UKCore-DiagnosticReport-DeviceReference-Example"/>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="721981007"/>
+			<display value="Diagnostic studies report"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<performer>
+		<display value="Software as a medical device"/>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference">
+			<valueReference>
+				<reference value="Device/UKCore-Device-SoftwareAsAMedicalDevice-Example" />
+			</valueReference>
+		</extension>
+	</performer>
+	<specimen>
+		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
+	</specimen>
+	<result>
+		<reference value="Observation/UKCore-Observation-WhiteCellCount-Example"/>
+	</result>
+</DiagnosticReport>
