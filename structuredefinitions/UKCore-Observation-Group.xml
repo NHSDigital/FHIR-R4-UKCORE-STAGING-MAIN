@@ -28,6 +28,7 @@
       <path value="Observation.category" />
       <fixedCodeableConcept>
         <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
           <code value="laboratory" />
           <display value="Laboratory" />
         </coding>
