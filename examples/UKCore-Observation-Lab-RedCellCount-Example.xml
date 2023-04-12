@@ -16,8 +16,8 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct" />
-			<code value="1022451000000103" />
-			<display value="Red blood cell count" />
+			<code value="58571000237106" />
+			<display value="Nucleated red blood cell count in blood" />
 		</coding>
 	</code>
 	<subject>

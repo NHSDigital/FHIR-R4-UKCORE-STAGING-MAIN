@@ -16,8 +16,8 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct" />
-			<code value="1110441000000100" />
-			<display value="White blood cell count in blood" />
+			<code value="16181000237107" />
+			<display value="White blood cell count in fluid" />
 		</coding>
 	</code>
 	<subject>
