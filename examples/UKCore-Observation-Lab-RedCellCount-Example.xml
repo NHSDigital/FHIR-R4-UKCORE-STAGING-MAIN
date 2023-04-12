@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
-	<id value="UKCore-Observation-Lab-WhiteCellCount-Example" />
+	<id value="UKCore-Observation-Lab-RedCellCount-Example" />
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122" />
 		<value value="fcd8af5a-18a0-4d0b-8c79-5b6bdf55fb32" />
