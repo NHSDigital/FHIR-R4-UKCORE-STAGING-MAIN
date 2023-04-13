@@ -17,7 +17,7 @@
     </telecom>
   </contact>
   <description value="This derived profile represents an individual Laboratory test and result value. These tests can be grouped together using the Observation-Group Profile." />
-    <purpose value="To provide the minimum expectatations for each individual Laboratory test." />
+    <purpose value="To provide the minimum expectations for each individual Laboratory test." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
