@@ -57,10 +57,18 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of vital sign." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+      </binding>
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system for the value of the vital sign." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsValue" />
       </binding>
@@ -87,6 +95,14 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
+    </element>
+    <element id="Observation.component.code">
+      <path value="Observation.component.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of vital sign." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
