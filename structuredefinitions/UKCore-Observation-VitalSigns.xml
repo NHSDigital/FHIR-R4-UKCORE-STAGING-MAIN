@@ -4,7 +4,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
   <version value="1.0.0" />
   <name value="UKCoreObservationVitalSigns" />
-  <title value="UK Core Observation Vital Signs " />
+  <title value="UK Core Observation Vital Signs" />
   <status value="draft" />
   <date value="2022-12-16" />
   <publisher value="HL7 UK" />
@@ -19,7 +19,7 @@
   </contact>
   <description value="Defines the observation constraints and extensions on the UK Core observation resource for the minimal set of data to query and retrieve clinical observation  vital signs information." />
   <purpose value="This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -57,16 +57,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-      <max value="2" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system for the type of vital sign." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
-      </binding>
-    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
