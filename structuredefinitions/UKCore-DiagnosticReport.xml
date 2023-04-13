@@ -240,7 +240,6 @@
       <path value="DiagnosticReport.conclusionCode" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-FindingCode" />
       </binding>
     </element>
   </differential>
