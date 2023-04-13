@@ -116,20 +116,10 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
     </element>
-    <element id="Observation.component.code.coding:snomedCT">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="snomedCT" />
-      <min value="1" />
-      <max value="2" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system for the type of vital sign." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
-      </binding>
-    </element>
     <element id="Observation.component.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
       <max value="1" />
       <binding>
         <strength value="extensible" />
