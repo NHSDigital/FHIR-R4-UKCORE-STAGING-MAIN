@@ -57,16 +57,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <max value="1" />
-      <binding>
-        <strength value="extensible" />
-        <description value="This value set indicates the allowed vital sign result types." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
-      </binding>
-    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <binding>
@@ -74,24 +64,6 @@
         <description value="A code from the SNOMED Clinical Terminology UK coding system for the value of the vital sign." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsValue" />
       </binding>
-    </element>
-    <element id="Observation.bodySite.coding:loinc">
-      <path value="Observation.bodySite.coding" />
-      <sliceName value="loinc" />
-      <max value="1" />
-    </element>
-    <element id="Observation.bodySite.coding:loinc.system">
-      <path value="Observation.bodySite.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.bodySite.coding:loinc.code">
-      <path value="Observation.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Observation.bodySite.coding:loinc.display">
-      <path value="Observation.bodySite.coding.display" />
-      <min value="1" />
     </element>
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
@@ -115,30 +87,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
-    </element>
-    <element id="Observation.component.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="extensible" />
-        <description value="This value set indicates the allowed vital sign result types." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
-      </binding>
-    </element>
-    <element id="Observation.component.code.coding:loinc.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.component.code.coding:loinc.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Observation.component.code.coding:loinc.display">
-      <path value="Observation.component.code.coding.display" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
