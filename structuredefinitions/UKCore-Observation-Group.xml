@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-Group" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCoreObservationGroup" />
-  <version value="1.0.0" />
-  <name value="UKCoreObservationGroup" />
-  <title value="UK Core Observation Group" />
-  <status value="active" />
-  <date value="2023-04-28" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="This derived profile allows the grouping of multiple Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count" />
-    <purpose value="This profile allows the creation of a report for results borne from a single request panel, or profile, e.g. Full Blood Count, Lipid Profile, etc. allowing the results to be logically ordered according to te the given profile and/or best practice guidlines." />
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="laboratory" />
-          <display value="Laboratory" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList" />
-      </binding>
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="Observation.hasMember">
-      <path value="Observation.hasMember" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      </type>
-    </element>
-  </differential>
+	<id value="UKCore-Observation-Group"/>
+	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreObservationGroup"/>
+	<title value="UK Core Observation Group"/>
+	<status value="active"/>
+	<date value="2023-04-28"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="This derived profile allows the grouping of multiple Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count"/>
+	<purpose value="This profile allows the creation of a report for results borne from a single request panel, or profile, e.g. Full Blood Count, Lipid Profile, etc. allowing the results to be logically ordered according to te the given profile and/or best practice guidlines."/>
+	<fhirVersion value="4.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation.category">
+			<path value="Observation.category"/>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+					<code value="laboratory"/>
+					<display value="Laboratory"/>
+				</coding>
+			</fixedCodeableConcept>
+		</element>
+		<element id="Observation.code.coding:snomedCT">
+			<path value="Observation.code.coding"/>
+			<sliceName value="snomedCT"/>
+			<binding>
+				<strength value="preferred"/>
+				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList"/>
+			</binding>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
+			</type>
+		</element>
+		<element id="Observation.hasMember">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>
