@@ -36,14 +36,6 @@
         </coding>
       </fixedCodeableConcept>
     </element>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList" />
-      </binding>
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <type>
