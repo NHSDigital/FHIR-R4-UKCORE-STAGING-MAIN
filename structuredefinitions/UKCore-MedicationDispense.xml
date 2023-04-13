@@ -223,8 +223,7 @@
     <element id="MedicationDispense.dosageInstruction.asNeeded[x]">
       <path value="MedicationDispense.dosageInstruction.asNeeded[x]" />
       <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
+        <strength value="preferred" />
       </binding>
     </element>
     <element id="MedicationDispense.dosageInstruction.site">
