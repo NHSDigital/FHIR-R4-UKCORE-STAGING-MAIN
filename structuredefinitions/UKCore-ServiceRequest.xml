@@ -299,8 +299,6 @@
 			<path value="ServiceRequest.bodySite"/>
 			<binding>
 				<strength value="preferred"/>
-				<description value="A set of codes that define an anatomical or acquired body structure site. Selected from the SNOMED CT UK coding system."/>
-				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite"/>
 			</binding>
 		</element>
 		<element id="ServiceRequest.relevantHistory">
