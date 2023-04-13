@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Procedure" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreProcedure" />
   <title value="UK Core Procedure" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -264,12 +264,7 @@
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite" />
-        </extension>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="Procedure.report">
