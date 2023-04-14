@@ -17,7 +17,7 @@
     </telecom>
   </contact>
   <description value="This derived profile represents an individual Laboratory test and result value. These tests can be grouped together using the Observation-Group Profile." />
-    <purpose value="To provide the minimum expectations for each individual Laboratory test." />
+  <purpose value="To provide the minimum expectations for each individual Laboratory test." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -34,6 +34,14 @@
           <display value="Laboratory" />
         </coding>
       </fixedCodeableConcept>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and results" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList" />
+      </binding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
