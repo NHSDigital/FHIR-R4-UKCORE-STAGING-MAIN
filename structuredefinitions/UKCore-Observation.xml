@@ -184,8 +184,6 @@
       <path value="Observation.bodySite" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 | Anatomical or acquired body structure)" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="Observation.method">
