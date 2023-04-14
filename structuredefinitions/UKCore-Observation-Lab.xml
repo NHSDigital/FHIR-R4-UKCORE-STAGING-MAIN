@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCoreObservationLab" />
+  <id value="UKCore-Observation-Lab"/>
+	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab"/>
   <version value="1.0.0" />
   <name value="UKCoreObservationLab" />
   <title value="UK Core Observation Lab" />
