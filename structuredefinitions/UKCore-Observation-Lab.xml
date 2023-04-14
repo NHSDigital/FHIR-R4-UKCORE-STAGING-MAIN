@@ -1,55 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-Lab"/>
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab"/>
-	<version value="1.0.0"/>
-	<name value="UKCoreObservationLab"/>
-	<title value="UK Core Observation Lab"/>
-	<status value="active"/>
-	<date value="2023-04-28"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="This derived profile represents an individual Laboratory test and result value. These tests can be grouped together using the Observation-Group Profile."/>
-	<purpose value="To provide the minimum expectatations for each individual Laboratory test."/>
-	<fhirVersion value="4.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Observation"/>
-	<baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Observation.category">
-			<path value="Observation.category"/>
-			<fixedCodeableConcept>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-					<code value="laboratory"/>
-					<display value="Laboratory"/>
-				</coding>
-			</fixedCodeableConcept>
-		</element>
-		<element id="Observation.code.coding:snomedCT">
-			<path value="Observation.code.coding"/>
-			<sliceName value="snomedCT"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList"/>
-			</binding>
-		</element>
-		<element id="Observation.subject">
-			<path value="Observation.subject"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
-			</type>
-		</element>
-	</differential>
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCoreObservationLab" />
+  <version value="1.0.0" />
+  <name value="UKCoreObservationLab" />
+  <title value="UK Core Observation Lab" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This derived profile represents an individual Laboratory test and result value. These tests can be grouped together using the Observation-Group Profile." />
+  <purpose value="To provide the minimum expectations for each individual Laboratory test." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="laboratory" />
+          <display value="Laboratory" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and results" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList" />
+      </binding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
