@@ -1,14 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Encounter-InpatientEncounter-Example"/>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
-		<valueCodeableConcept>
-			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland"/>
-				<code value="13"/>
-				<display value="Elective Admission: Planned"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod">
 		<valueCodeableConcept>
 			<coding>
@@ -62,6 +53,15 @@
 		</coding>
 	</reasonCode>
 	<hospitalization>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland"/>
+					<code value="13"/>
+					<display value="Elective Admission: Planned"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
 		<dischargeDisposition>
 			<coding>
 				<system value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-DischargeDestination"/>

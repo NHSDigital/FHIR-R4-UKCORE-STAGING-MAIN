@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Encounter" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreEncounter" />
   <title value="UK Core Encounter" />
   <status value="active" />
-  <date value="2023-02-14" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -57,17 +57,6 @@
         <rules value="open" />
       </slicing>
       <min value="0" />
-    </element>
-    <element id="Encounter.extension:admissionMethod">
-      <path value="Encounter.extension" />
-      <sliceName value="admissionMethod" />
-      <short value="An extension to support the method by which an individual was admitted into hospital." />
-      <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />
-      </type>
     </element>
     <element id="Encounter.extension:dischargeMethod">
       <path value="Encounter.extension" />
@@ -252,6 +241,29 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
+    </element>
+	<element id="Encounter.hospitalization.extension">
+      <path value="Encounter.hospitalization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Encounter.hospitalization.extension:admissionMethod">
+      <path value="Encounter.hospitalization.extension" />
+      <sliceName value="admissionMethod" />
+      <short value="An extension to support the method by which an individual was admitted into hospital." />
+      <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Encounter.hospitalization.preAdmissionIdentifier.assigner">
       <path value="Encounter.hospitalization.preAdmissionIdentifier.assigner" />
