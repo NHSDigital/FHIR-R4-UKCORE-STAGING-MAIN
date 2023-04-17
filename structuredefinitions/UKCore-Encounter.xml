@@ -58,17 +58,6 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Encounter.extension:admissionMethod">
-      <path value="Encounter.extension" />
-      <sliceName value="admissionMethod" />
-      <short value="An extension to support the method by which an individual was admitted into hospital." />
-      <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />
-      </type>
-    </element>
     <element id="Encounter.extension:dischargeMethod">
       <path value="Encounter.extension" />
       <sliceName value="dischargeMethod" />
@@ -251,6 +240,27 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element><element id="Encounter.hospitalization.extension">
+      <path value="Encounter.hospitalization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Encounter.hospitalization.extension:admissionMethod">
+      <path value="Encounter.hospitalization.extension" />
+      <sliceName value="admissionMethod" />
+      <short value="An extension to support the method by which an individual was admitted into hospital." />
+      <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />
       </type>
     </element>
     <element id="Encounter.hospitalization.preAdmissionIdentifier.assigner">
