@@ -66,7 +66,7 @@
       <path value="Procedure.extension" />
       <sliceName value="AnaestheticIssues" />
       <short value="An extension to support recording of details of any adverse reaction to any anaesthetic agents including local anaesthesia and problematic intubation, transfusion reaction, etc." />
-      <definition value="This extension extends the Procedure resource to support the exchange of the recording of details of any adverse reaction to any anaesthetic agents ." />
+      <definition value="This extension extends the Procedure resource to support the exchange of the recording of details of any adverse reaction to any anaesthetic agents." />
       <min value="0" />
       <type>
         <code value="Extension" />
