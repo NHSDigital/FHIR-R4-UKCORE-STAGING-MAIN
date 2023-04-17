@@ -259,7 +259,6 @@
       <short value="An extension to support the method by which an individual was admitted into hospital." />
       <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />
