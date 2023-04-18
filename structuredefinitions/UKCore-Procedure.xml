@@ -51,28 +51,6 @@
       <path value="Procedure" />
       <definition value="An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counselling, or hypnotherapy." />
     </element>
-    <element id="Procedure.extension">
-      <path value="Procedure.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Procedure.extension:AnaestheticIssues">
-      <path value="Procedure.extension" />
-      <sliceName value="AnaestheticIssues" />
-      <short value="An extension to support recording of details of any adverse reaction to any anaesthetic agents including local anaesthesia and problematic intubation, transfusion reaction, etc." />
-      <definition value="This extension extends the Procedure resource to support the exchange of the recording of details of any adverse reaction to any anaesthetic agents." />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AnaestheticIssues" />
-      </type>
-    </element>
     <element id="Procedure.identifier.assigner">
       <path value="Procedure.identifier.assigner" />
       <type>
