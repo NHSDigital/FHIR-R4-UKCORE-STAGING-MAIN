@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-List" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreList" />
   <title value="UK Core List" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -68,18 +68,6 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode" />
-      </type>
-    </element>
-    <element id="List.extension:relatedProblemHeader">
-      <path value="List.extension" />
-      <sliceName value="relatedProblemHeader" />
-      <short value="A reference to another related problem header condition (target) whose relationship is defined by the relationship type code." />
-      <definition value="A reference to another related problem header condition (target) whose relationship is defined by the relationship type code." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedProblemHeader" />
       </type>
     </element>
     <element id="List.identifier.assigner">
