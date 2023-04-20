@@ -5,8 +5,8 @@
 	<version value="1.0.0" />
 	<name value="UKCoreMedicationPrecondition"/>
 	<title value="UK Core Medication Precondition"/>
-	<status value="active" />
-	<date value="2021-09-10" />
+	<status value="retired" />
+	<date value="2023-04-28" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />

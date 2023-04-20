@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationStatement" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreMedicationStatement" />
   <title value="UK Core MedicationStatement" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -19,7 +19,7 @@
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [MedicationStatement](https://hl7.org/fhir/R4/MedicationStatement.html)." />
   <purpose value="This profile allows exchange of a record of a medication that is being consumed by a patient. &#xD;&#xA;&#xD;&#xA;A MedicationStatement may indicate that the individual may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The source of this information can be the individual, significant other (such as a family member or spouse), or a clinician." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -56,11 +56,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationStatement.extension:pharmacistVerifiedIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="pharmacistVerifiedIndicator" />
       <short value="Indicates whether a pharmacist verified a medication" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator" />
@@ -69,6 +71,7 @@
     <element id="MedicationStatement.extension:medicationPrescribingOrganizationType">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationPrescribingOrganizationType" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType" />
@@ -77,6 +80,7 @@
     <element id="MedicationStatement.extension:medicationStatementLastIssueDate">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationStatementLastIssueDate" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" />
@@ -239,8 +243,6 @@
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <binding>
         <strength value="preferred" />
-        <description value="A set of codes that define a precondition for taking a medication" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
       </binding>
     </element>
     <element id="MedicationStatement.dosage.site">

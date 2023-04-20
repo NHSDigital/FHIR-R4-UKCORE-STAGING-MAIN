@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreCondition" />
   <title value="UK Core Condition" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -68,16 +68,6 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Condition.extension:actualProblem">
-      <path value="Condition.extension" />
-      <sliceName value="actualProblem" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ActualProblem" />
-      </type>
-    </element>
     <element id="Condition.extension:conditionEpisode">
       <path value="Condition.extension" />
       <sliceName value="conditionEpisode" />
@@ -85,34 +75,6 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
-      </type>
-    </element>
-    <element id="Condition.extension:problemSignificance">
-      <path value="Condition.extension" />
-      <sliceName value="problemSignificance" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ProblemSignificance" />
-      </type>
-    </element>
-    <element id="Condition.extension:relatedClinicalContent">
-      <path value="Condition.extension" />
-      <sliceName value="relatedClinicalContent" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedClinicalContent" />
-      </type>
-    </element>
-    <element id="Condition.extension:relatedProblemHeader">
-      <path value="Condition.extension" />
-      <sliceName value="relatedProblemHeader" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RelatedProblemHeader" />
       </type>
     </element>
     <element id="Condition.identifier.assigner">
@@ -142,8 +104,6 @@
       <path value="Condition.bodySite" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="Condition.subject">

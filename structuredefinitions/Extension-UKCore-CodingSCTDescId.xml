@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="The description ID and display term for a SNOMED CT concept.  The descriptionId and its associated display term are important to enable the representation of the exact term that was entered by the clinician that recorded the data, or the exact term that a legacy code e.g. a Read v2 code has been translated to using an assured mapping table." />
-  <purpose value="This extension extends the Coding datatype to support the exchange of the selected description ID and display term for a SNOMED CT concept, which is currently not supported by the FHIR standard." />
+  <purpose value="This extension extends the Coding datatype to support the exchange of the selected description ID and display term for a SNOMED CT concept." />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>

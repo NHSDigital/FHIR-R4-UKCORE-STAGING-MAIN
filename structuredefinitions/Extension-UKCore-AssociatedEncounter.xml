@@ -5,8 +5,8 @@
   <version value="1.0.0" />
   <name value="ExtensionUKCoreAssociatedEncounter" />
   <title value="Extension UKCore AssociatedEncounter" />
-  <status value="draft" />
-  <date value="2023-02-14" />
+  <status value="active" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
