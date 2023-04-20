@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-EthnicCategoryEngland" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland" />
-  <version value="1.1.0" />
+  <version value="1.1.1" />
   <name value="UKCoreEthnicCategoryEngland" />
   <title value="UK Core Ethnic Category England" />
   <status value="active" />
-  <date value="2022-08-26" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="UKCore-SourceOfAdmissionWales" />
 	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SourceOfAdmissionWales" />
-	<version value="1.0.0" />
+	<version value="1.0.1" />
 	<name value="UKCoreSourceOfAdmissionWales" />
 	<title value="UK Core Source Of Admission Wales" />
 	<status value="active" />
-	<date value="2022-01-07" />
+	<date value="2023-04-28" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
