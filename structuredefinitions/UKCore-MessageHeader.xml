@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MessageHeader" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreMessageHeader" />
   <title value="UK Core MessageHeader" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -42,26 +42,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
   <derivation value="constraint" />
   <differential>
-    <element id="MessageHeader.extension">
-      <path value="MessageHeader.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="MessageHeader.extension:messageHeaderInstruction">
-      <path value="MessageHeader.extension" />
-      <sliceName value="messageHeaderInstruction" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MessageHeaderInstruction" />
-      </type>
-    </element>
     <element id="MessageHeader.event[x]">
       <path value="MessageHeader.event[x]" />
       <binding>
