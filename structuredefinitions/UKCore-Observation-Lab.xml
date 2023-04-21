@@ -26,6 +26,15 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="ukcore-obs-lab-001" />
+        <severity value="warning" />
+        <human value="Either value, dataAbsenseReason or note SHALL exist" />
+        <expression value="value.exists() or dataAbsentReason.exists() or note.exists()" />
+      </constraint>
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <fixedCodeableConcept>
