@@ -110,6 +110,28 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Specimen.collection.extension">
+      <path value="Specimen.collection.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.collection.extension:specimenCollectionCollectorR5">
+      <path value="Specimen.collection.extension" />
+      <sliceName value="specimenCollectionCollectorR5" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Specimen.collection.collector">
       <path value="Specimen.collection.collector" />
       <type>
@@ -123,34 +145,6 @@
         <human value="Only one reference SHALL be allowed between collection.collector and extension:patientAndRelatedPersonReferenceR5Backport." />
         <expression value="Specimen.collection.collector.extension.empty()" />
       </constraint>
-    </element>
-    <element id="Specimen.collection.collector.extension">
-      <path value="Specimen.collection.collector.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Specimen.collection.collector.extension:patientAndRelatedPersonReferenceR5Backport">
-      <path value="Specimen.collection.collector.extension" />
-      <sliceName value="patientAndRelatedPersonReferenceR5Backport" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PatientAndRelatedPersonReferenceR5Backport" />
-      </type>
-      <constraint>
-        <key value="ukcore-spec-002" />
-        <severity value="error" />
-        <human value="Only one reference SHALL be allowed between collection.collector and extension:patientAndRelatedPersonReferenceR5Backport." />
-        <expression value="collection.collector.empty()" />
-      </constraint>
-      <isModifier value="false" />
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
       <path value="Specimen.collection.collector.identifier.assigner" />
