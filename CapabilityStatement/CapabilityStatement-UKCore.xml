@@ -129,7 +129,7 @@
 		<resource>
 			<type value="Observation"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group"/>
+			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup"/>
 			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab"/>
 			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
 		</resource>
