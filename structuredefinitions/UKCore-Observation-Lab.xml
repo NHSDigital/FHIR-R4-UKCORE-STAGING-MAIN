@@ -51,9 +51,5 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <min value="1" />
-    </element>
   </differential>
 </StructureDefinition>
