@@ -28,4 +28,8 @@
 		<code value="Overseas"/>
 		<display value="Overseas patient"/>
 	</concept>
+	<concept>
+		<code value="DevolvedNation"/>
+		<display value="Devolved nation"/>
+	</concept>
 </CodeSystem>

@@ -28,4 +28,8 @@
 		<code value="Private"/>
 		<display value="Private"/>
 	</concept>
+	<concept>
+		<code value="Devolved Nations"/>
+		<display value="Devolved Nations"/>
+	</concept>
 </CodeSystem>
