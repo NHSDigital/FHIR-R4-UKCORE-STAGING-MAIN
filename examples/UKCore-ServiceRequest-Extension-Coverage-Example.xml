@@ -5,7 +5,7 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
-				<code value="Private"/>
+				<code value="private"/>
 				<display value="Private"/>
 			</coding>
 		</valueCodeableConcept>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-Group" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group"/>
+  <id value="UKCore-Observation-LabGroup" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
   <version value="1.0.0" />
-  <name value="UKCoreObservationGroup" />
+  <name value="UKCoreObservationLabGroup" />
   <title value="UK Core Observation Group" />
   <status value="active" />
   <date value="2023-04-28" />
@@ -28,6 +28,25 @@
   <differential>
     <element id="Observation.category">
       <path value="Observation.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.category:sliceLaboratory">
+      <path value="Observation.category" />
+      <sliceName value="sliceLaboratory" />
+      <min value="1" />
+      <max value="1" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
@@ -51,11 +70,22 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <constraint>
+        <key value="ukcore-obs-labgrp-001" />
+        <severity value="warning" />
+        <human value="This element SHOULD NOT be used within this Profile" />
+        <expression value="value.empty()" />
+      </constraint>
+    </element>
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
       </type>
     </element>
   </differential>

@@ -140,15 +140,15 @@
 			</type>
 		</element>
 		<element id="ServiceRequest.priority.extension">
-		  <path value="ServiceRequest.priority.extension" />
-		  <slicing>
-			<discriminator>
-			  <type value="value" />
-			  <path value="url" />
-			</discriminator>
-			<rules value="open" />
-		  </slicing>
-		  <min value="0" />
+			<path value="ServiceRequest.priority.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
 		</element>
 		<element id="ServiceRequest.priority.extension:priorityReason">
 			<path value="ServiceRequest.priority.extension"/>
@@ -165,6 +165,13 @@
 			<binding>
 				<strength value="preferred"/>
 				<description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system."/>
+				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode"/>
+			</binding>
+		</element>
+		<element id="ServiceRequest.orderDetail">
+			<path value="ServiceRequest.orderDetail"/>
+			<binding>
+				<strength value="preferred"/>
 				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode"/>
 			</binding>
 		</element>
