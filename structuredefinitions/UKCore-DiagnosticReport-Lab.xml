@@ -28,7 +28,35 @@
   <differential>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+    </element>
+    <element id="DiagnosticReport.category:sliceLaboratory">
+      <path value="DiagnosticReport.category" />
+      <sliceName value="sliceLaboratory" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+          <code value="LAB" />
+          <display value="Laboratory" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="721981007" />
+          <display value="Diagnostic studies report" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
@@ -42,15 +70,19 @@
       <path value="DiagnosticReport.effective[x]" />
       <constraint>
         <key value="ukcore-diag-lab-001" />
-        <severity value="error" />
+        <severity value="warning" />
         <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
         <expression value="(effective.empty() and ((status != 'partial') or (status != 'preliminary') or (status != 'final') or (status != 'amended') or (status != 'corrected') or (status != 'appended'))) or effective.exists()" />
-        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
       </constraint>
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
-      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
