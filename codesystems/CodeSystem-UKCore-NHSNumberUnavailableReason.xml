@@ -21,11 +21,11 @@
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="not-known"/>
-		<display value="NHS Number not known"/>
+		<code value="nhs-number-not-known"/>
+		<display value="NHS number not known"/>
 	</concept>
 	<concept>
-		<code value="overseas"/>
+		<code value="overseas-patient"/>
 		<display value="Overseas patient"/>
 	</concept>
 	<concept>
