@@ -21,11 +21,15 @@
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="NHS"/>
+		<code value="nhs"/>
 		<display value="NHS"/>
 	</concept>
 	<concept>
-		<code value="Private"/>
+		<code value="private"/>
 		<display value="Private"/>
+	</concept>
+	<concept>
+		<code value="devolved-nations"/>
+		<display value="Devolved nations"/>
 	</concept>
 </CodeSystem>

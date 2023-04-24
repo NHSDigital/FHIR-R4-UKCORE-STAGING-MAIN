@@ -6,7 +6,7 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
-				<code value="Overseas"/>
+				<code value="overseas-patient"/>
 				<display value="Overseas patient"/>
 			</coding>
 		</valueCodeableConcept>
