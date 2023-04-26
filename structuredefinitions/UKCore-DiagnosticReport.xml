@@ -131,9 +131,9 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="DiagnosticReport.performer.extension:devicePerformer">
+    <element id="DiagnosticReport.performer.extension:deviceReference">
       <path value="DiagnosticReport.performer.extension" />
-      <sliceName value="devicePerformer" />
+      <sliceName value="deviceReference" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -170,9 +170,9 @@
       </slicing>
       <min value="0" />
     </element>
-	<element id="DiagnosticReport.resultsInterpreter.extension:deviceInterpreter">
+	<element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
 		<path value="DiagnosticReport.resultsInterpreter.extension"/>
-		<sliceName value="deviceInterpreter"/>
+		<sliceName value="deviceReference"/>
 		<min value="0"/>
 		<type>
 			<code value="Extension"/>
