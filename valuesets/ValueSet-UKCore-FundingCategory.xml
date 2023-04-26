@@ -30,13 +30,18 @@
 		<offset value="0"/>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
-			<code value="NHS"/>
+			<code value="nhs"/>
 			<display value="NHS"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
-			<code value="Private"/>
+			<code value="private"/>
 			<display value="Private"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
+			<code value="devolved-nations"/>
+			<display value="Devolved nations"/>
 		</contains>
 	</expansion>
 </ValueSet>

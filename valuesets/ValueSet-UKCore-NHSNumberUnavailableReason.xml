@@ -30,13 +30,18 @@
 		<offset value="0"/>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
-			<code value="Overseas"/>
+			<code value="nhs-number-not-known"/>
+			<display value="NHS number not known"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
+			<code value="overseas-patient"/>
 			<display value="Overseas patient"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason"/>
-			<code value="NotKnown"/>
-			<display value="NHS Number not known"/>
+			<code value="devolved-nation"/>
+			<display value="Devolved nation"/>
 		</contains>
 	</expansion>
 </ValueSet>
