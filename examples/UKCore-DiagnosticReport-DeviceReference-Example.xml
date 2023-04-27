@@ -20,6 +20,14 @@
 			</valueReference>
 		</extension>
 	</performer>
+	<resultsInterpreter>
+		<display value="Software as a medical device"/>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference">
+			<valueReference>
+				<reference value="Device/UKCore-Device-SoftwareAsAMedicalDevice-Example" />
+			</valueReference>
+		</extension>
+	</resultsInterpreter>
 	<specimen>
 		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
 	</specimen>
