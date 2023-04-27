@@ -107,7 +107,7 @@
           <valueString value="ProcedureCode" />
         </extension>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;71388002 |Procedure|&lt;&lt;129125009 |Procedure with explicit context|)." />
+        <description value="A code from the SNOMED Clinical Terminology UK." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
     </element>
