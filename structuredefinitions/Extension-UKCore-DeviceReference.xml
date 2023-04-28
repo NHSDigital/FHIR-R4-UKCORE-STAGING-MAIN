@@ -17,8 +17,8 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="This extension allows a Device to be referenced where it would otherwise be unavailable."/>
-	<purpose value="This extension extends the DiagnosticReport reference elements, in order to allows a Device to be referenced where it would otherwise be unavailable."/>
+	<description value="This extension extends the DiagnosticReport reference elements, in order to allows a Device to be referenced where it would otherwise be unavailable."/>
+	<purpose value="This is a use case from Wellbeing Software to allow for imaging studies to be (selectively) sent to a 3rd party AI service for evaluation, with the outcome then being part of the input to the (human) reporter."/>
 	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<fhirVersion value="4.0.1"/>
 	<mapping>
@@ -54,8 +54,8 @@
 			<short value="An addtional Device reference for a DiagnosticReport."/>
 			<min value="1"/>
 			<type>
-				<code value="Reference" />
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"/>
 			</type>
 		</element>
 	</differential>
