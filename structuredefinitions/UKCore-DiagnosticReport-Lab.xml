@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the DiagnosticReport constraints and extensions on the UK Core Profile DiagnosticReport" />
-  <purpose value="To provide implementers with additional support when implementing test result data and to provide a consistant structure to this data." />
+  <description value="Defines the constraints and extensions on the UK Core Profile DiagnosticReport" />
+  <purpose value="To provide implementers with additional support when implementing test result data and to provide a consistent structure to how the data is presented." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

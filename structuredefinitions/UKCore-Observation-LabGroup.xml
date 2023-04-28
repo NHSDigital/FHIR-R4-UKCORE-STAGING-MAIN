@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="This derived profile allows the grouping of multiple Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count" />
+  <description value="This derived profile allows the grouping of multiple Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count." />
   <purpose value="This profile allows the creation of a report for results borne from a single request panel, or profile, e.g. Full Blood Count, Lipid Profile, etc. allowing the results to be logically ordered according to the given profile and/or best practice guidelines." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
