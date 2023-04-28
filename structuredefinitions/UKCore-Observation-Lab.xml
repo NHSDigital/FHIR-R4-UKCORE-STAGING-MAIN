@@ -31,7 +31,7 @@
       <constraint>
         <key value="ukcore-obs-lab-001" />
         <severity value="warning" />
-        <human value="Either value, dataAbsenseReason or note SHALL exist" />
+        <human value="Either value, dataAbsentReason or note SHALL exist" />
         <expression value="value.exists() or dataAbsentReason.exists() or note.exists()" />
       </constraint>
     </element>
