@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="Extension-UKCore-Coverage"/>
+	<url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage"/>
+	<version value="1.0.0"/>
+	<name value="ExtensionUKCoreCoverage"/>
+	<title value="Extension UK Core Coverage"/>
+	<status value="active"/>
+	<date value="2023-04-28"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="This extends the Service Request Resource to support the exchange of information describing the method of funding for the Service Request."/>
+	<purpose value="This extension is a Genomics use case to record the funding category for a ServiceRequest. It is expected this will be populated with a code indicating whether the service request is part of NHS coverage or private, and will be used for reimbursement purposes by receiving labs."/>
+	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="ServiceRequest"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="The funding category for the Service Request"/>
+			<definition value="The funding category for the Service Request."/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<short value="This describes the funding category for a service request."/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<binding>
+				<strength value="extensible"/>
+				<description value="A set of codes that define the funding category for a service request."/>
+				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-FundingCategory"/>
+			</binding>
+		</element>
+	</differential>
+</StructureDefinition>

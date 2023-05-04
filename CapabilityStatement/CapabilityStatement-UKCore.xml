@@ -60,6 +60,7 @@
 		<resource>
 			<type value="DiagnosticReport"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"/>
+			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab"/>
 		</resource>
 		<resource>
 			<type value="DocumentReference"/>
@@ -74,12 +75,20 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare"/>
 		</resource>
 		<resource>
+			<type value="FamilyMemberHistory"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory"/>
+		</resource>
+		<resource>
 			<type value="Flag"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag"/>
 		</resource>
 		<resource>
 			<type value="HealthcareService"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"/>
+		</resource>
+		<resource>
+			<type value="ImagingStudy"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy"/>
 		</resource>
 		<resource>
 			<type value="Immunization"/>
@@ -120,6 +129,8 @@
 		<resource>
 			<type value="Observation"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup"/>
+			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab"/>
 			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
 		</resource>
 		<resource>

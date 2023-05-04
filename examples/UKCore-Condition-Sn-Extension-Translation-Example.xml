@@ -1,0 +1,24 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Condition-Sn-Extension-Translation-Example"/>
+	<!-- **************Snippet start************** -->
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="22298006"/>
+			<display value="Myocardial infarction">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueCode value="fr" />
+					</extension>
+					<extension url="content">
+						<valueString value="Infarctus du myocarde" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+	</code>
+	<!-- **************Snippet end************** -->
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>

@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="UKCore-PracticeSettingCodeScotland"/>
 	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCodeScotland"/>
-	<version value="1.0.0"/>
+	<version value="1.0.1"/>
 	<name value="UKCorePracticeSettingCodeScotland"/>
 	<title value="UKCore Practice Setting Code Scotland"/>
-	<status value="draft"/>
-	<date value="2022-08-26"/>
+	<status value="retired"/>
+	<date value="2023-04-28"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -16,7 +16,7 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in Scotland and are copied from the content of the Public Health Scotland web page at https://www.opendata.nhs.scot/dataset/specialty-codes on 20/10/2022."/>
+	<description value="This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in Scotland and are copied from the content of the [Public Health Scotland](https://www.opendata.nhs.scot/dataset/specialty-codes) web page on 20/10/2022."/>
 	<copyright value="Copyright &amp;#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&amp;#174; FHIR&amp;#174; standard Copyright &amp;#169; 2011+ HL7 The HL7&amp;#174; FHIR&amp;#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
