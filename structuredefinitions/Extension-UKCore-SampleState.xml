@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to record the state of a sample" />
-  <purpose value="Allows the recording of the state of the sample." />
+  <description value="An extension to record the state of a sample." />
+  <purpose value="This extension is a Genomics use case to record the state of a sample, whether it is a Solid Tumour Sample, Liquid Tumour Sample, Normal Sample, or Germline Sample." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
