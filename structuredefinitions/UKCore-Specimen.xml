@@ -168,6 +168,12 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Specimen.container.type">
+      <path value="Specimen.container.type" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
+    </element>
     <element id="Specimen.note.author[x]">
       <path value="Specimen.note.author[x]" />
       <type>
