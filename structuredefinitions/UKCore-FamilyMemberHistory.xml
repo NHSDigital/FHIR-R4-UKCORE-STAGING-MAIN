@@ -66,6 +66,12 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
       </type>
     </element>
+    <element id="FamilyMemberHistory.dataAbsentReason">
+      <path value="FamilyMemberHistory.dataAbsentReason" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
+    </element>
     <element id="FamilyMemberHistory.patient">
       <path value="FamilyMemberHistory.patient" />
       <type>
