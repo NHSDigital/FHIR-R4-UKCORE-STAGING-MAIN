@@ -42,7 +42,6 @@
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="associatedEncounter" />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter" />
@@ -67,12 +66,24 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
       </type>
     </element>
+    <element id="FamilyMemberHistory.dataAbsentReason">
+      <path value="FamilyMemberHistory.dataAbsentReason" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
+    </element>
     <element id="FamilyMemberHistory.patient">
       <path value="FamilyMemberHistory.patient" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
+    </element>
+    <element id="FamilyMemberHistory.relationship">
+      <path value="FamilyMemberHistory.relationship" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
     </element>
     <element id="FamilyMemberHistory.reasonReference">
       <path value="FamilyMemberHistory.reasonReference" />
@@ -98,6 +109,18 @@
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="FamilyMemberHistory.condition.code">
+      <path value="FamilyMemberHistory.condition.code" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
+    </element>
+    <element id="FamilyMemberHistory.condition.outcome">
+      <path value="FamilyMemberHistory.condition.outcome" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
