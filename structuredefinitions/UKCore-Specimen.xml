@@ -42,6 +42,28 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
   <derivation value="constraint" />
   <differential>
+    <element id="Specimen.extension">
+      <path value="Specimen.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.extension:sampleState">
+      <path value="Specimen.extension" />
+      <sliceName value="sampleState" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleState" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Specimen.identifier.assigner">
       <path value="Specimen.identifier.assigner" />
       <type>
