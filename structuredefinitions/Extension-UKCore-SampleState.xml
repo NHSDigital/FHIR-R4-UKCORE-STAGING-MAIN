@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to record the state of a sample" />
-  <purpose value="Allows the recording of the state of the sample." />
+  <description value="An extension to record the state of a sample." />
+  <purpose value="This extension is a Genomics use case to record the state of a sample, whether it is a Solid Tumour Sample, Liquid Tumour Sample, Normal Sample, or Germline Sample." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -30,12 +30,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="An extension to record the state of the sample." />
+      <definition value="This extension allows the recording of the state of a sample for use within Genomics, whether it is a solid tumour, liquid tumour, normal, or germline sample." />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleState" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <short value="A set of codes to record the state of the sample" />
       <type>
         <code value="CodeableConcept" />
       </type>
