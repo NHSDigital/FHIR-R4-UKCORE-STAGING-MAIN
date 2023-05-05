@@ -28,7 +28,7 @@
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="(descendantOf 105590001 OR descendantOf 49755003 OR descendantOf 260787004 OR descendantOf 123038009)"/>
+				<value value="(descendantOf 105590001 OR descendantOf 123037004 OR descendantOf 260787004 OR descendantOf 123038009)"/>
 			</filter>
 		</include>
 	</compose>
