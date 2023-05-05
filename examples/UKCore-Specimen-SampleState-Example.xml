@@ -8,24 +8,24 @@
 				<code value="solid-tumour-sample"/>
 				<display value="Solid Tumour Sample"/>
 			</coding>
-		</extension>
-		<status value="available"/>
-		<type>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="todo"/>
-				<display value="todo"/>
-			</coding>
-		</type>
-		<subject>
-			<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-		</subject>
-		<receivedTime value="2022-11-25T11:10:00Z"/>
-		<collection>
-			<collector>
-				<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-			</collector>
-			<collectedDateTime value="2022-11-25T16:00:00Z"/>
-		</collection>
-	</Specimen>
-
+		</valueCodeableConcept>
+	</extension>
+	<status value="available"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="todo"/>
+			<display value="todo"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<receivedTime value="2022-11-25T11:10:00Z"/>
+	<collection>
+		<collector>
+			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+		</collector>
+		<collectedDateTime value="2022-11-25T16:00:00Z"/>
+	</collection>
+</Specimen>
