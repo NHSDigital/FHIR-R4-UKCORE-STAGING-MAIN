@@ -5,8 +5,8 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleState"/>
-				<code value="solid-tumour-sample"/>
-				<display value="Solid Tumour Sample"/>
+				<code value="germline-sample"/>
+				<display value="Germline Sample"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
@@ -14,8 +14,8 @@
 	<type>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="todo"/>
-			<display value="todo"/>
+			<code value="4635002"/>
+			<display value="Arterial blood"/>
 		</coding>
 	</type>
 	<subject>
