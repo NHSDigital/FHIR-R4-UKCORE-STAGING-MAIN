@@ -26,7 +26,7 @@
 	<expansion>
 		<identifier value="c2047257-9de9-45c5-b0cb-38a6d478fcfa"/>
 		<timestamp value="2023-04-28T09:15:53+00:00"/>
-		<total value="2"/>
+		<total value="3"/>
 		<offset value="0"/>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
