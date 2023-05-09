@@ -36,7 +36,7 @@
 		</code>
 		<onsetAge>
 			<value value="64"/>
-			<unit value="yr"/>
+			<unit value="year"/>
 			<system value="http://unitsofmeasure.org"/>
 			<code value="a"/>
 		</onsetAge>
