@@ -43,7 +43,7 @@
 		<element id="Extension">
 			<path value="Extension"/>
 			<short value="An addtional Device reference for a DiagnosticReport."/>
-			<definition value="An addtional Device reference for a DiagnosticReport, to allow Sofftware as a Medical Device to perform / interpret a DiagnosticReport"/>
+			<definition value="An addtional Device reference for a DiagnosticReport, to allow Software as a Medical Device to perform / interpret a DiagnosticReport"/>
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
