@@ -3,7 +3,9 @@
 	<id value="UKCore-DiagnosticReport-Extension-Note-Example"/>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Note">
         <valueAnnotation>
-            <authorReference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+            <authorReference>
+				<reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+			</authorReference> 
 			<time value="2023-05-10T10:39:12" />
 			<text value="Inconclusive finding of staphylococcus, no evidence of bacteremia." />
         </valueAnnotation>
