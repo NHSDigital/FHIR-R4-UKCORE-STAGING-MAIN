@@ -48,6 +48,16 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="FamilyMemberHistory.extension:participant">
+      <path value="FamilyMemberHistory.extension" />
+      <sliceName value="participant" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Participant" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="FamilyMemberHistory.identifier.assigner">
       <path value="FamilyMemberHistory.identifier.assigner" />
       <type>
