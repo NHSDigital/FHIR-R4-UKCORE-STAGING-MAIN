@@ -47,6 +47,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+	<element id="DiagnosticReport.extension">
+      <path value="DiagnosticReport.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DiagnosticReport.extension:compositionReference">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="compositionReference" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CompositionReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="DiagnosticReport.identifier.assigner">
       <path value="DiagnosticReport.identifier.assigner" />
       <type>
