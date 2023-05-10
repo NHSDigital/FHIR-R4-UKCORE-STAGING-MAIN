@@ -41,7 +41,7 @@
 		<code>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="160308005 "/>
+				<code value="160308005"/>
 				<display value="Family history: Gout"/>
 			</coding>
 		</code>
