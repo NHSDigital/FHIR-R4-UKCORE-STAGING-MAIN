@@ -17,7 +17,6 @@
 		<collector>
 			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 		</collector>
-		<receivedTime value="2023-05-10T11:53:00Z"/>
 		<method>
 			<coding>
 				<system value="http://snomed.info/sct"/>

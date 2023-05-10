@@ -8,14 +8,10 @@
 			</valueReference>
 		</extension>
 		<extension url="type">
-			<valueCode>
-				<code value="reflex" />
-			</valueCode>
+			<valueCode value="reflex" />
 		</extension>
 		<extension url="reason">
-			<valueString>
-				<string value="Patient admitted to recreational drug use." />
-			</valueString>
+			<valueString value="Patient admitted to recreational drug use." />
 		</extension>
     </extension>
 	<identifier>
