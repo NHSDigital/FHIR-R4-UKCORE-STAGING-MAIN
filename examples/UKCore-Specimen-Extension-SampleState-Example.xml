@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Specimen-SampleState-Example"/>
+	<id value="UKCore-Specimen-Extension-SampleState-Example"/>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleState">
 		<valueCodeableConcept>
 			<coding>
