@@ -70,6 +70,7 @@
     </element>
     <element id="Extension.extension:function.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -88,6 +89,7 @@
     </element>
     <element id="Extension.extension:actor.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
