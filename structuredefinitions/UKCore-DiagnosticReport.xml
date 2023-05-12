@@ -64,7 +64,7 @@
       <min value="0" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Note" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note" />
       </type>
       <isModifier value="false" />
     </element>
