@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
 	<id value="UKCore-Observation-UrineDrugTest-Example" />
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TriggeredBy">
+	<extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy">
 		<extension url="observation">
 			<valueReference>
 				<reference value="Observation/UKCore-Observation-DrugUse-Example" />

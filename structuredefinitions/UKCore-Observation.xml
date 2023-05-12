@@ -57,7 +57,25 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.identifier.assigner">
+    <element id="Observation.extension">
+		<path value="Observation.extension"/>
+		<slicing>
+			<discriminator>
+				<type value="value"/>
+				<path value="url"/>
+			</discriminator>
+			<rules value="open"/>
+		</slicing>
+	</element>
+	<element id="Observation.extension:triggeredBy">
+		<path value="Observation.extension"/>
+		<sliceName value="triggeredBy"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"/>
+		</type>
+	</element>
+	<element id="Observation.identifier.assigner">
       <path value="Observation.identifier.assigner" />
       <type>
         <code value="Reference" />
