@@ -1,6 +1,6 @@
 <FamilyMemberHistory xmlns="http://hl7.org/fhir">
 	<id value="UKCore-FamilyMemberHistory-Extension-Participant-Example"/>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Patient">
+	<extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant">
 		<extension url="function">
 			<valueCodeableConcept>
 				<coding>
