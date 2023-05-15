@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.hl7.org.uk/fhir/StructureDefinition/Extension-UKCore-BiopsyTypeAndState" />
+  <version value="1.0.0" />
+  <name value="UKCoreBiopsyTypeAndState" />
+  <title value="UK Core Biopsy Type And State" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Specimen" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <short value="Tissue of origin" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="raw sample / biopsy type" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyType" />
+      </binding>
+    </element>
+    <element id="Extension.extension:state">
+      <path value="Extension.extension" />
+      <sliceName value="state" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:state.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="state" />
+    </element>
+    <element id="Extension.extension:state.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="How has the sample been preserved/fixed." />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="The state of the sample" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState" />
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.hl7.org.uk/fhir/StructureDefinition/Extension-UKCore-BiopsyTypeAndState" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
