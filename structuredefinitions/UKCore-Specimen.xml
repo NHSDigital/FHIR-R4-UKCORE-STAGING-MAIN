@@ -64,6 +64,17 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Specimen.extension:myExtension">
+      <path value="Specimen.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/fhir/StructureDefinition/Extension-UKCore-BiopsyTypeAndState" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Specimen.identifier.assigner">
       <path value="Specimen.identifier.assigner" />
       <type>
