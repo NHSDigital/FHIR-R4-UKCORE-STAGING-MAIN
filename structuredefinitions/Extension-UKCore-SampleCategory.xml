@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to record the category of a sample." />
-  <purpose value="This extension is a Genomics use case to record the category of a sample, whether it is a tumour or a germline sample." />
+  <description value="An extension to record the category of genome sequencing sample." />
+  <purpose value="This extension is a Genomics use case to categorise the genome sequencing sample type, whether it is a tumour or germline Sample. This is different to Specimen.type which, for genomics, records the tissue of origin." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -32,7 +32,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <category value="An extension to record the category of the sample." />
+      <short value="An extension to record the category of the sample." />
       <definition value="This extension allows the recording of the category of a sample for use within Genomics, whether it is a solid tumour, liquid tumour, normal, or germline sample." />
     </element>
     <element id="Extension.url">
@@ -41,7 +41,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <category value="A set of codes to record the category of the sample" />
+      <short value="A set of codes to record the category of the sample" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
