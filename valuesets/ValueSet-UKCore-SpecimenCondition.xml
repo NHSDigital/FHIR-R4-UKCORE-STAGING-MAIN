@@ -22,10 +22,8 @@
         <include>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0493" />
         </include>
-    </compose>
-	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState"/>
 		</include>
-	</compose>
+    </compose>
 </ValueSet>
