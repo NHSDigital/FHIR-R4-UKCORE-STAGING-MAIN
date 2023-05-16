@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to categorise the category type of gernome sequencing sample." />
+  <description value="An extension to categorise the category type of genome sequencing sample." />
   <purpose value="This extension is a Genomics use case to categorise the genome sequencing sample type, whether it is a tumour or germline Sample. This is different to Specimen.type which, for genomics, records the tissue of origin." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
