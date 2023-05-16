@@ -16,9 +16,7 @@
  <collection>
 	<!-- ***************extension start*************** -->
 	<extension url="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling">
-	<code>
 		<text value="Mother was infected with suspected viral haemorrhagic fever."/>
-	</code>
 	</extension>
 	<!-- **************extension end ****************** -->
   <collector>
