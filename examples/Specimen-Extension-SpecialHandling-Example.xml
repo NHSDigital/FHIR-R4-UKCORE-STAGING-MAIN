@@ -16,7 +16,9 @@
  <collection>
 	<!-- ***************extension start*************** -->
 	<extension url="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling">
-		<text value="Mother was infected with suspected viral haemorrhagic fever."/>
+		<valueCodeableConcept>
+			<text value="Mother was infected with suspected viral haemorrhagic fever."/>
+		</valueCodeableConcept>
 	</extension>
 	<!-- **************extension end ****************** -->
   <collector>
@@ -27,7 +29,7 @@
    <coding>
     <system value="http://snomed.info/sct"/>
     <code value="129314006"/>
-    <display value="Biopsy - action (procedure)"/>
+    <display value="Biopsy - action"/>
    </coding>
   </method>
  </collection>
