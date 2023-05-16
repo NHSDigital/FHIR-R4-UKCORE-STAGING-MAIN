@@ -33,7 +33,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="An extension to record the category of the sample." />
-      <definition value="This extension allows the recording of the category of a sample for use within Genomics, whether it is a solid tumour, liquid tumour, normal, or germline sample." />
+      <definition value="This extension allows the recording of the category of a sample for use within Genomics, whether it is a tumour or germline sample." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
