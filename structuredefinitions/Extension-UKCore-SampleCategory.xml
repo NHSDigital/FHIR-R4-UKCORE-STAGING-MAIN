@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to record the state of a sample." />
-  <purpose value="This extension is a Genomics use case to record the state of a sample, whether it is a tumour or a germline sample." />
+  <description value="An extension to record the category of a sample." />
+  <purpose value="This extension is a Genomics use case to record the category of a sample, whether it is a tumour or a germline sample." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -33,7 +33,7 @@
     <element id="Extension">
       <path value="Extension" />
       <category value="An extension to record the category of the sample." />
-      <definition value="This extension allows the recording of the state of a sample for use within Genomics, whether it is a solid tumour, liquid tumour, normal, or germline sample." />
+      <definition value="This extension allows the recording of the category of a sample for use within Genomics, whether it is a solid tumour, liquid tumour, normal, or germline sample." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
@@ -51,7 +51,7 @@
       <path value="Extension.value[x].coding" />
       <binding>
         <strength value="preferred" />
-        <description value="A set of codes to record the state of the sample" />
+        <description value="A set of codes to record the category of the sample" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory" />
       </binding>
     </element>
