@@ -83,6 +83,7 @@
       <path value="FamilyMemberHistory.relationship" />
       <binding>
         <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
     <element id="FamilyMemberHistory.reasonReference">
