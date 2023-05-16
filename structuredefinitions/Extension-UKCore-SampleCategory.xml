@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-GenomeSequencingSampleTypeCategory" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-GenomeSequencingSampleTypeCategory" />
+  <id value="Extension-UKCore-SampleCategory" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory" />
   <version value="1.0.0" />
-  <name value="ExtensionUKCoreGenomeSequencingSampleTypeCategory" />
-  <title value="Extension UK Core Genome Sequencing Sample Type Category" />
+  <name value="ExtensionUKCoreSampleCategory" />
+  <title value="Extension UK Core Sample Category" />
   <status value="active" />
   <date value="2023-04-28" />
   <publisher value="HL7 UK" />
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="An extension to record the state of a sample." />
-  <purpose value="This extension is a Genomics use case to record the state of a sample, whether it is a Solid Tumour Sample, Liquid Tumour Sample, Normal Sample, or Germline Sample." />
+  <purpose value="This extension is a Genomics use case to record the state of a sample, whether it is a tumour or a germline sample." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -32,16 +32,16 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="An extension to record the state of the sample." />
+      <category value="An extension to record the category of the sample." />
       <definition value="This extension allows the recording of the state of a sample for use within Genomics, whether it is a solid tumour, liquid tumour, normal, or germline sample." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-GenomeSequencingSampleTypeCategory" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="A set of codes to record the state of the sample" />
+      <category value="A set of codes to record the category of the sample" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -52,7 +52,7 @@
       <binding>
         <strength value="preferred" />
         <description value="A set of codes to record the state of the sample" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingSampleTypeCategory" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory" />
       </binding>
     </element>
   </differential>

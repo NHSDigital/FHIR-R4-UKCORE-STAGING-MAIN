@@ -53,14 +53,14 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.extension:GenomeSequencingSampleTypeCategory">
+    <element id="Specimen.extension:sampleCategory">
       <path value="Specimen.extension" />
-      <sliceName value="GenomeSequencingSampleTypeCategory" />
+      <sliceName value="sampleCategory" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-GenomeSequencingSampleTypeCategory" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory" />
       </type>
       <isModifier value="false" />
     </element>
