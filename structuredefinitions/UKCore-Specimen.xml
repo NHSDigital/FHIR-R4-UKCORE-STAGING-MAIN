@@ -196,6 +196,13 @@
         <strength value="preferred" />
       </binding>
     </element>
+    <element id="Specimen.condition">
+      <path value="Specimen.condition" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState" />
+      </binding>
+    </element>
     <element id="Specimen.note.author[x]">
       <path value="Specimen.note.author[x]" />
       <type>
