@@ -29,7 +29,6 @@
 		<total value="2"/>
 		<offset value="0"/>
 		<contains>
-<<<<<<< HEAD:valuesets/ValueSet-UKCore-SampleCategory.xml
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory"/>
 			<code value="tumour"/>
 			<display value="Tumour"/>
@@ -39,16 +38,5 @@
 			<code value="germline"/>
 			<display value="Germline"/>
 		</contains>		
-=======
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingSampleTypeCategory"/>
-			<code value="germline-sample"/>
-			<display value="Germline Sample"/>
-		</contains>	
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingSampleTypeCategory"/>
-			<code value="tumour-sample"/>
-			<display value="Tumour Sample"/>
-		</contains>	
->>>>>>> 683381f132adf1981c8d351fafa534ad720a1b17:valuesets/ValueSet-UKCore-GenomeSequencingSampleTypeCategory.xml
 	</expansion>
 </ValueSet>
