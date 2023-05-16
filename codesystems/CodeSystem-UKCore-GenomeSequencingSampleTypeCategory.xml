@@ -21,16 +21,8 @@
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="solid-tumour-sample"/>
-		<display value="Solid Tumour Sample"/>
-	</concept>
-	<concept>
-		<code value="liquid-tumour-sample"/>
-		<display value="Liquid Tumour Sample"/>
-	</concept>
-	<concept>
-		<code value="normal-sample"/>
-		<display value="Normal Sample"/>
+		<code value="tumour-sample"/>
+		<display value="Tumour Sample"/>
 	</concept>
 	<concept>
 		<code value="germline-sample"/>
