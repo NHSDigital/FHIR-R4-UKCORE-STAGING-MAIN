@@ -143,7 +143,7 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.collection.extension:birthTime">
+    <element id="Specimen.collection.extension:specialHandling">
       <path value="Specimen.collection.extension" />
       <sliceName value="specialHandling" />
       <min value="0" />
