@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="tba" />
-  <purpose value="tba" />
+  <description value="Defines the constraints and extensions on the UK Core Profile ServiceRequest." />
+  <purpose value="To provide implementers additional support for requesting a procedure or diagnostic or other service to be planned, proposed, or performed, with regards to a laboratory observation or laboratory diagnostice report." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
