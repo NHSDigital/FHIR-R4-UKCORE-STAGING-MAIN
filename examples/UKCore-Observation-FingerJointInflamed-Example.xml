@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+	<id value="UKCore-Observation-FingerJointInflamed-Example" />
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122" />
+		<value value="0733b27a-377b-4688-90be-eb7b9f462b91" />
+	</identifier>
+	<status value="final" />
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+			<code value="exam" />
+			<display value="Exam" />
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="298167002" />
+			<display value="Finger joint inflamed" />
+		</coding>
+	</code>
+	<performer>
+		<reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example" />
+	</performer>
+</Observation>
