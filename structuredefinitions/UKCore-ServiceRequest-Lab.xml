@@ -44,8 +44,8 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-LabGroup" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
       </type>
     </element>
   </differential>
