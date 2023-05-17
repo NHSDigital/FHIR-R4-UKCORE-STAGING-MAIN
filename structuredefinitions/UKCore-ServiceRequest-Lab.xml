@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ServiceRequest-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+  <version value="1.0.0" />
+  <name value="UKCoreServiceRequestLab" />
+  <title value="UK Core ServiceRequest Lab" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="tba" />
+  <purpose value="tba" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ServiceRequest" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code" />
+      <definition value="A set of codes from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and results." />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define laboratory medicine test requests and results. Selected from the SNOMED CT UK coding system." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
