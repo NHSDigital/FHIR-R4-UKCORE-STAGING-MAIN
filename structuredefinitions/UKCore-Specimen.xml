@@ -132,6 +132,26 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+	<element id="Specimen.collection.extension">
+      <path value="Specimen.collection.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.collection.extension:specialHandling">
+      <path value="Specimen.collection.extension" />
+      <sliceName value="specialHandling" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling" />
+      </type>
+    </element>
     <element id="Specimen.collection.collector">
       <path value="Specimen.collection.collector" />
       <type>

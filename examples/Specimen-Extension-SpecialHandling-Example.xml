@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+ <id value="Specimen-Extension-SpecialHandling-Example"/>
+ <status value="available"/>
+ <type>
+  <coding>
+   <system value="http://snomed.info/sct"/>
+   <code value="431234000"/>
+   <display value="Specimen from fetus obtained by biopsy"/>
+  </coding>
+ </type>
+ <subject>
+  <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+ </subject>
+ <receivedTime value="2023-04-23T17:02:00Z"/>
+ <collection>
+	<!-- ***************extension start*************** -->
+	<extension url="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling">
+		<valueCodeableConcept>
+			<text value="Mother was infected with suspected viral haemorrhagic fever."/>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end ****************** -->
+  <collector>
+   <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+  </collector>
+  <collectedDateTime value="2023-04-23T17:02:00Z"/>
+  <method>
+   <coding>
+    <system value="http://snomed.info/sct"/>
+    <code value="129314006"/>
+    <display value="Biopsy - action"/>
+   </coding>
+  </method>
+ </collection>
+</Specimen>
