@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-FamilyMemberHistory" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreFamilyMemberHistory" />
   <title value="UKCore FamilyMemberHistory" />
-  <status value="draft" />
-  <date value="2022-12-16" />
+  <status value="active" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,6 +27,70 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
   <derivation value="constraint" />
   <differential>
+    <element id="FamilyMemberHistory.extension">
+      <path value="FamilyMemberHistory.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="FamilyMemberHistory.extension:associatedEncounter">
+      <path value="FamilyMemberHistory.extension" />
+      <sliceName value="associatedEncounter" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="FamilyMemberHistory.extension:participantR5">
+      <path value="FamilyMemberHistory.extension" />
+      <sliceName value="participantR5" />
+      <short value="Who or what participated in the activities related to the family member history. This is a R5 backport." />
+      <definition value="An extension to record who or what participated in the activities related to the family member history." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="FamilyMemberHistory.extension:participantR5.extension">
+      <path value="FamilyMemberHistory.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="FamilyMemberHistory.extension:participantR5.extension:function">
+      <path value="FamilyMemberHistory.extension.extension" />
+      <sliceName value="function" />
+      <min value="0" />
+    </element>
+    <element id="FamilyMemberHistory.extension:participantR5.extension:function.value[x]">
+      <path value="FamilyMemberHistory.extension.extension.value[x]" />
+      <short value="The type of involvement in the activities related to the family member history" />
+      <definition value="This FHIR value set is comprised of Actor participation Type codes, which can be used to value FHIR agents, actors, and other role elements. The codes are intended to express how the agent participated in some activity. Sometimes refered to the agent functional-role relative to the activity." />
+    </element>
+    <element id="FamilyMemberHistory.extension:participantR5.extension:actor">
+      <path value="FamilyMemberHistory.extension.extension" />
+      <sliceName value="actor" />
+      <min value="1" />
+    </element>
+    <element id="FamilyMemberHistory.extension:participantR5.extension:actor.value[x]">
+      <path value="FamilyMemberHistory.extension.extension.value[x]" />
+      <short value="Who or what participated in the activities related to the family member history" />
+      <definition value="A reference to a Patient, Practitioner, PractitionerRole, RelatedPerson, Device, Organization, or CareTeam." />
+    </element>
     <element id="FamilyMemberHistory.identifier.assigner">
       <path value="FamilyMemberHistory.identifier.assigner" />
       <type>
@@ -45,12 +109,25 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
       </type>
     </element>
+    <element id="FamilyMemberHistory.dataAbsentReason">
+      <path value="FamilyMemberHistory.dataAbsentReason" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
+    </element>
     <element id="FamilyMemberHistory.patient">
       <path value="FamilyMemberHistory.patient" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
+    </element>
+    <element id="FamilyMemberHistory.relationship">
+      <path value="FamilyMemberHistory.relationship" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
+      </binding>
     </element>
     <element id="FamilyMemberHistory.reasonReference">
       <path value="FamilyMemberHistory.reasonReference" />
@@ -76,6 +153,18 @@
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="FamilyMemberHistory.condition.code">
+      <path value="FamilyMemberHistory.condition.code" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
+    </element>
+    <element id="FamilyMemberHistory.condition.outcome">
+      <path value="FamilyMemberHistory.condition.outcome" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

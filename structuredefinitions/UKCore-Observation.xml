@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreObservation" />
   <title value="UK Core Observation" />
-  <status value="draft" />
-  <date value="2023-02-14" />
+  <status value="active" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Observation](https://hl7.org/fhir/R4/Observation.html)." />
-  <purpose value="This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject. Note: this profile SHALL NOT be used where a more specific UK Core profile exists." />
+  <purpose value="This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject.\n\n Note: this profile SHALL NOT be used where a more specific UK Core profile exists." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -57,6 +57,68 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.extension">
+      <path value="Observation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Observation.extension:triggeredByR5">
+      <path value="Observation.extension" />
+      <sliceName value="triggeredByR5" />
+      <short value="Triggering observation(s). This is a R5 backport." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
+      </type>
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension">
+      <path value="Observation.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:observation">
+      <path value="Observation.extension.extension" />
+      <sliceName value="observation" />
+      <min value="1" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:observation.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="Triggering observation." />
+      <definition value="A reference to the triggering observation." />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:type">
+      <path value="Observation.extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:type.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="The type of trigger. Reflex | Repeat | Re-run" />
+      <definition value="The type of trigger. Reflex | Repeat | Re-run" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:reason">
+      <path value="Observation.extension.extension" />
+      <sliceName value="reason" />
+      <min value="0" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:reason.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="Reason that the observation was triggered." />
+      <definition value="Provides the reason why this observation was performed as a result of the observation referenced." />
+    </element>
     <element id="Observation.identifier.assigner">
       <path value="Observation.identifier.assigner" />
       <type>
@@ -102,54 +164,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
+    <element id="Observation.code">
+      <path value="Observation.code" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType" />
       </binding>
-    </element>
-    <element id="Observation.code.coding:snomedCT.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.display">
-      <path value="Observation.code.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-    </element>
-    <element id="Observation.code.coding:loinc.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.code.coding:loinc.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Observation.code.coding:loinc.display">
-      <path value="Observation.code.coding.display" />
-      <min value="1" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
@@ -221,42 +242,11 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Observation.bodySite.coding">
-      <path value="Observation.bodySite.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.bodySite.coding:snomedCT">
-      <path value="Observation.bodySite.coding" />
-      <sliceName value="snomedCT" />
-      <max value="1" />
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;&lt;442083009 |anatomical or acquired body structure|)" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
-    </element>
-    <element id="Observation.bodySite.coding:snomedCT.system">
-      <path value="Observation.bodySite.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.bodySite.coding:snomedCT.code">
-      <path value="Observation.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Observation.bodySite.coding:snomedCT.display">
-      <path value="Observation.bodySite.coding.display" />
-      <min value="1" />
     </element>
     <element id="Observation.method">
       <path value="Observation.method" />
@@ -328,41 +318,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Observation.component.code.coding">
-      <path value="Observation.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component.code.coding:snomedCT">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="snomedCT" />
+    <element id="Observation.component.code">
+      <path value="Observation.component.code" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType" />
       </binding>
-    </element>
-    <element id="Observation.component.code.coding:snomedCT.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.component.code.coding:snomedCT.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Observation.component.code.coding:snomedCT.display">
-      <path value="Observation.component.code.coding.display" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

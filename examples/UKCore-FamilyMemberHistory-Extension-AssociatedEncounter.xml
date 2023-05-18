@@ -1,0 +1,44 @@
+<FamilyMemberHistory xmlns="http://hl7.org/fhir">
+	<id value="UKCore-FamilyMemberHistory-Extension-AssociatedEncounter-Example"/>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter">
+		<valueReference>
+			<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
+		</valueReference>
+	</extension>
+	<status value="partial"/>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+		<display value="Richard Smith"/>
+	</patient>
+	<date value="2023-05-09"/>
+	<relationship>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+			<code value="FTH"/>
+			<display value="father"/>
+		</coding>
+	</relationship>
+	<sex>
+		<coding>
+			<system value="http://hl7.org/fhir/administrative-gender"/>
+			<code value="male"/>
+			<display value="Male"/>
+		</coding>
+	</sex>
+	<bornDate value="1949-12-13"/>
+	<condition>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="275121006"/>
+				<display value="Family history: Angina"/>
+			</coding>
+		</code>
+		<onsetAge>
+			<value value="64"/>
+			<unit value="year"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="a"/>
+		</onsetAge>
+	</condition>
+</FamilyMemberHistory>

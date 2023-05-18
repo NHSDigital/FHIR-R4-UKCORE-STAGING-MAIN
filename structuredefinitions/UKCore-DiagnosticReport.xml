@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [DiagnosticReport](https://hl7.org/fhir/R4/DiagnosticReport.html)." />
-  <purpose value="This profile allows exchange of the findings and interpretation of diagnostic tests performed on individuals, groups of individuals, devices and locations and/or specimens derived from these. The report includes clinical context such as requesting and provider information and some mix of atomic results, images, textual and coded interpretations and formatted representation of diagnostic reports." />
+  <purpose value="This profile allows exchange of the findings and interpretation of diagnostic tests performed on individuals, groups of individuals, devices and locations and/or specimens derived from these. The report includes clinical context such as requesting and provider information and some mix of atomic results, images, textual and coded interpretations and formatted representation of diagnostic reports.\n\n Note: this profile SHALL NOT be used where a more specific UK Core profile exists." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -47,6 +47,33 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport.extension">
+      <path value="DiagnosticReport.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DiagnosticReport.extension:noteR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="noteR5" />
+      <short value="Comments about the diagnostic report. This is a R5 backport." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:noteR5.value[x]">
+      <path value="DiagnosticReport.extension.value[x]" />
+      <short value="Comments about the diagnostic report." />
+      <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
+    </element>
     <element id="DiagnosticReport.identifier.assigner">
       <path value="DiagnosticReport.identifier.assigner" />
       <type>
@@ -72,64 +99,12 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="DiagnosticReport.category.coding">
-      <path value="DiagnosticReport.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT">
-      <path value="DiagnosticReport.category.coding" />
-      <sliceName value="snomedCT" />
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT.system">
-      <path value="DiagnosticReport.category.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT.code">
-      <path value="DiagnosticReport.category.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.category.coding:snomedCT.display">
-      <path value="DiagnosticReport.category.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.code.coding">
-      <path value="DiagnosticReport.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT">
-      <path value="DiagnosticReport.code.coding" />
-      <sliceName value="snomedCT" />
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
       </binding>
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT.system">
-      <path value="DiagnosticReport.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT.code">
-      <path value="DiagnosticReport.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.code.coding:snomedCT.display">
-      <path value="DiagnosticReport.code.coding.display" />
-      <min value="1" />
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
@@ -172,6 +147,28 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
       </type>
     </element>
+    <element id="DiagnosticReport.performer.extension">
+      <path value="DiagnosticReport.performer.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DiagnosticReport.performer.extension:deviceReference">
+      <path value="DiagnosticReport.performer.extension" />
+      <sliceName value="deviceReference" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="DiagnosticReport.performer.identifier.assigner">
       <path value="DiagnosticReport.performer.identifier.assigner" />
       <type>
@@ -188,6 +185,27 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
       </type>
+    </element>
+    <element id="DiagnosticReport.resultsInterpreter.extension">
+      <path value="DiagnosticReport.resultsInterpreter.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
+      <path value="DiagnosticReport.resultsInterpreter.extension" />
+      <sliceName value="deviceReference" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="DiagnosticReport.resultsInterpreter.identifier.assigner">
       <path value="DiagnosticReport.resultsInterpreter.identifier.assigner" />
@@ -245,37 +263,11 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="DiagnosticReport.conclusionCode.coding">
-      <path value="DiagnosticReport.conclusionCode.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT">
-      <path value="DiagnosticReport.conclusionCode.coding" />
-      <sliceName value="snomedCT" />
+    <element id="DiagnosticReport.conclusionCode">
+      <path value="DiagnosticReport.conclusionCode" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED UK Clinical Terminology coding system" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-FindingCode" />
       </binding>
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT.system">
-      <path value="DiagnosticReport.conclusionCode.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT.code">
-      <path value="DiagnosticReport.conclusionCode.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.conclusionCode.coding:snomedCT.display">
-      <path value="DiagnosticReport.conclusionCode.coding.display" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

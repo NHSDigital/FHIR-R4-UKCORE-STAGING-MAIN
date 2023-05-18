@@ -1,14 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Encounter-InpatientEncounter-Example"/>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
-		<valueCodeableConcept>
-			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland"/>
-				<code value="13"/>
-				<display value="Elective Admission: Planned"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod">
 		<valueCodeableConcept>
 			<coding>
@@ -62,9 +53,18 @@
 		</coding>
 	</reasonCode>
 	<hospitalization>
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland"/>
+					<code value="13"/>
+					<display value="Elective Admission: Planned"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
 		<dischargeDisposition>
 			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-DischargeDestination"/>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationEngland"/>
 				<code value="19"/>
 				<display value="Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode."/>
 			</coding>

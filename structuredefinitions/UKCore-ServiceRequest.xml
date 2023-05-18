@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreServiceRequest" />
   <title value="UK Core ServiceRequest" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -74,6 +74,27 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="ServiceRequest.extension:additionalContact">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="additionalContact" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.extension:coverage">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="coverage" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="ServiceRequest.identifier.assigner">
       <path value="ServiceRequest.identifier.assigner" />
       <type>
@@ -118,11 +139,59 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="ServiceRequest.category">
+      <path value="ServiceRequest.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ServiceRequest.category:genomicsWholeCaseSequencing">
+      <path value="ServiceRequest.category" />
+      <sliceName value="genomicsWholeCaseSequencing" />
+      <short value="Classification of Genomics service" />
+      <definition value="A code that classifies the service for Genomics, whether it is a Whole Case Genome Sequencing or non-Whole Genome Sequencing for cancer or rare diseases" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.priority.extension">
+      <path value="ServiceRequest.priority.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ServiceRequest.priority.extension:priorityReason">
+      <path value="ServiceRequest.priority.extension" />
+      <sliceName value="priorityReason" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
       <binding>
         <strength value="preferred" />
         <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.orderDetail">
+      <path value="ServiceRequest.orderDetail" />
+      <binding>
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
     </element>
@@ -268,8 +337,6 @@
       <path value="ServiceRequest.bodySite" />
       <binding>
         <strength value="preferred" />
-        <description value="A set of codes that define an anatomical or acquired body structure site. Selected from the SNOMED CT UK coding system." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
     <element id="ServiceRequest.relevantHistory">

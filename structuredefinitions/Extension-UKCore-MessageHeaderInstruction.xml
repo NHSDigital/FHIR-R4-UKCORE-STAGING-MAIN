@@ -5,8 +5,8 @@
   <version value="1.0.0" />
   <name value="ExtensionUKCoreMessageHeaderInstruction" />
   <title value="Extension UKCore Message Header Instruction" />
-  <status value="active" />
-  <date value="2022-01-07" />
+  <status value="retired" />
+  <date value="2023-04-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="The Message Header Instruction extension is provided to carry a specific instruction for receivers of the message." />
-  <purpose value="This extension extends the Message Header resource to support the exchange of a specific instruction to specify additional receiver behaviour - this could be locally or nationally defined - which is currently not supported by the FHIR standard." />
+  <purpose value="This extension extends the Message Header resource to support the exchange of a specific instruction to specify additional receiver behaviour - this could be locally or nationally defined." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>

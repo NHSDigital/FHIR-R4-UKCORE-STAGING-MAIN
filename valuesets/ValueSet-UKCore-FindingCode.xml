@@ -4,8 +4,8 @@
 	<version value="2.0.0"/>
 	<name value="UKCoreFindingCode"/>
 	<title value="UK Core Finding Code"/>
-	<status value="draft" />
-	<date value="2021-09-10" />
+	<status value="retired" />
+	<date value="2023-04-28" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
