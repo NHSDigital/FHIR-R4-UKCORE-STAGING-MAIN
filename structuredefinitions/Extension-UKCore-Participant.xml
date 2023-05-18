@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-Participant" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant" />
+  <version value="1.0.0" />
+  <name value="ExtensionUKCoreParticipant" />
+  <title value="Extension UKCore Participant" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to indicate who or what participated in the activities related to the family member history and how they were involved." />
+  <purpose value="This extension is a Genomics use cae to replicate the R5 FamilyMemberHistory.participant functionality in R4, and is to be used to indicate who or what participated in the activities related to the family member history and how they were involved." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="FamilyMemberHistory" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Who or what participated in the activities related to the family member history." />
+      <definition value="An extension to record who or what participated in the activities related to the family member history." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:function">
+      <path value="Extension.extension" />
+      <sliceName value="function" />
+      <short value="The type of involvement in the activities related to the family member history." />
+      <definition value="Distinguishes the type of involvement of the actor in the activities related to the family member history." />
+      <min value="0" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/participation-role-type" />
+      </binding>
+    </element>
+    <element id="Extension.extension:function.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="function" />
+    </element>
+    <element id="Extension.extension:function.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:actor">
+      <path value="Extension.extension" />
+      <sliceName value="actor" />
+      <short value="Who or what participated in the activities related to the family member history." />
+      <definition value="Indicates who or what participated in the activities related to the family member history." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:actor.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="actor" />
+    </element>
+    <element id="Extension.extension:actor.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
