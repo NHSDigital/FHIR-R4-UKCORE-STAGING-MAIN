@@ -53,14 +53,14 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.extension:sampleState">
+    <element id="Specimen.extension:sampleCategory">
       <path value="Specimen.extension" />
-      <sliceName value="sampleState" />
+      <sliceName value="sampleCategory" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleState" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory" />
       </type>
       <isModifier value="false" />
     </element>
@@ -214,6 +214,13 @@
       <path value="Specimen.container.type" />
       <binding>
         <strength value="preferred" />
+      </binding>
+    </element>
+    <element id="Specimen.condition">
+      <path value="Specimen.condition" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState" />
       </binding>
     </element>
     <element id="Specimen.note.author[x]">
