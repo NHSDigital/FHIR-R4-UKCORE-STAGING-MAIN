@@ -48,9 +48,9 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="FamilyMemberHistory.extension:participant">
+    <element id="FamilyMemberHistory.extension:participantR5">
       <path value="FamilyMemberHistory.extension" />
-      <sliceName value="participant" />
+      <sliceName value="participantR5" />
       <min value="0" />
       <type>
         <code value="Extension" />
