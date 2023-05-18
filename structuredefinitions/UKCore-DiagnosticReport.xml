@@ -47,7 +47,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
-	<element id="DiagnosticReport.extension">
+    <element id="DiagnosticReport.extension">
       <path value="DiagnosticReport.extension" />
       <slicing>
         <discriminator>
@@ -58,15 +58,22 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="DiagnosticReport.extension:compositionReference">
+    <element id="DiagnosticReport.extension:compositionReferenceR5">
       <path value="DiagnosticReport.extension" />
-      <sliceName value="compositionReference" />
+      <sliceName value="compositionReferenceR5" />
+      <short value="A Composition reference for a DiagnosticReport. This is a R5 backport." />
       <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:compositionReferenceR5.value[x]">
+      <path value="DiagnosticReport.extension.value[x]" />
+      <short value="Reference to a Composition resource." />
+      <definition value="Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
     </element>
     <element id="DiagnosticReport.identifier.assigner">
       <path value="DiagnosticReport.identifier.assigner" />
@@ -191,16 +198,16 @@
       </slicing>
       <min value="0" />
     </element>
-	<element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
-		<path value="DiagnosticReport.resultsInterpreter.extension"/>
-		<sliceName value="deviceReference"/>
-		<min value="0"/>
-		<type>
-			<code value="Extension"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference"/>
-		</type>
-		<isModifier value="false"/>
-	</element>
+    <element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
+      <path value="DiagnosticReport.resultsInterpreter.extension" />
+      <sliceName value="deviceReference" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="DiagnosticReport.resultsInterpreter.identifier.assigner">
       <path value="DiagnosticReport.resultsInterpreter.identifier.assigner" />
       <type>
