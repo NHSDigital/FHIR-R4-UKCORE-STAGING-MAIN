@@ -152,6 +152,12 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
       </type>
+      <constraint>
+        <key value="ukcore-spec-001" />
+        <severity value="error" />
+        <human value="Only one reference SHALL be allowed between collection.collector and Specimen.collection.extension:specimenCollectionCollectorR5." />
+        <expression value="Specimen.collection.collector.empty()" />
+      </constraint>
       <isModifier value="false" />
     </element>
     <element id="Specimen.collection.extension:specialHandling">
@@ -170,12 +176,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
-      <constraint>
-        <key value="ukcore-spec-001" />
-        <severity value="error" />
-        <human value="Only one reference SHALL be allowed between collection.collector and Specimen.collection.extension:specimenCollectionCollectorR5." />
-        <expression value="Specimen.collection.collector.extension.empty()" />
-      </constraint>
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
       <path value="Specimen.collection.collector.identifier.assigner" />
