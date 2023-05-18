@@ -67,9 +67,9 @@
 			<rules value="open"/>
 		</slicing>
 	</element>
-	<element id="Observation.extension:triggeredBy">
+	<element id="Observation.extension:triggeredByR5">
 		<path value="Observation.extension"/>
-		<sliceName value="triggeredBy"/>
+		<sliceName value="triggeredByR5"/>
 		<type>
 			<code value="Extension"/>
 			<profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"/>
