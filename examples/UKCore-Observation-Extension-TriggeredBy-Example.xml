@@ -40,6 +40,6 @@
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
 	</performer>
 	<specimen>
-		<reference value="Specimen/UKCore-Specimen-UrineSample-Example" />
+		<reference value="Specimen/UKCore-Specimen-UrineSpecimen-Example" />
 	</specimen>
 </Observation>

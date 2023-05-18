@@ -1,0 +1,48 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+	<id value="UKCore-ServiceRequest-Lab-CReactiveProtein-Example"/>
+	<status value="active"/>
+	<intent value="order"/>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="108252007"/>
+			<display value="Laboratory procedure"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="135842001"/>
+			<display value="Serum C reactive protein level"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<authoredOn value="2022-05-23T12:14:00+00:00"/>
+	<requester>
+		<reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example"/>
+	</requester>
+	<performer>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+	</performer>
+	<locationCode>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+			<code value="OUTLAB"/>
+			<display value="outpatient laboratory"/>
+		</coding>
+	</locationcode>
+	<reasonCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="298167002"/>
+			<display value="Finger joint inflamed"/>
+		</coding>
+	</reasonCode>
+	<reasonReference>
+		<reference value="Observation/UKCore-Observation-FingerJointInflamed-Example"/>
+		<display value="Observation of finger joint inflammation."/>
+	</reasonReference>
+	<patientInstruction value="ADVICE GIVEN: If there are any new symptoms, or if the condition gets worse, changes or you have any other concerns, contact your GP."/>
+</ServiceRequest>

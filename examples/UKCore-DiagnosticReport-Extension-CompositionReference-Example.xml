@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+	<id value="UKCore-DiagnosticReport-Extension-CompositionReference-Example"/>
+	<extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+		<valueReference>
+			<reference value="Composition/UKCore-Composition-Discharge-Example"/>
+		</valueReference>
+	</extension>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="ce1913bf-ead4-4d04-904f-714cbc1636ef"/>
+	</identifier>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="252275004"/>
+			<display value="Hematology test"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<performer>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
+	</performer>
+</DiagnosticReport>

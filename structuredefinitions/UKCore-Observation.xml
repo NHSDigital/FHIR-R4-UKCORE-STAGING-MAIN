@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Observation](https://hl7.org/fhir/R4/Observation.html)." />
-  <purpose value="This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject.\n\n Note: this profile SHALL NOT be used where a more specific UK Core profile exists." />
+  <purpose value="This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject.&#xD;&#xA;&#xD;&#xA;Note: this profile SHALL NOT be used where a more specific UK Core profile exists." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -58,24 +58,68 @@
   <derivation value="constraint" />
   <differential>
     <element id="Observation.extension">
-		<path value="Observation.extension"/>
-		<slicing>
-			<discriminator>
-				<type value="value"/>
-				<path value="url"/>
-			</discriminator>
-			<rules value="open"/>
-		</slicing>
-	</element>
-	<element id="Observation.extension:triggeredByR5">
-		<path value="Observation.extension"/>
-		<sliceName value="triggeredByR5"/>
-		<type>
-			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"/>
-		</type>
-	</element>
-	<element id="Observation.identifier.assigner">
+      <path value="Observation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Observation.extension:triggeredByR5">
+      <path value="Observation.extension" />
+      <sliceName value="triggeredByR5" />
+      <short value="Triggering observation(s). This is a R5 backport." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
+      </type>
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension">
+      <path value="Observation.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:observation">
+      <path value="Observation.extension.extension" />
+      <sliceName value="observation" />
+      <min value="1" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:observation.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="Triggering observation." />
+      <definition value="A reference to the triggering observation." />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:type">
+      <path value="Observation.extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:type.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="The type of trigger. Reflex | Repeat | Re-run" />
+      <definition value="The type of trigger. Reflex | Repeat | Re-run" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:reason">
+      <path value="Observation.extension.extension" />
+      <sliceName value="reason" />
+      <min value="0" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:reason.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="Reason that the observation was triggered." />
+      <definition value="Provides the reason why this observation was performed as a result of the observation referenced." />
+    </element>
+    <element id="Observation.identifier.assigner">
       <path value="Observation.identifier.assigner" />
       <type>
         <code value="Reference" />
