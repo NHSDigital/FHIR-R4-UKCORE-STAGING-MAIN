@@ -42,6 +42,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="A set of codes to record the state of the sample" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
