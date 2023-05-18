@@ -153,6 +153,7 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
       </type>
       <isModifier value="false" />
+    </element>
     <element id="Specimen.collection.extension:specialHandling">
       <path value="Specimen.collection.extension" />
       <sliceName value="specialHandling" />
@@ -172,7 +173,7 @@
       <constraint>
         <key value="ukcore-spec-001" />
         <severity value="error" />
-        <human value="Only one reference SHALL be allowed between collection.collector and extension:patientAndRelatedPersonReferenceR5Backport." />
+        <human value="Only one reference SHALL be allowed between collection.collector and Specimen.collection.extension:specimenCollectionCollectorR5." />
         <expression value="Specimen.collection.collector.extension.empty()" />
       </constraint>
     </element>
