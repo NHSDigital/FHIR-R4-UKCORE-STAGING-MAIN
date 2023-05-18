@@ -58,9 +58,9 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="DiagnosticReport.extension:note">
+    <element id="DiagnosticReport.extension:noteR5">
       <path value="DiagnosticReport.extension" />
-      <sliceName value="note" />
+      <sliceName value="noteR5" />
       <min value="0" />
       <type>
         <code value="Extension" />
