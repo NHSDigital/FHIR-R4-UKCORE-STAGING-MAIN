@@ -263,8 +263,8 @@
           {
             "key": "ukcore-spec-001",
             "severity": "error",
-            "human": "Only one reference SHALL be allowed between collection.collector and the extension collectionCollectorR5",
-            "expression": "extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty() or Specimen.collection.collector.empty()"
+            "human": "Only one reference SHALL be allowed between collection.collector.reference and the extension collectionCollectorR5",
+            "expression": "extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty() or Specimen.collection.collector.reference.empty()"
           }
         ],
         "isModifier": false
