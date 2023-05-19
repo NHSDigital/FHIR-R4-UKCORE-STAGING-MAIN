@@ -180,9 +180,9 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.collection.collector.extension:specimenCollectionCollectorR5">
+    <element id="Specimen.collection.collector.extension:CollectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
-      <sliceName value="specimenCollectionCollectorR5" />
+      <sliceName value="collectionCollectorR5" />
       <short value="Person who collected the specimen." />
       <definition value="Person who collected the specimen. This is an R5 backport" />
       <min value="0" />
