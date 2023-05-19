@@ -143,9 +143,8 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.collection.extension:specimenCollectionCollectorR5">
+    <element id="Specimen.collection.extension">
       <path value="Specimen.collection.extension" />
-      <sliceName value="specimenCollectionCollectorR5" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -176,6 +175,36 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
+    </element>
+    <element id="Specimen.collection.collector.extension">
+      <path value="Specimen.collection.collector.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.collection.collector.extension:specimenCollectionCollectorR5">
+      <path value="Specimen.collection.collector.extension" />
+      <sliceName value="specimenCollectionCollectorR5" />
+      <short value="Person who collected the specimen." />
+      <definition value="Person who collected the specimen. This is an R5 backport" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
+      </type>
+      <constraint>
+        <key value="ukcore-spec-001" />
+        <severity value="error" />
+        <human value="If this extension is used then Specimen.collection.collector.reference SHALL NOT be populated." />
+        <expression value="Specimen.collection.collector.reference.empty()" />
+      </constraint>
+      <isModifier value="false" />
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
       <path value="Specimen.collection.collector.identifier.assigner" />
