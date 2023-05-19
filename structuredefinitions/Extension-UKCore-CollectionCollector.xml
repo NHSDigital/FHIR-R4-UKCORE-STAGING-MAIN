@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-CollectionCollector" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
+  <version value="1.0.0" />
+  <name value="Extension-UKCore-CollectionCollector" />
+  <title value="Extension UK Core Collection Collector" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Allows the referencing of Patient and RelatedPerson within Specimen.collection." />
+  <purpose value="This is a use case from Genomics to backport R5 functionality extending the referencing of Specimen.collection.collector to include Patient and RelatedPerson" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Specimen.collection.collector" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Person who collected the specimen." />
+      <definition value="Person who collected the specimen." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Person who collected the specimen." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

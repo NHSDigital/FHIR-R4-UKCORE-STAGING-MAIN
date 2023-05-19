@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Specimen-Extension-SpecimenCollectionCollector-Example"/>
+	<status value="available"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="78014005"/>
+			<display value="Urine"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<receivedTime value="2022-11-25T11:10:00Z"/>
+	<collection>
+		<collector>
+			<!--  ***************extension start***************  -->
+			<extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector">
+				<valueReference>
+					<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+				</valueReference>
+			</extension>
+			<!--  **************extension end ******************  -->
+		</collector>
+		<collectedDateTime value="2022-11-25T16:00:00Z"/>
+	</collection>
+</Specimen>
