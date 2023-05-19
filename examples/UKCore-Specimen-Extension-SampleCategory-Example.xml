@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Specimen-Extension-SampleState-Example"/>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleState">
+	<id value="UKCore-Specimen-Extension-SampleCategory-Example"/>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory">
 		<valueCodeableConcept>
 			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleState"/>
-				<code value="germline-sample"/>
-				<display value="Germline Sample"/>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory"/>
+				<code value="germline"/>
+				<display value="Germline"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
