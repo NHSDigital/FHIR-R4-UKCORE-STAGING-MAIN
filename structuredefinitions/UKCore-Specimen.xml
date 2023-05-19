@@ -156,7 +156,7 @@
         <key value="ukcore-spec-001" />
         <severity value="error" />
         <human value="Only one reference SHALL be allowed between collection.collector and Specimen.collection.extension:specimenCollectionCollectorR5." />
-        <expression value="Specimen.collection.collector.empty()" />
+        <expression value="Specimen.collection.collector.reference.empty()" />
       </constraint>
       <isModifier value="false" />
     </element>
