@@ -191,12 +191,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
       </type>
-      <constraint>
-        <key value="ukcore-spec-002" />
-        <severity value="error" />
-        <human value="If this extension is used then Specimen.collection.collector.reference SHALL NOT be populated." />
-        <expression value="Specimen.collection.collector.reference.empty()" />
-      </constraint>
       <isModifier value="false" />
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
