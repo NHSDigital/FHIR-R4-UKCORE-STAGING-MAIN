@@ -48,7 +48,7 @@
         <key value="ukcore-spec-001" />
         <severity value="error" />
         <human value="There SHALL be only one reference between collection.collector and the extension SpecimenCollectionCollector" />
-        <expression value="collection.collector.reference.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
+        <expression value="collection.collector.reference.empty() or collection.collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
       </constraint>
     </element>
     <element id="Specimen.extension">
