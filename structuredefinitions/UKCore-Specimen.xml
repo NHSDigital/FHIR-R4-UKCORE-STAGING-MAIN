@@ -42,6 +42,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
   <derivation value="constraint" />
   <differential>
+    <element id="Specimen">
+      <path value="Specimen" />
+      <constraint>
+        <key value="ukcore-spec-001" />
+        <severity value="error" />
+        <human value="There SHALL be only one reference between collection.collector and the extension SpecimenCollectionCollector" />
+        <expression value="Specimen.collection.collector.reference.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
+      </constraint>
+    </element>
     <element id="Specimen.extension">
       <path value="Specimen.extension" />
       <slicing>
@@ -183,7 +192,7 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
       </type>
       <constraint>
-        <key value="ukcore-spec-001" />
+        <key value="ukcore-spec-002" />
         <severity value="error" />
         <human value="If this extension is used then Specimen.collection.collector.reference SHALL NOT be populated." />
         <expression value="Specimen.collection.collector.reference.empty()" />
