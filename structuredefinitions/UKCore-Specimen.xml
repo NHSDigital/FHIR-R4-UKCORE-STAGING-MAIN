@@ -180,7 +180,7 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Specimen.collection.collector.extension:CollectionCollectorR5">
+    <element id="Specimen.collection.collector.extension:collectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
       <sliceName value="collectionCollectorR5" />
       <short value="Person who collected the specimen." />
