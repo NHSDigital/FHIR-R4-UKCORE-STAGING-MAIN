@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BodyStructure xmlns="http://hl7.org/fhir">
+	<id value="UKCore-BodyStructure-MedianCubitalVein-Example"/>
+	<location>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="49852007"/>
+			<display value="Structure of median cubital vein"/>
+		</coding>
+		<text value="Forearm"/>
+	</location>
+	<locationQualifier>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="419161000"/>
+			<display value="Unilateral left"/>
+		</coding>
+		<text value="Left"/>
+	</locationQualifier>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</patient>
+</BodyStructure>
