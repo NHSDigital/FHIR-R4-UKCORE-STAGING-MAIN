@@ -50,6 +50,12 @@
         <human value="There SHALL be only one reference between collection.collector and the extension collectionCollectorR5" />
         <expression value="collection.collector.reference.empty() or collection.collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
       </constraint>
+      <constraint>
+        <key value="ukcore-spec-002" />
+        <severity value="error" />
+        <human value="There SHALL be only one reference between collection.bodySite.coding and the extension UKCore-BodySiteReference" />
+        <expression value="collection.bodySite.coding.empty() or collection.bodySite.extension('https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference').empty()" />
+      </constraint>
     </element>
     <element id="Specimen.extension">
       <path value="Specimen.extension" />
@@ -183,7 +189,6 @@
     <element id="Specimen.collection.collector.extension:collectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
       <sliceName value="collectionCollectorR5" />
-      <short value="Person who collected the specimen." />
       <definition value="Person who collected the specimen. This is an R5 backport" />
       <min value="0" />
       <max value="1" />
