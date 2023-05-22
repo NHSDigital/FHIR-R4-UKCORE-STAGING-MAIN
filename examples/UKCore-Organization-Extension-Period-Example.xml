@@ -1,5 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
-	<id value="Organization-Extension-Period-Example"/>
+	<id value="UKCore-Organization-Extension-Period-Example"/>
 	<!-- **************extension start************** -->
 	<extension url="http://hl7.org/fhir/StructureDefinition/organization-period">
 		<valuePeriod>
