@@ -25,21 +25,20 @@
 				<display value="Venipuncture for blood test"/>
 			</coding>
 		</method>
-		
 		<bodySite>
 			<!-- Use of the bodySite R5 backport extension to reference a BodyStucture, in this case, the draw site. -->
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference">
 				<valueReference>
-				<reference value="BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"/>
+					<reference value="BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"/>
 				</valueReference>
 			</extension>
-				<!-- Use of the bodySite element to reference a codeable concept, in this case, the draw site. -->
-				<coding>
-					<system value="http://snomed.info/sct"/>
-					<code value="49852007"/>
-					<display value="Structure of median cubital vein"/>
-				</coding>
-				<text value ="vein on the inner left arm"/>
+			<!-- Use of the bodySite element to reference a codeable concept, in this case, the draw site. -->
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="49852007"/>
+				<display value="Structure of median cubital vein"/>
+			</coding>
+			<text value="vein on the inner left arm"/>
 		</bodySite>
 	</collection>
 </Specimen>
