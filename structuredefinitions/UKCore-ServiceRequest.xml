@@ -106,7 +106,7 @@
       <path value="ServiceRequest.basedOn" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       </type>
@@ -200,7 +200,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
@@ -230,7 +230,7 @@
       <path value="ServiceRequest.requester" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
@@ -249,8 +249,8 @@
       <path value="ServiceRequest.performer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
@@ -294,7 +294,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
       </type>
     </element>
@@ -338,13 +338,6 @@
       <binding>
         <strength value="preferred" />
       </binding>
-    </element>
-    <element id="ServiceRequest.relevantHistory">
-      <path value="ServiceRequest.relevantHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
-      </type>
     </element>
     <element id="ServiceRequest.relevantHistory.identifier.assigner">
       <path value="ServiceRequest.relevantHistory.identifier.assigner" />

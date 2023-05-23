@@ -50,13 +50,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MessageEvent" />
       </binding>
     </element>
-    <element id="MessageHeader.destination.target">
-      <path value="MessageHeader.destination.target" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
     <element id="MessageHeader.destination.target.identifier.assigner">
       <path value="MessageHeader.destination.target.identifier.assigner" />
       <type>

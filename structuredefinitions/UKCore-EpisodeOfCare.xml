@@ -126,13 +126,6 @@ These resources are typically known in existing systems as:
 				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
 			</type>
 		</element>
-		<element id="EpisodeOfCare.team">
-			<path value="EpisodeOfCare.team"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam"/>
-			</type>
-		</element>
 		<element id="EpisodeOfCare.team.identifier.assigner">
 			<path value="EpisodeOfCare.team.identifier.assigner"/>
 			<type>
