@@ -72,7 +72,7 @@
         <key value="ukcore-diag-lab-001" />
         <severity value="warning" />
         <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
-        <expression value="(effective.empty() and ((status != 'partial') or (status != 'preliminary') or (status != 'final') or (status != 'amended') or (status != 'corrected') or (status != 'appended'))) or effective.exists()" />
+        <expression value="effective.exists() or (effective.empty() and (status != 'partial' and status != 'preliminary' and status != 'final' and status != 'amended' and status != 'corrected' and status != 'appended'))" />
       </constraint>
     </element>
     <element id="DiagnosticReport.result">
