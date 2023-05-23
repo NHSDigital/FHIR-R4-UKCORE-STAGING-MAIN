@@ -42,8 +42,8 @@
 	<differential>
 		<element id="Extension">
 			<path value="Extension"/>
-			<short value="An addtional Device reference for a DiagnosticReport."/>
-			<definition value="An addtional Device reference for a DiagnosticReport, to allow Software as a Medical Device to perform / interpret a DiagnosticReport"/>
+			<short value="An additional Device reference for a DiagnosticReport."/>
+			<definition value="An additional Device reference for a DiagnosticReport, to allow Software as a Medical Device to perform / interpret a DiagnosticReport"/>
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
@@ -51,7 +51,7 @@
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>
-			<short value="An addtional Device reference for a DiagnosticReport."/>
+			<short value="An additional Device reference for a DiagnosticReport."/>
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
