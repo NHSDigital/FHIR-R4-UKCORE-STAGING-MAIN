@@ -193,6 +193,10 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Specimen.collection.collector.extension:collectionCollectorR5.value[x]">
+      <path value="Specimen.collection.collector.extension.value[x]" />
+      <short value="Person who collected the specimen" />
+    </element>
     <element id="Specimen.collection.collector.identifier.assigner">
       <path value="Specimen.collection.collector.identifier.assigner" />
       <type>
@@ -229,6 +233,10 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Specimen.collection.bodySite.extension:bodySiteReference.value[x]">
+      <path value="Specimen.collection.bodySite.extension.value[x]" />
+      <short value="A reference to a BodyStructure" />
     </element>
     <element id="Specimen.processing.additive.identifier.assigner">
       <path value="Specimen.processing.additive.identifier.assigner" />
