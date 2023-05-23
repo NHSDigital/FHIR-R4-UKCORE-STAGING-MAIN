@@ -91,7 +91,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
     </element>
     <element id="List.subject.identifier.assigner">
@@ -122,7 +122,7 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
     </element>
     <element id="List.source.identifier.assigner">

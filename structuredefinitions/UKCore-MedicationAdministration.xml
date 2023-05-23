@@ -140,7 +140,7 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
     </element>
     <element id="MedicationAdministration.performer.actor.identifier.assigner">
@@ -178,13 +178,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.device">
-      <path value="MedicationAdministration.device" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
     </element>
     <element id="MedicationAdministration.device.identifier.assigner">
@@ -227,13 +220,6 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
-    </element>
-    <element id="MedicationAdministration.eventHistory">
-      <path value="MedicationAdministration.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
-      </type>
     </element>
     <element id="MedicationAdministration.eventHistory.identifier.assigner">
       <path value="MedicationAdministration.eventHistory.identifier.assigner" />

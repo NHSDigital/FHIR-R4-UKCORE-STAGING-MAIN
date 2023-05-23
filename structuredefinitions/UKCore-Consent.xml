@@ -90,7 +90,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Contract" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
@@ -108,9 +108,9 @@
       <path value="Consent.provision.actor.reference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />

@@ -133,7 +133,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       </type>
@@ -177,7 +177,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
@@ -214,7 +214,7 @@
       <path value="Observation.performer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
@@ -268,14 +268,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="Observation.device">
-      <path value="Observation.device" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
     <element id="Observation.device.identifier.assigner">
       <path value="Observation.device.identifier.assigner" />
       <type>
@@ -305,7 +297,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Media" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
