@@ -95,7 +95,7 @@
     </element>
     <element id="Composition.category">
       <path value="Composition.category" />
-      <definition value="A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.&#xD;&#xA;Further investgation is required about the usage of this element for UK Core." />
+      <definition value="A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type." />
       <binding>
         <strength value="preferred" />
         <description value="A ValueSet to identify the category of a composition." />
