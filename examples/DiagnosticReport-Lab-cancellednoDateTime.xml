@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
-	<id value="UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport-Example"/>
+	<id value="UKCore-DiagnosticReport-Lab-cancellednoDateTime"/>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="727071dc-eb01-4224-8ee8-cc0a029787ac"/>
