@@ -42,6 +42,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <short value="Reference to BodyStructure" />
       <min value="1" />
       <type>
         <code value="Reference" />
