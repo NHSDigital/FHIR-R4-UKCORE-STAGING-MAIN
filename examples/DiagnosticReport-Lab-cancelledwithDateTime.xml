@@ -5,7 +5,7 @@
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="727071dc-eb01-4224-8ee8-cc0a029787ac"/>
 	</identifier>
-	<status value="final"/>
+	<status value="cancelled"/>
 	<category>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
