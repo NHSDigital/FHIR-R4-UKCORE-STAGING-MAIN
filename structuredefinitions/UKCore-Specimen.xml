@@ -183,7 +183,7 @@
     <element id="Specimen.collection.collector.extension:collectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
       <sliceName value="collectionCollectorR5" />
-      <short value="Person who collected the specimen." />
+      <short value="Person who collected the specimen" />
       <definition value="Person who collected the specimen. This is an R5 backport" />
       <min value="0" />
       <max value="1" />
@@ -221,6 +221,7 @@
     <element id="Specimen.collection.bodySite.extension:bodySiteReference">
       <path value="Specimen.collection.bodySite.extension" />
       <sliceName value="bodySiteReference" />
+      <short value="An extension to allow referencing to a BodyStructure" />
       <min value="0" />
       <max value="1" />
       <type>
