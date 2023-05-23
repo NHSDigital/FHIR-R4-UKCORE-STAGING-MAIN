@@ -32,7 +32,7 @@
 			<code value="OUTLAB"/>
 			<display value="outpatient laboratory"/>
 		</coding>
-	</locationcode>
+	</locationCode>
 	<reasonCode>
 		<coding>
 			<system value="http://snomed.info/sct"/>
