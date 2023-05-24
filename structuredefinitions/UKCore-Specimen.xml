@@ -183,7 +183,7 @@
     <element id="Specimen.collection.collector.extension:collectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
       <sliceName value="collectionCollectorR5" />
-      <short value="Person who collected the specimen." />
+      <short value="Person who collected the specimen" />
       <definition value="Person who collected the specimen. This is an R5 backport" />
       <min value="0" />
       <max value="1" />
@@ -192,6 +192,10 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Specimen.collection.collector.extension:collectionCollectorR5.value[x]">
+      <path value="Specimen.collection.collector.extension.value[x]" />
+      <short value="Person who collected the specimen" />
     </element>
     <element id="Specimen.collection.collector.identifier.assigner">
       <path value="Specimen.collection.collector.identifier.assigner" />
@@ -221,6 +225,7 @@
     <element id="Specimen.collection.bodySite.extension:bodySiteReference">
       <path value="Specimen.collection.bodySite.extension" />
       <sliceName value="bodySiteReference" />
+      <short value="An extension to allow referencing to a BodyStructure" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -228,6 +233,10 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Specimen.collection.bodySite.extension:bodySiteReference.value[x]">
+      <path value="Specimen.collection.bodySite.extension.value[x]" />
+      <short value="A reference to a BodyStructure" />
     </element>
     <element id="Specimen.processing.additive.identifier.assigner">
       <path value="Specimen.processing.additive.identifier.assigner" />
