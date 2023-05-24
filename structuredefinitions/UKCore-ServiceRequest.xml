@@ -159,6 +159,10 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory" />
       </binding>
     </element>
+    <element id="ServiceRequest.category:genomicsWholeCaseSequencing.coding.system">
+      <path value="ServiceRequest.category.coding.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+    </element>
     <element id="ServiceRequest.priority.extension">
       <path value="ServiceRequest.priority.extension" />
       <slicing>
