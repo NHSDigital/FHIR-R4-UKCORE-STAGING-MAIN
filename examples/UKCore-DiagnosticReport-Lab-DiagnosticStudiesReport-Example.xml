@@ -9,8 +9,8 @@
 	<category>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
-			<code value="PHY"/>
-			<display value="Physician (Hx. Dx, admission note, etc.)"/>
+			<code value="LAB"/>
+			<display value="Laboratory"/>
 		</coding>
 	</category>
 	<code>
@@ -28,7 +28,10 @@
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 		<display value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
 	</performer>
+	<specimen>
+		<reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
+	</specimen>
 	<result>
-		<reference value="UKCore-Observation-FingerJointInflamed-Example"/>
+		<reference value="UKCore-Observation-Group-FullBloodCount-Example"/>
 	</result>
 </DiagnosticReport>
