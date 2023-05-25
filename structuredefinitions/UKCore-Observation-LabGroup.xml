@@ -26,6 +26,15 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="ukcore-obs-labgrp-001" />
+        <severity value="warning" />
+        <human value="value[x] SHOULD NOT be used within this Profile" />
+        <expression value="value.empty()" />
+      </constraint>
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <slicing>
@@ -70,15 +79,6 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <constraint>
-        <key value="ukcore-obs-labgrp-001" />
-        <severity value="warning" />
-        <human value="This element SHOULD NOT be used within this Profile" />
-        <expression value="value.empty()" />
-      </constraint>
     </element>
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
