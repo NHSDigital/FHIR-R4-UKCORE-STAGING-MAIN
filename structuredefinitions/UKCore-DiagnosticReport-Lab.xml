@@ -26,6 +26,15 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport">
+      <path value="DiagnosticReport" />
+      <constraint>
+        <key value="ukcore-diag-lab-001" />
+        <severity value="warning" />
+        <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
+        <expression value="effective.exists() or (effective.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
+      </constraint>
+    </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <slicing>
@@ -66,15 +75,6 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
-    </element>
-    <element id="DiagnosticReport.effective[x]">
-      <path value="DiagnosticReport.effective[x]" />
-      <constraint>
-        <key value="ukcore-diag-lab-001" />
-        <severity value="warning" />
-        <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
-        <expression value="effective.exists() or (effective.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
-      </constraint>
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
