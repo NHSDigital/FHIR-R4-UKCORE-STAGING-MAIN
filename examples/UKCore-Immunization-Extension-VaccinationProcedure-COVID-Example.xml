@@ -1,6 +1,5 @@
 <Immunization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Immunization-Extension-VaccinationProcedure-COVID-Example"/>
-	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure">
 		<valueCodeableConcept>
 			<coding>
@@ -10,7 +9,6 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<!-- **************extension end************** -->
 	<status value="completed"/>
 	<vaccineCode>
 		<coding>

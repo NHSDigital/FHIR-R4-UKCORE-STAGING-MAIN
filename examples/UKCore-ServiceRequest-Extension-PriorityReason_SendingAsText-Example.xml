@@ -1,13 +1,11 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ServiceRequest-Extension-PriorityReasonString-Example"/>
 	<priority value="urgent">
-		<!-- ***************extension start*************** -->
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
 			<valueCodeableConcept>
 				<text value="Original assessment was delayed due to COVID-19 pandemic"/>
 			</valueCodeableConcept>
 		</extension>
-		<!-- **************extension end ****************** -->
 	</priority>
 	<status value="active"/>
 	<intent value="order"/>

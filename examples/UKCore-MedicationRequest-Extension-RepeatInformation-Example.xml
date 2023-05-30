@@ -1,7 +1,5 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationRequest-Extension-RepeatInformation-Example"/>
-	<!-- **************extension start************** -->
-	<!--MedicationRepeatInformation extension details-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
 		<extension url="numberOfPrescriptionsIssued">
 			<valueUnsignedInt value="1"/>
@@ -10,7 +8,6 @@
 			<valueDateTime value="2022-09-10T19:00:00.000Z"/>
 		</extension>
 	</extension>
-	<!-- **************extension end************** -->
 	<status value="completed"/>
 	<intent value="order"/>
 	<category>

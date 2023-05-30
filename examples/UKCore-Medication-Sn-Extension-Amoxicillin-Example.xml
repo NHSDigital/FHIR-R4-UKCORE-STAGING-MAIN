@@ -1,6 +1,5 @@
 <Medication xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Medication-Sn-Extension-Amoxicillin-Example"/>
-	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="https://dmd.nhs.uk/"/>
@@ -9,5 +8,4 @@
 			<userSelected value="true"/>
 		</coding>
 	</code>
-	<!-- **************Snippet end************** -->
 </Medication>

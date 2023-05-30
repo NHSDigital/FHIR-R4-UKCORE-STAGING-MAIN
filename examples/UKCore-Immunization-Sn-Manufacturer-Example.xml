@@ -12,9 +12,7 @@
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 	<occurrenceDateTime value="2021-07-20"/>
-	<!-- **************snippet start************** -->
 	<manufacturer>
 		<display value="DREAMLAND Pharmaceuticals Ltd"/>
 	</manufacturer>
-	<!-- **************snippet end************** -->
 </Immunization>

@@ -1,7 +1,6 @@
  <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-Sn-Extension-CodingSCT-IllicitDrugs-Example"/>
 	<status value="final"/>
-	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
@@ -16,9 +15,7 @@
 			<userSelected value="true"/>
 		</coding>
 		<text value=" Not known whether uses illicit drugs"/>
-		<!-- what the user saw on screen, from a data entry template -->
 	</code>
-	<!-- **************Snippet end************** -->
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>

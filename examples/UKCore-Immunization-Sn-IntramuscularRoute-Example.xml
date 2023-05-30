@@ -12,7 +12,6 @@
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 	<occurrenceDateTime value="2021-07-20"/>
-	<!-- **************snippet start************** -->
 	<route>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -20,5 +19,4 @@
 			<display value="Intramuscular route (qualifier value)"/>
 		</coding>
 	</route>
-	<!-- **************snippet end************** -->
 </Immunization>

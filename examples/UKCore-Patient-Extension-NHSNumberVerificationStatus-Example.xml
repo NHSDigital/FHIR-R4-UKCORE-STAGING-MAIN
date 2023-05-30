@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-Extension-NHSNumberVerificationStatus-Example"/>
 	<identifier>
-		<!-- **************extension start************** -->
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 			<valueCodeableConcept>
 				<coding>
@@ -12,6 +10,5 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		<!-- **************extension end************** -->
 	</identifier>
 </Patient>

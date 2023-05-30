@@ -1,6 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Encounter-Extension-LegalStatus-Example"/>
-	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus">
 		<extension url="legalStatusContext">
 			<valueCodeableConcept>
@@ -21,7 +20,6 @@
 			</valueCodeableConcept>
 		</extension>
 	</extension>
-	<!-- **************extension end************** -->
 	<status value="finished"/>
 	<class>
 		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>

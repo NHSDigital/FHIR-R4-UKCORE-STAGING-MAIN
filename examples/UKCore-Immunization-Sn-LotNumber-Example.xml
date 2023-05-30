@@ -12,7 +12,5 @@
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
 	<occurrenceDateTime value="2021-07-20"/>
-	<!-- **************snippet start************** -->
 	<lotNumber value="R04X"/>
-	<!-- **************snippet end************** -->
 </Immunization>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Specimen-Extension-BodySiteReference-Example"/>
 	<status value="available"/>
@@ -26,7 +25,6 @@
 			</coding>
 		</method>
 		<bodySite>
-			<!-- Use of the bodySite R5 backport extension to reference a BodyStucture, in this case, the draw site. -->
 			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference">
 				<valueReference>
 					<reference value="BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"/>

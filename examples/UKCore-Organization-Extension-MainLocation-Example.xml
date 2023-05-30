@@ -1,6 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Organization-Extension-MainLocation-Example"/>
-	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation">
 		<valueReference>
 			<reference value="Location/UKCore-Location-HospitalSJUH-Example"/>
@@ -12,7 +11,6 @@
 			</identifier>
 		</valueReference>
 	</extension>
-	<!-- *************extension end *****************-->
 	<identifier>
 		<use value="official"/>
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>

@@ -30,9 +30,6 @@
 		<reference value="Patient/UKCore-Patient-BabyPatient-Example"/>
 		<display value="JONES, Melanie"/>
 	</subject>
-	<!--	<encounter>
-		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
-	</encounter>-->
 	<sent value="2022-12-11T13:00:00+00:00"/>
 	<received value="2022-12-11T13:01:33+00:00"/>
 	<sender>

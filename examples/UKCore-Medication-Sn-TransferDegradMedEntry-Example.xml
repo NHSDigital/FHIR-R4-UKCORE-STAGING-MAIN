@@ -1,6 +1,5 @@
 <Medication xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Medication-Sn-TransferDegradMedEntry-Example"/>
-	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -9,5 +8,4 @@
 		</coding>
 		<text value="Aspirin 75mg dispersible tablet"/>
 	</code>
-	<!-- **************Snippet end************** -->
 </Medication>

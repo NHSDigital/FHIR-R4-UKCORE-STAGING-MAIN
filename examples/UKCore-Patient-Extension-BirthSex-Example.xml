@@ -1,8 +1,6 @@
 <Patient xmlns="http://hl7.org/fhir">
-<id value="UKCore-Patient-Extension-BirthSex-Example"/>
-	<!-- **************extension start************** -->
+	<id value="UKCore-Patient-Extension-BirthSex-Example"/>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
-	<valueCode value="F"/>
+		<valueCode value="F"/>
 	</extension>
-	<!-- **************extension end************** -->
 </Patient>

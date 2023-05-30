@@ -1,6 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
     <id value="UKCore-Encounter-Extension-EmergencyCareDischargeStatus-Example" />
-    <!--  **************extension start**************  -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus">
         <valueCodeableConcept>
             <coding>
@@ -10,7 +9,6 @@
             </coding>
         </valueCodeableConcept>
     </extension>
-    <!--  **************extension end**************  -->
     <status value="finished" />
     <class>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />

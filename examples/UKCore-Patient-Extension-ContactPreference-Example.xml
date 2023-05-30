@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-Extension-ContactPreference-Example"/>
-	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
 		<extension url="PreferredContactMethod">
 			<valueCodeableConcept>
@@ -35,5 +33,4 @@
 			</valueCodeableConcept>
 		</extension>
 	</extension>
-	<!-- **************extension end************** -->
 </Patient>

@@ -1,11 +1,8 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
 	<id value="UKCore-MedicationStatement-Extension-LastIssueDate-Example"/>
-	<!-- **************extension start************** -->
-	<!--MedicationStatement Last Issue Date extension details-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate">
 		<valueDateTime value="2017-02-24"/>
 	</extension>
-	<!-- **************extension end************** -->
 	<status value="active"/>
 	<medicationCodeableConcept>
 		<coding>

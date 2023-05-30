@@ -1,9 +1,7 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-Sn-Photo-Example"/>
-	<!-- **************snippet start************** -->
 	<photo>
 		<contentType value="image/png"/>
 		<data value="base64Binary"/>
 	</photo>
-	<!-- **************snippet end************** -->
 </Patient>

@@ -1,13 +1,11 @@
 <Appointment xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Appointment-OrthopaedicSurgery-Example"/>
-	<!--This supports the recording of the organisation booking the appointment.-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization">
 		<valueReference>
 			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
 			<type value="Organization"/>
 		</valueReference>
 	</extension>
-	<!--This describes the delivery channel of a scheduled appointment.-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
 		<valueCode value="In-person"/>
 	</extension>

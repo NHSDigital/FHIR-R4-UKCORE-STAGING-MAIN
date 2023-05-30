@@ -1,6 +1,5 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Patient-Extension-BirthPlace-Example"/>
-	<!-- **************extension start************** -->
 	<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
 		<valueAddress>
 			<line value="MATERNITY UNIT"/>
@@ -11,5 +10,4 @@
 			<country value="ENGLAND"/>
 		</valueAddress>
 	</extension>
-	<!-- **************extension end************** -->
 </Patient>

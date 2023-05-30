@@ -1,6 +1,5 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
 	<id value="UKCore-ServiceRequest-Extension-Coverage-Example"/>
-	<!-- ***************extension start*************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage">
 		<valueCodeableConcept>
 			<coding>
@@ -10,7 +9,6 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<!-- **************extension end ****************** -->
 	<status value="active"/>
 	<intent value="order"/>
 	<subject>

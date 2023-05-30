@@ -14,7 +14,6 @@
 			<display value="Confirmed"/>
 		</coding>
 	</verificationStatus>
-	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -23,7 +22,6 @@
 		</coding>
 		<text value="Latex"/>
 	</code>
-	<!-- **************Snippet end************** -->
 	<patient>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>

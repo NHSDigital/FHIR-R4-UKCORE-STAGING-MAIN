@@ -14,7 +14,6 @@
 			<display value="Confirmed"/>
 		</coding>
 	</verificationStatus>
-	<!-- **************Snippet start************** -->
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -22,7 +21,6 @@
 			<display value="No known drug allergy (situation)"/>
 		</coding>
 	</code>
-	<!-- **************Snippet end************** -->
 	<patient>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</patient>
