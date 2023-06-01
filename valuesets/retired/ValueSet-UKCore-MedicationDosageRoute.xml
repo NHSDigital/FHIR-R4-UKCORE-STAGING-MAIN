@@ -1,0 +1,31 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationDosageRoute"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageRoute"/>
+	<version value="2.0.0"/>
+	<name value="UKCoreMedicationDosageRoute"/>
+	<title value="UK Core Medication Dosage Route"/>
+	<status value="retired" />
+	<date value="2021-09-10" />
+	<publisher value="HL7 UK" />
+	<contact>
+		<name value="HL7 UK" />
+		<telecom>
+			<system value="email" />
+			<value value="ukcore@hl7.org.uk" />
+			<use value="work" />
+			<rank value="1" />
+		</telecom>
+	</contact>
+	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100."/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="in"/>
+				<value value="^999000051000001100"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>
