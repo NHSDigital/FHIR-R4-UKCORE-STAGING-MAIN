@@ -31,7 +31,7 @@
       <constraint>
         <key value="ukcore-diag-lab-001" />
         <severity value="warning" />
-        <human value="An effective time SHALL be given present if status = partial, preliminary, final, amended, corrected or appended" />
+        <human value="An effective time SHOULD be present if status = partial, preliminary, final, amended, corrected or appended" />
         <expression value="effective.exists() or (effective.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
       </constraint>
     </element>
