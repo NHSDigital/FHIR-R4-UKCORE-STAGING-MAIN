@@ -18,26 +18,20 @@
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</author>
 	<action>
-		<type value="create"/>
+		<type>
+			<coding>
+				<code value="create"/>
+			</coding>
+		</type>
 		<selectionBehavior value="at-most-one"/>
 		<action id="UKCore-MedicationDispense-ParacetamolOral-Example">
 			<description value="Paracetamol 500mg, four times a day orally."/>
-			<type>
-				<coding>
-					<code value="create"/>
-				</coding>
-			</type>
 			<resource>
 				<reference value="MedicationRequest/UKCore-MedicationDispense-ParacetamolOral-Example"/>
 			</resource>
 		</action>
 		<action id="UKCore-MedicationRequest-ParacetamolIV-Example">
 			<description value="Paracetamol 500mg, four times a day via IV."/>
-			<type>
-				<coding>
-					<code value="create"/>
-				</coding>
-			</type>
 			<resource>
 				<reference value="MedicationRequest/UKCore-MedicationRequest-ParacetamolIV-Example"/>
 			</resource>
