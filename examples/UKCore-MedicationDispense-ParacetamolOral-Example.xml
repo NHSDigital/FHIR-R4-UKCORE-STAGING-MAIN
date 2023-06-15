@@ -15,6 +15,9 @@
 			<display value="Paracetamol 500mg capsules (A A H Pharmaceuticals Ltd)"/>
 		</coding>
 	</medicationCodeableConcept>
+	<supportingInformation>
+		<reference value="RequestGroup/UKCore-RequestGroup-Paracetamol-Example"/>
+	</supportingInformation>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
