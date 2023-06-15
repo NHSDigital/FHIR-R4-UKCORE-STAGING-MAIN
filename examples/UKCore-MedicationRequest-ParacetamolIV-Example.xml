@@ -31,7 +31,7 @@
 		</coding>
 	</courseOfTherapyType>
 	<dosageInstruction>
-		<text value="Paracetamol 500mg, four times a day ."/>
+		<text value="Paracetamol 500mg, four times a day."/>
 		<timing>
 			<repeat>
 				<frequency value="4"/>
