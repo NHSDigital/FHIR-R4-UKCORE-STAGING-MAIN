@@ -5,7 +5,7 @@
 	<priority value="routine"/>
 	<code>
 		<coding>
-			<system value="https://dmd.nhs.uk"/>
+			<system value="http://snomed.info/sct"/>
 			<code value="33633005"/>
 			<display value="Prescription of drug"/>
 		</coding>
