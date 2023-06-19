@@ -50,8 +50,8 @@
 		<timing>
 			<repeat>
 				<frequency value="4"/>
-				<period value="24"/>
-				<periodUnit value="h"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
 			</repeat>
 		</timing>
 		<route>
@@ -61,12 +61,5 @@
 				<display value="Oral"/>
 			</coding>
 		</route>
-		<method>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="421984009"/>
-				<display value="Until finished"/>
-			</coding>
-		</method>
 	</dosageInstruction>
 </MedicationDispense>

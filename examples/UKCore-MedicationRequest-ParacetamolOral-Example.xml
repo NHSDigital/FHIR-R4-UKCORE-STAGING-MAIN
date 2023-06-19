@@ -35,8 +35,8 @@
 		<timing>
 			<repeat>
 				<frequency value="4"/>
-				<period value="24"/>
-				<periodUnit value="h"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
 			</repeat>
 		</timing>
 		<site>
@@ -70,6 +70,6 @@
 		</doseAndRate>
 	</dosageInstruction>
 	<substitution>
-		<allowedBoolean value="true"/>
+		<allowedBoolean value="false"/>
 	</substitution>
 </MedicationRequest>

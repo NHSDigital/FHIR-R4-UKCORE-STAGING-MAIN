@@ -39,6 +39,13 @@
 				<periodUnit value="h"/>
 			</repeat>
 		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="Intravenous"/>
+			</coding>
+		</route>
 		<method>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -63,6 +70,6 @@
 		</doseAndRate>
 	</dosageInstruction>
 	<substitution>
-		<allowedBoolean value="true"/>
+		<allowedBoolean value="false"/>
 	</substitution>
 </MedicationRequest>
