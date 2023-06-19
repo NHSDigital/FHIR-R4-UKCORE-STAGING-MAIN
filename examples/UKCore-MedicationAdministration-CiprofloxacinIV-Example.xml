@@ -21,7 +21,6 @@
 		<reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinIV-Example"/>
 	</request>
 	<dosage>
-		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
 		<site>
 			<coding>
 				<system value="http://snomed.info/sct"/>
