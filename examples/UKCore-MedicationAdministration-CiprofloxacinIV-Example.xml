@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationAdministration-CiprofloxacinIV-Example"/>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="504cdccf-203d-4023-af47-5351e283aee7"/>
+	</identifier>
+	<status value="completed"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="35831211000001109"/>
+			<display value="Ciprofloxacin 400mg/200ml infusion bags (Consilient Health Ltd)"/>
+		</coding>
+	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<effectiveDateTime value="2023-06-30T13:00:00+00:00"/>
+	<request>
+		<reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinIV-Example"/>
+	</request>
+	<dosage>
+		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="49852007"/>
+				<display value="Structure of median cubital vein "/>
+			</coding>
+			<text value="left arm"/>
+		</site>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="Intravenous"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="13283701000001109"/>
+				<display value="Infusion"/>
+			</coding>
+		</method>
+		<dose>
+			<value value="400"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</dose>
+	</dosage>
+</MedicationAdministration>

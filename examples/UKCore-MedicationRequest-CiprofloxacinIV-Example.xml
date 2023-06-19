@@ -1,0 +1,75 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+	<id value="UKCore-MedicationRequest-CiprofloxacinIV-Example"/>
+	<status value="completed"/>
+	<intent value="option"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+			<code value="inpatient"/>
+			<display value="Inpatient"/>
+		</coding>
+	</category>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="36141511000001100"/>
+			<display value="Ciprofloxacin 400mg/200ml infusion bags"/>
+		</coding>
+	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<authoredOn value="2023-06-15T15:00:00.000Z"/>
+	<requester>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+	</requester>
+	<courseOfTherapyType>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+			<code value="acute"/>
+			<display value="Short course (acute) therapy"/>
+		</coding>
+	</courseOfTherapyType>
+	<dosageInstruction>
+		<text value="Ciprofloxacin 400mg, twice daily."/>
+		<timing>
+			<repeat>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="Intravenous"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="13283701000001109"/>
+				<display value="Infusion"/>
+			</coding>
+		</method>
+		<doseAndRate>
+			<type>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+					<code value="ordered"/>
+					<display value="Ordered"/>
+				</coding>
+			</type>
+			<doseQuantity>
+				<value value="400"/>
+				<unit value="milligram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</doseQuantity>
+		</doseAndRate>
+	</dosageInstruction>
+	<substitution>
+		<allowedBoolean value="false"/>
+	</substitution>
+</MedicationRequest>
