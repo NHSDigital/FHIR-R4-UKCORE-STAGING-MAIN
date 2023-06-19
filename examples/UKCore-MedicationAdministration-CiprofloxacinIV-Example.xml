@@ -28,7 +28,7 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="49852007"/>
-				<display value="Structure of median cubital vein "/>
+				<display value="Structure of median cubital vein"/>
 			</coding>
 			<text value="left arm"/>
 		</site>
