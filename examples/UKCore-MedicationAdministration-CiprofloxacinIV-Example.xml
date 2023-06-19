@@ -16,6 +16,9 @@
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
+	<supportingInformation>
+		<reference value="RequestGroup/UKCore-RequestGroup-Ciprofloxacin-Example"/>
+	</supportingInformation>
 	<effectiveDateTime value="2023-06-30T13:00:00+00:00"/>
 	<request>
 		<reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinIV-Example"/>
