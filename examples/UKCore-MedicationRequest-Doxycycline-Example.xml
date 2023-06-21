@@ -12,7 +12,7 @@
 	<medicationCodeableConcept>
 		<coding>
 			<system value="https://dmd.nhs.uk"/>
-			<code value="324059006"/>
+			<code value="41948311000001104"/>
 			<display value="Doxycycline 100mg capsules"/>
 		</coding>
 	</medicationCodeableConcept>
