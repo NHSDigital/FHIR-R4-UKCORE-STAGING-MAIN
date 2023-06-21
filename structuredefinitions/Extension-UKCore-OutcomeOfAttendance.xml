@@ -4,7 +4,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
   <version value="2.1.0" />
   <name value="ExtensionUKCoreOutcomeOfAttendance" />
-  <title value="Extension UK Core Outcome of Attendance" />
+  <title value="Extension UK Core Outcome Of Attendance" />
   <status value="active" />
   <date value="2022-01-07" />
   <publisher value="HL7 UK" />
