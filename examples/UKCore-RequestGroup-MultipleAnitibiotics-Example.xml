@@ -17,6 +17,7 @@
 	<author>
 		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
 	</author>
+	<note value="The preferred option is Amoxicillin 500mg capsules, three times a day."/>
 	<action>
 		<type>
 			<coding>
