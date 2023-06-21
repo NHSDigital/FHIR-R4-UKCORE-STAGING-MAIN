@@ -12,7 +12,7 @@
 	<medicationCodeableConcept>
 		<coding>
 			<system value="https://dmd.nhs.uk"/>
-			<code value="324244008"/>
+			<code value="41946511000001109"/>
 			<display value="Clarithromycin 500mg tablets"/>
 		</coding>
 	</medicationCodeableConcept>
