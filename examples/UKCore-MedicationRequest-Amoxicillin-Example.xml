@@ -31,7 +31,14 @@
 		</coding>
 	</courseOfTherapyType>
 	<dosageInstruction>
-		<text value="Amoxicillin 500mg capsules, three times a day."/>
+		<text value="500mg - three times a day."/>
+		<additionalInstruction>
+    <coding> 
+        <system value="http://snomed.info/sct"/> 
+        <code value="890458001"/> 
+        <display value="Penicillin-containing product"/> 
+    </coding>
+</additionalInstruction>
 		<timing>
 			<repeat>
 				<frequency value="3"/>

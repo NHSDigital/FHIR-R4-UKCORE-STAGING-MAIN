@@ -31,7 +31,7 @@
 		</coding>
 	</courseOfTherapyType>
 	<dosageInstruction>
-		<text value="Clarithromycin 500mg tablet, three times a day."/>
+		<text value="500mg - three times a day."/>
 		<timing>
 			<repeat>
 				<frequency value="3"/>

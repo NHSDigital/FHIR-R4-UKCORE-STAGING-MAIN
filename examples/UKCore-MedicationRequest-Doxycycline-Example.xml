@@ -32,7 +32,20 @@
 	</courseOfTherapyType>
 	<dosageInstruction>
 		<sequence value="1"/>
-		<text value="Doxycycline 200mg stat (now), followed by 100mg daily."/>
+		<text value="200mg - once a day - for 1 day"/>
+		<timing>
+            <repeat>
+                <boundsDuration>
+                    <value value="1" />
+                    <unit value="day" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="d" />
+                </boundsDuration>
+                <frequency value="1" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
 		<site>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -65,7 +78,7 @@
 	</dosageInstruction>
 	<dosageInstruction>
 		<sequence value="2"/>
-		<text value="Doxycycline 200mg stat (now), followed by 100mg daily."/>
+		<text value="100mg - once a day."/>
 		<timing>
 			<repeat>
 				<frequency value="1"/>

@@ -47,6 +47,13 @@
 	</receiver>
 	<dosageInstruction>
 		<text value="Take 1 capsule, 3 times a day."/>
+		<additionalInstruction>
+    <coding> 
+        <system value="http://snomed.info/sct"/> 
+        <code value="890458001"/> 
+        <display value="Penicillin-containing product"/> 
+    </coding>
+</additionalInstruction>
 		<timing>
 			<repeat>
 				<frequency value="3"/>
