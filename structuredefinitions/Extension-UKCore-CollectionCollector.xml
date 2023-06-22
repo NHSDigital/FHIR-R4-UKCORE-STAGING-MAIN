@@ -3,7 +3,7 @@
   <id value="Extension-UKCore-CollectionCollector" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
   <version value="1.0.0" />
-  <name value="Extension-UKCore-CollectionCollector" />
+  <name value="ExtensionUKCoreCollectionCollector" />
   <title value="Extension UK Core Collection Collector" />
   <status value="active" />
   <date value="2023-04-28" />
