@@ -1,0 +1,40 @@
+<RequestGroup xmlns="http://hl7.org/fhir">
+	<id value="UKCore-RequestGroup-Paracetamol-Example"/>
+	<status value="completed"/>
+	<intent value="order"/>
+	<priority value="routine"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="33633005"/>
+			<display value="Prescription of drug"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<authoredOn value="2023-06-15T15:00:00.000Z"/>
+	<author>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+	</author>
+	<action>
+		<type>
+			<coding>
+				<code value="create"/>
+			</coding>
+		</type>
+		<selectionBehavior value="at-most-one"/>
+		<action id="UKCore-MedicationDispense-ParacetamolOral-Example">
+			<description value="Paracetamol 500mg, four times a day orally."/>
+			<resource>
+				<reference value="MedicationRequest/UKCore-MedicationDispense-ParacetamolOral-Example"/>
+			</resource>
+		</action>
+		<action id="UKCore-MedicationRequest-ParacetamolIV-Example">
+			<description value="Paracetamol 500mg, four times a day via IV."/>
+			<resource>
+				<reference value="MedicationRequest/UKCore-MedicationRequest-ParacetamolIV-Example"/>
+			</resource>
+		</action>
+	</action>
+</RequestGroup>
