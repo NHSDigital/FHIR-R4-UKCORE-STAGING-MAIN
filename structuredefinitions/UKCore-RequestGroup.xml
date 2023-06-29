@@ -137,9 +137,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
-      <type>
-        <code value="string" />
-      </type>
     </element>
     <element id="RequestGroup.action.participant">
       <path value="RequestGroup.action.participant" />
