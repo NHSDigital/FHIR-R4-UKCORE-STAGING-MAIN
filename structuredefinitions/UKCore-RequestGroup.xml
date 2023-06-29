@@ -59,20 +59,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="RequestGroup.basedOn.identifier.assigner">
-      <path value="RequestGroup.basedOn.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="RequestGroup.replaces.identifier.assigner">
-      <path value="RequestGroup.replaces.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="RequestGroup.groupIdentifier.assigner">
       <path value="RequestGroup.groupIdentifier.assigner" />
       <type>
@@ -85,6 +71,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
     </element>
     <element id="RequestGroup.subject.identifier.assigner">
@@ -106,6 +93,15 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="RequestGroup.author">
+      <path value="RequestGroup.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
     </element>
     <element id="RequestGroup.author.identifier.assigner">
