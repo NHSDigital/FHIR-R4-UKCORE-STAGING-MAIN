@@ -175,7 +175,7 @@
 		</resource>
 		<resource>
 			<type value="RequestGroup"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup-Medication"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup"/>
 		</resource>
 		<resource>
 			<type value="Schedule"/>
