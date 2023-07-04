@@ -170,15 +170,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="RequestGroup.action.resource">
-      <path value="RequestGroup.action.resource" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
-      </type>
-    </element>
     <element id="RequestGroup.action.resource.identifier.assigner">
       <path value="RequestGroup.action.resource.identifier.assigner" />
       <type>
