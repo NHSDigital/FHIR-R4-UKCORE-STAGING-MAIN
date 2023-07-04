@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-RequestGroup-Medication" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup-Medication" />
+  <id value="UKCore-RequestGroup" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup" />
   <version value="1.0.0" />
-  <name value="UKCoreRequestGroupMedication" />
-  <title value="UK Core RequestGroup Medication" />
+  <name value="UKCoreRequestGroup" />
+  <title value="UK Core RequestGroup" />
   <status value="draft" />
   <date value="2023-06-09" />
   <publisher value="HL7 UK" />
@@ -59,8 +59,8 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="RequestGroup.basedOn.identifier.assigner">
-      <path value="RequestGroup.basedOn.identifier.assigner" />
+	<element id="RequestGroup.basedOn.identifier.assigner">
+	  <path value="RequestGroup.basedOn.identifier.assigner" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -80,19 +80,12 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-    <element id="RequestGroup.intent">
-      <path value="RequestGroup.intent" />
-      <fixedCode value="order" />
-    </element>
-    <element id="RequestGroup.priority">
-      <path value="RequestGroup.priority" />
-      <max value="0" />
-    </element>
     <element id="RequestGroup.subject">
       <path value="RequestGroup.subject" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
     </element>
     <element id="RequestGroup.subject.identifier.assigner">
@@ -114,6 +107,15 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="RequestGroup.author">
+      <path value="RequestGroup.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
       </type>
     </element>
     <element id="RequestGroup.author.identifier.assigner">
@@ -149,13 +151,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="RequestGroup.action.priority">
-      <path value="RequestGroup.action.priority" />
-      <max value="0" />
     </element>
     <element id="RequestGroup.action.participant">
       <path value="RequestGroup.action.participant" />
@@ -173,31 +168,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="RequestGroup.action.groupingBehavior">
-      <path value="RequestGroup.action.groupingBehavior" />
-      <max value="0" />
-    </element>
-    <element id="RequestGroup.action.requiredBehavior">
-      <path value="RequestGroup.action.requiredBehavior" />
-      <max value="0" />
-    </element>
-    <element id="RequestGroup.action.precheckBehavior">
-      <path value="RequestGroup.action.precheckBehavior" />
-      <max value="0" />
-    </element>
-    <element id="RequestGroup.action.cardinalityBehavior">
-      <path value="RequestGroup.action.cardinalityBehavior" />
-      <max value="0" />
-    </element>
-    <element id="RequestGroup.action.resource">
-      <path value="RequestGroup.action.resource" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
       </type>
     </element>
     <element id="RequestGroup.action.resource.identifier.assigner">
