@@ -1,10 +1,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-ConsentUpdateMode" />
-  <url value="https://fhir.hl7.org.uk/Codesystem/UKCore-ConsentUpdateMode" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConsentUpdateMode" />
   <version value="2.0.0" />
   <name value="UKCoreConsentUpdateMode" />
   <title value="UK Core Consent Update Mode" />
-  <status value="draft" />
+  <status value="retired" />
   <date value="2021-09-10" />
   <publisher value="HL7 UK" />
   <contact>
