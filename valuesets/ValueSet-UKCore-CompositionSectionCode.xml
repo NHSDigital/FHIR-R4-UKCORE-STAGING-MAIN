@@ -942,13 +942,13 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="investigations"/>
-			<display value="Investigations"/>
+			<code value="investigation-results"/>
+			<display value="Investigation-results"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="signpost-record"/>
-			<display value="Signpost record"/>
+			<code value="signpost-details"/>
+			<display value="Signpost details"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
