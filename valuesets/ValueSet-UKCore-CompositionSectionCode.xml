@@ -1,23 +1,23 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-CompositionSectionCode"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode"/>
-	<version value="2.1.0"/>
+	<version value="2.2.0"/>
 	<name value="UKCoreCompositionSectionCode"/>
 	<title value="UK Core Composition Section Code"/>
-	<status value="active" />
-	<date value="2022-01-07" />
-	<publisher value="HL7 UK" />
+	<status value="active"/>
+	<date value="2023-08-03"/>
+	<publisher value="HL7 UK"/>
 	<contact>
-		<name value="HL7 UK" />
+		<name value="HL7 UK"/>
 		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
 		</telecom>
 	</contact>
 	<description value="A set of codes that define standard record headings for the exchange of data."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
@@ -26,7 +26,7 @@
 	<expansion>
 		<identifier value="74af73b0-8078-4323-be5e-43ced75666fb"/>
 		<timestamp value="2022-01-07T11:27:44+00:00"/>
-		<total value="173"/>
+		<total value="184"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -904,6 +904,61 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
 			<code value="workplace-ergonomics"/>
 			<display value="Workplace ergonomics"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="plan-and-requested-actions-actions-for-professionals"/>
+			<display value="Plan and requested actions - actions for professionals"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="plan-and-requested-actions-actions-for-person-or-their-carer"/>
+			<display value="Plan and requested actions - actions for person or their carer"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="pregnancy-state"/>
+			<display value="Pregnancy status - pregnancy state"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="expected-delivery-date"/>
+			<display value="Pregnancy status - expected delivery date"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="feeding-status-of-the-baby"/>
+			<display value="Pregnancy status - feeding status of the baby"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="smoking-status"/>
+			<display value="Social context - smoking status"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="date-stopped-smoking"/>
+			<display value="Social context - date stopped smoking"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="red-flags"/>
+			<display value="Red flags"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="ambulatory-blood-pressure-monitoring-declined"/>
+			<display value="Ambulatory blood pressure monitoring declined"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="contraception"/>
+			<display value="Contraception"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="signpost-details"/>
+			<display value="Signpost details"/>
 		</contains>
 	</expansion>
 </ValueSet>
