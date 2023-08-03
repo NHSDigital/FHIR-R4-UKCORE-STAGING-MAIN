@@ -26,7 +26,7 @@
 	<expansion>
 		<identifier value="74af73b0-8078-4323-be5e-43ced75666fb"/>
 		<timestamp value="2022-01-07T11:27:44+00:00"/>
-		<total value="187"/>
+		<total value="186"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -939,11 +939,6 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
 			<code value="vaccinations"/>
 			<display value="Vaccinations"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="investigation-results"/>
-			<display value="Investigation results"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>

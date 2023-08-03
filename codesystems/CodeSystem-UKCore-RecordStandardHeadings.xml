@@ -741,10 +741,6 @@
 		<display value="Vaccinations"/>
 	</concept>
 	<concept>
-		<code value="investigation-results"/>
-		<display value="Investigation results"/>
-	</concept>
-	<concept>
 		<code value="signpost-details"/>
 		<display value="Signpost details"/>
 	</concept>
