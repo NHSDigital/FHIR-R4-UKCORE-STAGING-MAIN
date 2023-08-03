@@ -943,7 +943,7 @@
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
 			<code value="investigation-results"/>
-			<display value="Investigation-results"/>
+			<display value="Investigation results"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
