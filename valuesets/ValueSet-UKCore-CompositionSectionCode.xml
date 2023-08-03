@@ -26,7 +26,7 @@
 	<expansion>
 		<identifier value="74af73b0-8078-4323-be5e-43ced75666fb"/>
 		<timestamp value="2022-01-07T11:27:44+00:00"/>
-		<total value="184"/>
+		<total value="190"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -907,38 +907,73 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="plan-and-requested-actions-actions-for-professionals"/>
-			<display value="Plan and requested actions - actions for professionals"/>
+			<code value="person-demographics"/>
+			<display value="Person demographics"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="plan-and-requested-actions-actions-for-person-or-their-carer"/>
-			<display value="Plan and requested actions - actions for person or their carer"/>
+			<code value="contact-with-professionals"/>
+			<display value="Contact with professionals"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="pregnancy-state"/>
-			<display value="Pregnancy status - pregnancy state"/>
+			<code value="future-appointments"/>
+			<display value="Future appointments"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="expected-delivery-date"/>
-			<display value="Pregnancy status - expected delivery date"/>
+			<code value="gp-practice"/>
+			<display value="GP practice"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="feeding-status-of-the-baby"/>
-			<display value="Pregnancy status - feeding status of the baby"/>
+			<code value="consent"/>
+			<display value="Consent"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="smoking-status"/>
-			<display value="Social context - smoking status"/>
+			<code value="allergies-and-adverse-reactions"/>
+			<display value="Allergies and adverse reactions"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="date-stopped-smoking"/>
-			<display value="Social context - date stopped smoking"/>
+			<code value="appliances"/>
+			<display value="Appliances"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="vaccinations"/>
+			<display value="Vaccinations"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="presenting-complaint-or-issues"/>
+			<display value="Presenting complaint or issues"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="clinical-narrative"/>
+			<display value="Clinical narrative"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="investigations"/>
+			<display value="Investigations"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="signpost-record"/>
+			<display value="Signpost record"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="procedures-and-therapies"/>
+			<display value="Procedures and therapies"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
+			<code value="pregnancy-status"/>
+			<display value="Pregnancy status"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
@@ -947,18 +982,13 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="ambulatory-blood-pressure-monitoring-declined"/>
-			<display value="Ambulatory blood pressure monitoring declined"/>
+			<code value="documents"/>
+			<display value="Documents"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="contraception"/>
-			<display value="Contraception"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="signpost-details"/>
-			<display value="Signpost details"/>
+			<code value="assessments"/>
+			<display value="Assessments"/>
 		</contains>
 	</expansion>
 </ValueSet>
