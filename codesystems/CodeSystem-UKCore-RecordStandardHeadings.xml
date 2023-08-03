@@ -733,24 +733,12 @@
 		<display value="Consent"/>
 	</concept>
 	<concept>
-		<code value="allergies-and-adverse-reactions"/>
-		<display value="Allergies and adverse reactions"/>
-	</concept>
-	<concept>
 		<code value="appliances"/>
 		<display value="Appliances"/>
 	</concept>
 	<concept>
 		<code value="vaccinations"/>
 		<display value="Vaccinations"/>
-	</concept>
-	<concept>
-		<code value="presenting-complaint-or-issues"/>
-		<display value="Presenting complaint or issues"/>
-	</concept>
-	<concept>
-		<code value="clinical-narrative"/>
-		<display value="Clinical narrative"/>
 	</concept>
 	<concept>
 		<code value="investigations"/>

@@ -26,7 +26,7 @@
 	<expansion>
 		<identifier value="74af73b0-8078-4323-be5e-43ced75666fb"/>
 		<timestamp value="2022-01-07T11:27:44+00:00"/>
-		<total value="190"/>
+		<total value="187"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -932,11 +932,6 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="allergies-and-adverse-reactions"/>
-			<display value="Allergies and adverse reactions"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
 			<code value="appliances"/>
 			<display value="Appliances"/>
 		</contains>
@@ -944,16 +939,6 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
 			<code value="vaccinations"/>
 			<display value="Vaccinations"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="presenting-complaint-or-issues"/>
-			<display value="Presenting complaint or issues"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="clinical-narrative"/>
-			<display value="Clinical narrative"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
