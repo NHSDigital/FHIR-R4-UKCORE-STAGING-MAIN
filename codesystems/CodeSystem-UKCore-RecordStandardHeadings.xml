@@ -713,47 +713,71 @@
 		<display value="Visual field report"/>
 	</concept>
 	<concept>
-		<code value="plan-and-requested-actions-actions-for-person-or-their-carer"/>
-		<display value="Plan and requested actions - actions for person or their carer"/>
+		<code value="person-demographics"/>
+		<display value="Person demographics"/>
 	</concept>
 	<concept>
-		<code value="plan-and-requested-actions-actions-for-professionals"/>
-		<display value="Plan and requested actions - actions for professionals"/>
+		<code value="contact-with-professionals"/>
+		<display value="Contact with professionals"/>
 	</concept>
 	<concept>
-		<code value="pregnancy-state"/>
-		<display value="Pregnancy status - pregnancy state"/>
+		<code value="future-appointments"/>
+		<display value="Future appointments"/>
 	</concept>
 	<concept>
-		<code value="expected-delivery-date"/>
-		<display value="Pregnancy status - expected delivery date"/>
+		<code value="gp-practice"/>
+		<display value="GP practice"/>
 	</concept>
 	<concept>
-		<code value="feeding-status-of-the-baby"/>
-		<display value="Pregnancy status - feeding status of the baby"/>
+		<code value="consent"/>
+		<display value="Consent"/>
 	</concept>
 	<concept>
-		<code value="smoking-status"/>
-		<display value="Social context - smoking status"/>
+		<code value="allergies-and-adverse-reactions"/>
+		<display value="Allergies and adverse reactions"/>
 	</concept>
 	<concept>
-		<code value="date-stopped-smoking"/>
-		<display value="Social context - date stopped smoking"/>
+		<code value="appliances"/>
+		<display value="Appliances"/>
+	</concept>
+	<concept>
+		<code value="vaccinations"/>
+		<display value="Vaccinations"/>
+	</concept>
+	<concept>
+		<code value="presenting-complaint-or-issues"/>
+		<display value="Presenting complaint or issues"/>
+	</concept>
+	<concept>
+		<code value="clinical-narrative"/>
+		<display value="Clinical narrative"/>
+	</concept>
+	<concept>
+		<code value="investigations"/>
+		<display value="Investigations"/>
+	</concept>
+	<concept>
+		<code value="signpost-record"/>
+		<display value="Signpost record"/>
+	</concept>
+	<concept>
+		<code value="procedures-and-therapies"/>
+		<display value="Procedures and therapies"/>
+	</concept>
+	<concept>
+		<code value="pregnancy-status"/>
+		<display value="Pregnancy status"/>
 	</concept>
 	<concept>
 		<code value="red-flags"/>
 		<display value="Red flags"/>
 	</concept>
 	<concept>
-		<code value="ambulatory-blood-pressure-monitoring-declined"/>
-		<display value="Ambulatory blood pressure monitoring declined"/>
+		<code value="documents"/>
+		<display value="Documents"/>
 	</concept>
 	<concept>
-		<code value="contraception"/>
-		<display value="Contraception"/>
-	</concept>
-	<concept>
-		<code value="signpost-details"/>
-		<display value="Signpost details"/>
+		<code value="assessments"/>
+		<display value="Assessments"/>
 	</concept>
 </CodeSystem>
