@@ -962,8 +962,8 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-			<code value="documents"/>
-			<display value="Documents"/>
+			<code value="documents-including-correspondence-audio-and-images"/>
+			<display value="Documents (including correspondence, audio and images)"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>

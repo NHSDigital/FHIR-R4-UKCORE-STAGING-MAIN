@@ -757,8 +757,8 @@
 		<display value="Red flags"/>
 	</concept>
 	<concept>
-		<code value="documents"/>
-		<display value="Documents"/>
+		<code value="documents-including-correspondence-audio-and-images"/>
+		<display value="Documents (including correspondence, audio and images)"/>
 	</concept>
 	<concept>
 		<code value="assessments"/>
