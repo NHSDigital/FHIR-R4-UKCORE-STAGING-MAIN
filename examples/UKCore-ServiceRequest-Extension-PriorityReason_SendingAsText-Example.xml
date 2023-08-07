@@ -1,5 +1,5 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
-	<id value="UKCore-ServiceRequest-Extension-PriorityReasonString-Example"/>
+	<id value="UKCore-ServiceRequest-Extension-PriorityReason_SendingAsText-Example"/>
 	<priority value="urgent">
 		<!-- ***************extension start*************** -->
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">

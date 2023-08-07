@@ -1,5 +1,5 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Practitioner-PharmacistJimmyChuck-Example" />
+  <id value="UKCore-Practitioner-Pharmacist-JimmyChuck-Example" />
   <identifier>
     <system value="https://fhir.nhs.uk/Id/sds-user-id" />
     <value value="P12345678" />

@@ -1,5 +1,5 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationDispense-ParacetamolOral-Example"/>
+	<id value="UKCore-MedicationDispense-CiprofloxacinOral-Example"/>
 	<status value="completed"/>
 	<category>
 		<coding>

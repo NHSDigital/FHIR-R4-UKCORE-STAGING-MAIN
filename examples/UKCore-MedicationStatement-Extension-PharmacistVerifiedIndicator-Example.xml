@@ -1,5 +1,5 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationStatement-Extension-PharmacistVerified-Example"/>
+	<id value="UKCore-MedicationStatement-Extension-PharmacistVerifiedIndicator-Example"/>
 	<!-- **************extension start************** -->
 	<!--Pharmacist Verified Indicator extension details-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator">
