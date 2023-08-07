@@ -1,5 +1,5 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationStatement-Extension-MedicationPrescribingOrganizationType-Example"/>
+	<id value="UKCore-Extension-MedicationPrescribingOrganizationType-Example"/>
 	<!-- **************extension start************** -->
 	<!--Medication Prescribing Organization extension details-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType">
