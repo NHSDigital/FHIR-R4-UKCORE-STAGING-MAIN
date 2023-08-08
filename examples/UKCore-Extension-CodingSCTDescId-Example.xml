@@ -1,0 +1,20 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-CodingSCTDescId-Example"/>
+	<code>
+		<coding>
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<valueString value="Bronchial asthma"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<valueId value="301480018"/>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<code value="195967001"/>
+			<display value="Asthma"/>
+			<userSelected value="true"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>

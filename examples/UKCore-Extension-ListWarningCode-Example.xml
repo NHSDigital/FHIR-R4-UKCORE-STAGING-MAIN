@@ -1,0 +1,21 @@
+<List xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Extension-ListWarningCode-Example" />
+    <!--  **************extension start**************  -->
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode">
+        <valueCode value="data-in-transit"/>
+    </extension>
+    <!--  **************extension end**************  -->
+    <status value="current" />
+    <mode value="working" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="826501000000100" />
+            <display value="Miscellaneous record" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <date value="2021-12-10T13:00:00+00:00" />
+</List>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-VaccinationProcedure-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="73701000119109"/>
+				<display value="Influenza vaccination given"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+	<status value="completed"/>
+	<vaccineCode>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="11278411000001109"/>
+			<display value="Influenza vaccine (split virion, inactivated) suspension for injection 0.5ml pre-filled syringes (Pfizer Ltd)"/>
+		</coding>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</patient>
+	<occurrenceDateTime value="2013-01-10"/>
+</Immunization>
