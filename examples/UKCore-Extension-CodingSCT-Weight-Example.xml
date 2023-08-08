@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-Sn-Extension-CodingSCT-Weight-Example"/>
+	<id value="UKCore-Extension-CodingSCT-Weight-Example"/>
 	<status value="final"/>
 	<!-- **************Snippet start************** -->
 	<code>

@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-Sn-Extension-CodingSCT-Potassium-Example"/>
+	<id value="UKCore-Extension-CodingSCT-Potassium-Example"/>
 	<status value="final"/>
 	<!-- **************Snippet start************** -->
 	<code>

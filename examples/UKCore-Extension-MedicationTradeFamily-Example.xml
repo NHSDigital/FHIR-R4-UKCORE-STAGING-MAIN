@@ -1,5 +1,5 @@
 <Medication xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Medication-Extension-MedicationTradeFamily-Example"/>
+	<id value="UKCore-Extension-MedicationTradeFamily-Example"/>
 	<!-- **************extension start************** -->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily">
 		<valueCodeableConcept>

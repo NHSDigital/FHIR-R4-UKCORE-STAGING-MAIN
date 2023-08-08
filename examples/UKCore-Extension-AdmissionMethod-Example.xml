@@ -1,5 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Encounter-Extension-AdmissionMethod-Example"/>
+	<id value="UKCore-Extension-AdmissionMethod-Example"/>
 	<status value="finished"/>
 	<class>
 		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
