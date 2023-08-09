@@ -1,5 +1,5 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationRequest-Extension-RepeatInformation-Example"/>
+	<id value="UKCore-Extension-RepeatInformation-Example"/>
 	<!-- **************extension start************** -->
 	<!--MedicationRepeatInformation extension details-->
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
