@@ -1,0 +1,26 @@
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-VaccinationProcedure-COVID-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="1324681000000101"/>
+				<display value="Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine (procedure)"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<!-- **************extension end************** -->
+	<status value="completed"/>
+	<vaccineCode>
+		<coding>
+			<system value="https://dmd.nhs.uk"/>
+			<code value="39116211000001106"/>
+			<display value="Generic COVID-19 Vaccine Vaxzevria (ChAdOx1 S [recombinant]) not less than 2.5x100,000,000 infectious units/0.5ml dose suspension for injection multidose vials"/>
+		</coding>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</patient>
+	<occurrenceDateTime value="2021-07-20"/>
+</Immunization>
