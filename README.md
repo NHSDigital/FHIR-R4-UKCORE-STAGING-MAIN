@@ -5,6 +5,8 @@ Uk Core Repository of FHIR Assets for HL7 FHIR® UK Core Release 1 Implementatio
 ## Developers Information
 The IG content spell / link / error checking can be found within the [IOPS-FHIR-Test-Scripts repo](https://github.com/NHSDigital/IOPS-FHIR-Test-Scripts/tree/main/IGPageContentValidator).
 
+The NamingSystemValidator information can be within the [IOPS-FHIR-Test-Scripts repo](https://github.com/NHSDigital/IOPS-FHIR-Test-Scripts/tree/main/NamingSystemChecker).
+
 ## Main Branch Status
 
 FHIR Validation with Terminology Checks 
