@@ -1,0 +1,22 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-AddressKey-Example"/>
+	<address>
+		<!-- **************extension start************** -->
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+			<extension url="type">
+				<valueCoding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+					<code value="PAF"/>
+					<display value="Postcode Address File"/>
+				</valueCoding>
+			</extension>
+			<extension url="value">
+				<valueString value="LS10ABC"/>
+			</extension>
+		</extension>
+		<line value="4 Sandmoor Drive"/>
+		<city value="LEEDS"/>
+		<postalCode value="LS17 7DF"/>
+		<!-- *************extension end *****************-->
+	</address>
+</Patient>

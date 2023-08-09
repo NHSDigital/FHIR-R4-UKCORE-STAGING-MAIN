@@ -1,0 +1,25 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Practitioner-PharmacistJimmyChuck-Example" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+    <value value="P12345678" />
+  </identifier>
+  <name>
+    <family value="Chuck" />
+    <given value="Jimmy" />
+    <prefix value="Mr" />
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="0113 6323222" />
+    <use value="work" />
+  </telecom>
+  <address>
+    <line value="INHOUSE PHARMACY" />
+    <line value="ST. JAMES'S UNIVERSITY HOSPITAL" />   
+    <line value="BECKETT STREET" />
+    <city value="LEEDS" />
+    <postalCode value="LS9 7TF" />
+    <country value="ENGLAND" />
+  </address>
+</Practitioner>

@@ -1,0 +1,14 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Extension-EthnicCategory-Example" />
+  <!-- **************extension start************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland" />
+        <code value="A" />
+        <display value="White - British" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <!-- *************extension end *****************-->
+</Patient>

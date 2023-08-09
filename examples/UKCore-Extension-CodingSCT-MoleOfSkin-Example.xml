@@ -1,0 +1,34 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-CodingSCT-MoleOfSkin-Example"/>
+	<!-- **************Snippet start************** -->
+	<code>
+		<coding>
+			<system value="http://read.info/ctv3"/>
+			<code value="X78Uv"/>
+			<!-- no term code, so CTV3 PT is implied? -->
+			<display value="Benign melanocytic naevus skin"/>
+			<!-- text of V3 PT -->
+		</coding>
+		<coding>
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<valueString value="Mole of skin"/>
+				<!-- text for id = 1787065011 -->
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<valueId value="1787065011"/>
+				<!-- not the SNOMED PT -->
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<code value="400010006"/>
+			<!-- SNOMED conceptId -->
+			<display value="Melanocytic naevus of skin"/>
+			<!-- text of SNOMED PT -->
+		</coding>
+		<text value="Moles"/>
+		<!-- what user saw on screen, from data entry template -->
+	</code>
+	<!-- **************Snippet end************** -->
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Condition>

@@ -1,0 +1,31 @@
+<Encounter xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-LegalStatus-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus">
+		<extension url="legalStatusContext">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-LegalStatusContext"/>
+					<code value="admission"/>
+					<display value="Admission"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="legalStatusClassification">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-LegalStatusClassificationWales"/>
+					<code value="02"/>
+					<display value="Formally detained under Mental Health Act Section 2 (Admission for assessment)"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<!-- **************extension end************** -->
+	<status value="finished"/>
+	<class>
+		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+		<code value="IMP"/>
+		<display value="inpatient encounter"/>
+	</class>
+</Encounter>
