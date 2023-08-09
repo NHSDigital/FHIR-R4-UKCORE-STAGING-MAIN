@@ -1,0 +1,41 @@
+<Appointment xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-DeliveryChannel-Example"/>
+	<!-- ***************extension start*************** -->
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
+		<valueCode value="In-person"/>
+	</extension>
+	<!-- **************extension end ****************** -->
+	<status value="booked"/>
+	<start value="2022-03-11T10:46:00+00:00"/>
+	<end value="2022-03-11T13:20:00+00:00"/>
+	<participant>
+		<actor>
+			<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+			<display value="Richard Smith"/>
+		</actor>
+		<required value="required"/>
+		<status value="accepted"/>
+	</participant>
+	<participant>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+				<code value="ATND"/>
+			</coding>
+		</type>
+		<actor>
+			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+			<display value="Dr Sandra Gose"/>
+		</actor>
+		<required value="required"/>
+		<status value="accepted"/>
+	</participant>
+	<participant>
+		<actor>
+			<reference value="Location/UKCore-Location-HospitalSJUH-Example"/>
+			<display value="Orthopaedic Trauma Department, St James' University Hospital, Leeds"/>
+		</actor>
+		<required value="required"/>
+		<status value="accepted"/>
+	</participant>
+</Appointment>

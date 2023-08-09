@@ -1,0 +1,20 @@
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Extension-OutcomeofAttendance-Example" />
+    <!--  **************extension start**************  -->
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeofAttendance">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OutcomeOfAttendanceEngland" />
+                <code value="1" />
+                <display value="Discharged from consultant's care (last attendance)" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <!--  **************extension end**************  -->
+    <status value="finished" />
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="IMP" />
+        <display value="inpatient encounter" />
+    </class>
+</Encounter>

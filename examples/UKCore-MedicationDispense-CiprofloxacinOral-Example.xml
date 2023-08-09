@@ -1,5 +1,5 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationDispense-ParacetamolOral-Example"/>
+	<id value="UKCore-MedicationDispense-CiprofloxacinOral-Example"/>
 	<status value="completed"/>
 	<category>
 		<coding>
@@ -12,7 +12,7 @@
 		<coding>
 			<system value="https://dmd.nhs.uk"/>
 			<code value="18460411000001105"/>
-			<display value="Ciprofloxacin 500mg tablets (Accord Healthcare Ltd)"/>
+			<display value="Ciprofloxacin 500mg tablets (Accord-UK Ltd)"/>
 		</coding>
 	</medicationCodeableConcept>
 	<supportingInformation>

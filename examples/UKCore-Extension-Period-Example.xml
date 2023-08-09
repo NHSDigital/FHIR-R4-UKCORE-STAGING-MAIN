@@ -1,0 +1,16 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-Period-Example"/>
+	<!-- **************extension start************** -->
+	<extension url="http://hl7.org/fhir/StructureDefinition/organization-period">
+		<valuePeriod>
+			<start value="2017-01-01T00:00:00.000Z"/>
+		</valuePeriod>
+	</extension>
+	<!-- *************extension end *****************-->
+	<identifier>
+		<use value="official"/>
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+		<value value="RR8"/>
+	</identifier>
+	<name value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
+</Organization>

@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-CodingSCT-Potassium-Example"/>
+	<status value="final"/>
+	<!-- **************Snippet start************** -->
+	<code>
+		<coding>
+			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+				<valueString value="Serum potassium measurement"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/coding-sctdescid">
+				<valueId value="405941011"/>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<code value="1000651000000109"/>
+			<display value="Serum potassium level"/>
+			<userSelected value="true"/>
+			<!--flags the coding originally actually selected by the user -->
+		</coding>
+		<text value="Serum Potassium"/>
+		<!-- what the user saw on screen, from a data entry template -->
+	</code>
+	<!-- **************Snippet end************** -->
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+</Observation>
