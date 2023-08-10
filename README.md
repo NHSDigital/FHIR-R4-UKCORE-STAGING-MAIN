@@ -1,6 +1,6 @@
 # FHIR-R4-UKCORE-STAGING-MAIN
 
-UK Core Repository of FHIR Assets for HL7 FHIR® UK Core Implementation Guide [Simplifier project](https://simplifier.net/hl7fhirukcorer4)
+UK Core Repository of FHIR Assets for HL7 FHIR® UK Core Implementation Guide [Simplifier project](https://simplifier.net/hl7fhirukcorer4).
 
 ## Developers Information
 ### GitHub Actions
