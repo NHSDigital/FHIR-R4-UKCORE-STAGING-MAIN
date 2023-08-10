@@ -24,10 +24,10 @@
 			</coding>
 		</type>
 		<selectionBehavior value="at-most-one"/>
-		<action id="UKCore-MedicationDispense-ParacetamolOral-Example">
+		<action id="UKCore-MedicationRequest-ParacetamolOral-Example">
 			<description value="Paracetamol 500mg, four times a day orally."/>
 			<resource>
-				<reference value="MedicationRequest/UKCore-MedicationDispense-ParacetamolOral-Example"/>
+				<reference value="MedicationRequest/UKCore-MedicationRequest-ParacetamolOral-Example"/>
 			</resource>
 		</action>
 		<action id="UKCore-MedicationRequest-ParacetamolIV-Example">
