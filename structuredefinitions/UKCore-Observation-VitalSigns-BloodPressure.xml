@@ -146,7 +146,7 @@
     </element>
     <element id="Observation.component:systolic.code.text">
       <path value="Observation.component.code.text" />
-      <fixedString value="Systolicv blood pressure" />
+      <fixedString value="Diastolic blood pressure" />
     </element>
     <element id="Observation.component:diastolic.value[x]">
       <path value="Observation.component.value[x]" />
