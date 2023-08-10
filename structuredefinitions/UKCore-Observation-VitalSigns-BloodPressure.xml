@@ -79,7 +79,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="code.text" />
         </discriminator>
         <rules value="closed" />
       </slicing>
@@ -103,6 +103,10 @@
     <element id="Observation.component:systolic.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:systolic.code.text">
+      <path value="Observation.component.code.text" />
+      <fixedString value="Systolic blood pressure" />
     </element>
     <element id="Observation.component:systolic.value[x]">
       <path value="Observation.component.value[x]" />
@@ -131,7 +135,7 @@
     <element id="Observation.component:diastolic.code">
       <path value="Observation.component.code" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="A code from the SNOMED CT UK coding system for diastolic blood pressure" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsBloodPressureDiastolic" />
       </binding>
@@ -139,6 +143,10 @@
     <element id="Observation.component:diastolic.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:systolic.code.text">
+      <path value="Observation.component.code.text" />
+      <fixedString value="Systolicv blood pressure" />
     </element>
     <element id="Observation.component:diastolic.value[x]">
       <path value="Observation.component.value[x]" />
