@@ -42,7 +42,7 @@
 				<code value="72313002"/>
 				<display value="Systolic arterial pressure"/>
 			</coding>
-			<text value="Systolic arterial pressure"/>
+			<text value="Systolic blood pressure"/>
 		</code>
 		<valueQuantity>
 			<value value="140"/>
@@ -58,7 +58,7 @@
 				<code value="1091811000000102"/>
 				<display value="Diastolic arterial pressure"/>
 			</coding>
-			<text value="Diastolic arterial pressure"/>
+			<text value="Diastolic blood pressure"/>
 		</code>
 		<valueQuantity>
 			<value value="90"/>
