@@ -1,5 +1,5 @@
 <Medication xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Medication-Sn-Extension-Amoxicillin-Example"/>
+	<id value="UKCore-Medication-Sn-Amoxicillin-Example"/>
 	<!-- **************Snippet start************** -->
 	<code>
 		<coding>

@@ -1,5 +1,5 @@
 <MessageHeader xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MessageHeader-Extension-ResponseRequest-Example"/>
+	<id value="UKCore-Extension-ResponseRequest-Example"/>
   <!-- **************extension start************** -->
 	<extension url="http://hl7.org/fhir/StructureDefinition/messageheader-response-request">
 		<valueCode value="always"/>
