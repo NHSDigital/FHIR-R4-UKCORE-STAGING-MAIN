@@ -27,7 +27,7 @@
 		</actor>
 	</performer>
 	<authorizingPrescription>
-		<reference value="UKCore-MedicationRequest-ParacetamolOral-Example"/>
+		<reference value="MedicationRequest/UKCore-MedicationRequest-ParacetamolOral-Example"/>
 	</authorizingPrescription>
 	<quantity>
 		<value value="16"/>
