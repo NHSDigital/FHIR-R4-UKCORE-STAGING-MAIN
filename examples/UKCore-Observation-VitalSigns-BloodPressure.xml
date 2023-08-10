@@ -16,7 +16,7 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="75367002"/>
-			<display value="Blood pressure"/>
+			<display value="Blood pressure (observable entity)"/>
 		</coding>
 		<text value="Blood pressure"/>
 	</code>
