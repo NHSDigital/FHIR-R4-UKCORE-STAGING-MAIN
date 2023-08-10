@@ -65,14 +65,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
       </binding>
     </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system for the value of the vital sign." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsValue" />
-      </binding>
-    </element>
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
       <type>
