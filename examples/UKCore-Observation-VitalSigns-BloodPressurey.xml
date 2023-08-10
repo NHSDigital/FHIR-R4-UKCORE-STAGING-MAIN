@@ -1,0 +1,67 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Observation-VitalSigns-BloodPressure-Example"/>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="vital-signs"/>
+			<display value="Vital Signs"/>
+		</coding>
+		<text value="Vital Signs"/>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="75367002"/>
+			<display value="Blood pressure"/>
+		</coding>
+		<text value="Blood pressure"/>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<effectiveDateTime value="2023-08-10"/>
+	<performer>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+	</performer>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="40983000"/>
+			<display value="Structure of upper extremity between shoulder and elbow"/>
+		</coding>
+		<text value="Structure of upper extremity between shoulder and elbow"/>
+	</bodySite>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="72313002"/>
+				<display value="Systolic arterial pressure"/>
+			</coding>
+			<text value="Systolic arterial pressure"/>
+		</code>
+		<valueQuantity>
+			<value value="140"/>
+			<unit value="millimeter of mercury"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mm[Hg]"/>
+		</valueQuantity>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="1091811000000102"/>
+				<display value="Diastolic arterial pressure"/>
+			</coding>
+			<text value="Diastolic arterial pressure"/>
+		</code>
+		<valueQuantity>
+			<value value="90"/>
+			<unit value="millimeter of mercury"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mm[Hg]"/>
+		</valueQuantity>
+	</component>
+</Observation>

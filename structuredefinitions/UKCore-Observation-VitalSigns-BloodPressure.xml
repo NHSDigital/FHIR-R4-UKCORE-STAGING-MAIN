@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure" />
-  <name value="UKCoreObservationVitalSignsBloodPressure" />
   <version value="1.0.0" />
+  <name value="UKCoreObservationVitalSignsBloodPressure" />
   <title value="UK Core Observation Vital Signs Blood Pressure" />
   <status value="draft" />
   <date value="2023-08-10" />
@@ -20,7 +20,7 @@
   <purpose value="To provide implementers with additional support when implementing blood pressure monitoring and to provide a consistent structure to how the data is presented." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
-  <abstract value="false" />  
+  <abstract value="false" />
   <type value="Observation" />
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
   <derivation value="constraint" />
@@ -70,12 +70,16 @@
       <path value="Observation.effective[x]" />
       <min value="1" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code.text" />
+          <path value="code" />
         </discriminator>
         <rules value="closed" />
       </slicing>
@@ -99,10 +103,6 @@
     <element id="Observation.component:systolic.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.component:systolic.code.text">
-      <path value="Observation.component.code.text" />
-      <fixedString value="Systolicv blood pressure" />
     </element>
     <element id="Observation.component:systolic.value[x]">
       <path value="Observation.component.value[x]" />
@@ -139,10 +139,6 @@
     <element id="Observation.component:diastolic.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.component:diastolic.code.text">
-      <path value="Observation.component.code.text" />
-      <fixedString value="Diastolic blood pressure" />
     </element>
     <element id="Observation.component:diastolic.value[x]">
       <path value="Observation.component.value[x]" />
