@@ -24,7 +24,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="(&lt;&lt;271649006|Systolic blood pressure (observable entity)| MINUS (&lt;&lt;716579001|Baseline systolic blood pressure (observable entity)| OR &lt;&lt;814101000000107|Systolic blood pressure centile (observable entity)| OR &lt;&lt;315612005|Target systolic blood pressure (observable entity)|))" />
+        <value value="descendantOrSelfOf 271649006 MINUS (descendantOrSelfOf 716579001 OR descendantOrSelfOf 814101000000107 OR descendantOrSelfOf 315612005)" />
       </filter>
     </include>
   </compose>
