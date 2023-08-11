@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-EarlyWarningTotalScore" />
+  <id value="UKCore-Observation-VitalSigns-EarlyWarningSubScore" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-EarlyWarningSubScore" />
   <version value="1.0.0" />
-  <name value="UKCoreObservationVitalSignsEarlyWarningTotalScore" />
-  <title value="UK Core Observation Vital Signs Early Warning Total Score" />
+  <name value="UKCoreObservationVitalSignsEarlyWarningSubScore" />
+  <title value="UK Core Observation Vital Signs Early Warning Sub Score" />
   <status value="draft" />
   <date value="2023-08-10" />
   <publisher value="HL7 UK" />
@@ -29,8 +30,8 @@
       <path value="Observation.code"/>
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED CT UK coding system for early wanring score totals." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EarlyWarningTotalScore" />
+        <description value="A code from the SNOMED CT UK coding system for early wanring sub scores." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EarlyWarningSubScore" />
       </binding>
     </element>
     <element id="Observation.value[x]">
