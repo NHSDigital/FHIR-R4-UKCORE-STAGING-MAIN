@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-VitalSigns" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreObservationVitalSigns" />
   <title value="UK Core Observation Vital Signs" />
   <status value="draft" />
-  <date value="2022-12-16" />
+  <date value="2023-08-10" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
