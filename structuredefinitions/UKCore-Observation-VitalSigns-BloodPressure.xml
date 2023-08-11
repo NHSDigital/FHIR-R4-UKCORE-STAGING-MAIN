@@ -25,27 +25,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <fixedCode value="final" />
-    </element>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Observation.category.coding.system">
-      <path value="Observation.category.coding.system" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
-    </element>
-    <element id="Observation.category.coding.code">
-      <path value="Observation.category.coding.code" />
-      <fixedCode value="vital-signs" />
-    </element>
-    <element id="Observation.category.coding.display">
-      <path value="Observation.category.coding.display" />
-      <fixedString value="Vital Signs" />
-    </element>
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
@@ -57,18 +36,6 @@
     <element id="Observation.code.coding.display">
       <path value="Observation.code.coding.display" />
       <fixedString value="Blood pressure (observable entity)" />
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <min value="1" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
