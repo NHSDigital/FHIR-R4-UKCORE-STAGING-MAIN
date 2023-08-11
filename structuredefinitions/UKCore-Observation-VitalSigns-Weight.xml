@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Weight" />
+  <version value="1.0.0" />
+  <name value="UKCoreObservationVitalSignsWeight" />
+  <title value="UK Core Observation Vital Signs Weight" />
+  <status value="draft" />
+  <date value="2023-08-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Defines the constraints and extensions on the UK Core Profile Observation" />
+  <purpose value="To provide implementers with additional support when implementing weight measuring and to provide a consistent structure to how the data is presented." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED CT UK coding system for weight measurements." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-WeightMeasurements" />
+      </binding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.value[x].unit">
+      <path value="Observation.value[x].unit" />
+      <fixedString value="kilogram" />
+    </element>
+    <element id="Observation.value[x].system">
+      <path value="Observation.value[x].system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="kg" />
+    </element>
+  </differential>
+</StructureDefinition>

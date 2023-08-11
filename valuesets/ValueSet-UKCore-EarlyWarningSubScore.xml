@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+ <id value="UKCore-LengthMeasurements" />
+ <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-LengthMeasurements" />
+ <version value="1.0.0" />
+ <name value="UKCoreLengthMeasurements" />
+ <title value="UK Core Length Measurements" />
+ <status value="draft" />
+ <date value="2023-08-10" />
+ <publisher value="HL7 UK" />
+ <contact>
+ <name value="HL7 UK" />
+ <telecom>
+ <system value="email" />
+ <value value="ukcore@hl7.org.uk" />
+ <use value="work" />
+ <rank value="1" />
+ </telecom>
+ </contact>
+ <description value="A code from the SNOMED CT UK coding system for the measurement of body lengths / circumferences." />
+ <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+ <compose>
+ <include>
+ <system value="http://snomed.info/sct" />
+ <filter>
+ <property value="constraint" />
+ <op value="=" />
+ <value value="(1104301000000104 OR 1104311000000102 OR 1104321000000108 OR 1104331000000105 OR 1104351000000103 OR 1104341000000101 OR 1104361000000100 OR 1104371000000107)" />
+ </filter>
+ </include>
+ <include>
+ <system value="http://snomed.info/sct" />
+ <filter>
+ <property value="constraint" />
+ <op value="=" />
+ <value value="(1364091000000101  OR 1363271000000106  OR 1364081000000103  OR 1363301000000109  OR 1363311000000106  OR 1363321000000100  OR 1363291000000105 OR 1363331000000103 OR 1363341000000107 OR 1363351000000105 OR 1363361000000108OR OR 1364131000000103 OR 1364121000000100 OR 1363261000000104)" />
+ </filter>
+ </include>
+ </compose>
+</ValueSet>
