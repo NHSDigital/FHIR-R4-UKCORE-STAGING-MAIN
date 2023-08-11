@@ -24,7 +24,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="<<50373000|Body height measure (observable entity)| MINUS (<<1060601000000109|Body height growth rate (observable entity)| OR <<422769007|Method for measuring height (observable entity)| OR <<925931000000103|Mid-parental height (observable entity)| OR <<925951000000105|Predicted adult height (observable entity)| OR <<248336007|Pubis to ground height (observable entity)| OR <<276350001|Subischial leg length (observable entity)|)" />
+        <value value="&lt;&lt;50373000|Body height measure (observable entity)| MINUS (&lt;&lt;1060601000000109|Body height growth rate (observable entity)| OR &lt;&lt;422769007|Method for measuring height (observable entity)| OR &lt;&lt;925931000000103|Mid-parental height (observable entity)| OR &lt;&lt;925951000000105|Predicted adult height (observable entity)| OR &lt;&lt;248336007|Pubis to ground height (observable entity)| OR &lt;&lt;276350001|Subischial leg length (observable entity)|)" />
       </filter>
     </include>
     <include>
@@ -32,7 +32,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="<<363811000|Head circumference measure (observable entity)| MINUS <<248397001|Head circumference centile (observable entity)|" />
+        <value value="&lt;&lt;363811000|Head circumference measure (observable entity)| MINUS &lt;&lt;248397001|Head circumference centile (observable entity)|" />
       </filter>
     </include>
   </compose>
