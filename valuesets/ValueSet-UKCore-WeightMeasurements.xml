@@ -24,7 +24,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="&lt;&lt;27113001|Body weight (observable entity)| MINUS (&lt;&lt;301334000|Birth weight centile (observable entity)| OR &lt;&lt;400967004|Baseline weight (observable entity)| OR &lt;&lt;170804003|Ideal body weight (observable entity)| OR &lt;&lt;852321000000100|Maximum weight (observable entity)| OR &lt;&lt;852311000000106|Minimum weight (observable entity)| OR &lt;&lt;248351003|Previous well-weight (observable entity)| OR &lt;&lt;390734006|Target weight (observable entity)| OR &lt;&lt;363809009|Usual body weight (observable entity)|)" />
+        <value value="descendantOrSelfOf 27113001 MINUS (descendantOrSelfOf 301334000 OR descendantOrSelfOf 400967004 OR descendantOrSelfOf 170804003 OR descendantOrSelfOf 852321000000100 OR descendantOrSelfOf 852311000000106 OR descendantOrSelfOf 248351003 OR descendantOrSelfOf 390734006 OR descendantOrSelfOf 363809009)" />
       </filter>
     </include>
   </compose>
