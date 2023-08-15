@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+<id value="UKCore-Observation-VitalSigns-BMI"/>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCoreObservationVitalSignsBMI" />
   <name value="UKCoreObservationVitalSignsBMI" />
+  <title value="UKCore Observation Vital Signs BMI"/>
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
