@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-VitalSigns-HeartRate"/>
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCoreObservationVitalSignsHeartRate"/>
+	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeartRate"/>
 	<name value="UKCoreObservationVitalSignsHeartRate"/>
 	<title value="UKCore Observation Vital Signs Heart Rate"/>
 	<status value="draft"/>
