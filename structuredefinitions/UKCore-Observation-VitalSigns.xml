@@ -57,6 +57,15 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="ukcore-obs-vs-001" />
+        <severity value="error" />
+        <human value="Where the category is Vital Signs the resource SHALL have a LOINC &quot;magic code&quot;" />
+        <expression value="category.where(code='vital-signs') implies code.coding.where(system='http://loinc.org').exists()" />
+      </constraint>
+    </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <fixedCode value="final" />
@@ -128,12 +137,6 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
-      <constraint>
-        <key value="ukcore-obs-vs-001" />
-        <severity value="error" />
-        <human value="Where the category is Vital Signs the resource SHALL have a LOINC &quot;magic code&quot;" />
-        <expression value="category.where(code='vital-signs') implies code.coding.where(system='http://loinc.org').exists()" />
-      </constraint>
       <binding>
         <strength value="extensible" />
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
