@@ -62,7 +62,7 @@
       <constraint>
         <key value="ukcore-obs-vs-001" />
         <severity value="error" />
-        <human value="Where the category is Vital Signs the resource SHALL have a LOINC &quot;magic code&quot;" />
+        <human value="Where the category is Vital Signs the code.coding SHALL include a LOINC &quot;magic code&quot;" />
         <expression value="category.where(code='vital-signs') implies code.coding.where(system='http://loinc.org').exists()" />
       </constraint>
     </element>
