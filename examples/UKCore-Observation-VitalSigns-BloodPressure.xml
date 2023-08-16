@@ -1,8 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-VitalSigns-BloodPressure-Example"/>
-	<meta>
-	<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure"/>
-	</meta>
 	<status value="final"/>
 	<category>
 		<coding>
