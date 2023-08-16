@@ -116,14 +116,6 @@
       <path value="Observation.category.coding.display" />
       <fixedString value="Survey" />
     </element>
-    <element id="Observation.code">
-      <path value="Observation.code" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of vital sign." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
-      </binding>
-    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
@@ -149,6 +141,11 @@
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+      </binding>
     </element>
     <element id="Observation.code.coding:snomedCT.system">
       <path value="Observation.code.coding.system" />
@@ -210,6 +207,10 @@
     <element id="Observation.component.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
+      </binding>
     </element>
     <element id="Observation.component.code.coding:loinc.system">
       <path value="Observation.component.code.coding.system" />
@@ -218,6 +219,11 @@
     <element id="Observation.component.code.coding:snomedCT">
       <path value="Observation.component.code.coding" />
       <sliceName value="snomedCT" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation for vital-signs" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+      </binding>
     </element>
     <element id="Observation.component.code.coding:snomedCT.system">
       <path value="Observation.component.code.coding.system" />

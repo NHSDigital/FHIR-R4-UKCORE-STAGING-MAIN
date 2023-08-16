@@ -1,5 +1,8 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-VitalSigns-BloodPressure-Example"/>
+	<meta>
+	<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure"/>
+	</meta>
 	<status value="final"/>
 	<category>
 		<coding>
@@ -13,8 +16,13 @@
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="75367002"/>
-			<display value="Blood pressure (observable entity)"/>
+			<display value="Blood pressure"/>
 		</coding>
+        <coding>
+            <system value="http://loinc.org" />
+            <code value="85354-9" />
+            <display value="Blood pressure panel with all children optional" />
+        </coding>
 		<text value="Blood pressure"/>
 	</code>
 	<subject>
@@ -39,6 +47,11 @@
 				<code value="72313002"/>
 				<display value="Systolic arterial pressure"/>
 			</coding>
+            <coding>
+                <system value="http://loinc.org" />
+                <code value="8480-6" />
+                <display value="Systolic blood pressure" />
+            </coding>
 			<text value="Systolic blood pressure"/>
 		</code>
 		<valueQuantity>
@@ -55,6 +68,11 @@
 				<code value="1091811000000102"/>
 				<display value="Diastolic arterial pressure"/>
 			</coding>
+            <coding>
+                <system value="http://loinc.org" />
+                <code value="8462-4" />
+                <display value="Diastolic blood pressure" />
+            </coding>
 			<text value="Diastolic blood pressure"/>
 		</code>
 		<valueQuantity>
