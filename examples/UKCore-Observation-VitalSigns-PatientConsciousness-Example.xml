@@ -1,7 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-ACVPU"/>
-	</meta>
 	<id value="UKCore-Observation-VitalSigns-PatientConsciousness-Example"/>
 	<status value="final"/>
 	<category>

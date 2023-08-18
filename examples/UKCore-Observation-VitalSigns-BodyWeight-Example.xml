@@ -1,7 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-<meta>
-<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Weight" />
-</meta>
 	<id value="UKCore-Observation-VitalSigns-BodyWeight-Example"/>
 	<status value="final"/>
 	<category>
