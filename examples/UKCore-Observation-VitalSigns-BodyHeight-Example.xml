@@ -1,4 +1,7 @@
 <Observation xmlns="http://hl7.org/fhir">
+<meta>
+<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Length" />
+</meta>
 	<id value="UKCore-Observation-VitalSigns-BodyHeight-Example"/>
 	<status value="final"/>
 	<category>
@@ -15,6 +18,11 @@
 			<code value="50373000"/>
 			<display value="Body height measure"/>
 		</coding>
+        <coding>
+            <system value="http://loinc.org" />
+            <code value="8302-2" />
+            <display value="Body height" />
+        </coding>
 	</code>
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>

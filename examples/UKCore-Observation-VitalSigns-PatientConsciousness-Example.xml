@@ -1,13 +1,15 @@
 <Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-ACVPU"/>
+	</meta>
 	<id value="UKCore-Observation-VitalSigns-PatientConsciousness-Example"/>
 	<status value="final"/>
 	<category>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-			<code value="vital-signs"/>
-			<display value="Vital Signs"/>
+			<code value="survey"/>
+			<display value="Survey"/>
 		</coding>
-		<text value="Vital Signs"/>
 	</category>
 	<code>
 		<coding>
