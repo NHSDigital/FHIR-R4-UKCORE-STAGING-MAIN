@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BloodPressure-Systolic" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressureSystolic" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systolic" />
   <version value="1.0.0" />
   <name value="UKCoreBloodPressureSystolic" />
-  <title value="UK Core Blood Pressure Sysstolic" />
+  <title value="UK Core Blood Pressure Systolic" />
   <status value="draft" />
   <date value="2023-08-10" />
   <publisher value="HL7 UK" />
