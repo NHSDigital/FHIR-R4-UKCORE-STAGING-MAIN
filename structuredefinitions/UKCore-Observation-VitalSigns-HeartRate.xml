@@ -1,45 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-HeartRate"/>
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeartRate"/>
-	<name value="UKCoreObservationVitalSignsHeartRate"/>
-	<title value="UKCore Observation Vital Signs Heart Rate"/>
-	<status value="draft"/>
-	<fhirVersion value="4.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Observation"/>
-	<baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Observation.code">
-			<path value="Observation.code"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HeartRate"/>
-			</binding>
-		</element>
-		<element id="Observation.value[x]">
-			<path value="Observation.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="Quantity"/>
-			</type>
-		</element>
-		<element id="Observation.value[x].unit">
-			<path value="Observation.value[x].unit"/>
-			<min value="1"/>
-			<fixedString value="per minute"/>
-		</element>
-		<element id="Observation.value[x].system">
-			<path value="Observation.value[x].system"/>
-			<min value="1"/>
-			<fixedUri value="http://unitsofmeasure.org"/>
-		</element>
-		<element id="Observation.value[x].code">
-			<path value="Observation.value[x].code"/>
-			<min value="1"/>
-			<fixedCode value="/min"/>
-		</element>
-	</differential>
+  <id value="UKCore-Observation-VitalSigns-HeartRate" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeartRate" />
+  <name value="UKCoreObservationVitalSignsHeartRate" />
+  <title value="UKCore Observation Vital Signs Heart Rate" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HeartRate" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="8867-4" />
+    </element>
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.value[x].unit">
+      <path value="Observation.value[x].unit" />
+      <min value="1" />
+      <fixedString value="per minute" />
+    </element>
+    <element id="Observation.value[x].system">
+      <path value="Observation.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <min value="1" />
+      <fixedCode value="/min" />
+    </element>
+  </differential>
 </StructureDefinition>

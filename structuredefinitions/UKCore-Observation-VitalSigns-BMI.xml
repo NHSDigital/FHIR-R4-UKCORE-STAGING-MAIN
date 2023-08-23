@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="UKCore-Observation-VitalSigns-BMI"/>
+  <id value="UKCore-Observation-VitalSigns-BMI" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BMI" />
   <name value="UKCoreObservationVitalSignsBMI" />
-  <title value="UKCore Observation Vital Signs BMI"/>
+  <title value="UKCore Observation Vital Signs BMI" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -18,6 +18,34 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BMI" />
       </binding>
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="39156-5" />
+    </element>
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
