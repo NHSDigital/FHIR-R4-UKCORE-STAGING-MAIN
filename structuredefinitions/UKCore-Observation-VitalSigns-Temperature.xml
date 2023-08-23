@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-VitalSigns-Temperature"/>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCoreObservationVitalSignsTemperature" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Temperature" />
   <version value="0.0.1" />
   <name value="UKCoreObservationVitalSignsTemperature" />
   <title value="UK Core Observation VitalSigns Temperature"/>
