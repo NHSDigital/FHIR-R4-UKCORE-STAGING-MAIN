@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Observation-VitalSigns-Length" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Length" />
+  <version value="1.0.0" />
+  <name value="UKCoreObservationVitalSignsLength" />
+  <title value="UK Core Observation Vital Signs Length" />
+  <status value="draft" />
+  <date value="2023-08-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Defines the constraints and extensions on the UK Core Profile Observation" />
+  <purpose value="To provide implementers with additional support when implementing length / height / circumference measuring and to provide a consistent structure to how the data is presented." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED CT UK coding system for length measurements." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LengthMeasurements" />
+      </binding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.value[x].unit">
+      <path value="Observation.value[x].unit" />
+      <fixedString value="centimeter" />
+    </element>
+    <element id="Observation.value[x].system">
+      <path value="Observation.value[x].system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="cm" />
+    </element>
+  </differential>
+</StructureDefinition>
