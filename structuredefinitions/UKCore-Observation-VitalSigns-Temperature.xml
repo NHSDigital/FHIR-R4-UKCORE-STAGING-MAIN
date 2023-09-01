@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-VitalSigns-Temperature"/>
+  <id value="UKCore-Observation-VitalSigns-Temperature" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Temperature" />
   <version value="0.0.1" />
   <name value="UKCoreObservationVitalSignsTemperature" />
-  <title value="UK Core Observation VitalSigns Temperature"/>
+  <title value="UK Core Observation VitalSigns Temperature" />
   <status value="draft" />
   <date value="2023-08-23" />
   <publisher value="HL7 UK" />
@@ -19,7 +19,7 @@
   </contact>
   <description value="TBA" />
   <purpose value="TBA" />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -27,19 +27,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code">
-      <path value="Observation.code" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-Temperature" />
-      </binding>
-    </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
@@ -53,6 +40,10 @@
       <sliceName value="snomedCT" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-Temperature" />
+      </binding>
     </element>
     <element id="Observation.code.coding:snomedCT.system">
       <path value="Observation.code.coding.system" />
