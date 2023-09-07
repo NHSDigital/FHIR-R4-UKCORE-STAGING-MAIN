@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-BloodPressure-Systolic" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systolic" />
+  <id value="UKCore-BloodPressure-AverageDiastolic" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageDiastolic" />
   <version value="1.0.0" />
-  <name value="UKCoreBloodPressureSystolic" />
-  <title value="UK Core Blood Pressure Systolic" />
+  <name value="UKCoreBloodPressureAverageDiastolic" />
+  <title value="UK Core Blood Pressure Average Diastolic" />
   <status value="draft" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
@@ -16,14 +16,13 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="A code from the SNOMED CT UK coding system for the systolic blood pressure. Selected from the SNOMED CT UK coding system:
-&#13; - DescendantOrSelfOf 271649006 | Systolic blood pressure (observable entity)
-&#13; - MINUS 
-&amp;nbsp;&#13; - 198081000000101  | Ambulatory diastolic blood pressure (observable entity)
-&amp;nbsp;&#13; - 314465004 | 24 hour diastolic blood pressure (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 716579001 | Baseline systolic blood pressure (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 814101000000107 | Systolic blood pressure centile (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 315612005 | Target systolic blood pressure (observable entity)" />
+  <description value="A code from the SNOMED CT UK coding system for the average diastolic blood pressure. Selected from the SNOMED CT UK coding system:
+&#13; - 198091000000104 | Ambulatory diastolic blood pressure (observable entity)
+&#13; - 314465004 | 24 hour diastolic blood pressure (observable entity)
+&#13; - 314462001 | Average 24 hour diastolic blood pressure (observable entity)
+&#13; - 314459004 | Maximum 24 hour diastolic blood pressure (observable entity) 
+&#13; - 314456006 | Minimum 24 hour diastolic blood pressure (observable entity)
+&#13; - DescendantOrSelfOf 314453003 | Average diastolic blood pressure (observable entity)" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -31,7 +30,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="descendantOrSelfOf 271649006 MINUS (198081000000101 OR 314464000 OR descendantOrSelfOf 716579001 OR descendantOrSelfOf 814101000000107 OR descendantOrSelfOf 315612005)" />
+        <value value="198091000000104 OR 314465004 OR 314462001 OR 314459004 OR 314456006 OR descendantOrSelfOf 314453003" />
       </filter>
     </include>
   </compose>

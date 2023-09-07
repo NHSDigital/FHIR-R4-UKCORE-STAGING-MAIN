@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-WeightMeasurements" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-WeightMeasurements" />
+  <id value="UKCore-BloodPressureMeasurementMethod" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressureMeasurementMethod" />
   <version value="1.0.0" />
-  <name value="UKCoreWeightMeasurements" />
-  <title value="UK Core Weight Measurements" />
+  <name value="UKCoreBloodPressureMeasurementMethod" />
+  <title value="UK Core Blood Pressure Measurement Method" />
   <status value="draft" />
-  <date value="2023-08-10" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -16,7 +16,14 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="A code from the SNOMED CT UK coding system for the measurement of body weight." />
+  <description value="A code from the SNOMED CT UK coding system for method in which blood pressure was measured. Selected from the SNOMED CT UK coding system:
+&#13; - 37931006 | Auscultation (procedure)
+810061000000102 | Measurement of blood pressure using manual sphygmomanometer by auscultation over brachial artery (procedure)
+13385008 | Mediate auscultation (procedure)
+765172009 | Doppler ultrasound (procedure)
+113011001 | Palpation (procedure)
+31813000 | Vascular oscillometry (procedure)
+descendantOrSelfOf 42826002 | Systemic arterial pressure monitoring (regime/therapy)" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -24,7 +31,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="descendantOrSelfOf 27113001 MINUS (descendantOrSelfOf 301334000 OR descendantOrSelfOf 400967004 OR descendantOrSelfOf 170804003 OR descendantOrSelfOf 852321000000100 OR descendantOrSelfOf 852311000000106 OR descendantOrSelfOf 248351003 OR descendantOrSelfOf 390734006 OR descendantOrSelfOf 363809009)" />
+        <value value="37931006 OR 810061000000102 OR 13385008 OR 765172009 OR 113011001 OR 31813000 OR descendantOrSelfOf 42826002" />
       </filter>
     </include>
   </compose>

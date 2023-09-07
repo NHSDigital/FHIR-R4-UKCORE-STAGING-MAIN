@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-VitalSigns-BloodPressure" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure" />
+  <id value="UKCore-Observation-ClinicalObs-AverageBloodPressure" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs-AverageBloodPressure" />
   <version value="1.0.0" />
-  <name value="UKCoreObservationVitalSignsBloodPressure" />
-  <title value="UK Core Observation Vital Signs Blood Pressure" />
+  <name value="UKCoreObservationClinicalObsBloodPressure" />
+  <title value="UK Core Observation Clinical Obs Blood Pressure" />
   <status value="draft" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
@@ -18,38 +18,22 @@
     </telecom>
   </contact>
   <description value="Defines the constraints and extensions on the UK Core Profile Observation" />
-  <purpose value="To provide implementers with additional support when implementing blood pressure monitoring and to provide a consistent structure to how the data is presented." />
+  <purpose value="To provide implementers with additional support when implementing average blood pressure monitoring and to provide a consistent structure to how the data is presented." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-    </element>
-    <element id="Observation.code.coding:loinc.code">
+    <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code" />
-      <fixedCode value="85354-9" />
+      <fixedCode value="723232008" />
     </element>
-    <element id="Observation.code.coding:loinc.display">
+    <element id="Observation.code.coding.display">
       <path value="Observation.code.coding.display" />
-      <fixedString value="Blood pressure panel with all children optional" />
-    </element>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.code">
-      <path value="Observation.code.coding.code" />
-      <fixedCode value="75367002" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.display">
-      <path value="Observation.code.coding.display" />
-      <fixedString value="Blood pressure" />
+      <fixedString value="Average blood pressure" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
@@ -83,37 +67,10 @@
     </element>
     <element id="Observation.component:SystolicBP.code.coding">
       <path value="Observation.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc.code">
-      <path value="Observation.component.code.coding.code" />
-      <fixedCode value="8480-6" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc.display">
-      <path value="Observation.component.code.coding.display" />
-      <fixedString value="Systolic blood pressure" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:snomedCT">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systolic" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic" />
       </binding>
-    </element>
-    <element id="Observation.component:SystolicBP.code.text">
-      <path value="Observation.component.code.text" />
-      <fixedString value="Systolic blood pressure" />
     </element>
     <element id="Observation.component:SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
@@ -140,37 +97,10 @@
     </element>
     <element id="Observation.component:DiastolicBP.code.coding">
       <path value="Observation.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc.code">
-      <path value="Observation.component.code.coding.code" />
-      <fixedCode value="8462-4" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc.display">
-      <path value="Observation.component.code.coding.display" />
-      <fixedString value="Diastolic blood pressure" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:snomedCT">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="snomedCT" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Diastolic" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageDiastolic" />
       </binding>
-    </element>
-    <element id="Observation.component:DiastolicBP.code.text">
-      <path value="Observation.component.code.text" />
-      <fixedString value="Diastolic blood pressure" />
     </element>
     <element id="Observation.component:DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />

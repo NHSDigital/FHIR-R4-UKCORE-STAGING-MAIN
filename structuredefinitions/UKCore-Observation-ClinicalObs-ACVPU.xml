@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-VitalSigns-ACVPU" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-ACVPU" />
+  <id value="UKCore-Observation-ClinicalObs-ACVPU" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs-ACVPU" />
   <version value="1.0.0" />
-  <name value="UKCoreObservationVitalSignsACVPU" />
-  <title value="UK Core Observation Vital Signs ACVPU" />
+  <name value="UKCoreObservationClinicalObsACVPU" />
+  <title value="UK Core Observation Clinical Obs ACVPU" />
   <status value="draft" />
-  <date value="2023-08-10" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -24,24 +24,25 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code">
-      <path value="Observation.code"/>
-      <binding>
-        <strength value="required" />
-        <description value="A code from the SNOMED CT UK coding system for ACVPU status." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ACVPU" />
-      </binding>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="1104441000000107" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <max value="0" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ACVPU" />
+      </binding>
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
-      <min value="0" />
       <max value="0" />
     </element>
   </differential>

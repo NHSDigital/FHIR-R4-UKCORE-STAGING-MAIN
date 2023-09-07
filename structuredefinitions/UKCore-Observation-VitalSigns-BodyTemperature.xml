@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-VitalSigns-Weight" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Weight" />
-  <version value="1.0.0" />
-  <name value="UKCoreObservationVitalSignsWeight" />
-  <title value="UK Core Observation Vital Signs Weight" />
+  <id value="UKCore-Observation-VitalSigns-BodyTemperature" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BodyTemperature" />
+  <version value="0.0.1" />
+  <name value="UKCoreObservationVitalSignsBodyTemperature" />
+  <title value="UK Core Observation Vital Signs Body Temperature" />
   <status value="draft" />
-  <date value="2023-08-10" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the constraints and extensions on the UK Core Profile Observation" />
-  <purpose value="To provide implementers with additional support when implementing weight measuring and to provide a consistent structure to how the data is presented." />
+  <description value="TBA" />
+  <purpose value="TBA" />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -27,24 +27,43 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="8310-5" />
+    </element>
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
+      <min value="1" />
+      <max value="1" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED CT UK coding system for weight measurements." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-WeightMeasurements" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
       </binding>
+    </element>
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Observation.value[x].unit">
       <path value="Observation.value[x].unit" />
-      <fixedString value="kilogram" />
+      <min value="1" />
+      <fixedString value="degree Celsius" />
     </element>
     <element id="Observation.value[x].system">
       <path value="Observation.value[x].system" />
@@ -52,7 +71,7 @@
     </element>
     <element id="Observation.value[x].code">
       <path value="Observation.value[x].code" />
-      <fixedCode value="kg" />
+      <fixedCode value="Cel" />
     </element>
   </differential>
 </StructureDefinition>
