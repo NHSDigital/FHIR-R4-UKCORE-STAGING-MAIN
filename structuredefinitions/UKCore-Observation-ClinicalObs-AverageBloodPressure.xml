@@ -3,8 +3,8 @@
   <id value="UKCore-Observation-ClinicalObs-AverageBloodPressure" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs-AverageBloodPressure" />
   <version value="1.0.0" />
-  <name value="UKCoreObservationClinicalObsBloodPressure" />
-  <title value="UK Core Observation Clinical Obs Blood Pressure" />
+  <name value="UKCoreObservationClinicalObsAverageBloodPressure" />
+  <title value="UK Core Observation Clinical Obs Average Blood Pressure" />
   <status value="draft" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />

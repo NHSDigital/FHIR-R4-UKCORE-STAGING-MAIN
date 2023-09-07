@@ -2,7 +2,7 @@
   <id value="UKCore-BloodPressureDeviceType" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressureDeviceType" />
   <version value="1.0.0" />
-  <name value="UKCoreBloodPressureSystolicDeviceType" />
+  <name value="UKCoreBloodPressureDeviceType" />
   <title value="UK Core Blood Pressure Device Type" />
   <status value="draft" />
   <date value="2023-09-12" />

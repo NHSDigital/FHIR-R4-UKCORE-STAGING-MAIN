@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  
   <id value="UKCore-Device-BloodPressure" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure" />
   <version value="1.0.0" />
-  <name value="UKCoreDevice" />
-  <title value="UK Core Device" />
+  <name value="UKCoreDeviceBloodPressure" />
+  <title value="UK Core Device Blood Pressure" />
   <status value="draft" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
