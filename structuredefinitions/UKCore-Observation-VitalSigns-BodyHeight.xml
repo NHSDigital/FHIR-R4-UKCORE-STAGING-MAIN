@@ -27,6 +27,10 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+    </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <fixedCode value="8302-2" />
