@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Observation-TobaccoUse" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoUse" />
+  <version value="0.0.1" />
+  <name value="UKCoreObservationTobaccoUse" />
+  <title value="UKCore Observation Tobacco Use" />
+  <status value="draft" />
+  <date value="2023-09-08" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="To record the patient's tobacco consumption per week" />
+  <purpose value="TBA" />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <fixedCode value="final" />
+    </element>
+    <element id="Observation.category.coding.code">
+      <path value="Observation.category.coding.code" />
+      <fixedCode value="social-history" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-TobaccoConsumption" />
+      </binding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.value[x].unit">
+      <path value="Observation.value[x].unit" />
+      <fixedString value="per week" />
+    </element>
+    <element id="Observation.value[x].system">
+      <path value="Observation.value[x].system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="/wk" />
+    </element>
+  </differential>
+</StructureDefinition>
