@@ -35,12 +35,19 @@
       <path value="Observation.category.coding.code" />
       <fixedCode value="social-history" />
     </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
+    <element id="Observation.code">
+      <path value="Observation.code" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-TobaccoConsumption" />
       </binding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
