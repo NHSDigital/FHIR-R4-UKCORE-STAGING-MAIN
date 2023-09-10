@@ -72,7 +72,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
-        <targetProfile value="https://fhir.hl7.org.uk/ValueSet/UKCore-PregnancyEstimatedDeliveryDate" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-PregnancyEstimatedDeliveryDate" />
       </type>
     </element>
     <element id="Observation.component">
