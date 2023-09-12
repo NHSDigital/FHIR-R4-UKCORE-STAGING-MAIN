@@ -6,7 +6,7 @@
   <name value="UKCoreObservationAlcoholConsumption" />
   <title value="UKCore Observation Alcohol Consumption" />
   <status value="draft" />
-  <date value="2023-09-08" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="To record the patient's alcohol consumption per week" />
-  <purpose value="TBA" />
+  <description value="Defines the constraints and extensions on the UK Core Profile Observation" />
+  <purpose value="To provide implementers with additional support when implementing gathering and recording the patient's alcohol consumption per week" />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -27,14 +27,14 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <fixedCode value="final" />
-    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Observation.category.coding.system">
+      <path value="Observation.category.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
     </element>
     <element id="Observation.category.coding.code">
       <path value="Observation.category.coding.code" />
@@ -49,6 +49,7 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
@@ -60,18 +61,6 @@
       <type>
         <code value="Quantity" />
       </type>
-    </element>
-    <element id="Observation.value[x].unit">
-      <path value="Observation.value[x].unit" />
-      <fixedString value="per week" />
-    </element>
-    <element id="Observation.value[x].system">
-      <path value="Observation.value[x].system" />
-      <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element id="Observation.value[x].code">
-      <path value="Observation.value[x].code" />
-      <fixedCode value="/wk" />
     </element>
   </differential>
 </StructureDefinition>
