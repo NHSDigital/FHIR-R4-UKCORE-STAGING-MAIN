@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-BloodPressureMeasurementMethod" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressureMeasurementMethod" />
+  <id value="UKCore-BloodPressure-Average" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Average" />
   <version value="1.0.0" />
-  <name value="UKCoreBloodPressureMeasurementMethod" />
-  <title value="UK Core Blood Pressure Measurement Method" />
+  <name value="UKCoreBloodPressureAverage" />
+  <title value="UK Core Blood Pressure Average" />
   <status value="draft" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
@@ -16,14 +16,11 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="A code from the SNOMED CT UK coding system for method in which blood pressure was measured. Selected from the SNOMED CT UK coding system:
-&#13; - 37931006 | Auscultation (procedure)
-810061000000102 | Measurement of blood pressure using manual sphygmomanometer by auscultation over brachial artery (procedure)
-13385008 | Mediate auscultation (procedure)
-765172009 | Doppler ultrasound (procedure)
-113011001 | Palpation (procedure)
-31813000 | Vascular oscillometry (procedure)
-descendantOrSelfOf 42826002 | Systemic arterial pressure monitoring (regime/therapy)" />
+  <description value="A code from the SNOMED CT UK coding system for recording average blood pressure. Selected from the SNOMED CT UK coding system:
+&#13; - 170599006 | 24 hr blood pressure monitoring (regime/therapy) 
+&#13;
+&#13; - 314463006 | 24 hour blood pressure (observable entity) |
+&#13; - 723232008 | Average blood pressure (observable entity) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -31,7 +28,15 @@ descendantOrSelfOf 42826002 | Systemic arterial pressure monitoring (regime/ther
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="37931006 OR 810061000000102 OR 13385008 OR 765172009 OR 113011001 OR 31813000 OR descendantOrSelfOf 42826002" />
+        <value value="170599006" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="314463006 OR 723232008" />
       </filter>
     </include>
   </compose>

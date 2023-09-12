@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-ClinicalObs-AverageBloodPressure" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs-AverageBloodPressure" />
+  <id value="UKCore-Observation-AverageBloodPressure" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AverageBloodPressure" />
   <version value="1.0.0" />
-  <name value="UKCoreObservationClinicalObsAverageBloodPressure" />
-  <title value="UK Core Observation Clinical Obs Average Blood Pressure" />
+  <name value="UKCoreObservationAverageBloodPressure" />
+  <title value="UK Core Observation Average Blood Pressure" />
   <status value="draft" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
@@ -24,20 +24,15 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ClinicalObs" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code" />
-      <fixedCode value="723232008" />
-    </element>
-    <element id="Observation.code.coding.display">
-      <path value="Observation.code.coding.display" />
-      <fixedString value="Average blood pressure" />
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <max value="0" />
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Average" />
+      </binding>
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
@@ -56,7 +51,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="2" />
+      <min value="1" />
       <max value="2" />
     </element>
     <element id="Observation.component:SystolicBP">
@@ -68,7 +63,7 @@
     <element id="Observation.component:SystolicBP.code.coding">
       <path value="Observation.component.code.coding" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic" />
       </binding>
     </element>
@@ -98,7 +93,7 @@
     <element id="Observation.component:DiastolicBP.code.coding">
       <path value="Observation.component.code.coding" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageDiastolic" />
       </binding>
     </element>

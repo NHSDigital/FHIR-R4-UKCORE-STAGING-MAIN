@@ -42,18 +42,10 @@
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.code">
-      <path value="Observation.code.coding.code" />
-      <fixedCode value="75367002" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.display">
-      <path value="Observation.code.coding.display" />
-      <fixedString value="Blood pressure" />
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <max value="0" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />
+      </binding>
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
@@ -72,7 +64,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="2" />
+      <min value="1" />
       <max value="2" />
     </element>
     <element id="Observation.component:SystolicBP">
@@ -107,7 +99,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="snomedCT" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systolic" />
       </binding>
     </element>
@@ -164,7 +156,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="snomedCT" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Diastolic" />
       </binding>
     </element>

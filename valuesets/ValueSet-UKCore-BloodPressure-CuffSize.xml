@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-BloodPressureCuffSize"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressureCuffSize"/>
+	<id value="UKCore-BloodPressure-CuffSize"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-CuffSize"/>
 	<version value="1.0.0"/>
 	<name value="UKCoreBloodPressureCuffSize"/>
 	<title value="UK Core Blood Pressure Cuff Size"/>
