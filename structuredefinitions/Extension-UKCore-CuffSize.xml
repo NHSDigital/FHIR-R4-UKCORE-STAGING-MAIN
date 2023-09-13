@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-CollectionCollector" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
+  <id value="Extension-UKCore-CuffSize" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize" />
   <version value="1.0.0" />
-  <name value="ExtensionUKCoreCollectionCollector" />
-  <title value="Extension UK Core Collection Collector" />
-  <status value="active" />
-  <date value="2023-04-28" />
+  <name value="ExtensionUKCoreCuffSize" />
+  <title value="Extension UK Core Cuff Size" />
+  <status value="draft" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,15 +17,15 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Allows the referencing of Patient and RelatedPerson within Specimen.collection." />
-  <purpose value="This is a use case from Genomics to backport R5 functionality extending the referencing of Specimen.collection.collector to include Patient and RelatedPerson" />
+  <description value="An extension to record the cuff size of a sphygmomanometer." />
+  <purpose value="This extension is a clinical observation use case to record the cuff sized used on a sphygmomanometer when the blood pressure was measured." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Specimen.collection.collector" />
+    <expression value="Device" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -33,22 +33,28 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Person who collected the specimen." />
-      <definition value="Person who collected the specimen." />
+      <short value="An extension to record the cuff size of a sphygmomanometer." />
+      <definition value="This extension allows the recording of the cuff size of a sphygmomanometer used in a blood pressure reading." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Person who collected the specimen." />
+      <short value="A set of codes to record the cuff size" />
       <min value="1" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes to record the cuff size" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-CuffSize" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
