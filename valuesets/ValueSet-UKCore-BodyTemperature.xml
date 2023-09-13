@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Temperature" />
-    <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-Temperature" />
-    <version value="0.0.1" />
-    <name value="UKCoreTemperature" />
-    <title value="UK Core Temperature" />
+    <id value="UKCore-BodyTemperature" />
+    <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
+    <version value="1.0.0" />
+    <name value="UKCoreBodyTemperature" />
+    <title value="UK Core Body Temperature" />
     <status value="draft" />
-    <date value="2023-09-04" />
+    <date value="2023-09-12" />
     <publisher value="HL7 UK" />
     <contact>
         <name value="HL7 UK" />

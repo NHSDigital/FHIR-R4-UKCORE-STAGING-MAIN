@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-VitalSigns-Temperature" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-Temperature" />
-  <version value="0.0.1" />
-  <name value="UKCoreObservationVitalSignsTemperature" />
-  <title value="UK Core Observation VitalSigns Temperature" />
+  <id value="UKCore-Observation-VitalSigns-BodyHeight" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BodyHeight" />
+  <version value="1.0.0" />
+  <name value="UKCoreObservationVitalSignsBodyHeight" />
+  <title value="UK Core Observation Vital Signs BodyHeight" />
   <status value="draft" />
-  <date value="2023-08-23" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="TBA" />
-  <purpose value="TBA" />
+  <description value="Defines the constraints and extensions on the UK Core Profile Observation" />
+  <purpose value="To provide implementers with additional support when implementing length / height measuring and to provide a consistent structure to how the data is presented." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -33,37 +33,30 @@
     </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
-      <fixedCode value="8310-5" />
+      <fixedCode value="8302-2" />
+    </element>
+    <element id="Observation.code.coding:loinc.display">
+      <path value="Observation.code.coding.display" />
+      <fixedString value="Body height" />
     </element>
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
-      <min value="1" />
-      <max value="1" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-Temperature" />
+        <description value="A code from the SNOMED CT UK coding system for length measurements." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyHeightMeasurements" />
       </binding>
-    </element>
-    <element id="Observation.code.coding:snomedCT.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Observation.value[x].unit">
       <path value="Observation.value[x].unit" />
-      <min value="1" />
-      <fixedString value="degree Celsius" />
+      <fixedString value="meter" />
     </element>
     <element id="Observation.value[x].system">
       <path value="Observation.value[x].system" />
@@ -71,7 +64,7 @@
     </element>
     <element id="Observation.value[x].code">
       <path value="Observation.value[x].code" />
-      <fixedCode value="Cel" />
+      <fixedCode value="m" />
     </element>
   </differential>
 </StructureDefinition>

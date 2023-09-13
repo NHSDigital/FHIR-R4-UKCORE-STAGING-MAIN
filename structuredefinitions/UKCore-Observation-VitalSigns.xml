@@ -6,7 +6,7 @@
   <name value="UKCoreObservationVitalSigns" />
   <title value="UK Core Observation Vital Signs" />
   <status value="draft" />
-  <date value="2023-08-10" />
+  <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -66,55 +66,47 @@
         <expression value="category.where(code='vital-signs').exists() implies code.coding.where(system='http://loinc.org').exists()" />
       </constraint>
     </element>
+    <element id="Observation.extension:bodyPosition">
+      <path value="Observation.extension" />
+      <sliceName value="bodyPosition" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/observation-bodyPosition" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Observation.extension:bodyPosition.value[x]">
+      <path value="Observation.extension.value[x]" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyPosition" />
+      </binding>
+    </element>
+    <element id="Observation.extension:recordingSetting">
+      <path value="Observation.extension" />
+      <sliceName value="recordingSetting" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RecordingSetting" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <fixedCode value="final" />
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Observation.category:vitalSigns">
-      <path value="Observation.category" />
-      <sliceName value="vitalSigns" />
-      <max value="1" />
-    </element>
-    <element id="Observation.category:vitalSigns.coding.system">
+    <element id="Observation.category.coding.system">
       <path value="Observation.category.coding.system" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
     </element>
-    <element id="Observation.category:vitalSigns.coding.code">
+    <element id="Observation.category.coding.code">
       <path value="Observation.category.coding.code" />
       <fixedCode value="vital-signs" />
-    </element>
-    <element id="Observation.category:vitalSigns.coding.display">
-      <path value="Observation.category.coding.display" />
-      <fixedString value="Vital Signs" />
-    </element>
-    <element id="Observation.category:survey">
-      <path value="Observation.category" />
-      <sliceName value="survey" />
-      <max value="1" />
-    </element>
-    <element id="Observation.category:survey.coding.system">
-      <path value="Observation.category.coding.system" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
-    </element>
-    <element id="Observation.category:survey.coding.code">
-      <path value="Observation.category.coding.code" />
-      <fixedCode value="survey" />
-    </element>
-    <element id="Observation.category:survey.coding.display">
-      <path value="Observation.category.coding.display" />
-      <fixedString value="Survey" />
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
@@ -162,29 +154,6 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
       <min value="1" />
-    </element>
-    <element id="Observation.hasMember">
-      <path value="Observation.hasMember" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      </type>
-    </element>
-    <element id="Observation.derivedFrom">
-      <path value="Observation.derivedFrom" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Media" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      </type>
     </element>
     <element id="Observation.component.code">
       <path value="Observation.component.code" />

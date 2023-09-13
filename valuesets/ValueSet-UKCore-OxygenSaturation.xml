@@ -5,7 +5,7 @@
 	<name value="UKCoreOxygenSaturation"/>
 	<title value="UK Core OxygenSaturation"/>
 	<status value="draft"/>
-	<date value="2023-02-14"/>
+	<date value="2023-09-12"/>
 	<publisher value="HL7 UK"/>
 	<contact>
 		<name value="HL7 UK"/>
@@ -24,14 +24,14 @@
 &amp;nbsp;&#13; - DescendantOrSelfOf 852661000000102 | Minimum peripheral oxygen saturation
 &amp;nbsp;&#13; - DescendantOrSelfOf 852641000000103 | Target peripheral oxygen saturation
 &amp;nbsp;&#13; - DescendantOrSelfOf 442349007 | Venous oxygen saturation"/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="constraint"/>
 				<op value="="/>
-				<value value="DescendantOrSelfOf 103228002 |Hemoglobin saturation with oxygen (observable entity)| MINUS (DescendantOrSelfOf 927981000000106 |Baseline oxygen saturation at periphery (observable entity)| OR DescendantOrSelfOf 852651000000100 |Maximum peripheral oxygen saturation (observable entity)| OR DescendantOrSelfOf 852661000000102 |Minimum peripheral oxygen saturation (observable entity)| OR DescendantOrSelfOf 852641000000103 |Target peripheral oxygen saturation (observable entity)| OR DescendantOrSelfOf 442349007 |Venous oxygen saturation (observable entity)|)"/>
+				<value value="DescendantOrSelfOf 103228002 MINUS (DescendantOrSelfOf 927981000000106 OR DescendantOrSelfOf 852651000000100 OR DescendantOrSelfOf 852661000000102 OR DescendantOrSelfOf 852641000000103 OR DescendantOrSelfOf 442349007)"/>
 			</filter>
 		</include>
 	</compose>
