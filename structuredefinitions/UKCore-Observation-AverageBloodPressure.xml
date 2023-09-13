@@ -43,14 +43,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Average" />
       </binding>
     </element>
-    <element id="Observation.device">
-      <path value="Observation.device" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure" />
-      </type>
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
@@ -62,6 +54,21 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
       <min value="1" />
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-MeasurementMethod" />
+      </binding>
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure" />
+      </type>
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
