@@ -47,6 +47,13 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />
       </binding>
     </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-MeasurementMethod" />
+      </binding>
+    </element>
     <element id="Observation.device">
       <path value="Observation.device" />
       <type>
