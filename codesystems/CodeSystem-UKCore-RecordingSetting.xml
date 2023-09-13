@@ -1,9 +1,9 @@
-<ValueSet xmlns="http://hl7.org/fhir">
+<CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="UKCore-RecordingSetting"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-RecordingSetting"/>
+	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
 	<version value="1.0.0"/>
 	<name value="UKCoreRecordingSetting"/>
-	<title value="UK Core Recording Setting"/>
+	<title value="UK Core RecordingSetting"/>
 	<status value="draft"/>
 	<date value="2023-09-12"/>
 	<publisher value="HL7 UK"/>
@@ -16,27 +16,16 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A set of codes that define whether an observation was taken at home or in a clinical setting."/>
+	<description value="A CodeSystem to record if an observation was recorded at home or in a clinical setting."/>
 	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="214adc79-3eb3-4cd5-81ce-bba8a45293b1"/>
-		<timestamp value="2023-09-12T15:00:00+00:00"/>
-		<total value="2"/>
-		<offset value="0"/>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
-			<code value="residental"/>
-			<display value="Residental"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
-			<code value="clinical"/>
-			<display value="Clinical"/>
-		</contains>
-	</expansion>
-</ValueSet>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="residental"/>
+		<display value="Residental"/>
+	</concept>
+	<concept>
+		<code value="clinical"/>
+		<display value="Clinical"/>
+	</concept>
+</CodeSystem>
