@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+	<id value="UKCore-Observation-BreathingNormally-Example" />
+<meta>
+<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-InspiredOxygen" />
+</meta>
+	<status value="final" />
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+			<code value="exam" />
+			<display value="Exam" />
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="722742002" />
+			<display value="Breathing room air" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<effectiveDateTime value="2023-08-10"/>
+	<performer>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+	</performer>
+</Observation>

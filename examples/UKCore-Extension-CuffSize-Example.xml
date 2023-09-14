@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Extension-CuffSize-Example"/>
+<meta>
+<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure" />
+</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="990191000000101"/>
+				<display value="Large adult size blood pressure cuff"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<status value="active"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="39690000"/>
+			<display value="Sphygmomanometer" />
+		</coding>
+	</type>
+</Device>

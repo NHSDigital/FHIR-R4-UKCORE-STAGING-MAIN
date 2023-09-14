@@ -1,5 +1,8 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Observation-PatientConsciousness-Example"/>
+<meta>
+<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ACVPU" />
+</meta>
 	<status value="final"/>
 	<category>
 		<coding>
