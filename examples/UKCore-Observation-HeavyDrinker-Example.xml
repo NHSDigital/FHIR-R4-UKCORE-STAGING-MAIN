@@ -28,7 +28,7 @@
 	</performer>
 	<valueQuantity>
 		<value value="20"/>
-		<code value="/day"/>
+		<code value="/d"/>
 		<system value="http://unitsofmeasure.org"/>
 		<unit value="per day"/>
 	</valueQuantity>

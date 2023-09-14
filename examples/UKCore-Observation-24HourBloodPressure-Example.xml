@@ -33,6 +33,7 @@
 				<code value="314464000"/>
 				<display value="24 hour systolic blood pressure"/>
 			</coding>
+			<text value="Systolic blood pressure"/>
 		</code>
 		<valueQuantity>
 			<value value="102"/>
@@ -48,6 +49,7 @@
 				<code value="314465004"/>
 				<display value="24 hour diastolic blood pressure"/>
 			</coding>
+			<text value="Diastolic blood pressure"/>
 		</code>
 		<valueQuantity>
 			<value value="84"/>

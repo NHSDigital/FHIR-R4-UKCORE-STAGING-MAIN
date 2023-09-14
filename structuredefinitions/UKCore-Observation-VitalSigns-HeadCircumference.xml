@@ -37,7 +37,7 @@
     </element>
     <element id="Observation.code.coding:loinc.display">
       <path value="Observation.code.coding.display" />
-      <fixedString value="	Head Occipital-frontal circumference" />
+      <fixedString value="Head Occipital-frontal circumference" />
     </element>
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
