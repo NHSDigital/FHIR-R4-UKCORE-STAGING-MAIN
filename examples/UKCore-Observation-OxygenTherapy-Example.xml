@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
 	<id value="UKCore-Observation-OxygenTherapy-Example" />
-<meta>
-<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-InspiredOxygen" />
-</meta>
 	<status value="final" />
 	<category>
 		<coding>

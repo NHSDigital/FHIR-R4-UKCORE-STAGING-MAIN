@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
 	<id value="UKCore-Extension-RecordingSetting-Example" />
-<meta>
-<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure" />
-</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
 		<valueCode value="residental"/>
 	</extension>

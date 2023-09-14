@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Device xmlns="http://hl7.org/fhir">
 	<id value="UKCore-Device-Sphygmomanometer-Example"/>
-<meta>
-<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure" />
-</meta>
 	<identifier>
 		<system value="https://www.leedsth.nhs.uk/identifier/devices"/>
 		<value value="DEV1999998132"/>
