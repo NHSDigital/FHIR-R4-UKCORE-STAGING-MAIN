@@ -20,7 +20,7 @@
 		</coding>
         <coding>
             <system value="http://loinc.org" />
-            <code value="89843-4" />
+            <code value="9843-4" />
             <display value="Head Occipital-frontal circumference" />
         </coding>
 	</code>

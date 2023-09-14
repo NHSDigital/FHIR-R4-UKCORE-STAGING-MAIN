@@ -28,8 +28,8 @@
 	<effectiveDateTime value="2023-08-10"/>
     <valueQuantity>
         <value value="2" />
-        <unit value="liter per minute" />
+        <unit value="litre per minute" />
         <system value="http://unitsofmeasure.org" />
-        <code value="L/min" />
+        <code value="l/min" />
     </valueQuantity>
 </Observation>

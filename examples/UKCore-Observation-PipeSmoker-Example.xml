@@ -28,8 +28,8 @@
 	</performer>
 	<valueQuantity>
 		<value value="5"/>
-		<unit value="/day"/>
+		<code value="/day"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="per day"/>
+		<unit value="per day"/>
 	</valueQuantity>
 </Observation>

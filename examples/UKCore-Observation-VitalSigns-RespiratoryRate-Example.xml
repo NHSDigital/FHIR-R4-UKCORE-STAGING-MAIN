@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-RepiratoryRate-Example"/>
+	<id value="UKCore-Observation-VitalSigns-RespiratoryRate-Example"/>
 <meta>
 <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-RespirationRate" />
 </meta>
@@ -33,8 +33,8 @@
 	</performer>
 	<valueQuantity>
         <value value="21" />
-        <unit value="Breaths / minute" />
+        <unit value="per minute" />
         <system value="http://unitsofmeasure.org" />
-        <code value="{Breaths}/min" />
+        <code value="/min" />
 	</valueQuantity>
 </Observation>

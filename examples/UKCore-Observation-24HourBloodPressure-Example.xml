@@ -2,7 +2,7 @@
 <Observation>
 	<id value="UKCore-Observation-24HourBloodPressure-Example" />
 <meta>
-<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AvergaeBloodPressure" />
+<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AverageBloodPressure" />
 </meta>
 	<status value="final"/>
 	<category>
@@ -31,7 +31,7 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="314464000"/>
-				<display value="24 hour systolic arterial pressure"/>
+				<display value="24 hour systolic blood pressure"/>
 			</coding>
 		</code>
 		<valueQuantity>
@@ -46,7 +46,7 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="314465004"/>
-				<display value="24 hour diastolic arterial pressure"/>
+				<display value="24 hour diastolic blood pressure"/>
 			</coding>
 		</code>
 		<valueQuantity>

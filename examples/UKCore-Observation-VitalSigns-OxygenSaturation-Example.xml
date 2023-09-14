@@ -33,7 +33,7 @@
 	</performer>
 	<valueQuantity>
 		<value value="96"/>
-		<unit value="percentage"/>
+		<unit value="percent"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="%"/>
 	</valueQuantity>

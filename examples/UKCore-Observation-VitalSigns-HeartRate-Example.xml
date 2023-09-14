@@ -15,7 +15,7 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="444981005 "/>
+			<code value="444981005"/>
 			<display value="Resting heart rate"/>
 		</coding>
         <coding>
@@ -33,8 +33,8 @@
 	</performer>
 	<valueQuantity>
 		<value value="104"/>
-		<unit value="/min"/>
+		<code value="/min"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="heart beats per minute"/>
+		<unit value="per minute"/>
 	</valueQuantity>
 </Observation>

@@ -28,8 +28,8 @@
 	</performer>
 	<valueQuantity>
 		<value value="3.9"/>
-		<unit value="mmol/L"/>
+		<code value="mmol/L"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="millimoles per litre"/>
+		<unit value="millimoles per litre"/>
 	</valueQuantity>
 </Observation>

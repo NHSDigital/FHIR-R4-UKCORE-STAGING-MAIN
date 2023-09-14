@@ -56,6 +56,9 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.value[x].value">
       <path value="Observation.value[x].value" />
