@@ -30,8 +30,8 @@
 		<offset value="0"/>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
-			<code value="residental"/>
-			<display value="Residental"/>
+			<code value="residential"/>
+			<display value="Residential"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
