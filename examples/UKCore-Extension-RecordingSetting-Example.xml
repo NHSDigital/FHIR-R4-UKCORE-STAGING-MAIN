@@ -1,5 +1,9 @@
-<Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-BloodPressure-Example"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+	<id value="UKCore-Extension-RecordingSetting-Example" />
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
+		<valueCode value="residental"/>
+	</extension>
 	<status value="final"/>
 	<category>
 		<coding>
@@ -24,18 +28,10 @@
 	<subject>
 		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
 	</subject>
-	<effectiveDateTime value="2023-08-10"/>
+	<effectiveDateTime value="2023-09-10"/>
 	<performer>
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 	</performer>
-	<bodySite>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="40983000"/>
-			<display value="Structure of upper extremity between shoulder and elbow"/>
-		</coding>
-		<text value="Structure of upper extremity between shoulder and elbow"/>
-	</bodySite>
 	<component>
 		<code>
 			<coding>
@@ -51,7 +47,7 @@
 			<text value="Systolic blood pressure"/>
 		</code>
 		<valueQuantity>
-			<value value="142"/>
+			<value value="108"/>
 			<unit value="millimeter of mercury"/>
 			<system value="http://unitsofmeasure.org"/>
 			<code value="mm[Hg]"/>
@@ -72,7 +68,7 @@
 			<text value="Diastolic blood pressure"/>
 		</code>
 		<valueQuantity>
-			<value value="94"/>
+			<value value="82"/>
 			<unit value="millimeter of mercury"/>
 			<system value="http://unitsofmeasure.org"/>
 			<code value="mm[Hg]"/>

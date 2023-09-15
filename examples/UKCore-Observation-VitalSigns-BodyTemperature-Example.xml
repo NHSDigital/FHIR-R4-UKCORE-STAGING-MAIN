@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-BodyWeight-Example"/>
+	<id value="UKCore-Observation-VitalSigns-BodyTemperature-Example"/>
 	<status value="final"/>
 	<category>
 		<coding>
@@ -10,15 +10,15 @@
 		<text value="Vital Signs"/>
 	</category>
 	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="27113001"/>
-			<display value="Body weight"/>
-		</coding>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="276885007" />
+            <display value="Core body temperature" />
+        </coding>
         <coding>
             <system value="http://loinc.org" />
-            <code value="29463-7" />
-            <display value="Body weight" />
+            <code value="8310-5" />
+            <display value="Body temperature" />
         </coding>
 	</code>
 	<subject>
@@ -28,10 +28,10 @@
 	<performer>
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 	</performer>
-	<valueQuantity>
-		<value value="90"/>
-		<unit value="kilogram"/>
-		<system value="http://unitsofmeasure.org"/>
-		<code value="kg"/>
-	</valueQuantity>
+    <valueQuantity>
+        <value value="36.5" />
+        <unit value="degree Celsius" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="Cel" />
+    </valueQuantity>
 </Observation>

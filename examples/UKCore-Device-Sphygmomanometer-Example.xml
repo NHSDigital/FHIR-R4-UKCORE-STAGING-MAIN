@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device xmlns="http://hl7.org/fhir">
+	<id value="UKCore-Device-Sphygmomanometer-Example"/>
+	<identifier>
+		<system value="https://www.leedsth.nhs.uk/identifier/devices"/>
+		<value value="DEV1999998132"/>
+		<assigner>
+			<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+		</assigner>
+	</identifier>
+	<status value="active"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="466086009"/>
+			<display value="Automatic-inflation electronic sphygmomanometer, portable, arm/wrist" />
+		</coding>
+	</type>
+	<owner>
+		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
+	</owner>
+	<location>
+		<reference value="Location/UKCore-Location-CardiologySJUH-Example"/>
+	</location>
+</Device>

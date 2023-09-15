@@ -95,6 +95,10 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic" />
       </binding>
     </element>
+    <element id="Observation.component:SystolicBP.code.text">
+      <path value="Observation.component.code.text" />
+      <fixedString value="Systolic blood pressure" />
+    </element>
     <element id="Observation.component:SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
@@ -124,6 +128,10 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageDiastolic" />
       </binding>
+    </element>
+    <element id="Observation.component:DiastolicBP.code.text">
+      <path value="Observation.component.code.text" />
+      <fixedString value="Diastolic blood pressure" />
     </element>
     <element id="Observation.component:DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />

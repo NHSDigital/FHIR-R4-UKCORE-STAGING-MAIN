@@ -29,9 +29,9 @@
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 	</performer>
 	<valueQuantity>
-		<value value="164"/>
-		<unit value="centimeter"/>
+		<value value="1.64"/>
+		<unit value="meter"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="cm"/>
+		<code value="m"/>
 	</valueQuantity>
 </Observation>

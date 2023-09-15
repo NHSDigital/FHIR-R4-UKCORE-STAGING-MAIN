@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-BodyWeight-Example"/>
+	<id value="UKCore-Observation-VitalSigns-HeadCircumference-Example"/>
 	<status value="final"/>
 	<category>
 		<coding>
@@ -12,13 +12,13 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="27113001"/>
-			<display value="Body weight"/>
+			<code value="363812007"/>
+			<display value="Head circumference"/>
 		</coding>
         <coding>
             <system value="http://loinc.org" />
-            <code value="29463-7" />
-            <display value="Body weight" />
+            <code value="9843-4" />
+            <display value="Head Occipital-frontal circumference" />
         </coding>
 	</code>
 	<subject>
@@ -29,9 +29,9 @@
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 	</performer>
 	<valueQuantity>
-		<value value="90"/>
-		<unit value="kilogram"/>
+		<value value="59"/>
+		<unit value="centimeter"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="kg"/>
+		<code value="cm"/>
 	</valueQuantity>
 </Observation>
