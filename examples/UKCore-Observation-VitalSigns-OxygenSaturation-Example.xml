@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-BodyWeight-Example"/>
+	<id value="UKCore-Observation-VitalSigns-OxygenSaturation-Example"/>
 	<status value="final"/>
 	<category>
 		<coding>
@@ -12,13 +12,13 @@
 	<code>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="27113001"/>
-			<display value="Body weight"/>
+			<code value="431314004"/>
+			<display value="Peripheral oxygen saturation"/>
 		</coding>
         <coding>
             <system value="http://loinc.org" />
-            <code value="29463-7" />
-            <display value="Body weight" />
+            <code value="2708-6" />
+            <display value="Oxygen saturation in Arterial blood" />
         </coding>
 	</code>
 	<subject>
@@ -29,9 +29,9 @@
 		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
 	</performer>
 	<valueQuantity>
-		<value value="90"/>
-		<unit value="kilogram"/>
+		<value value="96"/>
+		<unit value="percent"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="kg"/>
+		<code value="%"/>
 	</valueQuantity>
 </Observation>
