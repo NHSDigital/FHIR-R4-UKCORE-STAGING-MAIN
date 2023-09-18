@@ -2,7 +2,7 @@
 <Observation>
 	<id value="UKCore-Extension-RecordingSetting-Example" />
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
-		<valueCode value="residental"/>
+		<valueCode value="residential"/>
 	</extension>
 	<status value="final"/>
 	<category>

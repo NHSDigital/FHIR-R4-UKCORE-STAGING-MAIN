@@ -21,8 +21,8 @@
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="residental"/>
-		<display value="Residental"/>
+		<code value="residential"/>
+		<display value="Residential"/>
 	</concept>
 	<concept>
 		<code value="clinical"/>
