@@ -35,10 +35,6 @@
       <path value="Observation.code.coding.code" />
       <fixedCode value="8302-2" />
     </element>
-    <element id="Observation.code.coding:loinc.display">
-      <path value="Observation.code.coding.display" />
-      <fixedString value="Body height" />
-    </element>
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
