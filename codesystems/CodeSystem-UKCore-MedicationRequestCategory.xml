@@ -30,9 +30,9 @@
 		<code value="primarycare"/>
 		<display value="Primary Care"/>
 		<definition value="Requests for medications originating in a primary care setting. Typically requests would be dispensed by the patients nominated pharmacy to be self-administered at home with or without the assistance of community based nursing staff."/>
-		<properties>
+		<property>
 			<code value="inactive"/>
 			<valueBoolean value="True"/>
-		</properties>
+		</property>
 	</concept>
 </CodeSystem>
