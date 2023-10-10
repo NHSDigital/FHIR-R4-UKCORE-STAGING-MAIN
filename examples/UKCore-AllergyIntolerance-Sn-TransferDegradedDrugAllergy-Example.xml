@@ -1,5 +1,5 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AllergyIntolerance-Sn-TransferDegradDrugAllergy-Example"/>
+	<id value="UKCore-AllergyIntolerance-Sn-TransferDegradedDrugAllergy-Example"/>
 	<clinicalStatus>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
