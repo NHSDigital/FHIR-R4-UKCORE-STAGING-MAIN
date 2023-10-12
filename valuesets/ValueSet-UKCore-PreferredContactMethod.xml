@@ -2,11 +2,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="UKCore-PreferredContactMethod"/>
 	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PreferredContactMethod"/>
-	<version value="2.1.0" />
+	<version value="2.2.0" />
 	<name value="UKCorePreferredContactMethod"/>
 	<title value="UK Core Preferred Contact Method"/>
 	<status value="active" />
-	<date value="2021-09-10" />
+	<date value="2023-10-09" />
 	<publisher value="HL7 UK" />
 	<contact>
 		<name value="HL7 UK" />
@@ -27,7 +27,7 @@
 	<expansion>
 		<identifier value="4dc72d2e-fcbd-4590-9864-56d0724c62fc"/>
 		<timestamp value="2021-09-10T07:33:41+00:00"/>
-		<total value="8"/>
+		<total value="9"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
@@ -80,6 +80,11 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
 			<code value="2"/>
 			<display value="Visit"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+			<code value="9"/>
+			<display value="SMS"/>
 		</contains>
 	</expansion>
 </ValueSet>
