@@ -51,7 +51,7 @@
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/service-provision-conditions"/>
 			<code value="free"/>
-			<display value="	This service is available for no patient cost."/>
+			<display value="This service is available for no patient cost."/>
 		</coding>
 	</serviceProvisionCode>
 	<program>

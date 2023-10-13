@@ -16,7 +16,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="A code from the SNOMED CT UK coding system for the typoe of device used to measure blood pressure. Selected from the SNOMED CT UK coding system:
+  <description value="A code from the SNOMED CT UK coding system for the type of device used to measure blood pressure. Selected from the SNOMED CT UK coding system:
 &#13; - 43770009 | Doppler device (physical object)
 &#13; - 469801002 | Invasive blood pressure monitor (physical object)
 &#13; - 258057004 | Non-invasive blood pressure monitor (physical object)
