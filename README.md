@@ -1,4 +1,5 @@
 # FHIR-R4-UKCORE-STAGING-MAIN
+This repository is maintained by [Interoperability Team]( https://nhsd-confluence.digital.nhs.uk/pages/viewpage.action?spaceKey=IOPS&title=Interoperability+Standards) Any queries contact us via [email]( interoperabilityteam@nhs.net).
 
 UK Core Repository of FHIR Assets for HL7 FHIR® UK Core Implementation Guide [Simplifier project](https://simplifier.net/hl7fhirukcorer4).
 

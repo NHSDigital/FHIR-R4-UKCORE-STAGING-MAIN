@@ -123,7 +123,7 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-LegalStatusClassificationWales"/>
 			<version value="1.0.0"/>
 			<code value="07"/>
-			<display value="Formally detained under Mental Health Act Section 35 (Remand to hospital for report on accused’s mental condition)"/>
+			<display value="Formally detained under Mental Health Act Section 35 (Remand to hospital for report on accused's mental condition)"/>
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-LegalStatusClassificationEngland"/>
