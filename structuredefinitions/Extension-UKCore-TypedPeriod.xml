@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-TypedDateTime" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
-  <version value="2.2.0" />
-  <name value="ExtensionUKCoreTypedDateTime" />
-  <title value="Extension UK Core Typed Date Time" />
+  <id value="Extension-UKCore-TypedPeriod" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod" />
+  <version value="1.0.0" />
+  <name value="ExtensionUKCoreTypedPeriod" />
+  <title value="Extension UK Core Typed Period" />
   <status value="draft" />
   <date value="2023-10-13" />
   <publisher value="HL7 UK" />
@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="This supports the exchange of dates and/or times.  The extension date and/or time is carried along with a code to identify the type of date and/or time." />
+  <description value="This supports the exchange of time periods. The extension time period is carried along with a code to identify whether its ." />
   <purpose value="This extension extends the Encounter and the Communication resources to support the exchange of information describing the specific business related date and/or time." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -28,14 +28,6 @@
   </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="Encounter" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="Communication" />
-  </context>
   <context>
     <type value="element" />
     <expression value="Organization" />
@@ -50,59 +42,59 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="This supports the exchange of dates and/or times." />
-      <definition value="This supports the exchange of dates and/or times.  The extension date and/or time is carried along with a code to identify the type of date and/or time." />
+      <short value="This supports the recording of a period related to the specified date type." />
+      <definition value="This supports the recording of a period related to the specified date type. The period is carried along with a code to identify the type of data." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="2" />
     </element>
-    <element id="Extension.extension:dateTimeType">
+    <element id="Extension.extension:dataType">
       <path value="Extension.extension" />
-      <sliceName value="dateTimeType" />
-      <short value="Code to identify the type of time/date." />
+      <sliceName value="dataType" />
+      <short value="Whether the Date Period is 'Legal' or 'Operational'." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:dateTimeType.url">
+    <element id="Extension.extension:dataType.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="dateTimeType" />
+      <fixedUri value="dataType" />
     </element>
-    <element id="Extension.extension:dateTimeType.value[x]">
+    <element id="Extension.extension:dataType.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="A ValueSet to identify the type of date time." />
+      <short value="A ValueSet to identify the type of period." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="extensible" />
-        <description value="The type of date time." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DateTimeType" />
+        <description value="The type of period data." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PeriodType" />
       </binding>
     </element>
-    <element id="Extension.extension:dateTime">
+    <element id="Extension.extension:period">
       <path value="Extension.extension" />
-      <sliceName value="dateTime" />
-      <short value="The specific business related date and/or  time." />
+      <sliceName value="period" />
+      <short value="The specific business related date or time period." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:dateTime.url">
+    <element id="Extension.extension:period.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="dateTime" />
+      <fixedUri value="period" />
     </element>
-    <element id="Extension.extension:dateTime.value[x]">
+    <element id="Extension.extension:period.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="The date and/or time." />
+      <short value="The date or time period." />
       <min value="1" />
       <type>
-        <code value="dateTime" />
+        <code value="Period" />
       </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
