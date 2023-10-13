@@ -47,8 +47,8 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Snomed Concept or a link to the Condition resource" />
-      <definition value="Snomed Concept or a link to the Condition resource." />
+      <short value="SNOMED CT Concept or a link to the Condition resource" />
+      <definition value="SNOMED CT Concept or a link to the Condition resource." />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
