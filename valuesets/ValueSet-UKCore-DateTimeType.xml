@@ -96,8 +96,8 @@
 		</contains>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="last-changed-date"/>
-			<display value="Last Changed Date"/>
+			<code value="last-change-date"/>
+			<display value="Last Change Date"/>
 		</contains>
 	</expansion>
 </ValueSet>
