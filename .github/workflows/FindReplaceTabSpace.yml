@@ -1,0 +1,13 @@
+name: Replace tab with 2 spaces
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on:ubuntu-latest
+	steps:
+	  - uses: actions/checkout@v2
+	  - name: Find and Replace
+	    uses: jacobtomlinson/gha-find-replace@v3
+		with:
+		  find: "	"
+		  replace: "  "
+		  regex: false
