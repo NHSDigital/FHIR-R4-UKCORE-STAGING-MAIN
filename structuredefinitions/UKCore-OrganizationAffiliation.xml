@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-OrganizationAffiliation" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
+  <version value="1.0.0" />
+  <name value="UKCoreOrganizationAffiliation" />
+  <title value="UK Core OrganizationAffiliation" />
+  <status value="draft" />
+  <date value="2023-10-24" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [OrganizationAffiliation](https://hl7.org/fhir/R4/OrganizationAffiliation.html)." />
+  <purpose value="The purpose of this profile is to hold information about relationships between different organizations." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="udi" />
+    <uri value="http://fda.gov/UDI" />
+    <name value="UDI Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="OrganizationAffiliation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="OrganizationAffiliation.identifier.assigner">
+      <path value="OrganizationAffiliation.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.organization">
+      <path value="OrganizationAffiliation.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.organization.identifier.assigner">
+      <path value="OrganizationAffiliation.organization.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.participatingOrganization">
+      <path value="OrganizationAffiliation.participatingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.participatingOrganization.identifier.assigner">
+      <path value="OrganizationAffiliation.participatingOrganization.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.network">
+      <path value="OrganizationAffiliation.network" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.network.identifier.assigner">
+      <path value="OrganizationAffiliation.network.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.specialty">
+      <path value="OrganizationAffiliation.specialty" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
+      </binding>
+    </element>
+    <element id="OrganizationAffiliation.location">
+      <path value="OrganizationAffiliation.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.location.identifier.assigner">
+      <path value="OrganizationAffiliation.location.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.healthcareService">
+      <path value="OrganizationAffiliation.healthcareService" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.healthcareService.identifier.assigner">
+      <path value="OrganizationAffiliation.healthcareService.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="OrganizationAffiliation.endpoint.identifier.assigner">
+      <path value="OrganizationAffiliation.endpoint.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

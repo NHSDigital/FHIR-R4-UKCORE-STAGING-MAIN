@@ -65,7 +65,7 @@
       <short value="A ValueSet to identify the type of period." />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Coding" />
       </type>
       <binding>
         <strength value="extensible" />
