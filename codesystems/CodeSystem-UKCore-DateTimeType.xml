@@ -85,9 +85,4 @@
 		<display value="Clock Stop Date Time"/>
 		<definition value="The date/time that the first response arrived at the incident location that counts as the arrival time based on the National Ambulance Quality Indicator definitions"/>
 	</concept>
-	<concept>
-		<code value="last-change-date"/>
-		<display value="Last Change Date"/>
-		<definition value="The date/time that the data was last changed"/>
-	</concept>
 </CodeSystem>

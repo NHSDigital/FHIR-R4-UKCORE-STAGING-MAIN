@@ -142,6 +142,10 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
 		</resource>
 		<resource>
+			<type value="OrganizationAffiliation"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation"/>
+		</resource>
+		<resource>
 			<type value="Patient"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
 		</resource>
