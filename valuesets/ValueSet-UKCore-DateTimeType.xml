@@ -27,7 +27,7 @@
 	<expansion>
 		<identifier value="84af73b0-8078-4323-be5e-43ced75666fb"/>
 		<timestamp value="2023-10-13T13:27:44+00:00"/>
-		<total value="14"/>
+		<total value="13"/>
 		<offset value="0"/>
 		<contains>
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
@@ -93,11 +93,6 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 			<code value="time-patient-handover"/>
 			<display value="Time Patient Handover"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="last-change-date"/>
-			<display value="Last Change Date"/>
 		</contains>
 	</expansion>
 </ValueSet>
