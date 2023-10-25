@@ -10,5 +10,4 @@ jobs:
       with:
         find: "\"/>"
         replace: "\" />"
-        include: "**/*.xml"
         regex: false
