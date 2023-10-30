@@ -1,0 +1,53 @@
+<Task xmlns="http://hl7.org/fhir">
+    <id value="DCAPI-Task-Example" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+    </meta>
+    <status value="requested" />
+    <intent value="order" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="103742009" />
+            <display value="Renewal of prescription" />
+        </coding>
+    </code>
+    <focus>
+        <reference value="MedicationRequest/DCAPI-MedicationRequest-Example" />
+    </focus>
+    <for>
+        <reference value="Patient/9000000009" />
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9000000009" />
+        </identifier>
+        <display value="Jane Smith" />
+    </for>
+    <authoredOn value="2022-10-13T09:20:27.000Z" />
+    <lastModified value="2022-10-13T09:20:27.000Z" />
+    <requester>
+        <reference value="Patient/9000000009" />
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9000000009" />
+        </identifier>
+        <display value="Jane Smith" />
+    </requester>
+    <note>
+        <authorString value="Patient" />
+        <text value="ran out of previous prescription" />
+    </note>
+    <input>
+        <type>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/GPConnect-PrescriptionOrderingParameters" />
+                <code value="preferred-performer" />
+                <display value="Preferred performer" />
+            </coding>
+        </type>
+        <valueIdentifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="FLM49" />
+        </valueIdentifier>
+    </input>
+</Task>
