@@ -23,4 +23,25 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="c2047257-9de9-45c5-b0cb-38a6d478fcfa"/>
+		<timestamp value="2023-04-28T09:15:53+00:00"/>
+		<total value="3"/>
+		<offset value="0"/>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
+			<code value="nhs"/>
+			<display value="NHS"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
+			<code value="private"/>
+			<display value="Private"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory"/>
+			<code value="devolved-nations"/>
+			<display value="Devolved nations"/>
+		</contains>
+	</expansion>
 </ValueSet>
