@@ -23,4 +23,20 @@
 			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="214adc79-3eb3-4cd5-81ce-bba8a45293b1"/>
+		<timestamp value="2023-09-12T15:00:00+00:00"/>
+		<total value="2"/>
+		<offset value="0"/>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
+			<code value="residential"/>
+			<display value="Residential"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting"/>
+			<code value="clinical"/>
+			<display value="Clinical"/>
+		</contains>
+	</expansion>
 </ValueSet>
