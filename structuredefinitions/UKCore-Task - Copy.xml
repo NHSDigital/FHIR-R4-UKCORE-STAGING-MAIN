@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Task" />
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"/>
-	<version value="1.2.0"/>
-	<name value="UKCoreTask"/>
-	<title value="UK Core Task"/>
-	<status value="active"/>
-	<date value="2022-12-16"/>
-	<publisher value="HL7 UK"/>
+  <id value="UKCore-Task" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+  <version value="1.2.0" />
+  <name value="UKCoreTask" />
+  <title value="UK Core Task" />
+  <status value="active" />
+  <date value="2022-12-16" />
+  <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
     <telecom>

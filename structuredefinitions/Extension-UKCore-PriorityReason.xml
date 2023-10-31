@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Extension-UKCore-PriorityReason"/>
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason"/>
-	<version value="1.0.0"/>
-	<name value="ExtensionUKCorePriorityReason"/>
-	<title value="Extension UK Core Priority Reason"/>
-	<status value="active"/>
-	<date value="2023-04-28"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="This extends the Service Request Resource to support the underlying reason why a Service Request is urgent."/>
-	<purpose value="This is a Genomics use case to record the reason why an urgent test has been requested. This differs from supportingInfo in that it does not necessarily indicate why the test is being requested."/>
-	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<fhirVersion value="4.0.1"/>
-	<mapping>
-		<identity value="rim"/>
-		<uri value="http://hl7.org/v3"/>
-		<name value="RIM Mapping"/>
-	</mapping>
-	<kind value="complex-type"/>
-	<abstract value="false"/>
-	<context>
-		<type value="element"/>
-		<expression value="ServiceRequest.priority"/>
-	</context>
-	<type value="Extension"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Extension">
-			<path value="Extension"/>
-			<short value="A SNOMED CT concept representing the reason a Service Request is urgent."/>
-			<definition value="A SNOMED CT concept representing the reason a Service Request is urgent"/>
-		</element>
-		<element id="Extension.url">
-			<path value="Extension.url"/>
-			<fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason"/>
-		</element>
-		<element id="Extension.value[x]">
-			<path value="Extension.value[x]"/>
-			<short value="This describes the reason a service request is urgent"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-			</type>
-			<binding>
-				<strength value="preferred"/>
-				<description value="A set of codes that define the reason why a service request is urgent."/>
-				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode"/>
-			</binding>
-		</element>
-	</differential>
+  <id value="Extension-UKCore-PriorityReason" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
+  <version value="1.0.0" />
+  <name value="ExtensionUKCorePriorityReason" />
+  <title value="Extension UK Core Priority Reason" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This extends the Service Request Resource to support the underlying reason why a Service Request is urgent." />
+  <purpose value="This is a Genomics use case to record the reason why an urgent test has been requested. This differs from supportingInfo in that it does not necessarily indicate why the test is being requested." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="ServiceRequest.priority" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="A SNOMED CT concept representing the reason a Service Request is urgent." />
+      <definition value="A SNOMED CT concept representing the reason a Service Request is urgent" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="This describes the reason a service request is urgent" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define the reason why a service request is urgent." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>

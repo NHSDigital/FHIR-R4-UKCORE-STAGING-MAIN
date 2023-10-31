@@ -1,135 +1,135 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-DischargeMethod" />
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeMethod" />
-	<version value="2.1.0" />
-	<name value="UKCoreDischargeMethod" />
-	<title value="UK Core Discharge Method" />
-	<status value="active" />
-	<date value="2022-01-07" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the method of discharge from a hospital provider spell." />
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<compose>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
-		</include>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="ea46e5cb-e35c-4625-b792-905c85b85397"/>
-		<timestamp value="2022-01-07T12:50:27+00:00"/>
-		<total value="14"/>
-		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales|1.0.0"/>
-		</parameter>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland|1.0.0"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="9"/>
-			<display value="Method of discharge not known"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="8"/>
-			<display value="Not applicable (Hospital Provider Spell not finished at episode end (i.e. not discharged) or current episode unfinished)"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
-			<version value="1.0.0"/>
-			<code value="8"/>
-			<display value="Not applicable - hospital provider spell not yet finished (i.e. not discharged)"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="4"/>
-			<display value="Patient died"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
-			<version value="1.0.0"/>
-			<code value="4"/>
-			<display value="Patient died"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="7"/>
-			<display value="Patient discharged by a relative or advocate"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
-			<version value="1.0.0"/>
-			<code value="3"/>
-			<display value="Patient discharged by Mental Health Review Tribunal (MHRT), Home Secretary or court"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="3"/>
-			<display value="Patient discharged by mental health review tribunal, Home Secretary or Court"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="6"/>
-			<display value="Patient discharged him/herself"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
-			<version value="1.0.0"/>
-			<code value="2"/>
-			<display value="Patient discharged him/herself or was discharged by a relative or advocate"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="1"/>
-			<display value="Patient discharged on clinical advice or with clinical consent"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
-			<version value="1.0.0"/>
-			<code value="1"/>
-			<display value="Patient discharged on clinical advice or with clinical consent"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-			<version value="1.0.0"/>
-			<code value="5"/>
-			<display value="Stillbirth"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales"/>
-			<version value="1.0.0"/>
-			<code value="5"/>
-			<display value="Stillbirth"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-DischargeMethod" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeMethod" />
+  <version value="2.1.0" />
+  <name value="UKCoreDischargeMethod" />
+  <title value="UK Core Discharge Method" />
+  <status value="active" />
+  <date value="2022-01-07" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the method of discharge from a hospital provider spell." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+    </include>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="ea46e5cb-e35c-4625-b792-905c85b85397" />
+    <timestamp value="2022-01-07T12:50:27+00:00" />
+    <total value="14" />
+    <offset value="0" />
+    <parameter>
+      <name value="version" />
+      <valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales|1.0.0" />
+    </parameter>
+    <parameter>
+      <name value="version" />
+      <valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland|1.0.0" />
+    </parameter>
+    <parameter>
+      <name value="count" />
+      <valueInteger value="2147483647" />
+    </parameter>
+    <parameter>
+      <name value="offset" />
+      <valueInteger value="0" />
+    </parameter>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="9" />
+      <display value="Method of discharge not known" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="8" />
+      <display value="Not applicable (Hospital Provider Spell not finished at episode end (i.e. not discharged) or current episode unfinished)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+      <version value="1.0.0" />
+      <code value="8" />
+      <display value="Not applicable - hospital provider spell not yet finished (i.e. not discharged)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="4" />
+      <display value="Patient died" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+      <version value="1.0.0" />
+      <code value="4" />
+      <display value="Patient died" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="7" />
+      <display value="Patient discharged by a relative or advocate" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+      <version value="1.0.0" />
+      <code value="3" />
+      <display value="Patient discharged by Mental Health Review Tribunal (MHRT), Home Secretary or court" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="3" />
+      <display value="Patient discharged by mental health review tribunal, Home Secretary or Court" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="6" />
+      <display value="Patient discharged him/herself" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+      <version value="1.0.0" />
+      <code value="2" />
+      <display value="Patient discharged him/herself or was discharged by a relative or advocate" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="1" />
+      <display value="Patient discharged on clinical advice or with clinical consent" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+      <version value="1.0.0" />
+      <code value="1" />
+      <display value="Patient discharged on clinical advice or with clinical consent" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+      <version value="1.0.0" />
+      <code value="5" />
+      <display value="Stillbirth" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodWales" />
+      <version value="1.0.0" />
+      <code value="5" />
+      <display value="Stillbirth" />
+    </contains>
+  </expansion>
 </ValueSet>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-AlcoholConsumption" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption" />
-  <version value="0.0.1"/>
+  <version value="0.0.1" />
   <name value="UKCoreObservationAlcoholConsumption" />
   <title value="UKCore Observation Alcohol Consumption" />
   <status value="draft" />

@@ -1,21 +1,21 @@
 <Medication xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Extension-MedicationTradeFamily-Example"/>
-	<!-- **************extension start************** -->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="9298001000001101"/>
-				<display value="Panadol Extra"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
-	<!-- **************extension end************** -->
-	<code>
-		<coding>
-			<system value="https://dmd.nhs.uk"/>
-			<code value="18677911000001109"/>
-			<display value="Panadol Extra Advance 500mg/65mg tablets (Haleon UK Ltd)"/>
-		</coding>
-	</code>
+  <id value="UKCore-Extension-MedicationTradeFamily-Example" />
+  <!-- **************extension start************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="9298001000001101" />
+        <display value="Panadol Extra" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <!-- **************extension end************** -->
+  <code>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="18677911000001109" />
+      <display value="Panadol Extra Advance 500mg/65mg tablets (Haleon UK Ltd)" />
+    </coding>
+  </code>
 </Medication>
