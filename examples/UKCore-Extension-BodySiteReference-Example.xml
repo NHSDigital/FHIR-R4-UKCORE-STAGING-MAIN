@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Extension-BodySiteReference-Example"/>
-	<status value="available"/>
-	<type>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="119297000"/>
-			<display value="Blood specimen"/>
-		</coding>
-	</type>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<receivedTime value="2016-02-05T11:10:00Z"/>
-	<collection>
-		<collector>
-			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-		</collector>
-		<collectedDateTime value="2016-02-09T16:00:00Z"/>
-		<method>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="28520004"/>
-				<display value="Venipuncture for blood test"/>
-			</coding>
-		</method>
-		<bodySite>
-			<!-- Use of the bodySite R5 backport extension to reference a BodyStructure, in this case, the draw site. -->
-			<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference">
-				<valueReference>
-					<reference value="BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample"/>
-				</valueReference>
-			</extension>
-			<text value="vein on the inner left arm"/>
-		</bodySite>
-	</collection>
+  <id value="UKCore-Extension-BodySiteReference-Example" />
+  <status value="available" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="119297000" />
+      <display value="Blood specimen" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <receivedTime value="2016-02-05T11:10:00Z" />
+  <collection>
+    <collector>
+      <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+    </collector>
+    <collectedDateTime value="2016-02-09T16:00:00Z" />
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="28520004" />
+        <display value="Venipuncture for blood test" />
+      </coding>
+    </method>
+    <bodySite>
+      <!-- Use of the bodySite R5 backport extension to reference a BodyStructure, in this case, the draw site. -->
+      <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference">
+        <valueReference>
+          <reference value="BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample" />
+        </valueReference>
+      </extension>
+      <text value="vein on the inner left arm" />
+    </bodySite>
+  </collection>
 </Specimen>

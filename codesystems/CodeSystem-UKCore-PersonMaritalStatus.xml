@@ -21,98 +21,98 @@
   <caseSensitive value="true" />
   <content value="complete" />
   <filter>
-    <code value="ApplicableCountry"/>
-    <description value="Filter to identify an applicable country for a concept"/>
-    <operator value="="/>
-    <value value="ApplicableCountry"/>
+    <code value="ApplicableCountry" />
+    <description value="Filter to identify an applicable country for a concept" />
+    <operator value="=" />
+    <value value="ApplicableCountry" />
   </filter>
   <property>
-    <code value="ApplicableCountry"/>
-    <description value="A UK country where the concept is known to be applicable based on the source information used to construct this CodeSystem as identified within the CodeSystem.identifier fields. In each case this can be one of: England | Scotland | Wales | Northern Ireland"/>
-    <type value="string"/>
+    <code value="ApplicableCountry" />
+    <description value="A UK country where the concept is known to be applicable based on the source information used to construct this CodeSystem as identified within the CodeSystem.identifier fields. In each case this can be one of: England | Scotland | Wales | Northern Ireland" />
+    <type value="string" />
   </property>
   <concept>
     <code value="married-or-civil-partner" />
     <display value="Married/Civil Partner" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="England"/>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
     </property>
   </concept>
   <concept>
     <code value="civil-partner" />
     <display value="Civil Partner" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Scotland"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Scotland" />
     </property>
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Wales"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
     </property>
   </concept>
   <concept>
     <code value="never-married-nor-registered-civil-partnership" />
     <display value="Never married nor registered civil partnership" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Scotland"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Scotland" />
     </property>
   </concept>
   <concept>
     <code value="divorced-or-civil-partnership-dissolved" />
     <display value="Divorced/Person whose Civil Partnership has been dissolved" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="England"/>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
     </property>
   </concept>
   <concept>
     <code value="civil-partnership-dissolved" />
     <display value="Person whose Civil Partnership has been dissolved" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Scotland"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Scotland" />
     </property>
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Wales"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
     </property>
   </concept>
   <concept>
     <code value="widowed-or-surviving-civil-partner" />
     <display value="Widowed/Surviving Civil Partner" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="England"/>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
     </property>
   </concept>
   <concept>
     <code value="surviving-civil-partner" />
     <display value="Surviving Civil Partner" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Scotland"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Scotland" />
     </property>
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Wales"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
     </property>
   </concept>
   <concept>
     <code value="not-disclosed-or-unknown" />
     <display value="Not disclosed or unknown" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="Wales"/>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
     </property>
   </concept>
   <concept>
     <code value="not-disclosed" />
     <display value="Not disclosed" />
     <property>
-      <code value="ApplicableCountry"/>
-      <valueString value="England"/>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
     </property>
   </concept>
 </CodeSystem>
