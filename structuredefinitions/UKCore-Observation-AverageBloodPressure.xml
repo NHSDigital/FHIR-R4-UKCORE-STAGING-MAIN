@@ -55,6 +55,10 @@
       <path value="Observation.effective[x]" />
       <min value="1" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="0" />
+    </element>
     <element id="Observation.method">
       <path value="Observation.method" />
       <binding>
