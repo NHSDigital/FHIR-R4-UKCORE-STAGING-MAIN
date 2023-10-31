@@ -66,6 +66,10 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-MeasurementMethod" />
       </binding>
     </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
     <element id="Observation.device">
       <path value="Observation.device" />
       <type>
