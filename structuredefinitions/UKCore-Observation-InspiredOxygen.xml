@@ -68,14 +68,6 @@
       <path value="Observation.value[x].code" />
       <fixedCode value="l/min" />
     </element>
-    <element id="Observation.value[x].code">
-      <path value="Observation.value[x].code" />
-      <fixedCode value="%" />
-    </element>
-    <element id="Observation.value[x].code">
-      <path value="Observation.value[x].code" />
-      <fixedCode value="FiO2(%)" />
-    </element>
      <element id="Observation.method">
       <path value="Observation.method" />
       <binding>
