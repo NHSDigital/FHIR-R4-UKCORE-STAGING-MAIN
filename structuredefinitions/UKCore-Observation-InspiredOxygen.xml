@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the additional constraints and extensions on the UK Core Observation profile" />
+  <description value="Defines the additional constraints and extensions on the UK Core Observation profile, It can be used for Normal Breathing , Oxygen Therapy . It basically describes whether a patient requires oxygen or is breathing room air" />
   <purpose value="To provide implementers with additional support when implementing recording of whether a patient is breathing on their own, or is on oxygen." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -67,6 +67,29 @@
     <element id="Observation.value[x].code">
       <path value="Observation.value[x].code" />
       <fixedCode value="l/min" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="%" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="FiO2(%)" />
+    </element>
+     <element id="Observation.method">
+      <path value="Observation.method" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-methods" />
+      </binding>
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
