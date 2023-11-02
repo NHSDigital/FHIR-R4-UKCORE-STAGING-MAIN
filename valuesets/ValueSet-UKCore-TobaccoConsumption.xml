@@ -4,7 +4,7 @@
 	<version value="0.0.1"/>
 	<name value="UKCoreTobaccoConsumption"/>
 	<title value="UK Core Tobacco Consumption"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<date value="2023-09-12"/>
 	<publisher value="HL7 UK"/>
 	<contact>
@@ -32,4 +32,60 @@
 			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="d75409bd-f6ae-4634-8521-4f9bd9b43a29"/>
+		<timestamp value="2023-10-31T15:26:00+00:00"/>
+		<total value="10"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="228510007"/>
+			<display value="Chewed tobacco consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="230057008"/>
+			<display value="Cigar consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="230056004"/>
+			<display value="Cigarette consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="401201003"/>
+			<display value="Cigarette pack-years"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="228500003"/>
+			<display value="Moist tobacco consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="782516008"/>
+			<display value="Number of calculated smoking pack years"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="230058003"/>
+			<display value="Pipe tobacco consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="228490006"/>
+			<display value="Snuff consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="266918002"/>
+			<display value="Tobacco smoking consumption"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="836001000000109"/>
+			<display value="Waterpipe tobacco consumption"/>
+		</contains>
+	</expansion>
 </ValueSet>
