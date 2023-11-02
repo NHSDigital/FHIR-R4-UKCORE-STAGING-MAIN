@@ -57,42 +57,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.extension">
-      <path value="Observation.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Observation.extension:triggeredByR5">
       <path value="Observation.extension" />
       <sliceName value="triggeredByR5" />
       <short value="Triggering observation(s). This is a R5 backport." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
       </type>
     </element>
-    <element id="Observation.extension:triggeredByR5.extension">
-      <path value="Observation.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
     <element id="Observation.extension:triggeredByR5.extension:observation">
       <path value="Observation.extension.extension" />
       <sliceName value="observation" />
-      <min value="1" />
     </element>
     <element id="Observation.extension:triggeredByR5.extension:observation.value[x]">
       <path value="Observation.extension.extension.value[x]" />
@@ -102,7 +78,6 @@
     <element id="Observation.extension:triggeredByR5.extension:type">
       <path value="Observation.extension.extension" />
       <sliceName value="type" />
-      <min value="1" />
     </element>
     <element id="Observation.extension:triggeredByR5.extension:type.value[x]">
       <path value="Observation.extension.extension.value[x]" />
@@ -112,7 +87,6 @@
     <element id="Observation.extension:triggeredByR5.extension:reason">
       <path value="Observation.extension.extension" />
       <sliceName value="reason" />
-      <min value="0" />
     </element>
     <element id="Observation.extension:triggeredByR5.extension:reason.value[x]">
       <path value="Observation.extension.extension.value[x]" />
@@ -251,7 +225,7 @@
     <element id="Observation.method">
       <path value="Observation.method" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
       </binding>
     </element>
     <element id="Observation.specimen">

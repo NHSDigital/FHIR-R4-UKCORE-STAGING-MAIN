@@ -16,7 +16,7 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED CT UK coding system for the systolic blood pressure. Selected from the SNOMED CT UK coding system:
+  <description value="A code from the SNOMED CT UK coding system for the recording of a single systolic blood pressure reading. Selected from the SNOMED CT UK coding system:
 &#13; - 163030003 | On examination - Systolic blood pressure reading (finding)
 &#13; - 271649006 | Systolic blood pressure (observable entity)
 &#13; - 407556006 | Lying systolic blood pressure (observable entity)

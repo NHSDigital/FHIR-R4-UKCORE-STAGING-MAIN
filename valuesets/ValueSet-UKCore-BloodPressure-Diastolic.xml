@@ -16,7 +16,7 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED CT UK coding system for the diastolic blood pressure. Selected from the SNOMED CT UK coding system:
+  <description value="A code from the SNOMED CT UK coding system for the recording of a single diastolic blood pressure reading. Selected from the SNOMED CT UK coding system:
 &#13; - 163031004 | On examination - Diastolic blood pressure reading (finding)
 &#13; - 271650006 | Diastolic blood pressure (observable entity)
 &#13; - 1091811000000102  | Diastolic arterial pressure (observable entity)

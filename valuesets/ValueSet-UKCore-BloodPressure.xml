@@ -16,7 +16,7 @@
 			<rank value="1"/>
 		</telecom>
 	</contact>
-	<description value="A code from the SNOMED CT UK coding system for recording blood pressure. Selected from the SNOMED CT UK coding system:
+  <description value="A code from the SNOMED CT UK coding system for recording and grouping of a single set of blood pressure readings, and excludes specific systolic / diastolic readings. Selected from the SNOMED CT UK coding system:
 &#13; - 163020007 | On examination - blood pressure reading (finding) 
 &#13; - 392570002 | Blood pressure finding (finding)
 &#13; - 392571003 | Finding of arterial pulse pressure (finding)
