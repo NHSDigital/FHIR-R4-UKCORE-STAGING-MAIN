@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the additional constraints and extensions on the UK Core Observation Vital Signs profile" />
+  <description value="Defines the additional constraints and extensions on the UK Core Observation Vital Signs profile, for the recording of blood pressure observations" />
   <purpose value="To provide implementers with additional support when implementing blood pressure monitoring and to provide a consistent structure to how the data is presented." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -30,6 +30,8 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
@@ -38,10 +40,15 @@
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
+      <min value="1" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />
       </binding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
     </element>
     <element id="Observation.method">
       <path value="Observation.method" />
@@ -49,6 +56,10 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-MeasurementMethod" />
       </binding>
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
@@ -70,6 +81,52 @@
       <min value="1" />
       <max value="2" />
     </element>
+    <element id="Observation.component.code">
+      <path value="Observation.component.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of vital sign." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+      </binding>
+    </element>
+    <element id="Observation.component.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
+      </binding>
+    </element>
+    <element id="Observation.component.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component.code.coding:snomedCT">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="snomedCT" />
+      <min value="1" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation for vital-signs" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
+      </binding>
+    </element>
+    <element id="Observation.component.code.coding:snomedCT.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
     <element id="Observation.component:SystolicBP">
       <path value="Observation.component" />
       <sliceName value="SystolicBP" />
@@ -89,6 +146,8 @@
     <element id="Observation.component:SystolicBP.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.component:SystolicBP.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
@@ -101,6 +160,7 @@
     <element id="Observation.component:SystolicBP.code.coding:snomedCT">
       <path value="Observation.component.code.coding" />
       <sliceName value="snomedCT" />
+      <min value="1" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systolic" />
@@ -112,6 +172,7 @@
     </element>
     <element id="Observation.component:SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
+      <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
@@ -146,6 +207,8 @@
     <element id="Observation.component:DiastolicBP.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.component:DiastolicBP.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
@@ -158,6 +221,7 @@
     <element id="Observation.component:DiastolicBP.code.coding:snomedCT">
       <path value="Observation.component.code.coding" />
       <sliceName value="snomedCT" />
+      <min value="1" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Diastolic" />
@@ -169,6 +233,7 @@
     </element>
     <element id="Observation.component:DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />
+      <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
