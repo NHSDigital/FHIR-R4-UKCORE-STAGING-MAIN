@@ -5,7 +5,7 @@
   <version value="1.1.0" />
   <name value="UKCoreObservationVitalSigns" />
   <title value="UK Core Observation Vital Signs" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the observation constraints and extensions on the UK Core observation resource for the minimal set of data to query and retrieve clinical observation vital signs information." />
-  <purpose value="This profile allows exchange of internationally FHIR compliant vital signs information based on measurements and simple assertions made about an individual." />
+  <description value="Defines the observation constraints and extensions on the UK Core Observation resource for the minimal set of data to query and retrieve clinical observation vital signs information." />
+  <purpose value="This profile allows exchange of internationally FHIR compliant vital signs information based on measurements and simple assertions made about an individual. Where a more constrained derived profile exists, it should be used instead of this profile." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -62,8 +62,8 @@
       <constraint>
         <key value="ukcore-obs-vs-001" />
         <severity value="error" />
-        <human value="Where the category is Vital Signs the code.coding SHALL include a LOINC &quot;magic code&quot;" />
-        <expression value="category.where(code='vital-signs').exists() implies code.coding.where(system='http://loinc.org').exists()" />
+        <human value="code.coding SHALL include a LOINC &quot;magic code&quot;" />
+        <expression value="code.coding.where(system='http://loinc.org').exists()" />
       </constraint>
     </element>
     <element id="Observation.extension:bodyPosition">
@@ -121,6 +121,8 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
       <binding>
         <strength value="extensible" />
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
@@ -133,6 +135,7 @@
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
+      <min value="1" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation" />
