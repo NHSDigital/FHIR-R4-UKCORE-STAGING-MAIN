@@ -64,5 +64,20 @@
       <path value="Observation.value[x].value" />
       <min value="1" />
     </element>
+	<element id="Observation.value[x].unit">
+		<path value="Observation.value[x].unit" />
+		<min value="1" />
+		<fixedString value="per minute" />
+	</element>
+	<element id="Observation.value[x].system">
+		<path value="Observation.value[x].system" />
+		<min value="1" />
+		<fixedUri value="http://unitsofmeasure.org" />
+	</element>
+	<element id="Observation.value[x].code">
+		<path value="Observation.value[x].code" />
+		<min value="1" />
+		<fixedCode value="/min" />
+	</element>
   </differential>
 </StructureDefinition>
