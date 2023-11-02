@@ -55,12 +55,20 @@
       <path value="Observation.effective[x]" />
       <min value="1" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
     <element id="Observation.method">
       <path value="Observation.method" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-MeasurementMethod" />
       </binding>
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
