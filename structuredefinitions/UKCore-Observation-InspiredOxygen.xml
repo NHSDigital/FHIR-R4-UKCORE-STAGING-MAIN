@@ -68,13 +68,5 @@
       <path value="Observation.specimen" />
       <max value="0" />
     </element>
-    <element id="Observation.device">
-      <path value="Observation.device" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>
