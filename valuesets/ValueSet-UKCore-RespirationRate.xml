@@ -4,7 +4,7 @@
 	<version value="1.0.0"/>
 	<name value="UKCoreRespirationRate"/>
 	<title value="UK Core RespirationRate"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<date value="2023-09-12"/>
 	<publisher value="HL7 UK"/>
 	<contact>
@@ -31,4 +31,25 @@
 			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="18feb664-d046-40a7-bc95-7949893fade9"/>
+		<timestamp value="2023-10-31T15:26:00+00:00"/>
+		<total value="3"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="271625008"/>
+			<display value="Rate of spontaneous respiration"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="86290005"/>
+			<display value="Respiratory rate"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="250810003"/>
+			<display value="Total breath rate"/>
+		</contains>
+	</expansion>
 </ValueSet>

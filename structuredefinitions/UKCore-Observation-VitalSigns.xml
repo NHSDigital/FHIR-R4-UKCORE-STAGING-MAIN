@@ -155,48 +155,5 @@
       <path value="Observation.effective[x]" />
       <min value="1" />
     </element>
-    <element id="Observation.component.code">
-      <path value="Observation.component.code" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of vital sign." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
-      </binding>
-    </element>
-    <element id="Observation.component.code.coding">
-      <path value="Observation.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
-      </binding>
-    </element>
-    <element id="Observation.component.code.coding:loinc.system">
-      <path value="Observation.component.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.component.code.coding:snomedCT">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="snomedCT" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system describing a type of observation for vital-signs" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
-      </binding>
-    </element>
-    <element id="Observation.component.code.coding:snomedCT.system">
-      <path value="Observation.component.code.coding.system" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
   </differential>
 </StructureDefinition>

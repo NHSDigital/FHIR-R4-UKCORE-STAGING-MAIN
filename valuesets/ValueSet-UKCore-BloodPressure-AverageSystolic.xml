@@ -1,37 +1,88 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-BloodPressure-AverageSystolic" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic" />
-  <version value="1.0.0" />
-  <name value="UKCoreBloodPressureAverageSystolic" />
-  <title value="UK Core Blood Pressure Average Systolic" />
-  <status value="draft" />
-  <date value="2023-09-12" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="A code from the SNOMED CT UK coding system for the systolic blood pressure. Selected from the SNOMED CT UK coding system:
+	<id value="UKCore-BloodPressure-AverageSystolic"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreBloodPressureAverageSystolic"/>
+	<title value="UK Core Blood Pressure Average Systolic"/>
+	<status value="active"/>
+	<date value="2023-09-12"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="A code from the SNOMED CT UK coding system for the systolic blood pressure. Selected from the SNOMED CT UK coding system:
 &#13; - 198081000000101  | Ambulatory systolic blood pressure (observable entity)
 &#13; - 314464000 | 24 hour systolic blood pressure (observable entity)
 &#13; - 314449000 | Average 24 hour systolic blood pressure (observable entity)
-&#13; - 314448008  | Maximum 24 hour systolic blood pressure (observable entity) 
-&#13; - 314447003  | Minimum 24 hour systolic blood pressure (observable entity)
-&#13; - DescendantOrSelfOf 314440001 | Average systolic blood pressure (observable entity)" />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="198081000000101 OR 314464000 OR 314449000 OR 314448008 OR 314447003 OR descendantOrSelfOf 314440001" />
-      </filter>
-    </include>
-  </compose>
+&#13; - 314448008 | Maximum 24 hour systolic blood pressure (observable entity) 
+&#13; - 314447003 | Minimum 24 hour systolic blood pressure (observable entity)
+&#13; - DescendantOrSelfOf 314440001 | Average systolic blood pressure (observable entity)"/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="198081000000101 OR 314464000 OR 314449000 OR 314448008 OR 314447003 OR descendantOrSelfOf 314440001"/>
+			</filter>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="17af4348-525a-486d-bc23-baa24ea7ab1a"/>
+		<timestamp value="2023-10-31T22:11:00+00:00"/>
+		<total value="9"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314464000"/>
+			<display value="24 hour systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="198081000000101"/>
+			<display value="Ambulatory systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314449000"/>
+			<display value="Average 24 hour systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314446007"/>
+			<display value="Average day interval systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="413606001"/>
+			<display value="Average home systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314445006"/>
+			<display value="Average night interval systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314440001"/>
+			<display value="Average systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314448008"/>
+			<display value="Maximum 24 hour systolic blood pressure"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="314447003"/>
+			<display value="Minimum 24 hour systolic blood pressure"/>
+		</contains>
+	</expansion>
 </ValueSet>
