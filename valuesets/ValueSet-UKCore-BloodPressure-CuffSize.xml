@@ -4,7 +4,7 @@
 	<version value="1.0.0"/>
 	<name value="UKCoreBloodPressureCuffSize"/>
 	<title value="UK Core Blood Pressure Cuff Size"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<date value="2023-09-12"/>
 	<publisher value="HL7 UK"/>
 	<contact>
@@ -29,4 +29,50 @@
 			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="5b94e321-d1ee-4181-9b43-a9cdd2c2c457"/>
+		<timestamp value="2023-10-31T14:20:00+00:00"/>
+		<total value="8"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="720737000"/>
+			<display value="Blood pressure cuff, adult size"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="720740000"/>
+			<display value="Blood pressure cuff, adult thigh type"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="8741000205104"/>
+			<display value="Blood pressure cuff, ankle type"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="720736009"/>
+			<display value="Blood pressure cuff, paediatric size"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="990191000000101"/>
+			<display value="Large adult size blood pressure cuff"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="990221000000108"/>
+			<display value="Paediatric size blood pressure cuff"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="990211000000102"/>
+			<display value="Small adult size blood pressure cuff"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="990201000000104"/>
+			<display value="Standard adult size blood pressure cuff"/>
+		</contains>
+	</expansion>
 </ValueSet>
