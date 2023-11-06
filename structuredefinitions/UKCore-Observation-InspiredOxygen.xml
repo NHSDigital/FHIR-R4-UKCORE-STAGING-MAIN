@@ -59,11 +59,11 @@
     <element id="Observation.interpretation">
       <path value="Observation.interpretation" />
       <max value="0" />
-    </element>
+    </element>  
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
       <max value="0" />
-    </element>
+    </element>   
     <element id="Observation.specimen">
       <path value="Observation.specimen" />
       <max value="0" />
