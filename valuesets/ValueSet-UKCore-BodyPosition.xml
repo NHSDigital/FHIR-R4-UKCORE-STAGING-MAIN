@@ -41,4 +41,75 @@
 			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<identifier value="6f0541ae-6911-4576-8006-87ea5e2674c3"/>
+		<timestamp value="2023-01-06T11:19:00+00:00"/>
+		<total value="13"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="30212006"/>
+			<display value="Fowler's position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="26527006"/>
+			<display value="Inverse Trendelenburg position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="102536004"/>
+			<display value="Left lateral decubitus position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="414585002"/>
+			<display value="Left lateral tilt"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="10904000"/>
+			<display value="Orthostatic body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1240000"/>
+			<display value="Prone body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="102538003"/>
+			<display value="Recumbent body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="423413008"/>
+			<display value="Reverse trendelenburg positioning"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="102535000"/>
+			<display value="Right lateral decubitus position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="415346000"/>
+			<display value="Right lateral tilt"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="33586001"/>
+			<display value="Sitting position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="40199007"/>
+			<display value="Supine body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34106002"/>
+			<display value="Trendelenburg position"/>
+		</contains>
+	</expansion>
 </ValueSet>
