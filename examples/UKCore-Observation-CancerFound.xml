@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="imaging"/>
+			<display value="Imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="xxx100000010c"/>
+			<display value="Multi-cancer early detection signal detected"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/GRPat123"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct/"/>
+			<code value="371480007"/>
+			<display value="Anatomic location of neoplasm"/>
+		</coding>
+	</valueCodeableConcept>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="71854001"/>
+			<display value="Colon structure"/>
+		</coding>
+	</bodySite>
+</Observation>
