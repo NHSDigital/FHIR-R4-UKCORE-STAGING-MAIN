@@ -5,7 +5,7 @@
   <version value="1.0.0" />
   <name value="UKCoreObservationVitalSignsBloodPressure" />
   <title value="UK Core Observation Vital Signs Blood Pressure" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -30,8 +30,6 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
@@ -40,7 +38,6 @@
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
-      <min value="1" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />

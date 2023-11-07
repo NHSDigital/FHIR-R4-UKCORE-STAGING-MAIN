@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-TobaccoConsumption" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoConsumption" />
-  <version value="0.0.1" />
+  <version value="1.0.0" />
   <name value="UKCoreObservationTobaccoConsumption" />
   <title value="UKCore Observation Tobacco Consumption" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the additional constraints and extensions on the UK Core Observation profile" />
-  <purpose value="To provide implementers with additional support when implementing gathering and recording the patient's tobacco consumption per day / week" />
+  <description value="Defines the additional constraints and extensions on the UK Core Observation profile, for recording tobacco consumption." />
+  <purpose value="To provide implementers with additional support when implementing gathering and recording the patient's tobacco consumption per day / week. This profile should not be used to record the vaping habits of a patient." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
