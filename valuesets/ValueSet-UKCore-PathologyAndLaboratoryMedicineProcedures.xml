@@ -2,7 +2,7 @@
     <id value="UKCore-PathologyAndLaboratoryMedicineProcedures" />
     <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
     <version value="1.0.0" />
-    <name value="PathologyAndLaboratoryMedicineProcedures" />
+    <name value="UKCorePathologyAndLaboratoryMedicineProcedures" />
     <title value="UK Core Pathology And Laboratory Medicine Procedures" />
     <status value="active" />
     <date value="2023-11-28" />
