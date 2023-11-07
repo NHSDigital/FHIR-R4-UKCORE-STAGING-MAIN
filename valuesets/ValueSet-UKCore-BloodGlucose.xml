@@ -1,32 +1,234 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-BloodGlucose" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodGlucose" />
-  <version value="1.0.0" />
-  <name value="UKCoreBloodGlucose" />
-  <title value="UK Core Blood Glucose" />
-  <status value="draft" />
-  <date value="2023-09-12" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="A set of codes to record the level of result from a blood glucose test. Selected from the SNOMED CT UK coding system:
-&#13; - DescendantOrSelfOf 997671000000106 | Blood glucose level (observable entity)" />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-    <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="DescendantOrSelfOf 997671000000106" />
-      </filter>
-    </include>
-    </compose>
+	<id value="UKCore-BloodGlucose"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodGlucose"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreBloodGlucose"/>
+	<title value="UK Core Blood Glucose"/>
+	<status value="active"/>
+	<date value="2023-09-12"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="A set of codes to record the level of result from a blood glucose test. Selected from the SNOMED CT UK coding system:
+&#13; - DescendantOrSelfOf 997671000000106 | Blood glucose level (observable entity)
+&#13; - DescendantOrSelfOf 434911002 | Plasma glucose concentration (observable entity)"/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="DescendantOrSelfOf 997671000000106 OR DescendantOrSelfOf 434911002"/>
+			</filter>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="8d556d097-5278-48fd-98ea-1e3705266fb2"/>
+		<timestamp value="2023-10-31T16:22:00+00:00"/>
+		<total value="39"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003721000000104"/>
+			<display value="120 minute blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010711000000101"/>
+			<display value="120 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010651000000106"/>
+			<display value="120 minute serum glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003731000000102"/>
+			<display value="150 minute blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1012661000000105"/>
+			<display value="150 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010661000000109"/>
+			<display value="150 minute serum glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003121000000103"/>
+			<display value="180 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1030551000000103"/>
+			<display value="2 hour post-prandial blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1045471000000104"/>
+			<display value="210 minute plasma glucose concentration"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="998281000000106"/>
+			<display value="240 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003691000000108"/>
+			<display value="30 minute blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010681000000100"/>
+			<display value="30 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010621000000101"/>
+			<display value="30 minute serum glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="998291000000108"/>
+			<display value="300 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003701000000108"/>
+			<display value="60 minute blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010691000000103"/>
+			<display value="60 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010631000000104"/>
+			<display value="60 minute serum glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003711000000105"/>
+			<display value="90 minute blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010701000000103"/>
+			<display value="90 minute plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010641000000108"/>
+			<display value="90 minute serum glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="997671000000106"/>
+			<display value="Blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="994411000000106"/>
+			<display value="Blood glucose series"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="997681000000108"/>
+			<display value="Fasting blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="58111000237107"/>
+			<display value="Fasting glucose molar concentration in plasma"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="571000237106"/>
+			<display value="Fasting glucose molar concentration in serum"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="56861000237104"/>
+			<display value="Glucose arbitrary concentration in blood"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="56991000237104"/>
+			<display value="Glucose molar concentration in blood"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1110521000000108"/>
+			<display value="Glucose substance concentration in plasma"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1107451000000100"/>
+			<display value="Glucose substance concentration in serum"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1028901000000108"/>
+			<display value="Plasma 2 hours post-prandial glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003141000000105"/>
+			<display value="Plasma fasting glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="434911002"/>
+			<display value="Plasma glucose concentration"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010671000000102"/>
+			<display value="Plasma glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1031331000000106"/>
+			<display value="Plasma random glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1089381000000101"/>
+			<display value="Random blood glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1028891000000107"/>
+			<display value="Serum 2 hours post-prandial glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1003131000000101"/>
+			<display value="Serum fasting glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1010611000000107"/>
+			<display value="Serum glucose level"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1028881000000105"/>
+			<display value="Serum random glucose level"/>
+		</contains>
+	</expansion>
 </ValueSet>

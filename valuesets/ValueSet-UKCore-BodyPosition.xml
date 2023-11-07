@@ -1,37 +1,115 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-BodyPosition" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyPosition" />
-  <version value="1.0.0" />
-  <name value="UKCoreBodyPosition" />
-  <title value="UK Core Body Position" />
-  <status value="draft" />
-  <date value="2023-09-12" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="A set of codes that define a patients body position when a clinical observation was taken. Selected from the SNOMED CT UK coding system:
+	<id value="UKCore-BodyPosition"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyPosition"/>
+	<version value="1.0.0"/>
+	<name value="UKCoreBodyPosition"/>
+	<title value="UK Core Body Position"/>
+	<status value="draft"/>
+	<date value="2023-09-12"/>
+	<publisher value="HL7 UK"/>
+	<contact>
+		<name value="HL7 UK"/>
+		<telecom>
+			<system value="email"/>
+			<value value="ukcore@hl7.org.uk"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="A set of codes that define a patients body position when a clinical observation was taken. Selected from the SNOMED CT UK coding system:
+&#13; - 30212006 | Fowler's position (finding)
+&#13; - 26527006 | Inverse Trendelenburg position (finding)
+&#13; - 102536004 | Left lateral decubitus position (finding)
 &#13; - 414585002 | Left lateral tilt (finding)
 &#13; - 10904000 | Orthostatic body position (finding)
 &#13; - 1240000 | Prone body position (finding)
 &#13; - 102538003 | Recumbent body position (finding)
+&#13; - 423413008 | Reverse trendelenburg positioning (finding)
+&#13; - 102535000 | Right lateral decubitus position (finding)
+&#13; - 415346000 | Right lateral tilt (finding)
 &#13; - 33586001 | Sitting position (finding)
-&#13; - 40199007 | Supine body position (finding)" />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="414585002 OR 10904000 OR 1240000 OR 102538003 OR 102535000 OR 33586001 OR 40199007" />
-      </filter>
-    </include>
-  </compose>
+&#13; - 40199007 | Supine body position (finding)
+&#13; - 34106002 | Trendelenburg position (finding)"/>
+	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="30212006 OR 26527006 OR 102536004 OR 414585002 OR 10904000 OR 1240000 OR 102538003 OR 423413008 OR 102535000 OR 415346000 OR 33586001 OR 40199007 OR 34106002"/>
+			</filter>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="6f0541ae-6911-4576-8006-87ea5e2674c3"/>
+		<timestamp value="2023-11-06T11:19:00+00:00"/>
+		<total value="13"/>
+		<offset value="0"/>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="30212006"/>
+			<display value="Fowler's position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="26527006"/>
+			<display value="Inverse Trendelenburg position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="102536004"/>
+			<display value="Left lateral decubitus position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="414585002"/>
+			<display value="Left lateral tilt"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="10904000"/>
+			<display value="Orthostatic body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="1240000"/>
+			<display value="Prone body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="102538003"/>
+			<display value="Recumbent body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="423413008"/>
+			<display value="Reverse trendelenburg positioning"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="102535000"/>
+			<display value="Right lateral decubitus position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="415346000"/>
+			<display value="Right lateral tilt"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="33586001"/>
+			<display value="Sitting position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="40199007"/>
+			<display value="Supine body position"/>
+		</contains>
+		<contains>
+			<system value="http://snomed.info/sct"/>
+			<code value="34106002"/>
+			<display value="Trendelenburg position"/>
+		</contains>
+	</expansion>
 </ValueSet>
