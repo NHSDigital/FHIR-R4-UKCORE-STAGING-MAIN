@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-Lab" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreObservationLab" />
   <title value="UK Core Observation Lab" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-11-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -65,8 +65,8 @@
       <path value="Observation.code" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and results" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-UnifiedTestList" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test results" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineObservables" />
       </binding>
     </element>
     <element id="Observation.subject">
