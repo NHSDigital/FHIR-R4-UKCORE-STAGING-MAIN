@@ -23,20 +23,20 @@
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory" />
         </include>
     </compose>
-	<expansion>
-		<identifier value="98bada17-6d7a-4c4a-989a-57f3fda4f4f5"/>
-		<timestamp value="2023-05-04T14:02:57+00:00"/>
-		<total value="2"/>
-		<offset value="0"/>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory"/>
-			<code value="tumour"/>
-			<display value="Tumour"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory"/>
-			<code value="germline"/>
-			<display value="Germline"/>
-		</contains>		
-	</expansion>
+  <expansion>
+    <identifier value="98bada17-6d7a-4c4a-989a-57f3fda4f4f5" />
+    <timestamp value="2023-05-04T14:02:57+00:00" />
+    <total value="2" />
+    <offset value="0" />
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory" />
+      <code value="tumour" />
+      <display value="Tumour" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory" />
+      <code value="germline" />
+      <display value="Germline" />
+    </contains>    
+  </expansion>
 </ValueSet>

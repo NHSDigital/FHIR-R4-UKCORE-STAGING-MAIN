@@ -1,82 +1,82 @@
 <Bundle xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Bundle-AllergyList-Example"/>
-	<type value="collection"/>
-	<entry>
-		<fullUrl value="urn:uuid:d043d2b6-5782-4536-88b6-e537973a09fb"/>
-		<resource>
-			<List>
-				<id value="UKCore-Allergy-List-Example"/>
-				<status value="current"/>
-				<mode value="snapshot"/>
-				<code>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="886921000000105"/>
-						<display value="Allergies and adverse reactions"/>
-					</coding>
-				</code>
-				<subject>
-					<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-				</subject>
-				<date value="2019-12-10T13:00:00+00:00"/>
-				<entry>
-					<item>
-						<reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"/>
-					</item>
-				</entry>
-			</List>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"/>
-		<resource>
-			<AllergyIntolerance>
-				<id value="efae5859-28df-4e7d-be91-6df56d8215e4"/>
-				<clinicalStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
-						<code value="active"/>
-						<display value="Active"/>
-					</coding>
-				</clinicalStatus>
-				<verificationStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
-						<code value="confirmed"/>
-						<display value="Confirmed"/>
-					</coding>
-				</verificationStatus>
-				<code>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="372687004"/>
-						<display value="Amoxicillin"/>
-					</coding>
-				</code>
-				<patient>
-					<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-				</patient>
-				<encounter>
-					<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
-				</encounter>
-				<recordedDate value="2019-12-10T13:00:00+00:00"/>
-				<recorder>
-					<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-				</recorder>
-				<asserter>
-					<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-				</asserter>
-				<reaction>
-					<manifestation>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="247472004"/>
-							<display value="Urticarial rash"/>
-						</coding>
-					</manifestation>
-					<severity value="mild"/>
-				</reaction>
-			</AllergyIntolerance>
-		</resource>
-	</entry>
+  <id value="UKCore-Bundle-AllergyList-Example" />
+  <type value="collection" />
+  <entry>
+    <fullUrl value="urn:uuid:d043d2b6-5782-4536-88b6-e537973a09fb" />
+    <resource>
+      <List>
+        <id value="UKCore-Allergy-List-Example" />
+        <status value="current" />
+        <mode value="snapshot" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="886921000000105" />
+            <display value="Allergies and adverse reactions" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </subject>
+        <date value="2019-12-10T13:00:00+00:00" />
+        <entry>
+          <item>
+            <reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
+          </item>
+        </entry>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
+    <resource>
+      <AllergyIntolerance>
+        <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+            <code value="active" />
+            <display value="Active" />
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+            <code value="confirmed" />
+            <display value="Confirmed" />
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="372687004" />
+            <display value="Amoxicillin" />
+          </coding>
+        </code>
+        <patient>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </patient>
+        <encounter>
+          <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
+        </encounter>
+        <recordedDate value="2019-12-10T13:00:00+00:00" />
+        <recorder>
+          <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+        </recorder>
+        <asserter>
+          <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+        </asserter>
+        <reaction>
+          <manifestation>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="247472004" />
+              <display value="Urticarial rash" />
+            </coding>
+          </manifestation>
+          <severity value="mild" />
+        </reaction>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
 </Bundle>

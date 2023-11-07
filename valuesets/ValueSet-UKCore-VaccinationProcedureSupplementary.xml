@@ -44,601 +44,601 @@
       </filter>
     </include>
   </compose>
-	<expansion>
-		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
-			<valueBoolean value="true"/>
-		</extension>
-		<timestamp value="2021-09-07T08:48:09+00:00"/>
-		<total value="106"/>
-		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="868241000000109"/>
-			<display value="Administration of intranasal influenza vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="572421000119102"/>
-			<display value="Administration of oral typhoid live vaccine"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="626071000119103"/>
-			<display value="Administration of subcutaneous zoster virus live vaccine"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="16298561000119108"/>
-			<display value="Administration of tetanus, diphtheria, and acellular pertussis vaccine"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="571611000119101"/>
-			<display value="Administration of varicella live vaccine"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170415002"/>
-			<display value="Booster diphtheria and tetanus double and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170408005"/>
-			<display value="Booster diphtheria and tetanus double vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="412743000"/>
-			<display value="Booster hepatitis A junior vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="7141001"/>
-			<display value="Brucellosis vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="270898008"/>
-			<display value="Diphtheria and tetanus double and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170399005"/>
-			<display value="Diphtheria, pertussis and tetanus triple and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170412004"/>
-			<display value="First diphtheria and tetanus double and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170405008"/>
-			<display value="First diphtheria and tetanus double vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170400003"/>
-			<display value="First diphtheria, pertussis and tetanus triple and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170395004"/>
-			<display value="First diphtheria, pertussis and tetanus triple vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="313188000"/>
-			<display value="First hepatitis A junior vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="51572002"/>
-			<display value="Haemophilus influenzae immunisation"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="8605003"/>
-			<display value="Immunisation for bordetella"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="39568006"/>
-			<display value="Immunisation for encephalitis virus"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="275849001"/>
-			<display value="Infective hepatitis immunisation"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="390892002"/>
-			<display value="Meningitis ACW &amp; Y vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="281040003"/>
-			<display value="Pre-school diphtheria and tetanus double and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="275841003"/>
-			<display value="Pre-school diphtheria and tetanus double vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="777611000000100"/>
-			<display value="Quadrivalent human papillomavirus vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="1240491000000103"/>
-			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170413009"/>
-			<display value="Second diphtheria and tetanus double and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170406009"/>
-			<display value="Second diphtheria and tetanus double vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170401004"/>
-			<display value="Second diphtheria, pertussis and tetanus triple and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170396003"/>
-			<display value="Second diphtheria, pertussis and tetanus triple vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="313189008"/>
-			<display value="Second hepatitis A junior vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="308753004"/>
-			<display value="Subcutaneous injection of Pneumovax II"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170409002"/>
-			<display value="Tetanus and low dose diphtheria double vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170414003"/>
-			<display value="Third diphtheria and tetanus double and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170407000"/>
-			<display value="Third diphtheria and tetanus double vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170402006"/>
-			<display value="Third diphtheria, pertussis and tetanus triple and polio vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170397007"/>
-			<display value="Third diphtheria, pertussis and tetanus triple vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="412742005"/>
-			<display value="Third hepatitis A junior vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170425007"/>
-			<display value="Typhoid and Paratyphoid first dose"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170427004"/>
-			<display value="Typhoid and Paratyphoid reinforcing dose"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="170426008"/>
-			<display value="Typhoid and Paratyphoid second dose"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="312867004"/>
-			<display value="Typhoid and paratyphoid vaccination"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="570001"/>
-			<display value="Vaccination for arthropod-borne viral encephalitis"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="787438002"/>
-			<display value="Vaccination for diphtheria, pertussis, tetanus, poliomyelitis, Hepatitis B virus and Haemophilus influenzae type b"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="428570002"/>
-			<display value="Vaccination for human papillomavirus"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="882761000000103"/>
-			<display value="Booster meningitis C vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="515331000000103"/>
-			<display value="CELVAPAN - first influenza A (H1N1v) 2009 vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="515351000000105"/>
-			<display value="CELVAPAN - second influenza A (H1N1v) 2009 vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1037211000000101"/>
-			<display value="First hepatitis B vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1066181000000105"/>
-			<display value="First inactivated seasonal influenza vaccination given by midwife"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="884901000000107"/>
-			<display value="First intranasal pandemic influenza vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1037251000000102"/>
-			<display value="First MMR (measles mumps and rubella) vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="380741000000101"/>
-			<display value="First pandemic influenza vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1036721000000101"/>
-			<display value="First rotavirus vaccination given by other health care provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="868511000000106"/>
-			<display value="Herpes zoster vaccination given by other health care provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="515341000000107"/>
-			<display value="PANDEMRIX - first influenza A (H1N1v) 2009 vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="515361000000108"/>
-			<display value="PANDEMRIX - second influenza A (H1N1v) 2009 vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="908671000000105"/>
-			<display value="Pertussis vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="956971000000108"/>
-			<display value="Pertussis vaccination in pregnancy given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="310578008"/>
-			<display value="Pneumococcal vaccination given"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="382551000000109"/>
-			<display value="Pneumococcal vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="868671000000100"/>
-			<display value="Rotavirus vaccination given by other health care provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1066171000000108"/>
-			<display value="Seasonal influenza vaccination given by midwife"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1037231000000109"/>
-			<display value="Second hepatitis B vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1066191000000107"/>
-			<display value="Second inactivated seasonal influenza vaccination given by midwife"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="884921000000103"/>
-			<display value="Second intranasal pandemic influenza vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1037271000000106"/>
-			<display value="Second MMR (measles mumps and rubella) vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="380771000000107"/>
-			<display value="Second pandemic influenza vaccination given by other healthcare provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1036741000000108"/>
-			<display value="Second rotavirus vaccination given by other health care provider"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="62221000000101"/>
-			<display value="BCG (Bacillus Calmette-Guerin) vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61591000000109"/>
-			<display value="Booster diphtheria, tetanus, acellular pertussis and inactivated polio vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61671000000106"/>
-			<display value="Booster meningitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61541000000104"/>
-			<display value="First diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="82671000000102"/>
-			<display value="First hepatitis B junior vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="62181000000106"/>
-			<display value="First human papillomavirus vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="63281000000106"/>
-			<display value="First intranasal seasonal influenza vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61751000000106"/>
-			<display value="First measles, mumps and rubella vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61641000000100"/>
-			<display value="First meningitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61721000000101"/>
-			<display value="First pneumococcal conjugated vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61621000000107"/>
-			<display value="First rotavirus vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="62201000000105"/>
-			<display value="First varicella vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="82691000000103"/>
-			<display value="Fourth hepatitis B junior vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61811000000102"/>
-			<display value="Haemophilus influenzae type B and meningitis C vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="6041000175108"/>
-			<display value="Hepatitis A vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="6051000175105"/>
-			<display value="Hepatitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61611000000101"/>
-			<display value="Low dose diphtheria, tetanus and inactivated polio vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="4521000175102"/>
-			<display value="Measles mumps and rubella vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="62141000000103"/>
-			<display value="Meningitis ACW and Y vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1324771000000107"/>
-			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose not given"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1324781000000109"/>
-			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination first dose not given"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<inactive value="true"/>
-			<code value="1240681000000103"/>
-			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1324791000000106"/>
-			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination second dose not given"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1240701000000101"/>
-			<display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccine not available"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61551000000101"/>
-			<display value="Second diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="82681000000100"/>
-			<display value="Second hepatitis B junior vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="62191000000108"/>
-			<display value="Second human papillomavirus vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61761000000109"/>
-			<display value="Second measles, mumps and rubella vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61651000000102"/>
-			<display value="Second meningitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61731000000104"/>
-			<display value="Second pneumococcal conjugated vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61631000000109"/>
-			<display value="Second rotavirus vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="62211000000107"/>
-			<display value="Second varicella vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61561000000103"/>
-			<display value="Third diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="82701000000103"/>
-			<display value="Third hepatitis B junior vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="61741000000108"/>
-			<display value="Third pneumococcal conjugated vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="6021000175100"/>
-			<display value="Vaccination for diphtheria, pertussis, and tetanus not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="90351000119108"/>
-			<display value="Vaccination not done"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="6031000175102"/>
-			<display value="Varicella vaccination not done"/>
-		</contains>
-	</expansion>
+  <expansion>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+      <valueBoolean value="true" />
+    </extension>
+    <timestamp value="2021-09-07T08:48:09+00:00" />
+    <total value="106" />
+    <offset value="0" />
+    <parameter>
+      <name value="version" />
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804" />
+    </parameter>
+    <parameter>
+      <name value="count" />
+      <valueInteger value="2147483647" />
+    </parameter>
+    <parameter>
+      <name value="offset" />
+      <valueInteger value="0" />
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="868241000000109" />
+      <display value="Administration of intranasal influenza vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="572421000119102" />
+      <display value="Administration of oral typhoid live vaccine" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="626071000119103" />
+      <display value="Administration of subcutaneous zoster virus live vaccine" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="16298561000119108" />
+      <display value="Administration of tetanus, diphtheria, and acellular pertussis vaccine" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="571611000119101" />
+      <display value="Administration of varicella live vaccine" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170415002" />
+      <display value="Booster diphtheria and tetanus double and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170408005" />
+      <display value="Booster diphtheria and tetanus double vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="412743000" />
+      <display value="Booster hepatitis A junior vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="7141001" />
+      <display value="Brucellosis vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="270898008" />
+      <display value="Diphtheria and tetanus double and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170399005" />
+      <display value="Diphtheria, pertussis and tetanus triple and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170412004" />
+      <display value="First diphtheria and tetanus double and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170405008" />
+      <display value="First diphtheria and tetanus double vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170400003" />
+      <display value="First diphtheria, pertussis and tetanus triple and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170395004" />
+      <display value="First diphtheria, pertussis and tetanus triple vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="313188000" />
+      <display value="First hepatitis A junior vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="51572002" />
+      <display value="Haemophilus influenzae immunisation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="8605003" />
+      <display value="Immunisation for bordetella" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="39568006" />
+      <display value="Immunisation for encephalitis virus" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="275849001" />
+      <display value="Infective hepatitis immunisation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="390892002" />
+      <display value="Meningitis ACW &amp; Y vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="281040003" />
+      <display value="Pre-school diphtheria and tetanus double and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="275841003" />
+      <display value="Pre-school diphtheria and tetanus double vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="777611000000100" />
+      <display value="Quadrivalent human papillomavirus vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="1240491000000103" />
+      <display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170413009" />
+      <display value="Second diphtheria and tetanus double and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170406009" />
+      <display value="Second diphtheria and tetanus double vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170401004" />
+      <display value="Second diphtheria, pertussis and tetanus triple and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170396003" />
+      <display value="Second diphtheria, pertussis and tetanus triple vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="313189008" />
+      <display value="Second hepatitis A junior vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="308753004" />
+      <display value="Subcutaneous injection of Pneumovax II" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170409002" />
+      <display value="Tetanus and low dose diphtheria double vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170414003" />
+      <display value="Third diphtheria and tetanus double and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170407000" />
+      <display value="Third diphtheria and tetanus double vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170402006" />
+      <display value="Third diphtheria, pertussis and tetanus triple and polio vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170397007" />
+      <display value="Third diphtheria, pertussis and tetanus triple vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="412742005" />
+      <display value="Third hepatitis A junior vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170425007" />
+      <display value="Typhoid and Paratyphoid first dose" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170427004" />
+      <display value="Typhoid and Paratyphoid reinforcing dose" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="170426008" />
+      <display value="Typhoid and Paratyphoid second dose" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="312867004" />
+      <display value="Typhoid and paratyphoid vaccination" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="570001" />
+      <display value="Vaccination for arthropod-borne viral encephalitis" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="787438002" />
+      <display value="Vaccination for diphtheria, pertussis, tetanus, poliomyelitis, Hepatitis B virus and Haemophilus influenzae type b" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="428570002" />
+      <display value="Vaccination for human papillomavirus" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="882761000000103" />
+      <display value="Booster meningitis C vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="515331000000103" />
+      <display value="CELVAPAN - first influenza A (H1N1v) 2009 vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="515351000000105" />
+      <display value="CELVAPAN - second influenza A (H1N1v) 2009 vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1037211000000101" />
+      <display value="First hepatitis B vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1066181000000105" />
+      <display value="First inactivated seasonal influenza vaccination given by midwife" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="884901000000107" />
+      <display value="First intranasal pandemic influenza vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1037251000000102" />
+      <display value="First MMR (measles mumps and rubella) vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="380741000000101" />
+      <display value="First pandemic influenza vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1036721000000101" />
+      <display value="First rotavirus vaccination given by other health care provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="868511000000106" />
+      <display value="Herpes zoster vaccination given by other health care provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="515341000000107" />
+      <display value="PANDEMRIX - first influenza A (H1N1v) 2009 vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="515361000000108" />
+      <display value="PANDEMRIX - second influenza A (H1N1v) 2009 vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="908671000000105" />
+      <display value="Pertussis vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="956971000000108" />
+      <display value="Pertussis vaccination in pregnancy given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="310578008" />
+      <display value="Pneumococcal vaccination given" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="382551000000109" />
+      <display value="Pneumococcal vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="868671000000100" />
+      <display value="Rotavirus vaccination given by other health care provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1066171000000108" />
+      <display value="Seasonal influenza vaccination given by midwife" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1037231000000109" />
+      <display value="Second hepatitis B vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1066191000000107" />
+      <display value="Second inactivated seasonal influenza vaccination given by midwife" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="884921000000103" />
+      <display value="Second intranasal pandemic influenza vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1037271000000106" />
+      <display value="Second MMR (measles mumps and rubella) vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="380771000000107" />
+      <display value="Second pandemic influenza vaccination given by other healthcare provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1036741000000108" />
+      <display value="Second rotavirus vaccination given by other health care provider" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="62221000000101" />
+      <display value="BCG (Bacillus Calmette-Guerin) vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61591000000109" />
+      <display value="Booster diphtheria, tetanus, acellular pertussis and inactivated polio vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61671000000106" />
+      <display value="Booster meningitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61541000000104" />
+      <display value="First diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="82671000000102" />
+      <display value="First hepatitis B junior vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="62181000000106" />
+      <display value="First human papillomavirus vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="63281000000106" />
+      <display value="First intranasal seasonal influenza vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61751000000106" />
+      <display value="First measles, mumps and rubella vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61641000000100" />
+      <display value="First meningitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61721000000101" />
+      <display value="First pneumococcal conjugated vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61621000000107" />
+      <display value="First rotavirus vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="62201000000105" />
+      <display value="First varicella vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="82691000000103" />
+      <display value="Fourth hepatitis B junior vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61811000000102" />
+      <display value="Haemophilus influenzae type B and meningitis C vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="6041000175108" />
+      <display value="Hepatitis A vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="6051000175105" />
+      <display value="Hepatitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61611000000101" />
+      <display value="Low dose diphtheria, tetanus and inactivated polio vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="4521000175102" />
+      <display value="Measles mumps and rubella vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="62141000000103" />
+      <display value="Meningitis ACW and Y vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1324771000000107" />
+      <display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose not given" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1324781000000109" />
+      <display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination first dose not given" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <inactive value="true" />
+      <code value="1240681000000103" />
+      <display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1324791000000106" />
+      <display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination second dose not given" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1240701000000101" />
+      <display value="SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccine not available" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61551000000101" />
+      <display value="Second diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="82681000000100" />
+      <display value="Second hepatitis B junior vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="62191000000108" />
+      <display value="Second human papillomavirus vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61761000000109" />
+      <display value="Second measles, mumps and rubella vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61651000000102" />
+      <display value="Second meningitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61731000000104" />
+      <display value="Second pneumococcal conjugated vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61631000000109" />
+      <display value="Second rotavirus vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="62211000000107" />
+      <display value="Second varicella vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61561000000103" />
+      <display value="Third diphtheria, tetanus and acellular pertussis, inactivated polio, Haemophilus influenzae type b and hepatitis B vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="82701000000103" />
+      <display value="Third hepatitis B junior vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="61741000000108" />
+      <display value="Third pneumococcal conjugated vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="6021000175100" />
+      <display value="Vaccination for diphtheria, pertussis, and tetanus not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="90351000119108" />
+      <display value="Vaccination not done" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="6031000175102" />
+      <display value="Varicella vaccination not done" />
+    </contains>
+  </expansion>
 </ValueSet>
