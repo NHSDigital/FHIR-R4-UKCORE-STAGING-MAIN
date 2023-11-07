@@ -14,5 +14,5 @@ on:
 jobs:
   # This workflow contains a single job called "call-workflow" which references the FHIR validator repo
   call-workflow:
-    uses: NHSDigital/IOPS-FHIR-Test-Scripts/.github/workflows/QualityControlCheckerUKCore.yml@main
+    uses: NHSDigital/IOPS-FHIR-Test-Scripts/.github/workflows/QualityControlChecker.yml@main
 
