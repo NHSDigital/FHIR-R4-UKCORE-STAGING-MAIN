@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="UKCore-InspiredOxygen"/>
-   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-InspiredOxygen"/>
-   <version value="2.1.0"/>
-   <name value="UKCoreInspiredOxygen"/>
-   <title value="UK Core Inspired Oxygen"/>
+   <id value="UKCore-InspiredOxygen" />
+   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-InspiredOxygen" />
+   <version value="2.1.0" />
+   <name value="UKCoreInspiredOxygen" />
+   <title value="UK Core Inspired Oxygen" />
    <status value="active" />
    <date value="2023-09-12" />
    <publisher value="HL7 UK" />
@@ -30,20 +30,20 @@
          </filter>
       </include>
    </compose>
-	<expansion>
-		<identifier value="8a4ec423-65c6-4736-adf7-c8d27efdd185"/>
-		<timestamp value="2023-10-31T15:58:00+00:00"/>
-		<total value="2"/>
-		<offset value="0"/>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="722742002"/>
-			<display value="Breathing room air"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="371825009"/>
-			<display value="Patient on oxygen"/>
-		</contains>
-	</expansion>
+  <expansion>
+    <identifier value="8a4ec423-65c6-4736-adf7-c8d27efdd185" />
+    <timestamp value="2023-10-31T15:58:00+00:00" />
+    <total value="2" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="722742002" />
+      <display value="Breathing room air" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="371825009" />
+      <display value="Patient on oxygen" />
+    </contains>
+  </expansion>
 </ValueSet>
