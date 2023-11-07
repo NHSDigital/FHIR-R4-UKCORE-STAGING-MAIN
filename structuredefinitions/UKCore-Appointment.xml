@@ -1,182 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Appointment"/>
-	<url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"/>
-	<version value="1.2.0"/>
-	<name value="UKCoreAppointment"/>
-	<title value="UK Core Appointment"/>
-	<status value="active"/>
-	<date value="2022-12-16"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="This profile defines the UK constraints and extensions on the International FHIR resource [Appointment](https://hl7.org/fhir/R4/Appointment.html)."/>
-	<purpose value="This profile allows recording of detailed information about a planned meeting that may be in the future or past. The resource only describes a single meeting, a series of repeating visits would require multiple appointment resources to be created for each instance. &#xD;&#xA;&#xD;&#xA; Examples include a scheduled surgery, a follow-up for a clinical visit, a scheduled conference call between clinicians to discuss a case, the reservation of a piece of diagnostic equipment for a particular use, etc. The visit scheduled by an appointment may be in person or remote (by phone, video conference, etc.) All that matters is that the time and usage of one or more individuals, locations and/or pieces of equipment is being fully or partially reserved for a designated period of time."/>
-	<copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<fhirVersion value="4.0.1"/>
-	<mapping>
-		<identity value="workflow"/>
-		<uri value="http://hl7.org/fhir/workflow"/>
-		<name value="Workflow Pattern"/>
-	</mapping>
-	<mapping>
-		<identity value="rim"/>
-		<uri value="http://hl7.org/v3"/>
-		<name value="RIM Mapping"/>
-	</mapping>
-	<mapping>
-		<identity value="w5"/>
-		<uri value="http://hl7.org/fhir/fivews"/>
-		<name value="FiveWs Pattern Mapping"/>
-	</mapping>
-	<mapping>
-		<identity value="v2"/>
-		<uri value="http://hl7.org/v2"/>
-		<name value="HL7 v2 Mapping"/>
-	</mapping>
-	<mapping>
-		<identity value="ical"/>
-		<uri value="http://ietf.org/rfc/2445"/>
-		<name value="iCalendar"/>
-	</mapping>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Appointment"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Appointment.extension">
-			<path value="Appointment.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-			<min value="0"/>
-		</element>
-		<element id="Appointment.extension:bookingOrganization">
-			<path value="Appointment.extension"/>
-			<sliceName value="bookingOrganization"/>
-			<min value="0"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization"/>
-			</type>
-			<isModifier value="false"/>
-		</element>
-		<element id="Appointment.extension:deliveryChannel">
-			<path value="Appointment.extension"/>
-			<sliceName value="deliveryChannel"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel"/>
-			</type>
-			<isModifier value="false"/>
-		</element>
-		<element id="Appointment.identifier.assigner">
-			<path value="Appointment.identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-		<element id="Appointment.specialty">
-			<path value="Appointment.specialty"/>
-			<binding>
-				<strength value="extensible"/>
-				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode"/>
-			</binding>
-		</element>
-		<element id="Appointment.appointmentType">
-			<path value="Appointment.appointmentType"/>
-			<binding>
-				<strength value="extensible"/>
-				<description value="A set of codes that define an appointment reason."/>
-				<valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AppointmentReasonCode"/>
-			</binding>
-		</element>
-		<element id="Appointment.reasonReference">
-			<path value="Appointment.reasonReference"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
-			</type>
-		</element>
-		<element id="Appointment.reasonReference.identifier.assigner">
-			<path value="Appointment.reasonReference.identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-		<element id="Appointment.supportingInformation.identifier.assigner">
-			<path value="Appointment.supportingInformation.identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-		<element id="Appointment.slot">
-			<path value="Appointment.slot"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot"/>
-			</type>
-		</element>
-		<element id="Appointment.slot.identifier.assigner">
-			<path value="Appointment.slot.identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-		<element id="Appointment.basedOn">
-			<path value="Appointment.basedOn"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"/>
-			</type>
-		</element>
-		<element id="Appointment.basedOn.identifier.assigner">
-			<path value="Appointment.basedOn.identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-		<element id="Appointment.participant.actor">
-			<path value="Appointment.participant.actor"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location"/>
-			</type>
-		</element>
-		<element id="Appointment.participant.actor.identifier.assigner">
-			<path value="Appointment.participant.actor.identifier.assigner"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
-			</type>
-		</element>
-	</differential>
+  <id value="UKCore-Appointment" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
+  <version value="1.2.0" />
+  <name value="UKCoreAppointment" />
+  <title value="UK Core Appointment" />
+  <status value="active" />
+  <date value="2022-12-16" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Appointment](https://hl7.org/fhir/R4/Appointment.html)." />
+  <purpose value="This profile allows recording of detailed information about a planned meeting that may be in the future or past. The resource only describes a single meeting, a series of repeating visits would require multiple appointment resources to be created for each instance. &#xD;&#xA;&#xD;&#xA; Examples include a scheduled surgery, a follow-up for a clinical visit, a scheduled conference call between clinicians to discuss a case, the reservation of a piece of diagnostic equipment for a particular use, etc. The visit scheduled by an appointment may be in person or remote (by phone, video conference, etc.) All that matters is that the time and usage of one or more individuals, locations and/or pieces of equipment is being fully or partially reserved for a designated period of time." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="ical" />
+    <uri value="http://ietf.org/rfc/2445" />
+    <name value="iCalendar" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Appointment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Appointment.extension">
+      <path value="Appointment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Appointment.extension:bookingOrganization">
+      <path value="Appointment.extension" />
+      <sliceName value="bookingOrganization" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Appointment.extension:deliveryChannel">
+      <path value="Appointment.extension" />
+      <sliceName value="deliveryChannel" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Appointment.identifier.assigner">
+      <path value="Appointment.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Appointment.specialty">
+      <path value="Appointment.specialty" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
+      </binding>
+    </element>
+    <element id="Appointment.appointmentType">
+      <path value="Appointment.appointmentType" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A set of codes that define an appointment reason." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AppointmentReasonCode" />
+      </binding>
+    </element>
+    <element id="Appointment.reasonReference">
+      <path value="Appointment.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
+      </type>
+    </element>
+    <element id="Appointment.reasonReference.identifier.assigner">
+      <path value="Appointment.reasonReference.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Appointment.supportingInformation.identifier.assigner">
+      <path value="Appointment.supportingInformation.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Appointment.slot">
+      <path value="Appointment.slot" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
+      </type>
+    </element>
+    <element id="Appointment.slot.identifier.assigner">
+      <path value="Appointment.slot.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Appointment.basedOn">
+      <path value="Appointment.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+      </type>
+    </element>
+    <element id="Appointment.basedOn.identifier.assigner">
+      <path value="Appointment.basedOn.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="Appointment.participant.actor">
+      <path value="Appointment.participant.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+      </type>
+    </element>
+    <element id="Appointment.participant.actor.identifier.assigner">
+      <path value="Appointment.participant.actor.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>

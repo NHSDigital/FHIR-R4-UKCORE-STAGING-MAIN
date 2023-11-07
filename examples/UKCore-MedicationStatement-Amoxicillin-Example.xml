@@ -1,83 +1,83 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationStatement-Amoxicillin-Example"/>
-	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="ac0ffbdf-3289-41d5-84d9-068a1f5937db"/>
-	</identifier>
-	<status value="active"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
-			<code value="outpatient"/>
-			<display value="Outpatient"/>
-		</coding>
-	</category>
-	<medicationCodeableConcept>
-		<coding>
-			<system value="https://dmd.nhs.uk"/>
-			<code value="39732311000001104"/>
-			<display value="Amoxicillin 250mg capsules"/>
-		</coding>
-	</medicationCodeableConcept>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectivePeriod>
-		<start value="2021-02-15T13:50:00+00:00"/>
-		<end value="2021-05-15T13:50:00+00:00"/>
-	</effectivePeriod>
-	<dateAsserted value="2017-02-22"/>
-	<reasonCode>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="65363002"/>
-			<display value="Otitis media"/>
-		</coding>
-	</reasonCode>
-	<dosage>
-		<text value="2 capsules 4 times a day."/>
-		<timing>
-			<repeat>
-				<frequency value="4"/>
-				<period value="1"/>
-				<periodUnit value="d"/>
-			</repeat>
-		</timing>
-		<asNeededCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="301354004"/>
-				<display value="Pain of ear"/>
-			</coding>
-		</asNeededCodeableConcept>
-		<site>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="123851003"/>
-				<display value="Mouth region structure"/>
-			</coding>
-		</site>
-		<route>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="26643006"/>
-				<display value="Oral"/>
-			</coding>
-		</route>
-		<method>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="421984009"/>
-				<display value="Until finished"/>
-			</coding>
-		</method>
-		<doseAndRate>
-			<doseQuantity>
-				<value value="500"/>
-				<unit value="milligram"/>
-				<system value="http://unitsofmeasure.org"/>
-				<code value="mg"/>
-			</doseQuantity>
-		</doseAndRate>
-	</dosage>
+  <id value="UKCore-MedicationStatement-Amoxicillin-Example" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="ac0ffbdf-3289-41d5-84d9-068a1f5937db" />
+  </identifier>
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+      <code value="outpatient" />
+      <display value="Outpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="39732311000001104" />
+      <display value="Amoxicillin 250mg capsules" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectivePeriod>
+    <start value="2021-02-15T13:50:00+00:00" />
+    <end value="2021-05-15T13:50:00+00:00" />
+  </effectivePeriod>
+  <dateAsserted value="2017-02-22" />
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="65363002" />
+      <display value="Otitis media" />
+    </coding>
+  </reasonCode>
+  <dosage>
+    <text value="2 capsules 4 times a day." />
+    <timing>
+      <repeat>
+        <frequency value="4" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <asNeededCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="301354004" />
+        <display value="Pain of ear" />
+      </coding>
+    </asNeededCodeableConcept>
+    <site>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="123851003" />
+        <display value="Mouth region structure" />
+      </coding>
+    </site>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="26643006" />
+        <display value="Oral" />
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="421984009" />
+        <display value="Until finished" />
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="500" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
 </MedicationStatement>

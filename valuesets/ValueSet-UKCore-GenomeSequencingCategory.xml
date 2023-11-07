@@ -23,30 +23,30 @@
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
         </include>
     </compose>
-	<expansion>
-		<identifier value="bde2a094-9417-4687-8f15-6f93fb38b26b"/>
-		<timestamp value="2023-05-04T14:47:02+00:00"/>
-		<total value="4"/>
-		<offset value="0"/>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory"/>
-			<code value="rare-disease-wgs"/>
-			<display value="Rare Disease - WGS"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory"/>
-			<code value="rare-disease-non-wgs"/>
-			<display value="Rare Disease - Non-WGS"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory"/>
-			<code value="cancer-wgs"/>
-			<display value="Cancer - WGS"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory"/>
-			<code value="cancer-non-wgs"/>
-			<display value="Cancer - Non-WGS"/>
-		</contains>		
-	</expansion>
+  <expansion>
+    <identifier value="bde2a094-9417-4687-8f15-6f93fb38b26b" />
+    <timestamp value="2023-05-04T14:47:02+00:00" />
+    <total value="4" />
+    <offset value="0" />
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+      <code value="rare-disease-wgs" />
+      <display value="Rare Disease - WGS" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+      <code value="rare-disease-non-wgs" />
+      <display value="Rare Disease - Non-WGS" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+      <code value="cancer-wgs" />
+      <display value="Cancer - WGS" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+      <code value="cancer-non-wgs" />
+      <display value="Cancer - Non-WGS" />
+    </contains>    
+  </expansion>
 </ValueSet>
