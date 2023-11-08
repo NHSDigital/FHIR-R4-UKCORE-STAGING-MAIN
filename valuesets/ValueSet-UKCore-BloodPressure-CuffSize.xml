@@ -1,78 +1,78 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-BloodPressure-CuffSize"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-CuffSize"/>
-	<version value="1.0.0"/>
-	<name value="UKCoreBloodPressureCuffSize"/>
-	<title value="UK Core Blood Pressure Cuff Size"/>
-	<status value="active"/>
-	<date value="2023-09-12"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="A set of codes that define a sphygmomanometer cuff size used with a device. Selected from the SNOMED CT UK coding system:
-&#13; - DescendantOf 70665002 | Blood pressure cuff, device (physical object)"/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="="/>
-				<value value="DescendantOf 70665002"/>
-			</filter>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="5b94e321-d1ee-4181-9b43-a9cdd2c2c457"/>
-		<timestamp value="2023-10-31T14:20:00+00:00"/>
-		<total value="8"/>
-		<offset value="0"/>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="720737000"/>
-			<display value="Blood pressure cuff, adult size"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="720740000"/>
-			<display value="Blood pressure cuff, adult thigh type"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="8741000205104"/>
-			<display value="Blood pressure cuff, ankle type"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="720736009"/>
-			<display value="Blood pressure cuff, paediatric size"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="990191000000101"/>
-			<display value="Large adult size blood pressure cuff"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="990221000000108"/>
-			<display value="Paediatric size blood pressure cuff"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="990211000000102"/>
-			<display value="Small adult size blood pressure cuff"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="990201000000104"/>
-			<display value="Standard adult size blood pressure cuff"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-BloodPressure-CuffSize" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-CuffSize" />
+  <version value="1.0.0" />
+  <name value="UKCoreBloodPressureCuffSize" />
+  <title value="UK Core Blood Pressure Cuff Size" />
+  <status value="active" />
+  <date value="2023-09-12" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define a sphygmomanometer cuff size used with a device. Selected from the SNOMED CT UK coding system:
+&#13; - DescendantOf 70665002 | Blood pressure cuff, device (physical object)" />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="DescendantOf 70665002" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="5b94e321-d1ee-4181-9b43-a9cdd2c2c457" />
+    <timestamp value="2023-10-31T14:20:00+00:00" />
+    <total value="8" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="720737000" />
+      <display value="Blood pressure cuff, adult size" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="720740000" />
+      <display value="Blood pressure cuff, adult thigh type" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="8741000205104" />
+      <display value="Blood pressure cuff, ankle type" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="720736009" />
+      <display value="Blood pressure cuff, paediatric size" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="990191000000101" />
+      <display value="Large adult size blood pressure cuff" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="990221000000108" />
+      <display value="Paediatric size blood pressure cuff" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="990211000000102" />
+      <display value="Small adult size blood pressure cuff" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="990201000000104" />
+      <display value="Standard adult size blood pressure cuff" />
+    </contains>
+  </expansion>
 </ValueSet>
