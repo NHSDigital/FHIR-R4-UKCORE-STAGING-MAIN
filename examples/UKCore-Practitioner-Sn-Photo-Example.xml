@@ -1,9 +1,9 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Practitioner-Sn-Photo-Example"/>
-	<!-- **************snippet start************** -->
-	<photo>
-		<contentType value="image/png"/>
-		<data value="base64Binary"/>
-	</photo>
-	<!-- **************snippet end************** -->
+  <id value="UKCore-Practitioner-Sn-Photo-Example" />
+  <!-- **************snippet start************** -->
+  <photo>
+    <contentType value="image/png" />
+    <data value="base64Binary" />
+  </photo>
+  <!-- **************snippet end************** -->
 </Practitioner>

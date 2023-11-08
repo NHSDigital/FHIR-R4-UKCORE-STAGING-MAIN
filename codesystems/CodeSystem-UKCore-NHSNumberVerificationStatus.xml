@@ -1,138 +1,138 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="UKCore-NHSNumberVerificationStatus"/>
-	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
-	<version value="2.1.0" />
-	<name value="UKCoreNHSNumberVerificationStatus"/>
-	<title value="UK Core NHS Number Verification Status"/>
-	<status value="retired" />
-	<date value="2022-08-26" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A CodeSystem that identifies the trace status of an NHS Number with respect to a national source of NHS Numbers."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<caseSensitive value="true"/>
-	<content value="complete"/>
-	<filter>
-		<code value="ApplicableCountry"/>
-		<description value="Filter to identify an applicable country for a concept"/>
-		<operator value="="/>
-		<value value="ApplicableCountry"/>
-	</filter>
-	<property>
-		<code value="ApplicableCountry"/>
-		<description value="A UK country where the concept is known to be applicable based on the source information used to construct this CodeSystem as identified within the CodeSystem.identifier fields. In each case this can be one of: England | Scotland | Wales | Northern Ireland"/>
-		<type value="string"/>
-	</property>
-	<concept>
-		<code value="number-present-and-verified"/>
-		<display value="Number present and verified"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="number-present-but-not-traced"/>
-		<display value="Number present but not traced"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="trace-required"/>
-		<display value="Trace required"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="trace-attempted"/>
-		<display value="Trace attempted - No match or multiple match found"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="trace-needs-to-be-resolved"/>
-		<display value="Trace needs to be resolved - (NHS number or patient detail conflict)"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="trace-in-progress"/>
-		<display value="Trace in progress"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="number-not-present-and-trace-not-required"/>
-		<display value="Number not present and trace not required"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="trace-postponed"/>
-		<display value="Trace postponed (baby under six weeks old)"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="England"/>
-		</property>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
-	<concept>
-		<code value="number-present-and-traced-using-welsh-nhs-ar"/>
-		<display value="Number present and traced using Welsh NHS AR"/>
-		<property>
-			<code value="ApplicableCountry"/>
-			<valueString value="Wales"/>
-		</property>
-	</concept>
+  <id value="UKCore-NHSNumberVerificationStatus" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+  <version value="2.1.0" />
+  <name value="UKCoreNHSNumberVerificationStatus" />
+  <title value="UK Core NHS Number Verification Status" />
+  <status value="retired" />
+  <date value="2022-08-26" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem that identifies the trace status of an NHS Number with respect to a national source of NHS Numbers." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <filter>
+    <code value="ApplicableCountry" />
+    <description value="Filter to identify an applicable country for a concept" />
+    <operator value="=" />
+    <value value="ApplicableCountry" />
+  </filter>
+  <property>
+    <code value="ApplicableCountry" />
+    <description value="A UK country where the concept is known to be applicable based on the source information used to construct this CodeSystem as identified within the CodeSystem.identifier fields. In each case this can be one of: England | Scotland | Wales | Northern Ireland" />
+    <type value="string" />
+  </property>
+  <concept>
+    <code value="number-present-and-verified" />
+    <display value="Number present and verified" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="number-present-but-not-traced" />
+    <display value="Number present but not traced" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="trace-required" />
+    <display value="Trace required" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="trace-attempted" />
+    <display value="Trace attempted - No match or multiple match found" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="trace-needs-to-be-resolved" />
+    <display value="Trace needs to be resolved - (NHS number or patient detail conflict)" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="trace-in-progress" />
+    <display value="Trace in progress" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="number-not-present-and-trace-not-required" />
+    <display value="Number not present and trace not required" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="trace-postponed" />
+    <display value="Trace postponed (baby under six weeks old)" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="England" />
+    </property>
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
+  <concept>
+    <code value="number-present-and-traced-using-welsh-nhs-ar" />
+    <display value="Number present and traced using Welsh NHS AR" />
+    <property>
+      <code value="ApplicableCountry" />
+      <valueString value="Wales" />
+    </property>
+  </concept>
 </CodeSystem>

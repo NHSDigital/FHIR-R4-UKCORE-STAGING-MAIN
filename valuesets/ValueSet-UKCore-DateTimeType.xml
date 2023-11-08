@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-DateTimeType"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DateTimeType"/>
-	<version value="2.1.0"/>
-	<name value="UKCoreDateTimeType"/>
-	<title value="UK Core Date Time Type"/>
-	<status value="draft"/>
-	<date value="2023-10-13"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="A ValueSet to identify the type of date and time being recorded."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="84af73b0-8078-4323-be5e-43ced75666fb"/>
-		<timestamp value="2023-10-13T13:27:44+00:00"/>
-		<total value="13"/>
-		<offset value="0"/>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-resource-arrived-on-scene"/>
-			<display value="Time Resource Arrived On Scene"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-call-ended"/>
-			<display value="Time Call Ended"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-clear"/>
-			<display value="Time Clear"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-arrived-receiving-location"/>
-			<display value="Time Arrived at Receiving Location"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-resource-left-scene"/>
-			<display value="Time Resource Left Scene"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-dispatch-code-established"/>
-			<display value="Time Dispatch Code Established"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-stood-down"/>
-			<display value="Time Stood Down"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="clock-start-date-time"/>
-			<display value="Clock Start Date Time"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-resource-mobilised"/>
-			<display value="Time Resource Mobilised"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="clock-stop-date-time"/>
-			<display value="Clock Stop Date Time"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-clinical-handover"/>
-			<display value="Time of Clinical Handover"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-call-answered"/>
-			<display value="Time Call Answered"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
-			<code value="time-patient-handover"/>
-			<display value="Time Patient Handover"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-DateTimeType" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DateTimeType" />
+  <version value="2.1.0" />
+  <name value="UKCoreDateTimeType" />
+  <title value="UK Core Date Time Type" />
+  <status value="draft" />
+  <date value="2023-10-13" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A ValueSet to identify the type of date and time being recorded." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="84af73b0-8078-4323-be5e-43ced75666fb" />
+    <timestamp value="2023-10-13T13:27:44+00:00" />
+    <total value="13" />
+    <offset value="0" />
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-resource-arrived-on-scene" />
+      <display value="Time Resource Arrived On Scene" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-call-ended" />
+      <display value="Time Call Ended" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-clear" />
+      <display value="Time Clear" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-arrived-receiving-location" />
+      <display value="Time Arrived at Receiving Location" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-resource-left-scene" />
+      <display value="Time Resource Left Scene" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-dispatch-code-established" />
+      <display value="Time Dispatch Code Established" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-stood-down" />
+      <display value="Time Stood Down" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="clock-start-date-time" />
+      <display value="Clock Start Date Time" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-resource-mobilised" />
+      <display value="Time Resource Mobilised" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="clock-stop-date-time" />
+      <display value="Clock Stop Date Time" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-clinical-handover" />
+      <display value="Time of Clinical Handover" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-call-answered" />
+      <display value="Time Call Answered" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType" />
+      <code value="time-patient-handover" />
+      <display value="Time Patient Handover" />
+    </contains>
+  </expansion>
 </ValueSet>

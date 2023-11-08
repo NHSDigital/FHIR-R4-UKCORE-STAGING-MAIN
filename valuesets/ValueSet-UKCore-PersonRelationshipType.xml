@@ -1,867 +1,867 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-PersonRelationshipType"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType"/>
-	<version value="2.1.0" />
-	<name value="UKCorePersonRelationshipType"/>
-	<title value="UK Core Person Relationship Type"/>
-	<status value="active" />
-	<date value="2021-09-10" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the type of relationship a person has to a patient."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<compose>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-		</include>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<filter>
-				<property value="concept"/>
-				<op value="is-a"/>
-				<value value="_PersonalRelationshipRoleType"/>
-			</filter>
-		</include>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-		</include>
-		<exclude>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<concept>
-				<code value="O"/>
-				<display value="Other"/>
-			</concept>
-		</exclude>
-		<exclude>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<concept>
-				<code value="_PersonalRelationshipRoleType"/>
-				<display value="PersonalRelationshipRoleType"/>
-			</concept>
-		</exclude>
-	</compose>
-	<expansion>
-		<identifier value="f62b3aeb-e65d-4426-bf6b-4d281b386504"/>
-		<timestamp value="2021-09-10T07:25:20+00:00"/>
-		<total value="131"/>
-		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode|2018-08-12"/>
-		</parameter>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://terminology.hl7.org/CodeSystem/v2-0131|2.9"/>
-		</parameter>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole|2.1.0"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="CHLDADOPT"/>
-			<display value="adopted child"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="DAUADOPT"/>
-			<display value="adopted daughter"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SONADOPT"/>
-			<display value="adopted son"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ADOPTF"/>
-			<display value="adoptive father"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ADOPTM"/>
-			<display value="adoptive mother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ADOPTP"/>
-			<display value="adoptive parent"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="Agent"/>
-			<display value="Agent of patient"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="AUNT"/>
-			<display value="aunt"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<inactive value="true"/>
-			<version value="2.9"/>
-			<code value="BP"/>
-			<display value="Billing contact person"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="BRO"/>
-			<display value="brother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="BROINLAW"/>
-			<display value="brother-in-law"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="Carer"/>
-			<display value="Carer of patient"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="CHILD"/>
-			<display value="child"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="CHLDINLAW"/>
-			<display value="child-in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<inactive value="true"/>
-			<version value="2.9"/>
-			<code value="CP"/>
-			<display value="Contact person"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="COUSN"/>
-			<display value="cousin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="DAUC"/>
-			<display value="daughter"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="DAUINLAW"/>
-			<display value="daughter in-law"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="Dependant"/>
-			<display value="Dependant of patient"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="DOMPART"/>
-			<display value="domestic partner"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="C"/>
-			<display value="Emergency Contact"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<inactive value="true"/>
-			<version value="2.9"/>
-			<code value="EP"/>
-			<display value="Emergency contact person"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="E"/>
-			<display value="Employer"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="EXT"/>
-			<display value="extended family member"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FAMMEMB"/>
-			<display value="family member"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FTH"/>
-			<display value="father"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FTHINLAW"/>
-			<display value="father-in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="F"/>
-			<display value="Federal Agency"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FMRSPS"/>
-			<display value="former spouse"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="CHLDFOST"/>
-			<display value="foster child"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="DAUFOST"/>
-			<display value="foster daughter"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FTHFOST"/>
-			<display value="foster father"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MTHFOST"/>
-			<display value="foster mother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PRNFOST"/>
-			<display value="foster parent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SONFOST"/>
-			<display value="foster son"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FTWIN"/>
-			<display value="fraternal twin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FTWINBRO"/>
-			<display value="fraternal twin brother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FTWINSIS"/>
-			<display value="fraternal twin sister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GESTM"/>
-			<display value="gestational mother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GRNDCHILD"/>
-			<display value="grandchild"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GRNDDAU"/>
-			<display value="granddaughter"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GRFTH"/>
-			<display value="grandfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GRMTH"/>
-			<display value="grandmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GRPRN"/>
-			<display value="grandparent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GRNDSON"/>
-			<display value="grandson"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GGRFTH"/>
-			<display value="great grandfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GGRMTH"/>
-			<display value="great grandmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="GGRPRN"/>
-			<display value="great grandparent"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="Guardian"/>
-			<display value="Guardian of patient"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="HBRO"/>
-			<display value="half-brother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="HSIB"/>
-			<display value="half-sibling"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="HSIS"/>
-			<display value="half-sister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="HUSB"/>
-			<display value="husband"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ITWIN"/>
-			<display value="identical twin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ITWINBRO"/>
-			<display value="identical twin brother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ITWINSIS"/>
-			<display value="identical twin sister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="INLAW"/>
-			<display value="inlaw"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="I"/>
-			<display value="Insurance Company"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MAUNT"/>
-			<display value="maternal aunt"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MCOUSN"/>
-			<display value="maternal cousin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MGRFTH"/>
-			<display value="maternal grandfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MGRMTH"/>
-			<display value="maternal grandmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MGRPRN"/>
-			<display value="maternal grandparent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MGGRFTH"/>
-			<display value="maternal great-grandfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MGGRMTH"/>
-			<display value="maternal great-grandmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MGGRPRN"/>
-			<display value="maternal great-grandparent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MUNCLE"/>
-			<display value="maternal uncle"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MTH"/>
-			<display value="mother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="MTHINLAW"/>
-			<display value="mother-in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NBRO"/>
-			<display value="natural brother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NCHILD"/>
-			<display value="natural child"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="DAU"/>
-			<display value="natural daughter"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NFTH"/>
-			<display value="natural father"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NFTHF"/>
-			<display value="natural father of fetus"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NMTH"/>
-			<display value="natural mother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NMTHF"/>
-			<display value="natural mother of fetus"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NPRN"/>
-			<display value="natural parent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NSIB"/>
-			<display value="natural sibling"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NSIS"/>
-			<display value="natural sister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SON"/>
-			<display value="natural son"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NBOR"/>
-			<display value="neighbor"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NEPHEW"/>
-			<display value="nephew"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="N"/>
-			<display value="Next-of-Kin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NIECE"/>
-			<display value="niece"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="NIENEPH"/>
-			<display value="niece/nephew"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="NonDependant"/>
-			<display value="Non Dependant of patient"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="NotSpecified"/>
-			<display value="Not Specified"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PRN"/>
-			<display value="parent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PRNINLAW"/>
-			<display value="parent in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PAUNT"/>
-			<display value="paternal aunt"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PCOUSN"/>
-			<display value="paternal cousin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PGRFTH"/>
-			<display value="paternal grandfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PGRMTH"/>
-			<display value="paternal grandmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PGRPRN"/>
-			<display value="paternal grandparent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PGGRFTH"/>
-			<display value="paternal great-grandfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PGGRMTH"/>
-			<display value="paternal great-grandmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PGGRPRN"/>
-			<display value="paternal great-grandparent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="PUNCLE"/>
-			<display value="paternal uncle"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<inactive value="true"/>
-			<version value="2.9"/>
-			<code value="PR"/>
-			<display value="Person preparing referral"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="Personal"/>
-			<display value="Personal relationship with the patient"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="PolygamousPartner"/>
-			<display value="Polygamous Partner of patient"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="ProxyCommunication"/>
-			<display value="Proxy Communication for patient"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="ProxyContactCommunication"/>
-			<display value="Proxy Contact and Communication for patient"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"/>
-			<version value="2.1.0"/>
-			<code value="ProxyContact"/>
-			<display value="Proxy Contact for patient"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ROOM"/>
-			<display value="Roommate"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="ONESELF"/>
-			<display value="self"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SIB"/>
-			<display value="sibling"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SIBINLAW"/>
-			<display value="sibling in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SIGOTHR"/>
-			<display value="significant other"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SIS"/>
-			<display value="sister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SISINLAW"/>
-			<display value="sister-in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SONC"/>
-			<display value="son"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SONINLAW"/>
-			<display value="son in-law"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="SPS"/>
-			<display value="spouse"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="S"/>
-			<display value="State Agency"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPCHLD"/>
-			<display value="step child"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPPRN"/>
-			<display value="step parent"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPSIB"/>
-			<display value="step sibling"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPBRO"/>
-			<display value="stepbrother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPDAU"/>
-			<display value="stepdaughter"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPFTH"/>
-			<display value="stepfather"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPMTH"/>
-			<display value="stepmother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPSIS"/>
-			<display value="stepsister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="STPSON"/>
-			<display value="stepson"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="TWIN"/>
-			<display value="twin"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="TWINBRO"/>
-			<display value="twin brother"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="TWINSIS"/>
-			<display value="twin sister"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="UNCLE"/>
-			<display value="uncle"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-			<version value="2.9"/>
-			<code value="U"/>
-			<display value="Unknown"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="FRND"/>
-			<display value="unrelated friend"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-			<version value="2018-08-12"/>
-			<code value="WIFE"/>
-			<display value="wife"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-PersonRelationshipType" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
+  <version value="2.1.0" />
+  <name value="UKCorePersonRelationshipType" />
+  <title value="UK Core Person Relationship Type" />
+  <status value="active" />
+  <date value="2021-09-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the type of relationship a person has to a patient." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <filter>
+        <property value="concept" />
+        <op value="is-a" />
+        <value value="_PersonalRelationshipRoleType" />
+      </filter>
+    </include>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+    </include>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <concept>
+        <code value="O" />
+        <display value="Other" />
+      </concept>
+    </exclude>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <concept>
+        <code value="_PersonalRelationshipRoleType" />
+        <display value="PersonalRelationshipRoleType" />
+      </concept>
+    </exclude>
+  </compose>
+  <expansion>
+    <identifier value="f62b3aeb-e65d-4426-bf6b-4d281b386504" />
+    <timestamp value="2021-09-10T07:25:20+00:00" />
+    <total value="131" />
+    <offset value="0" />
+    <parameter>
+      <name value="version" />
+      <valueUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode|2018-08-12" />
+    </parameter>
+    <parameter>
+      <name value="version" />
+      <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0131|2.9" />
+    </parameter>
+    <parameter>
+      <name value="version" />
+      <valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole|2.1.0" />
+    </parameter>
+    <parameter>
+      <name value="count" />
+      <valueInteger value="2147483647" />
+    </parameter>
+    <parameter>
+      <name value="offset" />
+      <valueInteger value="0" />
+    </parameter>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="CHLDADOPT" />
+      <display value="adopted child" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="DAUADOPT" />
+      <display value="adopted daughter" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SONADOPT" />
+      <display value="adopted son" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ADOPTF" />
+      <display value="adoptive father" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ADOPTM" />
+      <display value="adoptive mother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ADOPTP" />
+      <display value="adoptive parent" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="Agent" />
+      <display value="Agent of patient" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="AUNT" />
+      <display value="aunt" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <inactive value="true" />
+      <version value="2.9" />
+      <code value="BP" />
+      <display value="Billing contact person" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="BRO" />
+      <display value="brother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="BROINLAW" />
+      <display value="brother-in-law" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="Carer" />
+      <display value="Carer of patient" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="CHILD" />
+      <display value="child" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="CHLDINLAW" />
+      <display value="child-in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <inactive value="true" />
+      <version value="2.9" />
+      <code value="CP" />
+      <display value="Contact person" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="COUSN" />
+      <display value="cousin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="DAUC" />
+      <display value="daughter" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="DAUINLAW" />
+      <display value="daughter in-law" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="Dependant" />
+      <display value="Dependant of patient" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="DOMPART" />
+      <display value="domestic partner" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="C" />
+      <display value="Emergency Contact" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <inactive value="true" />
+      <version value="2.9" />
+      <code value="EP" />
+      <display value="Emergency contact person" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="E" />
+      <display value="Employer" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="EXT" />
+      <display value="extended family member" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FAMMEMB" />
+      <display value="family member" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FTH" />
+      <display value="father" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FTHINLAW" />
+      <display value="father-in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="F" />
+      <display value="Federal Agency" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FMRSPS" />
+      <display value="former spouse" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="CHLDFOST" />
+      <display value="foster child" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="DAUFOST" />
+      <display value="foster daughter" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FTHFOST" />
+      <display value="foster father" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MTHFOST" />
+      <display value="foster mother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PRNFOST" />
+      <display value="foster parent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SONFOST" />
+      <display value="foster son" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FTWIN" />
+      <display value="fraternal twin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FTWINBRO" />
+      <display value="fraternal twin brother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FTWINSIS" />
+      <display value="fraternal twin sister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GESTM" />
+      <display value="gestational mother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GRNDCHILD" />
+      <display value="grandchild" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GRNDDAU" />
+      <display value="granddaughter" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GRFTH" />
+      <display value="grandfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GRMTH" />
+      <display value="grandmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GRPRN" />
+      <display value="grandparent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GRNDSON" />
+      <display value="grandson" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GGRFTH" />
+      <display value="great grandfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GGRMTH" />
+      <display value="great grandmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="GGRPRN" />
+      <display value="great grandparent" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="Guardian" />
+      <display value="Guardian of patient" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="HBRO" />
+      <display value="half-brother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="HSIB" />
+      <display value="half-sibling" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="HSIS" />
+      <display value="half-sister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="HUSB" />
+      <display value="husband" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ITWIN" />
+      <display value="identical twin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ITWINBRO" />
+      <display value="identical twin brother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ITWINSIS" />
+      <display value="identical twin sister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="INLAW" />
+      <display value="inlaw" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="I" />
+      <display value="Insurance Company" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MAUNT" />
+      <display value="maternal aunt" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MCOUSN" />
+      <display value="maternal cousin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MGRFTH" />
+      <display value="maternal grandfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MGRMTH" />
+      <display value="maternal grandmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MGRPRN" />
+      <display value="maternal grandparent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MGGRFTH" />
+      <display value="maternal great-grandfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MGGRMTH" />
+      <display value="maternal great-grandmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MGGRPRN" />
+      <display value="maternal great-grandparent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MUNCLE" />
+      <display value="maternal uncle" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MTH" />
+      <display value="mother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="MTHINLAW" />
+      <display value="mother-in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NBRO" />
+      <display value="natural brother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NCHILD" />
+      <display value="natural child" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="DAU" />
+      <display value="natural daughter" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NFTH" />
+      <display value="natural father" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NFTHF" />
+      <display value="natural father of fetus" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NMTH" />
+      <display value="natural mother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NMTHF" />
+      <display value="natural mother of fetus" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NPRN" />
+      <display value="natural parent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NSIB" />
+      <display value="natural sibling" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NSIS" />
+      <display value="natural sister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SON" />
+      <display value="natural son" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NBOR" />
+      <display value="neighbor" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NEPHEW" />
+      <display value="nephew" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="N" />
+      <display value="Next-of-Kin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NIECE" />
+      <display value="niece" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="NIENEPH" />
+      <display value="niece/nephew" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="NonDependant" />
+      <display value="Non Dependant of patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="NotSpecified" />
+      <display value="Not Specified" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PRN" />
+      <display value="parent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PRNINLAW" />
+      <display value="parent in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PAUNT" />
+      <display value="paternal aunt" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PCOUSN" />
+      <display value="paternal cousin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PGRFTH" />
+      <display value="paternal grandfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PGRMTH" />
+      <display value="paternal grandmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PGRPRN" />
+      <display value="paternal grandparent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PGGRFTH" />
+      <display value="paternal great-grandfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PGGRMTH" />
+      <display value="paternal great-grandmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PGGRPRN" />
+      <display value="paternal great-grandparent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="PUNCLE" />
+      <display value="paternal uncle" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <inactive value="true" />
+      <version value="2.9" />
+      <code value="PR" />
+      <display value="Person preparing referral" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="Personal" />
+      <display value="Personal relationship with the patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="PolygamousPartner" />
+      <display value="Polygamous Partner of patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="ProxyCommunication" />
+      <display value="Proxy Communication for patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="ProxyContactCommunication" />
+      <display value="Proxy Contact and Communication for patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+      <version value="2.1.0" />
+      <code value="ProxyContact" />
+      <display value="Proxy Contact for patient" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ROOM" />
+      <display value="Roommate" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="ONESELF" />
+      <display value="self" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SIB" />
+      <display value="sibling" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SIBINLAW" />
+      <display value="sibling in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SIGOTHR" />
+      <display value="significant other" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SIS" />
+      <display value="sister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SISINLAW" />
+      <display value="sister-in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SONC" />
+      <display value="son" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SONINLAW" />
+      <display value="son in-law" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="SPS" />
+      <display value="spouse" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="S" />
+      <display value="State Agency" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPCHLD" />
+      <display value="step child" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPPRN" />
+      <display value="step parent" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPSIB" />
+      <display value="step sibling" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPBRO" />
+      <display value="stepbrother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPDAU" />
+      <display value="stepdaughter" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPFTH" />
+      <display value="stepfather" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPMTH" />
+      <display value="stepmother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPSIS" />
+      <display value="stepsister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="STPSON" />
+      <display value="stepson" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="TWIN" />
+      <display value="twin" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="TWINBRO" />
+      <display value="twin brother" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="TWINSIS" />
+      <display value="twin sister" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="UNCLE" />
+      <display value="uncle" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      <version value="2.9" />
+      <code value="U" />
+      <display value="Unknown" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="FRND" />
+      <display value="unrelated friend" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <version value="2018-08-12" />
+      <code value="WIFE" />
+      <display value="wife" />
+    </contains>
+  </expansion>
 </ValueSet>
