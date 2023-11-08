@@ -2,7 +2,7 @@
     <id value="UKCore-Extension-ConditionEpisode-Example" />
     <!--  **************extension start**************  -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode">
-        <valueCode value="new"/>
+        <valueCode value="new" />
     </extension>
     <!--  **************extension end**************  -->
     <subject>

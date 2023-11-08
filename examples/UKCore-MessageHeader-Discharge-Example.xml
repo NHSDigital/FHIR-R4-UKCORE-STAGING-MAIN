@@ -1,27 +1,27 @@
 <MessageHeader xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MessageHeader-Discharge-Example"/>
-	<eventCoding>
-		<system value="http://snomed.info/sct"/>
-		<code value="306689006"/>
-		<display value="Discharge to home"/>
-	</eventCoding>
-	<destination>
-		<endpoint value="urn:nhs:addressing:asid:477121007825"/>
-		<receiver>
-			<identifier>
-				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-				<value value="RY6"/>
-			</identifier>
-			<display value="LEEDS COMMUNITY HEALTHCARE NHS TRUST"/>
-		</receiver>
-	</destination>
-	<sender>
-		<reference value="https://directory.spineservices.nhs.uk/Organization/X26"/>
-	</sender>
-	<source>
-		<endpoint value="NOROT003"/>
-	</source>
-	<focus>
-		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
-	</focus>
+  <id value="UKCore-MessageHeader-Discharge-Example" />
+  <eventCoding>
+    <system value="http://snomed.info/sct" />
+    <code value="306689006" />
+    <display value="Discharge to home" />
+  </eventCoding>
+  <destination>
+    <endpoint value="urn:nhs:addressing:asid:477121007825" />
+    <receiver>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+        <value value="RY6" />
+      </identifier>
+      <display value="LEEDS COMMUNITY HEALTHCARE NHS TRUST" />
+    </receiver>
+  </destination>
+  <sender>
+    <reference value="https://directory.spineservices.nhs.uk/Organization/X26" />
+  </sender>
+  <source>
+    <endpoint value="NOROT003" />
+  </source>
+  <focus>
+    <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
+  </focus>
 </MessageHeader>

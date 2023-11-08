@@ -1,15 +1,15 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-BodyTemperature-Example"/>
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-			<code value="vital-signs"/>
-			<display value="Vital Signs"/>
-		</coding>
-		<text value="Vital Signs"/>
-	</category>
-	<code>
+  <id value="UKCore-Observation-VitalSigns-BodyTemperature-Example" />
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+    <text value="Vital Signs" />
+  </category>
+  <code>
         <coding>
             <system value="http://snomed.info/sct" />
             <code value="276885007" />
@@ -20,14 +20,14 @@
             <code value="8310-5" />
             <display value="Body temperature" />
         </coding>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectiveDateTime value="2023-08-10"/>
-	<performer>
-		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-	</performer>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectiveDateTime value="2023-08-10" />
+  <performer>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </performer>
     <valueQuantity>
         <value value="36.5" />
         <unit value="degree Celsius" />

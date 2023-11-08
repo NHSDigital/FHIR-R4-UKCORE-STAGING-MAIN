@@ -1,10 +1,10 @@
 <Medication xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Medication-TimoptolEyeDrops-Example"/>
-	<code>
-		<coding>
-			<system value="https://dmd.nhs.uk"/>
-			<code value="18616211000001106"/>
-			<display value="Timoptol 0.5% eye drops (DE Pharmaceuticals)"/>
-		</coding>
-	</code>
+  <id value="UKCore-Medication-TimoptolEyeDrops-Example" />
+  <code>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="18616211000001106" />
+      <display value="Timoptol 0.5% eye drops (DE Pharmaceuticals)" />
+    </coding>
+  </code>
 </Medication>

@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
-	<id value="UKCore-Observation-24HourBloodPressure-Example" />
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-			<code value="vital-signs"/>
-			<display value="Vital Signs"/>
-		</coding>
-	</category>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="314463006"/>
-			<display value="24 hour blood pressure"/>
-		</coding>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectiveDateTime value="2023-03-10"/>
-	<performer>
-		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-	</performer>
-	<component>
-		<code>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="314464000"/>
-				<display value="24 hour systolic blood pressure"/>
-			</coding>
-			<text value="Systolic blood pressure"/>
-		</code>
-		<valueQuantity>
-			<value value="102"/>
-			<unit value="millimeter of mercury"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mm[Hg]"/>
-		</valueQuantity>
-	</component>
-	<component>
-		<code>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="314465004"/>
-				<display value="24 hour diastolic blood pressure"/>
-			</coding>
-			<text value="Diastolic blood pressure"/>
-		</code>
-		<valueQuantity>
-			<value value="84"/>
-			<unit value="millimeter of mercury"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mm[Hg]"/>
-		</valueQuantity>
-	</component>
+  <id value="UKCore-Observation-24HourBloodPressure-Example" />
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="314463006" />
+      <display value="24 hour blood pressure" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectiveDateTime value="2023-03-10" />
+  <performer>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </performer>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="314464000" />
+        <display value="24 hour systolic blood pressure" />
+      </coding>
+      <text value="Systolic blood pressure" />
+    </code>
+    <valueQuantity>
+      <value value="102" />
+      <unit value="millimeter of mercury" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mm[Hg]" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="314465004" />
+        <display value="24 hour diastolic blood pressure" />
+      </coding>
+      <text value="Diastolic blood pressure" />
+    </code>
+    <valueQuantity>
+      <value value="84" />
+      <unit value="millimeter of mercury" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mm[Hg]" />
+    </valueQuantity>
+  </component>
 </Observation>
