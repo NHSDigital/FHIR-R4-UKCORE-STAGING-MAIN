@@ -30,4 +30,4 @@ jobs:
           repo: ${{ github.repository }}
           branch: ${{ github.head_ref || github.ref_name }}
         env:
-          GITHUB_TOKEN: ${{secrets.FindAndReplacePAT}}
+          GITHUB_TOKEN: ${{secrets.FindAndReplacePAT}} #uses PAT rather than GITHUB_TOKEN due to not running actions once merged https://github.com/orgs/community/discussions/25702
