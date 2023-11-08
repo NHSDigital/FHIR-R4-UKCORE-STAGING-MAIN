@@ -1,37 +1,37 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
-	<id value="UKCore-ServiceRequest-HipReplacement-Example"/>
-	<!--The source of the service request.-->
-	<!-- ***************extension start*************** -->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="109721000000108"/>
-				<display value="Referred by trigger criteria"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
-	<!-- **************extension end ****************** -->
-	<status value="active"/>
-	<intent value="order"/>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="858611000000102"/>
-			<display value="Metal-on-metal hip replacement annual review"/>
-		</coding>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<authoredOn value="2023-05-18T17:50:00+07:00"/>
-	<requester>
-		<reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example"/>
-	</requester>
-	<performer>
-		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-	</performer>
-	<locationReference>
-		<reference value="Location/UKCore-Location-HospitalSJUH-Example"/>
-	</locationReference>
+  <id value="UKCore-ServiceRequest-HipReplacement-Example" />
+  <!--The source of the service request.-->
+  <!-- ***************extension start*************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="109721000000108" />
+        <display value="Referred by trigger criteria" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <!-- **************extension end ****************** -->
+  <status value="active" />
+  <intent value="order" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="858611000000102" />
+      <display value="Metal-on-metal hip replacement annual review" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <authoredOn value="2023-05-18T17:50:00+07:00" />
+  <requester>
+    <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+  </requester>
+  <performer>
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+  </performer>
+  <locationReference>
+    <reference value="Location/UKCore-Location-HospitalSJUH-Example" />
+  </locationReference>
 </ServiceRequest>

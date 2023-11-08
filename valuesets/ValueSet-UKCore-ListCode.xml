@@ -1,132 +1,132 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-ListCode"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode"/>
-	<version value="2.1.0"/>
-	<name value="UKCoreListCode"/>
-	<title value="UK Core List Code"/>
-	<status value="active" />
-	<date value="2022-01-07" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the purpose of a list. Selected from the SNOMED CT UK coding system."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html. This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
-	<compose>
-		<include>
-			<system value="http://snomed.info/sct" />
-			<filter>
-				<property value="constraint" />
-				<op value="=" />
-				<value value="887161000000102 OR 887171000000109 OR 717711000000103 OR 933361000000108 OR 886921000000105 OR 1102411000000102 OR 1102191000000100 OR 1103671000000101 OR 325851000000107 OR 25851000000105 OR 24781000000107 OR 1102181000000102 OR 826501000000100 OR 792931000000107 OR 887191000000108 OR 1149501000000101" />
-			</filter>
-		</include>
-	</compose>
-	<expansion>
-		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
-			<valueBoolean value="true"/>
-		</extension>
-		<identifier value="dec079f7-6236-46f9-94b5-505783b276aa"/>
-		<timestamp value="2022-01-07T11:09:13+00:00"/>
-		<total value="16"/>
-		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20211222"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1102411000000102"/>
-			<display value="Active medications"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="886921000000105"/>
-			<display value="Allergies and adverse reactions"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="24781000000107"/>
-			<display value="Category (EHR)"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="325851000000107"/>
-			<display value="Consultation"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="887161000000102"/>
-			<display value="Diagnoses"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1102191000000100"/>
-			<display value="Discontinued medications"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1103671000000101"/>
-			<display value="Ended allergies"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1102181000000102"/>
-			<display value="Immunisations"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="887191000000108"/>
-			<display value="Investigations and results"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1149501000000101"/>
-			<display value="List of consultations"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="933361000000108"/>
-			<display value="Medications and medical devices"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="826501000000100"/>
-			<display value="Miscellaneous record"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="792931000000107"/>
-			<display value="Outbound referral"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="717711000000103"/>
-			<display value="Problems"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="887171000000109"/>
-			<display value="Procedures"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="25851000000105"/>
-			<display value="Topic (EHR)"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-ListCode" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode" />
+  <version value="2.1.0" />
+  <name value="UKCoreListCode" />
+  <title value="UK Core List Code" />
+  <status value="active" />
+  <date value="2022-01-07" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the purpose of a list. Selected from the SNOMED CT UK coding system." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html. This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="887161000000102 OR 887171000000109 OR 717711000000103 OR 933361000000108 OR 886921000000105 OR 1102411000000102 OR 1102191000000100 OR 1103671000000101 OR 325851000000107 OR 25851000000105 OR 24781000000107 OR 1102181000000102 OR 826501000000100 OR 792931000000107 OR 887191000000108 OR 1149501000000101" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+      <valueBoolean value="true" />
+    </extension>
+    <identifier value="dec079f7-6236-46f9-94b5-505783b276aa" />
+    <timestamp value="2022-01-07T11:09:13+00:00" />
+    <total value="16" />
+    <offset value="0" />
+    <parameter>
+      <name value="version" />
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20211222" />
+    </parameter>
+    <parameter>
+      <name value="count" />
+      <valueInteger value="2147483647" />
+    </parameter>
+    <parameter>
+      <name value="offset" />
+      <valueInteger value="0" />
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1102411000000102" />
+      <display value="Active medications" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="886921000000105" />
+      <display value="Allergies and adverse reactions" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="24781000000107" />
+      <display value="Category (EHR)" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="325851000000107" />
+      <display value="Consultation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="887161000000102" />
+      <display value="Diagnoses" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1102191000000100" />
+      <display value="Discontinued medications" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1103671000000101" />
+      <display value="Ended allergies" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1102181000000102" />
+      <display value="Immunisations" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="887191000000108" />
+      <display value="Investigations and results" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1149501000000101" />
+      <display value="List of consultations" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="933361000000108" />
+      <display value="Medications and medical devices" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="826501000000100" />
+      <display value="Miscellaneous record" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="792931000000107" />
+      <display value="Outbound referral" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="717711000000103" />
+      <display value="Problems" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="887171000000109" />
+      <display value="Procedures" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="25851000000105" />
+      <display value="Topic (EHR)" />
+    </contains>
+  </expansion>
 </ValueSet>
