@@ -21,11 +21,11 @@
     <caseSensitive value="true" />
     <content value="complete" />
     <concept>
-      <code value="prescribed-at-gp-practice"/>
-      <display value="Prescribed at GP practice"/>
+      <code value="prescribed-at-gp-practice" />
+      <display value="Prescribed at GP practice" />
    </concept>
    <concept>
-      <code value="prescribed-by-another-organisation"/>
-      <display value="Prescribed by another organisation"/>
+      <code value="prescribed-by-another-organisation" />
+      <display value="Prescribed by another organisation" />
    </concept>
 </CodeSystem>

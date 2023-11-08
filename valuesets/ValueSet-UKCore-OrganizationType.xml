@@ -1,110 +1,110 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-OrganizationType"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType"/>
-	<version value="1.0.0"/>
-	<name value="UKCoreOrganizationType"/>
-	<title value="UK Core Organization Type"/>
-	<status value="active"/>
-	<date value="2023-04-28"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="A set of codes that can be used to indicate a type of organization."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-		</include>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics"/>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="3821f3e2-0870-498d-91a7-8dd6e70f8348"/>
-		<timestamp value="2023-03-29T11:44:59+00:00"/>
-		<total value="15"/>
-		<offset value="0"/>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="other"/>
-			<display value="Other"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="reli"/>
-			<display value="Religious Institution"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="bus"/>
-			<display value="Non-Healthcare Business or Corporation"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="ins"/>
-			<display value="Insurance Company"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="edu"/>
-			<display value="Educational Institute"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="prov"/>
-			<display value="Healthcare Provider"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="govt"/>
-			<display value="Government"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="pay"/>
-			<display value="Payer"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="team"/>
-			<display value="Organizational team"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="crs"/>
-			<display value="Clinical Research Sponsor"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="dept"/>
-			<display value="Hospital Department"/>
-		</contains>
-		<contains>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-			<code value="cg"/>
-			<display value="Community Group"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics"/>
-			<code value="GLH"/>
-			<display value="Genomic Lab Hub"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics"/>
-			<code value="GEL"/>
-			<display value="Genomics England"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics"/>
-			<code value="LAB"/>
-			<display value="Other Genomics Laboratory"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-OrganizationType" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" />
+  <version value="1.0.0" />
+  <name value="UKCoreOrganizationType" />
+  <title value="UK Core Organization Type" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that can be used to indicate a type of organization." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+    </include>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="3821f3e2-0870-498d-91a7-8dd6e70f8348" />
+    <timestamp value="2023-03-29T11:44:59+00:00" />
+    <total value="15" />
+    <offset value="0" />
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="other" />
+      <display value="Other" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="reli" />
+      <display value="Religious Institution" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="bus" />
+      <display value="Non-Healthcare Business or Corporation" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="ins" />
+      <display value="Insurance Company" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="edu" />
+      <display value="Educational Institute" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="prov" />
+      <display value="Healthcare Provider" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="govt" />
+      <display value="Government" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="pay" />
+      <display value="Payer" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="team" />
+      <display value="Organizational team" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="crs" />
+      <display value="Clinical Research Sponsor" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="dept" />
+      <display value="Hospital Department" />
+    </contains>
+    <contains>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="cg" />
+      <display value="Community Group" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics" />
+      <code value="GLH" />
+      <display value="Genomic Lab Hub" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics" />
+      <code value="GEL" />
+      <display value="Genomics England" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics" />
+      <code value="LAB" />
+      <display value="Other Genomics Laboratory" />
+    </contains>
+  </expansion>
 </ValueSet>

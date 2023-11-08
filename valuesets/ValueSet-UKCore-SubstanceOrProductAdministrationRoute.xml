@@ -1,474 +1,474 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-SubstanceOrProductAdministrationRoute"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute"/>
-	<version value="1.0.0" />
-	<name value="UKCoreSubstanceOrProductAdministrationRoute"/>
-	<title value="UK Core Substance Or Product Administration Route"/>
-	<status value="active" />
-	<date value="2021-09-10" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that describe the route:
+  <id value="UKCore-SubstanceOrProductAdministrationRoute" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
+  <version value="1.0.0" />
+  <name value="UKCoreSubstanceOrProductAdministrationRoute" />
+  <title value="UK Core Substance Or Product Administration Route" />
+  <status value="active" />
+  <date value="2021-09-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that describe the route:
 
 &#13; - with which a medication was or should be administered to a patient;
 &#13; - by which a vaccine product is taken into the body;
 &#13; - by which a patient was exposed to a substance or product causing an allergy or intolerance.&#13;&#13;
 
-Selected from the 'ePrescribing route of administration' simple reference set of the SNOMED CT UK coding system."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
-	<compose>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="="/>
-				<value value="memberOf 999000051000001100" />
-			</filter>
-		</include>
-	</compose>
+Selected from the 'ePrescribing route of administration' simple reference set of the SNOMED CT UK coding system." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="memberOf 999000051000001100" />
+      </filter>
+    </include>
+  </compose>
     <expansion>
         <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
-            <valueBoolean value="true"/>
+            <valueBoolean value="true" />
         </extension>
-        <identifier value="6accb1ff-9c54-4f5a-9962-abc322c3951e"/>
-        <timestamp value="2021-09-09T12:50:22+00:00"/>
-        <total value="83"/>
-        <offset value="0"/>
+        <identifier value="6accb1ff-9c54-4f5a-9962-abc322c3951e" />
+        <timestamp value="2021-09-09T12:50:22+00:00" />
+        <total value="83" />
+        <offset value="0" />
         <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804"/>
+            <name value="version" />
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20210804" />
         </parameter>
         <parameter>
-            <name value="count"/>
-            <valueInteger value="2147483647"/>
+            <name value="count" />
+            <valueInteger value="2147483647" />
         </parameter>
         <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
+            <name value="offset" />
+            <valueInteger value="0" />
         </parameter>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="420254004"/>
-            <display value="Body cavity"/>
+            <system value="http://snomed.info/sct" />
+            <code value="420254004" />
+            <display value="Body cavity" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="54471007"/>
-            <display value="Buccal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="54471007" />
+            <display value="Buccal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372449004"/>
-            <display value="Dental"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372449004" />
+            <display value="Dental" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372450004"/>
-            <display value="Endocervical"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372450004" />
+            <display value="Endocervical" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372451000"/>
-            <display value="Endosinusial"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372451000" />
+            <display value="Endosinusial" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372452007"/>
-            <display value="Endotracheopulmonary"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372452007" />
+            <display value="Endotracheopulmonary" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="404820008"/>
-            <display value="Epidural"/>
+            <system value="http://snomed.info/sct" />
+            <code value="404820008" />
+            <display value="Epidural" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="18246711000001107"/>
-            <display value="Epilesional"/>
+            <system value="http://snomed.info/sct" />
+            <code value="18246711000001107" />
+            <display value="Epilesional" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372453002"/>
-            <display value="Extraamniotic"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372453002" />
+            <display value="Extraamniotic" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372454008"/>
-            <display value="Gastroenteral"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372454008" />
+            <display value="Gastroenteral" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="127490009"/>
-            <display value="Gastrostomy route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="127490009" />
+            <display value="Gastrostomy route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372457001"/>
-            <display value="Gingival"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372457001" />
+            <display value="Gingival" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="9191401000001100"/>
-            <display value="Haemodiafiltration"/>
+            <system value="http://snomed.info/sct" />
+            <code value="9191401000001100" />
+            <display value="Haemodiafiltration" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="18682911000001103"/>
-            <display value="Haemodialysis"/>
+            <system value="http://snomed.info/sct" />
+            <code value="18682911000001103" />
+            <display value="Haemodialysis" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="10334211000001103"/>
-            <display value="Haemofiltration"/>
+            <system value="http://snomed.info/sct" />
+            <code value="10334211000001103" />
+            <display value="Haemofiltration" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="718329006"/>
-            <display value="Infiltration"/>
+            <system value="http://snomed.info/sct" />
+            <code value="718329006" />
+            <display value="Infiltration" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="18679011000001101"/>
-            <display value="Inhalation"/>
+            <system value="http://snomed.info/sct" />
+            <code value="18679011000001101" />
+            <display value="Inhalation" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="34777511000001106"/>
-            <display value="Intestinal use"/>
+            <system value="http://snomed.info/sct" />
+            <code value="34777511000001106" />
+            <display value="Intestinal use" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372458006"/>
-            <display value="Intraamniotic"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372458006" />
+            <display value="Intraamniotic" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="58100008"/>
-            <display value="Intraarterial"/>
+            <system value="http://snomed.info/sct" />
+            <code value="58100008" />
+            <display value="Intraarterial" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="12130007"/>
-            <display value="Intraarticular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="12130007" />
+            <display value="Intraarticular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372459003"/>
-            <display value="Intrabursal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372459003" />
+            <display value="Intrabursal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="418821007"/>
-            <display value="Intracameral use"/>
+            <system value="http://snomed.info/sct" />
+            <code value="418821007" />
+            <display value="Intracameral use" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372460008"/>
-            <display value="Intracardiac"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372460008" />
+            <display value="Intracardiac" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372461007"/>
-            <display value="Intracavernous"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372461007" />
+            <display value="Intracavernous" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="420719007"/>
-            <display value="Intracerebroventricular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="420719007" />
+            <display value="Intracerebroventricular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <inactive value="true"/>
-            <code value="19537211000001108"/>
-            <display value="Intracervical route"/>
+            <system value="http://snomed.info/sct" />
+            <inactive value="true" />
+            <code value="19537211000001108" />
+            <display value="Intracervical route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372463005"/>
-            <display value="Intracoronary"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372463005" />
+            <display value="Intracoronary" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372464004"/>
-            <display value="Intradermal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372464004" />
+            <display value="Intradermal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372465003"/>
-            <display value="Intradiscal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372465003" />
+            <display value="Intradiscal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="448077001"/>
-            <display value="Intraepidermal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="448077001" />
+            <display value="Intraepidermal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="38233211000001106"/>
-            <display value="Intraglandular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="38233211000001106" />
+            <display value="Intraglandular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372466002"/>
-            <display value="Intralesional"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372466002" />
+            <display value="Intralesional" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372467006"/>
-            <display value="Intralymphatic"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372467006" />
+            <display value="Intralymphatic" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="78421000"/>
-            <display value="Intramuscular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="78421000" />
+            <display value="Intramuscular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372468001"/>
-            <display value="Intraocular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372468001" />
+            <display value="Intraocular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="417255000"/>
-            <display value="Intraosseous"/>
+            <system value="http://snomed.info/sct" />
+            <code value="417255000" />
+            <display value="Intraosseous" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="38239002"/>
-            <display value="Intraperitoneal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="38239002" />
+            <display value="Intraperitoneal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372469009"/>
-            <display value="Intrapleural"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372469009" />
+            <display value="Intrapleural" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372470005"/>
-            <display value="Intrasternal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372470005" />
+            <display value="Intrasternal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="418586008"/>
-            <display value="Intratendinous route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="418586008" />
+            <display value="Intratendinous route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="72607000"/>
-            <display value="Intrathecal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="72607000" />
+            <display value="Intrathecal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="447122006"/>
-            <display value="Intratumoral"/>
+            <system value="http://snomed.info/sct" />
+            <code value="447122006" />
+            <display value="Intratumoral" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="62226000"/>
-            <display value="Intrauterine"/>
+            <system value="http://snomed.info/sct" />
+            <code value="62226000" />
+            <display value="Intrauterine" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="47625008"/>
-            <display value="Intravenous"/>
+            <system value="http://snomed.info/sct" />
+            <code value="47625008" />
+            <display value="Intravenous" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="420287000"/>
-            <display value="Intraventricular cardiac"/>
+            <system value="http://snomed.info/sct" />
+            <code value="420287000" />
+            <display value="Intraventricular cardiac" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372471009"/>
-            <display value="Intravesical"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372471009" />
+            <display value="Intravesical" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="418401004"/>
-            <display value="Intravitreal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="418401004" />
+            <display value="Intravitreal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="21856811000001103"/>
-            <display value="Iontophoresis"/>
+            <system value="http://snomed.info/sct" />
+            <code value="21856811000001103" />
+            <display value="Iontophoresis" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="127491008"/>
-            <display value="Jejunostomy route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="127491008" />
+            <display value="Jejunostomy route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="9907001000001103"/>
-            <display value="Line lock"/>
+            <system value="http://snomed.info/sct" />
+            <code value="9907001000001103" />
+            <display value="Line lock" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="46713006"/>
-            <display value="Nasal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="46713006" />
+            <display value="Nasal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="127492001"/>
-            <display value="Nasogastric route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="127492001" />
+            <display value="Nasogastric route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="418730005"/>
-            <display value="Nasojejunal route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="418730005" />
+            <display value="Nasojejunal route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="54485002"/>
-            <display value="Ophthalmic route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="54485002" />
+            <display value="Ophthalmic route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="26643006"/>
-            <display value="Oral"/>
+            <system value="http://snomed.info/sct" />
+            <code value="26643006" />
+            <display value="Oral" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372473007"/>
-            <display value="Oromucosal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372473007" />
+            <display value="Oromucosal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="10547007"/>
-            <display value="Otic"/>
+            <system value="http://snomed.info/sct" />
+            <code value="10547007" />
+            <display value="Otic" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="225691000001105"/>
-            <display value="PEG tube route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="225691000001105" />
+            <display value="PEG tube route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="9191501000001101"/>
-            <display value="Percutaneous"/>
+            <system value="http://snomed.info/sct" />
+            <code value="9191501000001101" />
+            <display value="Percutaneous" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372474001"/>
-            <display value="Periarticular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372474001" />
+            <display value="Periarticular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="39338211000001108"/>
-            <display value="Peribulbar ocular"/>
+            <system value="http://snomed.info/sct" />
+            <code value="39338211000001108" />
+            <display value="Peribulbar ocular" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="3323001000001107"/>
-            <display value="Pericardial route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="3323001000001107" />
+            <display value="Pericardial route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372475000"/>
-            <display value="Perineural"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372475000" />
+            <display value="Perineural" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="11478901000001102"/>
-            <display value="Periosseous"/>
+            <system value="http://snomed.info/sct" />
+            <code value="11478901000001102" />
+            <display value="Periosseous" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419762003"/>
-            <display value="Peritendinous route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="419762003" />
+            <display value="Peritendinous route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="39337511000001107"/>
-            <display value="Peritumoral"/>
+            <system value="http://snomed.info/sct" />
+            <code value="39337511000001107" />
+            <display value="Peritumoral" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="37161004"/>
-            <display value="Rectal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="37161004" />
+            <display value="Rectal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="11564311000001109"/>
-            <display value="Regional perfusion"/>
+            <system value="http://snomed.info/sct" />
+            <code value="11564311000001109" />
+            <display value="Regional perfusion" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="418321004"/>
-            <display value="Retrobulbar route"/>
+            <system value="http://snomed.info/sct" />
+            <code value="418321004" />
+            <display value="Retrobulbar route" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="3594011000001102"/>
-            <display value="Route of administration not applicable"/>
+            <system value="http://snomed.info/sct" />
+            <code value="3594011000001102" />
+            <display value="Route of administration not applicable" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="372476004"/>
-            <display value="Subconjunctival"/>
+            <system value="http://snomed.info/sct" />
+            <code value="372476004" />
+            <display value="Subconjunctival" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="34206005"/>
-            <display value="Subcutaneous"/>
+            <system value="http://snomed.info/sct" />
+            <code value="34206005" />
+            <display value="Subcutaneous" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="37839007"/>
-            <display value="Sublingual"/>
+            <system value="http://snomed.info/sct" />
+            <code value="37839007" />
+            <display value="Sublingual" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419874009"/>
-            <display value="Submucosal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="419874009" />
+            <display value="Submucosal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="11564211000001101"/>
-            <display value="Submucosal rectal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="11564211000001101" />
+            <display value="Submucosal rectal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="33770711000001104"/>
-            <display value="Subretinal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="33770711000001104" />
+            <display value="Subretinal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="6064005"/>
-            <display value="Topical"/>
+            <system value="http://snomed.info/sct" />
+            <code value="6064005" />
+            <display value="Topical" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="45890007"/>
-            <display value="Transdermal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="45890007" />
+            <display value="Transdermal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="11479001000001107"/>
-            <display value="Translingual"/>
+            <system value="http://snomed.info/sct" />
+            <code value="11479001000001107" />
+            <display value="Translingual" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="404815008"/>
-            <display value="Transmucosal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="404815008" />
+            <display value="Transmucosal" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="90028008"/>
-            <display value="Urethral"/>
+            <system value="http://snomed.info/sct" />
+            <code value="90028008" />
+            <display value="Urethral" />
         </contains>
         <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="16857009"/>
-            <display value="Vaginal"/>
+            <system value="http://snomed.info/sct" />
+            <code value="16857009" />
+            <display value="Vaginal" />
         </contains>
     </expansion>
 </ValueSet>

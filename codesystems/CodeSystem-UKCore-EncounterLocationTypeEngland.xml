@@ -1,207 +1,207 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="UKCore-EncounterLocationTypeEngland" />
-	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EncounterLocationTypeEngland" />
-	<version value="1.0.1" />
-	<name value="UKCoreEncounterLocationTypeEngland" />
-	<title value="UK Core Encounter Location Type England" />
-	<status value="active" />
-	<date value="2023-04-28" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the physical type of location where an encounter takes place.  These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Activity Location Type Code](https://datadictionary.nhs.uk/data_elements/activity_location_type_code.html?hl=activity%2Clocation%2Ctype%2Ccode) web page on 18/11/2021." />
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<caseSensitive value="true" />
-	<content value="complete" />
-	<concept>
-		<code value="A01" />
-		<display value="Patient's Home" />
-	</concept>
-	<concept>
-		<code value="A02" />
-		<display value="Carer's Home" />
-	</concept>
-	<concept>
-		<code value="A03" />
-		<display value="Patient's Workplace" />
-	</concept>
-	<concept>
-		<code value="A04" />
-		<display value="Other Patient Related Location" />
-	</concept>
-	<concept>
-		<code value="B01" />
-		<display value="Primary Care Health Centre" />
-	</concept>
-	<concept>
-		<code value="B02" />
-		<display value="Polyclinic" />
-	</concept>
-	<concept>
-		<code value="C01" />
-		<display value="General Medical Practitioner Practice" />
-	</concept>
-	<concept>
-		<code value="C02" />
-		<display value="Dental Practice" />
-	</concept>
-	<concept>
-		<code value="C03" />
-		<display value="Ophthalmic Medical Practitioner Premises" />
-	</concept>
-	<concept>
-		<code value="D01" />
-		<display value="Walk In Centre" />
-	</concept>
-	<concept>
-		<code value="D02" />
-		<display value="Out of Hours Centre" />
-	</concept>
-	<concept>
-		<code value="D03" />
-		<display value="Emergency Community Dental Service" />
-	</concept>
-	<concept>
-		<code value="E01" />
-		<display value="Out-Patient Clinic" />
-	</concept>
-	<concept>
-		<code value="E02" />
-		<display value="Ward" />
-	</concept>
-	<concept>
-		<code value="E03" />
-		<display value="Day Hospital" />
-	</concept>
-	<concept>
-		<code value="E04" />
-		<display value="Emergency Care Department or Minor Injuries Department" />
-	</concept>
-	<concept>
-		<code value="E99" />
-		<display value="Other Departments" />
-	</concept>
-	<concept>
-		<code value="F01" />
-		<display value="Hospice" />
-	</concept>
-	<concept>
-		<code value="G01" />
-		<display value="Care Home Without Nursing" />
-	</concept>
-	<concept>
-		<code value="G02" />
-		<display value="Care Home With Nursing" />
-	</concept>
-	<concept>
-		<code value="G03" />
-		<display value="Children's Home" />
-	</concept>
-	<concept>
-		<code value="G04" />
-		<display value="Integrated Care Home Without Nursing and Care Home With Nursing" />
-	</concept>
-	<concept>
-		<code value="H01" />
-		<display value="Day Centre" />
-	</concept>
-	<concept>
-		<code value="J01" />
-		<display value="Resource Centre" />
-	</concept>
-	<concept>
-		<code value="K01" />
-		<display value="Sure Start Children's Centre" />
-	</concept>
-	<concept>
-		<code value="K02" />
-		<display value="Child Development Centre" />
-	</concept>
-	<concept>
-		<code value="L01" />
-		<display value="School" />
-	</concept>
-	<concept>
-		<code value="L02" />
-		<display value="Further Education College" />
-	</concept>
-	<concept>
-		<code value="L03" />
-		<display value="University" />
-	</concept>
-	<concept>
-		<code value="L04" />
-		<display value="Nursery Premises" />
-	</concept>
-	<concept>
-		<code value="L05" />
-		<display value="Other Childcare Premises" />
-	</concept>
-	<concept>
-		<code value="L06" />
-		<display value="Training Establishments" />
-	</concept>
-	<concept>
-		<code value="L99" />
-		<display value="Other Educational Premises" />
-	</concept>
-	<concept>
-		<code value="M01" />
-		<display value="Prison" />
-	</concept>
-	<concept>
-		<code value="M02" />
-		<display value="Probation Service Premises" />
-	</concept>
-	<concept>
-		<code value="M03" />
-		<display value="Police Station / Police Custody Suite" />
-	</concept>
-	<concept>
-		<code value="M04" />
-		<display value="Young Offender Institution" />
-	</concept>
-	<concept>
-		<code value="M05" />
-		<display value="Immigration Removal Centre" />
-	</concept>
-	<concept>
-		<code value="M06" />
-		<display value="Young Offender Institution (15-17)" />
-	</concept>
-	<concept>
-		<code value="M07" />
-		<display value="Young Offender Institution (18-21)" />
-	</concept>
-	<concept>
-		<code value="N01" />
-		<display value="Street or other public open space" />
-	</concept>
-	<concept>
-		<code value="N02" />
-		<display value="Other publicly accessible area or building" />
-	</concept>
-	<concept>
-		<code value="N03" />
-		<display value="Voluntary or charitable agency premises" />
-	</concept>
-	<concept>
-		<code value="N04" />
-		<display value="Dispensing Optician Premises" />
-	</concept>
-	<concept>
-		<code value="N05" />
-		<display value="Dispensing Pharmacy Premises" />
-	</concept>
-	<concept>
-		<code value="X01" />
-		<display value="Other locations not elsewhere classified" />
-	</concept>
+  <id value="UKCore-EncounterLocationTypeEngland" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EncounterLocationTypeEngland" />
+  <version value="1.0.1" />
+  <name value="UKCoreEncounterLocationTypeEngland" />
+  <title value="UK Core Encounter Location Type England" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the physical type of location where an encounter takes place.  These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Activity Location Type Code](https://datadictionary.nhs.uk/data_elements/activity_location_type_code.html?hl=activity%2Clocation%2Ctype%2Ccode) web page on 18/11/2021." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="A01" />
+    <display value="Patient's Home" />
+  </concept>
+  <concept>
+    <code value="A02" />
+    <display value="Carer's Home" />
+  </concept>
+  <concept>
+    <code value="A03" />
+    <display value="Patient's Workplace" />
+  </concept>
+  <concept>
+    <code value="A04" />
+    <display value="Other Patient Related Location" />
+  </concept>
+  <concept>
+    <code value="B01" />
+    <display value="Primary Care Health Centre" />
+  </concept>
+  <concept>
+    <code value="B02" />
+    <display value="Polyclinic" />
+  </concept>
+  <concept>
+    <code value="C01" />
+    <display value="General Medical Practitioner Practice" />
+  </concept>
+  <concept>
+    <code value="C02" />
+    <display value="Dental Practice" />
+  </concept>
+  <concept>
+    <code value="C03" />
+    <display value="Ophthalmic Medical Practitioner Premises" />
+  </concept>
+  <concept>
+    <code value="D01" />
+    <display value="Walk In Centre" />
+  </concept>
+  <concept>
+    <code value="D02" />
+    <display value="Out of Hours Centre" />
+  </concept>
+  <concept>
+    <code value="D03" />
+    <display value="Emergency Community Dental Service" />
+  </concept>
+  <concept>
+    <code value="E01" />
+    <display value="Out-Patient Clinic" />
+  </concept>
+  <concept>
+    <code value="E02" />
+    <display value="Ward" />
+  </concept>
+  <concept>
+    <code value="E03" />
+    <display value="Day Hospital" />
+  </concept>
+  <concept>
+    <code value="E04" />
+    <display value="Emergency Care Department or Minor Injuries Department" />
+  </concept>
+  <concept>
+    <code value="E99" />
+    <display value="Other Departments" />
+  </concept>
+  <concept>
+    <code value="F01" />
+    <display value="Hospice" />
+  </concept>
+  <concept>
+    <code value="G01" />
+    <display value="Care Home Without Nursing" />
+  </concept>
+  <concept>
+    <code value="G02" />
+    <display value="Care Home With Nursing" />
+  </concept>
+  <concept>
+    <code value="G03" />
+    <display value="Children's Home" />
+  </concept>
+  <concept>
+    <code value="G04" />
+    <display value="Integrated Care Home Without Nursing and Care Home With Nursing" />
+  </concept>
+  <concept>
+    <code value="H01" />
+    <display value="Day Centre" />
+  </concept>
+  <concept>
+    <code value="J01" />
+    <display value="Resource Centre" />
+  </concept>
+  <concept>
+    <code value="K01" />
+    <display value="Sure Start Children's Centre" />
+  </concept>
+  <concept>
+    <code value="K02" />
+    <display value="Child Development Centre" />
+  </concept>
+  <concept>
+    <code value="L01" />
+    <display value="School" />
+  </concept>
+  <concept>
+    <code value="L02" />
+    <display value="Further Education College" />
+  </concept>
+  <concept>
+    <code value="L03" />
+    <display value="University" />
+  </concept>
+  <concept>
+    <code value="L04" />
+    <display value="Nursery Premises" />
+  </concept>
+  <concept>
+    <code value="L05" />
+    <display value="Other Childcare Premises" />
+  </concept>
+  <concept>
+    <code value="L06" />
+    <display value="Training Establishments" />
+  </concept>
+  <concept>
+    <code value="L99" />
+    <display value="Other Educational Premises" />
+  </concept>
+  <concept>
+    <code value="M01" />
+    <display value="Prison" />
+  </concept>
+  <concept>
+    <code value="M02" />
+    <display value="Probation Service Premises" />
+  </concept>
+  <concept>
+    <code value="M03" />
+    <display value="Police Station / Police Custody Suite" />
+  </concept>
+  <concept>
+    <code value="M04" />
+    <display value="Young Offender Institution" />
+  </concept>
+  <concept>
+    <code value="M05" />
+    <display value="Immigration Removal Centre" />
+  </concept>
+  <concept>
+    <code value="M06" />
+    <display value="Young Offender Institution (15-17)" />
+  </concept>
+  <concept>
+    <code value="M07" />
+    <display value="Young Offender Institution (18-21)" />
+  </concept>
+  <concept>
+    <code value="N01" />
+    <display value="Street or other public open space" />
+  </concept>
+  <concept>
+    <code value="N02" />
+    <display value="Other publicly accessible area or building" />
+  </concept>
+  <concept>
+    <code value="N03" />
+    <display value="Voluntary or charitable agency premises" />
+  </concept>
+  <concept>
+    <code value="N04" />
+    <display value="Dispensing Optician Premises" />
+  </concept>
+  <concept>
+    <code value="N05" />
+    <display value="Dispensing Pharmacy Premises" />
+  </concept>
+  <concept>
+    <code value="X01" />
+    <display value="Other locations not elsewhere classified" />
+  </concept>
 </CodeSystem>

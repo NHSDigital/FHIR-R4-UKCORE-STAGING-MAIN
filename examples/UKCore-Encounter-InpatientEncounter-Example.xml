@@ -1,81 +1,81 @@
 <Encounter xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Encounter-InpatientEncounter-Example"/>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod">
-		<valueCodeableConcept>
-			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland"/>
-				<code value="1"/>
-				<display value="Patient discharged on clinical advice or with clinical consent"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
-	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="6f40cebe-7b55-461d-9d7f-eadb4c065762"/>
-	</identifier>
-	<status value="finished"/>
-	<class>
-		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-		<code value="IMP"/>
-		<display value="inpatient encounter"/>
-	</class>
-	<type>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="185212007"/>
-			<display value="Seen in hospital ward"/>
-		</coding>
-	</type>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<participant>
-		<type>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
-				<code value="ATND"/>
-				<display value="attender"/>
-			</coding>
-		</type>
-		<individual>
-			<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-		</individual>
-	</participant>
-	<period>
-		<start value="2019-12-10T13:00:00+00:00"/>
-		<end value="2019-12-11T13:00:00+00:00"/>
-	</period>
-	<reasonCode>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="7922000"/>
-			<display value="General treatment"/>
-		</coding>
-	</reasonCode>
-	<hospitalization>
-		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
-			<valueCodeableConcept>
-				<coding>
-					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland"/>
-					<code value="13"/>
-					<display value="Elective Admission: Planned"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-		<dischargeDisposition>
-			<coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationEngland"/>
-				<code value="19"/>
-				<display value="Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode."/>
-			</coding>
-		</dischargeDisposition>
-	</hospitalization>
-	<location>
-		<location>
-			<reference value="Location/UKCore-Location-CardiologySJUH-Example"/>
-		</location>
-	</location>
-	<serviceProvider>
-		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-	</serviceProvider>
+  <id value="UKCore-Encounter-InpatientEncounter-Example" />
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeMethodEngland" />
+        <code value="1" />
+        <display value="Patient discharged on clinical advice or with clinical consent" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="6f40cebe-7b55-461d-9d7f-eadb4c065762" />
+  </identifier>
+  <status value="finished" />
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    <code value="IMP" />
+    <display value="inpatient encounter" />
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="185212007" />
+      <display value="Seen in hospital ward" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="ATND" />
+        <display value="attender" />
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+    </individual>
+  </participant>
+  <period>
+    <start value="2019-12-10T13:00:00+00:00" />
+    <end value="2019-12-11T13:00:00+00:00" />
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="7922000" />
+      <display value="General treatment" />
+    </coding>
+  </reasonCode>
+  <hospitalization>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland" />
+          <code value="13" />
+          <display value="Elective Admission: Planned" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <dischargeDisposition>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationEngland" />
+        <code value="19" />
+        <display value="Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode." />
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/UKCore-Location-CardiologySJUH-Example" />
+    </location>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </serviceProvider>
 </Encounter>

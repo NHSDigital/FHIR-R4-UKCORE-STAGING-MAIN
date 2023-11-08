@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationAdministration xmlns="http://hl7.org/fhir">
-	<id value="UKCore-MedicationAdministration-TimoptolEyeDrops-Example"/>
-	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="e8779393-9b7c-4654-a8df-0ba4cc9b28ce"/>
-	</identifier>
-	<status value="completed"/>
-	<medicationReference>
-		<reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example"/>
-	</medicationReference>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectiveDateTime value="2021-03-25T13:00:00+00:00"/>
-	<request>
-		<reference value="MedicationRequest/UKCore-MedicationRequest-EyeDrops-Example"/>
-	</request>
-	<dosage>
-		<text value="1 drop in each affected eye twice daily, approximately 12 hours apart."/>
-		<site>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="362508001"/>
-				<display value="Both eyes, entire"/>
-			</coding>
-		</site>
-		<route>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="58831000052108"/>
-				<display value="Subretinal route"/>
-			</coding>
-		</route>
-		<method>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="421984009"/>
-				<display value="Until finished"/>
-			</coding>
-		</method>
-		<dose>
-			<value value="30"/>
-			<unit value="milliliter"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mL"/>
-		</dose>
-	</dosage>
+  <id value="UKCore-MedicationAdministration-TimoptolEyeDrops-Example" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="e8779393-9b7c-4654-a8df-0ba4cc9b28ce" />
+  </identifier>
+  <status value="completed" />
+  <medicationReference>
+    <reference value="Medication/UKCore-Medication-TimoptolEyeDrops-Example" />
+  </medicationReference>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectiveDateTime value="2021-03-25T13:00:00+00:00" />
+  <request>
+    <reference value="MedicationRequest/UKCore-MedicationRequest-EyeDrops-Example" />
+  </request>
+  <dosage>
+    <text value="1 drop in each affected eye twice daily, approximately 12 hours apart." />
+    <site>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="362508001" />
+        <display value="Both eyes, entire" />
+      </coding>
+    </site>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="58831000052108" />
+        <display value="Subretinal route" />
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="421984009" />
+        <display value="Until finished" />
+      </coding>
+    </method>
+    <dose>
+      <value value="30" />
+      <unit value="milliliter" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mL" />
+    </dose>
+  </dosage>
 </MedicationAdministration>

@@ -1,20 +1,20 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Extension-PharmacistVerifiedIndicator-Example"/>
-	<!-- **************extension start************** -->
-	<!--Pharmacist Verified Indicator extension details-->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator">
-		<valueBoolean value="true"/>
-	</extension>
-	<!-- **************extension end************** -->
-	<status value="active"/>
-	<medicationCodeableConcept>
-		<coding>
-			<system value="https://dmd.nhs.uk"/>
-			<code value="39732311000001104"/>
-			<display value="Amoxicillin 250mg capsules"/>
-		</coding>
-	</medicationCodeableConcept>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
+  <id value="UKCore-Extension-PharmacistVerifiedIndicator-Example" />
+  <!-- **************extension start************** -->
+  <!--Pharmacist Verified Indicator extension details-->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator">
+    <valueBoolean value="true" />
+  </extension>
+  <!-- **************extension end************** -->
+  <status value="active" />
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="39732311000001104" />
+      <display value="Amoxicillin 250mg capsules" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
 </MedicationStatement>

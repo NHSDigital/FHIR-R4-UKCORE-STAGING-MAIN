@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Bundle-NEWS2Observations-Example"/>
+  <id value="UKCore-Bundle-NEWS2Observations-Example" />
     <meta>
         <versionId value="9b2459d6-ffa8-4ecb-97e5-7bf0fac15e87" />
         <lastUpdated value="2023-09-14T13:09:37.969+00:00" />
