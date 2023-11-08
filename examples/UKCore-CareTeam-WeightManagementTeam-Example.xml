@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CareTeam xmlns="http://hl7.org/fhir">
-	<id value="UKCore-CareTeam-WeightManagementTeam-Example"/>
-	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="0e7cc7b2-94b7-42c2-875b-56c921e4bcc2"/>
-	</identifier>
-	<status value="inactive"/>
-	<name value="Weight management team"/>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<participant>
-		<member>
-			<reference value="Practitioner/UKCore-Practitioner-PaulRastall-Example"/>
-		</member>
-	</participant>
-	<managingOrganization>
-		<reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example"/>
-	</managingOrganization>
+  <id value="UKCore-CareTeam-WeightManagementTeam-Example" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="0e7cc7b2-94b7-42c2-875b-56c921e4bcc2" />
+  </identifier>
+  <status value="inactive" />
+  <name value="Weight management team" />
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <participant>
+    <member>
+      <reference value="Practitioner/UKCore-Practitioner-PaulRastall-Example" />
+    </member>
+  </participant>
+  <managingOrganization>
+    <reference value="Organization/UKCore-Organisation-WhiteRoseMedicalCentre-Example" />
+  </managingOrganization>
 </CareTeam>

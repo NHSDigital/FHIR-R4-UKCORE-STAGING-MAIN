@@ -95,7 +95,7 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-	<element id="PractitionerRole.specialty">
+  <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
       <binding>
         <strength value="extensible" />

@@ -1,31 +1,31 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-NPEWSTotal-Example"/>
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-			<code value="survey" />
-			<display value="Survey" />
-		</coding>
-	</category>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="1363261000000104"/>
-			<display value="NPEWS (National Paediatric Early Warning Score) - total score"/>
-		</coding>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectiveDateTime value="2023-08-10"/>
-	<performer>
-		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-	</performer>
-	<valueQuantity>
-		<value value="6"/>
-		<unit value="ScoreOf"/>
-		<system value="http://unitsofmeasure.org"/>
-		<code value="{ScoreOf}"/>
-	</valueQuantity>
+  <id value="UKCore-Observation-NPEWSTotal-Example" />
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="survey" />
+      <display value="Survey" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1363261000000104" />
+      <display value="NPEWS (National Paediatric Early Warning Score) - total score" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectiveDateTime value="2023-08-10" />
+  <performer>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </performer>
+  <valueQuantity>
+    <value value="6" />
+    <unit value="ScoreOf" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="{ScoreOf}" />
+  </valueQuantity>
 </Observation>

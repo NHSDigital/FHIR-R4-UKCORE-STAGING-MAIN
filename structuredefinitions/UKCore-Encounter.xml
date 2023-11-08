@@ -242,7 +242,7 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
-	<element id="Encounter.hospitalization.extension">
+  <element id="Encounter.hospitalization.extension">
       <path value="Encounter.hospitalization.extension" />
       <slicing>
         <discriminator>

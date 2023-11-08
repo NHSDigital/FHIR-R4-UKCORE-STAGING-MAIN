@@ -1,105 +1,105 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-	<id value="UKCore-QuestionnaireResponse-BabyPatientSurvey-Example"/>
-	<identifier>
-		<value value="51f09892-d552-4265-8734-db6c7adbf4a4"/>
-		<assigner>
-			<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-		</assigner>
-	</identifier>
-	<status value="completed"/>
-	<subject>
-		<reference value="Patient/UKCore-Patient-BabyPatient-Example"/>
-		<type value="Patient"/>
-	</subject>
-	<authored value="2021-04-16T12:15:00+00:00"/>
-	<author>
-		<reference value="UKCore-Practitioner-DoctorPaulRastall-Example"/>
-		<type value="Practitioner"/>
-	</author>
-	<item>
-		<linkId value="birthDetails"/>
-		<text value="Birth details - To be completed by health professional"/>
-		<item>
-			<linkId value="name"/>
-			<item>
-				<linkId value="nameOfChild"/>
-				<text value="Name of child"/>
-				<answer>
-					<valueString value="Melanie Jones"/>
-				</answer>
-			</item>
-			<item>
-				<linkId value="gender"/>
-				<text value="Gender"/>
-				<answer>
-					<valueCoding>
-						<code value="female"/>
-					</valueCoding>
-				</answer>
-			</item>
-		</item>
-		<item>
-			<linkId value="neonatalInformation"/>
-			<text value="Neonatal Information"/>
-			<item>
-				<linkId value="birthWeight"/>
-				<text value="Birth weight (kg)"/>
-				<answer>
-					<valueDecimal value="3.15"/>
-				</answer>
-			</item>
-			<item>
-				<linkId value="birthLength"/>
-				<text value="Birth length (cm)"/>
-				<answer>
-					<valueDecimal value="42.4"/>
-				</answer>
-			</item>
-			<item>
-				<linkId value="vitaminKgiven"/>
-				<text value="Vitamin K given"/>
-				<answer>
-					<valueBoolean value="true"/>
-					<item>
-						<linkId value="vitaminKgivenDoses"/>
-						<item>
-							<linkId value="vitaminKDose1"/>
-							<text value="1st dose"/>
-							<answer>
-								<valueDate value="2021-02-11"/>
-							</answer>
-						</item>
-						<item>
-							<linkId value="vitaminKDose2"/>
-							<text value="2nd dose"/>
-							<answer>
-								<valueDate value="2021-03-12"/>
-							</answer>
-						</item>
-					</item>
-				</answer>
-			</item>
-			<item>
-				<linkId value="6in1Given"/>
-				<text value="6-in-1 vaccine given"/>
-				<answer>
-					<valueBoolean value="true"/>
-					<item>
-						<linkId value="6in1givenDate"/>
-						<text value="Date given"/>
-						<answer>
-							<valueDate value="2021-04-12"/>
-						</answer>
-					</item>
-				</answer>
-			</item>
-			<item>
-				<linkId value="abnormalitiesAtBirth"/>
-				<text value="Abnormalities noted at birth"/>
-				<answer>
-					<valueString value="None"/>
-				</answer>
-			</item>
-		</item>
-	</item>
+  <id value="UKCore-QuestionnaireResponse-BabyPatientSurvey-Example" />
+  <identifier>
+    <value value="51f09892-d552-4265-8734-db6c7adbf4a4" />
+    <assigner>
+      <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </assigner>
+  </identifier>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/UKCore-Patient-BabyPatient-Example" />
+    <type value="Patient" />
+  </subject>
+  <authored value="2021-04-16T12:15:00+00:00" />
+  <author>
+    <reference value="UKCore-Practitioner-DoctorPaulRastall-Example" />
+    <type value="Practitioner" />
+  </author>
+  <item>
+    <linkId value="birthDetails" />
+    <text value="Birth details - To be completed by health professional" />
+    <item>
+      <linkId value="name" />
+      <item>
+        <linkId value="nameOfChild" />
+        <text value="Name of child" />
+        <answer>
+          <valueString value="Melanie Jones" />
+        </answer>
+      </item>
+      <item>
+        <linkId value="gender" />
+        <text value="Gender" />
+        <answer>
+          <valueCoding>
+            <code value="female" />
+          </valueCoding>
+        </answer>
+      </item>
+    </item>
+    <item>
+      <linkId value="neonatalInformation" />
+      <text value="Neonatal Information" />
+      <item>
+        <linkId value="birthWeight" />
+        <text value="Birth weight (kg)" />
+        <answer>
+          <valueDecimal value="3.15" />
+        </answer>
+      </item>
+      <item>
+        <linkId value="birthLength" />
+        <text value="Birth length (cm)" />
+        <answer>
+          <valueDecimal value="42.4" />
+        </answer>
+      </item>
+      <item>
+        <linkId value="vitaminKgiven" />
+        <text value="Vitamin K given" />
+        <answer>
+          <valueBoolean value="true" />
+          <item>
+            <linkId value="vitaminKgivenDoses" />
+            <item>
+              <linkId value="vitaminKDose1" />
+              <text value="1st dose" />
+              <answer>
+                <valueDate value="2021-02-11" />
+              </answer>
+            </item>
+            <item>
+              <linkId value="vitaminKDose2" />
+              <text value="2nd dose" />
+              <answer>
+                <valueDate value="2021-03-12" />
+              </answer>
+            </item>
+          </item>
+        </answer>
+      </item>
+      <item>
+        <linkId value="6in1Given" />
+        <text value="6-in-1 vaccine given" />
+        <answer>
+          <valueBoolean value="true" />
+          <item>
+            <linkId value="6in1givenDate" />
+            <text value="Date given" />
+            <answer>
+              <valueDate value="2021-04-12" />
+            </answer>
+          </item>
+        </answer>
+      </item>
+      <item>
+        <linkId value="abnormalitiesAtBirth" />
+        <text value="Abnormalities noted at birth" />
+        <answer>
+          <valueString value="None" />
+        </answer>
+      </item>
+    </item>
+  </item>
 </QuestionnaireResponse>

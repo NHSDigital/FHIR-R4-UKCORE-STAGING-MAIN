@@ -1,61 +1,61 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AlcoholConsumption"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AlcoholConsumption"/>
-	<version value="0.0.1"/>
-	<name value="UKCoreAlcoholConsumption"/>
-	<title value="UK Core Alcohol Consumption"/>
-	<status value="active"/>
-	<date value="2023-09-12"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="A set of codes that define a patients level of consciousness. Selected from the SNOMED CT UK coding system:
+  <id value="UKCore-AlcoholConsumption" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AlcoholConsumption" />
+  <version value="0.0.1" />
+  <name value="UKCoreAlcoholConsumption" />
+  <title value="UK Core Alcohol Consumption" />
+  <status value="active" />
+  <date value="2023-09-12" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define a patients level of consciousness. Selected from the SNOMED CT UK coding system:
 &#13; - 1082641000000106 | Alcohol units consumed per week (observable entity) 
 &#13; - 1082631000000102 | Alcohol units consumed per day (observable entity)
 &#13; - 442547005 | Number of alcohol units consumed on heaviest drinking day (observable entity)
-&#13; - 443315005 | Number of alcohol units consumed on typical drinking day (observable entity) "/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="="/>
-				<value value="1082641000000106 OR 1082631000000102 OR 442547005 OR 443315005"/>
-			</filter>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="8e223e38-e1dd-4f5c-a89f-d05786c01f31"/>
-		<timestamp value="2023-10-31T15:53:00+00:00"/>
-		<total value="4"/>
-		<offset value="0"/>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1082631000000102"/>
-			<display value="Alcohol units consumed per day"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1082641000000106"/>
-			<display value="Alcohol units consumed per week"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="442547005"/>
-			<display value="Number of alcohol units consumed on heaviest drinking day"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="443315005"/>
-			<display value="Number of alcohol units consumed on typical drinking day"/>
-		</contains>
-	</expansion>
+&#13; - 443315005 | Number of alcohol units consumed on typical drinking day (observable entity) " />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="1082641000000106 OR 1082631000000102 OR 442547005 OR 443315005" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="8e223e38-e1dd-4f5c-a89f-d05786c01f31" />
+    <timestamp value="2023-10-31T15:53:00+00:00" />
+    <total value="4" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1082631000000102" />
+      <display value="Alcohol units consumed per day" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1082641000000106" />
+      <display value="Alcohol units consumed per week" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="442547005" />
+      <display value="Number of alcohol units consumed on heaviest drinking day" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="443315005" />
+      <display value="Number of alcohol units consumed on typical drinking day" />
+    </contains>
+  </expansion>
 </ValueSet>

@@ -1,61 +1,61 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
-	<id value="UKCore-ServiceRequest-ColonoscopyRequest-Example"/>
-	<!--The source of the service request.-->
-	<!-- ***************extension start*************** -->
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="108161000000109"/>
-				<display value="Referred by general practitioner"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
-	<!-- **************extension end ****************** -->
-	<status value="active"/>
-	<intent value="order"/>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="73761001"/>
-			<display value="Colonoscopy"/>
-		</coding>
-		<text value="Colonoscopy requested"/>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<encounter>
-		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
-	</encounter>
-	<occurrencePeriod>
-		<start value="2021-10-13T16:20:27+07:00"/>
-	</occurrencePeriod>
-	<authoredOn value="2021-10-13T16:28:00+07:00"/>
-	<requester>
-		<reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example"/>
-	</requester>
-	<performer>
-		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-	</performer>
-	<locationReference>
-		<reference value="Location/UKCore-Location-HospitalSJUH-Example"/>
-	</locationReference>
-	<reasonCode>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="271835004"/>
-			<display value="Abdominal distension, gaseous"/>
-		</coding>
-		<text value="Swollen abdomen"/>
-	</reasonCode>
-	<reasonReference>
-		<reference value="DiagnosticReport/UKCore-DiagnosticReport-DiagnosticStudiesReport-Example"/>
-		<display value="Diagnostic report on the Blood specimen warrants a colonoscopy to investigate this further"/>
-	</reasonReference>
-	<supportingInfo>
-		<reference value="Observation/UKCore-Observation-WhiteCellCount-Example"/>
-		<display value="White cell count"/>
-	</supportingInfo>
-	<patientInstruction value="ADVICE GIVEN: If there are any new symptoms, or if the condition gets worse, changes or you have any other concerns, contact your GP."/>
+  <id value="UKCore-ServiceRequest-ColonoscopyRequest-Example" />
+  <!--The source of the service request.-->
+  <!-- ***************extension start*************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="108161000000109" />
+        <display value="Referred by general practitioner" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <!-- **************extension end ****************** -->
+  <status value="active" />
+  <intent value="order" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="73761001" />
+      <display value="Colonoscopy" />
+    </coding>
+    <text value="Colonoscopy requested" />
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <encounter>
+    <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
+  </encounter>
+  <occurrencePeriod>
+    <start value="2021-10-13T16:20:27+07:00" />
+  </occurrencePeriod>
+  <authoredOn value="2021-10-13T16:28:00+07:00" />
+  <requester>
+    <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+  </requester>
+  <performer>
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+  </performer>
+  <locationReference>
+    <reference value="Location/UKCore-Location-HospitalSJUH-Example" />
+  </locationReference>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="271835004" />
+      <display value="Abdominal distension, gaseous" />
+    </coding>
+    <text value="Swollen abdomen" />
+  </reasonCode>
+  <reasonReference>
+    <reference value="DiagnosticReport/UKCore-DiagnosticReport-DiagnosticStudiesReport-Example" />
+    <display value="Diagnostic report on the Blood specimen warrants a colonoscopy to investigate this further" />
+  </reasonReference>
+  <supportingInfo>
+    <reference value="Observation/UKCore-Observation-WhiteCellCount-Example" />
+    <display value="White cell count" />
+  </supportingInfo>
+  <patientInstruction value="ADVICE GIVEN: If there are any new symptoms, or if the condition gets worse, changes or you have any other concerns, contact your GP." />
 </ServiceRequest>

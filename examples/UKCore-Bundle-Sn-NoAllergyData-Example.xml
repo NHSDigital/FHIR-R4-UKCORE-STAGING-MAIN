@@ -1,9 +1,9 @@
 <Bundle xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Bundle-Sn-NoAllergyData-Example"/>
-	<type value="searchset"/>
-	<total value="0"/>
-	<link>
-		<relation value="self"/>
-		<url value="https://[base]/AllergyIntolerance?patient%3Aidentifier=9912003888"/>
-	</link>
+  <id value="UKCore-Bundle-Sn-NoAllergyData-Example" />
+  <type value="searchset" />
+  <total value="0" />
+  <link>
+    <relation value="self" />
+    <url value="https://[base]/AllergyIntolerance?patient%3Aidentifier=9912003888" />
+  </link>
 </Bundle>
