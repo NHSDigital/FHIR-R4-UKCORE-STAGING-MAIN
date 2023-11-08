@@ -1,8 +1,8 @@
 <Patient xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Extension-InterpreterRequired-Example"/>
-	<!--  **************extension start**************  -->
-	<extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
-		<valueBoolean value="true"/>
-	</extension>
-	<!--  **************extension end**************  -->
+  <id value="UKCore-Extension-InterpreterRequired-Example" />
+  <!--  **************extension start**************  -->
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
+    <valueBoolean value="true" />
+  </extension>
+  <!--  **************extension end**************  -->
 </Patient>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient>
-	<id value="UKCore-Extension-PreferredDispenserOrganization-Example"/>
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
-		<valueReference>
-			<reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"/>
-		</valueReference>
-	</extension>
+  <id value="UKCore-Extension-PreferredDispenserOrganization-Example" />
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
+    <valueReference>
+      <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
+    </valueReference>
+  </extension>
 </Patient>

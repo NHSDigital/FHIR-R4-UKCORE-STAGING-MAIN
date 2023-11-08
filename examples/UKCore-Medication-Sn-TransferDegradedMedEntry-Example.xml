@@ -1,13 +1,13 @@
 <Medication xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Medication-Sn-TransferDegradedMedEntry-Example"/>
-	<!-- **************Snippet start************** -->
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="196421000000109"/>
-			<display value="Transfer-degraded medication entry"/>
-		</coding>
-		<text value="Aspirin 75mg dispersible tablet"/>
-	</code>
-	<!-- **************Snippet end************** -->
+  <id value="UKCore-Medication-Sn-TransferDegradedMedEntry-Example" />
+  <!-- **************Snippet start************** -->
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="196421000000109" />
+      <display value="Transfer-degraded medication entry" />
+    </coding>
+    <text value="Aspirin 75mg dispersible tablet" />
+  </code>
+  <!-- **************Snippet end************** -->
 </Medication>

@@ -1,122 +1,122 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-BodyWeightMeasurements"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyWeightMeasurements"/>
-	<version value="1.0.0"/>
-	<name value="UKCoreBodyWeightMeasurements"/>
-	<title value="UK Core Body Weight Measurements"/>
-	<status value="active"/>
-	<date value="2023-09-12"/>
-	<publisher value="HL7 UK"/>
-	<contact>
-		<name value="HL7 UK"/>
-		<telecom>
-			<system value="email"/>
-			<value value="ukcore@hl7.org.uk"/>
-			<use value="work"/>
-			<rank value="1"/>
-		</telecom>
-	</contact>
-	<description value="A code from the SNOMED CT UK coding system for the measurement of body weight. Selected from the SNOMED CT UK coding system:
+  <id value="UKCore-BodyWeightMeasurements" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyWeightMeasurements" />
+  <version value="1.0.0" />
+  <name value="UKCoreBodyWeightMeasurements" />
+  <title value="UK Core Body Weight Measurements" />
+  <status value="active" />
+  <date value="2023-09-12" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A code from the SNOMED CT UK coding system for the measurement of body weight. Selected from the SNOMED CT UK coding system:
 &#13; - DescendantOrSelfOf 27113001 | Body weight (observable entity)
 &#13; - MINUS 
 &amp;nbsp;&#13; - DescendantOrSelfOf 301334000 | Birth weight centile (observable entity)
 &amp;nbsp;&#13; - DescendantOrSelfOf 400967004 | Baseline weight (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 248351003 | Previous well-weight (observable entity)"/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
-	<compose>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="constraint"/>
-				<op value="="/>
-				<value value="descendantOrSelfOf 27113001 MINUS (descendantOrSelfOf 301334000 OR descendantOrSelfOf 400967004 OR descendantOrSelfOf 170804003 OR descendantOrSelfOf 852321000000100 OR descendantOrSelfOf 852311000000106 OR descendantOrSelfOf 248351003 OR descendantOrSelfOf 390734006 OR descendantOrSelfOf 363809009)"/>
-			</filter>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="d75409bd-f6ae-4634-8521-4f9bd9b43a29"/>
-		<timestamp value="2023-10-31T15:26:00+00:00"/>
-		<total value="16"/>
-		<offset value="0"/>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="364589006"/>
-			<display value="Birth weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="27113001"/>
-			<display value="Body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="363808001"/>
-			<display value="Body weight measure"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="424927000"/>
-			<display value="Body weight with shoes"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="425024002"/>
-			<display value="Body weight without shoes"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="735395000"/>
-			<display value="Current body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1162388008"/>
-			<display value="Dosing body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="445541000"/>
-			<display value="Dry body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="443245006"/>
-			<display value="Estimated weight using Broselow Luten paediatric weight estimation"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1162420002"/>
-			<display value="Post-dialysis body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1162414003"/>
-			<display value="Pre-amputation estimated body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1162416001"/>
-			<display value="Pre-amputation measured body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1162421003"/>
-			<display value="Pre-dialysis body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="784399000"/>
-			<display value="Self reported body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1230277003"/>
-			<display value="Self reported peak body weight"/>
-		</contains>
-		<contains>
-			<system value="http://snomed.info/sct"/>
-			<code value="1162389000"/>
-			<display value="Self reported pre-pregnancy body weight"/>
-		</contains>
-	</expansion>
+&amp;nbsp;&#13; - DescendantOrSelfOf 248351003 | Previous well-weight (observable entity)" />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="descendantOrSelfOf 27113001 MINUS (descendantOrSelfOf 301334000 OR descendantOrSelfOf 400967004 OR descendantOrSelfOf 170804003 OR descendantOrSelfOf 852321000000100 OR descendantOrSelfOf 852311000000106 OR descendantOrSelfOf 248351003 OR descendantOrSelfOf 390734006 OR descendantOrSelfOf 363809009)" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="d75409bd-f6ae-4634-8521-4f9bd9b43a29" />
+    <timestamp value="2023-10-31T15:26:00+00:00" />
+    <total value="16" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="364589006" />
+      <display value="Birth weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="27113001" />
+      <display value="Body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="363808001" />
+      <display value="Body weight measure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="424927000" />
+      <display value="Body weight with shoes" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="425024002" />
+      <display value="Body weight without shoes" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="735395000" />
+      <display value="Current body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162388008" />
+      <display value="Dosing body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="445541000" />
+      <display value="Dry body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="443245006" />
+      <display value="Estimated weight using Broselow Luten paediatric weight estimation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162420002" />
+      <display value="Post-dialysis body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162414003" />
+      <display value="Pre-amputation estimated body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162416001" />
+      <display value="Pre-amputation measured body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162421003" />
+      <display value="Pre-dialysis body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="784399000" />
+      <display value="Self reported body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1230277003" />
+      <display value="Self reported peak body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162389000" />
+      <display value="Self reported pre-pregnancy body weight" />
+    </contains>
+  </expansion>
 </ValueSet>
