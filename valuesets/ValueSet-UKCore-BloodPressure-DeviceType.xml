@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="UKCoreBloodPressureDeviceType" />
   <title value="UK Core Blood Pressure Device Type" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -32,4 +32,100 @@
       </filter>
     </include>
   </compose>
+  <expansion>
+    <identifier value="f4015223-6370-49de-87ed-fbdf89651d6e" />
+    <timestamp value="2023-10-31T21:25:00+00:00" />
+    <total value="18" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="309641003" />
+      <display value="Aneroid sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="836391000" />
+      <display value="Arrhythmia-detection sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="466093008" />
+      <display value="Automatic-inflation electronic sphygmomanometer, non-portable" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="466086009" />
+      <display value="Automatic-inflation electronic sphygmomanometer, portable, arm/wrist" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="13016001000001107" />
+      <display value="Automatic-inflation electronic sphygmomanometer, portable, arm/wrist with pulse rhythm analyser" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="466139008" />
+      <display value="Automatic-inflation electronic sphygmomanometer, portable, finger" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="43770009" />
+      <display value="Doppler device" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="445949006" />
+      <display value="Electronic sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="469801002" />
+      <display value="Invasive blood pressure monitor" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="469311001" />
+      <display value="Manual-inflation electronic sphygmomanometer, non-portable" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="469676006" />
+      <display value="Manual-inflation electronic sphygmomanometer, portable" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="464069000" />
+      <display value="Mercury manual sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="309642005" />
+      <display value="Mercury sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="258057004" />
+      <display value="Non-invasive blood pressure monitor" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="701682008" />
+      <display value="Noninvasive ankle brachial pressure index measurement unit" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="39690000" />
+      <display value="Sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="466753003" />
+      <display value="Telemetric sphygmomanometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="13016101000001108" />
+      <display value="WatchBP Home A blood pressure measurement and pulse rhythm analysis device (Microlife)" />
+    </contains>
+  </expansion>
 </ValueSet>

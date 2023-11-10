@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
-	<id value="UKCore-Extension-RecordingSetting-Example" />
-	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
-		<valueCode value="residential"/>
-	</extension>
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-			<code value="vital-signs"/>
-			<display value="Vital Signs"/>
-		</coding>
-	</category>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="75367002"/>
-			<display value="Blood pressure"/>
-		</coding>
+  <id value="UKCore-Extension-RecordingSetting-Example" />
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
+    <valueCode value="residential" />
+  </extension>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="75367002" />
+      <display value="Blood pressure" />
+    </coding>
         <coding>
             <system value="http://loinc.org" />
             <code value="85354-9" />
             <display value="Blood pressure panel with all children optional" />
         </coding>
-		<text value="Blood pressure"/>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectiveDateTime value="2023-09-10"/>
-	<performer>
-		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-	</performer>
-	<component>
-		<code>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="72313002"/>
-				<display value="Systolic arterial pressure"/>
-			</coding>
+    <text value="Blood pressure" />
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectiveDateTime value="2023-09-10" />
+  <performer>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </performer>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="72313002" />
+        <display value="Systolic arterial pressure" />
+      </coding>
             <coding>
                 <system value="http://loinc.org" />
                 <code value="8480-6" />
                 <display value="Systolic blood pressure" />
             </coding>
-			<text value="Systolic blood pressure"/>
-		</code>
-		<valueQuantity>
-			<value value="108"/>
-			<unit value="millimeter of mercury"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mm[Hg]"/>
-		</valueQuantity>
-	</component>
-	<component>
-		<code>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="1091811000000102"/>
-				<display value="Diastolic arterial pressure"/>
-			</coding>
+      <text value="Systolic blood pressure" />
+    </code>
+    <valueQuantity>
+      <value value="108" />
+      <unit value="millimeter of mercury" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mm[Hg]" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="1091811000000102" />
+        <display value="Diastolic arterial pressure" />
+      </coding>
             <coding>
                 <system value="http://loinc.org" />
                 <code value="8462-4" />
                 <display value="Diastolic blood pressure" />
             </coding>
-			<text value="Diastolic blood pressure"/>
-		</code>
-		<valueQuantity>
-			<value value="82"/>
-			<unit value="millimeter of mercury"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mm[Hg]"/>
-		</valueQuantity>
-	</component>
+      <text value="Diastolic blood pressure" />
+    </code>
+    <valueQuantity>
+      <value value="82" />
+      <unit value="millimeter of mercury" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mm[Hg]" />
+    </valueQuantity>
+  </component>
 </Observation>

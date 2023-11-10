@@ -1,46 +1,130 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="UKCore-BodyTemperature" />
-    <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
-    <version value="1.0.0" />
-    <name value="UKCoreBodyTemperature" />
-    <title value="UK Core Body Temperature" />
-    <status value="draft" />
-    <date value="2023-09-12" />
-    <publisher value="HL7 UK" />
-    <contact>
-        <name value="HL7 UK" />
-        <telecom>
-            <system value="email" />
-            <value value="ukcore@hl7.org.uk" />
-            <use value="work" />
-            <rank value="1" />
-        </telecom>
-    </contact>
-    <description value="A set of codes regarding laboratory medicine test requests and results intended for use by pathology services and their users. Selected from the SNOMED CT UK coding system: &#xD;&#xA;
-- DescendantOrSelfOf 386725007|Body temperature 
-- MINUS (DescendantOrSelfOf 248458005|Comparative temperature in limbs 
-- OR DescendantOrSelfOf 852591000000107|Maximum body temperature 
-- OR DescendantOrSelfOf 852601000000101|Minimum body temperature 
-- OR DescendantOrSelfOf 852581000000105|Target body temperature 
-- OR DescendantOrSelfOf 364419004|Temperature of cervical spine 
-- OR DescendantOrSelfOf 364424001|Temperature of thoracic spine 
-- OR DescendantOrSelfOf 364429006|Temperature of lumbar spine
-- OR DescendantOrSelfOf 248835004|Temperature of breast 
-- OR DescendantOrSelfOf 250124002|Temperature of joint 
-- OR DescendantOrSelfOf 431197002|Temperature of digit 
-- OR DescendantOrSelfOf 364518005|Temperature of foot 
-- OR DescendantOrSelfOf 363997004|Temperature of pinna 
-- OR DescendantOrSelfOf 364537001|Temperature of skin)" />
-    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
-    <compose>
-        <include>
-            <system value="http://snomed.info/sct" />
-            <filter>
-                <property value="constraint" />
-                <op value="=" />
-                <value value="DescendantOrSelfOf 386725007 MINUS (DescendantOrSelfOf 248458005 OR DescendantOrSelfOf 852591000000107 OR DescendantOrSelfOf 852601000000101 OR DescendantOrSelfOf 852581000000105 OR DescendantOrSelfOf 364419004 OR DescendantOrSelfOf 364424001 OR DescendantOrSelfOf 364429006 OR DescendantOrSelfOf 248835004 OR DescendantOrSelfOf 250124002 OR DescendantOrSelfOf 431197002 OR DescendantOrSelfOf 364518005 OR DescendantOrSelfOf 363997004  OR DescendantOrSelfOf 364537001)" />
-            </filter>
-        </include>
-    </compose>
+  <id value="UKCore-BodyTemperature" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
+  <version value="1.0.0" />
+  <name value="UKCoreBodyTemperature" />
+  <title value="UK Core Body Temperature" />
+  <status value="active" />
+  <date value="2023-09-12" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes regarding laboratory medicine test requests and results intended for use by pathology services and their users. Selected from the SNOMED CT UK coding system: &#xD;&#xA;
+&#13; - DescendantOrSelfOf 386725007 | Body temperature 
+&#13; - MINUS
+&#13; - DescendantOrSelfOf 248458005 | Comparative temperature in limbs 
+&#13; - DescendantOrSelfOf 852591000000107 | Maximum body temperature 
+&amp;nbsp;&#13; - DescendantOrSelfOf 852601000000101 | Minimum body temperature 
+&amp;nbsp;&#13; - DescendantOrSelfOf 852581000000105 | Target body temperature 
+&amp;nbsp;&#13; - DescendantOrSelfOf 364419004 | Temperature of cervical spine 
+&amp;nbsp;&#13; - DescendantOrSelfOf 364424001 | Temperature of thoracic spine 
+&amp;nbsp;&#13; - DescendantOrSelfOf 364429006 | Temperature of lumbar spine
+&amp;nbsp;&#13; - DescendantOrSelfOf 248835004 | Temperature of breast 
+&amp;nbsp;&#13; - DescendantOrSelfOf 250124002 | Temperature of joint 
+&amp;nbsp;&#13; - DescendantOrSelfOf 431197002 | Temperature of digit 
+&amp;nbsp;&#13; - DescendantOrSelfOf 364518005 | Temperature of foot 
+&amp;nbsp;&#13; - DescendantOrSelfOf 363997004 | Temperature of pinna 
+&amp;nbsp;&#13; - DescendantOrSelfOf 364537001 | Temperature of skin 
+&amp;nbsp;&#13; - DescendantOrSelfOf 364246006 | Temperature of vagina 
+&amp;nbsp;&#13; - DescendantOrSelfOf 431598003 | Temperature of oesophagus)" />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="DescendantOrSelfOf 386725007 MINUS (DescendantOrSelfOf 248458005 OR DescendantOrSelfOf 852591000000107 OR DescendantOrSelfOf 852601000000101 OR DescendantOrSelfOf 852581000000105 OR DescendantOrSelfOf 364419004 OR DescendantOrSelfOf 364424001 OR DescendantOrSelfOf 364429006 OR DescendantOrSelfOf 248835004 OR DescendantOrSelfOf 250124002 OR DescendantOrSelfOf 431197002 OR DescendantOrSelfOf 364518005 OR DescendantOrSelfOf 363997004  OR DescendantOrSelfOf 364537001 OR DescendantOrSelfOf 364246006 OR DescendantOrSelfOf 431598003)" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="d75409bd-f6ae-4634-8521-4f9bd9b43a29" />
+    <timestamp value="2023-10-31T15:42:00+00:00" />
+    <total value="15" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415882003" />
+      <display value="Axillary temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="300076005" />
+      <display value="Basal body temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="698832009" />
+      <display value="Bladder temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="386725007" />
+      <display value="Body temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="431807005" />
+      <display value="Body temperature taken with digital thermometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="276885007" />
+      <display value="Core body temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1222808002" />
+      <display value="Core body temperature measured in blood" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415921007" />
+      <display value="Forehead skin strip temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415922000" />
+      <display value="Forehead temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415929009" />
+      <display value="Groin temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="698831002" />
+      <display value="Nasopharyngeal temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415945006" />
+      <display value="Oral temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="307047009" />
+      <display value="Rectal temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="708499008" />
+      <display value="Temperature of neonate at birth" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415974002" />
+      <display value="Tympanic temperature" />
+    </contains>
+  </expansion>
 </ValueSet>
 

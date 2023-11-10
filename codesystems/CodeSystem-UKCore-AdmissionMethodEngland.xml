@@ -1,103 +1,103 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="UKCore-AdmissionMethodEngland" />
-	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland" />
-	<version value="1.0.1" />
-	<name value="UKCoreAdmissionMethodEngland" />
-	<title value="UK Core Admission Method England" />
-	<status value="active" />
-	<date value="2023-04-28" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the method of admission to a hospital provider spell.  These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Admission Method](https://datadictionary.nhs.uk/data_elements/admission_method_code__hospital_provider_spell_.html?hl=admission%2Cmethod) web page on 18/11/2021." />
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<caseSensitive value="true" />
-	<content value="complete" />
-	<concept>
-		<code value="11" />
-		<display value="Elective Admission: Waiting list" />
-	</concept>
-	<concept>
-		<code value="12" />
-		<display value="Elective Admission: Booked" />
-	</concept>
-	<concept>
-		<code value="13" />
-		<display value="Elective Admission: Planned" />
-	</concept>
-	<concept>
-		<code value="21" />
-		<display value="Emergency Admission: Emergency Care Department or dental casualty department of the Health Care Provider" />
-	</concept>
-	<concept>
-		<code value="22" />
-		<display value="Emergency Admission: General Practitioner: after a request for immediate admission has been made direct to a Hospital Provider, i.e. not through a Bed bureau, by a General Practitioner or deputy" />
-	</concept>
-	<concept>
-		<code value="23" />
-		<display value="Emergency Admission: Bed bureau" />
-	</concept>
-	<concept>
-		<code value="24" />
-		<display value="Emergency Admission: Consultant Clinic, of this or another Health Care Provider" />
-	</concept>
-	<concept>
-		<code value="25" />
-		<display value="Emergency Admission: Admission via Mental Health Crisis Resolution Team" />
-	</concept>
-	<concept>
-		<code value="2A" />
-		<display value="Emergency Admission: Emergency Care Department of another provider where the Patient had not been admitted" />
-	</concept>
-	<concept>
-		<code value="2B" />
-		<display value="Emergency Admission: Transfer of an admitted Patient from another Hospital Provider in an emergency" />
-	</concept>
-	<concept>
-		<code value="2C" />
-		<display value="Emergency Admission: Baby born at home as intended" />
-	</concept>
-	<concept>
-		<code value="2D" />
-		<display value="Emergency Admission: Other emergency admission" />
-	</concept>
-	<concept>
-		<code value="28" />
-		<display value="Emergency Admission: Other means, examples are: - admitted from the Emergency Care Department of another provider where they had not been admitted - transfer of an admitted Patient from another Hospital Provider in an emergency - baby born at home as intended" />
-	</concept>
-	<concept>
-		<code value="31" />
-		<display value="Maternity Admission: Admitted ante partum" />
-	</concept>
-	<concept>
-		<code value="32" />
-		<display value="Maternity Admission: Admitted post partum" />
-	</concept>
-	<concept>
-		<code value="82" />
-		<display value="Other Admission: The birth of a baby in this Health Care Provider" />
-	</concept>
-	<concept>
-		<code value="83" />
-		<display value="Other Admission: Baby born outside the Health Care Provider except when born at home as intended" />
-	</concept>
-	<concept>
-		<code value="81" />
-		<display value="Other Admission: Transfer of any admitted Patient from other Hospital Provider other than in an emergency" />
-	</concept>
-	<concept>
-		<code value="98" />
-		<display value="Not applicable" />
-	</concept>
-	<concept>
-		<code value="99" />
-		<display value="Admission Method not known" />
-	</concept>
+  <id value="UKCore-AdmissionMethodEngland" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodEngland" />
+  <version value="1.0.1" />
+  <name value="UKCoreAdmissionMethodEngland" />
+  <title value="UK Core Admission Method England" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the method of admission to a hospital provider spell.  These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Admission Method](https://datadictionary.nhs.uk/data_elements/admission_method_code__hospital_provider_spell_.html?hl=admission%2Cmethod) web page on 18/11/2021." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="11" />
+    <display value="Elective Admission: Waiting list" />
+  </concept>
+  <concept>
+    <code value="12" />
+    <display value="Elective Admission: Booked" />
+  </concept>
+  <concept>
+    <code value="13" />
+    <display value="Elective Admission: Planned" />
+  </concept>
+  <concept>
+    <code value="21" />
+    <display value="Emergency Admission: Emergency Care Department or dental casualty department of the Health Care Provider" />
+  </concept>
+  <concept>
+    <code value="22" />
+    <display value="Emergency Admission: General Practitioner: after a request for immediate admission has been made direct to a Hospital Provider, i.e. not through a Bed bureau, by a General Practitioner or deputy" />
+  </concept>
+  <concept>
+    <code value="23" />
+    <display value="Emergency Admission: Bed bureau" />
+  </concept>
+  <concept>
+    <code value="24" />
+    <display value="Emergency Admission: Consultant Clinic, of this or another Health Care Provider" />
+  </concept>
+  <concept>
+    <code value="25" />
+    <display value="Emergency Admission: Admission via Mental Health Crisis Resolution Team" />
+  </concept>
+  <concept>
+    <code value="2A" />
+    <display value="Emergency Admission: Emergency Care Department of another provider where the Patient had not been admitted" />
+  </concept>
+  <concept>
+    <code value="2B" />
+    <display value="Emergency Admission: Transfer of an admitted Patient from another Hospital Provider in an emergency" />
+  </concept>
+  <concept>
+    <code value="2C" />
+    <display value="Emergency Admission: Baby born at home as intended" />
+  </concept>
+  <concept>
+    <code value="2D" />
+    <display value="Emergency Admission: Other emergency admission" />
+  </concept>
+  <concept>
+    <code value="28" />
+    <display value="Emergency Admission: Other means, examples are: - admitted from the Emergency Care Department of another provider where they had not been admitted - transfer of an admitted Patient from another Hospital Provider in an emergency - baby born at home as intended" />
+  </concept>
+  <concept>
+    <code value="31" />
+    <display value="Maternity Admission: Admitted ante partum" />
+  </concept>
+  <concept>
+    <code value="32" />
+    <display value="Maternity Admission: Admitted post partum" />
+  </concept>
+  <concept>
+    <code value="82" />
+    <display value="Other Admission: The birth of a baby in this Health Care Provider" />
+  </concept>
+  <concept>
+    <code value="83" />
+    <display value="Other Admission: Baby born outside the Health Care Provider except when born at home as intended" />
+  </concept>
+  <concept>
+    <code value="81" />
+    <display value="Other Admission: Transfer of any admitted Patient from other Hospital Provider other than in an emergency" />
+  </concept>
+  <concept>
+    <code value="98" />
+    <display value="Not applicable" />
+  </concept>
+  <concept>
+    <code value="99" />
+    <display value="Admission Method not known" />
+  </concept>
 </CodeSystem>

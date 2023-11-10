@@ -1,67 +1,67 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="UKCore-EmergencyCareOutcomeOfAttendanceWales" />
-	<url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales" />
-	<version value="1.0.1" />
-	<name value="UKCoreEmergencyCareOutcomeOfAttendanceWales" />
-	<title value="UK Core Emergency Care Outcome Of Attendance Wales" />
-	<status value="active" />
-	<date value="2023-04-28" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the outcome of the Accident and Emergency Department Attendance.  These codes and their descriptions represent concepts used in Wales and are copied from the content of the [NHS Wales Data Dictionary Outcome Of Attendance](http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/outcomeofattendance.htm) web page on 18/11/2021." />
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<caseSensitive value="true" />
-	<content value="complete" />
-	<concept>
-		<code value="01" />
-		<display value="Admitted to same Hospital within Local Health Board" />
-	</concept>
-	<concept>
-		<code value="02" />
-		<display value="Admitted to other Hospital within Local Health Board" />
-	</concept>
-	<concept>
-		<code value="03" />
-		<display value="Transferred to different Local Health Board" />
-	</concept>
-	<concept>
-		<code value="04" />
-		<display value="Referred to Outpatient Department" />
-	</concept>
-	<concept>
-		<code value="05" />
-		<display value="Referred to GP" />
-	</concept>
-	<concept>
-		<code value="06" />
-		<display value="Referred to Other Healthcare Professional" />
-	</concept>
-	<concept>
-		<code value="07" />
-		<display value="No Planned Follow-up" />
-	</concept>
-	<concept>
-		<code value="08" />
-		<display value="Planned Follow-up at Accident and Emergency Department" />
-	</concept>
-	<concept>
-		<code value="09" />
-		<display value="Patient Self Discharged without Clinical Consent" />
-	</concept>
-	<concept>
-		<code value="10" />
-		<display value="Died in Department" />
-	</concept>
-	<concept>
-		<code value="11" />
-		<display value="Patient Dead on Arrival" />
-	</concept>
+  <id value="UKCore-EmergencyCareOutcomeOfAttendanceWales" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EmergencyCareOutcomeOfAttendanceWales" />
+  <version value="1.0.1" />
+  <name value="UKCoreEmergencyCareOutcomeOfAttendanceWales" />
+  <title value="UK Core Emergency Care Outcome Of Attendance Wales" />
+  <status value="active" />
+  <date value="2023-04-28" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the outcome of the Accident and Emergency Department Attendance.  These codes and their descriptions represent concepts used in Wales and are copied from the content of the [NHS Wales Data Dictionary Outcome Of Attendance](http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/outcomeofattendance.htm) web page on 18/11/2021." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="01" />
+    <display value="Admitted to same Hospital within Local Health Board" />
+  </concept>
+  <concept>
+    <code value="02" />
+    <display value="Admitted to other Hospital within Local Health Board" />
+  </concept>
+  <concept>
+    <code value="03" />
+    <display value="Transferred to different Local Health Board" />
+  </concept>
+  <concept>
+    <code value="04" />
+    <display value="Referred to Outpatient Department" />
+  </concept>
+  <concept>
+    <code value="05" />
+    <display value="Referred to GP" />
+  </concept>
+  <concept>
+    <code value="06" />
+    <display value="Referred to Other Healthcare Professional" />
+  </concept>
+  <concept>
+    <code value="07" />
+    <display value="No Planned Follow-up" />
+  </concept>
+  <concept>
+    <code value="08" />
+    <display value="Planned Follow-up at Accident and Emergency Department" />
+  </concept>
+  <concept>
+    <code value="09" />
+    <display value="Patient Self Discharged without Clinical Consent" />
+  </concept>
+  <concept>
+    <code value="10" />
+    <display value="Died in Department" />
+  </concept>
+  <concept>
+    <code value="11" />
+    <display value="Patient Dead on Arrival" />
+  </concept>
 </CodeSystem>

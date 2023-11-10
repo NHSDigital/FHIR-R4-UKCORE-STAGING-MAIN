@@ -1,37 +1,37 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="UKCore-Observation-VitalSigns-BMI-Example"/>
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-			<code value="vital-signs"/>
-			<display value="Vital Signs"/>
-		</coding>
-		<text value="Vital Signs"/>
-	</category>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="60621009"/>
-			<display value="Body mass index"/>
-		</coding>
+  <id value="UKCore-Observation-VitalSigns-BMI-Example" />
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+    <text value="Vital Signs" />
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="60621009" />
+      <display value="Body mass index" />
+    </coding>
         <coding>
             <system value="http://loinc.org" />
             <code value="39156-5" />
             <display value="Body mass index (BMI) [Ratio]" />
         </coding>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<effectiveDateTime value="2023-08-10"/>
-	<performer>
-		<reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
-	</performer>
-	<valueQuantity>
-		<value value="46"/>
-		<unit value="kilogram / (meter ^ 2)"/>
-		<system value="http://unitsofmeasure.org"/>
-		<code value="kg/m2"/>
-	</valueQuantity>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <effectiveDateTime value="2023-08-10" />
+  <performer>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </performer>
+  <valueQuantity>
+    <value value="46" />
+    <unit value="kilogram / (meter ^ 2)" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="kg/m2" />
+  </valueQuantity>
 </Observation>

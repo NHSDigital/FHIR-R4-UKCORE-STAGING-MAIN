@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="UKCoreBloodPressureDiastolic" />
   <title value="UK Core Blood Pressure Diastolic" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -16,16 +16,14 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="A code from the SNOMED CT UK coding system for the diastolic blood pressure. Selected from the SNOMED CT UK coding system:
+  <description value="A code from the SNOMED CT UK coding system for the recording of a single diastolic blood pressure reading. Selected from the SNOMED CT UK coding system:
 &#13; - 163031004 | On examination - Diastolic blood pressure reading (finding)
-&#13;
-&#13; - DescendantOrSelfOf 271650006 | Diastolic blood pressure (observable entity)
-&#13; - MINUS 
-&amp;nbsp;&#13; - 198091000000104 | Ambulatory diastolic blood pressure (observable entity)
-&amp;nbsp;&#13; - 314465004 | 24 hour diastolic blood pressure (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 716632005 | Baseline diastolic blood pressure (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 814081000000101 | Diastolic blood pressure centile (observable entity)
-&amp;nbsp;&#13; - DescendantOrSelfOf 315613000 | Target diastolic blood pressure (observable entity)" />
+&#13; - 271650006 | Diastolic blood pressure (observable entity)
+&#13; - 1091811000000102  | Diastolic arterial pressure (observable entity)
+&#13; - 407557002 | Lying diastolic blood pressure (observable entity)
+&#13; - 1162735000 | Self reported diastolic blood pressure (observable entity)
+&#13; - 407555005 | Sitting diastolic blood pressure (observable entity)
+&#13; - 400975005 | Standing diastolic blood pressure (observable entity)" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -33,16 +31,49 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="163031004" />
-      </filter>
-    </include>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="descendantOrSelfOf 271650006 MINUS (198091000000104 OR 314465004 OR descendantOrSelfOf 716632005 OR descendantOrSelfOf 315613000 OR descendantOrSelfOf 814081000000101)" />
+        <value value="163031004 OR 271650006 OR 1091811000000102 OR 407557002 OR 1162735000 OR 407555005 OR 400975005" />
       </filter>
     </include>
   </compose>
+  <expansion>
+    <identifier value="8e223e38-e1dd-4f5c-a89f-d05786c01f31" />
+    <timestamp value="2023-11-01T08:31:00+00:00" />
+    <total value="7" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1091811000000102" />
+      <display value="Diastolic arterial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="271650006" />
+      <display value="Diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="407557002" />
+      <display value="Lying diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="163031004" />
+      <display value="O/E - Diastolic BP reading" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162735000" />
+      <display value="Self reported diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="407555005" />
+      <display value="Sitting diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="400975005" />
+      <display value="Standing diastolic blood pressure" />
+    </contains>
+  </expansion>
 </ValueSet>

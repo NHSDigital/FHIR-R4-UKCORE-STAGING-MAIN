@@ -1,40 +1,40 @@
 <RequestGroup xmlns="http://hl7.org/fhir">
-	<id value="UKCore-RequestGroup-Ciprofloxacin-Example"/>
-	<status value="completed"/>
-	<intent value="order"/>
-	<priority value="routine"/>
-	<code>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="33633005"/>
-			<display value="Prescription of drug"/>
-		</coding>
-	</code>
-	<subject>
-		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
-	</subject>
-	<authoredOn value="2023-06-15T15:00:00.000Z"/>
-	<author>
-		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
-	</author>
-	<action>
-		<type>
-			<coding>
-				<code value="create"/>
-			</coding>
-		</type>
-		<selectionBehavior value="any"/>
-		<action id="UKCore-MedicationRequest-CiprofloxacinOral-Example">
-			<description value="Ciprofloxacin 500mg, twice daily orally."/>
-			<resource>
-				<reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinOral-Example"/>
-			</resource>
-		</action>
-		<action id="UKCore-MedicationRequest-CiprofloxacinIV-Example">
-			<description value="Ciprofloxacin 400mg, twice daily as IV."/>
-			<resource>
-				<reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinIV-Example"/>
-			</resource>
-		</action>
-	</action>
+  <id value="UKCore-RequestGroup-Ciprofloxacin-Example" />
+  <status value="completed" />
+  <intent value="order" />
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="33633005" />
+      <display value="Prescription of drug" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <authoredOn value="2023-06-15T15:00:00.000Z" />
+  <author>
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+  </author>
+  <action>
+    <type>
+      <coding>
+        <code value="create" />
+      </coding>
+    </type>
+    <selectionBehavior value="any" />
+    <action id="UKCore-MedicationRequest-CiprofloxacinOral-Example">
+      <description value="Ciprofloxacin 500mg, twice daily orally." />
+      <resource>
+        <reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinOral-Example" />
+      </resource>
+    </action>
+    <action id="UKCore-MedicationRequest-CiprofloxacinIV-Example">
+      <description value="Ciprofloxacin 400mg, twice daily as IV." />
+      <resource>
+        <reference value="MedicationRequest/UKCore-MedicationRequest-CiprofloxacinIV-Example" />
+      </resource>
+    </action>
+  </action>
 </RequestGroup>

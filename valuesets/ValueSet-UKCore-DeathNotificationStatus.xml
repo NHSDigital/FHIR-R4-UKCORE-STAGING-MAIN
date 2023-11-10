@@ -1,59 +1,59 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="UKCore-DeathNotificationStatus"/>
-	<url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DeathNotificationStatus"/>
-	<version value="2.1.0" />
-	<name value="UKCoreDeathNotificationStatus"/>
-	<title value="UK Core Death Notification Status"/>
-	<status value="active" />
-	<date value="2021-09-10" />
-	<publisher value="HL7 UK" />
-	<contact>
-		<name value="HL7 UK" />
-		<telecom>
-			<system value="email" />
-			<value value="ukcore@hl7.org.uk" />
-			<use value="work" />
-			<rank value="1" />
-		</telecom>
-	</contact>
-	<description value="A set of codes that define the type of death notice as held on the Personal Demographics Service (PDS) or any other source system."/>
-	<copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-	<compose>
-		<include>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-		</include>
-	</compose>
-	<expansion>
-		<identifier value="4c79b32b-2583-4eef-bc95-e4e450bac2f6"/>
-		<timestamp value="2021-09-09T14:07:46+00:00"/>
-		<total value="3"/>
-		<offset value="0"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus|2.1.0"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
-		</parameter>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-			<code value="2"/>
-			<display value="Formal - death notice received from Registrar of Deaths"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-			<code value="1"/>
-			<display value="Informal - death notice received via an update from a local NHS Organisation such as GP or Trust"/>
-		</contains>
-		<contains>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
-			<code value="U"/>
-			<display value="Removed"/>
-		</contains>
-	</expansion>
+  <id value="UKCore-DeathNotificationStatus" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-DeathNotificationStatus" />
+  <version value="2.1.0" />
+  <name value="UKCoreDeathNotificationStatus" />
+  <title value="UK Core Death Notification Status" />
+  <status value="active" />
+  <date value="2021-09-10" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define the type of death notice as held on the Personal Demographics Service (PDS) or any other source system." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="4c79b32b-2583-4eef-bc95-e4e450bac2f6" />
+    <timestamp value="2021-09-09T14:07:46+00:00" />
+    <total value="3" />
+    <offset value="0" />
+    <parameter>
+      <name value="version" />
+      <valueUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus|2.1.0" />
+    </parameter>
+    <parameter>
+      <name value="count" />
+      <valueInteger value="2147483647" />
+    </parameter>
+    <parameter>
+      <name value="offset" />
+      <valueInteger value="0" />
+    </parameter>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+      <code value="2" />
+      <display value="Formal - death notice received from Registrar of Deaths" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+      <code value="1" />
+      <display value="Informal - death notice received via an update from a local NHS Organisation such as GP or Trust" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+      <code value="U" />
+      <display value="Removed" />
+    </contains>
+  </expansion>
 </ValueSet>

@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="UKCoreBloodPressureAverageDiastolic" />
   <title value="UK Core Blood Pressure Average Diastolic" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -34,4 +34,55 @@
       </filter>
     </include>
   </compose>
+  <expansion>
+    <identifier value="883b332c-9b2f-478d-9352-9d0338d36f82" />
+    <timestamp value="2023-10-31T22:08:00+00:00" />
+    <total value="9" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314465004" />
+      <display value="24 hour diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="198091000000104" />
+      <display value="Ambulatory diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314462001" />
+      <display value="Average 24 hour diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314461008" />
+      <display value="Average day interval diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314453003" />
+      <display value="Average diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="413605002" />
+      <display value="Average home diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314460009" />
+      <display value="Average night interval diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314459004" />
+      <display value="Maximum 24 hour diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="314456006" />
+      <display value="Minimum 24 hour diastolic blood pressure" />
+    </contains>
+  </expansion>
 </ValueSet>

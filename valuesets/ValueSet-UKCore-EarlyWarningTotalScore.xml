@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="UKCoreEarlyWarningTotalScore" />
   <title value="UK Core Early Warning Total Score" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -38,4 +38,20 @@
       </filter>
     </include>
   </compose>
+  <expansion>
+    <identifier value="8e223e38-e1dd-4f5c-a89f-d05786c01f31" />
+    <timestamp value="2023-10-31T15:53:00+00:00" />
+    <total value="2" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1363261000000104" />
+      <display value="NPEWS (National Paediatric Early Warning Score) - total score" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1104051000000101" />
+      <display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) total score" />
+    </contains>
+  </expansion>
 </ValueSet>
