@@ -4,8 +4,8 @@
   <version value="1.0.0" />
   <name value="UKCoreObservationVitalSignsValue" />
   <title value="UK Core Observation Vital Signs Value" />
-  <status value="draft" />
-  <date value="2022-12-16" />
+  <status value="retired" />
+  <date value="2023-11-10" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
