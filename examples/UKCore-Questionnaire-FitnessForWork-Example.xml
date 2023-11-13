@@ -1,0 +1,70 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Questionnaire-FitnessForWork-Example" />
+  <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-FitnessForWork-Example" />
+  <title value="Statement of Fitness for Work (Mock up)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <subjectType value="Patient" />
+  <description value="This is based on Med 3 from DWP purely for demonstration purposes" />
+  <code>
+    <system value="http://snomed.info/sct" />
+    <code value="18381000000107" />
+    <display value="Sickness certificates" />
+  </code>
+  <item>
+    <linkId value="4436092714066" />
+    <text value="Assessment Date" />
+    <type value="date" />
+    <required value="true" />
+  </item>
+  <item>
+    <linkId value="3789717378462" />
+    <text value="Condition(s)" />
+    <type value="group" />
+    <item>
+      <linkId value="468626616487" />
+      <text value="Condition (Text)" />
+      <type value="text" />
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control" />
+            <code value="autocomplete" />
+            <display value="Auto-complete" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="3841573519012" />
+      <text value="Condition (Coded)" />
+      <type value="choice" />
+      <repeats value="true" />
+      <answerValueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
+    </item>
+  </item>
+  <item>
+    <code>
+      <system value="http://snomed.info/sct" />
+      <code value="365524007" />
+      <display value="Fitness for work - finding" />
+    </code>
+    <text value="I find you" />
+    <type value="choice" />
+    <required value="true" />
+    <answerOption>
+      <valueCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="160910001" />
+        <display value="Unfit for work" />
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="225891002" />
+        <display value="Fit for work with restrictions" />
+      </valueCoding>
+    </answerOption>
+  </item>
+</Questionnaire>
