@@ -1,180 +1,92 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Questionnaire-EOLPlan-Example" />
-  <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-EOLPlan-Example" />
-  <title value="End of Life Care Plan (Mock up)" />
-  <status value="draft" />
-  <experimental value="true" />
-  <subjectType value="Patient" />
-  <description value="This is an End of Life plan, purely for demonstration purposes" />
-  <date value="2023-11-13T13:32:13+00:00" />
-  <code>
-    <system value="http://snomed.info/sct" />
-    <code value="861411000000103" />
-    <display value="End of Life Care Document" />
-  </code>
-  <item>
-    <text value="Advanced Treatment Preferences" />
-    <type value="group" />
-    <enableBehavior value="any" />
-    <item>
-      <text value="Clinical Problems and Advised Interventions" />
-      <type value="group" />
-      <enableBehavior value="any" />
-      <repeats value="true" />
-      <item>
-        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://hl7.org/fhir/questionnaire-item-control" />
-              <code value="autocomplete" />
-              <display value="Auto-complete" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <text value="ATP Problems" />
-        <type value="choice" />
-        <enableBehavior value="any" />
-        <required value="true" />
-        <answerValueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
-      </item>
-      <item>
-        <text value="Treatment Level" />
-        <type value="string" />
-        <enableBehavior value="any" />
-      </item>
-    </item>
-    <item>
-      <text value="Anticipatory medicines/just in case box issued" />
-      <type value="string" />
-      <enableBehavior value="any" />
-      <required value="true" />
-    </item>
-    <item>
-      <text value="Advance Decision to Refuse Treatment" />
-      <type value="string" />
-      <enableBehavior value="any" />
-      <required value="true" />
-    </item>
-  </item>
-  <item>
-    <text value="Consent" />
-    <type value="group" />
-    <enableBehavior value="any" />
-    <item>
-      <code>
-        <system value="http://snomed.info/sct" />
-        <code value="887031000000108" />
-        <display value="Consent for information sharing" />
-      </code>
-      <text value="Consent for Information Sharing" />
-      <type value="date" />
-    </item>
-  </item>
-  <item>
-    <text value="CPR Status" />
-    <type value="group" />
-    <enableBehavior value="any" />
-    <item>
-      <code>
-        <system value="http://snomed.info/sct" />
-        <code value="365870005" />
-        <display value="Finding of resuscitation status" />
-      </code>
-      <text value="CPR Status" />
-      <type value="choice" />
-      <enableBehavior value="any" />
-      <required value="true" />
-      <repeats value="false" />
-      <answerValueSet value="https://fhir.nhs.uk/ValueSet/EOL-CPRStatus-Code" />
-    </item>
-    <item>
-      <text value="Reason for CPR status" />
-      <type value="string" />
-      <enableBehavior value="any" />
-    </item>
-    <item>
-      <text value="CPR Status Mental Capacity" />
-      <type value="string" />
-      <enableBehavior value="any" />
-    </item>
-    <item>
-      <text value="Persons involved in discussion" />
-      <type value="group" />
-      <enableBehavior value="any" />
-      <repeats value="true" />
-      <item>
-        <text value="Coded entry for people involved in the discussion" />
-        <type value="choice" />
-        <enableBehavior value="any" />
-        <answerOption>
-          <valueCoding>
-            <system value="http://snomed.info/sct" />
-            <code value="873341000000100" />
-            <display value="Discussion about resuscitation (procedure)" />
-          </valueCoding>
-        </answerOption>
-        <answerOption>
-          <valueCoding>
-            <system value="http://snomed.info/sct" />
-            <code value="873351000000102" />
-            <display value="Discussion about resuscitation with carer (situation)" />
-          </valueCoding>
-        </answerOption>
-        <answerOption>
-          <valueCoding>
-            <system value="http://snomed.info/sct" />
-            <code value="713656002" />
-            <display value="Discussion about cardiopulmonary resuscitation with family member (situation)" />
-          </valueCoding>
-        </answerOption>
-      </item>
-    </item>
-    <item>
-      <text value="Persons or organisations made aware of the decision" />
-      <type value="group" />
-      <enableBehavior value="any" />
-      <repeats value="true" />
-      <item>
-        <text value="Coded entry for people aware of the decision" />
-        <type value="choice" />
-        <enableBehavior value="any" />
-        <answerOption>
-          <valueCoding>
-            <system value="http://snomed.info/sct" />
-            <code value="975311000000109" />
-            <display value="Carer informed of cardiopulmonary resuscitation clinical decision (situation)" />
-          </valueCoding>
-        </answerOption>
-        <answerOption>
-          <valueCoding>
-            <system value="http://snomed.info/sct" />
-            <code value="845151000000104" />
-            <display value="Not aware of do not attempt cardiopulmonary resuscitation clinical decision (finding)" />
-          </valueCoding>
-        </answerOption>
-        <answerOption>
-          <valueCoding>
-            <system value="http://snomed.info/sct" />
-            <code value="975291000000108" />
-            <display value="Family member informed of cardiopulmonary resuscitation clinical decision (situation)" />
-          </valueCoding>
-        </answerOption>
-      </item>
-    </item>
-  </item>
-  <item>
-    <text value="EOL Register" />
-    <type value="group" />
-    <enableBehavior value="any" />
-    <repeats value="false" />
-    <item>
-      <code>
-        <system value="http://snomed.info/sct" />
-        <code value="526631000000108" />
-        <display value="On end of life care register" />
-      </code>
-      <text value="On End Of Life Register" />
-      <type value="dateTime" />
-    </item>
-  </item>
+	<id value="UKCore-Questionnaire-EOLPlan-Example"/>
+	<url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-EOLPlan-Example"/>
+	<title value="End of Life Care Plan (Mock up)"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<subjectType value="Patient"/>
+	<description value="This is an End of Life plan, purely for demonstration purposes"/>
+	<date value="2023-11-13T13:32:13+00:00"/>
+	<code>
+		<system value="http://snomed.info/sct"/>
+		<code value="861411000000103"/>
+		<display value="End of Life Care Document"/>
+	</code>
+	<item>
+		<linkId value="Q1"/>
+		<text value="Advanced Treatment Preferences"/>
+		<type value="group"/>
+		<enableBehavior value="any"/>
+		<item>
+			<linkId value="Q1.1"/>
+			<text value="Clinical Problems and Advised Interventions"/>
+			<type value="group"/>
+			<enableBehavior value="any"/>
+			<repeats value="true"/>
+			<item>
+				<linkId value="Q1.1g"/>
+				<extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/questionnaire-item-control"/>
+							<code value="autocomplete"/>
+							<display value="Auto-complete"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<text value="ATP Problems"/>
+				<type value="choice"/>
+				<enableBehavior value="any"/>
+				<required value="true"/>
+				<answerValueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode"/>
+			</item>
+		</item>
+		<item>
+			<linkId value="Q1.2"/>
+			<text value="Anticipatory medicines/just in case box issued"/>
+			<type value="string"/>
+			<enableBehavior value="any"/>
+			<required value="true"/>
+		</item>
+		<item>
+			<linkId value="Q1.3"/>
+			<text value="Advance Decision to Refuse Treatment"/>
+			<type value="string"/>
+			<enableBehavior value="any"/>
+			<required value="true"/>
+		</item>
+	</item>
+	<item>
+		<linkId value="Q2"/>
+		<text value="Consent"/>
+		<type value="group"/>
+		<enableBehavior value="any"/>
+		<item>
+			<linkId value="Q2g"/>
+			<code>
+				<system value="http://snomed.info/sct"/>
+				<code value="887031000000108"/>
+				<display value="Consent for information sharing"/>
+			</code>
+			<text value="Consent for Information Sharing"/>
+			<type value="date"/>
+		</item>
+	</item>
+	<item>
+		<linkId value="Q3"/>
+		<text value="EOL Register"/>
+		<type value="group"/>
+		<enableBehavior value="any"/>
+		<repeats value="false"/>
+		<item>
+			<linkId value="Q3g"/>
+			<code>
+				<system value="http://snomed.info/sct"/>
+				<code value="526631000000108"/>
+				<display value="On end of life care register"/>
+			</code>
+			<text value="On End Of Life Register"/>
+			<type value="dateTime"/>
+		</item>
+	</item>
 </Questionnaire>

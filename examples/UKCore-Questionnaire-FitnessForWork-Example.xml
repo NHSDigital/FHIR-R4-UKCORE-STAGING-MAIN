@@ -12,21 +12,17 @@
     <display value="Sickness certificates" />
   </code>
   <item>
-    <linkId value="4436092714066" />
+    <linkId value="Q1" />
     <text value="Assessment Date" />
     <type value="date" />
     <required value="true" />
   </item>
   <item>
-    <linkId value="3789717378462" />
+    <linkId value="Q2" />
     <text value="Condition(s)" />
     <type value="group" />
     <item>
-      <linkId value="468626616487" />
-      <text value="Condition (Text)" />
-      <type value="text" />
-    </item>
-    <item>
+      <linkId value="Q2g" />
       <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
         <valueCodeableConcept>
           <coding>
@@ -36,7 +32,6 @@
           </coding>
         </valueCodeableConcept>
       </extension>
-      <linkId value="3841573519012" />
       <text value="Condition (Coded)" />
       <type value="choice" />
       <repeats value="true" />
@@ -44,6 +39,7 @@
     </item>
   </item>
   <item>
+    <linkId value="Q3" />
     <code>
       <system value="http://snomed.info/sct" />
       <code value="365524007" />
