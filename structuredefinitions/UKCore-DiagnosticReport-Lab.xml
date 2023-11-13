@@ -50,6 +50,8 @@
     <element id="DiagnosticReport.category:sliceLaboratory">
       <path value="DiagnosticReport.category" />
       <sliceName value="sliceLaboratory" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="DiagnosticReport.category:sliceLaboratory.coding.system">
       <path value="DiagnosticReport.category.coding.system" />
