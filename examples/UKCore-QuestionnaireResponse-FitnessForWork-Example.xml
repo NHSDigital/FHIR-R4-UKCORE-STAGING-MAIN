@@ -25,7 +25,6 @@
 	<item>
 		<linkId value="Q2"/>
 		<text value="Condition(s)"/>
-		<type value="group"/>
 		<item>
 			<linkId value="Q2g"/>
 			<text value="Condition (Coded)"/>
