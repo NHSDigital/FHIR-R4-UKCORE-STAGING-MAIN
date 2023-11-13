@@ -1,0 +1,51 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+	<id value="UKCore-QuestionnaireResponse-FitnessForWork-Example"/>
+	<questionnaire value="https://example.com/base/Questionnaire/UKCore-Questionnaire-FitnessForWork-Example"/>
+	<status value="completed"/>
+	<subject>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</subject>
+	<encounter>
+		<reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example"/>
+	</encounter>
+	<authored value="2023-11-13T16:00:00+00:00"/>
+	<author>
+		<reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example"/>
+	</author>
+	<source>
+		<reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
+	</source>
+	<item>
+		<linkId value="Q1"/>
+		<text value="Assessment Date"/>
+		<answer>
+			<valueDate value="2023-11-13T16:00:00+00:00"/>
+		</answer>
+	</item>
+	<item>
+		<linkId value="Q2"/>
+		<text value="Condition(s)"/>
+		<item>
+			<linkId value="Q2g"/>
+			<text value="Condition (Coded)"/>
+			<answer>
+				<valueCoding>
+					<system value="http://snomed.info/sct"/>
+					<code value="225891002"/>
+					<display value="Fit for work with restrictions"/>
+				</valueCoding>
+			</answer>
+		</item>
+	</item>
+	<item>
+		<linkId value="Q3"/>
+		<text value="I find you"/>
+		<answer>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="225891002"/>
+				<display value="Fit for work with restrictions"/>
+			</valueCoding>
+		</answer>
+	</item>
+</QuestionnaireResponse>
