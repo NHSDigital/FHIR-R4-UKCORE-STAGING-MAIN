@@ -42,21 +42,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
   <derivation value="constraint" />
   <differential>
-    <element id="RelatedPerson.extension">
-      <path value="RelatedPerson.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="RelatedPerson.extension:contactPreference">
       <path value="RelatedPerson.extension" />
       <sliceName value="contactPreference" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
@@ -65,7 +53,6 @@
     <element id="RelatedPerson.extension:copyCorrespondenceIndicator">
       <path value="RelatedPerson.extension" />
       <sliceName value="copyCorrespondenceIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
@@ -99,25 +86,21 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
-    <element id="RelatedPerson.telecom.system.extension">
-      <path value="RelatedPerson.telecom.system.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="RelatedPerson.telecom.system.extension:otherContactSystem">
       <path value="RelatedPerson.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
       </type>
+    </element>
+    <element id="RelatedPerson.communication.language">
+      <path value="RelatedPerson.communication.language" />
+      <binding>
+        <strength value="extensible" />
+        <description value="A ValueSet that identifies the language used by a person." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
