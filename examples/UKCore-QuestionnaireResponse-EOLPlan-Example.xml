@@ -59,15 +59,15 @@
       </answer>
     </item>
   </item>
-	<item>
-		<linkId value="Q3"/>
-		<text value="EOL Register"/>
-		<item>
-			<linkId value="Q3g"/>
-			<text value="On End Of Life Register"/>
-			<answer>
-				<valueDate value="2023-11-13T16:07:00+00:00"/>
-			</answer>
-		</item>
-	</item>
+  <item>
+    <linkId value="Q3" />
+    <text value="EOL Register" />
+    <item>
+      <linkId value="Q3g" />
+      <text value="On End Of Life Register" />
+      <answer>
+        <valueDate value="2023-11-13T16:07:00+00:00" />
+      </answer>
+    </item>
+  </item>
 </QuestionnaireResponse>
