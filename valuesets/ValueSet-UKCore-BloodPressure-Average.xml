@@ -18,8 +18,11 @@
   </contact>
   <description value="A code from the SNOMED CT UK coding system for recording average blood pressure. Selected from the SNOMED CT UK coding system:
 &#13; - 170599006 | 24 hr blood pressure monitoring (regime/therapy) 
-&#13; - 314463006 | 24 hour blood pressure (observable entity) |
-&#13; - 723232008 | Average blood pressure (observable entity) |" />
+&#13; - 314463006 | 24 hour blood pressure (observable entity)
+&#13; - 723232008 | Average blood pressure (observable entity)
+&#13; - DescendantOrSelfOf 6797001 | Mean blood pressure (observable entity)
+&#13; - MINUS
+&amp;nbsp;&#13; - 852281000000108 | Target mean blood pressure (observable entity)" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -27,20 +30,15 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="170599006 OR 314463006 OR 723232008" />
+        <value value="170599006 OR 314463006 OR 723232008 OR (DescendantOrSelfOf 6797001 MINUS 852281000000108)" />
       </filter>
     </include>
   </compose>
   <expansion>
     <identifier value="ffce4329-cbe8-4386-9398-adf67109e6d6" />
-    <timestamp value="2023-10-31T22:04:00+00:00" />
-    <total value="2" />
+    <timestamp value="2023-11-16T09:34:00+00:00" />
+    <total value="14" />
     <offset value="0" />
-    <contains>
-      <system value="http://snomed.info/sct" />
-      <code value="170599006" />
-      <display value="24 hr blood pressure monitoring" />
-    </contains>
     <contains>
       <system value="http://snomed.info/sct" />
       <code value="314463006" />
@@ -48,8 +46,68 @@
     </contains>
     <contains>
       <system value="http://snomed.info/sct" />
+      <code value="170599006" />
+      <display value="24 hr blood pressure monitoring" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
       <code value="723232008" />
       <display value="Average blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="251075007" />
+      <display value="Invasive mean arterial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="852291000000105" />
+      <display value="Maximum mean blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1285244000" />
+      <display value="Mean arterial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="6797001" />
+      <display value="Mean blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="276783005" />
+      <display value="Mean direct left atrial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="276775004" />
+      <display value="Mean right atrial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="276763009" />
+      <display value="Mean wedge pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="852301000000109" />
+      <display value="Minimum mean blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="251074006" />
+      <display value="Non-invasive mean arterial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="371830008" />
+      <display value="Pulmonary vein mean wedge pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="252077001" />
+      <display value="Venous mean pressure" />
     </contains>
   </expansion>
 </ValueSet>
