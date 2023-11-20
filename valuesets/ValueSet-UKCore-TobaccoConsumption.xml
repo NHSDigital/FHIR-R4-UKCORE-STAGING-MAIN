@@ -20,7 +20,10 @@
 &#13; - DescendantOrSelfOf 266918002 | Tobacco smoking consumption
 &#13; - 228500003 | Moist tobacco consumption
 &#13; - 228510007 | Chewed tobacco consumption
-&#13; - 228490006 | Snuff consumption " />
+&#13; - 228490006 | Snuff consumption
+&#13; - MINUS
+&#13; - 401201003 | Cigarette pack-years
+&#13; - 782516008 | Number of calculated pack years for cumulative lifetime tobacco exposure" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -28,14 +31,14 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="DescendantOrSelfOf 266918002 OR 228500003 OR 228510007 OR 228490006" />
+        <value value="(DescendantOrSelfOf 266918002 OR 228500003 OR 228510007 OR 228490006) MINUS (401201003 OR 782516008)" />
       </filter>
     </include>
   </compose>
   <expansion>
     <identifier value="d75409bd-f6ae-4634-8521-4f9bd9b43a29" />
-    <timestamp value="2023-10-31T15:26:00+00:00" />
-    <total value="10" />
+    <timestamp value="2023-11-20T10:14:00+00:00" />
+    <total value="8" />
     <offset value="0" />
     <contains>
       <system value="http://snomed.info/sct" />
@@ -54,18 +57,8 @@
     </contains>
     <contains>
       <system value="http://snomed.info/sct" />
-      <code value="401201003" />
-      <display value="Cigarette pack-years" />
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct" />
       <code value="228500003" />
       <display value="Moist tobacco consumption" />
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct" />
-      <code value="782516008" />
-      <display value="Number of calculated smoking pack years" />
     </contains>
     <contains>
       <system value="http://snomed.info/sct" />
