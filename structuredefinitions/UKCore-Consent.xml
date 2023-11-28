@@ -118,5 +118,13 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
     </element>
+    <element id="Consent.provision.code">
+      <path value="Consent.provision.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a trigger for an exception to a base policy." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConsentException" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
