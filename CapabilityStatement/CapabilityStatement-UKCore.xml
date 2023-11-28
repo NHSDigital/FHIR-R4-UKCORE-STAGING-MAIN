@@ -22,26 +22,6 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"/>
 		</resource>
 		<resource>
-			<type value="AuditEvent"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent"/>
-		</resource>
-		<resource>
-			<type value="Bundle"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"/>
-		</resource>
-		<resource>
-			<type value="CarePlan"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan"/>
-		</resource>
-		<resource>
-			<type value="CareTeam"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam"/>
-		</resource>
-		<resource>
-			<type value="Communication"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication"/>
-		</resource>
-		<resource>
 			<type value="Composition"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition"/>
 		</resource>
@@ -54,17 +34,9 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"/>
 		</resource>
 		<resource>
-			<type value="Device"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"/>
-		</resource>
-		<resource>
 			<type value="DiagnosticReport"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"/>
 			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab"/>
-		</resource>
-		<resource>
-			<type value="DocumentReference"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference"/>
 		</resource>
 		<resource>
 			<type value="Encounter"/>
@@ -156,10 +128,6 @@
 		<resource>
 			<type value="Procedure"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"/>
-		</resource>
-		<resource>
-			<type value="Provenance"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance"/>
 		</resource>
 		<resource>
 			<type value="Questionnaire"/>
