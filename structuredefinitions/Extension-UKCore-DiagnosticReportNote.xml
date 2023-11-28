@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-Note" />
+  <id value="Extension-UKCore-DiagnosticReportNote" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note" />
-  <version value="1.0" />
-  <name value="ExtensionUKCoreNote" />
-  <title value="Extension UK Core Note" />
+  <version value="1.0.1" />
+  <name value="ExtensionUKCoreDiagnosticReportNote" />
+  <title value="Extension UK Core DiagnosticReport Note" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-11-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
