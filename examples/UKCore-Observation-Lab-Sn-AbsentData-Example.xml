@@ -23,7 +23,7 @@
     <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
   </performer>
   <dataAbsentReason>
-    <text value="Sample lost in transit" />
+    <text value="Specimen unsatisfactory for evaluation" />
   </dataAbsentReason>
   <specimen>
     <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
