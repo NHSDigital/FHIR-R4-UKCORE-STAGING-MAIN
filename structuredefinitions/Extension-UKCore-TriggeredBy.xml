@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-TriggeredBy" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
-  <version value="1.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreTriggeredBy" />
   <title value="Extension UK Core Triggered By" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -43,13 +43,6 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
     <element id="Extension.extension:observation">
@@ -100,7 +93,6 @@
       <sliceName value="reason" />
       <short value="Reason that the observation was triggered" />
       <definition value="Provides the reason why this observation was performed as a result of the observation(s) referenced." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reason.url">

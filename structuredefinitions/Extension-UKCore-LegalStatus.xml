@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-LegalStatus" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="ExtensionUKCoreLegalStatus" />
   <title value="Extension UK Core Legal Status" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-12-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -38,13 +38,6 @@
   <differential>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
     <element id="Extension.extension:legalStatusContext">
