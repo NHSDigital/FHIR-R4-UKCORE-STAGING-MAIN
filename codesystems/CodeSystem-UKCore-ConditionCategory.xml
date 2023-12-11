@@ -28,8 +28,4 @@
     <code value="co-morbidity" />
     <display value="Co-morbidity" />
   </concept>
-  <concept>
-    <code value="issue" />
-    <display value="Issue" />
-  </concept>
 </CodeSystem>
