@@ -132,7 +132,7 @@
   <communication>
     <language>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+        <system value="urn:ietf:bcp:47" />
         <code value="en" />
         <display value="English" />
       </coding>
