@@ -131,10 +131,6 @@
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
     </resource>
     <resource>
-      <type value="QuestionnaireResponse" />
-      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
-    </resource>
-    <resource>
       <type value="RelatedPerson" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
     </resource>
