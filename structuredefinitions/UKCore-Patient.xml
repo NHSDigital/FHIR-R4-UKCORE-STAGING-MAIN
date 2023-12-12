@@ -334,6 +334,7 @@
       <binding>
         <strength value="required" />
         <description value="A ValueSet that identifies the language used by a person." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
       </binding>
     </element>
     <element id="Patient.communication.language.coding">
