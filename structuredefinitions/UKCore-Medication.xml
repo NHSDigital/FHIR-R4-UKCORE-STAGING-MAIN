@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Medication" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="UKCoreMedication" />
   <title value="UK Core Medication" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-Group-Lab" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="UKCoreObservationGroupLab" />
   <title value="UK Core Observation Group Lab" />
   <status value="active" />
-  <date value="2023-11-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

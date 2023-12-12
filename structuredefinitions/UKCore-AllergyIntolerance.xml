@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-AllergyIntolerance" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCoreAllergyIntolerance" />
   <title value="UK Core AllergyIntolerance" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

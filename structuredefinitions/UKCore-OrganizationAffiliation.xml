@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-OrganizationAffiliation" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
-  <version value="1.0.0" />
+  <version value="0.0.1" />
   <name value="UKCoreOrganizationAffiliation" />
   <title value="UK Core OrganizationAffiliation" />
   <status value="draft" />
-  <date value="2023-10-24" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
