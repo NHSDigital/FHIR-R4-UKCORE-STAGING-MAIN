@@ -350,10 +350,10 @@
     <element id="Patient.communication.language.coding:HumanLanguageTool">
       <path value="Patient.communication.language.coding" />
       <sliceName value="HumanLanguageTool" />
-      <short value="Code to suppliment urn:ietf:bcp:47 language chosen" />
+      <short value="Code to supplement urn:ietf:bcp:47 language chosen" />
       <binding>
         <strength value="extensible" />
-        <description value="This slice adds a code to suppliment the urn:ietf:bcp:47 language chosen in order to aid communication with the patient" />
+        <description value="This slice allows the addition of a code from the UKCore ValuseSet to supplement the urn:ietf:bcp:47 language, chosen in order to aid communication with the patient" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
       </binding>
     </element>
