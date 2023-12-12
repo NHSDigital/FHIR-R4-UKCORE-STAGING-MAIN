@@ -345,7 +345,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Patient.communication.language.coding:HumanLanguageTool">
       <path value="Patient.communication.language.coding" />
@@ -354,6 +353,10 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
       </binding>
+    </element>
+    <element id="Patient.communication.language.coding:HumanLanguageTool.system">
+      <path value="Patient.communication.language.coding.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />
