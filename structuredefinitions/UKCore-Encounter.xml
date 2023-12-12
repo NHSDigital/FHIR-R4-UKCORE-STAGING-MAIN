@@ -21,26 +21,6 @@
   <purpose value="This profile allows exchange of information about an interaction between an individual and healthcare providers for the purpose of providing healthcare services or assessing the health status of an individual." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Encounter" />
@@ -102,13 +82,6 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
       </type>
     </element>
-    <element id="Encounter.identifier.assigner">
-      <path value="Encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Encounter.type">
       <path value="Encounter.type" />
       <binding>
@@ -124,123 +97,6 @@
         <description value="Any code from the SNOMED CT UK Refset with fully specified name 'Services simple reference set (foundation metadata concept)' with Refset Id 1127531000000102." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" />
       </binding>
-    </element>
-    <element id="Encounter.subject">
-      <path value="Encounter.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="Encounter.subject.identifier.assigner">
-      <path value="Encounter.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.episodeOfCare">
-      <path value="Encounter.episodeOfCare" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
-      </type>
-    </element>
-    <element id="Encounter.episodeOfCare.identifier.assigner">
-      <path value="Encounter.episodeOfCare.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.basedOn">
-      <path value="Encounter.basedOn" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-      </type>
-    </element>
-    <element id="Encounter.basedOn.identifier.assigner">
-      <path value="Encounter.basedOn.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.participant.individual">
-      <path value="Encounter.participant.individual" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="Encounter.participant.individual.identifier.assigner">
-      <path value="Encounter.participant.individual.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.appointment">
-      <path value="Encounter.appointment" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
-      </type>
-    </element>
-    <element id="Encounter.appointment.identifier.assigner">
-      <path value="Encounter.appointment.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.reasonReference">
-      <path value="Encounter.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
-      </type>
-    </element>
-    <element id="Encounter.reasonReference.identifier.assigner">
-      <path value="Encounter.reasonReference.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.diagnosis">
-      <path value="Encounter.diagnosis" />
-      <short value="The list of diagnoses relevant to this encounter" />
-      <definition value="The list of diagnoses relevant to this encounter." />
-    </element>
-    <element id="Encounter.diagnosis.condition">
-      <path value="Encounter.diagnosis.condition" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-      </type>
-    </element>
-    <element id="Encounter.diagnosis.condition.identifier.assigner">
-      <path value="Encounter.diagnosis.condition.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.account.identifier.assigner">
-      <path value="Encounter.account.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   <element id="Encounter.hospitalization.extension">
       <path value="Encounter.hospitalization.extension" />
@@ -265,28 +121,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Encounter.hospitalization.preAdmissionIdentifier.assigner">
-      <path value="Encounter.hospitalization.preAdmissionIdentifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.hospitalization.origin">
-      <path value="Encounter.hospitalization.origin" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.hospitalization.origin.identifier.assigner">
-      <path value="Encounter.hospitalization.origin.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Encounter.hospitalization.admitSource">
       <path value="Encounter.hospitalization.admitSource" />
       <binding>
@@ -294,21 +128,6 @@
         <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission" />
       </binding>
-    </element>
-    <element id="Encounter.hospitalization.destination">
-      <path value="Encounter.hospitalization.destination" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-      </type>
-    </element>
-    <element id="Encounter.hospitalization.destination.identifier.assigner">
-      <path value="Encounter.hospitalization.destination.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="Encounter.hospitalization.dischargeDisposition">
       <path value="Encounter.hospitalization.dischargeDisposition" />
@@ -318,20 +137,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination" />
       </binding>
     </element>
-    <element id="Encounter.location.location">
-      <path value="Encounter.location.location" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-      </type>
-    </element>
-    <element id="Encounter.location.location.identifier.assigner">
-      <path value="Encounter.location.location.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Encounter.location.physicalType">
       <path value="Encounter.location.physicalType" />
       <binding>
@@ -339,34 +144,6 @@
         <description value="A set of codes that define the physical type of location where an encounter takes place." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType" />
       </binding>
-    </element>
-    <element id="Encounter.serviceProvider">
-      <path value="Encounter.serviceProvider" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.serviceProvider.identifier.assigner">
-      <path value="Encounter.serviceProvider.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Encounter.partOf">
-      <path value="Encounter.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-      </type>
-    </element>
-    <element id="Encounter.partOf.identifier.assigner">
-      <path value="Encounter.partOf.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

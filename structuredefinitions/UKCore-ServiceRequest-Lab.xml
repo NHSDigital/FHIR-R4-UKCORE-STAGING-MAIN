@@ -36,18 +36,5 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
       </binding>
     </element>
-    <element id="ServiceRequest.reasonReference">
-      <path value="ServiceRequest.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

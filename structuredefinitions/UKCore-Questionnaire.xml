@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Questionnaire" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
-  <version value="1.2.0" />
+  <version value="1.3.0" />
   <name value="UKCoreQuestionnaire" />
   <title value="UK Core Questionnaire" />
-  <status value="active" />
-  <date value="2022-12-16" />
+  <status value="draft" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,51 +21,12 @@
   <purpose value="This profile is used to organise a collection of questions intended to solicit information from patients, providers or other individuals involved in the healthcare domain." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="objimpl" />
-    <uri value="http://hl7.org/fhir/object-implementation" />
-    <name value="Object Implementation Information" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Questionnaire" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
   <differential>
-    <element id="Questionnaire.identifier.assigner">
-      <path value="Questionnaire.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Questionnaire.derivedFrom">
-      <path value="Questionnaire.derivedFrom" />
-      <type>
-        <code value="canonical" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
-      </type>
-    </element>
     <element id="Questionnaire.code">
       <path value="Questionnaire.code" />
       <binding>

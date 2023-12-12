@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-LabGroup" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+  <id value="UKCore-Observation-Group-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
   <version value="1.1.0" />
-  <name value="UKCoreObservationLabGroup" />
-  <title value="UK Core Observation Lab Group" />
+  <name value="UKCoreObservationGroupLab" />
+  <title value="UK Core Observation Group Lab" />
   <status value="active" />
   <date value="2023-11-28" />
   <publisher value="HL7 UK" />
@@ -30,7 +30,7 @@
     <element id="Observation">
       <path value="Observation" />
       <constraint>
-        <key value="ukcore-obs-labgrp-001" />
+        <key value="ukcore-obs-grplab-001" />
         <severity value="warning" />
         <human value="value[x] SHOULD NOT be used within this Profile" />
         <expression value="value.empty()" />
@@ -73,22 +73,6 @@
         <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and test group results" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
       </binding>
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="Observation.hasMember">
-      <path value="Observation.hasMember" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

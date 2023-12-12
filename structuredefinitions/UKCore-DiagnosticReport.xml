@@ -21,26 +21,6 @@
   <purpose value="This profile allows exchange of the findings and interpretation of diagnostic tests performed on individuals, groups of individuals, devices and locations and/or specimens derived from these. The report includes clinical context such as requesting and provider information and some mix of atomic results, images, textual and coded interpretations and formatted representation of diagnostic reports.&#xD;&#xA;&#xD;&#xA;Note: this profile SHALL NOT be used where a more specific UK Core profile exists." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="DiagnosticReport" />
@@ -91,78 +71,12 @@
       <short value="Comments about the diagnostic report." />
       <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
     </element>
-    <element id="DiagnosticReport.identifier.assigner">
-      <path value="DiagnosticReport.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.basedOn">
-      <path value="DiagnosticReport.basedOn" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.basedOn.identifier.assigner">
-      <path value="DiagnosticReport.basedOn.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
       </binding>
-    </element>
-    <element id="DiagnosticReport.subject">
-      <path value="DiagnosticReport.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.subject.identifier.assigner">
-      <path value="DiagnosticReport.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.encounter">
-      <path value="DiagnosticReport.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.encounter.identifier.assigner">
-      <path value="DiagnosticReport.encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.performer">
-      <path value="DiagnosticReport.performer" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-      </type>
     </element>
     <element id="DiagnosticReport.performer.extension">
       <path value="DiagnosticReport.performer.extension" />
@@ -186,23 +100,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="DiagnosticReport.performer.identifier.assigner">
-      <path value="DiagnosticReport.performer.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.resultsInterpreter">
-      <path value="DiagnosticReport.resultsInterpreter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-      </type>
-    </element>
     <element id="DiagnosticReport.resultsInterpreter.extension">
       <path value="DiagnosticReport.resultsInterpreter.extension" />
       <slicing>
@@ -223,62 +120,6 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="DiagnosticReport.resultsInterpreter.identifier.assigner">
-      <path value="DiagnosticReport.resultsInterpreter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.specimen">
-      <path value="DiagnosticReport.specimen" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.specimen.identifier.assigner">
-      <path value="DiagnosticReport.specimen.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.result">
-      <path value="DiagnosticReport.result" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.result.identifier.assigner">
-      <path value="DiagnosticReport.result.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.imagingStudy">
-      <path value="DiagnosticReport.imagingStudy" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.imagingStudy.identifier.assigner">
-      <path value="DiagnosticReport.imagingStudy.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.media.link.identifier.assigner">
-      <path value="DiagnosticReport.media.link.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />

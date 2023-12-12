@@ -21,59 +21,12 @@
   <purpose value="The purpose of this profile is to describe the event of a patient consuming or otherwise being administered a medication. This may be as simple as swallowing a tablet, or it may be a long-running infusion. &#xD;&#xA;&#xD;&#xA;Related resources tie this event to the authorizing prescription, and the specific encounter between patient and health care practitioner." />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w3c.prov" />
-    <uri value="http://www.w3.org/ns/prov" />
-    <name value="W3C PROV" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationAdministration" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationAdministration.identifier.assigner">
-      <path value="MedicationAdministration.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.partOf">
-      <path value="MedicationAdministration.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.partOf.identifier.assigner">
-      <path value="MedicationAdministration.partOf.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="MedicationAdministration.category">
       <path value="MedicationAdministration.category" />
       <binding>
@@ -88,124 +41,12 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
       </type>
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
-    </element>
-    <element id="MedicationAdministration.subject">
-      <path value="MedicationAdministration.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.subject.identifier.assigner">
-      <path value="MedicationAdministration.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.context">
-      <path value="MedicationAdministration.context" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.context.identifier.assigner">
-      <path value="MedicationAdministration.context.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.supportingInformation.identifier.assigner">
-      <path value="MedicationAdministration.supportingInformation.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.performer.actor">
-      <path value="MedicationAdministration.performer.actor" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.performer.actor.identifier.assigner">
-      <path value="MedicationAdministration.performer.actor.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.reasonReference">
-      <path value="MedicationAdministration.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.reasonReference.identifier.assigner">
-      <path value="MedicationAdministration.reasonReference.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.request">
-      <path value="MedicationAdministration.request" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.request.identifier.assigner">
-      <path value="MedicationAdministration.request.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.device">
-      <path value="MedicationAdministration.device" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.device.identifier.assigner">
-      <path value="MedicationAdministration.device.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.note.author[x]">
-      <path value="MedicationAdministration.note.author[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
     </element>
     <element id="MedicationAdministration.dosage.site">
       <path value="MedicationAdministration.dosage.site" />
@@ -227,20 +68,6 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
-    </element>
-    <element id="MedicationAdministration.eventHistory">
-      <path value="MedicationAdministration.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.eventHistory.identifier.assigner">
-      <path value="MedicationAdministration.eventHistory.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

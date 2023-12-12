@@ -21,61 +21,12 @@
   <purpose value="This profile supports a reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any serialised object with a mime-type, so includes formal patient centric documents (CDA), clinical notes, scanned paper, and non-patient specific documents like policy text." />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="fhircomposition" />
-    <uri value="http://hl7.org/fhir/composition" />
-    <name value="FHIR Composition" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="cda" />
-    <uri value="http://hl7.org/v3/cda" />
-    <name value="CDA (R2)" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="xds" />
-    <uri value="http://ihe.net/xds" />
-    <name value="XDS metadata equivalent" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="DocumentReference" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
   <derivation value="constraint" />
   <differential>
-    <element id="DocumentReference.masterIdentifier.assigner">
-      <path value="DocumentReference.masterIdentifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.identifier.assigner">
-      <path value="DocumentReference.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="DocumentReference.type">
       <path value="DocumentReference.type" />
       <binding>
@@ -84,101 +35,6 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType" />
       </binding>
     </element>
-    <element id="DocumentReference.subject">
-      <path value="DocumentReference.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-      </type>
-    </element>
-    <element id="DocumentReference.subject.identifier.assigner">
-      <path value="DocumentReference.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.author">
-      <path value="DocumentReference.author" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="DocumentReference.author.identifier.assigner">
-      <path value="DocumentReference.author.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.authenticator">
-      <path value="DocumentReference.authenticator" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.authenticator.identifier.assigner">
-      <path value="DocumentReference.authenticator.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.custodian">
-      <path value="DocumentReference.custodian" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.custodian.identifier.assigner">
-      <path value="DocumentReference.custodian.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.relatesTo.target">
-      <path value="DocumentReference.relatesTo.target" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
-      </type>
-    </element>
-    <element id="DocumentReference.relatesTo.target.identifier.assigner">
-      <path value="DocumentReference.relatesTo.target.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.context.encounter">
-      <path value="DocumentReference.context.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
-      </type>
-    </element>
-    <element id="DocumentReference.context.encounter.identifier.assigner">
-      <path value="DocumentReference.context.encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="DocumentReference.context.practiceSetting">
       <path value="DocumentReference.context.practiceSetting" />
       <binding>
@@ -186,27 +42,6 @@
         <description value="UK Core Care setting type of the document" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" />
       </binding>
-    </element>
-    <element id="DocumentReference.context.sourcePatientInfo">
-      <path value="DocumentReference.context.sourcePatientInfo" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="DocumentReference.context.sourcePatientInfo.identifier.assigner">
-      <path value="DocumentReference.context.sourcePatientInfo.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="DocumentReference.context.related.identifier.assigner">
-      <path value="DocumentReference.context.related.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
