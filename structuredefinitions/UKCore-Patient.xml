@@ -329,13 +329,6 @@
     </element>
     <element id="Patient.communication.language">
       <path value="Patient.communication.language" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <short value="A ValueSet that identifies the language used by a person." />
       <definition value="A ValueSet that identifies the language used by a person." />
       <binding>
@@ -343,14 +336,22 @@
         <description value="A ValueSet that identifies the language used by a person." />
       </binding>
     </element>
-    <element id="Patient.communication.language:languageTool">
-      <path value="Patient.communication.language" />
-      <sliceName value="languageTool" />
-      <short value="Tools that can help communicate the Patient's language" />
-      <definition value="Optional tool that can help communicate a human language. For example Makaton, which uses speech, signs, and symbols to enable people with disabilities or learning disabilities to communicate. This slice is to be used in conjunction with the main slice." />
+    <element id="Patient.communication.language.coding">
+      <path value="Patient.communication.language.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.coding:HumanLanguageTool">
+      <path value="Patient.communication.language.coding" />
+      <sliceName value="HumanLanguageTool" />
       <binding>
         <strength value="extensible" />
-        <description value="A human language. tool" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
       </binding>
     </element>
