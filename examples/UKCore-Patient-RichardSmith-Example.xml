@@ -136,7 +136,7 @@
         <code value="bfi" />
         <display value="British Sign Language" />
       </coding>
-	  <coding>
+    <coding>
         <system value="http://snomed.info/sct" />
         <code value="703963007" />
         <display value="Makaton vocabulary" />
