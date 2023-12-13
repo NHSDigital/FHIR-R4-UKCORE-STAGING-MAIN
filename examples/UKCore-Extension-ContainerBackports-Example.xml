@@ -17,12 +17,12 @@
   <!-- ***************extension start*************** -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device">
     <valueReference>
-		<reference value="Device/UKCore-Device-BloodSpotContainer-Example" />
+    <reference value="Device/UKCore-Device-BloodSpotContainer-Example" />
     </valueReference>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.location">
     <valueReference>
-		<reference value="Location/UKCore-Location-NeoNatalLGI-Example" />
+    <reference value="Location/UKCore-Location-NeoNatalLGI-Example" />
     </valueReference>
   </extension>
   <!-- **************extension end ****************** -->
