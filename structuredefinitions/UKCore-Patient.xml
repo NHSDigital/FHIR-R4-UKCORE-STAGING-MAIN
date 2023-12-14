@@ -191,13 +191,6 @@
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Patient.identifier:nhsNumber.assigner">
-      <path value="Patient.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Patient.telecom.system.extension">
       <path value="Patient.telecom.system.extension" />
       <slicing>
@@ -333,20 +326,6 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
-      </type>
-    </element>
-    <element id="Patient.contact.organization">
-      <path value="Patient.contact.organization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner">
-      <path value="Patient.contact.organization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
     <element id="Patient.communication.extension">
