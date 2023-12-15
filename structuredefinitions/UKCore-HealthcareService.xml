@@ -27,6 +27,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
   <derivation value="constraint" />
   <differential>
+    <element id="HealthcareService.providedBy">
+      <path value="HealthcareService.providedBy" />
+      <mustSupport value="true" />
+    </element>
     <element id="HealthcareService.specialty">
       <path value="HealthcareService.specialty" />
       <binding>

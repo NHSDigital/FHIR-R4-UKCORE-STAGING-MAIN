@@ -19,7 +19,7 @@
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [DocumentReference](https://hl7.org/fhir/R4/DocumentReference.html)." />
   <purpose value="This profile supports a reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any serialised object with a mime-type, so includes formal patient centric documents (CDA), clinical notes, scanned paper, and non-patient specific documents like policy text." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -27,13 +27,46 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
   <derivation value="constraint" />
   <differential>
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.status">
+      <path value="DocumentReference.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="DocumentReference.type">
       <path value="DocumentReference.type" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <description value="SNOMED CT UK Document Type" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType" />
       </binding>
+    </element>
+    <element id="DocumentReference.category">
+      <path value="DocumentReference.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.subject">
+      <path value="DocumentReference.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.date">
+      <path value="DocumentReference.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.author">
+      <path value="DocumentReference.author" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.description">
+      <path value="DocumentReference.description" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.content">
+      <path value="DocumentReference.content" />
+      <mustSupport value="true" />
     </element>
     <element id="DocumentReference.context.practiceSetting">
       <path value="DocumentReference.context.practiceSetting" />

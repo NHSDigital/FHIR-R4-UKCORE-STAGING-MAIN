@@ -27,28 +27,29 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationRequest.extension">
-      <path value="MedicationRequest.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationRequest.extension:medicationRepeatInformation">
       <path value="MedicationRequest.extension" />
       <sliceName value="medicationRepeatInformation" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       </type>
     </element>
+    <element id="MedicationRequest.identifier">
+      <path value="MedicationRequest.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.intent">
+      <path value="MedicationRequest.intent" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
@@ -56,17 +57,23 @@
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
-      </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
+    </element>
+    <element id="MedicationRequest.subject">
+      <path value="MedicationRequest.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.authoredOn">
+      <path value="MedicationRequest.authoredOn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />
@@ -76,6 +83,18 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" />
       </binding>
+    </element>
+    <element id="MedicationRequest.dosageInstruction">
+      <path value="MedicationRequest.dosageInstruction" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.text">
+      <path value="MedicationRequest.dosageInstruction.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing">
+      <path value="MedicationRequest.dosageInstruction.timing" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
       <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
@@ -104,9 +123,30 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
     </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x]">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.rate[x]">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.rate[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity">
+      <path value="MedicationRequest.dispenseRequest.quantity" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.substitution.allowed[x]">
       <path value="MedicationRequest.substitution.allowed[x]" />

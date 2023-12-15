@@ -34,24 +34,11 @@
         <severity value="error" />
         <human value="If the immunization was not given then Immunization.status value SHALL = 'not-done', and the Immunization.statusReason SHALL be populated" />
         <expression value="(status != 'not-done') or (status = 'not-done' and statusReason.exists())" />
-        <source value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
       </constraint>
-    </element>
-    <element id="Immunization.extension">
-      <path value="Immunization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
     </element>
     <element id="Immunization.extension:parentPresent">
       <path value="Immunization.extension" />
       <sliceName value="parentPresent" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent" />
@@ -60,11 +47,14 @@
     <element id="Immunization.extension:vaccinationProcedure">
       <path value="Immunization.extension" />
       <sliceName value="vaccinationProcedure" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure" />
       </type>
+    </element>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.statusReason">
       <path value="Immunization.statusReason" />
@@ -75,10 +65,27 @@
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
       </binding>
+    </element>
+    <element id="Immunization.patient">
+      <path value="Immunization.patient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.occurrence[x]">
+      <path value="Immunization.occurrence[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.manufacturer">
+      <path value="Immunization.manufacturer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.lotNumber">
+      <path value="Immunization.lotNumber" />
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.site">
       <path value="Immunization.site" />
@@ -93,6 +100,10 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
+    </element>
+    <element id="Immunization.doseQuantity">
+      <path value="Immunization.doseQuantity" />
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.reasonCode">
       <path value="Immunization.reasonCode" />

@@ -27,19 +27,29 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationDispense" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationDispense.identifier">
+      <path value="MedicationDispense.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.status">
+      <path value="MedicationDispense.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
-      </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
+    </element>
+    <element id="MedicationDispense.subject">
+      <path value="MedicationDispense.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.performer">
+      <path value="MedicationDispense.performer" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.type">
       <path value="MedicationDispense.type" />
@@ -47,6 +57,26 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationSupplyType" />
       </binding>
+    </element>
+    <element id="MedicationDispense.quantity">
+      <path value="MedicationDispense.quantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.whenPrepared">
+      <path value="MedicationDispense.whenPrepared" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction">
+      <path value="MedicationDispense.dosageInstruction" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction.text">
+      <path value="MedicationDispense.dosageInstruction.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction.timing">
+      <path value="MedicationDispense.dosageInstruction.timing" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.asNeeded[x]">
       <path value="MedicationDispense.dosageInstruction.asNeeded[x]" />
@@ -74,6 +104,18 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
       </binding>
+    </element>
+    <element id="MedicationDispense.dosageInstruction.doseAndRate">
+      <path value="MedicationDispense.dosageInstruction.doseAndRate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction.doseAndRate.dose[x]">
+      <path value="MedicationDispense.dosageInstruction.doseAndRate.dose[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction.doseAndRate.rate[x]">
+      <path value="MedicationDispense.dosageInstruction.doseAndRate.rate[x]" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

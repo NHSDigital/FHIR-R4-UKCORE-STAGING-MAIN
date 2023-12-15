@@ -27,21 +27,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Slot" />
   <derivation value="constraint" />
   <differential>
-    <element id="Slot.extension">
-      <path value="Slot.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Slot.extension:deliveryChannel">
       <path value="Slot.extension" />
       <sliceName value="deliveryChannel" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -51,10 +39,27 @@
     </element>
     <element id="Slot.specialty">
       <path value="Slot.specialty" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
       </binding>
+    </element>
+    <element id="Slot.appointmentType">
+      <path value="Slot.appointmentType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Slot.status">
+      <path value="Slot.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Slot.start">
+      <path value="Slot.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Slot.end">
+      <path value="Slot.end" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

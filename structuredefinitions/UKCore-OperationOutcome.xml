@@ -27,6 +27,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
   <derivation value="constraint" />
   <differential>
+    <element id="OperationOutcome.issue">
+      <path value="OperationOutcome.issue" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.severity">
+      <path value="OperationOutcome.issue.severity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.code">
+      <path value="OperationOutcome.issue.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="OperationOutcome.issue.details">
       <path value="OperationOutcome.issue.details" />
       <binding>
@@ -38,6 +50,10 @@
     <element id="OperationOutcome.issue.location">
       <path value="OperationOutcome.issue.location" />
       <definition value="This element is deprecated because it is XML specific. It is replaced by issue.expression, which is format independent, and simpler to parse.&#xA;For resource issues, this will be a simple XPath limited to element names, repetition indicators and the default child accessor that identifies one of the elements in the resource that caused this issue to be raised.  For HTTP errors, will be &quot;http.&quot; + the parameter name." />
+    </element>
+    <element id="OperationOutcome.issue.expression">
+      <path value="OperationOutcome.issue.expression" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

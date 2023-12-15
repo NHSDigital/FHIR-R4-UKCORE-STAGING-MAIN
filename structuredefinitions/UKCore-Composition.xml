@@ -31,30 +31,23 @@
       <path value="Composition" />
       <definition value="A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition SHALL be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition SHALL be included as subsequent entries in the Bundle, for example Patient, Practitioner, Encounter, etc." />
     </element>
-    <element id="Composition.extension">
-      <path value="Composition.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Composition.extension:careSettingType">
       <path value="Composition.extension" />
       <sliceName value="careSettingType" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType" />
       </type>
     </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.type">
       <path value="Composition.type" />
       <short value="Kind of composition (SNOMED CT)" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="SNOMED CT Document Type" />
@@ -63,12 +56,27 @@
     </element>
     <element id="Composition.category">
       <path value="Composition.category" />
-      <definition value="A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type." />
       <binding>
         <strength value="preferred" />
         <description value="A ValueSet to identify the category of a composition." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionCategory" />
       </binding>
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section.code">
       <path value="Composition.section.code" />

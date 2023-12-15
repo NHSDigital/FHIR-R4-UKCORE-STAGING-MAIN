@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-MessageHeader" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
-  <version value="2.4.0" />
-  <name value="UKCoreMessageHeader" />
-  <title value="UK Core MessageHeader" />
+  <id value="UKCore-Provenance" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
+  <version value="1.2.0" />
+  <name value="UKCoreProvenance" />
+  <title value="UK Core Provenance" />
   <status value="draft" />
   <date value="2023-12-12" />
   <publisher value="HL7 UK" />
@@ -17,39 +16,26 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [MessageHeader](https://hl7.org/fhir/R4/MessageHeader.html)." />
-  <purpose value="This profile carries the header data for a message exchange that is either requesting or responding to an action." />
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Provenance](https://hl7.org/fhir/R4/Provenance.html)." />
+  <purpose value="The Provenance resource tracks information about the activity that created, revised, deleted, or signed a version of a resource, describing the entities and agents involved." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="MessageHeader" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
+  <type value="Provenance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
   <derivation value="constraint" />
   <differential>
-    <element id="MessageHeader.event[x]">
-      <path value="MessageHeader.event[x]" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Message event" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MessageEvent" />
-      </binding>
-    </element>
-    <element id="MessageHeader.destination">
-      <path value="MessageHeader.destination" />
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
       <mustSupport value="true" />
     </element>
-    <element id="MessageHeader.sender">
-      <path value="MessageHeader.sender" />
+    <element id="Provenance.recorded">
+      <path value="Provenance.recorded" />
       <mustSupport value="true" />
     </element>
-    <element id="MessageHeader.source">
-      <path value="MessageHeader.source" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MessageHeader.focus">
-      <path value="MessageHeader.focus" />
+    <element id="Provenance.signature">
+      <path value="Provenance.signature" />
       <mustSupport value="true" />
     </element>
   </differential>

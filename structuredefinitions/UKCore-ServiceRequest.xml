@@ -27,21 +27,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
   <derivation value="constraint" />
   <differential>
-    <element id="ServiceRequest.extension">
-      <path value="ServiceRequest.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="ServiceRequest.extension:sourceOfServiceRequest">
       <path value="ServiceRequest.extension" />
       <sliceName value="sourceOfServiceRequest" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -52,7 +40,6 @@
     <element id="ServiceRequest.extension:additionalContact">
       <path value="ServiceRequest.extension" />
       <sliceName value="additionalContact" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
@@ -62,13 +49,24 @@
     <element id="ServiceRequest.extension:coverage">
       <path value="ServiceRequest.extension" />
       <sliceName value="coverage" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.basedOn">
+      <path value="ServiceRequest.basedOn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.status">
+      <path value="ServiceRequest.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category" />
@@ -79,6 +77,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.category:genomicsWholeCaseSequencing">
       <path value="ServiceRequest.category" />
@@ -94,21 +93,13 @@
       <path value="ServiceRequest.category.coding.system" />
       <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
     </element>
-    <element id="ServiceRequest.priority.extension">
-      <path value="ServiceRequest.priority.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="ServiceRequest.priority">
+      <path value="ServiceRequest.priority" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.priority.extension:priorityReason">
       <path value="ServiceRequest.priority.extension" />
       <sliceName value="priorityReason" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
@@ -117,6 +108,7 @@
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
@@ -129,6 +121,18 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
       </binding>
+    </element>
+    <element id="ServiceRequest.subject">
+      <path value="ServiceRequest.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.authoredOn">
+      <path value="ServiceRequest.authoredOn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.requester">
+      <path value="ServiceRequest.requester" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.reasonCode">
       <path value="ServiceRequest.reasonCode" />

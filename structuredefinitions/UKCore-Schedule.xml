@@ -27,12 +27,25 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Schedule" />
   <derivation value="constraint" />
   <differential>
+    <element id="Schedule.active">
+      <path value="Schedule.active" />
+      <mustSupport value="true" />
+    </element>
     <element id="Schedule.specialty">
       <path value="Schedule.specialty" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
       </binding>
+    </element>
+    <element id="Schedule.actor">
+      <path value="Schedule.actor" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Schedule.planningHorizon">
+      <path value="Schedule.planningHorizon" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

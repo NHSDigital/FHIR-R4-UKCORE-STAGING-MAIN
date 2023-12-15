@@ -27,22 +27,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
-    <element id="DiagnosticReport.extension">
-      <path value="DiagnosticReport.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="compositionReferenceR5" />
       <short value="A Composition reference for a DiagnosticReport. This is a R5 backport." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -59,7 +47,6 @@
       <path value="DiagnosticReport.extension" />
       <sliceName value="noteR5" />
       <short value="Comments about the diagnostic report. This is a R5 backport." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note" />
@@ -68,31 +55,39 @@
     </element>
     <element id="DiagnosticReport.extension:noteR5.value[x]">
       <path value="DiagnosticReport.extension.value[x]" />
-      <short value="Comments about the diagnostic report." />
       <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
+    </element>
+    <element id="DiagnosticReport.status">
+      <path value="DiagnosticReport.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category">
+      <path value="DiagnosticReport.category" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
       </binding>
     </element>
-    <element id="DiagnosticReport.performer.extension">
-      <path value="DiagnosticReport.performer.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.encounter">
+      <path value="DiagnosticReport.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer.extension:deviceReference">
       <path value="DiagnosticReport.performer.extension" />
       <sliceName value="deviceReference" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -100,26 +95,18 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="DiagnosticReport.resultsInterpreter.extension">
-      <path value="DiagnosticReport.resultsInterpreter.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
       <path value="DiagnosticReport.resultsInterpreter.extension" />
       <sliceName value="deviceReference" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />

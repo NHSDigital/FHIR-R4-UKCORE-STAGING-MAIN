@@ -27,23 +27,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
   <derivation value="constraint" />
   <differential>
-    <element id="Encounter.extension">
-      <path value="Encounter.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Encounter.extension:dischargeMethod">
       <path value="Encounter.extension" />
       <sliceName value="dischargeMethod" />
       <short value="An extension to support the method of discharge from a hospital." />
       <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was discharged from hospital." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod" />
@@ -54,7 +42,6 @@
       <sliceName value="emergencyCareDischargeStatus" />
       <short value="An extension to support the status of an individual on discharge from an Emergency Care Department." />
       <definition value="This extension has been developed to demonstrate the representation of the status of a patient on discharge from an Emergency Care Department." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus" />
@@ -65,7 +52,6 @@
       <sliceName value="legalStatus" />
       <short value="Information relating to a patient's legal status on admission or discharge." />
       <definition value="Information relating to a patient's legal status on admission or discharge." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus" />
@@ -76,11 +62,18 @@
       <sliceName value="OutcomeOfAttendance" />
       <short value="An extension to support the outcome of an Outpatient attendance." />
       <definition value="This extension has been developed to demonstrate the representation of the outcome of an Outpatient attendance." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance" />
       </type>
+    </element>
+    <element id="Encounter.identifier">
+      <path value="Encounter.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class" />
+      <mustSupport value="true" />
     </element>
     <element id="Encounter.type">
       <path value="Encounter.type" />
@@ -98,23 +91,27 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" />
       </binding>
     </element>
-  <element id="Encounter.hospitalization.extension">
-      <path value="Encounter.hospitalization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.reasonCode">
+      <path value="Encounter.reasonCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.reasonReference">
+      <path value="Encounter.reasonReference" />
+      <mustSupport value="true" />
     </element>
     <element id="Encounter.hospitalization.extension:admissionMethod">
       <path value="Encounter.hospitalization.extension" />
       <sliceName value="admissionMethod" />
       <short value="An extension to support the method by which an individual was admitted into hospital." />
       <definition value="This extension has been developed to demonstrate the representation of the method by which a patient was admitted to hospital." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod" />

@@ -36,21 +36,9 @@
         <expression value="collection.collector.reference.empty() or collection.collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
       </constraint>
     </element>
-    <element id="Specimen.extension">
-      <path value="Specimen.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Specimen.extension:sampleCategory">
       <path value="Specimen.extension" />
       <sliceName value="sampleCategory" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -58,51 +46,44 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Specimen.status">
+      <path value="Specimen.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="Specimen.type">
       <path value="Specimen.type" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED CT UK Clinical Terminology coding system" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenType" />
       </binding>
     </element>
-    <element id="Specimen.collection.extension">
-      <path value="Specimen.collection.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Specimen.subject">
+      <path value="Specimen.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.request">
+      <path value="Specimen.request" />
+      <mustSupport value="true" />
     </element>
     <element id="Specimen.collection.extension:specialHandling">
       <path value="Specimen.collection.extension" />
       <sliceName value="specialHandling" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling" />
       </type>
-    </element>
-    <element id="Specimen.collection.collector.extension">
-      <path value="Specimen.collection.collector.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
     </element>
     <element id="Specimen.collection.collector.extension:collectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
       <sliceName value="collectionCollectorR5" />
       <short value="Person who collected the specimen" />
       <definition value="Person who collected the specimen. This is an R5 backport" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -121,22 +102,10 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite" />
       </binding>
     </element>
-    <element id="Specimen.collection.bodySite.extension">
-      <path value="Specimen.collection.bodySite.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Specimen.collection.bodySite.extension:bodySiteReference">
       <path value="Specimen.collection.bodySite.extension" />
       <sliceName value="bodySiteReference" />
       <short value="An extension to allow referencing to a BodyStructure" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

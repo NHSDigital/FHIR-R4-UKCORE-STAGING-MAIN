@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-RequestGroup" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup" />
+  <version value="1.0.0" />
+  <name value="UKCoreRequestGroup" />
+  <title value="UK Core RequestGroup" />
+  <status value="draft" />
+  <date value="2023-12-12" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [RequestGroup](https://hl7.org/fhir/R4/RequestGroup.html)." />
+  <purpose value="This profile is a record of a group of medication related requests, with a specific set of conditions on how they must be actioned. It is for use in hospital prescribing, where multiple routes of administration are possible." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RequestGroup" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RequestGroup" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="RequestGroup.status">
+      <path value="RequestGroup.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.intent">
+      <path value="RequestGroup.intent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.subject">
+      <path value="RequestGroup.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.action">
+      <path value="RequestGroup.action" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.action.description">
+      <path value="RequestGroup.action.description" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.action.type">
+      <path value="RequestGroup.action.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.action.selectionBehavior">
+      <path value="RequestGroup.action.selectionBehavior" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.action.resource">
+      <path value="RequestGroup.action.resource" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RequestGroup.action.action">
+      <path value="RequestGroup.action.action" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

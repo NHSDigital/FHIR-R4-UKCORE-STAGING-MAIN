@@ -27,25 +27,21 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.extension">
-      <path value="Condition.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Condition.extension:conditionEpisode">
       <path value="Condition.extension" />
       <sliceName value="conditionEpisode" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
       </type>
+    </element>
+    <element id="Condition.clinicalStatus">
+      <path value="Condition.clinicalStatus" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category">
       <path value="Condition.category" />
@@ -55,8 +51,13 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory" />
       </binding>
     </element>
+    <element id="Condition.severity">
+      <path value="Condition.severity" />
+      <mustSupport value="true" />
+    </element>
     <element id="Condition.code">
       <path value="Condition.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK with the expression (&lt;404684003 |Clinical finding| OR &lt;413350009 |Finding with explicit context| OR &lt;272379006 |Event|)." />
@@ -68,6 +69,14 @@
       <binding>
         <strength value="preferred" />
       </binding>
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.recorder">
+      <path value="Condition.recorder" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

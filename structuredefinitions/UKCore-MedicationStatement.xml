@@ -27,22 +27,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement.extension">
-      <path value="MedicationStatement.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.extension:pharmacistVerifiedIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="pharmacistVerifiedIndicator" />
       <short value="Indicates whether a pharmacist verified a medication" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator" />
@@ -51,7 +39,6 @@
     <element id="MedicationStatement.extension:medicationPrescribingOrganizationType">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationPrescribingOrganizationType" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType" />
@@ -60,11 +47,14 @@
     <element id="MedicationStatement.extension:medicationStatementLastIssueDate">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationStatementLastIssueDate" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" />
       </type>
+    </element>
+    <element id="MedicationStatement.identifier">
+      <path value="MedicationStatement.identifier" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.identifier.system">
       <path value="MedicationStatement.identifier.system" />
@@ -74,8 +64,17 @@
       <path value="MedicationStatement.identifier.value" />
       <min value="1" />
     </element>
+    <element id="MedicationStatement.basedOn">
+      <path value="MedicationStatement.basedOn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.status">
+      <path value="MedicationStatement.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationStatementCategory" />
@@ -83,17 +82,35 @@
     </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
-      </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.effective[x]">
+      <path value="MedicationStatement.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dateAsserted">
+      <path value="MedicationStatement.dateAsserted" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.informationSource">
+      <path value="MedicationStatement.informationSource" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.derivedFrom">
+      <path value="MedicationStatement.derivedFrom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage">
+      <path value="MedicationStatement.dosage" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">
       <path value="MedicationStatement.dosage.asNeeded[x]" />

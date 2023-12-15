@@ -27,21 +27,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
-    <element id="Appointment.extension">
-      <path value="Appointment.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Appointment.extension:bookingOrganization">
       <path value="Appointment.extension" />
       <sliceName value="bookingOrganization" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
@@ -51,7 +39,6 @@
     <element id="Appointment.extension:deliveryChannel">
       <path value="Appointment.extension" />
       <sliceName value="deliveryChannel" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -59,8 +46,13 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Appointment.status">
+      <path value="Appointment.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="Appointment.specialty">
       <path value="Appointment.specialty" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
@@ -68,11 +60,32 @@
     </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <description value="A set of codes that define an appointment reason." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AppointmentReasonCode" />
       </binding>
+    </element>
+    <element id="Appointment.reasonCode">
+      <path value="Appointment.reasonCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.reasonReference">
+      <path value="Appointment.reasonReference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.start">
+      <path value="Appointment.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.basedOn">
+      <path value="Appointment.basedOn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.participant">
+      <path value="Appointment.participant" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

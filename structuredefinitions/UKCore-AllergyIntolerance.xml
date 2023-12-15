@@ -27,56 +27,48 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
   <derivation value="constraint" />
   <differential>
-    <element id="AllergyIntolerance.extension">
-      <path value="AllergyIntolerance.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="AllergyIntolerance.extension:evidence">
       <path value="AllergyIntolerance.extension" />
       <sliceName value="evidence" />
       <short value="A reference to results of investigations that confirmed the certainty of the diagnosis." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence" />
       </type>
     </element>
-    <element id="AllergyIntolerance.clinicalStatus.extension">
-      <path value="AllergyIntolerance.clinicalStatus.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="AllergyIntolerance.clinicalStatus">
+      <path value="AllergyIntolerance.clinicalStatus" />
+      <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.clinicalStatus.extension:allergyIntoleranceEnd">
       <path value="AllergyIntolerance.clinicalStatus.extension" />
       <sliceName value="allergyIntoleranceEnd" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd" />
       </type>
       <isModifier value="false" />
     </element>
+    <element id="AllergyIntolerance.verificationStatus">
+      <path value="AllergyIntolerance.verificationStatus" />
+      <mustSupport value="true" />
+    </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
       <min value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode" />
       </binding>
+    </element>
+    <element id="AllergyIntolerance.patient">
+      <path value="AllergyIntolerance.patient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="AllergyIntolerance.reaction">
+      <path value="AllergyIntolerance.reaction" />
+      <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.reaction.substance">
       <path value="AllergyIntolerance.reaction.substance" />
@@ -91,6 +83,10 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation" />
       </binding>
+    </element>
+    <element id="AllergyIntolerance.reaction.severity">
+      <path value="AllergyIntolerance.reaction.severity" />
+      <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.reaction.exposureRoute">
       <path value="AllergyIntolerance.reaction.exposureRoute" />

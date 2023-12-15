@@ -27,6 +27,22 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
   <differential>
+    <element id="Questionnaire.url">
+      <path value="Questionnaire.url" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.title">
+      <path value="Questionnaire.title" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.status">
+      <path value="Questionnaire.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.subjectType">
+      <path value="Questionnaire.subjectType" />
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.code">
       <path value="Questionnaire.code" />
       <binding>
@@ -34,6 +50,22 @@
         <description value="A set of codes that define questions or groups of questions, consisting of the entirety of the SNOMED CT UK Coding System. This set of codes may not necessarily be complete or appropriate and may require further discussion in the future." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-QuestionnaireQuestionCodes" />
       </binding>
+    </element>
+    <element id="Questionnaire.item">
+      <path value="Questionnaire.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.text">
+      <path value="Questionnaire.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.type">
+      <path value="Questionnaire.item.type" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
