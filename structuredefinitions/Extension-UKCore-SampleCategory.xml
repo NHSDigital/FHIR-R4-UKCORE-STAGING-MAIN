@@ -48,7 +48,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="preferred" />
+        <strength value="extensible" />
         <description value="A set of codes to record the category of the sample" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory" />
       </binding>
