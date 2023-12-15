@@ -5,12 +5,12 @@
       <!-- **************extension start************** -->
       <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem">
         <valueCodeableConcept>
-		  <coding>
+      <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem" />
             <code value="textphone" />
             <display value="Minicom (Textphone)" />
           </coding>
-		</valueCodeableConcept>
+    </valueCodeableConcept>
       </extension>
       <!-- *************extension end *****************-->
     </system>

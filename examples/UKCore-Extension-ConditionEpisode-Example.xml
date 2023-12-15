@@ -3,13 +3,13 @@
     <!--  **************extension start**************  -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode">
         <valueCode value="new" />
-		<valueCodeableConcept>
-		  <coding>
+    <valueCodeableConcept>
+      <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity" />
             <code value="new" />
             <display value="New" />
           </coding>
-		</valueCodeableConcept>
+    </valueCodeableConcept>
     </extension>
     <!--  **************extension end**************  -->
     <subject>

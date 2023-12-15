@@ -2,13 +2,13 @@
 <Observation>
   <id value="UKCore-Extension-RecordingSetting-Example" />
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
-	<valueCodeableConcept>
-	  <coding>
-		<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting" />
-		<code value="residential" />
-		<display value="Residential" />
-	  </coding>
-	</valueCodeableConcept>
+  <valueCodeableConcept>
+    <coding>
+    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting" />
+    <code value="residential" />
+    <display value="Residential" />
+    </coding>
+  </valueCodeableConcept>
   </extension>
   <status value="final" />
   <category>

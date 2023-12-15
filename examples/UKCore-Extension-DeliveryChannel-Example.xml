@@ -2,13 +2,13 @@
   <id value="UKCore-Extension-DeliveryChannel-Example" />
   <!-- ***************extension start*************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
-	<valueCodeableConcept>
-		  <coding>
-			<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeliveryChannel" />
-			<code value="In-person" />
-			<display value="In person" />
-		  </coding>
-		</valueCodeableConcept>
+  <valueCodeableConcept>
+      <coding>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeliveryChannel" />
+      <code value="In-person" />
+      <display value="In person" />
+      </coding>
+    </valueCodeableConcept>
   </extension>
   <!-- **************extension end ****************** -->
   <status value="booked" />
