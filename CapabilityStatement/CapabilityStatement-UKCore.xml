@@ -1,10 +1,10 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="apim-conformance" />
   <url value="https://fhir.hl7.org.uk/CapabilityStatement/ukcore-conformance" />
-  <version value="3.3.0" />
+  <version value="3.2.0" />
   <name value="UKCore" />
   <status value="active" />
-  <date value="2023-12-12T00:00:00+00:00" />
+  <date value="2022-12-16T00:00:00+00:00" />
   <publisher value="HL7 UK" />
   <description value="Conformance requirements for UKCore" />
   <kind value="requirements" />
@@ -20,6 +20,26 @@
     <resource>
       <type value="Appointment" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
+    </resource>
+    <resource>
+      <type value="AuditEvent" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent" />
+    </resource>
+    <resource>
+      <type value="Bundle" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+    </resource>
+    <resource>
+      <type value="CarePlan" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+    </resource>
+    <resource>
+      <type value="CareTeam" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
+    </resource>
+    <resource>
+      <type value="Communication" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
     </resource>
     <resource>
       <type value="Composition" />
@@ -51,12 +71,24 @@
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
     </resource>
     <resource>
+      <type value="EpisodeOfCare" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
+    </resource>
+    <resource>
       <type value="FamilyMemberHistory" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory" />
     </resource>
     <resource>
+      <type value="Flag" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
+    </resource>
+    <resource>
       <type value="HealthcareService" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+    </resource>
+    <resource>
+      <type value="ImagingStudy" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy" />
     </resource>
     <resource>
       <type value="Immunization" />
@@ -97,6 +129,9 @@
     <resource>
       <type value="Observation" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
     </resource>
     <resource>
       <type value="OperationOutcome" />
@@ -127,12 +162,24 @@
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
     </resource>
     <resource>
+      <type value="Provenance" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
+    </resource>
+    <resource>
       <type value="Questionnaire" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
     </resource>
     <resource>
+      <type value="QuestionnaireResponse" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+    </resource>
+    <resource>
       <type value="RelatedPerson" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+    </resource>
+    <resource>
+      <type value="RequestGroup" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup" />
     </resource>
     <resource>
       <type value="Schedule" />
@@ -149,6 +196,10 @@
     <resource>
       <type value="Specimen" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+    </resource>
+    <resource>
+      <type value="Task" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
     </resource>
   </rest>
 </CapabilityStatement>
