@@ -6,7 +6,7 @@
   <name value="ExtensionUKCoreRecordingSetting" />
   <title value="Extension UK Core Recording Setting" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -45,13 +45,8 @@
       <short value="A set of codes to record the care setting" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="CodeableConcept" />
       </type>
-      <binding>
-        <strength value="preferred" />
-        <description value="A set of codes to record the care setting" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-RecordingSetting" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

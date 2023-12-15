@@ -2,7 +2,13 @@
 <id value="UKCore-Extension-BirthSex-Example" />
   <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
-  <valueCode value="F" />
+    <valueCodeableConcept>
+	  <coding>
+		<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-BirthSex" />
+		<code value="F" />
+		<display value="Female" />
+      </coding>
+	</valueCodeableConcept>
   </extension>
   <!-- **************extension end************** -->
 </Patient>
