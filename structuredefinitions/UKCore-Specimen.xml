@@ -67,10 +67,6 @@
       <path value="Specimen.receivedTime" />
       <mustSupport value="true" />
     </element>
-    <element id="Specimen.request">
-      <path value="Specimen.request" />
-      <mustSupport value="true" />
-    </element>
     <element id="Specimen.collection.extension:specialHandling">
       <path value="Specimen.collection.extension" />
       <sliceName value="specialHandling" />
