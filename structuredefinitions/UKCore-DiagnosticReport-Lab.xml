@@ -24,7 +24,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="DiagnosticReport" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
     <element id="DiagnosticReport">
@@ -32,10 +32,69 @@
       <constraint>
         <key value="ukcore-diag-lab-001" />
         <severity value="warning" />
-        <human value="An effective time SHOULD be present if status = partial, preliminary, final, amended, corrected or appended" />
-        <expression value="effective.exists() or (effective.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
+        <human value="An issued time SHOULD be present if status = partial, preliminary, final, amended, corrected or appended" />
+        <expression value="issued.exists() or (effective.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
       </constraint>
     </element>
+    <element id="DiagnosticReport.extension">
+      <path value="DiagnosticReport.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DiagnosticReport.extension:compositionReferenceR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="compositionReferenceR5" />
+      <short value="A Composition reference for a DiagnosticReport. This is a R5 backport." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:compositionReferenceR5.value[x]">
+      <path value="DiagnosticReport.extension.value[x]" />
+      <short value="Reference to a Composition resource." />
+      <definition value="Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
+    </element>
+    <element id="DiagnosticReport.extension:noteR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="noteR5" />
+      <short value="Comments about the diagnostic report. This is a R5 backport." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:noteR5.value[x]">
+      <path value="DiagnosticReport.extension.value[x]" />
+      <short value="Comments about the diagnostic report." />
+      <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
+    </element>
+    <element id="DiagnosticReport.extension:supportingInfoR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="supportingInfoR5" />
+      <short value="Additional info supporting the diagnostic report. This is a R5 backport." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.status">
+      <path value="DiagnosticReport.status" />
+      <mustSupport value="true" />
+    </element>    
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <slicing>
@@ -46,6 +105,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category:laboratory">
       <path value="DiagnosticReport.category" />
@@ -63,30 +123,53 @@
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="721981007" />
-          <display value="Diagnostic studies report" />
-        </coding>
-      </fixedCodeableConcept>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
+      </binding>
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer.extension:deviceReference">
+      <path value="DiagnosticReport.performer.extension" />
+      <sliceName value="deviceReference" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
+      <path value="DiagnosticReport.resultsInterpreter.extension" />
+      <sliceName value="deviceReference" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.conclusionCode">
+      <path value="DiagnosticReport.conclusionCode" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
