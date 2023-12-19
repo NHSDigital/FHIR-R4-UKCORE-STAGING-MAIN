@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Observation-Lab" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-  <version value="1.1.0" />
-  <name value="UKCoreObservationLab" />
-  <title value="UK Core Observation Lab" />
+  <id value="UKCore-Observation-Group-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
+  <version value="2.0.0" />
+  <name value="UKCoreObservationGroupLab" />
+  <title value="UK Core Observation Group Lab" />
   <status value="active" />
-  <date value="2023-11-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="This derived profile represents an individual Laboratory test and result value. These tests can be grouped together using the Observation-LabGroup Profile." />
-  <purpose value="To provide the minimum expectations for each individual Laboratory test." />
+  <description value="This profile allows the grouping of multiple Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count." />
+  <purpose value="This profile allows the creation of a report for results borne from a single request panel, or profile, e.g. Full Blood Count, Lipid Profile, etc. allowing the results to be logically ordered according to the given profile and/or best practice guidelines." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -30,10 +30,10 @@
     <element id="Observation">
       <path value="Observation" />
       <constraint>
-        <key value="ukcore-obs-lab-001" />
+        <key value="ukcore-obs-labgrp-001" />
         <severity value="warning" />
-        <human value="Either value, dataAbsentReason or note SHOULD be populated" />
-        <expression value="value.exists() or dataAbsentReason.exists() or note.exists()" />
+        <human value="value[x] SHOULD NOT be used within this Profile" />
+        <expression value="value.empty()" />
       </constraint>
     </element>
     <element id="Observation.extension:triggeredByR5">
@@ -81,6 +81,10 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
       </type>
     </element>
+    <element id="Observation.extension:bodyStructureR5.url">
+      <path value="Observation.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <slicing>
@@ -110,15 +114,15 @@
       <path value="Observation.code" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test results" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineObservables" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and test group results" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
       </binding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Observation.bodySite">
@@ -132,6 +136,10 @@
       <binding>
         <strength value="preferred" />
       </binding>
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
