@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-DiagnosticReportSupportingInfo" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
-  <version value="1.0.0" />
-  <name value="ExtensionUKCoreDiagnosticReportSupportingInfo" />
-  <title value="Extension UK Core Diagnostic Report Supporting Info" />
-  <status value="draft" />
+  <id value="Extension-UKCore-ObservationTriggeredBy" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
+  <version value="1.1.0" />
+  <name value="ExtensionUKCoreObservationTriggeredBy" />
+  <title value="Extension UK Core Observation Triggered By" />
+  <status value="active" />
   <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -17,8 +17,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to support adding additional info supporting the diagnostic report." />
-  <purpose value="This is a Pathology use case to support the backporting of R5 functionality to support adding additional supporting information that was used in the creation of the diagnostic report." />
+  <description value="This extension supports the sharing of the observation(s) that triggered the performance of the main observation." />
+  <purpose value="This is a Pathology use case to backport R5 functionality to identify the observation(s) that triggered the performance of this observation." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -30,7 +30,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport" />
+    <expression value="Observation" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -38,8 +38,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Additional information supporting the diagnostic report." />
-      <definition value="This backbone element contains supporting information that was used in the creation of the report not included in the results already included in the report." />
+      <short value="Triggering observation(s)" />
+      <definition value="Identifies the observation(s) that triggered the performance of this observation." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -50,18 +50,38 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:observation">
+      <path value="Extension.extension" />
+      <sliceName value="observation" />
+      <short value="Triggering observation" />
+      <definition value="Reference to the triggering observation." />
       <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:observation.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="observation" />
+    </element>
+    <element id="Extension.extension:observation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+      </type>
     </element>
     <element id="Extension.extension:type">
       <path value="Extension.extension" />
       <sliceName value="type" />
-      <short value="Supporting information role code." />
-      <definition value="The code value for the role of the supporting information in the diagnostic report." />
+      <short value="reflex | repeat | re-run" />
+      <definition value="The type of trigger. Reflex | Repeat | Re-run." />
       <min value="1" />
       <max value="1" />
       <binding>
-        <strength value="example" />
-        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0936" />
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-triggeredbytype" />
       </binding>
     </element>
     <element id="Extension.extension:type.url">
@@ -72,36 +92,31 @@
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="code" />
       </type>
     </element>
-    <element id="Extension.extension:reference">
+    <element id="Extension.extension:reason">
       <path value="Extension.extension" />
-      <sliceName value="reference" />
-      <short value="Who or what participated in the activities related to the family member history." />
-      <definition value="The reference for the supporting information in the diagnostic report." />
-      <min value="1" />
+      <sliceName value="reason" />
+      <short value="Reason that the observation was triggered" />
+      <definition value="Provides the reason why this observation was performed as a result of the observation(s) referenced." />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:reference.url">
+    <element id="Extension.extension:reason.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="reference" />
+      <fixedUri value="reason" />
     </element>
-    <element id="Extension.extension:reference.value[x]">
+    <element id="Extension.extension:reason.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
-      <max value="1" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Citation" />
+        <code value="string" />
       </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

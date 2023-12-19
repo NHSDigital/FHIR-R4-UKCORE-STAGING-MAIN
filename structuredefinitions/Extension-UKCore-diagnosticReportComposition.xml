@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-CompositionReference" />
+  <id value="Extension-UKCore-DiagnosticReportComposition" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition" />
-  <version value="1.0.0" />
-  <name value="ExtensionUKCoreCompositionReference" />
-  <title value="Extension UK Core Composition Reference" />
+  <version value="1.1.0" />
+  <name value="ExtensionUKCoreDiagnosticReportComposition" />
+  <title value="Extension UK Core Diagnostic Report Composition" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
