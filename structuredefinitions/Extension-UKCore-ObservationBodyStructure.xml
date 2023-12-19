@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ObservationBodyStructure" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
-  <version value="0.0.1" />
+  <version value="1.0.0" />
   <name value="ExtensionUKCoreObservationBodyStructure" />
-  <title value="Extension UK Core Observation BodyStructure" />
-  <status value="draft" />
-  <date value="2023-11-28" />
+  <title value="Extension UK Core Observation Body Structure" />
+  <status value="active" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
