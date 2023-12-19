@@ -31,6 +31,10 @@
       <path value="HealthcareService.providedBy" />
       <mustSupport value="true" />
     </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="HealthcareService.specialty">
       <path value="HealthcareService.specialty" />
       <binding>
