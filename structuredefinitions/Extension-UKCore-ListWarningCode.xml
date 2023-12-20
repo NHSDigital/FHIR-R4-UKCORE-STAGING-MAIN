@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ListWarningCode" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode" />
-  <version value="2.1.0" />
+  <version value="3.0.0" />
   <name value="ExtensionUKCoreListWarningCode" />
   <title value="Extension UK Core List Warning Code" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -51,13 +51,8 @@
       <definition value="To capture warnings that the list may be incomplete." />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="CodeableConcept" />
       </type>
-      <binding>
-        <strength value="extensible" />
-        <description value="To identify the reason a list may be incomplete." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListWarningCode" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

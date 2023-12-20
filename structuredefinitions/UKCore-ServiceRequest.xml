@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCoreServiceRequest" />
   <title value="UK Core ServiceRequest" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,52 +21,15 @@
   <purpose value="This profile is a record of a request for a procedure or diagnostic or other service to be planned, proposed, or performed, as distinguished by the ServiceRequest.intent field value, with or on a patient." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="quick" />
-    <uri value="http://siframework.org/cqf" />
-    <name value="Quality Improvement and Clinical Knowledge (QUICK)" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="ServiceRequest" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
   <derivation value="constraint" />
   <differential>
-    <element id="ServiceRequest.extension">
-      <path value="ServiceRequest.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="ServiceRequest.extension:sourceOfServiceRequest">
       <path value="ServiceRequest.extension" />
       <sliceName value="sourceOfServiceRequest" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -77,7 +40,6 @@
     <element id="ServiceRequest.extension:additionalContact">
       <path value="ServiceRequest.extension" />
       <sliceName value="additionalContact" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
@@ -87,7 +49,6 @@
     <element id="ServiceRequest.extension:coverage">
       <path value="ServiceRequest.extension" />
       <sliceName value="coverage" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -95,49 +56,17 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="ServiceRequest.identifier.assigner">
-      <path value="ServiceRequest.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="ServiceRequest.basedOn">
       <path value="ServiceRequest.basedOn" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.basedOn.identifier.assigner">
-      <path value="ServiceRequest.basedOn.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="ServiceRequest.status">
+      <path value="ServiceRequest.status" />
+      <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.replaces">
-      <path value="ServiceRequest.replaces" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-      </type>
-    </element>
-    <element id="ServiceRequest.replaces.identifier.assigner">
-      <path value="ServiceRequest.replaces.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.requisition.assigner">
-      <path value="ServiceRequest.requisition.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category" />
@@ -148,6 +77,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.category:genomicsWholeCaseSequencing">
       <path value="ServiceRequest.category" />
@@ -163,21 +93,13 @@
       <path value="ServiceRequest.category.coding.system" />
       <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
     </element>
-    <element id="ServiceRequest.priority.extension">
-      <path value="ServiceRequest.priority.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="ServiceRequest.priority">
+      <path value="ServiceRequest.priority" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.priority.extension:priorityReason">
       <path value="ServiceRequest.priority.extension" />
       <sliceName value="priorityReason" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
@@ -186,6 +108,7 @@
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
@@ -201,88 +124,15 @@
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.subject.identifier.assigner">
-      <path value="ServiceRequest.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.encounter">
-      <path value="ServiceRequest.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-      </type>
-    </element>
-    <element id="ServiceRequest.encounter.identifier.assigner">
-      <path value="ServiceRequest.encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="ServiceRequest.authoredOn">
+      <path value="ServiceRequest.authoredOn" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="ServiceRequest.requester.identifier.assigner">
-      <path value="ServiceRequest.requester.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.performer">
-      <path value="ServiceRequest.performer" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="ServiceRequest.performer.identifier.assigner">
-      <path value="ServiceRequest.performer.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.locationReference">
-      <path value="ServiceRequest.locationReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-      </type>
-    </element>
-    <element id="ServiceRequest.locationReference.identifier.assigner">
-      <path value="ServiceRequest.locationReference.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.reasonCode">
       <path value="ServiceRequest.reasonCode" />
@@ -292,70 +142,11 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode" />
       </binding>
     </element>
-    <element id="ServiceRequest.reasonReference">
-      <path value="ServiceRequest.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      </type>
-    </element>
-    <element id="ServiceRequest.reasonReference.identifier.assigner">
-      <path value="ServiceRequest.reasonReference.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.insurance.identifier.assigner">
-      <path value="ServiceRequest.insurance.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.supportingInfo.identifier.assigner">
-      <path value="ServiceRequest.supportingInfo.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.specimen">
-      <path value="ServiceRequest.specimen" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-      </type>
-    </element>
-    <element id="ServiceRequest.specimen.identifier.assigner">
-      <path value="ServiceRequest.specimen.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="ServiceRequest.bodySite">
       <path value="ServiceRequest.bodySite" />
       <binding>
         <strength value="preferred" />
       </binding>
-    </element>
-    <element id="ServiceRequest.relevantHistory">
-      <path value="ServiceRequest.relevantHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
-      </type>
-    </element>
-    <element id="ServiceRequest.relevantHistory.identifier.assigner">
-      <path value="ServiceRequest.relevantHistory.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

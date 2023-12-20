@@ -30,7 +30,7 @@
     <element id="Observation">
       <path value="Observation" />
       <constraint>
-        <key value="ukcore-obs-labgrp-001" />
+        <key value="ukcore-obs-grplab-001" />
         <severity value="warning" />
         <human value="value[x] SHOULD NOT be used within this Profile" />
         <expression value="value.empty()" />
