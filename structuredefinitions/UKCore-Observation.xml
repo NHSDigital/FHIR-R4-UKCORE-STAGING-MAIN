@@ -63,6 +63,15 @@
       <short value="Reason that the observation was triggered." />
       <definition value="Provides the reason why this observation was performed as a result of the observation referenced." />
     </element>
+    <element id="Observation.extension:bodyStructureR5">
+      <path value="Observation.extension" />
+      <sliceName value="bodyStructureR5" />
+      <short value="Observed body structure. This is a R5 backport." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
+      </type>
+    </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <mustSupport value="true" />

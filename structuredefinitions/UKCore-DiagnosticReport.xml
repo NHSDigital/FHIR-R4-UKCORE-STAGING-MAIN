@@ -57,6 +57,17 @@
       <path value="DiagnosticReport.extension.value[x]" />
       <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
     </element>
+    <element id="DiagnosticReport.extension:supportingInfoR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="supportingInfoR5" />
+      <short value="Additional info supporting the diagnostic report. This is a R5 backport." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
       <mustSupport value="true" />
