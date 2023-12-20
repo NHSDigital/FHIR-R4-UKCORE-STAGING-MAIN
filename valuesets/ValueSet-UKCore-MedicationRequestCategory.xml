@@ -1,5 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-<id value="UKCore-MedicationRequestCategory" />
+  <id value="UKCore-MedicationRequestCategory" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
   <version value="1.1.1" />
   <name value="UKCoreMedicationRequestCategory" />
@@ -60,7 +60,7 @@
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
       <code value="primarycare" />
       <display value="Primary Care" />
-      <inactive value="True" />
+      <inactive value="true" />
     </contains>
   </expansion>
 </ValueSet>
