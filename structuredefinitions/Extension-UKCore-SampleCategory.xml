@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-SampleCategory" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreSampleCategory" />
   <title value="Extension UK Core Sample Category" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -47,11 +47,8 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Extension.value[x].coding">
-      <path value="Extension.value[x].coding" />
       <binding>
-        <strength value="preferred" />
+        <strength value="extensible" />
         <description value="A set of codes to record the category of the sample" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory" />
       </binding>
