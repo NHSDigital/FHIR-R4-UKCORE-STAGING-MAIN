@@ -4,11 +4,13 @@
 		<!-- **************extension start************** -->
 		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
 			<extension url="type">
-				<valueCoding>
-					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
-					<code value="PAF"/>
-					<display value="Postcode Address File"/>
-				</valueCoding>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
+            <code value="PAF" />
+            <display value="Postcode Address File" />
+          </coding>
+        </valueCodeableConcept>
 			</extension>
 			<extension url="value">
 				<valueString value="LS10ABC"/>
