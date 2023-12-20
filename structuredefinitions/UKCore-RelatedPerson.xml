@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-RelatedPerson" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCoreRelatedPerson" />
   <title value="UK Core RelatedPerson" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,42 +21,15 @@
   <purpose value="This profile allows exchange of information about a person that is involved in the care for an individual, but who is not the target of healthcare, nor has a formal responsibility in the care process." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="RelatedPerson" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
   <derivation value="constraint" />
   <differential>
-    <element id="RelatedPerson.extension">
-      <path value="RelatedPerson.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="RelatedPerson.extension:contactPreference">
       <path value="RelatedPerson.extension" />
       <sliceName value="contactPreference" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
@@ -65,59 +38,66 @@
     <element id="RelatedPerson.extension:copyCorrespondenceIndicator">
       <path value="RelatedPerson.extension" />
       <sliceName value="copyCorrespondenceIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
       </type>
     </element>
-    <element id="RelatedPerson.identifier.assigner">
-      <path value="RelatedPerson.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="RelatedPerson.active">
+      <path value="RelatedPerson.active" />
+      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="RelatedPerson.patient.identifier.assigner">
-      <path value="RelatedPerson.patient.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.relationship">
       <path value="RelatedPerson.relationship" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
-    <element id="RelatedPerson.telecom.system.extension">
-      <path value="RelatedPerson.telecom.system.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="RelatedPerson.name">
+      <path value="RelatedPerson.name" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.telecom">
+      <path value="RelatedPerson.telecom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.telecom.system">
+      <path value="RelatedPerson.telecom.system" />
+      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.telecom.system.extension:otherContactSystem">
       <path value="RelatedPerson.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
       </type>
+    </element>
+    <element id="RelatedPerson.telecom.value">
+      <path value="RelatedPerson.telecom.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.address">
+      <path value="RelatedPerson.address" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.address.line">
+      <path value="RelatedPerson.address.line" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.address.city">
+      <path value="RelatedPerson.address.city" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.address.postalCode">
+      <path value="RelatedPerson.address.postalCode" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

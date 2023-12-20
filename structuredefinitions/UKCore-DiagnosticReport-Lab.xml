@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport-Lab" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreDiagnosticReportLab" />
   <title value="UK Core DiagnosticReport Lab" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -32,8 +32,8 @@
       <constraint>
         <key value="ukcore-diag-lab-001" />
         <severity value="warning" />
-        <human value="An effective time SHOULD be present if status = partial, preliminary, final, amended, corrected or appended" />
-        <expression value="effective.exists() or (effective.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
+        <human value="An issued time SHOULD be present if status = partial, preliminary, final, amended, corrected or appended" />
+        <expression value="issued.exists() or (isseud.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
       </constraint>
     </element>
     <element id="DiagnosticReport.category">
@@ -74,19 +74,6 @@
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.result">
-      <path value="DiagnosticReport.result" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
