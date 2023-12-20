@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-CompositionReference" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition" />
+  <id value="Extension-UKCore-SpecimenCollectionCollector" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
   <version value="1.0.0" />
-  <name value="ExtensionUKCoreCompositionReference" />
-  <title value="Extension UK Core Composition Reference" />
+  <name value="ExtensionUKCoreSpecimenCollectionCollector" />
+  <title value="Extension UK Core Specimen Collection Collector" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,20 +17,15 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="This extension allows a Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
-  <purpose value="This is a use case from Genomics to backport R5 functionality and align with HL7 EU laboratory IG." />
+  <description value="Allows the referencing of Patient and RelatedPerson within Specimen.collection." />
+  <purpose value="This is a use case from Genomics to backport R5 functionality extending the referencing of Specimen.collection.collector to include Patient and RelatedPerson" />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport" />
+    <expression value="Specimen.collection.collector" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -38,21 +33,21 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="A Composition reference for a DiagnosticReport." />
-      <definition value="A Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
+      <short value="Person who collected the specimen." />
+      <definition value="Person who collected the specimen." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Reference to a Composition resource for the DiagnosticReport structure" />
-      <definition value="The Composition provides structure to the content of the DiagnosticReport (and only contains contents referenced in the DiagnosticReport) - e.g., to order the sections of an anatomic pathology structured report." />
+      <short value="Person who collected the specimen." />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
     </element>
   </differential>
