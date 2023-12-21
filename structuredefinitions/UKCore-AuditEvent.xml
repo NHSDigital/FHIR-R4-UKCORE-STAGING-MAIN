@@ -56,4 +56,6 @@
   <type value="AuditEvent" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
   <derivation value="constraint" />
+  <differential>
+  </differential>
 </StructureDefinition>
