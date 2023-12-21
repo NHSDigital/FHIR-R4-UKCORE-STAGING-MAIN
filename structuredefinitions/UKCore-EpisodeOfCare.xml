@@ -5,7 +5,7 @@
   <name value="UKCoreEpisodeOfCare" />
   <title value="UK Core EpisodeOfCare" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -41,110 +41,17 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
   <derivation value="constraint" />
   <differential>
-    <element id="EpisodeOfCare.identifier.assigner">
-      <path value="EpisodeOfCare.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.diagnosis.condition">
-      <path value="EpisodeOfCare.diagnosis.condition" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.diagnosis.condition.identifier.assigner">
-      <path value="EpisodeOfCare.diagnosis.condition.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="EpisodeOfCare.patient">
       <path value="EpisodeOfCare.patient" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="EpisodeOfCare.patient.identifier.assigner">
-      <path value="EpisodeOfCare.patient.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.managingOrganization">
-      <path value="EpisodeOfCare.managingOrganization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.managingOrganization.identifier.assigner">
-      <path value="EpisodeOfCare.managingOrganization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="EpisodeOfCare.period">
       <path value="EpisodeOfCare.period" />
       <mustSupport value="true" />
     </element>
-    <element id="EpisodeOfCare.referralRequest">
-      <path value="EpisodeOfCare.referralRequest" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.referralRequest.identifier.assigner">
-      <path value="EpisodeOfCare.referralRequest.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="EpisodeOfCare.careManager">
       <path value="EpisodeOfCare.careManager" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="EpisodeOfCare.careManager.identifier.assigner">
-      <path value="EpisodeOfCare.careManager.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.team">
-      <path value="EpisodeOfCare.team" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.team.identifier.assigner">
-      <path value="EpisodeOfCare.team.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.account.identifier.assigner">
-      <path value="EpisodeOfCare.account.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
