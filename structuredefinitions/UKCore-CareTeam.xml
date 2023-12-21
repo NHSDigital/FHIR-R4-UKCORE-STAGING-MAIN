@@ -41,4 +41,26 @@
   <type value="CareTeam" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
   <derivation value="constraint" />
+  <differential>
+    <element id="CareTeam.status">
+      <path value="CareTeam.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.subject">
+      <path value="CareTeam.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.participant">
+      <path value="CareTeam.participant" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.participant.role">
+      <path value="CareTeam.participant.role" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.participant.member">
+      <path value="CareTeam.participant.member" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

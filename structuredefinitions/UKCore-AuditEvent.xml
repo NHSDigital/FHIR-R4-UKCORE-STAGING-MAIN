@@ -56,4 +56,10 @@
   <type value="AuditEvent" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
   <derivation value="constraint" />
+  <differential>
+    <element id="AuditEvent.agent">
+      <path value="AuditEvent.agent" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

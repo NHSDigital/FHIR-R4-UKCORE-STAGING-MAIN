@@ -41,4 +41,10 @@
   <type value="Communication" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Communication.subject">
+      <path value="Communication.subject" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>
