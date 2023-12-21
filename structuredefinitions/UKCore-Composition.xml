@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Composition" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreComposition" />
   <title value="UK Core Composition" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,31 +21,6 @@
   <purpose value="This profile allows a record of a set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. &#xD;&#xA;&#xD;&#xA;A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition SHALL be the first entry in a Bundle where `Bundle.type=document`, and any other resources referenced from Composition SHALL be included as subsequent entries in the Bundle, for example Patient, Practitioner, Encounter, etc." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="cda" />
-    <uri value="http://hl7.org/v3/cda" />
-    <name value="CDA (R2)" />
-  </mapping>
-  <mapping>
-    <identity value="fhirdocumentreference" />
-    <uri value="http://hl7.org/fhir/documentreference" />
-    <name value="FHIR DocumentReference" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Composition" />
@@ -56,37 +31,23 @@
       <path value="Composition" />
       <definition value="A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition SHALL be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition SHALL be included as subsequent entries in the Bundle, for example Patient, Practitioner, Encounter, etc." />
     </element>
-    <element id="Composition.extension">
-      <path value="Composition.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Composition.extension:careSettingType">
       <path value="Composition.extension" />
       <sliceName value="careSettingType" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType" />
       </type>
     </element>
-    <element id="Composition.identifier.assigner">
-      <path value="Composition.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.type">
       <path value="Composition.type" />
       <short value="Kind of composition (SNOMED CT)" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="SNOMED CT Document Type" />
@@ -95,101 +56,27 @@
     </element>
     <element id="Composition.category">
       <path value="Composition.category" />
-      <definition value="A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type." />
       <binding>
         <strength value="preferred" />
         <description value="A ValueSet to identify the category of a composition." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionCategory" />
       </binding>
     </element>
-    <element id="Composition.subject.identifier.assigner">
-      <path value="Composition.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.encounter">
-      <path value="Composition.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-      </type>
-    </element>
-    <element id="Composition.encounter.identifier.assigner">
-      <path value="Composition.encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.author">
       <path value="Composition.author" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.author.identifier.assigner">
-      <path value="Composition.author.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.attester.party">
-      <path value="Composition.attester.party" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.attester.party.identifier.assigner">
-      <path value="Composition.attester.party.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.custodian">
       <path value="Composition.custodian" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.custodian.identifier.assigner">
-      <path value="Composition.custodian.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.relatesTo.target[x]">
-      <path value="Composition.relatesTo.target[x]" />
-      <type>
-        <code value="Identifier" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition" />
-      </type>
-    </element>
-    <element id="Composition.event.detail.identifier.assigner">
-      <path value="Composition.event.detail.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section.code">
       <path value="Composition.section.code" />
@@ -197,39 +84,6 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode" />
       </binding>
-    </element>
-    <element id="Composition.section.author">
-      <path value="Composition.section.author" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
-    <element id="Composition.section.author.identifier.assigner">
-      <path value="Composition.section.author.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.section.focus.identifier.assigner">
-      <path value="Composition.section.focus.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Composition.section.entry.identifier.assigner">
-      <path value="Composition.section.entry.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

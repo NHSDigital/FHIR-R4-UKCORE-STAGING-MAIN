@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ConditionEpisode" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
-  <version value="2.2.0" />
+  <version value="3.0.0" />
   <name value="ExtensionUKCoreConditionEpisode" />
   <title value="Extension UK Core Condition Episode" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -51,13 +51,8 @@
       <definition value="The episodicity value of the condition can be represented by one of the following codes: &#xD;&#xA;first | new | review | end" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="CodeableConcept" />
       </type>
-      <binding>
-        <strength value="extensible" />
-        <description value="A ValueSet to identify the episodicity of a condition." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionEpisodicity" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
