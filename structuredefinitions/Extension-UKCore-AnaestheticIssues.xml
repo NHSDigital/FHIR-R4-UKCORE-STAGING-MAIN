@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-AnaestheticIssues" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AnaestheticIssues" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="ExtensionUKCoreAnaestheticIssues" />
   <title value="Extension UK Core Anaesthetic Issues" />
   <status value="retired" />
@@ -55,7 +55,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
       </type>
       <binding>
         <strength value="preferred" />

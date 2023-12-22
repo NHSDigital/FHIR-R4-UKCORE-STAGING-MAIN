@@ -2,7 +2,13 @@
     <id value="UKCore-Extension-ListWarningCode-Example" />
     <!--  **************extension start**************  -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode">
-        <valueCode value="data-in-transit" />
+      <valueCodeableConcept>
+      <coding>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode" />
+      <code value="data-in-transit" />
+      <display value="Data in Transit" />
+      </coding>
+    </valueCodeableConcept>
     </extension>
     <!--  **************extension end**************  -->
     <status value="current" />
