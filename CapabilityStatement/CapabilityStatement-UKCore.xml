@@ -30,10 +30,6 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition"/>
 		</resource>
 		<resource>
-			<type value="Consent"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"/>
-		</resource>
-		<resource>
 			<type value="DiagnosticReport"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"/>
 			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab"/>
@@ -43,24 +39,12 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter"/>
 		</resource>
 		<resource>
-			<type value="EpisodeOfCare"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare"/>
-		</resource>
-		<resource>
 			<type value="FamilyMemberHistory"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory"/>
 		</resource>
 		<resource>
-			<type value="Flag"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag"/>
-		</resource>
-		<resource>
 			<type value="HealthcareService"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"/>
-		</resource>
-		<resource>
-			<type value="ImagingStudy"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy"/>
 		</resource>
 		<resource>
 			<type value="Immunization"/>
@@ -95,19 +79,10 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
 		</resource>
 		<resource>
-			<type value="MessageHeader"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
-		</resource>
-		<resource>
 			<type value="Observation"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
-			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup"/>
+			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab"/>
 			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab"/>
-			<supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"/>
-		</resource>
-		<resource>
-			<type value="OperationOutcome"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"/>
 		</resource>
 		<resource>
 			<type value="Organization"/>
@@ -134,10 +109,6 @@
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"/>
 		</resource>
 		<resource>
-			<type value="QuestionnaireResponse"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
-		</resource>
-		<resource>
 			<type value="RelatedPerson"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"/>
 		</resource>
@@ -156,10 +127,6 @@
 		<resource>
 			<type value="Specimen"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"/>
-		</resource>
-		<resource>
-			<type value="Task"/>
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"/>
 		</resource>
 	</rest>
 </CapabilityStatement>
