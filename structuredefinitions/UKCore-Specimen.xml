@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Specimen" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreSpecimen" />
   <title value="UK Core Specimen" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,21 +21,6 @@
   <purpose value="This profile allows exchange of information about a sample to be used for analysis." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Specimen" />
@@ -51,21 +36,9 @@
         <expression value="collection.collector.reference.empty() or collection.collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
       </constraint>
     </element>
-    <element id="Specimen.extension">
-      <path value="Specimen.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Specimen.extension:sampleCategory">
       <path value="Specimen.extension" />
       <sliceName value="sampleCategory" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -73,22 +46,13 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Specimen.identifier.assigner">
-      <path value="Specimen.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Specimen.accessionIdentifier.assigner">
-      <path value="Specimen.accessionIdentifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Specimen.status">
+      <path value="Specimen.status" />
+      <mustSupport value="true" />
     </element>
     <element id="Specimen.type">
       <path value="Specimen.type" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED CT UK Clinical Terminology coding system" />
@@ -97,95 +61,25 @@
     </element>
     <element id="Specimen.subject">
       <path value="Specimen.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="Specimen.subject.identifier.assigner">
-      <path value="Specimen.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Specimen.parent">
-      <path value="Specimen.parent" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-      </type>
-    </element>
-    <element id="Specimen.parent.identifier.assigner">
-      <path value="Specimen.parent.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Specimen.request">
-      <path value="Specimen.request" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-      </type>
-    </element>
-    <element id="Specimen.request.identifier.assigner">
-      <path value="Specimen.request.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Specimen.collection.extension">
-      <path value="Specimen.collection.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime" />
+      <mustSupport value="true" />
     </element>
     <element id="Specimen.collection.extension:specialHandling">
       <path value="Specimen.collection.extension" />
       <sliceName value="specialHandling" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling" />
       </type>
-    </element>
-    <element id="Specimen.collection.collector">
-      <path value="Specimen.collection.collector" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
-    </element>
-    <element id="Specimen.collection.collector.extension">
-      <path value="Specimen.collection.collector.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
     </element>
     <element id="Specimen.collection.collector.extension:collectionCollectorR5">
       <path value="Specimen.collection.collector.extension" />
       <sliceName value="collectionCollectorR5" />
       <short value="Person who collected the specimen" />
       <definition value="Person who collected the specimen. This is an R5 backport" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -197,13 +91,6 @@
       <path value="Specimen.collection.collector.extension.value[x]" />
       <short value="Person who collected the specimen" />
     </element>
-    <element id="Specimen.collection.collector.identifier.assigner">
-      <path value="Specimen.collection.collector.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Specimen.collection.bodySite">
       <path value="Specimen.collection.bodySite" />
       <binding>
@@ -211,22 +98,10 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite" />
       </binding>
     </element>
-    <element id="Specimen.collection.bodySite.extension">
-      <path value="Specimen.collection.bodySite.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Specimen.collection.bodySite.extension:bodySiteReference">
       <path value="Specimen.collection.bodySite.extension" />
       <sliceName value="bodySiteReference" />
       <short value="An extension to allow referencing to a BodyStructure" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -237,20 +112,6 @@
     <element id="Specimen.collection.bodySite.extension:bodySiteReference.value[x]">
       <path value="Specimen.collection.bodySite.extension.value[x]" />
       <short value="A reference to a BodyStructure" />
-    </element>
-    <element id="Specimen.processing.additive.identifier.assigner">
-      <path value="Specimen.processing.additive.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Specimen.container.identifier.assigner">
-      <path value="Specimen.container.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="Specimen.container.type">
       <path value="Specimen.container.type" />
@@ -264,19 +125,6 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState" />
       </binding>
-    </element>
-    <element id="Specimen.note.author[x]">
-      <path value="Specimen.note.author[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
