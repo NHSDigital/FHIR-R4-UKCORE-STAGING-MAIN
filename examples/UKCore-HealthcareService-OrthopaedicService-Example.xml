@@ -64,18 +64,21 @@
   </characteristic>
   <referralMethod>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method" />
       <code value="phone" />
       <display value="Phone" />
     </coding>
   </referralMethod>
   <referralMethod>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method" />
       <code value="elec" />
       <display value="Secure Messaging" />
     </coding>
   </referralMethod>
   <referralMethod>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method" />
       <code value="semail" />
       <display value="Secure Email" />
     </coding>

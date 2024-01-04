@@ -15,7 +15,7 @@
       <display value="Illicit drug use unknown" />
       <userSelected value="true" />
     </coding>
-    <text value=" Not known whether uses illicit drugs" />
+    <text value="Not known whether uses illicit drugs" />
     <!-- what the user saw on screen, from a data entry template -->
   </code>
   <!-- **************Snippet end************** -->

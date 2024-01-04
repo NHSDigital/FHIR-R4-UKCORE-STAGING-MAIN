@@ -20,6 +20,7 @@
   <action>
     <type>
       <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/action-type" />
         <code value="create" />
       </coding>
     </type>
