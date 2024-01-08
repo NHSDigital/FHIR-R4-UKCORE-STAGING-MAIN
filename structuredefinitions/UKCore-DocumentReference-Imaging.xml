@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-DocumentReference-Imaging" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference-Imaging" />
+  <version value="0.0.1" />
+  <name value="UKCoreDocumentReferenceImaging" />
+  <title value="UK Core DocumentReference Imaging" />
+  <status value="draft" />
+  <date value="2023-11-22" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="TBA" />
+  <purpose value="This profile supports a reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any serialised object with a mime-type, so includes formal patient centric documents (CDA), clinical notes, scanned paper, and non-patient specific documents like policy text." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DocumentReference" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DocumentReference.masterIdentifier">
+      <path value="DocumentReference.masterIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="721981007" />
+          <display value="Diagnostic Studies Report" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="DocumentReference.category">
+      <path value="DocumentReference.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="DocumentReference.category:examCode">
+      <path value="DocumentReference.category" />
+      <sliceName value="examCode" />
+      <short value="Exam Code" />
+      <definition value="An NICIP code for radiology pointers, a.k.a. “Exam code”" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-NICIP" />
+      </binding>
+    </element>
+    <element id="DocumentReference.subject">
+      <path value="DocumentReference.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
