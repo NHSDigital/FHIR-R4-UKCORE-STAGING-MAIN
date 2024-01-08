@@ -7,18 +7,18 @@
   <identifier>
     <type>
       <coding>
-	    <system value="http://terminology.hl7.org/CodeSystem/v2-0203" /> <!-- Study ID - Accession Number -->
-		<code value="ACSN" />
-		<display value ="Accession ID" />
-	  </coding>
-	</type>
-	<system value = "https://fhir.nhs.uk/Id/ods-organization-code/Y05868" />
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0203" /> <!-- Study ID - Accession Number -->
+    <code value="ACSN" />
+    <display value ="Accession ID" />
+    </coding>
+  </type>
+  <system value = "https://fhir.nhs.uk/Id/ods-organization-code/Y05868" />
     <value value="123456789" />
   </identifier>
   <status value="current" />
   <type>
     <coding>
-	  <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
+    <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
       <code value="721981007" />
       <display value="Diagnostic studies report" />
 	</coding>

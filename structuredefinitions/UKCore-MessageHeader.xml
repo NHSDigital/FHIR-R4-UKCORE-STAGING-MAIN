@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MessageHeader" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreMessageHeader" />
   <title value="UK Core MessageHeader" />
-  <status value="active" />
-  <date value="2023-04-28" />
+  <status value="draft" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,21 +21,6 @@
   <purpose value="This profile carries the header data for a message exchange that is either requesting or responding to an action." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="MessageHeader" />
@@ -44,124 +29,28 @@
   <differential>
     <element id="MessageHeader.event[x]">
       <path value="MessageHeader.event[x]" />
+      <mustSupport value="true" />
       <binding>
         <strength value="example" />
         <description value="Message event" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MessageEvent" />
       </binding>
     </element>
-    <element id="MessageHeader.destination.target">
-      <path value="MessageHeader.destination.target" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
-    <element id="MessageHeader.destination.target.identifier.assigner">
-      <path value="MessageHeader.destination.target.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MessageHeader.destination.receiver">
-      <path value="MessageHeader.destination.receiver" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
-    </element>
-    <element id="MessageHeader.destination.receiver.identifier.assigner">
-      <path value="MessageHeader.destination.receiver.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="MessageHeader.destination">
+      <path value="MessageHeader.destination" />
+      <mustSupport value="true" />
     </element>
     <element id="MessageHeader.sender">
       <path value="MessageHeader.sender" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="MessageHeader.sender.identifier.assigner">
-      <path value="MessageHeader.sender.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="MessageHeader.source">
+      <path value="MessageHeader.source" />
+      <mustSupport value="true" />
     </element>
-    <element id="MessageHeader.enterer">
-      <path value="MessageHeader.enterer" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
-    </element>
-    <element id="MessageHeader.enterer.identifier.assigner">
-      <path value="MessageHeader.enterer.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MessageHeader.author">
-      <path value="MessageHeader.author" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
-    </element>
-    <element id="MessageHeader.author.identifier.assigner">
-      <path value="MessageHeader.author.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MessageHeader.responsible">
-      <path value="MessageHeader.responsible" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-      </type>
-    </element>
-    <element id="MessageHeader.responsible.identifier.assigner">
-      <path value="MessageHeader.responsible.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MessageHeader.response.details">
-      <path value="MessageHeader.response.details" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome" />
-      </type>
-    </element>
-    <element id="MessageHeader.response.details.identifier.assigner">
-      <path value="MessageHeader.response.details.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="MessageHeader.focus.identifier.assigner">
-      <path value="MessageHeader.focus.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="MessageHeader.focus">
+      <path value="MessageHeader.focus" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
