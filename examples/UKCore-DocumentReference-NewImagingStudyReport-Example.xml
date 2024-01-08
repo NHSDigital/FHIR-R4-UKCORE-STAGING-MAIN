@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="Y05868-8fe69655-9f9e-426a-ad5c-cb39f314005b" /> <!--Pointer ID - composite of the ODS Code and an identifier that is locally unique to your system,-->
+    <meta>
+      <versionId value ="1" />
+    </meta>
+  <identifier>
+    <type>
+      <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0203" /> <!-- Study ID - Accession Number -->
+    <code value="ACSN" />
+    <display value ="Accession ID" />
+    </coding>
+  </type>
+  <system value = "https://fhir.nhs.uk/Id/ods-organization-code/Y05868" />
+    <value value="123456789" />
+  </identifier>
+  <status value="current" />
+  <type>
+    <coding>
+    <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
+      <code value="721981007" />
+      <display value="Diagnostic studies report" />
+	</coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://digital.nhs.uk/fhir/CodeSystem/nicip" /> <!-- Study Type (Code and Description) -->
+      <code value="MAULR" />
+      <display value="MRA Upper limb Rt" />
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" /> <!--Patient ID, relative url -->
+  </subject>
+  <custodian>
+    <reference value="Organization/UKCore-Organisation-LeedsTeachingHospital-Example" /> <!-- Provenance -->
+  </custodian>
+  <content>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RetrievalMethod"> <!-- Reteival Mechanism - New Extension -->
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RetrievalMethod" />
+          <code value="apiplatform" />
+          <display value="API Platform" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <attachment>
+      <contentType value="application/pdf" /> <!--Pointer mime-type-->
+      <url value="https://health.trust.uk/ImageReport_44301kfgd.pdf" /> <!--Pointer URL -->
+      <title value="Care Plan Report" /> <!-- Pointer URL title-->
+      <creation value="2016-03-08T15:26:00+01:00" /> <!-- Creation date -->
+    </attachment>
+  </content>
+</DocumentReference>
+
+
+
