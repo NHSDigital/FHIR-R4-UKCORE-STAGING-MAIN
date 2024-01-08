@@ -41,7 +41,7 @@
         <coding>
           <system value="http://snomed.info/sct" />
           <code value="721981007" />
-          <display value="Diagnostic Studies Report" />
+          <display value="Diagnostic studies report" />
         </coding>
       </fixedCodeableConcept>
     </element>
