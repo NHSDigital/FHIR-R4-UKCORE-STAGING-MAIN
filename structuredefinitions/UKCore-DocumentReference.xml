@@ -62,15 +62,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
   <derivation value="constraint" />
   <differential>
-    <element id="DocumentReference.extension:extensionUKCoreDocumentReferenceVersion">
-      <path value="DocumentReference.extension" />
-      <sliceName value="extensionUKCoreDocumentReferenceVersion" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version" />
-      </type>
-      <isModifier value="false" />
-    </element>
     <element id="DocumentReference.masterIdentifier.assigner">
       <path value="DocumentReference.masterIdentifier.assigner" />
       <type>
