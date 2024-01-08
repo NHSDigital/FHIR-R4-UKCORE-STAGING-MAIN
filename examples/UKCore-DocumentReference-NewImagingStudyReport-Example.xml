@@ -21,7 +21,7 @@
     <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
       <code value="721981007" />
       <display value="Diagnostic studies report" />
-	</coding>
+  </coding>
   </type>
   <category>
     <coding>
