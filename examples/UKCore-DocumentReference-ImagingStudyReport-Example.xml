@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
-  <id value="Y05868-8fe69655-9f9e-426a-ad5c-cb39f314005b" /> <!--Pointer ID - composite of the ODS Code and an identifier that is locally unique to your system,-->
+  <id value="UKCore-DocumentReference-ImagingStudyReport-Example" /> <!--Pointer ID - composite of the ODS Code and an identifier that is locally unique to your system,-->
   <identifier>
     <type>
       <coding>
