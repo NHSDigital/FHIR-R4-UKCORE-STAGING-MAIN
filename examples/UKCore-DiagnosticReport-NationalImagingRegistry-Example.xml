@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="b0376714-7ba9-4f8c-a6d3-959a4b04f8f2" /> <!--Pointer ID -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" /> <!-- Study ID - Accession Number -->
+        <code value="ACSN" />
+        <display value ="Accession ID" />
+      </coding>
+    </type>
+    <system value = "https://fhir.nhs.uk/Id/ods-organization-code/Y05868" />
+    <value value="987654321" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
+      <code value="371525003" />
+      <display value="Clinical procedure report" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://digital.nhs.uk/fhir/CodeSystem/nicip" /> <!-- Pointer Type (report) -->
+      <code value="MAULR" />
+      <display value="MRA Upper limb Rt" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <issued value="2023-01-09T09:53:23Z" />
+  <performer>
+    <reference value="Organization/UKCore-Organisation-LeedsTeachingHospital-Example" />
+  </performer>
+  <resultsInterpreter>
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+  </resultsInterpreter>
+  <conclusion value="Compared to the prior study of 1/12/1999 there is no significant change in the deformity of the calcaneus consistant with an old fracture which has undergone complete healing. The adjacent bony structure appear intact." />
+</DiagnosticReport>
