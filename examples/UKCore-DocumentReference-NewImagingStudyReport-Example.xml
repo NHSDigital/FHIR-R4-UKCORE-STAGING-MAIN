@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
   <id value="Y05868-8fe69655-9f9e-426a-ad5c-cb39f314005b" /> <!--Pointer ID - composite of the ODS Code and an identifier that is locally unique to your system,-->
-    <meta>
-      <versionId value ="1" />
-    </meta>
   <identifier>
     <type>
       <coding>
@@ -25,10 +22,10 @@
   </type>
   <category>
     <coding>
-    <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
+      <system value="http://snomed.info/sct" /> <!-- Pointer Type (report) -->
       <code value="721981007" />
       <display value="Diagnostic studies report" />
-  </coding>
+    </coding>
   </category>
   <subject>
     <reference value="Patient/UKCore-Patient-RichardSmith-Example" /> <!--Patient ID, relative url -->

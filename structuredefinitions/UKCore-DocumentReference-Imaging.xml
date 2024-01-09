@@ -62,7 +62,7 @@
       <definition value="An NICIP code for radiology pointers, a.k.a. “Exam code”" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-NICIP" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImagingStudyCode" />
       </binding>
     </element>
     <element id="DocumentReference.subject">
