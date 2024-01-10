@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-NICIP" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-NICIP" />
-  <version value="2.2.0" />
-  <name value="UKCoreNICIP" />
-  <title value="UK Core NICIP" />
+  <id value="UKCore-ImagingStudyCode" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImagingStudyCode" />
+  <version value="0.0.1" />
+  <name value="UKCoreImagingStudyCode" />
+  <title value="UK Core ImagingStudyCode" />
   <status value="draft" />
   <date value="2023-11-22" />
   <publisher value="HL7 UK" />

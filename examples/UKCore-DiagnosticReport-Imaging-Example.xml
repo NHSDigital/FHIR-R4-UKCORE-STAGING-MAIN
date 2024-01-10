@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
-  <id value="b0376714-7ba9-4f8c-a6d3-959a4b04f8f2" /> <!--Pointer ID -->
+  <id value="UKCore-DiagnosticReport-Imaging-Example" /> <!--Pointer ID -->
   <identifier>
     <type>
       <coding>
