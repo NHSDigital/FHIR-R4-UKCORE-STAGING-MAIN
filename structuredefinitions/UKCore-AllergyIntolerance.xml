@@ -53,6 +53,15 @@
       <path value="AllergyIntolerance.verificationStatus" />
       <mustSupport value="true" />
     </element>
+    <element id="AllergyIntolerance.verificationStatus.coding">
+      <path value="AllergyIntolerance.verificationStatus.coding" />
+      <short value="A reference to a code defined by a terminology system" />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <type>
+        <code value="Coding" />
+        <profile value="https://hl7.org.uk/StructureDefinition/UKCoreCoding" />
+      </type>
+    </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
       <min value="1" />
@@ -83,6 +92,15 @@
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation" />
       </binding>
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.coding">
+      <path value="AllergyIntolerance.reaction.manifestation.coding" />
+      <short value="A reference to a code defined by a terminology system" />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <type>
+        <code value="Coding" />
+        <profile value="https://hl7.org.uk/StructureDefinition/UKCoreCoding" />
+      </type>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
       <path value="AllergyIntolerance.reaction.severity" />
