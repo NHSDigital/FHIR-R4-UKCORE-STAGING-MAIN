@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-DiagnosticReport-Imaging" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Imaging" />
+  <version value="0.0.1" />
+  <name value="UKCoreDiagnosticReportImaging" />
+  <status value="draft" />
+  <date value="2024-01-10" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.extension:supportingInfoR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="supportingInfoR5" />
+    </element>
+    <element id="DiagnosticReport.extension:supportingInfoR5.extension">
+      <path value="DiagnosticReport.extension.extension" />
+      <min value="2" />
+    </element>
+    <element id="DiagnosticReport.identifier">
+      <path value="DiagnosticReport.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.identifier:AccessionID">
+      <path value="DiagnosticReport.identifier" />
+      <sliceName value="AccessionID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="DiagnosticReport.identifier:AccessionID.type.coding.system">
+      <path value="DiagnosticReport.identifier.type.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+    </element>
+    <element id="DiagnosticReport.identifier:AccessionID.type.coding.code">
+      <path value="DiagnosticReport.identifier.type.coding.code" />
+      <fixedCode value="ACSN" />
+    </element>
+    <element id="DiagnosticReport.identifier:AccessionID.type.coding.display">
+      <path value="DiagnosticReport.identifier.type.coding.display" />
+      <fixedString value="Accession ID" />
+    </element>
+    <element id="DiagnosticReport.identifier:AccessionID.system">
+      <path value="DiagnosticReport.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.identifier:AccessionID.value">
+      <path value="DiagnosticReport.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.category">
+      <path value="DiagnosticReport.category" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="SNOMED CT or NICIP Imaging study code" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImagingStudyCode" />
+      </binding>
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.performer">
+      <path value="DiagnosticReport.performer" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.resultsInterpreter">
+      <path value="DiagnosticReport.resultsInterpreter" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.conclusion">
+      <path value="DiagnosticReport.conclusion" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

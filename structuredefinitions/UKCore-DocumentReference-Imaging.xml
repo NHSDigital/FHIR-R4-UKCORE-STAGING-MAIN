@@ -33,10 +33,44 @@
     </element>
     <element id="DocumentReference.identifier">
       <path value="DocumentReference.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.identifier:AccessionID">
+      <path value="DocumentReference.identifier" />
+      <sliceName value="AccessionID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="DocumentReference.identifier:AccessionID.type.coding.system">
+      <path value="DocumentReference.identifier.type.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+    </element>
+    <element id="DocumentReference.identifier:AccessionID.type.coding.code">
+      <path value="DocumentReference.identifier.type.coding.code" />
+      <fixedCode value="ACSN" />
+    </element>
+    <element id="DocumentReference.identifier:AccessionID.type.coding.display">
+      <path value="DocumentReference.identifier.type.coding.display" />
+      <fixedString value="Accession ID" />
+    </element>
+    <element id="DocumentReference.identifier:AccessionID.system">
+      <path value="DocumentReference.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.identifier:AccessionID.value">
+      <path value="DocumentReference.identifier.value" />
       <min value="1" />
     </element>
     <element id="DocumentReference.type">
       <path value="DocumentReference.type" />
+      <min value="1" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
@@ -44,6 +78,11 @@
           <display value="Diagnostic studies report" />
         </coding>
       </fixedCodeableConcept>
+      <binding>
+        <strength value="extensible" />
+        <description value="SNOMED CT or NICIP Imaging Study Code" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImagingStudyCode" />
+      </binding>
     </element>
     <element id="DocumentReference.category">
       <path value="DocumentReference.category" />
@@ -54,23 +93,52 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
-    <element id="DocumentReference.category:examCode">
+    <element id="DocumentReference.category:diagnosticStudiesReport">
       <path value="DocumentReference.category" />
-      <sliceName value="examCode" />
+      <sliceName value="diagnosticStudiesReport" />
       <short value="Exam Code" />
       <definition value="An NICIP code for radiology pointers, a.k.a. “Exam code”" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="721981007" />
+        </coding>
+      </fixedCodeableConcept>
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImagingStudyCode" />
       </binding>
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
+    </element>
+    <element id="DocumentReference.custodian">
+      <path value="DocumentReference.custodian" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.content.attachment.contentType">
+      <path value="DocumentReference.content.attachment.contentType" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.content.attachment.url">
+      <path value="DocumentReference.content.attachment.url" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.content.attachment.title">
+      <path value="DocumentReference.content.attachment.title" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.content.attachment.creation">
+      <path value="DocumentReference.content.attachment.creation" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
