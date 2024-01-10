@@ -4,6 +4,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Imaging" />
   <version value="0.0.1" />
   <name value="UKCoreDiagnosticReportImaging" />
+  <title value="UK Core DiagnosticReport Imaging" />
   <status value="draft" />
   <date value="2024-01-10" />
   <publisher value="HL7 UK" />
