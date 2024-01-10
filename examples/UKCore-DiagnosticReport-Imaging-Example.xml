@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport-Imaging-Example" /> <!--Pointer ID -->
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Imaging" />
+  </meta>
   <identifier>
     <type>
       <coding>
