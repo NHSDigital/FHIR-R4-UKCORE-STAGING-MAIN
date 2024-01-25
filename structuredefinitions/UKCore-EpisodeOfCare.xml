@@ -4,7 +4,7 @@
   <version value="2.2.0" />
   <name value="UKCoreEpisodeOfCare" />
   <title value="UK Core EpisodeOfCare" />
-  <status value="active" />
+  <status value="draft" />
   <date value="2023-12-16" />
   <publisher value="HL7 UK" />
   <contact>
