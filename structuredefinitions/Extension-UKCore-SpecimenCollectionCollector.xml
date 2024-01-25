@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-CollectionCollector" />
+  <id value="Extension-UKCore-SpecimenCollectionCollector" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
-  <version value="1.0.0" />
-  <name value="ExtensionUKCoreCollectionCollector" />
-  <title value="Extension UK Core Collection Collector" />
+  <version value="1.1.0" />
+  <name value="ExtensionUKCoreSpecimenCollectionCollector" />
+  <title value="Extension UK Core Specimen Collection Collector" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

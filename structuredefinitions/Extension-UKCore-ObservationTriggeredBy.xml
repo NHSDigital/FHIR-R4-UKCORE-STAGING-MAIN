@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-TriggeredBy" />
+  <id value="Extension-UKCore-ObservationTriggeredBy" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
-  <version value="1.0" />
-  <name value="ExtensionUKCoreTriggeredBy" />
-  <title value="Extension UK Core Triggered By" />
+  <version value="1.1.0" />
+  <name value="ExtensionUKCoreObservationTriggeredBy" />
+  <title value="Extension UK Core Observation Triggered By" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

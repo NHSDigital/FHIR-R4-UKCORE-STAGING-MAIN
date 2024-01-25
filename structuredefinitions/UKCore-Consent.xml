@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Consent" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreConsent" />
   <title value="UK Core Consent" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-06" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -117,6 +117,14 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
+    </element>
+    <element id="Consent.provision.code">
+      <path value="Consent.provision.code" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a trigger for an exception to a base policy." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConsentException" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
