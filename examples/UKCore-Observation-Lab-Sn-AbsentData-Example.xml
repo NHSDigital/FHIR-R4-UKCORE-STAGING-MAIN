@@ -24,9 +24,9 @@
   </performer>
   <dataAbsentReason>
     <coding>
-	  <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason" />
-	  <code value="specimen unsatisfactory" />
-	</coding>
+    <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason" />
+    <code value="specimen unsatisfactory" />
+  </coding>
     <text value="Specimen unsatisfactory for evaluation" />
   </dataAbsentReason>
   <specimen>
