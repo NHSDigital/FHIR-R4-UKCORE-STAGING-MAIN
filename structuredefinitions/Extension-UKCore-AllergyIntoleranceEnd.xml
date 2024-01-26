@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-AllergyIntoleranceEnd" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="ExtensionUKCoreAllergyIntoleranceEnd" />
   <title value="Extension UK Core Allergy Intolerance End" />
   <status value="active" />
-  <date value="2022-08-26" />
+  <date value="2023-12-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -42,23 +42,11 @@
       <definition value="Supports the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid." />
       <max value="1" />
     </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Extension.extension:endDate">
       <path value="Extension.extension" />
       <sliceName value="endDate" />
       <short value="The date the allergy or intolerance was recorded as no longer valid" />
       <definition value="The date the allergy or intolerance was recorded as no longer valid." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:endDate.url">
@@ -79,7 +67,6 @@
       <sliceName value="reasonEnded" />
       <short value="The reason why the allergy or intolerance has been resolved" />
       <definition value="The reason why the allergy or intolerance has been resolved." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reasonEnded.url">
