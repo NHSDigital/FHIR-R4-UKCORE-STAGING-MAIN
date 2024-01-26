@@ -26,9 +26,9 @@
   </type>
   <specialty>
     <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="394801008" />
-      <display value="Trauma &amp; orthopaedics" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
+      <code value="110" />
+      <display value="Trauma and Orthopaedics" />
     </coding>
   </specialty>
   <location>
@@ -64,18 +64,21 @@
   </characteristic>
   <referralMethod>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method" />
       <code value="phone" />
       <display value="Phone" />
     </coding>
   </referralMethod>
   <referralMethod>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method" />
       <code value="elec" />
       <display value="Secure Messaging" />
     </coding>
   </referralMethod>
   <referralMethod>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method" />
       <code value="semail" />
       <display value="Secure Email" />
     </coding>

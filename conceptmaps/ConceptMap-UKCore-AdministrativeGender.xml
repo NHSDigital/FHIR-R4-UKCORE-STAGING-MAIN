@@ -22,7 +22,7 @@
   <targetUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-NHSDataDictionary-PersonStatedGender" />
   <group>
     <source value="http://hl7.org/fhir/administrative-gender" />
-    <target value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSDataDictionary-PersonStatedGender" />
+    <target value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-PersonStatedGenderCode" />
     <element>
       <code value="male" />
       <display value="Male" />

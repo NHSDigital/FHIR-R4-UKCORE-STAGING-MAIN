@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-RespirationRate" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-RespirationRate" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreRespirationRate" />
   <title value="UK Core RespirationRate" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2024-01-04" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,7 +27,7 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="DescendantOrSelfOf 86290005 MINUS DescendantOrSelfOf 927961000000102 " />
+        <value value="DescendantOrSelfOf 86290005 MINUS DescendantOrSelfOf 927961000000102" />
       </filter>
     </include>
   </compose>
