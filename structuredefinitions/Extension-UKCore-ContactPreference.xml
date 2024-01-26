@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ContactPreference" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
-  <version value="2.2.0" />
+  <version value="2.3.0" />
   <name value="ExtensionUKCoreContactPreference" />
   <title value="Extension UK Core Contact Preference" />
   <status value="active" />
-  <date value="2022-01-07" />
+  <date value="2023-12-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -46,23 +46,11 @@
       <definition value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <max value="1" />
     </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Extension.extension:PreferredContactMethod">
       <path value="Extension.extension" />
       <sliceName value="PreferredContactMethod" />
       <short value="Preferred Contact Method" />
       <definition value="The preferred method of contact given by a Patient or Related Person." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredContactMethod.url">
@@ -87,7 +75,6 @@
       <sliceName value="PreferredContactTimes" />
       <short value="Preferred Contact Times" />
       <definition value="The preferred contact times given by a Patient or Related Person." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredContactTimes.url">
@@ -111,7 +98,6 @@
       <sliceName value="PreferredWrittenCommunicationFormat" />
       <short value="Preferred Written Communication Format" />
       <definition value="The preferred written communication format given by a Patient or Related Person." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:PreferredWrittenCommunicationFormat.url">
