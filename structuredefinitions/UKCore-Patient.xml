@@ -242,10 +242,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.address.extension:addressKey.extension">
-      <path value="Patient.address.extension.extension" />
-      <min value="2" />
-    </element>
     <element id="Patient.address.line">
       <path value="Patient.address.line" />
       <mustSupport value="true" />
@@ -257,10 +253,6 @@
     <element id="Patient.address.postalCode">
       <path value="Patient.address.postalCode" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.extension:addressKey.extension">
-      <path value="Patient.address.extension.extension" />
-      <min value="2" />
     </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
