@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Patient" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCorePatient" />
   <title value="UK Core Patient" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,54 +21,17 @@
   <purpose value="This profile allows exchange of demographics and other administrative information about an individual receiving care or other health-related services." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="cda" />
-    <uri value="http://hl7.org/v3/cda" />
-    <name value="CDA (R2)" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="loinc" />
-    <uri value="http://loinc.org" />
-    <name value="LOINC code for the element" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
   <derivation value="constraint" />
   <differential>
-    <element id="Patient.extension">
-      <path value="Patient.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Patient.extension:birthPlace">
       <path value="Patient.extension" />
       <sliceName value="birthPlace" />
       <short value="The registered place of birth of the patient." />
       <definition value="The registered place of birth of the patient." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace" />
@@ -83,7 +46,6 @@
       <sliceName value="birthSex" />
       <short value="The patient's phenotypic sex at birth." />
       <definition value="The patient's phenotypic sex at birth." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex" />
@@ -93,7 +55,6 @@
       <path value="Patient.extension" />
       <sliceName value="cadavericDonor" />
       <short value="Post-mortem donor status." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor" />
@@ -107,7 +68,6 @@
     <element id="Patient.extension:contactPreference">
       <path value="Patient.extension" />
       <sliceName value="contactPreference" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
@@ -116,17 +76,19 @@
     <element id="Patient.extension:deathNotificationStatus">
       <path value="Patient.extension" />
       <sliceName value="deathNotificationStatus" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
       </type>
     </element>
+    <element id="Patient.extension:deathNotificationStatus.extension">
+      <path value="Patient.extension.extension" />
+      <min value="1" />
+    </element>
     <element id="Patient.extension:ethnicCategory">
       <path value="Patient.extension" />
       <sliceName value="ethnicCategory" />
       <short value="The ethnicity of the subject" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -137,7 +99,6 @@
       <path value="Patient.extension" />
       <sliceName value="residentialStatus" />
       <short value="The residential status of the patient." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus" />
@@ -146,7 +107,6 @@
     <element id="Patient.extension:patientInterpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="patientInterpreterRequired" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired" />
@@ -161,8 +121,6 @@
       <path value="Patient.extension" />
       <sliceName value="nhsNumberUnavailableReason" />
       <short value="Reason why this Patient does not include an NHS Number identifier" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason" />
@@ -179,99 +137,85 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:nhsNumber">
       <path value="Patient.identifier" />
       <sliceName value="nhsNumber" />
       <short value="The patient's NHS number" />
       <max value="1" />
-    </element>
-    <element id="Patient.identifier:nhsNumber.extension">
-      <path value="Patient.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+      <mustSupport value="false" />
     </element>
     <element id="Patient.identifier:nhsNumber.extension:nhsNumberVerificationStatus">
       <path value="Patient.identifier.extension" />
       <sliceName value="nhsNumberVerificationStatus" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus" />
       </type>
+      <mustSupport value="false" />
     </element>
     <element id="Patient.identifier:nhsNumber.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.system" />
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:nhsNumber.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.value" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:nhsNumber.assigner">
-      <path value="Patient.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Patient.active">
+      <path value="Patient.active" />
+      <mustSupport value="true" />
     </element>
-    <element id="Patient.telecom.system.extension">
-      <path value="Patient.telecom.system.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom.system">
+      <path value="Patient.telecom.system" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.telecom.system.extension:otherContactSystem">
       <path value="Patient.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
       </type>
     </element>
-    <element id="Patient.birthDate.extension">
-      <path value="Patient.birthDate.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Patient.telecom.value">
+      <path value="Patient.telecom.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.birthDate.extension:birthTime">
       <path value="Patient.birthDate.extension" />
       <sliceName value="birthTime" />
       <short value="Time of day of birth." />
       <definition value="The time of day that the patient was born. This includes the date to ensure that the timezone information can be communicated effectively." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
@@ -285,28 +229,30 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <definition value="An address for the individual" />
-    </element>
-    <element id="Patient.address.extension">
-      <path value="Patient.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.address.extension:addressKey">
       <path value="Patient.address.extension" />
       <sliceName value="addressKey" />
       <short value="A patient's address key and type" />
       <definition value="A patient's address key and type." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey" />
       </type>
+      <mustSupport value="false" />
+    </element>
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.city">
+      <path value="Patient.address.city" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.postalCode">
+      <path value="Patient.address.postalCode" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
@@ -316,21 +262,9 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" />
       </binding>
     </element>
-    <element id="Patient.contact.extension">
-      <path value="Patient.contact.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Patient.contact.extension:contactRank">
       <path value="Patient.contact.extension" />
       <sliceName value="contactRank" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank" />
@@ -339,7 +273,6 @@
     <element id="Patient.contact.extension:copyCorrespondenceIndicator">
       <path value="Patient.contact.extension" />
       <sliceName value="copyCorrespondenceIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
@@ -352,76 +285,26 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
-    <element id="Patient.contact.telecom.system.extension">
-      <path value="Patient.contact.telecom.system.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Patient.contact.telecom.system.extension:otherContactSystem">
       <path value="Patient.contact.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
       </type>
     </element>
-    <element id="Patient.contact.organization">
-      <path value="Patient.contact.organization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner">
-      <path value="Patient.contact.organization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Patient.communication.extension">
-      <path value="Patient.communication.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Patient.communication.extension:proficiency">
       <path value="Patient.communication.extension" />
       <sliceName value="proficiency" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-proficiency" />
       </type>
     </element>
-    <element id="Patient.communication.extension:proficiency.extension">
-      <path value="Patient.communication.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Patient.communication.extension:proficiency.extension:level">
       <path value="Patient.communication.extension.extension" />
       <sliceName value="level" />
-      <min value="0" />
     </element>
     <element id="Patient.communication.extension:proficiency.extension:level.value[x]">
       <path value="Patient.communication.extension.extension.value[x]" />
@@ -431,7 +314,6 @@
     <element id="Patient.communication.extension:proficiency.extension:type">
       <path value="Patient.communication.extension.extension" />
       <sliceName value="type" />
-      <min value="0" />
     </element>
     <element id="Patient.communication.extension:proficiency.extension:type.value[x]">
       <path value="Patient.communication.extension.extension.value[x]" />
@@ -443,55 +325,10 @@
       <short value="A ValueSet that identifies the language used by a person." />
       <definition value="A ValueSet that identifies the language used by a person." />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="A ValueSet that identifies the language used by a person." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
       </binding>
-    </element>
-    <element id="Patient.generalPractitioner">
-      <path value="Patient.generalPractitioner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner">
-      <path value="Patient.generalPractitioner.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Patient.managingOrganization">
-      <path value="Patient.managingOrganization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner">
-      <path value="Patient.managingOrganization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Patient.link.other">
-      <path value="Patient.link.other" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-    </element>
-    <element id="Patient.link.other.identifier.assigner">
-      <path value="Patient.link.other.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
