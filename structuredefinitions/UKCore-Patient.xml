@@ -242,10 +242,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.address.extension:addressKey.extension">
-      <path value="Patient.address.extension.extension" />
-      <min value="2" />
-    </element>
     <element id="Patient.address.line">
       <path value="Patient.address.line" />
       <mustSupport value="true" />
@@ -329,9 +325,9 @@
       <short value="A ValueSet that identifies the language used by a person." />
       <definition value="A ValueSet that identifies the language used by a person." />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="A ValueSet that identifies the language used by a person." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
       </binding>
     </element>
   </differential>

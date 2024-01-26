@@ -4,8 +4,8 @@
   <version value="2.1.0" />
   <name value="UKCoreHumanLanguage" />
   <title value="UK Core Human Language" />
-  <status value="active" />
-  <date value="2021-09-10" />
+  <status value="retired" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
