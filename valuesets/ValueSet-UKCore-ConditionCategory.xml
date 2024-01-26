@@ -27,9 +27,9 @@
     </include>
   </compose>
   <expansion>
-    <identifier value="f58136c1-c9c1-4291-9e65-97063f443668" />
-    <timestamp value="2022-01-07T11:31:39+00:00" />
-    <total value="5" />
+    <identifier value="07e8fe5c-f609-4b42-b77d-4f5ac46595e1" />
+    <timestamp value="2023-12-11T15:31:25+00:00" />
+    <total value="4" />
     <offset value="0" />
     <parameter>
       <name value="version" />
@@ -58,12 +58,6 @@
       <version value="4.0.1" />
       <code value="encounter-diagnosis" />
       <display value="Encounter Diagnosis" />
-    </contains>
-    <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory" />
-      <version value="1.0.0" />
-      <code value="issue" />
-      <display value="Issue" />
     </contains>
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory" />
