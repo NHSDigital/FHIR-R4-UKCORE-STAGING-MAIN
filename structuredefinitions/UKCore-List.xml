@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-List" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
-  <version value="2.3.0" />
+  <version value="2.4.0" />
   <name value="UKCoreList" />
   <title value="UK Core List" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -21,39 +21,17 @@
   <purpose value="This profile allows exchange of a flat, possibly ordered collection of records. &#xD;&#xA;&#xD;&#xA;The list profile can be used in many places, including allergies, medications, alerts, family history, medical history, etc. This list profile can be used to support individual-specific clinical lists as well as lists that manage workflows such as tracking patients, managing teaching cases, etc. &#xD;&#xA;&#xD;&#xA;The list profile supports lists that are homogeneous – consisting of only one type of resource (e.g. Allergy lists) as well as heterogeneous – containing a variety of resources (e.g. a problem list including Condition, AllergyIntolerance, Procedure, etc.)." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="List" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
   <derivation value="constraint" />
   <differential>
-    <element id="List.extension">
-      <path value="List.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="List.extension:careSettingType">
       <path value="List.extension" />
       <sliceName value="careSettingType" />
       <short value="An extension to carry the Care setting type." />
       <definition value="An extension to carry the Care setting type." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -64,21 +42,18 @@
       <path value="List.extension" />
       <sliceName value="listWarningCode" />
       <short value="To capture warnings that the list may be incomplete." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode" />
       </type>
     </element>
-    <element id="List.identifier.assigner">
-      <path value="List.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="List.status">
+      <path value="List.status" />
+      <mustSupport value="true" />
     </element>
     <element id="List.code">
       <path value="List.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ListCode" />
@@ -86,71 +61,7 @@
     </element>
     <element id="List.subject">
       <path value="List.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
-    <element id="List.subject.identifier.assigner">
-      <path value="List.subject.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="List.encounter">
-      <path value="List.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-      </type>
-    </element>
-    <element id="List.encounter.identifier.assigner">
-      <path value="List.encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="List.source">
-      <path value="List.source" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
-    </element>
-    <element id="List.source.identifier.assigner">
-      <path value="List.source.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="List.note.author[x]">
-      <path value="List.note.author[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="List.entry.item.identifier.assigner">
-      <path value="List.entry.item.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+      <mustSupport value="true" />
     </element>
     <element id="List.emptyReason">
       <path value="List.emptyReason" />

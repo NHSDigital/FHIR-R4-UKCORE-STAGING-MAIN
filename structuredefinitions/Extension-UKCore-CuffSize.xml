@@ -47,9 +47,6 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Extension.value[x].coding">
-      <path value="Extension.value[x].coding" />
       <binding>
         <strength value="preferred" />
         <description value="A set of codes to record the cuff size" />
