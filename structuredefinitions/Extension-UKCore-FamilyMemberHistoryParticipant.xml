@@ -3,17 +3,10 @@
   <id value="Extension-UKCore-FamilyMemberHistoryParticipant" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant" />
   <version value="1.1.0" />
-<<<<<<< HEAD:structuredefinitions/Extension-UKCore-Participant.xml
-  <name value="ExtensionUKCoreParticipant" />
-  <title value="Extension UKCore Participant" />
-  <status value="active" />
-  <date value="2023-12-07" />
-=======
   <name value="ExtensionUKCoreFamilyMemberHistoryParticipant" />
   <title value="Extension UKCore Family Member History Participant" />
   <status value="active" />
   <date value="2023-12-12" />
->>>>>>> STU2:structuredefinitions/Extension-UKCore-FamilyMemberHistoryParticipant.xml
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -91,15 +84,6 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-<<<<<<< HEAD:structuredefinitions/Extension-UKCore-Participant.xml
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
-=======
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
@@ -107,7 +91,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
->>>>>>> STU2:structuredefinitions/Extension-UKCore-FamilyMemberHistoryParticipant.xml
       </type>
     </element>
     <element id="Extension.url">
