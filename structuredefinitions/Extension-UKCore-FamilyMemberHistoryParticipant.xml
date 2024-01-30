@@ -43,13 +43,6 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Extension.extension:function">
@@ -57,7 +50,6 @@
       <sliceName value="function" />
       <short value="The type of involvement in the activities related to the family member history." />
       <definition value="Distinguishes the type of involvement of the actor in the activities related to the family member history." />
-      <min value="0" />
       <max value="1" />
       <binding>
         <strength value="extensible" />
