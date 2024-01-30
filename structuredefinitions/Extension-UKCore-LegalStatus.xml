@@ -6,7 +6,7 @@
   <name value="ExtensionUKCoreLegalStatus" />
   <title value="Extension UK Core Legal Status" />
   <status value="active" />
-  <date value="2023-12-07" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -86,7 +86,7 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="preferred" />
+        <strength value="extensible" />
         <description value="A set of codes that define the classification of a patient's legal status which is either informal or as designated in the Mental Health Act 1983 or other acts." />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-LegalStatusClassification" />
       </binding>

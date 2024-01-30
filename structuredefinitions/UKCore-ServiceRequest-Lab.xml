@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest-Lab" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
-  <version value="1.1.0" />
+  <version value="2.0.0" />
   <name value="UKCoreServiceRequestLab" />
   <title value="UK Core ServiceRequest Lab" />
   <status value="active" />
-  <date value="2023-11-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,16 +17,86 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the constraints and extensions on the UK Core Profile ServiceRequest." />
+  <description value="This profile defines the specific UK constraints and extensions on the International FHIR resource [ServiceRequest](https://hl7.org/fhir/R4/ServiceRequest.html), in order to support requesting laboratory services." />
   <purpose value="To provide implementers additional support for requesting a procedure or diagnostic or other service to be planned, proposed, or performed, with regards to a laboratory observation or a laboratory diagnostic report." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="ServiceRequest" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="ServiceRequest.extension:sourceOfServiceRequest">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="sourceOfServiceRequest" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.extension:additionalContact">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="additionalContact" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.extension:coverage">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="coverage" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.status">
+      <path value="ServiceRequest.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category">
+      <path value="ServiceRequest.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ServiceRequest.category:genomicsWholeCaseSequencing">
+      <path value="ServiceRequest.category" />
+      <sliceName value="genomicsWholeCaseSequencing" />
+      <short value="Classification of Genomics service" />
+      <definition value="A code that classifies the service for Genomics, whether it is a Whole Case Genome Sequencing or non-Whole Genome Sequencing for cancer or rare diseases" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.category:genomicsWholeCaseSequencing.coding.system">
+      <path value="ServiceRequest.category.coding.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+    </element>
+    <element id="ServiceRequest.priority.extension:priorityReason">
+      <path value="ServiceRequest.priority.extension" />
+      <sliceName value="priorityReason" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
       <definition value="A set of codes from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests." />
@@ -36,18 +106,38 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
       </binding>
     </element>
-    <element id="ServiceRequest.reasonReference">
-      <path value="ServiceRequest.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
-      </type>
+    <element id="ServiceRequest.orderDetail">
+      <path value="ServiceRequest.orderDetail" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.subject">
+      <path value="ServiceRequest.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.authoredOn">
+      <path value="ServiceRequest.authoredOn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.requester">
+      <path value="ServiceRequest.requester" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.reasonCode">
+      <path value="ServiceRequest.reasonCode" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A set of codes that define a reason for a service request." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.bodySite">
+      <path value="ServiceRequest.bodySite" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -40,11 +40,20 @@
       <path value="Extension" />
       <short value="SNOMED CT Description ID" />
       <definition value="To record the SNOMED CT Description Display term actually selected" />
+      <min value="0" />
       <max value="1" />
       <mapping>
         <identity value="v2" />
         <map value="N/A" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

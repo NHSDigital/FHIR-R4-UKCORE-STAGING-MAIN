@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Organization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCoreOrganization" />
   <title value="UK Core Organization" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -19,44 +19,14 @@
   </contact>
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)." />
   <purpose value="This profile allows exchange of a formally or informally recognised grouping of people or organisations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="servd" />
-    <uri value="http://www.omg.org/spec/ServD/1.0/" />
-    <name value="ServD" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <derivation value="constraint" />
   <differential>
-    <element id="Organization.extension">
-      <path value="Organization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Organization.extension:mainLocation">
       <path value="Organization.extension" />
       <sliceName value="mainLocation" />
@@ -72,8 +42,6 @@
       <sliceName value="organizationPeriod" />
       <short value="The date range that this organization SHOULD be considered available." />
       <definition value="The date range that this organization SHOULD be considered available." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
@@ -94,6 +62,7 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:odsOrganisationCode">
       <path value="Organization.identifier" />
@@ -111,13 +80,6 @@
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Organization.identifier:odsOrganisationCode.assigner">
-      <path value="Organization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Organization.identifier:odsSiteCode">
       <path value="Organization.identifier" />
       <sliceName value="odsSiteCode" />
@@ -134,12 +96,9 @@
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Organization.identifier:odsSiteCode.assigner">
-      <path value="Organization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Organization.active">
+      <path value="Organization.active" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.type">
       <path value="Organization.type" />
@@ -149,26 +108,17 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" />
       </binding>
     </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.partOf.identifier.assigner">
-      <path value="Organization.partOf.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.endpoint.identifier.assigner">
-      <path value="Organization.endpoint.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-AddressKey" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey" />
-  <version value="2.2.0" />
+  <version value="3.0.0" />
   <name value="ExtensionUKCoreAddressKey" />
   <title value="Extension UK Core Address Key" />
   <status value="active" />
-  <date value="2023-12-07" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -63,7 +63,7 @@
       <definition value="To identify the type of Address Key recorded." />
       <min value="1" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="extensible" />

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-FamilyMemberHistory" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="UKCoreFamilyMemberHistory" />
   <title value="UKCore FamilyMemberHistory" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,21 +27,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
   <derivation value="constraint" />
   <differential>
-    <element id="FamilyMemberHistory.extension">
-      <path value="FamilyMemberHistory.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="FamilyMemberHistory.extension:associatedEncounter">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="associatedEncounter" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter" />
@@ -52,29 +40,15 @@
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="participantR5" />
       <short value="Who or what participated in the activities related to the family member history. This is a R5 backport." />
-      <definition value="An extension to record who or what participated in the activities related to the family member history." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant" />
       </type>
       <isModifier value="false" />
     </element>
-    <element id="FamilyMemberHistory.extension:participantR5.extension">
-      <path value="FamilyMemberHistory.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="FamilyMemberHistory.extension:participantR5.extension:function">
       <path value="FamilyMemberHistory.extension.extension" />
       <sliceName value="function" />
-      <min value="0" />
     </element>
     <element id="FamilyMemberHistory.extension:participantR5.extension:function.value[x]">
       <path value="FamilyMemberHistory.extension.extension.value[x]" />
@@ -84,30 +58,15 @@
     <element id="FamilyMemberHistory.extension:participantR5.extension:actor">
       <path value="FamilyMemberHistory.extension.extension" />
       <sliceName value="actor" />
-      <min value="1" />
     </element>
     <element id="FamilyMemberHistory.extension:participantR5.extension:actor.value[x]">
       <path value="FamilyMemberHistory.extension.extension.value[x]" />
       <short value="Who or what participated in the activities related to the family member history" />
       <definition value="A reference to a Patient, Practitioner, PractitionerRole, RelatedPerson, Device, Organization, or CareTeam." />
     </element>
-    <element id="FamilyMemberHistory.identifier.assigner">
-      <path value="FamilyMemberHistory.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="FamilyMemberHistory.instantiatesCanonical">
-      <path value="FamilyMemberHistory.instantiatesCanonical" />
-      <type>
-        <code value="canonical" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
-      </type>
+    <element id="FamilyMemberHistory.status">
+      <path value="FamilyMemberHistory.status" />
+      <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.dataAbsentReason">
       <path value="FamilyMemberHistory.dataAbsentReason" />
@@ -117,42 +76,27 @@
     </element>
     <element id="FamilyMemberHistory.patient">
       <path value="FamilyMemberHistory.patient" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="FamilyMemberHistory.date">
+      <path value="FamilyMemberHistory.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="FamilyMemberHistory.name">
+      <path value="FamilyMemberHistory.name" />
+      <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.relationship">
       <path value="FamilyMemberHistory.relationship" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" />
       </binding>
     </element>
-    <element id="FamilyMemberHistory.reasonReference">
-      <path value="FamilyMemberHistory.reasonReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-      </type>
-    </element>
-    <element id="FamilyMemberHistory.note.author[x]">
-      <path value="FamilyMemberHistory.note.author[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
+    <element id="FamilyMemberHistory.condition">
+      <path value="FamilyMemberHistory.condition" />
+      <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.condition.code">
       <path value="FamilyMemberHistory.condition.code" />
