@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-CodingSCTDescDisplay" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="ExtensionUKCoreCodingSCTDescDisplay" />
   <title value="Extension UK Core Coding SCT Desc Display" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2023-12-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description value="The description display term for a SNOMED CT concept." />
-  <purpose value="This extension SHALL be used with the HL7 core-defined extension [coding-sctdescid](https://hl7.org/fhir/R4/extension-coding-sctdescid.html) to support the exchange of the selected description display term for a SNOMED CT concept, where the selected display term is different to the preferred term. &#13;The description display term associated with the ID within the coding-sctdescid extension is important to enable the representation of the exact term that was entered by the clinician that recorded the data, or the exact term that a legacy code e.g. a Read v2 code has been translated to using an assured mapping table." />
+  <purpose value="This extension SHALL be used with the HL7 core-defined extension [coding-sctdescid](https://hl7.org/fhir/R4/extension-coding-sctdescid.html) to support the exchange of the selected description display term for a SNOMED CT concept, where the selected display term is different to the preferred term. &#xD;The description display term associated with the ID within the coding-sctdescid extension is important to enable the representation of the exact term that was entered by the clinician that recorded the data, or the exact term that a legacy code e.g. a Read v2 code has been translated to using an assured mapping table." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -40,20 +40,11 @@
       <path value="Extension" />
       <short value="SNOMED CT Description ID" />
       <definition value="To record the SNOMED CT Description Display term actually selected" />
-      <min value="0" />
       <max value="1" />
       <mapping>
         <identity value="v2" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

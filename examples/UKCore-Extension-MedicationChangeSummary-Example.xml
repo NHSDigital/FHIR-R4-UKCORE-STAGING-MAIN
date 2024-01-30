@@ -5,6 +5,7 @@
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationChangeSummary">
     <extension url="status">
       <valueCoding>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationChangeStatus" />
         <code value="amended" />
         <display value="Amended" />
       </valueCoding>
