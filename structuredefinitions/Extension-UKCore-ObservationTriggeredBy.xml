@@ -69,7 +69,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
       </type>
     </element>
     <element id="Extension.extension:type">
