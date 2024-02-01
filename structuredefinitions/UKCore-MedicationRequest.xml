@@ -139,6 +139,17 @@
       <path value="MedicationRequest.dispenseRequest" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationRequest.dispenseRequest.extension:dispenseTo">
+      <path value="MedicationRequest.dispenseRequest.extension" />
+      <sliceName value="dispenseTo" />
+      <short value="A Location where this request should be dispensed to." />
+      <definition value="A reference to a Location where this request should be dispensed to." />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LocationReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="MedicationRequest.dispenseRequest.quantity">
       <path value="MedicationRequest.dispenseRequest.quantity" />
       <mustSupport value="true" />
