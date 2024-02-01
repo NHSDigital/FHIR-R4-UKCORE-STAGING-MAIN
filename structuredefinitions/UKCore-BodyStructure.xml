@@ -28,12 +28,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="BodyStructure">
-      <path value="BodyStructure"/>
+      <path value="BodyStructure" />
       <constraint>
-        <key value="ukcore-bodstr-001"/>
-        <severity value="warning"/>
-        <human value="The body structure shall at least have location or description or an image"/>
-        <expression value="location.exists() or description.exists() or image.exists()"/>
+        <key value="ukcore-bodstr-001" />
+        <severity value="warning" />
+        <human value="The body structure shall at least have location or description or an image" />
+        <expression value="location.exists() or description.exists() or image.exists()" />
       </constraint>
     </element>
     <element id="BodyStructure.morphology">
@@ -41,29 +41,29 @@
       <binding>
         <strength value="preferred" />
       </binding>
-      <mustSupport value="true"/>
+      <mustSupport value="true" />
     </element>
     <element id="BodyStructure.location">
       <path value="BodyStructure.location" />
       <binding>
         <strength value="preferred" />
       </binding>
-      <mustSupport value="true"/>
+      <mustSupport value="true" />
     </element>
     <element id="BodyStructure.locationQualifier">
       <path value="BodyStructure.locationQualifier" />
       <binding>
         <strength value="preferred" />
       </binding>
-      <mustSupport value="true"/>
+      <mustSupport value="true" />
     </element>
     <element id="BodyStructure.description">
-      <path value="BodyStructure.description"/>
-      <mustSupport value="true"/>
+      <path value="BodyStructure.description" />
+      <mustSupport value="true" />
     </element>
     <element id="BodyStructure.patient">
-      <path value="BodyStructure.patient"/>
-      <mustSupport value="true"/>
+      <path value="BodyStructure.patient" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
