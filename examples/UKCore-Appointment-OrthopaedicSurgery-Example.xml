@@ -9,7 +9,13 @@
   </extension>
   <!--This describes the delivery channel of a scheduled appointment.-->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
-    <valueCode value="In-person" />
+    <valueCodeableConcept>
+      <coding>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeliveryChannel" />
+      <code value="In-person" />
+      <display value="In person" />
+      </coding>
+    </valueCodeableConcept>
   </extension>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -32,9 +38,9 @@
   </serviceType>
   <specialty>
     <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="394801008" />
-      <display value="Trauma &amp; orthopaedics" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
+      <code value="110" />
+      <display value="Trauma and Orthopaedics" />
     </coding>
   </specialty>
   <appointmentType>

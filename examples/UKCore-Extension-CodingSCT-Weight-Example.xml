@@ -11,6 +11,7 @@
         <valueId value="787121000006116" />
         <!-- descriptionId from a GP system namespace -->
       </extension>
+      <system value="http://snomed.info/sct" />
       <code value="170804003" />
       <!-- conceptId from SNOMED International CORE -->
       <display value="Ideal body weight" />

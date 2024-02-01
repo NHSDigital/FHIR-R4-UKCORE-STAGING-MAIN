@@ -22,7 +22,7 @@
   <targetUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-NHSDataDictionary-PersonMaritalStatus" />
   <group>
     <source value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
-    <target value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSDataDictionary-PersonMaritalStatus" />
+    <target value="https://fhir.hl7.org.uk/CodeSystem/NHSDataModelAndDictionary-PersonMaritalStatusCode" />
     <element>
       <code value="U" />
       <display value="unmarried" />
