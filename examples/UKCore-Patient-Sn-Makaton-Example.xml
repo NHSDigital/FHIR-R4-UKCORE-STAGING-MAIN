@@ -1,0 +1,22 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Patient-Sn-Makaton-Example"/>
+  <name>
+    <use value="official"/>
+    <family value="JONES"/>
+    <given value="Jason"/>
+  </name>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="bfi"/>
+        <display value="British Sign Language"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="703963007"/>
+        <display value="Makaton vocabulary"/>
+      </coding>
+    </language>
+  </communication>
+</Patient>
