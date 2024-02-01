@@ -1,0 +1,24 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Patient-Sn-MultipleLanguages-Example" />
+  <name>
+    <use value="official"/>
+    <family value="JONES"/>
+    <given value="Jason"/>
+  </name>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47" />
+        <code value="en" />
+        <display value="English" />
+      </coding>
+    </language>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47" />
+        <code value="fr" />
+        <display value="French" />
+      </coding>
+    </language>
+  </communication>
+</Patient>
