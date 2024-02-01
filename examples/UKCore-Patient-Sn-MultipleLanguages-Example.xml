@@ -1,23 +1,50 @@
 <Patient xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Patient-Sn-MultipleLanguages-Example" />
+  <id value="UKCore-Patient-Sn-MultipleLanguages-Example"/>
   <name>
     <use value="official"/>
     <family value="JONES"/>
     <given value="Jason"/>
   </name>
   <communication>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-proficiency">
+      <extension url="level">
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"/>
+          <code value="E"/>
+          <display value="Excellent"/>
+        </valueCoding>
+      </extension>
+    </extension>
     <language>
       <coding>
-        <system value="urn:ietf:bcp:47" />
-        <code value="en" />
-        <display value="English" />
+        <system value="urn:ietf:bcp:47"/>
+        <code value="en"/>
+        <display value="English"/>
       </coding>
     </language>
+  </communication>
+  <communication>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-proficiency">
+      <extension url="level">
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"/>
+          <code value="P"/>
+          <display value="Poor"/>
+        </valueCoding>
+      </extension>
+      <extension url="type">
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"/>
+          <code value="ESP"/>
+          <display value="Expressed spoken"/>
+        </valueCoding>
+      </extension>
+    </extension>
     <language>
       <coding>
-        <system value="urn:ietf:bcp:47" />
-        <code value="fr" />
-        <display value="French" />
+        <system value="urn:ietf:bcp:47"/>
+        <code value="fr"/>
+        <display value="French"/>
       </coding>
     </language>
   </communication>
