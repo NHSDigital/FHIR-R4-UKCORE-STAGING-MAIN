@@ -71,6 +71,10 @@
       <path value="Encounter.identifier" />
       <mustSupport value="true" />
     </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="Encounter.class">
       <path value="Encounter.class" />
       <mustSupport value="true" />

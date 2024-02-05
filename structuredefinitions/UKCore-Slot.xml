@@ -49,6 +49,10 @@
       <path value="Slot.appointmentType" />
       <mustSupport value="true" />
     </element>
+    <element id="Slot.schedule">
+      <path value="Slot.schedule" />
+      <mustSupport value="true" />
+    </element>
     <element id="Slot.status">
       <path value="Slot.status" />
       <mustSupport value="true" />
