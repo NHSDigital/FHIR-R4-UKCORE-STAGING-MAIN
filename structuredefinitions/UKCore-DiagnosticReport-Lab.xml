@@ -36,22 +36,10 @@
         <expression value="issued.exists() or (issued.empty() and (status in ('partial' | 'preliminary' | 'final' | 'amended' | 'corrected' | 'appended')).not())" />
       </constraint>
     </element>
-    <element id="DiagnosticReport.extension">
-      <path value="DiagnosticReport.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="compositionReferenceR5" />
       <short value="A Composition reference for a DiagnosticReport. This is a R5 backport." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -68,7 +56,6 @@
       <path value="DiagnosticReport.extension" />
       <sliceName value="noteR5" />
       <short value="Comments about the diagnostic report. This is a R5 backport." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note" />
@@ -77,24 +64,26 @@
     </element>
     <element id="DiagnosticReport.extension:noteR5.value[x]">
       <path value="DiagnosticReport.extension.value[x]" />
-      <short value="Comments about the diagnostic report." />
       <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
     </element>
     <element id="DiagnosticReport.extension:supportingInfoR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="supportingInfoR5" />
       <short value="Additional info supporting the diagnostic report. This is a R5 backport." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
       </type>
       <isModifier value="false" />
     </element>
+    <element id="DiagnosticReport.extension:supportingInfoR5.extension">
+      <path value="DiagnosticReport.extension.extension" />
+      <min value="2" />
+    </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
       <mustSupport value="true" />
-    </element>    
+    </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <slicing>
@@ -112,6 +101,7 @@
       <sliceName value="laboratory" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category:laboratory.coding.system">
       <path value="DiagnosticReport.category.coding.system" />

@@ -81,6 +81,10 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
       </type>
     </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <slicing>
@@ -91,12 +95,14 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category:laboratory">
       <path value="Observation.category" />
       <sliceName value="laboratory" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category:laboratory.coding.system">
       <path value="Observation.category.coding.system" />
@@ -108,6 +114,7 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test results" />
