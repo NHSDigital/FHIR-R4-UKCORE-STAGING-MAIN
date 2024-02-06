@@ -40,7 +40,6 @@
       <path value="Extension" />
       <short value="Comments about the diagnostic report." />
       <definition value="May include general statements about the diagnostic report, or statements about significant, unexpected or unreliable results values contained within the diagnostic report, or information about its source when relevant to its interpretation." />
-      <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
