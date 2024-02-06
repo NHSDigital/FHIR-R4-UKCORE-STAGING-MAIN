@@ -61,12 +61,15 @@
       <path value="DiagnosticReport.extension" />
       <sliceName value="supportingInfoR5" />
       <short value="Additional info supporting the diagnostic report. This is a R5 backport." />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:supportingInfoR5.extension">
+      <path value="DiagnosticReport.extension.extension" />
+      <min value="2" />
     </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
