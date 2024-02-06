@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation>
-  <id value="UKCore-Observation-Lab-Sn-AbsentData-Example" />
-  <status value="final" />
+  <id value="UKCore-Observation-Lab-Sn-AbsentData-Example"/>
+  <status value="final"/>
   <category>
     <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="laboratory" />
-      <display value="Laboratory" />
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
     </coding>
   </category>
   <code>
     <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="58571000237106" />
-      <display value="Nucleated red blood cell count in blood" />
+      <system value="http://snomed.info/sct"/>
+      <code value="58571000237106"/>
+      <display value="Nucleated red blood cell count in blood"/>
     </coding>
   </code>
   <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example"/>
   </subject>
   <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example"/>
   </performer>
   <dataAbsentReason>
     <coding>
-    <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason" />
-    <code value="specimen unsatisfactory" />
-  </coding>
-    <text value="Specimen unsatisfactory for evaluation" />
+      <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+      <code value="as-text"/>
+    </coding>
+    <text value="Specimen unsatisfactory for evaluation"/>
   </dataAbsentReason>
   <specimen>
-    <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
+    <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example"/>
   </specimen>
 </Observation>
