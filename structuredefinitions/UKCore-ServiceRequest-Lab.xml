@@ -117,10 +117,6 @@
       <path value="ServiceRequest.subject" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.authoredOn">
-      <path value="ServiceRequest.authoredOn" />
-      <mustSupport value="true" />
-    </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
       <mustSupport value="true" />
