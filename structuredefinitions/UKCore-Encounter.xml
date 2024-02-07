@@ -69,10 +69,12 @@
     </element>
     <element id="Encounter.identifier">
       <path value="Encounter.identifier" />
+      <short value="Identifier(s) by which this encounter is known." />
       <mustSupport value="true" />
     </element>
     <element id="Encounter.class">
       <path value="Encounter.class" />
+      <short value="Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations." />
       <mustSupport value="true" />
     </element>
     <element id="Encounter.type">
@@ -93,18 +95,22 @@
     </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
+      <short value="The patient or group present at the encounter." />
       <mustSupport value="true" />
     </element>
     <element id="Encounter.participant">
       <path value="Encounter.participant" />
+      <short value="The list of people responsible for providing the service." />
       <mustSupport value="true" />
     </element>
     <element id="Encounter.reasonCode">
       <path value="Encounter.reasonCode" />
+      <short value="Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis." />
       <mustSupport value="true" />
     </element>
     <element id="Encounter.reasonReference">
       <path value="Encounter.reasonReference" />
+      <short value="Reason the encounter takes place, expressed as a reference to a Condition, Procedure, Observation, or ImmunizationRecommendation." />
       <mustSupport value="true" />
     </element>
     <element id="Encounter.hospitalization.extension:admissionMethod">

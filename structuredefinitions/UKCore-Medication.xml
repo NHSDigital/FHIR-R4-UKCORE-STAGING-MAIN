@@ -30,7 +30,7 @@
     <element id="Medication.extension:MedicationTradeFamily">
       <path value="Medication.extension" />
       <sliceName value="MedicationTradeFamily" />
-      <short value="A Trade Family or brand associated with a Medication, in particular a Virtual Therapeutic Moiety (VTM)" />
+      <short value="Used to identify a Trade Family or brand associated with a Medication, specifically when the medication is defined using a dm+d Virtual Therapeutic Moiety (VTM) concept" />
       <definition value="A Trade Family or brand associated with a Medication, in particular a Virtual Therapeutic Moiety (VTM)." />
       <type>
         <code value="Extension" />
@@ -39,6 +39,7 @@
     </element>
     <element id="Medication.code">
       <path value="Medication.code" />
+      <short value="Codes that identify this medication" />
       <min value="1" />
       <mustSupport value="true" />
       <binding>

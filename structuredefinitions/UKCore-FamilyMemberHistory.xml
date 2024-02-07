@@ -30,6 +30,7 @@
     <element id="FamilyMemberHistory.extension:associatedEncounter">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="associatedEncounter" />
+      <short value="This extension is used to reference an associated encounter." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter" />
@@ -66,6 +67,7 @@
     </element>
     <element id="FamilyMemberHistory.status">
       <path value="FamilyMemberHistory.status" />
+      <short value="A code specifying the status of the record of the family history of a specific family member." />
       <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.dataAbsentReason">
@@ -76,18 +78,22 @@
     </element>
     <element id="FamilyMemberHistory.patient">
       <path value="FamilyMemberHistory.patient" />
+      <short value="The person who this history concerns." />
       <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.date">
       <path value="FamilyMemberHistory.date" />
+      <short value="The date (and possibly time) when the family member history was recorded or last updated." />
       <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.name">
       <path value="FamilyMemberHistory.name" />
+      <short value="Allows greater ease in ensuring the same person is being talked about." />
       <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.relationship">
       <path value="FamilyMemberHistory.relationship" />
+      <short value="Relationship to the subject." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -96,6 +102,7 @@
     </element>
     <element id="FamilyMemberHistory.condition">
       <path value="FamilyMemberHistory.condition" />
+      <short value="Condition that the related person had." />
       <mustSupport value="true" />
     </element>
     <element id="FamilyMemberHistory.condition.code">

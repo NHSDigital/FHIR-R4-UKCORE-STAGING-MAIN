@@ -29,10 +29,12 @@
   <differential>
     <element id="HealthcareService.providedBy">
       <path value="HealthcareService.providedBy" />
+      <short value="The organization that provides this healthcare service." />
       <mustSupport value="true" />
     </element>
     <element id="HealthcareService.type">
       <path value="HealthcareService.type" />
+      <short value="The type of service provided by this healthcare service." />
       <mustSupport value="true" />
     </element>
     <element id="HealthcareService.specialty">

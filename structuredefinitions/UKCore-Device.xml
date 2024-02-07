@@ -29,10 +29,12 @@
   <differential>
     <element id="Device.status">
       <path value="Device.status" />
+      <short value="The status of the Device." />
       <mustSupport value="true" />
     </element>
     <element id="Device.type">
       <path value="Device.type" />
+      <short value="The type of the Device." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />

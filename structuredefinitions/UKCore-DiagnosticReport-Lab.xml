@@ -82,10 +82,12 @@
     </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
+      <short value="The status of the diagnostic report." />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
+      <short value="A code that classifies the clinical discipline, department or diagnostic service that created the report." />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -99,6 +101,7 @@
     <element id="DiagnosticReport.category:laboratory">
       <path value="DiagnosticReport.category" />
       <sliceName value="laboratory" />
+      <short value="A mandatory slice that states this resource is categorized as laboratory related content." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -112,6 +115,7 @@
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
+      <short value="A code or name that describes this diagnostic report." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -120,6 +124,7 @@
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
+      <short value="The patient that is the subject of the report." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -129,11 +134,13 @@
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
+      <short value="Clinically relevant time / time-period for report." />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer.extension:deviceReference">
       <path value="DiagnosticReport.performer.extension" />
       <sliceName value="deviceReference" />
+      <short value="A reference to a Device which interprets / performs the results of the DiagnosticReport." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -144,6 +151,7 @@
     <element id="DiagnosticReport.resultsInterpreter.extension:deviceReference">
       <path value="DiagnosticReport.resultsInterpreter.extension" />
       <sliceName value="deviceReference" />
+      <short value="A reference to a Device which interprets / performs the results of the DiagnosticReport." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference" />
@@ -152,6 +160,7 @@
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
+      <short value="Lab related Observations that are part of this diagnostic report." />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode">
