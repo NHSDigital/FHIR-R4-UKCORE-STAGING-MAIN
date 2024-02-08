@@ -29,10 +29,12 @@
   <differential>
     <element id="Procedure.status">
       <path value="Procedure.status" />
+      <short value="A code specifying the state of the procedure." />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
+      <short value="A code identifying the procedure performed." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -42,10 +44,12 @@
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
+      <short value="Who the procedure was performed on." />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]" />
+      <short value="When the procedure was performed." />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite">

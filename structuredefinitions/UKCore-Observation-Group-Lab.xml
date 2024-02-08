@@ -32,7 +32,7 @@
       <constraint>
         <key value="ukcore-obs-grplab-001" />
         <severity value="warning" />
-        <human value="value[x] SHOULD NOT be used within this Profile" />
+        <human value="`value[x]` SHOULD NOT be used within this Profile" />
         <expression value="value.empty()" />
       </constraint>
     </element>
@@ -85,8 +85,14 @@
       <path value="Observation.extension.url" />
       <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
     </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <short value="The status of the result value." />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
+      <short value="A code that classifies the general type of observation being made." />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -99,6 +105,7 @@
     <element id="Observation.category:laboratory">
       <path value="Observation.category" />
       <sliceName value="laboratory" />
+      <short value="A mandatory code, to identify this observation as being Lab related." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -112,6 +119,8 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
+      <short value="The type of observation (code / type)." />
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and test group results" />
