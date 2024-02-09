@@ -72,6 +72,11 @@
       <short value="Identifier(s) by which this encounter is known." />
       <mustSupport value="true" />
     </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <short value="The status of this encounter: planned | arrived | triaged | in-progress | onleave | finished | cancelled | entered-in-error | unknown" />
+      <mustSupport value="true" />
+    </element>
     <element id="Encounter.class">
       <path value="Encounter.class" />
       <short value="Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations." />

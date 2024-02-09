@@ -52,6 +52,11 @@
       <short value="The style of appointment or patient that may be booked in the slot." />
       <mustSupport value="true" />
     </element>
+    <element id="Slot.schedule">
+      <path value="Slot.schedule" />
+      <short value="A reference to the Schedule that this Slot is an interval of." />
+      <mustSupport value="true" />
+    </element>
     <element id="Slot.status">
       <path value="Slot.status" />
       <short value="The status of the slot, e.g free, busy, etc." />

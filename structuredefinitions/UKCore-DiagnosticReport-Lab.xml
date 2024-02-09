@@ -104,6 +104,7 @@
       <short value="A mandatory slice that states this resource is categorized as laboratory related content." />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category:laboratory.coding.system">
       <path value="DiagnosticReport.category.coding.system" />

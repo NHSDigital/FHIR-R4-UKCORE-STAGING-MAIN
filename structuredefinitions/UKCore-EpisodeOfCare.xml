@@ -41,6 +41,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
   <derivation value="constraint" />
   <differential>
+    <element id="EpisodeOfCare.status">
+      <path value="EpisodeOfCare.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="EpisodeOfCare.patient">
       <path value="EpisodeOfCare.patient" />
       <mustSupport value="true" />

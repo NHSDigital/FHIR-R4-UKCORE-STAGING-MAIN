@@ -52,6 +52,11 @@
       <short value="Indicates the current state of this list." />
       <mustSupport value="true" />
     </element>
+    <element id="List.mode">
+      <path value="List.mode" />
+      <short value="Indicates how this list was prepared: working | snapshot | changes" />
+      <mustSupport value="true" />
+    </element>
     <element id="List.code">
       <path value="List.code" />
       <short value="This code defines the purpose of the list - why it was created." />

@@ -97,6 +97,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category:laboratory">
       <path value="Observation.category" />
@@ -104,6 +105,7 @@
       <short value="A mandatory code, to identify this observation as being Lab related." />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category:laboratory.coding.system">
       <path value="Observation.category.coding.system" />
