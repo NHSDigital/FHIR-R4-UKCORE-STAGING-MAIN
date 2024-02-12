@@ -4,8 +4,8 @@
   <version value="2.2.0" />
   <name value="UKCoreMessageEvent" />
   <title value="UK Core Message Event" />
-  <status value="active" />
-  <date value="2022-12-16" />
+  <status value="draft" />
+  <date value="2024-02-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
