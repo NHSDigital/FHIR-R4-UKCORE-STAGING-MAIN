@@ -1,7 +1,7 @@
 <Encounter xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Extension-OutcomeofAttendance-Example" />
+    <id value="UKCore-Extension-OutcomeOfAttendance-Example" />
     <!--  **************extension start**************  -->
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeofAttendance">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance">
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OutcomeOfAttendanceEngland" />
