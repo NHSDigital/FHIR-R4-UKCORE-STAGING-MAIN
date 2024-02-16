@@ -34,6 +34,7 @@
     <element id="Composition.extension:careSettingType">
       <path value="Composition.extension" />
       <sliceName value="careSettingType" />
+      <short value="Used to support the type of care setting associated with a composition or a list." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -42,11 +43,12 @@
     </element>
     <element id="Composition.status">
       <path value="Composition.status" />
+      <short value="The workflow / clinical status of this composition." />
       <mustSupport value="true" />
     </element>
     <element id="Composition.type">
       <path value="Composition.type" />
-      <short value="Kind of composition (SNOMED CT)" />
+      <short value="Specifies the particular kind of composition." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -64,18 +66,22 @@
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject" />
+      <short value="Who and / or what the composition is about." />
       <mustSupport value="true" />
     </element>
     <element id="Composition.author">
       <path value="Composition.author" />
+      <short value="Identifies who is responsible for the information in the composition." />
       <mustSupport value="true" />
     </element>
     <element id="Composition.confidentiality">
       <path value="Composition.confidentiality" />
+      <short value="The code specifying the level of confidentiality of the Composition." />
       <mustSupport value="true" />
     </element>
     <element id="Composition.custodian">
       <path value="Composition.custodian" />
+      <short value="Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information." />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section.code">

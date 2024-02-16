@@ -76,6 +76,7 @@
     <element id="Patient.extension:deathNotificationStatus">
       <path value="Patient.extension" />
       <sliceName value="deathNotificationStatus" />
+      <short value="The patient's death notification status." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
@@ -88,7 +89,7 @@
     <element id="Patient.extension:ethnicCategory">
       <path value="Patient.extension" />
       <sliceName value="ethnicCategory" />
-      <short value="The ethnicity of the subject" />
+      <short value="The ethnicity of the subject." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -107,6 +108,7 @@
     <element id="Patient.extension:patientInterpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="patientInterpreterRequired" />
+      <short value="Indicator showing whether the patient needs an interpreter." />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired" />
@@ -120,7 +122,7 @@
     <element id="Patient.extension:nhsNumberUnavailableReason">
       <path value="Patient.extension" />
       <sliceName value="nhsNumberUnavailableReason" />
-      <short value="Reason why this Patient does not include an NHS Number identifier" />
+      <short value="Reason why this Patient does not include an NHS Number identifier." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason" />
@@ -129,6 +131,7 @@
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
+      <short value="An identifier for this patient." />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -142,7 +145,7 @@
     <element id="Patient.identifier:nhsNumber">
       <path value="Patient.identifier" />
       <sliceName value="nhsNumber" />
-      <short value="The patient's NHS number" />
+      <short value="The patient's NHS number." />
       <max value="1" />
       <mustSupport value="false" />
     </element>
@@ -160,61 +163,49 @@
       <path value="Patient.identifier.system" />
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:nhsNumber.value">
       <path value="Patient.identifier.value" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.active">
       <path value="Patient.active" />
+      <short value="Whether this patient's record is in active use." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.family">
-      <path value="Patient.name.family" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.given">
-      <path value="Patient.name.given" />
+      <short value="A name associated with the patient." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.telecom.system">
-      <path value="Patient.telecom.system" />
+      <short value="A contact detail for the individual." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.telecom.system.extension:otherContactSystem">
       <path value="Patient.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
+      <short value="Information about other contact methods which could be used in addition to those listed in `ContactPoint.system`." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
       </type>
     </element>
-    <element id="Patient.telecom.value">
-      <path value="Patient.telecom.value" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
+      <short value="The gender that the patient is considered to have for administration and record keeping purposes." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
+      <short value="The date of birth for the individual." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.birthDate.extension:birthTime">
       <path value="Patient.birthDate.extension" />
       <sliceName value="birthTime" />
-      <short value="Time of day of birth." />
+      <short value="The time of day that the patient was born. This SHOULD be included when the birth time is relevant." />
       <definition value="The time of day that the patient was born. This includes the date to ensure that the timezone information can be communicated effectively." />
       <type>
         <code value="Extension" />
@@ -228,7 +219,7 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />
-      <definition value="An address for the individual" />
+      <definition value="An address for the individual." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address.extension:addressKey">
@@ -242,18 +233,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.address.line">
-      <path value="Patient.address.line" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.city">
-      <path value="Patient.address.city" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.postalCode">
-      <path value="Patient.address.postalCode" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
       <binding>
@@ -265,6 +244,7 @@
     <element id="Patient.contact.extension:contactRank">
       <path value="Patient.contact.extension" />
       <sliceName value="contactRank" />
+      <short value="The preferred ranking or order of contact applied to a contact on a Patient's contact list." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank" />
@@ -273,6 +253,7 @@
     <element id="Patient.contact.extension:copyCorrespondenceIndicator">
       <path value="Patient.contact.extension" />
       <sliceName value="copyCorrespondenceIndicator" />
+      <short value="Indicates that a must be copied in to all related correspondence." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
@@ -288,6 +269,7 @@
     <element id="Patient.contact.telecom.system.extension:otherContactSystem">
       <path value="Patient.contact.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
+      <short value="Information about other contact methods which could be used in addition to those listed in `ContactPoint.system`." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
@@ -296,6 +278,7 @@
     <element id="Patient.communication.extension:proficiency">
       <path value="Patient.communication.extension" />
       <sliceName value="proficiency" />
+      <short value="The patient's proficiency level of the communication method." />
       <max value="1" />
       <type>
         <code value="Extension" />

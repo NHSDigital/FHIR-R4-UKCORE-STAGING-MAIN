@@ -30,7 +30,7 @@
     <element id="List.extension:careSettingType">
       <path value="List.extension" />
       <sliceName value="careSettingType" />
-      <short value="An extension to carry the Care setting type." />
+      <short value="An extension to support the type of care setting associated with a composition or a list." />
       <definition value="An extension to carry the Care setting type." />
       <max value="1" />
       <type>
@@ -41,7 +41,7 @@
     <element id="List.extension:listWarningCode">
       <path value="List.extension" />
       <sliceName value="listWarningCode" />
-      <short value="To capture warnings that the list may be incomplete." />
+      <short value="To support warnings that a list may be incomplete as data has been excluded due to confidentiality or may be missing due to data being in transit." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode" />
@@ -49,10 +49,17 @@
     </element>
     <element id="List.status">
       <path value="List.status" />
+      <short value="Indicates the current state of this list." />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.mode">
+      <path value="List.mode" />
+      <short value="Indicates how this list was prepared: working | snapshot | changes" />
       <mustSupport value="true" />
     </element>
     <element id="List.code">
       <path value="List.code" />
+      <short value="This code defines the purpose of the list - why it was created." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -61,6 +68,7 @@
     </element>
     <element id="List.subject">
       <path value="List.subject" />
+      <short value="The common subject (or patient) of the resources that are in the list if there is one." />
       <mustSupport value="true" />
     </element>
     <element id="List.emptyReason">

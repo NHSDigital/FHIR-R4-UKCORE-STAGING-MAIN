@@ -29,38 +29,17 @@
   <differential>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.identifier.system">
-      <path value="Practitioner.identifier.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.identifier.value">
-      <path value="Practitioner.identifier.value" />
+      <short value="An identifier that applies to this person in this role." />
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
+      <short value="The name(s) associated with the practitioner." />
       <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.name.family">
-      <path value="Practitioner.name.family" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.name.given">
-      <path value="Practitioner.name.given" />
-      <mustSupport value="false" />
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.telecom.system">
-      <path value="Practitioner.telecom.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.telecom.value">
-      <path value="Practitioner.telecom.value" />
+      <short value="A contact detail for the practitioner (that apply to all roles)." />
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.communication">

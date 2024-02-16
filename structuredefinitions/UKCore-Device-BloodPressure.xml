@@ -30,6 +30,7 @@
     <element id="Device.extension:cuffSize">
       <path value="Device.extension" />
       <sliceName value="cuffSize" />
+      <short value="A code representing the cuff size of a sphygmomanometer." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize" />

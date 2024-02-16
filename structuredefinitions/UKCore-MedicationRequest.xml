@@ -30,6 +30,7 @@
     <element id="MedicationRequest.extension:medicationRepeatInformation">
       <path value="MedicationRequest.extension" />
       <sliceName value="medicationRepeatInformation" />
+      <short value="Allows the resource to be referenced within / by other resources." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
@@ -37,18 +38,22 @@
     </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
+      <short value="Allows the resource to be referenced within / by other resources." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
+      <short value="A code specifying the current state of the order." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent" />
+      <short value="Whether the request is a proposal, plan, or an original order." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
+      <short value="Provides the business context for the relevant dispensing processes." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -57,6 +62,7 @@
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
+      <short value="Identifies the medication being requested." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -65,14 +71,17 @@
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
+      <short value="Who the medication request is for." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
+      <short value="The date / time that the medication request was initially authored." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
+      <short value="Who is requesting the medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
@@ -86,14 +95,17 @@
     </element>
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction" />
+      <short value="Dosage instructions for the medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.text">
       <path value="MedicationRequest.dosageInstruction.text" />
+      <short value="Free text dosage instructions." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.timing">
       <path value="MedicationRequest.dosageInstruction.timing" />
+      <short value="When the medication should be administered." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
@@ -125,26 +137,32 @@
     </element>
     <element id="MedicationRequest.dosageInstruction.doseAndRate">
       <path value="MedicationRequest.dosageInstruction.doseAndRate" />
+      <short value="Dosage instructions for the requested medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x]">
       <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x]" />
+      <short value="Quantity of requested medication to be administered." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.doseAndRate.rate[x]">
       <path value="MedicationRequest.dosageInstruction.doseAndRate.rate[x]" />
+      <short value="Rate at which the requested medication is to be administered." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest" />
+      <short value="Specific dispensing quantity instructions." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity">
       <path value="MedicationRequest.dispenseRequest.quantity" />
+      <short value=">Amount of medication to supply per dispense." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
+      <short value="Any restrictions on medication substitution." />
       <min value="1" />
       <mustSupport value="true" />
     </element>

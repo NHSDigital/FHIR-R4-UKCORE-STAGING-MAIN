@@ -30,6 +30,7 @@
     <element id="RelatedPerson.extension:contactPreference">
       <path value="RelatedPerson.extension" />
       <sliceName value="contactPreference" />
+      <short value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
@@ -38,6 +39,7 @@
     <element id="RelatedPerson.extension:copyCorrespondenceIndicator">
       <path value="RelatedPerson.extension" />
       <sliceName value="copyCorrespondenceIndicator" />
+      <short value="Indicates that a Patient contact or RelatedPerson must be copied in to Patient correspondence." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
@@ -45,14 +47,17 @@
     </element>
     <element id="RelatedPerson.active">
       <path value="RelatedPerson.active" />
+      <short value="Whether this related person's record is in active use." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
+      <short value="The patient this person is related to." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.relationship">
       <path value="RelatedPerson.relationship" />
+      <short value="The nature of the relationship." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -61,43 +66,35 @@
     </element>
     <element id="RelatedPerson.name">
       <path value="RelatedPerson.name" />
+      <short value="A name associated with the person." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.telecom">
       <path value="RelatedPerson.telecom" />
-      <mustSupport value="true" />
-    </element>
-    <element id="RelatedPerson.telecom.system">
-      <path value="RelatedPerson.telecom.system" />
+      <short value="A contact detail for the person." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.telecom.system.extension:otherContactSystem">
       <path value="RelatedPerson.telecom.system.extension" />
       <sliceName value="otherContactSystem" />
+      <short value="Information about other contact methods which could be used in addition to those listed in `ContactPoint.system`." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem" />
       </type>
     </element>
-    <element id="RelatedPerson.telecom.value">
-      <path value="RelatedPerson.telecom.value" />
-      <mustSupport value="true" />
-    </element>
     <element id="RelatedPerson.address">
       <path value="RelatedPerson.address" />
+      <short value="Address where the related person can be contacted or visited." />
       <mustSupport value="true" />
     </element>
-    <element id="RelatedPerson.address.line">
-      <path value="RelatedPerson.address.line" />
-      <mustSupport value="true" />
-    </element>
-    <element id="RelatedPerson.address.city">
-      <path value="RelatedPerson.address.city" />
-      <mustSupport value="true" />
-    </element>
-    <element id="RelatedPerson.address.postalCode">
-      <path value="RelatedPerson.address.postalCode" />
-      <mustSupport value="true" />
+    <element id="RelatedPerson.communication.language">
+      <path value="RelatedPerson.communication.language" />
+      <binding>
+        <strength value="required" />
+        <description value="A language which may be used to communicate with the related person about the patient's health." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
