@@ -1,0 +1,1116 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ImplementationGuide-AssetsInDevelopment" />
+  <url value="https://fhir.hl7.org.uk/ImplementationGuide/UKCore-ImplementationGuide-AssetsInDevelopment" />
+  <version value="1.0.0" />
+  <name value="UKCoreImplementationGuideAssetsInDevelopment" />
+  <title value="UK Core Implementation Guide Assets In Development" />
+  <status value="active" />
+  <date value="2024-02-16" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This guide identifies those FHIR Assets that are in development and have not yet been through the UK Core Clinical and Technical Assurance process." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166:-2" />
+      <code value="GB" />
+      <display value="United Kingdom of Great Britain and Northern Ireland" />
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <packageId value="fhir.r4.ukcore.stu3.currentbuild" />
+  <fhirVersion value="4.0.1" />
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology" />
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology" />
+    <packageId value="hl7.terminology.r4" />
+    <version value="5.3.0" />
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" />
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" />
+    <packageId value="hl7.fhir.uv.extensions.r4" />
+    <version value="1.0.0" />
+  </dependsOn>
+  <definition>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-AuditEvent" />
+      </reference>
+      <name value="UK Core AuditEvent" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource AuditEvent." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Bundle" />
+      </reference>
+      <name value="UK Core Bundle" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Bundle." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-CarePlan" />
+      </reference>
+      <name value="UK Core CarePlan" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource CarePlan." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-CareTeam" />
+      </reference>
+      <name value="UK Core CareTeam" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource CareTeam." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Communication" />
+      </reference>
+      <name value="UK Core Communication" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Communication." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Consent" />
+      </reference>
+      <name value="UK Core Consent" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Consent." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Device" />
+      </reference>
+      <name value="UK Core Device" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Device." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-DocumentReference" />
+      </reference>
+      <name value="UK Core DocumentReference" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource DocumentReference." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-EpisodeOfCare" />
+      </reference>
+      <name value="UK Core EpisodeOfCare" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource EpisodeOfCare." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Flag" />
+      </reference>
+      <name value="UK Core Flag" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Flag." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-ImagingStudy" />
+      </reference>
+      <name value="UK Core Imaging Study" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource ImagingStudy" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-MessageHeader" />
+      </reference>
+      <name value="UK Core MessageHeader" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource MessageHeader." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-OperationOutcome" />
+      </reference>
+      <name value="UK Core OperationOutcome" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource OperationOutcome." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-OrganizationAffiliation" />
+      </reference>
+      <name value="UK Core OrganizationAffiliation" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource OrganizationAffiliation." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Provenance" />
+      </reference>
+      <name value="UK Core Provenance" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Provenance." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Questionnaire" />
+      </reference>
+      <name value="UK Core Questionnaire" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Questionnaire." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-QuestionnaireResponse" />
+      </reference>
+      <name value="UK Core QuestionnaireResponse" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource QuestionnaireResponse." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-RequestGroup" />
+      </reference>
+      <name value="UK Core RequestGroup" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource RequestGroup." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/UKCore-Task" />
+      </reference>
+      <name value="UK Core Task" />
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource Task." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/Extension-UKCore-Recorder" />
+      </reference>
+      <name value="Extension UKCore Recorder" />
+      <description value="An extension to reference a practitioner that recorded an event." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/Extension-UKCore-TypedDateTime" />
+      </reference>
+      <name value="Extension UK Core Typed Date Time" />
+      <description value="This supports the exchange of dates and/or times. The extension date and/or time is carried along with a code to identify the type of date and/or time." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension" />
+      </extension>
+      <reference>
+        <reference value="StructureDefintion/Extension-UKCore-TypedPeriod" />
+      </reference>
+      <name value="Extension UK Core Typed Period" />
+      <description value="This supports the exchange of time periods. The extension time period is carried along with a code to identify whether the data is record for legal or operational periods." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet" />
+      </extension>
+      <reference>
+        <reference value="ValueSet/UKCore-ConsentException" />
+      </reference>
+      <name value="UK Core ConsentException" />
+      <description value="A set of codes that define a reason to trigger an exception to a base policy, consisting of the entirety of the SNOMED CT UK Coding System. An exception can be an addition or removal of access permissions. This set of codes may not necessarily be complete or appropriate and may require further discussion in the future." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet" />
+      </extension>
+      <reference>
+        <reference value="ValueSet/UKCore-DateTimeType" />
+      </reference>
+      <name value="UK Core Date Time Type" />
+      <description value="A ValueSet to identify the type of date and time being recorded." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet" />
+      </extension>
+      <reference>
+        <reference value="ValueSet/UKCore-DeviceType" />
+      </reference>
+      <name value="UK Core Device Type" />
+      <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a type of device. Any code from the SNOMED CT UK 'Device Type' subset with subset original id 1361000000131; the corresponding SNOMED CT UK Refset fully specified name is 'Device type simple reference set (foundation metadata concept)' with Refset Id 999000401000000107." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet" />
+      </extension>
+      <reference>
+        <reference value="ValueSet/UKCore-PeriodType" />
+      </reference>
+      <name value="UK Core Period Type" />
+      <description value="A ValueSet to identify the type of period data being recorded." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem" />
+      </extension>
+      <reference>
+        <reference value="CodeSystem/UKCore-DateTimeType" />
+      </reference>
+      <name value="UK Core Date Time Type" />
+      <description value="CodeSystem to identify the type of date and time being recorded." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem" />
+      </extension>
+      <reference>
+        <reference value="CodeSystem/UKCore-PeriodType" />
+      </reference>
+      <name value="UK Core Period Type" />
+      <description value="CodeSystem to identify the type of period data being recorded." />
+      <exampleBoolean value="false" />
+    </resource>
+    <page>
+      <nameUrl value="Home" />
+      <title value="Home" />
+      <generation value="generated" />
+      <page>
+        <nameUrl value="Home/ProfilesandExtensions" />
+        <title value="Profiles and Extensions" />
+        <generation value="generated" />
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/ExtensionLibrary" />
+          <title value="Extension Library" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/ExtensionLibrary/Extension-Library--draft.guide.md" />
+            <title value="Extension Library (draft)" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-TypedDateTime.guide.md" />
+            <title value="Extension UKCore-TypedDateTime" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-TypedPeriod.page.md" />
+            <title value="Extension UKCore-TypedPeriod" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/ProfilesIndex.guide.md" />
+          <title value="Profiles Index" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-AuditEvent" />
+          <title value="Profile UKCore-AuditEvent" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Bundle" />
+          <title value="Profile UKCore-Bundle" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-CarePlan" />
+          <title value="Profile UKCore-CarePlan" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-CareTeam" />
+          <title value="Profile UKCore-CareTeam" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Communication" />
+          <title value="Profile UKCore-Communication" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent" />
+          <title value="Profile UKCore-Consent" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/Bindings.page.md" />
+            <title value="Bindings" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/patient.page.md" />
+            <title value="patient" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/performer.page.md" />
+            <title value="performer" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/organization.page.md" />
+            <title value="organization" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/source-x.page.md" />
+            <title value="source[x]" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/verification.page.md" />
+            <title value="verification" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Consent/provision.page.md" />
+            <title value="provision" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Device" />
+          <title value="Profile UKCore-Device" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Device/Bindings.page.md" />
+            <title value="Bindings" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Device/patient.page.md" />
+            <title value="patient" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Device/owner.page.md" />
+            <title value="owner" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Device/location.page.md" />
+            <title value="location" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Device/parent.page.md" />
+            <title value="parent" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-DocumentReference" />
+          <title value="Profile UKCore-DocumentReference" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-DocumentReference-Imaging" />
+          <title value="Profile UKCore-DocumentReference-Imaging" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare" />
+          <title value="Profile UKCore-EpisodeOfCare" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare/diagnosis.page.md" />
+            <title value="diagnosis" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare/patient.page.md" />
+            <title value="patient" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare/managingOrganization.page.md" />
+            <title value="managingOrganization" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare/referralRequest.page.md" />
+            <title value="referralRequest" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare/careManager.page.md" />
+            <title value="careManager" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare/team.page.md" />
+            <title value="team" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Flag" />
+          <title value="Profile UKCore-Flag" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Flag/subject.page.md" />
+            <title value="subject" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Flag/encounter.page.md" />
+            <title value="encounter" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Flag/author.page.md" />
+            <title value="author" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy" />
+          <title value="Profile UKCore-ImagingStudy" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/subject.page.md" />
+            <title value="subject" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/encounter.page.md" />
+            <title value="encounter" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/basedOn.page.md" />
+            <title value="basedOn" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/referrer.page.md" />
+            <title value="referrer" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/interpreter.page.md" />
+            <title value="interpreter" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/procedureReference.page.md" />
+            <title value="procedureReference" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/location.page.md" />
+            <title value="location" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/reasonReference.page.md" />
+            <title value="reasonReference" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/note.page.md" />
+            <title value="note" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy/series.page.md" />
+            <title value="series" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader" />
+          <title value="Profile UKCore-MessageHeader" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/Extensions.page.md" />
+            <title value="Extensions" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/Bindings.page.md" />
+            <title value="Bindings" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/destination.page.md" />
+            <title value="destination" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/sender.page.md" />
+            <title value="sender" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/enterer.page.md" />
+            <title value="enterer" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/author.page.md" />
+            <title value="author" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/responsible.page.md" />
+            <title value="responsible" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/response.page.md" />
+            <title value="response" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-MessageHeader/focus.page.md" />
+            <title value="focus" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-OperationOutcome" />
+          <title value="Profile UKCore-OperationOutcome" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-OperationOutcome/Bindings.page.md" />
+            <title value="Bindings" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation" />
+          <title value="Profile UKCore-OrganizationAffiliation" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Provenance" />
+          <title value="Profile UKCore-Provenance" />
+          <generation value="generated" />
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Questionnaire" />
+          <title value="Profile UKCore-Questionnaire" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Questionnaire/Bindings.page.md" />
+            <title value="Bindings" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Questionnaire/derivedFrom.page.md" />
+            <title value="derivedFrom" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse" />
+          <title value="Profile UKCore-QuestionnaireResponse" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/basedOn.page.md" />
+            <title value="basedOn" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/partOf.page.md" />
+            <title value="partOf" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/questionnaire.page.md" />
+            <title value="questionnaire" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/subject.page.md" />
+            <title value="subject" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/encounter.page.md" />
+            <title value="encounter" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/author.page.md" />
+            <title value="author" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse/source.page.md" />
+            <title value="source" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup" />
+          <title value="Profile UKCore-RequestGroup" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup/intent.page.md" />
+            <title value="intent" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup/priority.page.md" />
+            <title value="priority" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup/subject.page.md" />
+            <title value="subject" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup/author.page.md" />
+            <title value="author" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup/reasonReference.page.md" />
+            <title value="reasonReference" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-RequestGroup/action.page.md" />
+            <title value="action" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task" />
+          <title value="Profile UKCore-Task" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/basedOn.page.md" />
+            <title value="basedOn" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/partOf.page.md" />
+            <title value="partOf" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/focus.page.md" />
+            <title value="focus" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/for.page.md" />
+            <title value="for" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/encounter.page.md" />
+            <title value="encounter" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/requester.page.md" />
+            <title value="requester" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/owner.page.md" />
+            <title value="owner" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/location.page.md" />
+            <title value="location" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/reasonReference.page.md" />
+            <title value="reasonReference" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/relevantHistory.page.md" />
+            <title value="relevantHistory" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/ProfilesandExtensions/Profile-UKCore-Task/restriction.page.md" />
+            <title value="restriction" />
+            <generation value="markdown" />
+          </page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Home/Terminology" />
+        <title value="Terminology" />
+        <generation value="generated" />
+        <page>
+          <nameUrl value="Home/Terminology/ValueSets-and-CodeSystems-draft.guide.md" />
+          <title value="ValueSets and CodeSystems (draft)" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Terminology/AllValueSets" />
+          <title value="All ValueSets" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-ConsentException.page.md" />
+            <title value="ValueSet UKCore-ConsentException" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-DateTimeType.page.md" />
+            <title value="ValueSet UKCore-DateTimeType" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-DeviceType.page.md" />
+            <title value="ValueSet UKCore-DeviceType" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-DocumentType.page.md" />
+            <title value="ValueSet UKCore-DocumentType" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-MessageEvent.page.md" />
+            <title value="ValueSet UKCore-MessageEvent" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-OperationOutcomeIssueDetails.page.md" />
+            <title value="ValueSet UKCore-OperationOutcomeIssueDetails" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-PeriodType.page.md" />
+            <title value="ValueSet UKCore-PeriodType" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllValueSets/ValueSet-UKCore-QuestionnaireQuestionCodes.page.md" />
+            <title value="ValueSet UKCore-QuestionnaireQuestionCodes" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Home/Terminology/AllCodeSystems" />
+          <title value="All CodeSystems" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/Terminology/AllCodeSystems/CodeSystem-UKCore-DateTimeType.page.md" />
+            <title value="CodeSystem UKCore-DateTimeType" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Terminology/AllCodeSystems/CodeSystem-UKCore-PeriodType.page.md" />
+            <title value="CodeSystem UKCore-PeriodType" />
+            <generation value="markdown" />
+          </page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Home/Examples" />
+        <title value="Examples" />
+        <generation value="generated" />
+        <page>
+          <nameUrl value="Home/Examples/ExamplesIndex" />
+          <title value="Examples Index" />
+          <generation value="generated" />
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-AuditEvent-Query.guide.md" />
+            <title value="Example UKCore-AuditEvent-Query" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Bundle-BundledAllergyList.guide.md" />
+            <title value="Example UKCore-Bundle-BundledAllergyList" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-CarePlan-WellnessPlan.guide.md" />
+            <title value="Example UKCore-CarePlan-WellnessPlan" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-CareTeam-WeightManagementTeam.guide.md" />
+            <title value="Example UKCore-CareTeam-WeightManagementTeam" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Communication-FirstMMRVaccination.guide.md" />
+            <title value="Example UKCore-Communication-FirstMMRVaccination" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Consent-ForInformationAccess.page.md" />
+            <title value="Example UKCore-Consent-ForInformationAccess" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Device-ColostomyBag.guide.md" />
+            <title value="Example UKCore-Device-ColostomyBag" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Device-SoftwareAsAMedicalDevice.page.md" />
+            <title value="Example UKCore-Device-SoftwareAsAMedicalDevice" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Device-Sphygmomanometer.page.md" />
+            <title value="Example UKCore-Device-Sphygmomanometer" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-DocumentReference-CarePlanReportPDF.guide.md" />
+            <title value="Example UKCore-DocumentReference-CarePlanReportPDF" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-EpisodeOfCare-SmokingCessationTherapy.page.md" />
+            <title value="Example UKCore-EpisodeOfCare-SmokingCessationTherapy" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Flag-FoodAllergy.page.md" />
+            <title value="Example UKCore-Flag-FoodAllergy" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-ImagingStudy-CTChestScan.page.md" />
+            <title value="Example UKCore-ImagingStudy-CTChestScan" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationAdministration-CiprofloxacinIV.page.md" />
+            <title value="Example UKCore-MedicationAdministration-CiprofloxacinIV" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationDispense-Amoxicillin.page.md" />
+            <title value="Example UKCore-MedicationDispense-Amoxicillin" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationDispense-CiprofloxacinIV.page.md" />
+            <title value="Example UKCore-MedicationDispense-CiprofloxacinIV" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationDispense-CiprofloxacinOral.page.md" />
+            <title value="Example UKCore-MedicationDispense-CiprofloxacinOral" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationDispense-ParacetamolOral.page.md" />
+            <title value="Example UKCore-MedicationDispense-ParacetamolOral" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-Amoxicillin.page.md" />
+            <title value="Example UKCore-MedicationRequest-Amoxicillin" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-CiprofloxacinIV.page.md" />
+            <title value="Example UKCore-MedicationRequest-CiprofloxacinIV" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-CiprofloxacinOral.page.md" />
+            <title value="Example UKCore-MedicationRequest-CiprofloxacinOral" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-Clarithromycin.page.md" />
+            <title value="Example UKCore-MedicationRequest-Clarithromycin" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-Doxycycline.page.md" />
+            <title value="Example UKCore-MedicationRequest-Doxycycline" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-ParacetamolIV.page.md" />
+            <title value="Example UKCore-MedicationRequest-ParacetamolIV" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MedicationRequest-ParacetamolOral.page.md" />
+            <title value="Example UKCore-MedicationRequest-ParacetamolOral" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-MessageHeader-Discharge.page.md" />
+            <title value="Example UKCore-MessageHeader-Discharge" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-OperationOutcome-DateError.page.md" />
+            <title value="Example UKCore-OperationOutcome-DateError" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Provenance-RARecordConsent.guide.md" />
+            <title value="Example UKCore-Provenance-RARecordConsent" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Questionnaire-EOLPlan.page.md" />
+            <title value="Example UKCore-Questionnaire-EOLPlan" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Questionnaire-FitnessforWork.page.md" />
+            <title value="Example UKCore-Questionnaire-FitnessforWork" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Questionnaire-InpatientSurvey.page.md" />
+            <title value="Example UKCore-Questionnaire-InpatientSurvey" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md" />
+            <title value="Example UKCore-QuestionnaireResponse-BabyPatientSurvey" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-QuestionnaireResponse-EOLPlan.page.md" />
+            <title value="Example UKCore-QuestionnaireResponse-EOLPlan" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-QuestionnaireResponse-FitnessForWork.page.md" />
+            <title value="Example UKCore-QuestionnaireResponse-FitnessForWork" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md" />
+            <title value="Example UKCore-QuestionnaireResponse-InpatientSurvey" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-RequestGroup-Ciprofloxacin.page.md" />
+            <title value="Example UKCore-RequestGroup-Ciprofloxacin" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-RequestGroup-MultipleAnitibiotics.page.md" />
+            <title value="Example UKCore-RequestGroup-MultipleAnitibiotics" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-RequestGroup-Paracetamol.page.md" />
+            <title value="Example UKCore-RequestGroup-Paracetamol" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Home/Examples/ExamplesIndex/Example-UKCore-Task-Colonoscopy.page.md" />
+            <title value="Example UKCore-Task-Colonoscopy" />
+            <generation value="markdown" />
+          </page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Home/ContactUs.guide.md" />
+        <title value="Contact Us" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="Home/Downloads" />
+        <title value="Downloads" />
+        <generation value="generated" />
+        <page>
+          <nameUrl value="Home/Downloads/Downloads.guide.md" />
+          <title value="Downloads" />
+          <generation value="markdown" />
+        </page>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
