@@ -4,8 +4,8 @@
   <version value="1.0.0" />
   <name value="UKCoreITKResponseCode" />
   <title value="UK Core ITK Response Code" />
-  <status value="active" />
-  <date value="2022-01-07" />
+  <status value="draft" />
+  <date value="2023-02-12" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
