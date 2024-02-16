@@ -51,6 +51,10 @@
       <path value="List.status" />
       <mustSupport value="true" />
     </element>
+    <element id="List.mode">
+      <path value="List.mode" />
+      <mustSupport value="true" />
+    </element>
     <element id="List.code">
       <path value="List.code" />
       <mustSupport value="true" />
