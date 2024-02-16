@@ -30,6 +30,7 @@
     <element id="Appointment.extension:bookingOrganization">
       <path value="Appointment.extension" />
       <sliceName value="bookingOrganization" />
+      <short value="A reference to the source Organization of the booked appointment." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization" />
@@ -39,6 +40,7 @@
     <element id="Appointment.extension:deliveryChannel">
       <path value="Appointment.extension" />
       <sliceName value="deliveryChannel" />
+      <short value="Defines the delivery channel of a scheduled appointment." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -48,10 +50,12 @@
     </element>
     <element id="Appointment.status">
       <path value="Appointment.status" />
+      <short value="The overall status of the appointment." />
       <mustSupport value="true" />
     </element>
     <element id="Appointment.specialty">
       <path value="Appointment.specialty" />
+      <short value="The specialty of a practitioner that would be required to perform the service requested in this appointment." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -60,6 +64,7 @@
     </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
+      <short value="The type of appointment or patient that has been booked in the slot." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -69,22 +74,27 @@
     </element>
     <element id="Appointment.reasonCode">
       <path value="Appointment.reasonCode" />
+      <short value="The reason for the appointment." />
       <mustSupport value="true" />
     </element>
     <element id="Appointment.reasonReference">
       <path value="Appointment.reasonReference" />
+      <short value="A reference to the Observation, Condition, Procedure, or ImmunizationRecommendation that is the reason for the appointment." />
       <mustSupport value="true" />
     </element>
     <element id="Appointment.start">
       <path value="Appointment.start" />
+      <short value="The start time of the appointment." />
       <mustSupport value="true" />
     </element>
     <element id="Appointment.basedOn">
       <path value="Appointment.basedOn" />
+      <short value="The service request this appointment is allocated to assess." />
       <mustSupport value="true" />
     </element>
     <element id="Appointment.participant">
       <path value="Appointment.participant" />
+      <short value="A list of participants involved in the appointment." />
       <mustSupport value="true" />
     </element>
   </differential>

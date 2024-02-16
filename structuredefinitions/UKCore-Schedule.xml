@@ -29,10 +29,12 @@
   <differential>
     <element id="Schedule.active">
       <path value="Schedule.active" />
+      <short value="Whether this schedule is in active use." />
       <mustSupport value="true" />
     </element>
     <element id="Schedule.specialty">
       <path value="Schedule.specialty" />
+      <short value="Type of specialty needed." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -41,10 +43,12 @@
     </element>
     <element id="Schedule.actor">
       <path value="Schedule.actor" />
+      <short value="Resource(s) that availability information is being provided for." />
       <mustSupport value="true" />
     </element>
     <element id="Schedule.planningHorizon">
       <path value="Schedule.planningHorizon" />
+      <short value="Period of time covered by schedule." />
       <mustSupport value="true" />
     </element>
   </differential>

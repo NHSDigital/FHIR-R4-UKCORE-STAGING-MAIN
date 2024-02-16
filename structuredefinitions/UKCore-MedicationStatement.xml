@@ -30,7 +30,7 @@
     <element id="MedicationStatement.extension:pharmacistVerifiedIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="pharmacistVerifiedIndicator" />
-      <short value="Indicates whether a pharmacist verified a medication" />
+      <short value="Indicates whether a pharmacist verified a medication." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator" />
@@ -39,6 +39,7 @@
     <element id="MedicationStatement.extension:medicationPrescribingOrganizationType">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationPrescribingOrganizationType" />
+      <short value="Identifies if the medication was `prescribed-at-gp-practice` or `prescribed-by-another-organisation`.\n\nThis extension is likely only to be populated by GP systems." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType" />
@@ -47,6 +48,7 @@
     <element id="MedicationStatement.extension:medicationStatementLastIssueDate">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationStatementLastIssueDate" />
+      <short value="The date or date/time that the medication described in the `MedicationStatement` was last requested/prescribed.\n\nThe presence of this data does not imply medication has been dispensed or supplied to the patient." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" />
@@ -54,6 +56,7 @@
     </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
+      <short value="Allows the resource to be referenced within / by other resources." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.identifier.system">
@@ -66,14 +69,17 @@
     </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn" />
+      <short value="To reference to a `MedicationRequest` resource, where applicable." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.status">
       <path value="MedicationStatement.status" />
+      <short value="A code representing the patient or other source's judgement about the state of the medication used that this statement is about." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
+      <short value="Indicates where the medication is expected to be consumed or administered." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -82,6 +88,7 @@
     </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
+      <short value="Identifies the medication being administered." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -90,26 +97,32 @@
     </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
+      <short value="Who is / was taking the medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.effective[x]">
       <path value="MedicationStatement.effective[x]" />
+      <short value="The date / time, or interval, when the medication is / was / will be taken." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dateAsserted">
       <path value="MedicationStatement.dateAsserted" />
+      <short value="To timestamp the statement assertion." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.informationSource">
       <path value="MedicationStatement.informationSource" />
+      <short value="To reference other resources, where applicable." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.derivedFrom">
       <path value="MedicationStatement.derivedFrom" />
+      <short value="To reference other resources, where applicable." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
+      <short value="The medication dosage for the statement." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">

@@ -29,14 +29,17 @@
   <differential>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
+      <short value="Allows the resource to be referenced within / by other resources." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.status">
       <path value="MedicationDispense.status" />
+      <short value="A code that describes the status of the dispensing event." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
+      <short value="What medication was supplied." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -45,10 +48,12 @@
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
+      <short value="Identifies the patient." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
+      <short value="Who or what performed the dispensing event." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.type">
@@ -60,22 +65,27 @@
     </element>
     <element id="MedicationDispense.quantity">
       <path value="MedicationDispense.quantity" />
+      <short value="Quantity of medication dispensed." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.whenPrepared">
       <path value="MedicationDispense.whenPrepared" />
+      <short value="Timestamp for when the medication was prepared." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
+      <short value="Dosage instruction for the dispensed medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.text">
       <path value="MedicationDispense.dosageInstruction.text" />
+      <short value="Free text dosage instructions." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.timing">
       <path value="MedicationDispense.dosageInstruction.timing" />
+      <short value="When medication should be administered." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.asNeeded[x]">
@@ -107,14 +117,17 @@
     </element>
     <element id="MedicationDispense.dosageInstruction.doseAndRate">
       <path value="MedicationDispense.dosageInstruction.doseAndRate" />
+      <short value="Dosage instructions for the medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.doseAndRate.dose[x]">
       <path value="MedicationDispense.dosageInstruction.doseAndRate.dose[x]" />
+      <short value="Quantity of medication administered." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.doseAndRate.rate[x]">
       <path value="MedicationDispense.dosageInstruction.doseAndRate.rate[x]" />
+      <short value="Rate at which the medication is to be administered." />
       <mustSupport value="true" />
     </element>
   </differential>

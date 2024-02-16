@@ -29,22 +29,27 @@
   <differential>
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active" />
+      <short value="Whether this practitioner role record is in active use." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.period">
       <path value="PractitionerRole.period" />
+      <short value="The period during which the practitioner is authorized to perform in these role(s)." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
+      <short value="Practitioner that is able to provide the defined services for the organization." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
+      <short value="Organization where the roles are available." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
+      <short value="Specific specialty of the practitioner." />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -53,18 +58,12 @@
     </element>
     <element id="PractitionerRole.location">
       <path value="PractitionerRole.location" />
+      <short value="The location(s) at which this practitioner provides care." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom" />
-      <mustSupport value="true" />
-    </element>
-    <element id="PractitionerRole.telecom.system">
-      <path value="PractitionerRole.telecom.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="PractitionerRole.telecom.value">
-      <path value="PractitionerRole.telecom.value" />
+      <short value="Contact details that are specific to the role/location/service." />
       <mustSupport value="true" />
     </element>
   </differential>

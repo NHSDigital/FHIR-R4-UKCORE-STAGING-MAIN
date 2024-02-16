@@ -29,10 +29,12 @@
   <differential>
     <element id="MedicationAdministration.identifier">
       <path value="MedicationAdministration.identifier" />
+      <short value="Allows the resource to be referenced within / by other resources." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
+      <short value="Allows an administration to be marked as in-progress or completed." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.category">
@@ -44,6 +46,7 @@
     </element>
     <element id="MedicationAdministration.medication[x]">
       <path value="MedicationAdministration.medication[x]" />
+      <short value="Identifies the medication that was administered." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -52,14 +55,17 @@
     </element>
     <element id="MedicationAdministration.subject">
       <path value="MedicationAdministration.subject" />
+      <short value="Identifies the patient receiving the medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
+      <short value="The start and end time of the administration." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
+      <short value="The dosage instruction for the administered medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site">

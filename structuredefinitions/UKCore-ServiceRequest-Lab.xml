@@ -30,6 +30,7 @@
     <element id="ServiceRequest.extension:sourceOfServiceRequest">
       <path value="ServiceRequest.extension" />
       <sliceName value="sourceOfServiceRequest" />
+      <short value="Describes the source of the Service Request." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -40,6 +41,7 @@
     <element id="ServiceRequest.extension:additionalContact">
       <path value="ServiceRequest.extension" />
       <sliceName value="additionalContact" />
+      <short value="Supports recording of additional contacts, who should be contacted regarding questions arising from the service request. This differs from the requester and responsibleClinician." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
@@ -49,6 +51,7 @@
     <element id="ServiceRequest.extension:coverage">
       <path value="ServiceRequest.extension" />
       <sliceName value="coverage" />
+      <short value="Supports the exchange of information describing the method of funding for the Service Request." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -58,10 +61,12 @@
     </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status" />
+      <short value="The status of the order." />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.intent">
       <path value="ServiceRequest.intent" />
+      <short value="Whether the request is a proposal, plan, an original order or a reflex order." />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.category">
@@ -91,6 +96,7 @@
     <element id="ServiceRequest.priority.extension:priorityReason">
       <path value="ServiceRequest.priority.extension" />
       <sliceName value="priorityReason" />
+      <short value="Supports the underlying reason why a Service Request is urgent." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
@@ -115,10 +121,12 @@
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
+      <short value="The individual or entity the service is ordered for." />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
+      <short value="Who / what is requesting the service" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.reasonCode">

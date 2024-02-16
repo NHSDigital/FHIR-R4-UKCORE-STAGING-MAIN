@@ -30,7 +30,7 @@
     <element id="Organization.extension:mainLocation">
       <path value="Organization.extension" />
       <sliceName value="mainLocation" />
-      <short value="Main location" />
+      <short value="The main location of the organisation." />
       <definition value="The main location of the organisation." />
       <type>
         <code value="Extension" />
@@ -54,6 +54,7 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
+      <short value="Identifies this organization across multiple systems." />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -98,6 +99,7 @@
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
+      <short value="Identifies this organization across multiple systems." />
       <mustSupport value="true" />
     </element>
     <element id="Organization.type">
@@ -110,14 +112,17 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <short value="A name associated with the organization." />
       <mustSupport value="true" />
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
+      <short value="Contact details for the organization." />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
+      <short value="An address for the organization." />
       <mustSupport value="true" />
     </element>
   </differential>

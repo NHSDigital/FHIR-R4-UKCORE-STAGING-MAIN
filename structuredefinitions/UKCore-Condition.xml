@@ -30,6 +30,7 @@
     <element id="Condition.extension:conditionEpisode">
       <path value="Condition.extension" />
       <sliceName value="conditionEpisode" />
+      <short value="The episodicity value of the condition can be represented by one of the following codes: \nfirst | new | review | end." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
@@ -37,10 +38,12 @@
     </element>
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus" />
+      <short value="The clinical status of the condition." />
       <mustSupport value="true" />
     </element>
     <element id="Condition.verificationStatus">
       <path value="Condition.verificationStatus" />
+      <short value="The verification status to support the clinical status of the condition." />
       <mustSupport value="true" />
     </element>
     <element id="Condition.category">
@@ -53,10 +56,12 @@
     </element>
     <element id="Condition.severity">
       <path value="Condition.severity" />
+      <short value="A subjective assessment of the severity of the condition as evaluated by the clinician." />
       <mustSupport value="true" />
     </element>
     <element id="Condition.code">
       <path value="Condition.code" />
+      <short value="Identification of the condition, problem or diagnosis." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -72,10 +77,12 @@
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
+      <short value="Indicates the patient or group who the condition record is associated with." />
       <mustSupport value="true" />
     </element>
     <element id="Condition.recorder">
       <path value="Condition.recorder" />
+      <short value="Individual who recorded the record and takes responsibility for its content." />
       <mustSupport value="true" />
     </element>
   </differential>

@@ -34,6 +34,10 @@
       <path value="Provenance.recorded" />
       <mustSupport value="true" />
     </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <mustSupport value="true" />
+    </element>
     <element id="Provenance.signature">
       <path value="Provenance.signature" />
       <mustSupport value="true" />

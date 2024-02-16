@@ -57,14 +57,17 @@
     </element>
     <element id="Location.status">
       <path value="Location.status" />
+      <short value="Is the location active, inactive, or suspended" />
       <mustSupport value="true" />
     </element>
     <element id="Location.name">
       <path value="Location.name" />
+      <short value="Name of the location as used by humans. This does not need to be unique." />
       <mustSupport value="true" />
     </element>
     <element id="Location.address">
       <path value="Location.address" />
+      <short value="If locations can be visited, we need to keep track of their address." />
       <mustSupport value="true" />
     </element>
   </differential>

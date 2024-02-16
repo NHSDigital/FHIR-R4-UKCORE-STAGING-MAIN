@@ -30,7 +30,7 @@
     <element id="AllergyIntolerance.extension:evidence">
       <path value="AllergyIntolerance.extension" />
       <sliceName value="evidence" />
-      <short value="A reference to results of investigations that confirmed the certainty of the diagnosis." />
+      <short value="A reference to a DiagnosticReport resource for investigations that confirm the certainty of the allergy or intolerance diagnosis." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence" />
@@ -38,11 +38,13 @@
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
       <path value="AllergyIntolerance.clinicalStatus" />
+      <short value="Defines whether the allergy or intolerance is active, inactive or resolved." />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.clinicalStatus.extension:allergyIntoleranceEnd">
       <path value="AllergyIntolerance.clinicalStatus.extension" />
       <sliceName value="allergyIntoleranceEnd" />
+      <short value="The date when the allergy or intolerance clinicalStatus is updated to inactive or resolved." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd" />
@@ -51,10 +53,12 @@
     </element>
     <element id="AllergyIntolerance.verificationStatus">
       <path value="AllergyIntolerance.verificationStatus" />
+      <short value="Defines the assertion of the allergy or intolerance." />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
+      <short value="This code identifies the allergy or intolerance." />
       <min value="1" />
       <mustSupport value="true" />
       <binding>
@@ -64,10 +68,12 @@
     </element>
     <element id="AllergyIntolerance.patient">
       <path value="AllergyIntolerance.patient" />
+      <short value="Links the allergy or intolerance to the patient." />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.reaction">
       <path value="AllergyIntolerance.reaction" />
+      <short value="Details about each adverse reaction event." />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.reaction.substance">
@@ -86,6 +92,7 @@
     </element>
     <element id="AllergyIntolerance.reaction.severity">
       <path value="AllergyIntolerance.reaction.severity" />
+      <short value="A clinical assessment of the severity of the reaction event as a whole." />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.reaction.exposureRoute">
