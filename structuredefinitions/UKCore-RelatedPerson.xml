@@ -88,5 +88,13 @@
       <short value="Address where the related person can be contacted or visited." />
       <mustSupport value="true" />
     </element>
+    <element id="RelatedPerson.communication.language">
+      <path value="RelatedPerson.communication.language" />
+      <binding>
+        <strength value="required" />
+        <description value="A language which may be used to communicate with the related person about the patient's health." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
