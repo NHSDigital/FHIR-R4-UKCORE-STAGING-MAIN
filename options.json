@@ -1,0 +1,6 @@
+{
+    "strict-validation": true,
+    "ignore-folders": [],
+    "ignore-files": [],
+	"error-if-metaProfile-present": true
+}
