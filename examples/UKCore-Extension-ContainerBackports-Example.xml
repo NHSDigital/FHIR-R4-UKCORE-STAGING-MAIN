@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+ <id value="UKCore-Extension-ContainerBackports-Example" />
+ <status value="available" />
+ <type>
+  <coding>
+   <system value="http://snomed.info/sct" />
+   <code value="440500007" />
+   <display value="Dried blood spot specimen" />
+  </coding>
+ </type>
+ <subject>
+  <reference value="Patient/UKCore-Patient-BabyPatient-Example" />
+ </subject>
+ <receivedTime value="2023-12-05T16:48:00Z" />
+ <container>
+  <!-- ***************extension start*************** -->
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device">
+    <valueReference>
+    <reference value="Device/UKCore-Device-BloodSpotContainer-Example" />
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.location">
+    <valueReference>
+    <reference value="Location/UKCore-Location-NeoNatalLGI-Example" />
+    </valueReference>
+  </extension>
+  <!-- **************extension end ****************** -->
+ </container>
+</Specimen>
