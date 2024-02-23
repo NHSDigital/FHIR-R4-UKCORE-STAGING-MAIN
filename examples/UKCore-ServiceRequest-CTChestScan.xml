@@ -5,7 +5,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct" />
-      <code value="169069000 " />
+      <code value="169069000" />
       <display value="Computed tomography of chest" />
     </coding>
   </code>
