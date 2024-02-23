@@ -10,18 +10,18 @@
   </basedOn>
   <status value="final" />
   <category>
-		<coding>
+    <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
       <code value="RAD" />
       <display value="Radiology" />
-		</coding>
-	</category>
+    </coding>
+  </category>
   <code>
-		<coding>
+    <coding>
       <system value="http://snomed.info/sct" />
       <code value="722124004" />
       <display value="Radiology studies report" />
-		</coding>
+    </coding>
   </code>
   <subject>
     <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
@@ -35,7 +35,7 @@
     <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
     <display value="WHITE ROSE MEDICAL CENTRE" />
   </resultsInterpreter>
-	<imagingStudy> 
-		<reference value="ImagingStudy/UKCore-ImagingStudy-CTChestScan-Example" />
-	</imagingStudy> 
+  <imagingStudy> 
+    <reference value="ImagingStudy/UKCore-ImagingStudy-CTChestScan-Example" />
+  </imagingStudy> 
 </DiagnosticReport>
