@@ -41,11 +41,6 @@
     </element>
     <element id="OperationOutcome.issue.details">
       <path value="OperationOutcome.issue.details" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A set of codes that define details of the exact issue." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OperationOutcomeIssueDetails" />
-      </binding>
     </element>
     <element id="OperationOutcome.issue.location">
       <path value="OperationOutcome.issue.location" />
