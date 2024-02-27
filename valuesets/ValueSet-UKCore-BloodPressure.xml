@@ -74,159 +74,159 @@
     <total value="31" />
     <offset value="0" />
     <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="386534000"/>
-        <display value="Arterial blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="386534000" />
+        <display value="Arterial blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="87179004"/>
-        <display value="Arterial pulse pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="87179004" />
+        <display value="Arterial pulse pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="37087001"/>
-        <display value="Arterial wedge pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="37087001" />
+        <display value="Arterial wedge pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="251068006"/>
-        <display value="Atrial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="251068006" />
+        <display value="Atrial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="75367002"/>
-        <display value="Blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="75367002" />
+        <display value="Blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="392570002"/>
-        <display value="Blood pressure finding"/>
+        <system value="http://snomed.info/sct" />
+        <code value="392570002" />
+        <display value="Blood pressure finding" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="71420008"/>
-        <display value="Central venous pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="71420008" />
+        <display value="Central venous pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="366162006"/>
-        <display value="Central venous pressure - finding"/>
+        <system value="http://snomed.info/sct" />
+        <code value="366162006" />
+        <display value="Central venous pressure - finding" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="392571003"/>
-        <display value="Finding of arterial pulse pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="392571003" />
+        <display value="Finding of arterial pulse pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="301141002"/>
-        <display value="Finding of pulmonary arterial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="301141002" />
+        <display value="Finding of pulmonary arterial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="165077006"/>
-        <display value="Intracardiac pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="165077006" />
+        <display value="Intracardiac pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="386532001"/>
-        <display value="Invasive arterial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="386532001" />
+        <display value="Invasive arterial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="386533006"/>
-        <display value="Invasive blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="386533006" />
+        <display value="Invasive blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="37476000"/>
-        <display value="Jugular venous pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="37476000" />
+        <display value="Jugular venous pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="366163001"/>
-        <display value="Jugular venous pressure - finding"/>
+        <system value="http://snomed.info/sct" />
+        <code value="366163001" />
+        <display value="Jugular venous pressure - finding" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="276760007"/>
-        <display value="Left atrial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="276760007" />
+        <display value="Left atrial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="163033001"/>
-        <display value="Lying blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="163033001" />
+        <display value="Lying blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="251076008"/>
-        <display value="Non-invasive arterial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="251076008" />
+        <display value="Non-invasive arterial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="723237002"/>
-        <display value="Non-invasive blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="723237002" />
+        <display value="Non-invasive blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="1036531000000108"/>
-        <display value="Non-invasive central blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="1036531000000108" />
+        <display value="Non-invasive central blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="163020007"/>
-        <display value="O/E - blood pressure reading"/>
+        <system value="http://snomed.info/sct" />
+        <code value="163020007" />
+        <display value="O/E - blood pressure reading" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="371829003"/>
-        <display value="Pulmonary vein wedge pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="371829003" />
+        <display value="Pulmonary vein wedge pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="276755008"/>
-        <display value="Right atrial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="276755008" />
+        <display value="Right atrial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="335661000000109"/>
-        <display value="Self measured blood pressure reading"/>
+        <system value="http://snomed.info/sct" />
+        <code value="335661000000109" />
+        <display value="Self measured blood pressure reading" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="163035008"/>
-        <display value="Sitting blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="163035008" />
+        <display value="Sitting blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="163034007"/>
-        <display value="Standing blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="163034007" />
+        <display value="Standing blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="364090009"/>
-        <display value="Systemic arterial pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="364090009" />
+        <display value="Systemic arterial pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="386536003"/>
-        <display value="Systemic blood pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="386536003" />
+        <display value="Systemic blood pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="252076005"/>
-        <display value="Venous pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="252076005" />
+        <display value="Venous pressure" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="366161004"/>
-        <display value="Venous pressure - finding"/>
+        <system value="http://snomed.info/sct" />
+        <code value="366161004" />
+        <display value="Venous pressure - finding" />
       </contains>
       <contains>
-        <system value="http://snomed.info/sct"/>
-        <code value="76882007"/>
-        <display value="Venous wedge pressure"/>
+        <system value="http://snomed.info/sct" />
+        <code value="76882007" />
+        <display value="Venous wedge pressure" />
       </contains>
   </expansion>
 </ValueSet>
