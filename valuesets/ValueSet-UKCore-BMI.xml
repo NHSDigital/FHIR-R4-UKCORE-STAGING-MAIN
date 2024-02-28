@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BMI" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BMI" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreBMI" />
   <title value="UK Core BMI" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2024-02-27" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -20,11 +20,13 @@
 &#13; - DescendantOrSelfOf 60621009 | Body mass index (observable entity)
 &#13; - DescendantOrSelfOf 446974000 |Body mass index centile (observable entity
 &#13; - MINUS 
-&amp;nbsp;&#13; - 846931000000101 | Baseline body mass index 
-&amp;nbsp;&#13; - 852451000000103 | Maximum body mass index 
-&amp;nbsp;&#13; - 852461000000100 | Minimum body mass index
-&amp;nbsp;&#13; - 715456008 | Percentage median body mass index for age and sex
-&amp;nbsp;&#13; - 846911000000109 | Baseline body mass index centile (observable entity)|" />
+&amp;nbsp;&#13; - 846931000000101 | Baseline body mass index (observable entity)
+&amp;nbsp;&#13; - 852451000000103 | Maximum body mass index (observable entity)
+&amp;nbsp;&#13; - 852461000000100 | Minimum body mass index (observable entity)
+&amp;nbsp;&#13; - 715456008 | Percentage median body mass index for age and sex (observable entity)
+&amp;nbsp;&#13; - 846911000000109 | Baseline body mass index centile (observable entity)
+&amp;nbsp;&#13; - 1153596006 | Body mass index for age z-score (observable entity)
+&amp;nbsp;&#13; - 248358009 | Weight for height (observable entity)" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
@@ -32,29 +34,19 @@
       <filter>
         <property value="constraint" />
         <op value="=" />
-        <value value="(DescendantOrSelfOf 60621009 OR DescendantOrSelfOf 446974000) MINUS (846931000000101 OR 852451000000103 OR 852461000000100 OR 715456008 OR 846911000000109)" />
+        <value value="(DescendantOrSelfOf 60621009 OR DescendantOrSelfOf 446974000) MINUS (846931000000101 OR 852451000000103 OR 852461000000100 OR 715456008 OR 846911000000109 OR 1153596006 OR 248358009)" />
       </filter>
     </include>
   </compose>
   <expansion>
     <identifier value="19fb99b5-b096-4514-8e0a-1548fcbe7d87" />
     <timestamp value="2023-10-31T21:11:00+00:00" />
-    <total value="7" />
+    <total value="5" />
     <offset value="0" />
     <contains>
       <system value="http://snomed.info/sct" />
       <code value="60621009" />
       <display value="Body mass index" />
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct" />
-      <code value="1153596006" />
-      <display value="Body mass index for age z-score" />
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct" />
-      <code value="248358009" />
-      <display value="Weight for height" />
     </contains>
     <contains>
       <system value="http://snomed.info/sct" />
