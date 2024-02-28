@@ -1,0 +1,41 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="UKCore-DiagnosticReport-CTChestScan-Example" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="727071dc-eb36-4224-8ee8-cc0a02973601" />
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/UKCore-ServiceRequest-CTChestScan-Example" />
+    <display value="CT Chest Scan" />
+  </basedOn>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+      <code value="RAD" />
+      <display value="Radiology" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="722124004" />
+      <display value="Radiology studies report" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <issued value="2024-04-19T12:52:38+00:00" />
+  <performer>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    <display value="LEEDS TEACHING HOSPITALS NHS TRUST" />
+  </performer>
+  <resultsInterpreter>
+    <reference value="Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example" />
+    <display value="WHITE ROSE MEDICAL CENTRE" />
+  </resultsInterpreter>
+  <imagingStudy> 
+    <reference value="ImagingStudy/UKCore-ImagingStudy-CTChestScan-Example" />
+  </imagingStudy> 
+</DiagnosticReport>
