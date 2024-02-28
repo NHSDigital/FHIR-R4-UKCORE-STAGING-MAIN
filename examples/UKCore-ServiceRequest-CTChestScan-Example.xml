@@ -1,0 +1,35 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ServiceRequest-CTChestScan-Example" />
+  <status value="active" />
+  <intent value="order" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="169069000" />
+      <display value="Computed tomography of chest" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <occurrencePeriod>
+    <start value="2024-04-12T09:38:00+00:00" />
+  </occurrencePeriod>
+  <authoredOn value="2024-04-12T09:38:00+00:00" />
+  <requester>
+    <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+  </requester>
+  <performer>
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+  </performer>
+  <locationReference>
+    <reference value="Location/UKCore-Location-HospitalSJUH-Example" />
+  </locationReference>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="59282003" />
+      <display value="Pulmonary embolism" />
+    </coding>
+  </reasonCode>
+</ServiceRequest>

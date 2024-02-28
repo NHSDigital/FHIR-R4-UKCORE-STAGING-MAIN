@@ -121,7 +121,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <description value="A code from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests and test group results" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system regarding laboratory medicine test requests and test group results" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
       </binding>
     </element>

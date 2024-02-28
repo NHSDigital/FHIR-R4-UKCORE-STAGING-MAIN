@@ -105,7 +105,7 @@
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
-      <definition value="A set of codes from the SNOMED Clinical Terminology UK coding system regrading laboratory medicine test requests." />
+      <definition value="A set of codes from the SNOMED Clinical Terminology UK coding system regarding laboratory medicine test requests." />
       <binding>
         <strength value="preferred" />
         <description value="A set of codes that define laboratory medicine test requests. Selected from the SNOMED CT UK coding system." />

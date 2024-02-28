@@ -1,0 +1,35 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="UKCore-ServiceRequest-ECG-Example" />
+  <status value="active" />
+  <intent value="order" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="268400002" />
+      <display value="12 lead ECG" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <occurrencePeriod>
+    <start value="2023-10-13T16:20:27+07:00" />
+  </occurrencePeriod>
+  <authoredOn value="2023-10-13T16:28:00+07:00" />
+  <requester>
+    <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+  </requester>
+  <performer>
+    <reference value="Practitioner/UKCore-Practitioner-ConsultantSandraGose-Example" />
+  </performer>
+  <locationReference>
+    <reference value="Location/UKCore-Location-HospitalSJUH-Example" />
+  </locationReference>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="11092001" />
+      <display value="Sinus tachycardia" />
+    </coding>
+  </reasonCode>
+</ServiceRequest>

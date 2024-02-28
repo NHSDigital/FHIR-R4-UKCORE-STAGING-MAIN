@@ -4,7 +4,7 @@
   <version value="1.1.0" />
   <name value="UKCoreOperationOutcomeIssueDetails" />
   <title value="UK Core Operation Outcome Issue Details" />
-  <status value="draft" />
+  <status value="retired" />
   <date value="2024-02-12" />
   <publisher value="HL7 UK" />
   <contact>

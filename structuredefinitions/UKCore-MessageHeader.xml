@@ -30,11 +30,6 @@
     <element id="MessageHeader.event[x]">
       <path value="MessageHeader.event[x]" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Message event" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MessageEvent" />
-      </binding>
     </element>
     <element id="MessageHeader.destination">
       <path value="MessageHeader.destination" />
