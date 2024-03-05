@@ -31,4 +31,10 @@
     <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
     <display value="LEEDS TEACHING HOSPITALS NHS TRUST" />
   </performer>
+  <presentedForm>
+    <contentType value="application/pdf" />
+    <language value="en" />
+    <data value="VUsgQ29yZSBkZXZlbG9wbWVudCB0ZWFtIGhhdmUgc2tpcHBlZCB0aGUgYmFzZTY0IHN0cmluZyBkYXRhIHZhbHVlIGZvciBiZXR0ZXIgcmVhZGFiaWxpdHkgb2YgdGhlIHJlc291cmNl" />
+  <!--UK Core development team have skipped the base64 string data value for better readability of the resource-->
+  </presentedForm>
 </DiagnosticReport>
