@@ -45,9 +45,9 @@
     <element id="HealthcareService.communication">
       <path value="HealthcareService.communication" />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="A ValueSet that identifies the language used by a person." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
       </binding>
     </element>
   </differential>
