@@ -35,6 +35,6 @@
     <contentType value="application/pdf" />
     <language value="en" />
     <data value="VUsgQ29yZSBkZXZlbG9wbWVudCB0ZWFtIGhhdmUgc2tpcHBlZCB0aGUgYmFzZTY0IHN0cmluZyBkYXRhIHZhbHVlIGZvciBiZXR0ZXIgcmVhZGFiaWxpdHkgb2YgdGhlIHJlc291cmNl" />
-	<!--UK Core development team have skipped the base64 string data value for better readability of the resource-->
+  <!--UK Core development team have skipped the base64 string data value for better readability of the resource-->
   </presentedForm>
 </DiagnosticReport>
