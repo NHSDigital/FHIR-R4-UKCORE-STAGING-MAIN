@@ -81,10 +81,6 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus" />
       </type>
     </element>
-    <element id="Patient.extension:deathNotificationStatus.extension">
-      <path value="Patient.extension.extension" />
-      <min value="1" />
-    </element>
     <element id="Patient.extension:ethnicCategory">
       <path value="Patient.extension" />
       <sliceName value="ethnicCategory" />
@@ -242,10 +238,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.address.extension:addressKey.extension">
-      <path value="Patient.address.extension.extension" />
-      <min value="2" />
-    </element>
     <element id="Patient.address.line">
       <path value="Patient.address.line" />
       <mustSupport value="true" />
@@ -329,9 +321,9 @@
       <short value="A ValueSet that identifies the language used by a person." />
       <definition value="A ValueSet that identifies the language used by a person." />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="A ValueSet that identifies the language used by a person." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
       </binding>
     </element>
   </differential>
