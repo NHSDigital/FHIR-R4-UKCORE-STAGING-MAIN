@@ -20,92 +20,37 @@
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(163020007 OR 392570002 OR 392571003 OR 301141002 OR 366161004 OR 366162006 OR 366163001 OR 75367002 OR 386534000 OR 87179004 OR 386533006 OR 386532001 OR 723237002 OR 251076008 OR 1036531000000108 OR 335661000000109 OR 163033001 OR 163035008 OR 163034007 OR 386536003 OR 252076005 OR 76882007 OR 71420008 OR 37476000 OR 364090009 OR  37087001 OR 251068006 OR 276760007 OR 276755008 OR 165077006 OR 371829003) MINUS (170599006 OR descendantOrSelfOf 371830008 OR descendantOrSelfOf 6797001 OR descendantOrSelfOf 723232008 OR descendantOf 276769008 OR descendantOf 276756009 OR descendantOf 276760007 OR descendantOf 276755008)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="163031004 OR 271650006 OR 1091811000000102 OR 407557002 OR 1162735000 OR 407555005 OR 400975005" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Diastolic" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="163030003 OR 271649006 OR 407556006 OR 1162737008 OR 407554009 OR 400974009 OR 72313002" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systoloic" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(DescendantOrSelfOf 60621009 OR DescendantOrSelfOf 446974000) MINUS (846931000000101 OR 852451000000103 OR 852461000000100 OR 715456008 OR 846911000000109 OR 1153596006 OR 248358009)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BMI" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="DescendantOrSelfOf 386725007 MINUS (DescendantOrSelfOf 248458005 OR DescendantOrSelfOf 852591000000107 OR DescendantOrSelfOf 852601000000101 OR DescendantOrSelfOf 852581000000105 OR DescendantOrSelfOf 364419004 OR DescendantOrSelfOf 364424001 OR DescendantOrSelfOf 364429006 OR DescendantOrSelfOf 248835004 OR DescendantOrSelfOf 250124002 OR DescendantOrSelfOf 431197002 OR DescendantOrSelfOf 364518005 OR DescendantOrSelfOf 363997004  OR DescendantOrSelfOf 364537001 OR DescendantOrSelfOf 364246006 OR DescendantOrSelfOf 431598003)" />
-       </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyHeightMeasurements" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(248337003 OR 1003998008 or descendantOrSelfOf 50373000) MINUS (925931000000103 OR 925951000000105 OR 248336007 OR 276350001 OR 1153591001 OR 1153604005 OR 1153590000)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="DescendantOrSelfOf 364075005 MINUS (DescendantOrSelfOf 251670001 OR DescendantOrSelfOf 928001000000104 OR DescendantOrSelfOf 852341000000107 OR DescendantOrSelfOf 852351000000105 OR DescendantOrSelfOf 428420003 OR DescendantOrSelfOf 852331000000103)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyWeightMeasurements" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="DescendantOrSelfOf 103228002 MINUS (DescendantOrSelfOf 927981000000106 OR DescendantOrSelfOf 852651000000100 OR DescendantOrSelfOf 852661000000102 OR DescendantOrSelfOf 852641000000103 OR DescendantOrSelfOf 442349007)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HeadCircumferenceMeasurements" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="descendantOrSelfOf 27113001 MINUS (descendantOrSelfOf 301334000 OR descendantOrSelfOf 400967004 OR descendantOrSelfOf 170804003 OR descendantOrSelfOf 852321000000100 OR descendantOrSelfOf 852311000000106 OR descendantOrSelfOf 248351003 OR descendantOrSelfOf 390734006 OR descendantOrSelfOf 363809009)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HeartRate" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="DescendantOrSelfOf 86290005 MINUS DescendantOrSelfOf 927961000000102" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OxygenSaturation" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="descendantOrSelfOf 363811000 MINUS (1153594009 OR 70751000052109 OR 70761000052107 OR descendantOrSelfOf 170061009)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-RespirationRate" />
     </include>
   </compose>
   <expansion>
