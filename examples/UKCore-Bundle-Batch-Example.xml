@@ -1,1 +1,22 @@
-
+<Bundle xmlns="http://hl7.org/fhir">
+<id value="Ukcore-Bundle-Batch-Example" />
+  <type value="batch" />
+ <entry>
+  <request>
+  <method value="GET" />
+  <url value="https://fhir.hl7.org.uk/Patient/example" />
+  </request>
+   <request>
+  <method value="GET" />
+  <url value="https://fhir.hl7.org.uk/Condition?patient=example" />
+  </request>
+   <request>
+  <method value="GET" />
+  <url value="https://fhir.hl7.org.uk/MedicationStatement?patient=example" />
+  </request>
+   <request>
+  <method value="GET" />
+  <url value="https://fhir.hl7.org.uk/Observation?patient=example&code=http://loinc.org|55284-4&date=ge2015-01-01" />
+  </request>
+ </entry>
+</Bundle>
