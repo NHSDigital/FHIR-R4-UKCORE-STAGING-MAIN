@@ -3,16 +3,16 @@
  <type value="batch" />
  <entry>
   <request>
-  <method value="GET" />
-  <url value="https://fhir.hl7.org.uk/Patient/example" />
-  </request>
-  <request>
-  <method value="GET" />
-  <url value="https://fhir.hl7.org.uk/Condition?patient=example" />
+   <method value="GET" />
+   <url value="https://fhir.hl7.org.uk/Patient/example" />
   </request>
    <request>
-  <method value="GET" />
-  <url value="https://fhir.hl7.org.uk/MedicationStatement?patient=example" />
+    <method value="GET" />
+    <url value="https://fhir.hl7.org.uk/Condition?patient=example" />
+   </request>
+   <request>
+    <method value="GET" />
+    <url value="https://fhir.hl7.org.uk/MedicationStatement?patient=example" />
   </request>
  </entry>
 </Bundle>
