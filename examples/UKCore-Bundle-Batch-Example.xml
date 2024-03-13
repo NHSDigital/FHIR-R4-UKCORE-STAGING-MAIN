@@ -6,7 +6,7 @@
   <method value="GET" />
   <url value="https://fhir.hl7.org.uk/Patient/example" />
   </request>
-   <request>
+  <request>
   <method value="GET" />
   <url value="https://fhir.hl7.org.uk/Condition?patient=example" />
   </request>
