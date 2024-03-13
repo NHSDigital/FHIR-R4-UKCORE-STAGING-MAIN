@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
- <id value="Ukcore-Bundle-Example" />
+ <id value="UkCore-Bundle-Batch-Example" />
  <type value="batch" />
  <entry>
   <request>
