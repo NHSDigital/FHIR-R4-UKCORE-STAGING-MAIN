@@ -6,10 +6,14 @@
    <method value="GET" />
    <url value="https://fhir.hl7.org.uk/Patient/example" />
   </request>
+ </entry>
+ <entry>
    <request>
     <method value="GET" />
     <url value="https://fhir.hl7.org.uk/Condition?patient=example" />
    </request>
+ </entry>
+ <entry>
    <request>
     <method value="GET" />
     <url value="https://fhir.hl7.org.uk/MedicationStatement?patient=example" />
