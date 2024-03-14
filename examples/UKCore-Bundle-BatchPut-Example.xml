@@ -1,0 +1,40 @@
+<Bundle xmlns='http://hl7.org/fhir'>
+<id value="UKCore-Bundle-BatchPut-Example" />
+  <type value='batch'/>
+  <entry>
+    <resource>
+      <Parameters>
+        <parameter>
+          <name value='system'/>
+          <valueUri value='http://loinc.org'/>
+        </parameter>
+        <parameter>
+          <name value='code'/>
+          <valueCode value='23245-4'/>
+        </parameter>
+      </Parameters>
+    </resource>
+    <request>
+      <method value='PUT'/>
+      <url value='CodeSystem/$lookup'/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <Parameters>
+        <parameter>
+          <name value='system'/>
+          <valueUri value='http://snomed.info/sct'/>
+        </parameter>
+        <parameter>
+          <name value='code'/>
+          <valueCode value='17311000168105'/>
+        </parameter>
+      </Parameters>
+    </resource>
+    <request>
+      <method value='PUT'/>
+      <url value='CodeSystem/$lookup'/>
+    </request>
+  </entry>
+</Bundle>
