@@ -4,19 +4,19 @@
  <entry>
   <request>
    <method value="GET" />
-   <url value="https://fhir.hl7.org.uk/Patient/example" />
+   <url value="https://fhir.hl7.org.uk/Patient/UKCore-Patient-RichardSmith-Example" />
   </request>
  </entry>
  <entry>
    <request>
     <method value="GET" />
-    <url value="https://fhir.hl7.org.uk/Condition?patient=example" />
+    <url value="https://fhir.hl7.org.uk/Condition?UKCore-Patient-RichardSmith-Example" />
    </request>
  </entry>
  <entry>
    <request>
     <method value="GET" />
-    <url value="https://fhir.hl7.org.uk/MedicationStatement?patient=example" />
+    <url value="https://fhir.hl7.org.uk/MedicationStatement?UKCore-Patient-RichardSmith-Example" />
   </request>
  </entry>
 </Bundle>
