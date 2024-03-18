@@ -1,7 +1,7 @@
 <Observation>
   <id value="UKCore-Observation-Lab-RedCellCount-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the observation of a red cell count for a blood specimen</div>
   </text>
   <identifier>

@@ -1,5 +1,5 @@
 <Composition>
-  <id value="UKCore-Composition-Discharge-Example"/>
+  <id value="UKCore-Composition-Discharge-Example" />
   <text>
       <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a composition containing a discharge summary</div>
@@ -8,60 +8,60 @@
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType">
     <valueCodeableConcept>
       <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="310000008"/>
-        <display value="Accident and Emergency service"/>
+        <system value="http://snomed.info/sct" />
+        <code value="310000008" />
+        <display value="Accident and Emergency service" />
       </coding>
     </valueCodeableConcept>
   </extension>
   <identifier>
-    <system value="https://tools.ietf.org/html/rfc4122"/>
-    <value value="2d361270-039f-4a48-827b-ef255ff8b6c4"/>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2d361270-039f-4a48-827b-ef255ff8b6c4" />
   </identifier>
   <!--The workflow/clinical status of this composition. 
 The status is a marker for the clinical standing of the document.-->
-  <status value="final"/>
+  <status value="final" />
   <type>
     <!--Discharge Summary document type-->
     <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="373942005"/>
-      <display value="Discharge summary"/>
+      <system value="http://snomed.info/sct" />
+      <code value="373942005" />
+      <display value="Discharge summary" />
     </coding>
   </type>
   <!--Reference to the patient subject of the Composition-->
   <subject>
-    <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5"/>
+    <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5" />
   </subject>
   <!--Reference to the clinical encounter or type of care this documentation is associated with.-->
   <encounter>
-    <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
+    <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" />
   </encounter>
   <!--The composition editing time, when the composition was last logically changed by the author.-->
-  <date value="2021-02-12T19:00:00+00:00"/>
+  <date value="2021-02-12T19:00:00+00:00" />
   <!--Identifies who is responsible for the information in the composition, 
 not necessarily who typed it in-->
   <author>
-    <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+    <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" />
   </author>
-  <title value="Accident &amp; Emergency Discharge summary"/>
+  <title value="Accident &amp; Emergency Discharge summary" />
   <!--Identifies the organisation responsible for ongoing maintenance of and 
 access to the composition/document information.-->
   <custodian>
-    <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc"/>
+    <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc" />
   </custodian>
   <!--Allergies and adverse reactions-->
   <section>
-    <title value="Allergies and adverse reaction"/>
+    <title value="Allergies and adverse reaction" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="allergies-and-adverse-reaction"/>
-        <display value="Allergies and adverse reaction"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="allergies-and-adverse-reaction" />
+        <display value="Allergies and adverse reaction" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -91,21 +91,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to Allergies List as the source of information for this section-->
     <entry>
-      <reference value="urn:uuid:b37c89af-c5da-425f-8e6d-58c043ccf94b"/>
+      <reference value="urn:uuid:b37c89af-c5da-425f-8e6d-58c043ccf94b" />
     </entry>
   </section>
   <!--Attendance details-->
   <section>
-    <title value="Attendance details"/>
+    <title value="Attendance details" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="attendance-details"/>
-        <display value="Attendance details"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="attendance-details" />
+        <display value="Attendance details" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -120,16 +120,16 @@ access to the composition/document information.-->
   </section>
   <!--Clinical narrative-->
   <section>
-    <title value="Clinical narrative"/>
+    <title value="Clinical narrative" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="clinical-narrative"/>
-        <display value="Clinical narrative"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="clinical-narrative" />
+        <display value="Clinical narrative" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -159,16 +159,16 @@ access to the composition/document information.-->
   </section>
   <!--Contact for further information-->
   <section>
-    <title value="Contact for further information"/>
+    <title value="Contact for further information" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="contact-for-further-information"/>
-        <display value="Contact for further information"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="contact-for-further-information" />
+        <display value="Contact for further information" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -183,16 +183,16 @@ access to the composition/document information.-->
   </section>
   <!--Diagnoses-->
   <section>
-    <title value="Diagnoses"/>
+    <title value="Diagnoses" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="diagnoses"/>
-        <display value="Diagnoses"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="diagnoses" />
+        <display value="Diagnoses" />
       </coding>
     </code>
     <text>
-      <status value="generated"/>
+      <status value="generated" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -206,21 +206,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to information in the Condition list resource-->
     <entry>
-      <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f"/>
+      <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f" />
     </entry>
   </section>
   <!--Discharge details-->
   <section>
-    <title value="Discharge details"/>
+    <title value="Discharge details" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="discharge-details"/>
-        <display value="Discharge details"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="discharge-details" />
+        <display value="Discharge details" />
       </coding>
     </code>
     <text>
-      <status value="extensions"/>
+      <status value="extensions" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -242,21 +242,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to the Encounter entry as the source of information for this section-->
     <entry>
-      <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
+      <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" />
     </entry>
   </section>
   <!-- GP Practice-->
   <section>
-    <title value="GP practice"/>
+    <title value="GP practice" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="general-practitioner-practice"/>
-        <display value="General practitioner practice"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="general-practitioner-practice" />
+        <display value="General practitioner practice" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -284,21 +284,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to the Organisation entry as the source of information for this section-->
     <entry>
-      <reference value="urn:uuid:e4058bb2-bf1a-47a4-ab10-1471161380a1"/>
+      <reference value="urn:uuid:e4058bb2-bf1a-47a4-ab10-1471161380a1" />
     </entry>
   </section>
   <!-- Information and advice given-->
   <section>
-    <title value="Information and advice given"/>
+    <title value="Information and advice given" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="information-and-advice-given"/>
-        <display value="Information and advice given"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="information-and-advice-given" />
+        <display value="Information and advice given" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -313,16 +313,16 @@ access to the composition/document information.-->
   </section>
   <!--Medications and medical devices-->
   <section>
-    <title value="Medications and medical devices"/>
+    <title value="Medications and medical devices" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="medications-and-medical-devices"/>
-        <display value="Medications and medical devices"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="medications-and-medical-devices" />
+        <display value="Medications and medical devices" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -428,21 +428,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to medication list-->
     <entry>
-      <reference value="urn:uuid:e3c8b45f-22d4-4ce6-970c-10a959831dca"/>
+      <reference value="urn:uuid:e3c8b45f-22d4-4ce6-970c-10a959831dca" />
     </entry>
   </section>
   <!-- Patient demographics-->
   <section>
-    <title value="Patient demographics"/>
+    <title value="Patient demographics" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="patient-demographics"/>
-        <display value="Patient demographics"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="patient-demographics" />
+        <display value="Patient demographics" />
       </coding>
     </code>
     <text>
-      <status value="generated"/>
+      <status value="generated" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -480,21 +480,21 @@ access to the composition/document information.-->
     </text>
     <!--reference to further information carried in the patient resource-->
     <entry>
-      <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5"/>
+      <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5" />
     </entry>
   </section>
   <!--Person completing record-->
   <section>
-    <title value="Person completing record"/>
+    <title value="Person completing record" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="person-completing-record"/>
-        <display value="Person completing record"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="person-completing-record" />
+        <display value="Person completing record" />
       </coding>
     </code>
     <text>
-      <status value="generated"/>
+      <status value="generated" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -512,21 +512,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to the practitioner entry as the source of information for this section-->
     <entry>
-      <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+      <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" />
     </entry>
   </section>
   <!--Plan and requested actions-->
   <section>
-    <title value="Plan and requested actions"/>
+    <title value="Plan and requested actions" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="plan-and-requested-actions"/>
-        <display value="Plan and requested actions"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="plan-and-requested-actions" />
+        <display value="Plan and requested actions" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -546,16 +546,16 @@ access to the composition/document information.-->
   </section>
   <!--Presenting complaints or issues-->
   <section>
-    <title value="Presenting complaints or issues"/>
+    <title value="Presenting complaints or issues" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="presenting-complaints-or-issues"/>
-        <display value="Presenting complaints or issues"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="presenting-complaints-or-issues" />
+        <display value="Presenting complaints or issues" />
       </coding>
     </code>
     <text>
-      <status value="generated"/>
+      <status value="generated" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -569,21 +569,21 @@ access to the composition/document information.-->
     </text>
     <!--Reference to information in the Condition list resource-->
     <entry>
-      <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f"/>
+      <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f" />
     </entry>
   </section>
   <!--Procedures-->
   <section>
-    <title value="Procedures"/>
+    <title value="Procedures" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="procedures"/>
-        <display value="Procedures"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="procedures" />
+        <display value="Procedures" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table>
           <tbody>
@@ -601,21 +601,21 @@ access to the composition/document information.-->
     </text>
     <!--reference to further information carried in the procedure list resource-->
     <entry>
-      <reference value="urn:uuid:1e04ce96-6e52-4f82-bc26-93c89c5836a1"/>
+      <reference value="urn:uuid:1e04ce96-6e52-4f82-bc26-93c89c5836a1" />
     </entry>
   </section>
   <!--Referrer details-->
   <section>
-    <title value="Referrer details"/>
+    <title value="Referrer details" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="referrer-details"/>
-        <display value="Referrer details"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="referrer-details" />
+        <display value="Referrer details" />
       </coding>
     </code>
     <text>
-      <status value="additional"/>
+      <status value="additional" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -630,16 +630,16 @@ access to the composition/document information.-->
   </section>
   <!--Senior reviewing clinician-->
   <section>
-    <title value="Senior reviewing clinician"/>
+    <title value="Senior reviewing clinician" />
     <code>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"/>
-        <code value="senior-reviewing-clinician"/>
-        <display value="Senior reviewing clinician"/>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="senior-reviewing-clinician" />
+        <display value="Senior reviewing clinician" />
       </coding>
     </code>
     <text>
-      <status value="generated"/>
+      <status value="generated" />
       <div xmlns="http://www.w3.org/1999/xhtml">
         <table width="100%">
           <tbody>
@@ -656,7 +656,7 @@ access to the composition/document information.-->
     </text>
     <!--reference to further information carried in the practitioner resource-->
     <entry>
-      <reference value="urn:uuid:d25fd1c6-2658-4db7-9af0-86c5f95e8ec9"/>
+      <reference value="urn:uuid:d25fd1c6-2658-4db7-9af0-86c5f95e8ec9" />
     </entry>
   </section>
 </Composition>

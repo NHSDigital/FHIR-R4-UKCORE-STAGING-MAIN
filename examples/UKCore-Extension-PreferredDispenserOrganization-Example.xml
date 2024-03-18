@@ -1,7 +1,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-PreferredDispenserOrganization-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a preferred dispenser</div>
   </text>
   <!-- ***************extension start*************** -->
