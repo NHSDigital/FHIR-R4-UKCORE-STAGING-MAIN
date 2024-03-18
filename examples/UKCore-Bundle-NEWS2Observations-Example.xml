@@ -1,9 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="UKCore-Bundle-NEWS2Observations-Example"/>
-  <text>
-    <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a bundle of NEWS2 observations and a Total Score observation</div>
-  </text>
   <type value="collection"/>
   <entry>
     <fullUrl value="Observation/21344a45-2660-45d1-9fb3-49e54d14b662"/>
