@@ -1,8 +1,8 @@
 <Communication xmlns="http://hl7.org/fhir">
   <id value="UKCore-Communication-FirstMMRVaccination-Example" />
   <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">First MMR vaccination administered to Melanie.</div>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a communication to notify that a patient has had their first MMR Vaccination</div>
   </text>
   <status value="completed" />
   <category>

@@ -1,5 +1,9 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport-ECG-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a diagnostic report in PDF, for an ECG</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="727071dc-eb01-4224-8ee8-cc0a02978792" />

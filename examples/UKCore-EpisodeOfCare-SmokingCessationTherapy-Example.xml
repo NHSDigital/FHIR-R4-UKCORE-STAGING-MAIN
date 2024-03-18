@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EpisodeOfCare xmlns="http://hl7.org/fhir">
   <id value="UKCore-EpisodeOfCare-SmokingCessationTherapy-Example" />
+  <text value="An example to illustrate an episode of care for smoking cessation therapy" />
   <status value="finished" />
   <type>
     <coding>
