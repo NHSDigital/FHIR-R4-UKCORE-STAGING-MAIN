@@ -1,5 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CodingSCTDescId-Example" />
+  <!-- **************Snippet start************** -->
   <code>
     <coding>
       <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
@@ -14,6 +15,7 @@
       <userSelected value="true" />
     </coding>
   </code>
+  <!-- **************Snippet end************** -->
   <subject>
     <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>

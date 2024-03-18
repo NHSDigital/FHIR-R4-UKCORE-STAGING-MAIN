@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <AuditEvent xmlns="http://hl7.org/fhir">
   <id value="UKCore-AuditEvent-Query-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an event made for purposes of maintaining a security log for a query search</div>
+  </text>
   <type>
     <system value="http://dicom.nema.org/resources/ontology/DCM" />
     <code value="110112" />

@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <BodyStructure xmlns="http://hl7.org/fhir">
   <id value="UKCore-BodyStructure-MedianCubitalVein-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a body structure of a vein</div>
+  </text>
   <location>
     <coding>
       <system value="http://snomed.info/sct" />

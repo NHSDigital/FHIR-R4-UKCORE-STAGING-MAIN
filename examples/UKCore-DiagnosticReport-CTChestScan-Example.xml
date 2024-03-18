@@ -1,5 +1,9 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport-CTChestScan-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a diagnostic report for a CT scan</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="727071dc-eb36-4224-8ee8-cc0a02973601" />
