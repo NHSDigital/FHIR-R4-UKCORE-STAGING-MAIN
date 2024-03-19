@@ -1,7 +1,7 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="UKCore-QuestionnaireResponse-BabyPatientSurvey-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a questionnaire response for a birth registration form</div>
   </text>
   <identifier>

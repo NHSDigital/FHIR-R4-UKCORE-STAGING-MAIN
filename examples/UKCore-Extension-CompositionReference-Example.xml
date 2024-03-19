@@ -1,7 +1,7 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CompositionReference-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate  referencing a composition within a diagnostic report</div>
   </text>
   <!--  **************extension start**************  -->

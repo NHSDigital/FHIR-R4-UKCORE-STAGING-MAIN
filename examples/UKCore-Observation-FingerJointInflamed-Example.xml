@@ -1,7 +1,7 @@
 <Observation>
   <id value="UKCore-Observation-FingerJointInflamed-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a finger joint inflammation observation</div>
   </text>
   <identifier>

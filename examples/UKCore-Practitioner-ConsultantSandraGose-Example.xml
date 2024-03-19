@@ -1,7 +1,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="UKCore-Practitioner-ConsultantSandraGose-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a practitioner who is a consultant</div>
   </text>
   <identifier>

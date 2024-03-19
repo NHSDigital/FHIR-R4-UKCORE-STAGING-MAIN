@@ -1,7 +1,7 @@
 <Appointment xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-DeliveryChannel-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the delivery channel associated with an appointment</div>
   </text>
   <!-- ***************extension start*************** -->

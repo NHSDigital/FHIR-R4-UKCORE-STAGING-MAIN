@@ -1,7 +1,7 @@
 <Encounter xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-LegalStatus-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension which is used to indicate a patient's legal status on admission or discharge</div>
   </text>
   <!-- **************extension start************** -->

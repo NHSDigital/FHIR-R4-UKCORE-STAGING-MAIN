@@ -1,7 +1,7 @@
 <Immunization xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-ParentPresent-Example" />
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension for a vaccination procedure where the parent of the patient is present</div>
   </text>
   <!-- **************extension start************** -->
