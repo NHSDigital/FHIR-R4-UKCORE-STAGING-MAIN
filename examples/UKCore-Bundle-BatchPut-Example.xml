@@ -29,7 +29,7 @@
         <subject>
           <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
         </subject>
-        <effectiveDateTime value="2024-03-25T12:20:00+00:00"/>
+        <effectiveDateTime value="2024-03-25T12:20:00+00:00" />
         <component>
           <code>
             <coding>
@@ -107,7 +107,7 @@
         <subject>
           <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
         </subject>
-        <effectiveDateTime value="2024-03-25T12:21:00+00:00"/>
+        <effectiveDateTime value="2024-03-25T12:21:00+00:00" />
         <component>
           <code>
             <coding>
@@ -263,7 +263,7 @@
         <subject>
           <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
         </subject>
-        <effectiveDateTime value="2024-03-25T12:23:00+00:00"/>
+        <effectiveDateTime value="2024-03-25T12:23:00+00:00" />
         <component>
           <code>
             <coding>
