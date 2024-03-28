@@ -314,8 +314,8 @@
       </binding>
     </element>
     <element id="Patient.managingOrganization">
-      <path value="Patient.managingOrganization"/>
-      <mustSupport value="true"/>
+      <path value="Patient.managingOrganization" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
