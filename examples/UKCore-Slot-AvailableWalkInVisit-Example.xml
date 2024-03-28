@@ -1,10 +1,8 @@
 <Slot xmlns="http://hl7.org/fhir">
   <id value="UKCore-Slot-AvailableWalkInVisit-Example" />
   <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      20 Dec 2022 9:15am - 9:30am: <b> Free</b>  Immunization
-    </div>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a free / available slot for a walk in vaccination</div>
   </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />

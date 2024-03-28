@@ -1,5 +1,9 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <id value="UKCore-PractitionerRole-GeneralPractitioner-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a practitioner with the GP role</div>
+  </text>
   <identifier>
     <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
     <value value="100334993514" />

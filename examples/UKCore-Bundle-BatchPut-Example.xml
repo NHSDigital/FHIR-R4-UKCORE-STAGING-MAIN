@@ -1,0 +1,394 @@
+<Bundle xmlns='http://hl7.org/fhir'>
+  <id value="UKCore-Bundle-BatchPut-Example" />
+  <type value='batch'/>
+  <entry>
+    <fullUrl value="urn:uuid:857d3c72-1672-4c8f-b6a1-4d04b44b0d7a" />
+    <resource>
+      <Observation>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="75367002" />
+            <display value="Blood pressure" />
+          </coding>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="85354-9" />
+            <display value="Blood pressure panel with all children optional" />
+          </coding>
+          <text value="Blood pressure" />
+        </code>
+        <subject>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </subject>
+        <effectiveDateTime value="2024-03-25T12:20:00+00:00" />
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="72313002" />
+              <display value="Systolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8480-6" />
+              <display value="Systolic blood pressure" />
+            </coding>
+            <text value="Systolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="120" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="1091811000000102" />
+              <display value="Diastolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8462-4" />
+              <display value="Diastolic blood pressure" />
+            </coding>
+            <text value="Diastolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="95" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value='POST'/>
+      <url value='Observation'/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c93bf88e-bea2-44db-a89c-c89c8363778b" />
+    <resource>
+      <Observation>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="75367002" />
+            <display value="Blood pressure" />
+          </coding>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="85354-9" />
+            <display value="Blood pressure panel with all children optional" />
+          </coding>
+          <text value="Blood pressure" />
+        </code>
+        <subject>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </subject>
+        <effectiveDateTime value="2024-03-25T12:21:00+00:00" />
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="72313002" />
+              <display value="Systolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8480-6" />
+              <display value="Systolic blood pressure" />
+            </coding>
+            <text value="Systolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="121" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="1091811000000102" />
+              <display value="Diastolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8462-4" />
+              <display value="Diastolic blood pressure" />
+            </coding>
+            <text value="Diastolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="95" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value='POST'/>
+      <url value='Observation'/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c32d8504-c144-4931-99f0-c940b4ec0a3e" />
+    <resource>
+      <Observation>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="75367002" />
+            <display value="Blood pressure" />
+          </coding>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="85354-9" />
+            <display value="Blood pressure panel with all children optional" />
+          </coding>
+          <text value="Blood pressure" />
+        </code>
+        <subject>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </subject>
+        <effectiveDateTime value="2024-03-25T12:22:00+00:00" />
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="72313002" />
+              <display value="Systolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8480-6" />
+              <display value="Systolic blood pressure" />
+            </coding>
+            <text value="Systolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="125" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="1091811000000102" />
+              <display value="Diastolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8462-4" />
+              <display value="Diastolic blood pressure" />
+            </coding>
+            <text value="Diastolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="90" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value='POST'/>
+      <url value='Observation'/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8aeca335-c513-4fdb-9869-f148db15cb4b" />
+    <resource>
+      <Observation>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="75367002" />
+            <display value="Blood pressure" />
+          </coding>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="85354-9" />
+            <display value="Blood pressure panel with all children optional" />
+          </coding>
+          <text value="Blood pressure" />
+        </code>
+        <subject>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </subject>
+        <effectiveDateTime value="2024-03-25T12:23:00+00:00" />
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="72313002" />
+              <display value="Systolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8480-6" />
+              <display value="Systolic blood pressure" />
+            </coding>
+            <text value="Systolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="122" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="1091811000000102" />
+              <display value="Diastolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8462-4" />
+              <display value="Diastolic blood pressure" />
+            </coding>
+            <text value="Diastolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="92" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value='POST'/>
+      <url value='Observation'/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:09a48566-c337-410d-9133-9f5aed67b5b2" />
+    <resource>
+      <Observation>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="75367002" />
+            <display value="Blood pressure" />
+          </coding>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="85354-9" />
+            <display value="Blood pressure panel with all children optional" />
+          </coding>
+          <text value="Blood pressure" />
+        </code>
+        <subject>
+          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+        </subject>
+        <effectiveDateTime value="2024-03-25T12:24:00+00:00" />
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="72313002" />
+              <display value="Systolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8480-6" />
+              <display value="Systolic blood pressure" />
+            </coding>
+            <text value="Systolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="118" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="1091811000000102" />
+              <display value="Diastolic arterial pressure" />
+            </coding>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="8462-4" />
+              <display value="Diastolic blood pressure" />
+            </coding>
+            <text value="Diastolic blood pressure" />
+          </code>
+          <valueQuantity>
+            <value value="94" />
+            <unit value="millimeter of mercury" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]" />
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value='POST'/>
+      <url value='Observation'/>
+    </request>
+  </entry>
+</Bundle>

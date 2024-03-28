@@ -1,5 +1,9 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="UKCore-Organization-WhiteRoseMedicalCentre-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an organization</div>
+  </text>
   <identifier>
     <use value="official" />
     <system value="https://fhir.nhs.uk/Id/ods-organization-code" />

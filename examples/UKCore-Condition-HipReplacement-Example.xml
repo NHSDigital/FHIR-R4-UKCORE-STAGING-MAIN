@@ -1,5 +1,9 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Condition-HipReplacement-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a patient with an issue with their hip replacement</div>
+  </text>
   <clinicalStatus>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />

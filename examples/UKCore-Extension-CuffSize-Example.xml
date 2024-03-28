@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Device xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CuffSize-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate recording a blood pressure device with a large cuff</div>
+  </text>
+  <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize">
     <valueCodeableConcept>
       <coding>
@@ -10,6 +14,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
+  <!-- **************extension end************** -->
   <status value="active" />
   <type>
     <coding>

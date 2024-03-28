@@ -1,5 +1,9 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-NPEWSTotal-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a NPEWS Total Score</div>
+  </text>
   <status value="final" />
   <category>
     <coding>

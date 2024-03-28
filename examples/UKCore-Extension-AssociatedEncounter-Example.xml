@@ -1,10 +1,16 @@
 <FamilyMemberHistory xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-AssociatedEncounter-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate sending an associated encounter with family member history</div>
+  </text>
+  <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter">
     <valueReference>
       <reference value="Encounter/UKCore-Encounter-InpatientEncounter-Example" />
     </valueReference>
   </extension>
+  <!-- **************extension end************** -->
   <status value="partial" />
   <patient>
     <reference value="Patient/UKCore-Patient-RichardSmith-Example" />

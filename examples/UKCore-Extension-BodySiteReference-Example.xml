@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-BodySiteReference-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the use of the BodySiteReference extension</div>
+  </text>
   <status value="available" />
   <type>
     <coding>
@@ -26,12 +29,13 @@
       </coding>
     </method>
     <bodySite>
-      <!-- Use of the bodySite R5 backport extension to reference a BodyStructure, in this case, the draw site. -->
+      <!-- **************extension start************** -->
       <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference">
         <valueReference>
           <reference value="BodyStructure/UKCore-BodyStructure-MedianCubitalVeinExample" />
         </valueReference>
       </extension>
+      <!-- **************extension end************** -->
       <text value="vein on the inner left arm" />
     </bodySite>
   </collection>

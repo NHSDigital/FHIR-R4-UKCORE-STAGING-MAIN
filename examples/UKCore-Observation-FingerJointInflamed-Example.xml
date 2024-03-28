@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Observation>
   <id value="UKCore-Observation-FingerJointInflamed-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a finger joint inflammation observation</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="0733b27a-377b-4688-90be-eb7b9f462b91" />

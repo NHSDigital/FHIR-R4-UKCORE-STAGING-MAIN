@@ -1,11 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CompositionReference-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate  referencing a composition within a diagnostic report</div>
+  </text>
+  <!--  **************extension start**************  -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
     <valueReference>
       <reference value="Composition/UKCore-Composition-Discharge-Example" />
     </valueReference>
   </extension>
+  <!--  **************extension end**************  -->
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="ce1913bf-ead4-4d04-904f-714cbc1636ef" />

@@ -1,5 +1,9 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest-CTChestScan-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a request for a CT chest scan due to a suspected blood clot</div>
+  </text>
   <status value="active" />
   <intent value="order" />
   <code>

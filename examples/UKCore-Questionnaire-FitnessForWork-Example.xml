@@ -1,5 +1,9 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="UKCore-Questionnaire-FitnessForWork-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a fitness for work form questions</div>
+  </text>
   <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-FitnessForWork-Example" />
   <title value="Statement of Fitness for Work (Mock up)" />
   <status value="draft" />

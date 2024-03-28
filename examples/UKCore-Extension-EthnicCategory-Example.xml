@@ -1,5 +1,9 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-EthnicCategory-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension which shows the ethnic category for a patient</div>
+  </text>
   <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
     <valueCodeableConcept>

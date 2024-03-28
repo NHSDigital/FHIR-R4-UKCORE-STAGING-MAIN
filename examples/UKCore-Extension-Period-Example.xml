@@ -1,5 +1,9 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-Period-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate sending a period</div>
+  </text>
   <!-- **************extension start************** -->
   <extension url="http://hl7.org/fhir/StructureDefinition/organization-period">
     <valuePeriod>

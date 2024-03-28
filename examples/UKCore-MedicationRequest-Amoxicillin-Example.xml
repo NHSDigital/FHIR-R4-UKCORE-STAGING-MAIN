@@ -1,5 +1,9 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationRequest-Amoxicillin-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the option for Amoxicillin when prescribing multiple routes</div>
+  </text>
   <status value="completed" />
   <intent value="option" />
   <category>

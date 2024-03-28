@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CollectionCollector-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector</div>
+  </text>
   <status value="available" />
   <type>
     <coding>

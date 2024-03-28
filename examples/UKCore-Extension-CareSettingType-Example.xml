@@ -1,5 +1,9 @@
 <Composition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CareSettingType-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the care setting of a FHIR document</div>
+  </text>
   <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType">
     <valueCodeableConcept>

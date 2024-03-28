@@ -1,14 +1,18 @@
 <Patient xmlns="http://hl7.org/fhir">
-<id value="UKCore-Extension-BirthSex-Example" />
+  <id value="UKCore-Extension-BirthSex-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension for a patient's birth sex</div>
+  </text>
   <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
     <valueCodeableConcept>
-    <coding>
-    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-BirthSex" />
-    <code value="F" />
-    <display value="Female" />
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-BirthSex" />
+        <code value="F" />
+        <display value="Female" />
       </coding>
-  </valueCodeableConcept>
+    </valueCodeableConcept>
   </extension>
   <!-- **************extension end************** -->
 </Patient>

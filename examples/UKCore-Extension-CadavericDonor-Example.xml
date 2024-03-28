@@ -1,5 +1,9 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CadavericDonor-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate whether the patient authorised the donation of body parts after death using the core-defined extension</div>
+  </text>
   <!-- **************extension start************** -->
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor">
     <valueBoolean value="true" />

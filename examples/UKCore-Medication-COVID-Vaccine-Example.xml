@@ -1,5 +1,9 @@
 <Medication xmlns="http://hl7.org/fhir">
   <id value="UKCore-Medication-COVID-Vaccine-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the batch element via a COVID-19 vaccine</div>
+  </text>
   <code>
     <coding>
       <system value="https://dmd.nhs.uk" />

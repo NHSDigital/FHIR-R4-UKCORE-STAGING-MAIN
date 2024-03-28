@@ -1,27 +1,31 @@
 <List xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Extension-ListWarningCode-Example" />
-    <!--  **************extension start**************  -->
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode">
-      <valueCodeableConcept>
+  <id value="UKCore-Extension-ListWarningCode-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a warning being provided in a list resource</div>
+  </text>
+  <!--  **************extension start**************  -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode">
+    <valueCodeableConcept>
       <coding>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode" />
-      <code value="data-in-transit" />
-      <display value="Data in Transit" />
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ListWarningCode" />
+        <code value="data-in-transit" />
+        <display value="Data in Transit" />
       </coding>
     </valueCodeableConcept>
-    </extension>
-    <!--  **************extension end**************  -->
-    <status value="current" />
-    <mode value="working" />
-    <code>
-        <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="826501000000100" />
-            <display value="Miscellaneous record" />
-        </coding>
-    </code>
-    <subject>
-        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-    </subject>
-    <date value="2021-12-10T13:00:00+00:00" />
+  </extension>
+  <!--  **************extension end**************  -->
+  <status value="current" />
+  <mode value="working" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="826501000000100" />
+      <display value="Miscellaneous record" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <date value="2021-12-10T13:00:00+00:00" />
 </List>

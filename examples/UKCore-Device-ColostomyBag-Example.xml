@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Device xmlns="http://hl7.org/fhir">
   <id value="UKCore-Device-ColostomyBag-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the use of a colostomy bag as a device in the provision of healthcare</div>
+  </text>
   <identifier>
     <system value="https://www.leedsth.nhs.uk/identifier/devices" />
     <value value="DEV1999990567" />

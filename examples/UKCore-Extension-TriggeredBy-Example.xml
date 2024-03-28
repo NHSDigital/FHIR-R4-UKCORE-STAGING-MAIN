@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Observation>
   <id value="UKCore-Extension-TriggeredBy-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustratean observation triggered by another observation</div>
+  </text>
+  <!-- ***************extension start*************** -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy">
     <extension url="observation">
       <valueReference>
@@ -13,7 +17,8 @@
     <extension url="reason">
       <valueString value="Patient admitted to recreational drug use." />
     </extension>
-    </extension>
+  </extension>
+  <!-- ***************extension end*************** -->
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="293a6418-9dcf-4d42-b97a-b119afd200ba" />

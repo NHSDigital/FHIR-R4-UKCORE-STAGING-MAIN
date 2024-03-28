@@ -1,8 +1,8 @@
 <Flag xmlns="http://hl7.org/fhir">
   <id value="UKCore-Flag-FoodAllergy-Example" />
   <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">Food Allergy Warning</div>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a flag regarding a food allergy</div>
   </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -18,7 +18,7 @@
     <text value="Diet" />
   </category>
   <code>
-  <coding>
+    <coding>
       <system value="http://snomed.info/sct" />
       <code value="226201008" />
       <display value="Peanut-free diet" />

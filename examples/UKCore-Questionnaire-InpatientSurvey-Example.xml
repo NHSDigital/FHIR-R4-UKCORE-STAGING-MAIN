@@ -1,5 +1,9 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="UKCore-Questionnaire-InpatientSurvey-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an in-patient questionnaire</div>
+  </text>
   <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-InpatientSurvey-Example" />
   <title value="Inpatient Survey (Mock up)" />
   <status value="draft" />

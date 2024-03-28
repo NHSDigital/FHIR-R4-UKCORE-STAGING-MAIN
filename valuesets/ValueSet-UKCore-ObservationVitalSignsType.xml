@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ObservationVitalSignsType" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationVitalSignsType" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreObservationVitalSignsType" />
   <title value="UK Core Observation Vital Signs Type" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2024-02-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -20,108 +20,673 @@
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(75367002 | Blood pressure |)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(&lt;&lt;75367002|Blood pressure (observable entity)| MINUS (&lt;&lt;271650006|Diastolic blood pressure (observable entity)| OR &lt;&lt;271649006|Systolic blood pressure (observable entity)| OR &lt;&lt;928021000000108|Baseline blood pressure (observable entity)| OR &lt;&lt;87541000000108|Highest brachial systolic pressure (observable entity)| OR &lt;&lt;723235005|Maximum blood pressure (observable entity)| OR &lt;&lt;723236006|Minimum blood pressure (observable entity)| OR &lt;&lt;314453003|Average diastolic blood pressure (observable entity)| OR &lt;&lt;314440001|Average systolic blood pressure (observable entity)| OR &lt;&lt;251073000|Invasive diastolic arterial pressure (observable entity)| OR &lt;&lt;251071003|Invasive systolic arterial pressure (observable entity)| OR &lt;&lt;276781007|Left ventricular end-diastolic pressure (observable entity)| OR &lt;&lt;276780008|Left ventricular systolic pressure (observable entity)| OR &lt;&lt;1036571000000105|Non-invasive central diastolic blood pressure (observable entity)| OR &lt;&lt;1036551000000101|Non-invasive central systolic blood pressure (observable entity)| OR &lt;&lt;174255007|Non-invasive diastolic arterial pressure (observable entity)| OR &lt;&lt;251070002|Non-invasive systolic arterial pressure (observable entity)| OR &lt;&lt;276772001|Right ventricular systolic pressure (observable entity)| OR &lt;&lt;276774000|Right ventricular end-diastolic pressure (observable entity)| OR &lt;&lt;399023006|Right ventricular peak systolic pressure (observable entity)| OR &lt;&lt;276773006|Right ventricular diastolic pressure (observable entity)|))" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Diastolic" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(&lt;&lt;271649006|Systolic blood pressure (observable entity)| MINUS (&lt;&lt;716579001|Baseline systolic blood pressure (observable entity)| OR &lt;&lt;814101000000107|Systolic blood pressure centile (observable entity)| OR &lt;&lt;315612005|Target systolic blood pressure (observable entity)|))" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-Systolic" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(&lt;&lt;271650006|Diastolic blood pressure (observable entity)| MINUS (&lt;&lt;716632005|Baseline diastolic blood pressure (observable entity)| OR &lt;&lt;315613000|Target diastolic blood pressure (observable entity)| OR &lt;&lt;814081000000101|Diastolic blood pressure centile (observable entity)|))" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BMI" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(276885007 | Core body temperature |)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyHeightMeasurements" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(&lt;&lt;386725007|Body temperature (observable entity)| MINUS (&lt;&lt;248458005|Comparative temperature in limbs (observable entity)| OR &lt;&lt;852591000000107|Maximum body temperature (observable entity)| OR &lt;&lt;852601000000101|Minimum body temperature (observable entity)| OR &lt;&lt;852581000000105|Target body temperature (observable entity)| OR &lt;&lt;364419004|Temperature of cervical spine (observable entity)| OR &lt;&lt;364424001|Temperature of thoracic spine (observable entity)| OR &lt;&lt;364429006|Temperature of lumbar spine (observable entity)| OR &lt;&lt;248835004|Temperature of breast (observable entity)| OR &lt;&lt;250124002|Temperature of joint (observable entity)| OR &lt;&lt;431197002|Temperature of digit (observable entity)| OR &lt;&lt;364518005|Temperature of foot (observable entity)| OR &lt;&lt;363997004|Temperature of pinna (observable entity)| OR &lt;&lt;364537001|Temperature of skin (observable entity)|))" />
-       </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(1104441000000107 | Alert Confusion Voice Pain Unresponsive scale score |)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyWeightMeasurements" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(364075005 | Heart rate |)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HeadCircumferenceMeasurements" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(&lt;&lt;364075005|Heart rate (observable entity)| MINUS (&lt;&lt;928001000000104|Baseline heart rate (observable entity)| OR &lt;&lt;428420003|Target heart rate (observable entity)| OR &lt;&lt;852341000000107|Maximum pulse rate (observable entity)| OR &lt;&lt;852351000000105|Minimum pulse rate (observable entity)| OR &lt;&lt;852331000000103|Target pulse rate (observable entity)|))" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-HeartRate" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(722742002 | Breathing room air | OR 371825009 | Patient on oxygen |)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OxygenSaturation" />
     </include>
     <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(103228002 | Blood oxygen saturation |)" />
-      </filter>
-    </include>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(&lt;&lt;103228002|Hemoglobin saturation with oxygen (observable entity)| MINUS (&lt;&lt;442349007|Venous oxygen saturation (observable entity)| OR &lt;&lt;927981000000106|Baseline oxygen saturation at periphery (observable entity)| OR &lt;&lt;852651000000100|Maximum peripheral oxygen saturation (observable entity)| OR &lt;&lt;852661000000102|Minimum peripheral oxygen saturation (observable entity)| OR &lt;&lt;852641000000103|Target peripheral oxygen saturation (observable entity)|))" />
-      </filter>
-    </include>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="constraint" />
-        <op value="=" />
-        <value value="(86290005 | Respiratory rate |)" />
-      </filter>
+      <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-RespirationRate" />
     </include>
   </compose>
+  <expansion>
+    <identifier value="d66bc0c0-2f1a-446a-9372-fc9709a25c82" />
+    <timestamp value="2024-03-11T15:49:00+00:00" />
+    <total value="126" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="169876006" />
+      <display value="Birth head circumference" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="363812007" />
+      <display value="Head circumference" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="363811000" />
+      <display value="Head circumference measure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1269262007" />
+      <display value="Head circumference of fetus" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="248396005" />
+      <display value="Head circumference with caput" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="364589006" />
+      <display value="Birth weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="27113001" />
+      <display value="Body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="363808001" />
+      <display value="Body weight measure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="424927000" />
+      <display value="Body weight with shoes" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="425024002" />
+      <display value="Body weight without shoes" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="735395000" />
+      <display value="Current body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162388008" />
+      <display value="Dosing body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="445541000" />
+      <display value="Dry body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="443245006" />
+      <display value="Estimated weight using Broselow Luten paediatric weight estimation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162420002" />
+      <display value="Post-dialysis body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162414003" />
+      <display value="Pre-amputation estimated body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162416001" />
+      <display value="Pre-amputation measured body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162421003" />
+      <display value="Pre-dialysis body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="784399000" />
+      <display value="Self reported body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1230277003" />
+      <display value="Self reported peak body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162389000" />
+      <display value="Self reported pre-pregnancy body weight" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415882003" />
+      <display value="Axillary temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="300076005" />
+      <display value="Basal body temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="698832009" />
+      <display value="Bladder temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="386725007" />
+      <display value="Body temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="431807005" />
+      <display value="Body temperature taken with digital thermometer" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="276885007" />
+      <display value="Core body temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1222808002" />
+      <display value="Core body temperature measured in blood" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415921007" />
+      <display value="Forehead skin strip temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415922000" />
+      <display value="Forehead temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415929009" />
+      <display value="Groin temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="698831002" />
+      <display value="Nasopharyngeal temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415945006" />
+      <display value="Oral temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="307047009" />
+      <display value="Rectal temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="708499008" />
+      <display value="Temperature of neonate at birth" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="415974002" />
+      <display value="Tympanic temperature" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1003998008" />
+      <display value="Arm demispan" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1153637007" />
+      <display value="Body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="50373000" />
+      <display value="Body height measure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162418000" />
+      <display value="Estimated body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="248337003" />
+      <display value="Height from demispan" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162417005" />
+      <display value="Pre-amputation estimated body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162392001" />
+      <display value="Pre-amputation measured body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1149101003" />
+      <display value="Recumbent body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162419008" />
+      <display value="Self reported body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1230278008" />
+      <display value="Self reported peak adult body height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="248335006" />
+      <display value="Sitting height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="248333004" />
+      <display value="Standing height" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="60621009" />
+      <display value="Body mass index" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="446974000" />
+      <display value="BMI (body mass index) centile" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1153602009" />
+      <display value="Body mass index for age percentile" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="896691000000102" />
+      <display value="Child body mass index centile" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="926011000000101" />
+      <display value="Down syndrome body mass index centile" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="407556006" />
+      <display value="Lying systolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="163030003" />
+      <display value="O/E - Systolic BP reading" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162737008" />
+      <display value="Self reported systolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="407554009" />
+      <display value="Sitting systolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="400974009" />
+      <display value="Standing systolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="72313002" />
+      <display value="Systolic arterial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="271649006" />
+      <display value="Systolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1091811000000102" />
+      <display value="Diastolic arterial pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="271650006" />
+      <display value="Diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="407557002" />
+      <display value="Lying diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="163031004" />
+      <display value="O/E - Diastolic BP reading" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1162735000" />
+      <display value="Self reported diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="407555005" />
+      <display value="Sitting diastolic blood pressure" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="400975005" />
+      <display value="Standing diastolic blood pressure" />
+    </contains>
+    <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="386534000" />
+        <display value="Arterial blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="87179004" />
+        <display value="Arterial pulse pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="37087001" />
+        <display value="Arterial wedge pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="251068006" />
+        <display value="Atrial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="75367002" />
+        <display value="Blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="392570002" />
+        <display value="Blood pressure finding" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="71420008" />
+        <display value="Central venous pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="366162006" />
+        <display value="Central venous pressure - finding" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="392571003" />
+        <display value="Finding of arterial pulse pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="301141002" />
+        <display value="Finding of pulmonary arterial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="165077006" />
+        <display value="Intracardiac pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="386532001" />
+        <display value="Invasive arterial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="386533006" />
+        <display value="Invasive blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="37476000" />
+        <display value="Jugular venous pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="366163001" />
+        <display value="Jugular venous pressure - finding" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="276760007" />
+        <display value="Left atrial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="163033001" />
+        <display value="Lying blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="251076008" />
+        <display value="Non-invasive arterial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="723237002" />
+        <display value="Non-invasive blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="1036531000000108" />
+        <display value="Non-invasive central blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="163020007" />
+        <display value="O/E - blood pressure reading" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="371829003" />
+        <display value="Pulmonary vein wedge pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="276755008" />
+        <display value="Right atrial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="335661000000109" />
+        <display value="Self measured blood pressure reading" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="163035008" />
+        <display value="Sitting blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="163034007" />
+        <display value="Standing blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="364090009" />
+        <display value="Systemic arterial pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="386536003" />
+        <display value="Systemic blood pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="252076005" />
+        <display value="Venous pressure" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="366161004" />
+        <display value="Venous pressure - finding" />
+      </contains>
+      <contains>
+        <system value="http://snomed.info/sct" />
+        <code value="76882007" />
+        <display value="Venous wedge pressure" />
+      </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="271625008" />
+      <display value="Rate of spontaneous respiration" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="86290005" />
+      <display value="Respiratory rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="250810003" />
+      <display value="Total breath rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="422119006" />
+      <display value="Brachial pulse rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="429525003" />
+      <display value="Dorsalis pedis pulse rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="249043002" />
+      <display value="Fetal heart rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="364075005" />
+      <display value="Heart rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1089491000000108" />
+      <display value="Heart rate at cardiac apex" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="399017001" />
+      <display value="Heart rate on admission" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="429614003" />
+      <display value="Posterior tibial pulse rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="78564009" />
+      <display value="Pulse rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="843941000000100" />
+      <display value="Radial pulse rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="444981005" />
+      <display value="Resting heart rate" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="442476006" />
+      <display value="Arterial oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1097811000000106" />
+      <display value="Arterial oxygen saturation on room air at rest" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1097821000000100" />
+      <display value="Arterial oxygen saturation on supplemental oxygen at rest" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="103228002" />
+      <display value="Blood oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1017311000000104" />
+      <display value="Blood oxygen saturation (calculated)" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="442440005" />
+      <display value="Capillary oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="718059008" />
+      <display value="Cerebral oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="373638005" />
+      <display value="Conjunctival oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="442381003" />
+      <display value="Intracardiac oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="442386008" />
+      <display value="Jugular bulb oxygen saturation" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="866661000000106" />
+      <display value="Peripheral blood oxygen saturation on room air at rest" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="866681000000102" />
+      <display value="Peripheral blood oxygen saturation on room air on exertion" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="866701000000100" />
+      <display value="Peripheral blood oxygen saturation on supplemental oxygen at rest" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="866721000000109" />
+      <display value="Peripheral blood oxygen saturation on supplemental oxygen on exertion" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="431314004" />
+      <display value="Peripheral oxygen saturation" />
+    </contains>
+  </expansion>
 </ValueSet>

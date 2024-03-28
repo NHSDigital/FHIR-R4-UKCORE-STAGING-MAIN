@@ -1,7 +1,10 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-PharmacistVerifiedIndicator-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate whether a pharmacist verified a medication</div>
+  </text>
   <!-- **************extension start************** -->
-  <!--Pharmacist Verified Indicator extension details-->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator">
     <valueBoolean value="true" />
   </extension>

@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Observation>
   <id value="UKCore-Observation-PipeSmoker-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the observation of a patient who smokes a pipe</div>
+  </text>
   <status value="final" />
   <category>
     <coding>

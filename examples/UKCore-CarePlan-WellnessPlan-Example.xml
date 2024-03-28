@@ -1,5 +1,9 @@
 <CarePlan xmlns="http://hl7.org/fhir">
  <id value="UKCore-CarePlan-WellnessPlan-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a wellness plan for the management of Type 2 diabetes</div>
+  </text>
  <identifier>
   <value value="7d9955bc-afe0-11ea-b3de-0242ac130004" />
  </identifier>

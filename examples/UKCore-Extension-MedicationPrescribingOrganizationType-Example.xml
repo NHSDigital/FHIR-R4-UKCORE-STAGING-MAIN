@@ -1,13 +1,16 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-MedicationPrescribingOrganizationType-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the type of organisation or setting responsible for authorising and issuing a medication, but not the organisation or setting delivering the patient care</div>
+  </text>
   <!-- **************extension start************** -->
-  <!--Medication Prescribing Organization extension details-->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType">
     <valueCodeableConcept>
-    <coding>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganizationType" />
-      <code value="prescribed-at-gp-practice" />
-      <display value="Prescribed at GP practice" />
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationPrescribingOrganizationType" />
+        <code value="prescribed-at-gp-practice" />
+        <display value="Prescribed at GP practice" />
       </coding>
     </valueCodeableConcept>
   </extension>

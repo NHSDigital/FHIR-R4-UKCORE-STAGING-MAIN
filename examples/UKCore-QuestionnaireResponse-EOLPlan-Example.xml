@@ -1,5 +1,9 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="UKCore-QuestionnaireResponse-EOLPlan-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a questionnaire response for an end of life survey</div>
+  </text>
   <questionnaire value="https://example.com/base/Questionnaire/UKCore-Questionnaire-EOLPlan-Example" />
   <status value="completed" />
   <subject>

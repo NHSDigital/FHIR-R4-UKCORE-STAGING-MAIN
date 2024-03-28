@@ -1,5 +1,9 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationStatement-Amoxicillin-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a medication statement for Amoxicillin</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="ac0ffbdf-3289-41d5-84d9-068a1f5937db" />

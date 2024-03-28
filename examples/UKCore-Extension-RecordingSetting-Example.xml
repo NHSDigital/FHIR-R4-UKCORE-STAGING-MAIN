@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Observation>
+<Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-RecordingSetting-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate sending the setting a vital signs observation was recorded in</div>
+  </text>
+  <!-- ***************extension start*************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RcordingSetting">
-  <valueCodeableConcept>
-    <coding>
-    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting" />
-    <code value="residential" />
-    <display value="Residential" />
-    </coding>
-  </valueCodeableConcept>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting" />
+        <code value="residential" />
+        <display value="Residential" />
+      </coding>
+    </valueCodeableConcept>
   </extension>
+  <!-- ***************extension end*************** -->
   <status value="final" />
   <category>
     <coding>
@@ -24,11 +29,11 @@
       <code value="75367002" />
       <display value="Blood pressure" />
     </coding>
-        <coding>
-            <system value="http://loinc.org" />
-            <code value="85354-9" />
-            <display value="Blood pressure panel with all children optional" />
-        </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="85354-9" />
+      <display value="Blood pressure panel with all children optional" />
+    </coding>
     <text value="Blood pressure" />
   </code>
   <subject>
@@ -45,11 +50,11 @@
         <code value="72313002" />
         <display value="Systolic arterial pressure" />
       </coding>
-            <coding>
-                <system value="http://loinc.org" />
-                <code value="8480-6" />
-                <display value="Systolic blood pressure" />
-            </coding>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="8480-6" />
+        <display value="Systolic blood pressure" />
+      </coding>
       <text value="Systolic blood pressure" />
     </code>
     <valueQuantity>
@@ -66,11 +71,11 @@
         <code value="1091811000000102" />
         <display value="Diastolic arterial pressure" />
       </coding>
-            <coding>
-                <system value="http://loinc.org" />
-                <code value="8462-4" />
-                <display value="Diastolic blood pressure" />
-            </coding>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="8462-4" />
+        <display value="Diastolic blood pressure" />
+      </coding>
       <text value="Diastolic blood pressure" />
     </code>
     <valueQuantity>

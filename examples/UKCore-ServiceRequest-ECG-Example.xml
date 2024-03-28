@@ -1,5 +1,9 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest-ECG-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate service request for an ECG due to an elevated heart rate</div>
+  </text>
   <status value="active" />
   <intent value="order" />
   <code>

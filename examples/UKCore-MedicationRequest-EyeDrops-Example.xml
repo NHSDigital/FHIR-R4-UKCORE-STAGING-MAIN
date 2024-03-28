@@ -1,4 +1,8 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a medication request for eye drops</div>
+  </text>
   <id value="UKCore-MedicationRequest-EyeDrops-Example" />
   <status value="completed" />
   <intent value="order" />
