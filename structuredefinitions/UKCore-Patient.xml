@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Patient" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-  <version value="2.5.0" />
+  <version value="2.6.0" />
   <name value="UKCorePatient" />
   <title value="UK Core Patient" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-03-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -312,6 +312,10 @@
         <description value="A ValueSet that identifies the language used by a person." />
         <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
       </binding>
+    </element>
+    <element id="Patient.managingOrganization">
+      <path value="Patient.managingOrganization" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
