@@ -1,5 +1,9 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationDispense-EyeDrops-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a medication dispense of eye drops</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="5c92c1dc-06a9-4729-b8c9-222cf769f8dc" />

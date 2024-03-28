@@ -1,5 +1,9 @@
 <Task xmlns="http://hl7.org/fhir">
   <id value="UKCore-Task-Colonoscopy-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a task for a colonoscopy request</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="b269d1d7-1acf-47bb-8b3c-e38b583d9a07" />

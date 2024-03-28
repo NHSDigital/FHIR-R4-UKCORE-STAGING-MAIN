@@ -1,5 +1,10 @@
 <FamilyMemberHistory xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-Participant-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate sending the participant involved in recording the activities relating to this family member history</div>
+  </text>
+  <!-- ***************extension start*************** -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant">
     <extension url="function">
       <valueCodeableConcept>
@@ -16,6 +21,7 @@
       </valueReference>
     </extension>
   </extension>
+  <!-- ***************extension ebd*************** -->
   <status value="partial" />
   <patient>
     <reference value="Patient/UKCore-Patient-RichardSmith-Example" />

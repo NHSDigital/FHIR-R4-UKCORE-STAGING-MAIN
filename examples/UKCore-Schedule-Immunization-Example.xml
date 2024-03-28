@@ -1,5 +1,9 @@
 <Schedule xmlns="http://hl7.org/fhir">
   <id value="UKCore-Schedule-Immunization-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a schedule for immunization appointments</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="4c8b068a-d610-427f-a508-6b7f90d47bf2" />
@@ -34,6 +38,5 @@
     <start value="2021-10-13T11:20:00+07:00" />
     <end value="2021-10-13T11:50:00+07:00" />
   </planningHorizon>
-  <comment value="The slots attached to this schedule should be specialized to cover immunizations within
-   the clinic" />
+  <comment value="The slots attached to this schedule should be specialized to cover immunizations within the clinic" />
 </Schedule>

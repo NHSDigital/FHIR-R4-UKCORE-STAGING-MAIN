@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Observation>
   <id value="UKCore-Observation-OxygenTherapy-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an observation of a patient being assisted by oxygen therapy</div>
+  </text>
   <status value="final" />
   <category>
     <coding>

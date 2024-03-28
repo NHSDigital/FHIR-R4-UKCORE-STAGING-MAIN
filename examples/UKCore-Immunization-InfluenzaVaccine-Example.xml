@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Immunization xmlns="http://hl7.org/fhir">
   <id value="UKCore-Immunization-InfluenzaVaccine-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a vaccination for flu</div>
+  </text>
   <status value="completed" />
   <vaccineCode>
     <coding>

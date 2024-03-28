@@ -1,16 +1,20 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-OtherContactSystem-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension to indicate other contact system(s) for a patient Richard Smith</div>
+  </text>
   <telecom>
     <system value="other">
       <!-- **************extension start************** -->
       <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem">
         <valueCodeableConcept>
-      <coding>
+          <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem" />
             <code value="textphone" />
             <display value="Minicom (Textphone)" />
           </coding>
-    </valueCodeableConcept>
+        </valueCodeableConcept>
       </extension>
       <!-- *************extension end *****************-->
     </system>

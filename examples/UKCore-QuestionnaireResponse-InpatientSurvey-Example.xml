@@ -1,5 +1,9 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="UKCore-QuestionnaireResponse-InpatientSurvey-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a questionnaire response for an in-patient survey</div>
+  </text>
   <identifier>
     <value value="6d47d8c4-2f05-4dbb-93f8-6863e6d2975b" />
     <assigner>

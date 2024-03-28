@@ -1,7 +1,10 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-RepeatInformation-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the specific repeat information of a medication item</div>
+  </text>
   <!-- **************extension start************** -->
-  <!--MedicationRepeatInformation extension details-->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
     <extension url="numberOfPrescriptionsIssued">
       <valueUnsignedInt value="1" />

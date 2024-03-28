@@ -1,5 +1,9 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="UKCore-ServiceRequest-ColonoscopyRequest-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a GP referral for a colonoscopy</div>
+  </text>
   <!--The source of the service request.-->
   <!-- ***************extension start*************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">

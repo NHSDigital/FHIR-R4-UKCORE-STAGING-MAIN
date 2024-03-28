@@ -1,8 +1,8 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <id value="UKCore-PractitionerRole-Sn-Organization-Code-Example" />
-    <!-- **************snippet start************** -->
+  <!-- **************snippet start************** -->
   <identifier>
-      <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
     <value value="100334993514" />
   </identifier>
   <organization>
@@ -12,5 +12,5 @@
     </identifier>
     <display value="MILTON KEYNES UNIVERSITY HOSPITAL NHS FOUNDATION TRUST" />
   </organization>
-<!-- **************snippet end************** -->
+  <!-- **************snippet end************** -->
 </PractitionerRole>

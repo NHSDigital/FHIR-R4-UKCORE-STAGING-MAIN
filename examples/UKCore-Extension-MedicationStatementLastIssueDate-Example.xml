@@ -1,7 +1,10 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-MedicationStatementLastIssueDate-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the date the medication were last issued</div>
+  </text>
   <!-- **************extension start************** -->
-  <!--MedicationStatement Last Issue Date extension details-->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate">
     <valueDateTime value="2017-02-24" />
   </extension>

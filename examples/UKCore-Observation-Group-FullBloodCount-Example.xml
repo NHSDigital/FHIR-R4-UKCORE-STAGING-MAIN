@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Observation>
   <id value="UKCore-Observation-Group-FullBloodCount-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a full blood count using multiple lab observation references</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="53dd97da-082c-450d-a47d-3ffa44941a68" />

@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <OperationOutcome xmlns="http://hl7.org/fhir">
   <id value="UKCore-OperationOutcome-DateError-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an error returned from an API call, due to an error in a date</div>
+  </text>
   <issue>
     <severity value="fatal" />
     <code value="structure" />

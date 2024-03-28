@@ -1,18 +1,22 @@
 <Condition xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Extension-ConditionEpisode-Example" />
-    <!--  **************extension start**************  -->
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode">
-        <valueCode value="new" />
+  <id value="UKCore-Extension-ConditionEpisode-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension which is used to indicate the episodicity status of a condition</div>
+  </text>
+  <!--  **************extension start**************  -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode">
+    <valueCode value="new" />
     <valueCodeableConcept>
       <coding>
-            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity" />
-            <code value="new" />
-            <display value="New" />
-          </coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity" />
+        <code value="new" />
+        <display value="New" />
+      </coding>
     </valueCodeableConcept>
-    </extension>
-    <!--  **************extension end**************  -->
-    <subject>
-        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-    </subject>
+  </extension>
+  <!--  **************extension end**************  -->
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
 </Condition>

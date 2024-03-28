@@ -1,5 +1,9 @@
 <RequestGroup xmlns="http://hl7.org/fhir">
   <id value="UKCore-RequestGroup-MultipleAnitibiotics-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the options for multiple antibiotics when prescribing multiple routes</div>
+  </text>
   <status value="completed" />
   <intent value="order" />
   <priority value="routine" />

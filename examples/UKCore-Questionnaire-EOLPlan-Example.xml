@@ -1,5 +1,9 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="UKCore-Questionnaire-EOLPlan-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an end of life plan questionnaire</div>
+  </text>
   <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-EOLPlan-Example" />
   <title value="End of Life Care Plan (Mock up)" />
   <status value="draft" />

@@ -1,20 +1,24 @@
 <Encounter xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Extension-EmergencyCareDischargeStatus-Example" />
-    <!--  **************extension start**************  -->
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus">
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://snomed.info/sct" />
-                <code value="182992009" />
-                <display value="Treatment completed" />
-            </coding>
-        </valueCodeableConcept>
-    </extension>
-    <!--  **************extension end**************  -->
-    <status value="finished" />
-    <class>
-        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-        <code value="IMP" />
-        <display value="inpatient encounter" />
-    </class>
+  <id value="UKCore-Extension-EmergencyCareDischargeStatus-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension which is used to indicate the status of an individual on discharge from an Emergency Care Department</div>
+  </text>
+  <!--  **************extension start**************  -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="182992009" />
+        <display value="Treatment completed" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <!--  **************extension end**************  -->
+  <status value="finished" />
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    <code value="IMP" />
+    <display value="inpatient encounter" />
+  </class>
 </Encounter>

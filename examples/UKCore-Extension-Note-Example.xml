@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-Note-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate sending a note with a diagnostic report</div>
+  </text>
+  <!-- ***************extension start*************** -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
-        <valueAnnotation>
-            <authorReference>
+    <valueAnnotation>
+      <authorReference>
         <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
-      </authorReference> 
+      </authorReference>
       <time value="2023-05-10T10:39:12+00:00" />
       <text value="Page Dr Watson on receipt of results." />
-        </valueAnnotation>
-    </extension>
+    </valueAnnotation>
+  </extension>
+  <!-- ***************extension end*************** -->
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="957d702f-7e9e-43c2-b783-978f2c164b3c" />

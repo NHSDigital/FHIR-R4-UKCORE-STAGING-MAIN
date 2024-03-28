@@ -1,5 +1,9 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationDispense-CiprofloxacinIV-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the despensing of Ciprofloxacin via IV when prescribing multiple routes</div>
+  </text>
   <status value="completed" />
   <category>
     <coding>

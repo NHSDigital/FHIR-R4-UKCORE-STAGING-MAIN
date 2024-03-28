@@ -1,685 +1,662 @@
 <Composition>
-    <id value="UKCore-Composition-Discharge-Example" />
-    <!-- Extension to carry details of the Correspondence Care Setting Type. -->
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType">
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://snomed.info/sct" />
-                <code value="310000008" />
-                <display value="Accident and Emergency service" />
-            </coding>
-        </valueCodeableConcept>
-    </extension>
-    <identifier>
-        <system value="https://tools.ietf.org/html/rfc4122" />
-        <value value="2d361270-039f-4a48-827b-ef255ff8b6c4" />
-    </identifier>
-    <!--The workflow/clinical status of this composition. 
+  <id value="UKCore-Composition-Discharge-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a composition containing a discharge summary</div>
+  </text>
+  <!-- Extension to carry details of the Correspondence Care Setting Type. -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="310000008" />
+        <display value="Accident and Emergency service" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2d361270-039f-4a48-827b-ef255ff8b6c4" />
+  </identifier>
+  <!--The workflow/clinical status of this composition. 
 The status is a marker for the clinical standing of the document.-->
-    <status value="final" />
-    <type>
-        <!--Discharge Summary document type-->
-        <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="373942005" />
-            <display value="Discharge summary" />
-        </coding>
-    </type>
-    <!--Reference to the patient subject of the Composition-->
-    <subject>
-        <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5" />
-    </subject>
-    <!--Reference to the clinical encounter or type of care this documentation is associated with.-->
-    <encounter>
-        <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" />
-    </encounter>
-    <!--The composition editing time, when the composition was last logically changed by the author.-->
-    <date value="2021-02-12T19:00:00+00:00" />
-    <!--Identifies who is responsible for the information in the composition, 
+  <status value="final" />
+  <type>
+    <!--Discharge Summary document type-->
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="373942005" />
+      <display value="Discharge summary" />
+    </coding>
+  </type>
+  <!--Reference to the patient subject of the Composition-->
+  <subject>
+    <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5" />
+  </subject>
+  <!--Reference to the clinical encounter or type of care this documentation is associated with.-->
+  <encounter>
+    <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" />
+  </encounter>
+  <!--The composition editing time, when the composition was last logically changed by the author.-->
+  <date value="2021-02-12T19:00:00+00:00" />
+  <!--Identifies who is responsible for the information in the composition, 
 not necessarily who typed it in-->
-    <author>
-        <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" />
-    </author>
-    <title value="Accident &amp; Emergency Discharge summary" />
-    <!--Identifies the organisation responsible for ongoing maintenance of and 
+  <author>
+    <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" />
+  </author>
+  <title value="Accident &amp; Emergency Discharge summary" />
+  <!--Identifies the organisation responsible for ongoing maintenance of and 
 access to the composition/document information.-->
-    <custodian>
-        <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc" />
-    </custodian>
-    <!--Allergies and adverse reactions-->
-    <section>
-        <title value="Allergies and adverse reaction" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="allergies-and-adverse-reaction" />
-                <display value="Allergies and adverse reaction" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Causative agent</th>
-                            <td>Penicillin -class of antibiotic</td>
-                        </tr>
-                        <tr>
-                            <th>Description of reaction</th>
-                            <td>Eruption due to drug</td>
-                        </tr>
-                        <tr>
-                            <th>Severity</th>
-                            <td>Mild</td>
-                        </tr>
-                        <tr>
-                            <th>Certainty</th>
-                            <td>Certain</td>
-                        </tr>
-                        <tr>
-                            <th>Comment</th>
-                            <td>No swelling</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to Allergies List as the source of information for this section-->
-        <entry>
-            <reference value="urn:uuid:b37c89af-c5da-425f-8e6d-58c043ccf94b" />
-        </entry>
-    </section>
-    <!--Attendance details-->
-    <section>
-        <title value="Attendance details" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="attendance-details" />
-                <display value="Attendance details" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Date and time of contact</th>
-                            <td>12-Feb-2015 07:00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-    </section>
-    <!--Clinical narrative-->
-    <section>
-        <title value="Clinical narrative" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="clinical-narrative" />
-                <display value="Clinical narrative" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Clinical narrative</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>60 year old man complaining of chest pain lasting around 2 hours.</p>
-                                <p>Examination unremarkable.</p>
-                                <p>Inferior ischaemic changes on ECG.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <pre>
-Full Blood Count 
-
-TestValueUnitsReference Range
-White Cell Count11.1x10*9/L3.5 - 10.0
-Red Cell Count5.0x10*12/L4.25 - 5.75 
-Haemoglobin150g/L13.0 - 17.0
-Haematocrit0.230L/L0.400 - 0.500
-Mean Cell Volume90fL84 - 98
-Mean Cell Hb33.0pg27.5 - 32.0
-Mean Cell Hb Con34.0pg31.0 - 35.0
-RDW12.0%&lt; 14.5
-Platelet Count300x10*9/L150 - 400
-
-Machine Differential 
-
-TestValueUnitsReference Range
-Neutrophils7.0x10*9/L1.7 - 7.5
-Lymphocytes3.5x10*9/L1.0 - 3.5
-Monocytes0.3x10*9/L&lt; 0.6
-Eosinophils0.4x10*9/L&lt; 0.4
-Basophils0.1x10*9/L&lt; 0.1
-LUCs0.2x10*9/L&lt; 0.4
-                                </pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-    </section>
-    <!--Contact for further information-->
-    <section>
-        <title value="Contact for further information" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="contact-for-further-information" />
-                <display value="Contact for further information" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Contact for further information</th>
-                            <td>Dr Paul Rastall Tel: 0113 6323200</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-    </section>
-    <!--Diagnoses-->
-    <section>
-        <title value="Diagnoses" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="diagnoses" />
-                <display value="Diagnoses" />
-            </coding>
-        </code>
-        <text>
-            <status value="generated" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Diagnosis name</th>
-                            <td>Acute ST segment elevation myocardial infarction</td>
-                        </tr> 
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to information in the Condition list resource-->
-        <entry>
-            <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f" />
-        </entry>
-    </section>
-    <!--Discharge details-->
-    <section>
-        <title value="Discharge details" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="discharge-details" />
-                <display value="Discharge details" />
-            </coding>
-        </code>
-        <text>
-            <status value="extensions" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Discharge status</th>
-                            <td>Streamed from emergency department to urgent care service following initial assessment</td>
-                        </tr>
-                        <tr>
-                            <th>Date/time of discharge</th>
-                            <td>12-Feb-2015 08:00</td>
-                        </tr>
-                        <tr>
-                            <th>Discharge destination</th>
-                            <td>NHS other Hospital Provider - Ward for general Patients or the younger physically disabled</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to the Encounter entry as the source of information for this section-->
-        <entry>
-            <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" />
-        </entry>
-    </section>
-    <!-- GP Practice-->
-    <section>
-        <title value="GP practice" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="general-practitioner-practice" />
-                <display value="General practitioner practice" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>GP name</th>
-                            <td>
-                                <p>Prefix: Dr</p>
-                                <p>Given Name: John</p>
-                                <p>Family Name: Lorenzo</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>GP practice details</th>
-                            <td>
-                                <p>Name: MGP Medical Centre</p>
-                                <p>Address:</p>
-                                <p>Address Line: 1 MGP House, Overtown</p>
-                                <p>City: Leeds</p>
-                                <p>Post Code: LS21 7PA</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to the Organisation entry as the source of information for this section-->
-        <entry>
-            <reference value="urn:uuid:e4058bb2-bf1a-47a4-ab10-1471161380a1" />
-        </entry>
-    </section>
-    <!-- Information and advice given-->
-    <section>
-        <title value="Information and advice given" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="information-and-advice-given" />
-                <display value="Information and advice given" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Information and advice given</th>
-                            <td>Patient advised to be admitted to ward for further tests after ECG results 
-showed inferior ischaemic changes.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-    </section>
-    <!--Medications and medical devices-->
-    <section>
-        <title value="Medications and medical devices" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="medications-and-medical-devices" />
-                <display value="Medications and medical devices" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Medication name</th>
-                            <td>Ramipril 2.5mg tablets (A A H Pharmaceuticals Ltd)</td>
-                        </tr>
-                        <tr>
-                            <th>Form</th>
-                            <td>Tablet</td>
-                        </tr>
-                        <tr>
-                            <th>Route</th>
-                            <td>Oral</td>
-                        </tr>
-                        <tr>
-                            <th>Dose directions description</th>
-                            <td>One 2.5mg tablet once a day.</td>
-                        </tr>
-                        <tr>
-                            <th>Status</th>
-                            <td>Continued</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Medication name</th>
-                            <td>Aspirin 75mg tablets (Sigma Pharmaceuticals Plc)</td>
-                        </tr>
-                        <tr>
-                            <th>Form</th>
-                            <td>Tablet</td>
-                        </tr>
-                        <tr>
-                            <th>Route</th>
-                            <td>Oral</td>
-                        </tr>
-                        <tr>
-                            <th>Dose directions description</th>
-                            <td>Take one 75mg tablet once a day.</td>
-                        </tr>
-                        <tr>
-                            <th>Status</th>
-                            <td>Continued</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Medication name</th>
-                            <td>Simvastatin 40mg tablets (Brown &amp; Burk UK Ltd)</td>
-                        </tr>
-                        <tr>
-                            <th>Form</th>
-                            <td>Tablet</td>
-                        </tr>
-                        <tr>
-                            <th>Route</th>
-                            <td>Oral</td>
-                        </tr>
-                        <tr>
-                            <th>Dose directions description</th>
-                            <td>Take one 40mg tablet once a day.</td>
-                        </tr>
-                        <tr>
-                            <th>Status</th>
-                            <td>Continued</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Medication name</th>
-                            <td>Bisoprolol 5mg tablets (A A H Pharmaceuticals Ltd)</td>
-                        </tr>
-                        <tr>
-                            <th>Form</th>
-                            <td>Tablet</td>
-                        </tr>
-                        <tr>
-                            <th>Route</th>
-                            <td>Oral</td>
-                        </tr>
-                        <tr>
-                            <th>Dose directions description</th>
-                            <td>Take one 5mg tablet daily.</td>
-                        </tr>
-                        <tr>
-                            <th>Comment/recommendation</th>
-                            <td>Recommend Uptitrate according to BP and HR</td>
-                        </tr>
-                        <tr>
-                            <th>Status</th>
-                            <td>Continued</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to medication list-->
-        <entry>
-            <reference value="urn:uuid:e3c8b45f-22d4-4ce6-970c-10a959831dca" />
-        </entry>
-    </section>
-    <!-- Patient demographics-->
-    <section>
-        <title value="Patient demographics" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="patient-demographics" />
-                <display value="Patient demographics" />
-            </coding>
-        </code>
-        <text>
-            <status value="generated" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Patient name</th>
-                            <td>
-                                <p>Prefix: Mr</p>
-                                <p>Given Name: Richard</p>
-                                <p>Family Name: Smith</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Date of birth</th>
-                            <td>1 January 1957</td>
-                        </tr>
-                        <tr>
-                            <th>Gender</th>
-                            <td>Male</td>
-                        </tr>
-                        <tr>
-                            <th>NHS number</th>
-                            <td>1352465790</td>
-                        </tr>
-                        <tr>
-                            <th>Patient address</th>
-                            <td>
-                                <p>Address Line: 21, Grove Street, Overtown</p>
-                                <p>City: Leeds</p>
-                                <p>Post Code: LS21 1PF</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--reference to further information carried in the patient resource-->
-        <entry>
-            <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5" />
-        </entry>
-    </section>
-    <!--Person completing record-->
-    <section>
-        <title value="Person completing record" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="person-completing-record" />
-                <display value="Person completing record" />
-            </coding>
-        </code>
-        <text>
-            <status value="generated" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Name</th>
-                            <td>
-                                <p>Prefix: Dr</p>
-                                <p>Given Name: Paul</p>
-                                <p>Family Name: Rastall</p>
-                            </td>
-                        </tr> 
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to the practitioner entry as the source of information for this section-->
-        <entry>
-            <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" />
-        </entry>
-    </section>
-    <!--Plan and requested actions-->
-    <section>
-        <title value="Plan and requested actions" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="plan-and-requested-actions" />
-                <display value="Plan and requested actions" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Action</th>
-                            <td>
-                                <p>Patient has agreed to be admitted to Cramer ward for further tests to investigate causes of 
-his chest pain on 12 February 2015.</p>
-                                <p>Person responsible: Dr. Paul Rastall (Accident and Emergency Consultant, St. James's 
-University Hospital Accident and Emergency Department)</p>
-                                <p>Status: Completed</p>
-                                <p>Outcome: Patient expects to find out the more information about the reasons for his 
-chest pain when tests are carried out after admission.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-    </section>
-    <!--Presenting complaints or issues-->
-    <section>
-        <title value="Presenting complaints or issues" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="presenting-complaints-or-issues" />
-                <display value="Presenting complaints or issues" />
-            </coding>
-        </code>
-        <text>
-            <status value="generated" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Presenting complaints or issue</th>
-                            <td>Chest pain</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--Reference to information in the Condition list resource-->
-        <entry>
-            <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f" />
-        </entry>
-    </section>
-    <!--Procedures-->
-    <section>
-        <title value="Procedures" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="procedures" />
-                <display value="Procedures" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Procedure name</th>
-                            <td>Electrocardiographic monitoring</td>
-                        </tr>
-                        <tr>
-                            <th>Comment</th>
-                            <td>ECGs showed inferior ischaemic changes.</td>
-                        </tr> 
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--reference to further information carried in the procedure list resource-->
-        <entry>
-            <reference value="urn:uuid:1e04ce96-6e52-4f82-bc26-93c89c5836a1" />
-        </entry>
-    </section>
-    <!--Referrer details-->
-    <section>
-        <title value="Referrer details" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="referrer-details" />
-                <display value="Referrer details" />
-            </coding>
-        </code>
-        <text>
-            <status value="additional" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Referrer details</th>
-                            <td>Self-referral to accident and emergency department</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-    </section>
-    <!--Senior reviewing clinician-->
-    <section>
-        <title value="Senior reviewing clinician" />
-        <code>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
-                <code value="senior-reviewing-clinician" />
-                <display value="Senior reviewing clinician" />
-            </coding>
-        </code>
-        <text>
-            <status value="generated" />
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th>Name</th>
-                            <td>
-                                <p>Prefix: Mr</p>
-                                <p>Family Name: Abacus</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <!--reference to further information carried in the practitioner resource-->
-        <entry>
-            <reference value="urn:uuid:d25fd1c6-2658-4db7-9af0-86c5f95e8ec9" />
-        </entry>
-    </section>
+  <custodian>
+    <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc" />
+  </custodian>
+  <!--Allergies and adverse reactions-->
+  <section>
+    <title value="Allergies and adverse reaction" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="allergies-and-adverse-reaction" />
+        <display value="Allergies and adverse reaction" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Causative agent</th>
+              <td>Penicillin -class of antibiotic</td>
+            </tr>
+            <tr>
+              <th>Description of reaction</th>
+              <td>Eruption due to drug</td>
+            </tr>
+            <tr>
+              <th>Severity</th>
+              <td>Mild</td>
+            </tr>
+            <tr>
+              <th>Certainty</th>
+              <td>Certain</td>
+            </tr>
+            <tr>
+              <th>Comment</th>
+              <td>No swelling</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to Allergies List as the source of information for this section-->
+    <entry>
+      <reference value="urn:uuid:b37c89af-c5da-425f-8e6d-58c043ccf94b" />
+    </entry>
+  </section>
+  <!--Attendance details-->
+  <section>
+    <title value="Attendance details" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="attendance-details" />
+        <display value="Attendance details" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Date and time of contact</th>
+              <td>12-Feb-2015 07:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+  </section>
+  <!--Clinical narrative-->
+  <section>
+    <title value="Clinical narrative" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="clinical-narrative" />
+        <display value="Clinical narrative" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Clinical narrative</th>
+            </tr>
+            <tr>
+              <td>
+                <p>60 year old man complaining of chest pain lasting around 2 hours.</p>
+                <p>Examination unremarkable.</p>
+                <p>Inferior ischaemic changes on ECG.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <pre>Full Blood Count TestValueUnitsReference Range White Cell Count11.1x10*9/L3.5 - 10.0 Red Cell Count5.0x10*12/L4.25 - 5.75 Haemoglobin150g/L13.0 - 17.0 Haematocrit0.230L/L0.400 - 0.500 Mean Cell Volume90fL84 - 98 Mean Cell Hb33.0pg27.5 - 32.0 Mean Cell Hb Con34.0pg31.0 - 35.0 RDW12.0%&lt; 14.5 Platelet Count300x10*9/L150 - 400 Machine Differential TestValueUnitsReference Range Neutrophils7.0x10*9/L1.7 - 7.5 Lymphocytes3.5x10*9/L1.0 - 3.5 Monocytes0.3x10*9/L&lt; 0.6 Eosinophils0.4x10*9/L&lt; 0.4 Basophils0.1x10*9/L&lt; 0.1 LUCs0.2x10*9/L&lt; 0.4</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+  </section>
+  <!--Contact for further information-->
+  <section>
+    <title value="Contact for further information" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="contact-for-further-information" />
+        <display value="Contact for further information" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Contact for further information</th>
+              <td>Dr Paul Rastall Tel: 0113 6323200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+  </section>
+  <!--Diagnoses-->
+  <section>
+    <title value="Diagnoses" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="diagnoses" />
+        <display value="Diagnoses" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Diagnosis name</th>
+              <td>Acute ST segment elevation myocardial infarction</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to information in the Condition list resource-->
+    <entry>
+      <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f" />
+    </entry>
+  </section>
+  <!--Discharge details-->
+  <section>
+    <title value="Discharge details" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="discharge-details" />
+        <display value="Discharge details" />
+      </coding>
+    </code>
+    <text>
+      <status value="extensions" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Discharge status</th>
+              <td>Streamed from emergency department to urgent care service following initial assessment</td>
+            </tr>
+            <tr>
+              <th>Date/time of discharge</th>
+              <td>12-Feb-2015 08:00</td>
+            </tr>
+            <tr>
+              <th>Discharge destination</th>
+              <td>NHS other Hospital Provider - Ward for general Patients or the younger physically disabled</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to the Encounter entry as the source of information for this section-->
+    <entry>
+      <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" />
+    </entry>
+  </section>
+  <!-- GP Practice-->
+  <section>
+    <title value="GP practice" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="general-practitioner-practice" />
+        <display value="General practitioner practice" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>GP name</th>
+              <td>
+                <p>Prefix: Dr</p>
+                <p>Given Name: John</p>
+                <p>Family Name: Lorenzo</p>
+              </td>
+            </tr>
+            <tr>
+              <th>GP practice details</th>
+              <td>
+                <p>Name: MGP Medical Centre</p>
+                <p>Address:</p>
+                <p>Address Line: 1 MGP House, Overtown</p>
+                <p>City: Leeds</p>
+                <p>Post Code: LS21 7PA</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to the Organisation entry as the source of information for this section-->
+    <entry>
+      <reference value="urn:uuid:e4058bb2-bf1a-47a4-ab10-1471161380a1" />
+    </entry>
+  </section>
+  <!-- Information and advice given-->
+  <section>
+    <title value="Information and advice given" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="information-and-advice-given" />
+        <display value="Information and advice given" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Information and advice given</th>
+              <td>Patient advised to be admitted to ward for further tests after ECG results showed inferior ischaemic changes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+  </section>
+  <!--Medications and medical devices-->
+  <section>
+    <title value="Medications and medical devices" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="medications-and-medical-devices" />
+        <display value="Medications and medical devices" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Medication name</th>
+              <td>Ramipril 2.5mg tablets (A A H Pharmaceuticals Ltd)</td>
+            </tr>
+            <tr>
+              <th>Form</th>
+              <td>Tablet</td>
+            </tr>
+            <tr>
+              <th>Route</th>
+              <td>Oral</td>
+            </tr>
+            <tr>
+              <th>Dose directions description</th>
+              <td>One 2.5mg tablet once a day.</td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>Continued</td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Medication name</th>
+              <td>Aspirin 75mg tablets (Sigma Pharmaceuticals Plc)</td>
+            </tr>
+            <tr>
+              <th>Form</th>
+              <td>Tablet</td>
+            </tr>
+            <tr>
+              <th>Route</th>
+              <td>Oral</td>
+            </tr>
+            <tr>
+              <th>Dose directions description</th>
+              <td>Take one 75mg tablet once a day.</td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>Continued</td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Medication name</th>
+              <td>Simvastatin 40mg tablets (Brown &amp; Burk UK Ltd)</td>
+            </tr>
+            <tr>
+              <th>Form</th>
+              <td>Tablet</td>
+            </tr>
+            <tr>
+              <th>Route</th>
+              <td>Oral</td>
+            </tr>
+            <tr>
+              <th>Dose directions description</th>
+              <td>Take one 40mg tablet once a day.</td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>Continued</td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Medication name</th>
+              <td>Bisoprolol 5mg tablets (A A H Pharmaceuticals Ltd)</td>
+            </tr>
+            <tr>
+              <th>Form</th>
+              <td>Tablet</td>
+            </tr>
+            <tr>
+              <th>Route</th>
+              <td>Oral</td>
+            </tr>
+            <tr>
+              <th>Dose directions description</th>
+              <td>Take one 5mg tablet daily.</td>
+            </tr>
+            <tr>
+              <th>Comment/recommendation</th>
+              <td>Recommend Uptitrate according to BP and HR</td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>Continued</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to medication list-->
+    <entry>
+      <reference value="urn:uuid:e3c8b45f-22d4-4ce6-970c-10a959831dca" />
+    </entry>
+  </section>
+  <!-- Patient demographics-->
+  <section>
+    <title value="Patient demographics" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="patient-demographics" />
+        <display value="Patient demographics" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Patient name</th>
+              <td>
+                <p>Prefix: Mr</p>
+                <p>Given Name: Richard</p>
+                <p>Family Name: Smith</p>
+              </td>
+            </tr>
+            <tr>
+              <th>Date of birth</th>
+              <td>1 January 1957</td>
+            </tr>
+            <tr>
+              <th>Gender</th>
+              <td>Male</td>
+            </tr>
+            <tr>
+              <th>NHS number</th>
+              <td>1352465790</td>
+            </tr>
+            <tr>
+              <th>Patient address</th>
+              <td>
+                <p>Address Line: 21, Grove Street, Overtown</p>
+                <p>City: Leeds</p>
+                <p>Post Code: LS21 1PF</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--reference to further information carried in the patient resource-->
+    <entry>
+      <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5" />
+    </entry>
+  </section>
+  <!--Person completing record-->
+  <section>
+    <title value="Person completing record" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="person-completing-record" />
+        <display value="Person completing record" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <td>
+                <p>Prefix: Dr</p>
+                <p>Given Name: Paul</p>
+                <p>Family Name: Rastall</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to the practitioner entry as the source of information for this section-->
+    <entry>
+      <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" />
+    </entry>
+  </section>
+  <!--Plan and requested actions-->
+  <section>
+    <title value="Plan and requested actions" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="plan-and-requested-actions" />
+        <display value="Plan and requested actions" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Action</th>
+              <td>
+                <p>Patient has agreed to be admitted to Cramer ward for further tests to investigate causes of his chest pain on 12 February 2015.</p>
+                <p>Person responsible: Dr. Paul Rastall (Accident and Emergency Consultant, St. James's University Hospital Accident and Emergency Department)</p>
+                <p>Status: Completed</p>
+                <p>Outcome: Patient expects to find out the more information about the reasons for his chest pain when tests are carried out after admission.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+  </section>
+  <!--Presenting complaints or issues-->
+  <section>
+    <title value="Presenting complaints or issues" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="presenting-complaints-or-issues" />
+        <display value="Presenting complaints or issues" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Presenting complaints or issue</th>
+              <td>Chest pain</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--Reference to information in the Condition list resource-->
+    <entry>
+      <reference value="urn:uuid:0a46351b-bfe1-4085-956e-15d3b172e36f" />
+    </entry>
+  </section>
+  <!--Procedures-->
+  <section>
+    <title value="Procedures" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="procedures" />
+        <display value="Procedures" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tbody>
+            <tr>
+              <th>Procedure name</th>
+              <td>Electrocardiographic monitoring</td>
+            </tr>
+            <tr>
+              <th>Comment</th>
+              <td>ECGs showed inferior ischaemic changes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--reference to further information carried in the procedure list resource-->
+    <entry>
+      <reference value="urn:uuid:1e04ce96-6e52-4f82-bc26-93c89c5836a1" />
+    </entry>
+  </section>
+  <!--Referrer details-->
+  <section>
+    <title value="Referrer details" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="referrer-details" />
+        <display value="Referrer details" />
+      </coding>
+    </code>
+    <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Referrer details</th>
+              <td>Self-referral to accident and emergency department</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+  </section>
+  <!--Senior reviewing clinician-->
+  <section>
+    <title value="Senior reviewing clinician" />
+    <code>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+        <code value="senior-reviewing-clinician" />
+        <display value="Senior reviewing clinician" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <td>
+                <p>Prefix: Mr</p>
+                <p>Family Name: Abacus</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <!--reference to further information carried in the practitioner resource-->
+    <entry>
+      <reference value="urn:uuid:d25fd1c6-2658-4db7-9af0-86c5f95e8ec9" />
+    </entry>
+  </section>
 </Composition>

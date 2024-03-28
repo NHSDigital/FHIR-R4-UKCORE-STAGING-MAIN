@@ -1,5 +1,9 @@
 <Appointment xmlns="http://hl7.org/fhir">
   <id value="UKCore-Appointment-OrthopaedicSurgery-Example" />
+  <text>
+      <status value="additional" />
+      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate n orthopaedic surgery appointment</div>
+  </text>
   <!--This supports the recording of the organisation booking the appointment.-->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization">
     <valueReference>

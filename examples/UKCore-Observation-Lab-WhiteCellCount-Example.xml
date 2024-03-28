@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Observation>
   <id value="UKCore-Observation-Lab-WhiteCellCount-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the observation of a white cell count for a blood specimen</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="3b809516-a294-4de9-a4ce-0c24c7b5f796" />

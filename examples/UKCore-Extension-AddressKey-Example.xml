@@ -1,24 +1,28 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-AddressKey-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the use of an address key used with the address datatype</div>
+  </text>
   <address>
     <!-- **************extension start************** -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
       <extension url="type">
         <valueCodeableConcept>
-      <coding>
+          <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
             <code value="PAF" />
             <display value="Postcode Address File" />
           </coding>
-    </valueCodeableConcept>
+        </valueCodeableConcept>
       </extension>
       <extension url="value">
         <valueString value="LS10ABC" />
       </extension>
     </extension>
+    <!-- *************extension end *****************-->
     <line value="4 Sandmoor Drive" />
     <city value="LEEDS" />
     <postalCode value="LS17 7DF" />
-    <!-- *************extension end *****************-->
   </address>
 </Patient>

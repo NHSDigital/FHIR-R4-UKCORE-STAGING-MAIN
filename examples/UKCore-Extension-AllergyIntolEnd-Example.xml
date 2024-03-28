@@ -1,8 +1,11 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-AllergyIntolEnd-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid</div>
+  </text>
   <clinicalStatus>
     <!-- **************extension start************** -->
-    <!--This supports the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid..-->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd">
       <extension url="endDate">
         <valueDateTime value="2021-07-20T17:10:00+00:00" />

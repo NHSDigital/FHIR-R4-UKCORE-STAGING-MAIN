@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-MedicationChangeSummary-Example" />
-  <!--Change details extension-->
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension that describes the change information of a medication item</div>
+  </text>
+  <!-- ***************extension start*************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationChangeSummary">
     <extension url="status">
       <valueCoding>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationChangeStatus" />
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationChangeStatus" />
         <code value="amended" />
         <display value="Amended" />
       </valueCoding>
@@ -26,6 +29,7 @@
       <valueString value="Changed from tablet form to solution as tablet were being crushed before taking" />
     </extension>
   </extension>
+  <!-- ***************extension end*************** -->
   <status value="active" />
   <medicationReference>
     <reference value="urn:uuid:811a38a0-5612-47f5-8d5b-5a0287e8e72b" />

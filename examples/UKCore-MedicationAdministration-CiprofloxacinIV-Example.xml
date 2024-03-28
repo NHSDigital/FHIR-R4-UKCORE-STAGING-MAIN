@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationAdministration xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationAdministration-CiprofloxacinIV-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the administration of Ciprofloxacin via IV when prescribing multiple routes</div>
+  </text>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="504cdccf-203d-4023-af47-5351e283aee7" />

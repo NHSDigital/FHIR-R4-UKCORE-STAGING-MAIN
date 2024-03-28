@@ -1,5 +1,9 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="UKCore-QuestionnaireResponse-FitnessForWork-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a questionnaire response for a fitness to work form</div>
+  </text>
   <questionnaire value="https://example.com/base/Questionnaire/UKCore-Questionnaire-FitnessForWork-Example" />
   <status value="completed" />
   <subject>

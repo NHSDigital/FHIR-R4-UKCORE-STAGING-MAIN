@@ -1,5 +1,9 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-InterpreterRequired-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the core-defined extension which is used to indicate that a person requires an interpreter</div>
+  </text>
   <!--  **************extension start**************  -->
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
     <valueBoolean value="true" />

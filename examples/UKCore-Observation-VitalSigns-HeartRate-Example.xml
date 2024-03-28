@@ -1,5 +1,9 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-VitalSigns-HeartRate-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a heart rate vital sign</div>
+  </text>
   <status value="final" />
   <category>
     <coding>
