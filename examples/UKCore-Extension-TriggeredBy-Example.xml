@@ -2,7 +2,7 @@
   <id value="UKCore-Extension-TriggeredBy-Example" />
   <text>
     <status value="additional" />
-    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustratean observation triggered by another observation</div>
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustration observation triggered by another observation</div>
   </text>
   <!-- ***************extension start*************** -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy">
