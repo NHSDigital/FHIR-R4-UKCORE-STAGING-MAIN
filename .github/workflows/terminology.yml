@@ -18,4 +18,3 @@ jobs:
     secrets:
       ONTO_CLIENT_ID: ${{ secrets.ONTO_CLIENT_ID }}
       ONTO_CLIENT_SECRET: ${{ secrets.ONTO_CLIENT_SECRET }}
-      FAILONWARNING: ${{ secrets.FAILONWARNING }}
