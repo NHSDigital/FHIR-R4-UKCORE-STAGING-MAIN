@@ -8,7 +8,7 @@
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
     <valueCodeableConcept>
       <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-BirthSex" />
+        <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" />
         <code value="F" />
         <display value="Female" />
       </coding>
