@@ -1,0 +1,30 @@
+<Location xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Location-NeoNatalLGI-Example" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/Id/ods-site-code" />
+    <value value="RR8G5" />
+  </identifier>
+  <name value="NEONATAL MEDICINE LGI" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="PEDNICU" />
+      <display value="Pediatric neonatal intensive care unit" />
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone" />
+    <value value="0113 392 7443" />
+  </telecom>
+  <address>
+    <line value="NEONATAL MEDICINE LGI" />
+    <line value="LEEDS GENERAL INFIRMARY" />
+    <line value="GREAT GEORGE STREET" />
+    <city value="LEEDS" />
+    <postalCode value="LS1 3EX" />
+    <country value="ENGLAND" />
+  </address>
+  <managingOrganization>
+    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </managingOrganization>
+</Location>
