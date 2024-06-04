@@ -36,6 +36,16 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
       </type>
     </element>
+    <element id="Condition.extension:bodyStructureR6">
+      <path value="Condition.extension" />
+      <sliceName value="bodyStructureR6" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/Extension-UKCore-ConditionBodyStructure" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus" />
       <short value="The clinical status of the condition." />
