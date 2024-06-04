@@ -39,7 +39,6 @@
     <element id="Condition.extension:bodyStructureR6">
       <path value="Condition.extension" />
       <sliceName value="bodyStructureR6" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/6.0/StructureDefinition/Extension-UKCore-ConditionBodyStructure" />

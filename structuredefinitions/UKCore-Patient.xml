@@ -51,6 +51,31 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex" />
       </type>
     </element>
+    <element id="Patient.extension:bornStatus">
+      <path value="Patient.extension" />
+      <sliceName value="bornStatus" />
+      <short value="The patient's born status." />
+      <definition value="The patient's born status." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-bornStatus" />
+      </type>
+    </element>
+    <element id="Patient.extension:bornStatus.url">
+      <path value="Patient.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/patient-bornStatus" />
+    </element>
+    <element id="Patient.extension:bornStatus.value[x]">
+      <path value="Patient.extension.value[x]" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/patient-bornstatus" />
+      </binding>
+    </element>
     <element id="Patient.extension:cadavericDonor">
       <path value="Patient.extension" />
       <sliceName value="cadavericDonor" />
@@ -140,6 +165,7 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
+      <short value="An identifier for this patient." />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:nhsNumber">
