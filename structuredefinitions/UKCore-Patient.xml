@@ -124,9 +124,10 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Patient.extension:ptientBornStatusR5">
+    <element id="Patient.extension:bornStatusR5">
       <path value="Patient.extension" />
-      <sliceName value="ptientBornStatusR5" />
+      <sliceName value="bornStatusR5" />
+      <short value="Fetus born status. R% Backport" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-PatientBornStatus" />
