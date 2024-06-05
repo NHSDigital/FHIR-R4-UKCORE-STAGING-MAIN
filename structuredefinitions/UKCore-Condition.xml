@@ -27,6 +27,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.extension:bodyStructureR6">
+      <path value="Condition.extension" />
+      <sliceName value="bodyStructureR6" />
+      <short value="An extension to replicate the changes within R6 to support adding a reference to the body part affected by the diagnosed condition." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/Extension-UKCore-ConditionBodyStructure" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Condition.extension:conditionEpisode">
       <path value="Condition.extension" />
       <sliceName value="conditionEpisode" />
@@ -35,15 +45,6 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode" />
       </type>
-    </element>
-    <element id="Condition.extension:bodyStructureR6">
-      <path value="Condition.extension" />
-      <sliceName value="bodyStructureR6" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/Extension-UKCore-ConditionBodyStructure" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus" />
