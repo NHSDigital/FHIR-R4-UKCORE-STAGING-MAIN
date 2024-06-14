@@ -34,24 +34,4 @@
     <code value="devolved-nation" />
     <display value="Devolved nation" />
   </concept>
-  <concept>
-    <code value="01" />
-    <display value="Record anonymised for legal/statutory reasons" />
-  </concept>
-  <concept>
-    <code value="02" />
-    <display value="Record anonymised at request of Caldicott Guardian" />
-  </concept>
-  <concept>
-    <code value="03" />
-    <display value="Record anonymised at request of Patient" />
-  </concept>
-  <concept>
-    <code value="97" />
-    <display value="Record anonymised for other reason" />
-  </concept>
-  <concept>
-    <code value="99" />
-    <display value="Identity withheld but reason not known" />
-  </concept>
 </CodeSystem>

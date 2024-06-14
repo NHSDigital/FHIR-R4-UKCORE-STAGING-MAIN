@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-FundingCategory" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreFundingCategory" />
   <title value="UK Core Funding Category" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2024-06-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -32,6 +32,7 @@
   <concept>
     <code value="devolved-nations" />
     <display value="Devolved nations" />
+    <definition value="deprecated" />
   </concept>
   <concept>
     <code value="scotland" />
