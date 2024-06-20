@@ -29,6 +29,8 @@
   <expansion>
     <identifier value="a130430a-9572-4a68-9952-87907c3c2915" />
     <timestamp value="2023-03-29T15:09:15+00:00" />
+    <total value="8" />
+    <offset value="0" />
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason" />
       <code value="nhs-number-not-known" />
@@ -43,6 +45,31 @@
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason" />
       <code value="devolved-nation" />
       <display value="Devolved nation" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <code value="01" />
+      <display value="Record anonymised for legal/statutory reasons" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <code value="02" />
+      <display value="Record anonymised at request of Caldicott Guardian" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <code value="03" />
+      <display value="Record anonymised at request of Patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <code value="97" />
+      <display value="Record anonymised for other reason" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <code value="99" />
+      <display value="Identity withheld but reason not known" />
     </contains>
   </expansion>
 </ValueSet>
