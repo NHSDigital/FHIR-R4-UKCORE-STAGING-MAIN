@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-RecordingSetting" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RecordingSetting" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="ExtensionUKCoreRecordingSetting" />
   <title value="Extension UK Core Recording Setting" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-06-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -47,6 +47,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-RecordingSetting" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

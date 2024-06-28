@@ -1,0 +1,246 @@
+ .github/workflows/QualityControlChecker.yml (new)                                                                                                                        |   18 ++
+ .github/workflows/main.yml (gone)                                                                                                                                        |   54 ------
+ .github/workflows/validation-no-terminology.yml (gone)                                                                                                                   |   96 ----------
+ CapabilityStatement/CapabilityStatement-UKCore.xml                                                                                                                       |   67 +------
+ codesystems/CodeSystem-NHSDataModelAndDictionary-AdmissionMethod.xml (gone)                                                                                              |  113 ------------
+ codesystems/CodeSystem-NHSDataModelAndDictionary-DischargeDestination.xml (gone)                                                                                         |   98 -----------
+ codesystems/CodeSystem-NHSDataModelAndDictionary-DischargeMethod.xml (gone)                                                                                              |   53 ------
+ codesystems/CodeSystem-NHSDataModelAndDictionary-OutcomeOfAttendance.xml (gone)                                                                                          |   35 ----
+ codesystems/CodeSystem-NHSDataModelAndDictionary-PersonMaritalStatusCode.xml (gone)                                                                                      |   47 -----
+ codesystems/CodeSystem-NHSDataModelAndDictionary-PersonStatedGenderCode.xml (gone)                                                                                       |   39 ----
+ codesystems/CodeSystem-NHSDataModelAndDictionary-SourceOfAdmission.xml (gone)                                                                                            |   80 ---------
+ codesystems/CodeSystem-UKCore-ConditionCategory.xml                                                                                                                      |   62 +++----
+ codesystems/CodeSystem-UKCore-ConditionRelationship.xml (gone)                                                                                                           |   53 ------
+ codesystems/CodeSystem-UKCore-ConsentUpdateMode.xml (gone)                                                                                                               |   31 ----
+ codesystems/CodeSystem-UKCore-DateTimeType.xml (gone)                                                                                                                    |   88 ----------
+ codesystems/CodeSystem-UKCore-EPSIssueCode.xml (gone)                                                                                                                    |  131 --------------
+ codesystems/CodeSystem-UKCore-EthnicCategory.xml (gone)                                                                                                                  |  295 -------------------------------
+ codesystems/CodeSystem-UKCore-EthnicCategoryScotland.xml (gone)                                                                                                          |  107 -----------
+ codesystems/CodeSystem-UKCore-HumanLanguage.xml (gone)                                                                                                                   |  783 ---------------------------------------------------------------------------------
+ codesystems/CodeSystem-UKCore-ITKResponseCode.xml (gone)                                                                                                                 |  135 --------------
+ codesystems/CodeSystem-UKCore-LanguageAbilityMode.xml (gone)                                                                                                             |   47 -----
+ codesystems/CodeSystem-UKCore-LanguageAbilityProficiency.xml (gone)                                                                                                      |   39 ----
+ codesystems/CodeSystem-UKCore-MedicationChangeStatus.xml (gone)                                                                                                          |   40 -----
+ codesystems/CodeSystem-UKCore-MedicationPrescribingAgency.xml (gone)                                                                                                     |   31 ----
+ codesystems/CodeSystem-UKCore-MedicationPrescribingOrganization.xml (gone)                                                                                               |   31 ----
+ codesystems/CodeSystem-UKCore-MessageEvent.xml (gone)                                                                                                                    |   23 ---
+ codesystems/CodeSystem-UKCore-MessageHeaderInstruction.xml (gone)                                                                                                        |   23 ---
+ codesystems/CodeSystem-UKCore-NHSNumberVerificationStatus.xml (gone)                                                                                                     |  138 ---------------
+ codesystems/CodeSystem-UKCore-OverseasVisitorChargingCategory.xml (gone)                                                                                                 |   55 ------
+ codesystems/CodeSystem-UKCore-PersonMaritalStatus.xml (gone)                                                                                                             |  118 -------------
+ codesystems/CodeSystem-UKCore-PersonMaritalStatusScotland.xml (gone)                                                                                                     |   67 -------
+ codesystems/CodeSystem-UKCore-PracticeSettingCodeEngland.xml (gone)                                                                                                      |  403 ------------------------------------------
+ codesystems/CodeSystem-UKCore-PracticeSettingCodeScotland.xml (gone)                                                                                                     |  395 -----------------------------------------
+ codesystems/CodeSystem-UKCore-PracticeSettingCodeWales.xml (gone)                                                                                                        |  372 ---------------------------------------
+ codesystems/CodeSystem-UKCore-PrescriptionType.xml (gone)                                                                                                                |   39 ----
+ codesystems/CodeSystem-UKCore-ProblemSignificance.xml (gone)                                                                                                             |   31 ----
+ codesystems/CodeSystem-UKCore-SDSJobRoleName.xml (gone)                                                                                                                  | 1591 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ codesystems/CodeSystem-UKCore-ServiceRequestMethod.xml (gone)                                                                                                            |   51 ------
+ codesystems/CodeSystem-UKCore-SpineErrorOrWarningCode.xml (gone)                                                                                                         |  133 --------------
+ codesystems/CodeSystem-UKCore-TreatmentCategory.xml (gone)                                                                                                               |   48 -----
+ conceptmaps/ConceptMap-UKCore-AdministrativeGender.xml (gone)                                                                                                            |   63 -------
+ conceptmaps/ConceptMap-UKCore-ConditionEpisodicity.xml (gone)                                                                                                            |   63 -------
+ conceptmaps/ConceptMap-UKCore-MaritalStatus.xml (gone)                                                                                                                   |   94 ----------
+ examples/UKCore-Appointment-Extension-DeliveryChannel-Example.xml                                                                                                        |    8 +-
+ examples/UKCore-Appointment-OrthopaedicSurgery-Example.xml                                                                                                               |    8 +-
+ examples/UKCore-AuditEvent-Query-Example.xml (gone)                                                                                                                      |   51 ------
+ examples/UKCore-Bundle-AllergyList-Example.xml                                                                                                                           |    2 +-
+ examples/UKCore-CarePlan-WellnessPlan-Example.xml (gone)                                                                                                                 |   66 -------
+ examples/UKCore-CareTeam-WeightManagementTeamExample.xml (gone)                                                                                                          |   21 ---
+ examples/UKCore-Communication-FirstMMRVaccination-Example.xml (gone)                                                                                                     |   45 -----
+ examples/UKCore-Condition-Extension-ConditionEpisode-Example.xml                                                                                                         |   10 +-
+ examples/UKCore-Condition-Sn-Extension-CodingSCT-Myocardial-Example.xml                                                                                                  |    4 +-
+ examples/UKCore-Consent-ForInformationAccess-Example.xml (gone)                                                                                                          |   39 ----
+ examples/UKCore-Device-ColostomyBag-Example.xml (gone)                                                                                                                   |   29 ---
+ examples/UKCore-Device-SoftwareAsAMedicalDevice-Example.xml (gone)                                                                                                       |   25 ---
+ examples/UKCore-DiagnosticReport-DiagnosticStudiesReport-Example.xml (gone)                                                                                              |   29 ---
+ examples/UKCore-DiagnosticReport-Extension-Note-Example.xml                                                                                                              |   41 ++---
+ examples/UKCore-DocumentReference-CarePlanReportPDF-Example.xml (gone)                                                                                                   |   30 ----
+ examples/UKCore-EpisodeOfCare-SmokingCessationTherapy-Example.xml (gone)                                                                                                 |   18 --
+ examples/{UKCore-MedicationStatement-Extension-MedicationChangeSummary-Example.xml => UKCore-Extension-MedicationChangeSummary-Example.xml}                              |   70 ++++----
+ examples/{UKCore-MedicationStatement-Extension-PharmacistVerifiedIndicator-Example.xml => UKCore-Extension-PharmacistVerifiedIndicator-Example.xml}                      |    2 +-
+ examples/{UKCore-ServiceRequest-Extension-PriorityReason_SendingAsText-Example.xml => UKCore-Extension-PriorityReason-SendingAsText-Example.xml}                         |    2 +-
+ examples/{UKCore-FamilyMemberHistory-Extension-AssociatedEncounter.xml => UKCore-FamilyMemberHistory-Extension-AssociatedEncounter-Example.xml}                          |    0
+ examples/{UKCore-FamilyMemberHistory-Extension-Participant.xml => UKCore-FamilyMemberHistory-Extension-Participant-Example.xml}                                          |    0
+ examples/{UKCore-FamilyMemberHistory-FatherDiabetes.xml => UKCore-FamilyMemberHistory-FatherDiabetes-Example.xml}                                                        |    0
+ examples/UKCore-Flag-FoodAllergy-Example.xml (gone)                                                                                                                      |   43 -----
+ examples/UKCore-ImagingStudy-CTChestScan-Example.xml (gone)                                                                                                              |   34 ----
+ examples/UKCore-List-Extension-ListWarningCode-Example.xml                                                                                                               |   44 +++--
+ examples/{UKCore-MedicationAdministraton-Sn-ZeroDosage-Example.xml => UKCore-MedicationAdministration-Sn-ZeroDosage-Example.xml}                                         |    0
+ examples/{UKCore-MedicationStatement-Extension-MedicationStatementLastIssueDate-Example.xml => UKCore-MedicationStatement-Extension-LastIssueDate-Example.xml}           |    0
+ examples/{UKCore-MedicationStatement-Extension-MedicationPrescribingOrganizationType-Example.xml => UKCore-MedicationStatement-Extension-PrescribingOrgType-Example.xml} |    2 +-
+ examples/UKCore-MessageHeader-Discharge-Example.xml (gone)                                                                                                               |   27 ---
+ examples/UKCore-MessageHeader-Extension-ResponseRequest-Example.xml (gone)                                                                                               |   32 ----
+ examples/UKCore-Observation-Lab-Sn-AbsentData-Example.xml (new)                                                                                                          |   31 ++++
+ examples/UKCore-Observation-WhiteCellCount-Example.xml (gone)                                                                                                            |   41 -----
+ examples/UKCore-OperationOutcome-DateError-Example.xml (gone)                                                                                                            |   17 --
+ examples/UKCore-Patient-Extension-AddressKey-Example.xml                                                                                                                 |   12 +-
+ examples/UKCore-Patient-Extension-BirthSex-Example.xml                                                                                                                   |   10 +-
+ examples/UKCore-Patient-Extension-OtherContactSystem-Example.xml                                                                                                         |   12 +-
+ examples/{UKCore-Patient-Extension-PreferredDispenserOrganisation-Example.xml => UKCore-Patient-Extension-PreferredDispenserOrganization-Example.xml}                    |   18 +-
+ examples/UKCore-Patient-RichardSmith-Example.xml                                                                                                                         |  283 ++++++++++++++---------------
+ examples/UKCore-Patient-Sn-Makaton-Example.xml (new)                                                                                                                     |   22 +++
+ examples/UKCore-Patient-Sn-MultipleLanguages-Example.xml (new)                                                                                                           |   51 ++++++
+ examples/UKCore-Patient-Sn-SingleLanguage-Example.xml (new)                                                                                                              |   17 ++
+ examples/{UKCore-Practitioner-Pharmacist-JimmyChuck-Example.xml => UKCore-Practitioner-PharmacistJimmyChuck-Example.xml}                                                 |   48 ++---
+ examples/UKCore-Provenance-RARecordConsent-Example.xml (gone)                                                                                                            |   25 ---
+ examples/UKCore-Questionnaire-InpatientSurvey-Example.xml (gone)                                                                                                         |   74 --------
+ examples/UKCore-QuestionnaireResponse-BabyPatientSurvey-Example.xml (gone)                                                                                               |  105 -----------
+ examples/UKCore-QuestionnaireResponse-InpatientSurvey-Example.xml (gone)                                                                                                 |   81 ---------
+ examples/UKCore-Task-Colonoscopy-Example.xml (gone)                                                                                                                      |   65 -------
+ examples/UKCore-VitalSigns-Observation-OxygenSaturation-Example.xml (gone)                                                                                               |   40 -----
+ structuredefinitions/Extension-UKCore-ActualProblem.xml (gone)                                                                                                           |   69 --------
+ structuredefinitions/Extension-UKCore-AdditionalContact.xml                                                                                                              |  116 ++++++------
+ structuredefinitions/Extension-UKCore-AddressKey.xml                                                                                                                     |   18 +-
+ structuredefinitions/Extension-UKCore-AdmissionMethod.xml                                                                                                                |    8 +-
+ structuredefinitions/Extension-UKCore-AllergyIntoleranceEnd.xml                                                                                                          |   19 +-
+ structuredefinitions/Extension-UKCore-AnaestheticIssues.xml (gone)                                                                                                       |   67 -------
+ structuredefinitions/Extension-UKCore-AssociatedEncounter.xml                                                                                                            |  117 ++++++------
+ structuredefinitions/Extension-UKCore-BirthSex.xml                                                                                                                       |   14 +-
+ structuredefinitions/Extension-UKCore-BookingOrganization.xml                                                                                                            |   13 +-
+ structuredefinitions/Extension-UKCore-CodingSCTDescDisplay.xml                                                                                                           |  136 +++++++-------
+ structuredefinitions/Extension-UKCore-CodingSCTDescId.xml (gone)                                                                                                         |  110 ------------
+ structuredefinitions/Extension-UKCore-ConditionEpisode.xml                                                                                                               |   13 +-
+ structuredefinitions/Extension-UKCore-ContactPreference.xml                                                                                                              |   20 +--
+ structuredefinitions/Extension-UKCore-ContactRank.xml                                                                                                                    |    2 +-
+ structuredefinitions/Extension-UKCore-CopyCorrespondenceIndicator.xml                                                                                                    |    2 +-
+ structuredefinitions/Extension-UKCore-Coverage.xml                                                                                                                       |  118 ++++++-------
+ structuredefinitions/Extension-UKCore-DeathNotificationStatus.xml                                                                                                        |   16 +-
+ structuredefinitions/Extension-UKCore-DeliveryChannel.xml                                                                                                                |  124 +++++++------
+ structuredefinitions/Extension-UKCore-DeviceReference.xml                                                                                                                |  118 ++++++-------
+ structuredefinitions/{Extension-UKCore-CompositionReference.xml => Extension-UKCore-DiagnosticReportComposition.xml}                                                     |   12 +-
+ structuredefinitions/{Extension-UKCore-Note.xml => Extension-UKCore-DiagnosticReportNote.xml}                                                                            |   11 +-
+ structuredefinitions/{Extension-UKCore-RelatedProblemHeader.xml => Extension-UKCore-DiagnosticReportSupportingInfo.xml}                                                  |   75 ++++----
+ structuredefinitions/Extension-UKCore-DischargeMethod.xml                                                                                                                |    8 +-
+ structuredefinitions/Extension-UKCore-EffectivePeriod.xml (gone)                                                                                                         |   59 -------
+ structuredefinitions/Extension-UKCore-EncounterTransport.xml (gone)                                                                                                      |  128 --------------
+ structuredefinitions/Extension-UKCore-EthnicCategory.xml                                                                                                                 |    8 +-
+ structuredefinitions/Extension-UKCore-Evidence.xml                                                                                                                       |   15 +-
+ structuredefinitions/{Extension-UKCore-Participant.xml => Extension-UKCore-FamilyMemberHistoryParticipant.xml}                                                           |   32 ++--
+ structuredefinitions/Extension-UKCore-LegalStatus.xml                                                                                                                    |   15 +-
+ structuredefinitions/Extension-UKCore-ListWarningCode.xml                                                                                                                |   13 +-
+ structuredefinitions/Extension-UKCore-MainLocation.xml                                                                                                                   |   13 +-
+ structuredefinitions/Extension-UKCore-MedicalApplianceSupplier.xml (gone)                                                                                                |   66 -------
+ structuredefinitions/Extension-UKCore-MedicationChangeSummary.xml (gone)                                                                                                 |  132 --------------
+ structuredefinitions/Extension-UKCore-MedicationDosageLastChanged.xml (gone)                                                                                             |   57 ------
+ structuredefinitions/Extension-UKCore-MedicationPrescribingAgency.xml (gone)                                                                                             |   60 -------
+ structuredefinitions/Extension-UKCore-MedicationPrescribingOrganization.xml (gone)                                                                                       |   63 -------
+ structuredefinitions/Extension-UKCore-MedicationQuantityText.xml (gone)                                                                                                  |   63 -------
+ structuredefinitions/Extension-UKCore-MedicationRepeatInformation.xml                                                                                                    |   18 +-
+ structuredefinitions/Extension-UKCore-MedicationStatementLastIssueDate.xml                                                                                               |    2 +-
+ structuredefinitions/Extension-UKCore-MessageHeaderInstruction.xml (gone)                                                                                                |   63 -------
+ structuredefinitions/Extension-UKCore-NHSCommunication.xml (gone)                                                                                                        |  181 -------------------
+ structuredefinitions/Extension-UKCore-NHSNumberUnavailableReason.xml                                                                                                     |  120 ++++++-------
+ structuredefinitions/Extension-UKCore-NHSNumberVerificationStatus.xml                                                                                                    |    2 +-
+ structuredefinitions/Extension-UKCore-NominatedPharmacy.xml (gone)                                                                                                       |   67 -------
+ structuredefinitions/{Extension-UKCore-ClinicalSetting.xml => Extension-UKCore-ObservationBodyStructure.xml}                                                             |   38 ++--
+ structuredefinitions/{Extension-UKCore-TriggeredBy.xml => Extension-UKCore-ObservationTriggeredBy.xml}                                                                   |   20 +--
+ structuredefinitions/Extension-UKCore-OtherContactSystem.xml                                                                                                             |   10 +-
+ structuredefinitions/Extension-UKCore-OutcomeOfAttendance.xml                                                                                                            |   10 +-
+ structuredefinitions/Extension-UKCore-OverseasVisitorChargingCategory.xml (gone)                                                                                         |   63 -------
+ structuredefinitions/Extension-UKCore-PreferredDispenserOrganization.xml (gone)                                                                                          |   66 -------
+ structuredefinitions/Extension-UKCore-PrescriptionType.xml (gone)                                                                                                        |   64 -------
+ structuredefinitions/Extension-UKCore-PriorityReason.xml                                                                                                                 |  118 ++++++-------
+ structuredefinitions/Extension-UKCore-ProblemSignificance.xml (gone)                                                                                                     |   62 -------
+ structuredefinitions/Extension-UKCore-Recorder.xml (gone)                                                                                                                |   66 -------
+ structuredefinitions/Extension-UKCore-RelatedClinicalContent.xml (gone)                                                                                                  |   66 -------
+ structuredefinitions/Extension-UKCore-ReligiousAffiliation.xml (gone)                                                                                                    |   63 -------
+ structuredefinitions/Extension-UKCore-ResidentialStatus.xml                                                                                                              |    2 +-
+ structuredefinitions/Extension-UKCore-SampleCategory.xml                                                                                                                 |   10 +-
+ structuredefinitions/Extension-UKCore-ServiceRequestMethod.xml (gone)                                                                                                    |   62 -------
+ structuredefinitions/Extension-UKCore-SourceOfServiceRequest.xml                                                                                                         |  120 ++++++-------
+ structuredefinitions/{Extension-UKCore-CollectionCollector.xml => Extension-UKCore-SpecimenCollectionCollector.xml}                                                      |   17 +-
+ structuredefinitions/Extension-UKCore-TreatmentCategory.xml (gone)                                                                                                       |   64 -------
+ structuredefinitions/Extension-UKCore-TypedDateTime.xml (gone)                                                                                                           |  110 ------------
+ structuredefinitions/Extension-UKCore-VaccinationProcedure.xml                                                                                                           |    2 +-
+ structuredefinitions/UKCore-AllergyIntolerance.xml                                                                                                                       |  152 ++--------------
+ structuredefinitions/UKCore-Appointment.xml                                                                                                                              |  269 ++++++++++------------------
+ structuredefinitions/UKCore-AuditEvent.xml (gone)                                                                                                                        |  120 -------------
+ structuredefinitions/UKCore-Bundle.xml (gone)                                                                                                                            |   96 ----------
+ structuredefinitions/UKCore-CarePlan.xml (gone)                                                                                                                          |  345 ------------------------------------
+ structuredefinitions/UKCore-CareTeam.xml (gone)                                                                                                                          |  100 -----------
+ structuredefinitions/UKCore-Communication.xml (gone)                                                                                                                     |  189 --------------------
+ structuredefinitions/UKCore-Composition.xml                                                                                                                              |  176 ++-----------------
+ structuredefinitions/UKCore-Condition.xml                                                                                                                                |  163 ++---------------
+ structuredefinitions/UKCore-Consent.xml (gone)                                                                                                                           |  122 -------------
+ structuredefinitions/UKCore-Device.xml (gone)                                                                                                                            |  144 ---------------
+ structuredefinitions/UKCore-DiagnosticReport-Lab.xml                                                                                                                     |  136 ++++++++++----
+ structuredefinitions/UKCore-DiagnosticReport.xml                                                                                                                         |  210 +++-------------------
+ structuredefinitions/UKCore-DocumentReference.xml (gone)                                                                                                                 |  212 ----------------------
+ structuredefinitions/UKCore-Encounter.xml                                                                                                                                |  264 +++-------------------------
+ structuredefinitions/UKCore-EpisodeOfCare.xml (gone)                                                                                                                     |  151 ----------------
+ structuredefinitions/UKCore-FamilyMemberHistory.xml                                                                                                                      |   92 ++--------
+ structuredefinitions/UKCore-Flag.xml (gone)                                                                                                                              |  101 -----------
+ structuredefinitions/UKCore-HealthcareService.xml                                                                                                                        |  152 ++++++----------
+ structuredefinitions/UKCore-ImagingStudy.xml (gone)                                                                                                                      |  223 -----------------------
+ structuredefinitions/UKCore-Immunization.xml                                                                                                                             |  231 ++----------------------
+ structuredefinitions/UKCore-List.xml                                                                                                                                     |  107 ++---------
+ structuredefinitions/UKCore-Location.xml                                                                                                                                 |   70 ++------
+ structuredefinitions/UKCore-Medication.xml                                                                                                                               |   71 +-------
+ structuredefinitions/UKCore-MedicationAdministration.xml                                                                                                                 |  195 ++------------------
+ structuredefinitions/UKCore-MedicationDispense.xml                                                                                                                       |  240 ++++---------------------
+ structuredefinitions/UKCore-MedicationRequest.xml                                                                                                                        |  302 ++++++-------------------------
+ structuredefinitions/UKCore-MedicationStatement.xml                                                                                                                      |  179 +++----------------
+ structuredefinitions/UKCore-MessageHeader.xml (gone)                                                                                                                     |  167 ------------------
+ structuredefinitions/UKCore-Observation-Group-Lab.xml (new)                                                                                                              |  148 ++++++++++++++++
+ structuredefinitions/UKCore-Observation-Lab.xml                                                                                                                          |   91 ++++++++--
+ structuredefinitions/UKCore-Observation-LabGroup.xml (gone)                                                                                                              |   93 ----------
+ structuredefinitions/UKCore-Observation-VitalSigns.xml (gone)                                                                                                            |  108 ------------
+ structuredefinitions/UKCore-Observation.xml                                                                                                                              |  251 +++-----------------------
+ structuredefinitions/UKCore-OperationOutcome.xml (gone)                                                                                                                  |   53 ------
+ structuredefinitions/UKCore-Organization.xml                                                                                                                             |   84 ++-------
+ structuredefinitions/UKCore-Patient.xml                                                                                                                                  |  279 ++++++-----------------------
+ structuredefinitions/UKCore-Practitioner.xml                                                                                                                             |   82 ++++-----
+ structuredefinitions/UKCore-PractitionerRole.xml                                                                                                                         |  118 +++----------
+ structuredefinitions/UKCore-Procedure.xml                                                                                                                                |  289 ++----------------------------
+ structuredefinitions/UKCore-Provenance.xml (gone)                                                                                                                        |  160 -----------------
+ structuredefinitions/UKCore-Questionnaire.xml (gone)                                                                                                                     |   78 --------
+ structuredefinitions/UKCore-QuestionnaireResponse.xml (gone)                                                                                                             |  147 ----------------
+ structuredefinitions/UKCore-RelatedPerson.xml                                                                                                                            |  106 +++++------
+ structuredefinitions/UKCore-Schedule.xml                                                                                                                                 |  127 ++++++--------
+ structuredefinitions/UKCore-ServiceRequest-Lab.xml                                                                                                                       |  127 +++++++++++---
+ structuredefinitions/UKCore-ServiceRequest.xml                                                                                                                           |  247 ++------------------------
+ structuredefinitions/UKCore-Slot.xml                                                                                                                                     |  161 +++++++----------
+ structuredefinitions/UKCore-Specimen.xml                                                                                                                                 |  176 ++-----------------
+ structuredefinitions/UKCore-Task.xml (gone)                                                                                                                              |  208 ----------------------
+ valuesets/ValueSet-UKCore-ACVPU.xml (gone)                                                                                                                               |   67 -------
+ valuesets/ValueSet-UKCore-AllergyExposureRoute.xml (gone)                                                                                                                |   31 ----
+ valuesets/{ValueSet-UKCore-SpecimenCondition.xml => ValueSet-UKCore-BiopsyState.xml}                                                                                     |    0
+ valuesets/ValueSet-UKCore-ConditionCategory.xml                                                                                                                          |  152 ++++++++--------
+ valuesets/ValueSet-UKCore-ConditionEpisode.xml (gone)                                                                                                                    |   77 --------
+ valuesets/ValueSet-UKCore-ConditionRelationship.xml (gone)                                                                                                               |   74 --------
+ valuesets/ValueSet-UKCore-DateTimeType.xml (gone)                                                                                                                        |   27 ---
+ valuesets/ValueSet-UKCore-DeviceType.xml (gone)                                                                                                                          |   31 ----
+ valuesets/ValueSet-UKCore-FindingCode.xml (gone)                                                                                                                         |   31 ----
+ valuesets/ValueSet-UKCore-HumanLanguage.xml (gone)                                                                                                                       |  998 -------------------------------------------------------------------------------------------------------
+ valuesets/ValueSet-UKCore-InspiredOxygen.xml (gone)                                                                                                                      |   31 ----
+ valuesets/ValueSet-UKCore-LanguageAbilityMode.xml (gone)                                                                                                                 |   30 ----
+ valuesets/ValueSet-UKCore-LanguageAbilityProficiency.xml (gone)                                                                                                          |   30 ----
+ valuesets/ValueSet-UKCore-MedicationChangeStatus.xml (gone)                                                                                                              |   26 ---
+ valuesets/ValueSet-UKCore-MedicationDosageRoute.xml (gone)                                                                                                               |   31 ----
+ valuesets/ValueSet-UKCore-MedicationPrecondition.xml (gone)                                                                                                              |   32 ----
+ valuesets/ValueSet-UKCore-MedicationPrescribingAgency.xml (gone)                                                                                                         |   26 ---
+ valuesets/ValueSet-UKCore-MedicationPrescribingOrganization.xml (gone)                                                                                                   |   54 ------
+ valuesets/ValueSet-UKCore-MessageEvent.xml (gone)                                                                                                                        |  137 ---------------
+ valuesets/ValueSet-UKCore-MessageHeaderInstruction.xml (gone)                                                                                                            |   26 ---
+ valuesets/ValueSet-UKCore-ObservationMethod.xml (gone)                                                                                                                   |   31 ----
+ valuesets/ValueSet-UKCore-ObservationVitalSignsType.xml (gone)                                                                                                           |  127 --------------
+ valuesets/ValueSet-UKCore-ObservationVitalSignsValue.xml (gone)                                                                                                          |   31 ----
+ valuesets/ValueSet-UKCore-OperationOutcomeIssueDetails.xml (gone)                                                                                                        |  496 ---------------------------------------------------
+ valuesets/ValueSet-UKCore-OverseasVisitorChargingCategory.xml (gone)                                                                                                     |   26 ---
+ valuesets/ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables.xml (new)                                                                                            |   34 ++++
+ valuesets/{ValueSet-UKCore-UnifiedTestList.xml => ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures.xml}                                                          |   16 +-
+ valuesets/ValueSet-UKCore-PersonStatedGenderCode.xml (gone)                                                                                                              |   26 ---
+ valuesets/ValueSet-UKCore-PractitionerRoleCode.xml (gone)                                                                                                                | 3135 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ valuesets/ValueSet-UKCore-PrescriptionType.xml (gone)                                                                                                                    |   27 ---
+ valuesets/ValueSet-UKCore-ProblemSignificance.xml (gone)                                                                                                                 |   54 ------
+ valuesets/ValueSet-UKCore-QuestionnaireQuestionCodes.xml (gone)                                                                                                          |   26 ---
+ valuesets/ValueSet-UKCore-ReligiousAffiliation.xml (gone)                                                                                                                |   35 ----
+ valuesets/ValueSet-UKCore-ReportCodeSnCT.xml (gone)                                                                                                                      |   31 ----
+ valuesets/ValueSet-UKCore-SDSJobRoleName.xml (gone)                                                                                                                      |   26 ---
+ valuesets/ValueSet-UKCore-ServiceRequestMethod.xml (gone)                                                                                                                |   79 ---------
+ valuesets/ValueSet-UKCore-TreatmentCategory.xml (gone)                                                                                                                   |   26 ---
+ valuesets/ValueSet-UKCore-VaccinationProcedureSupplementary.xml                                                                                                          |   11 +-
+ valuesets/ValueSet-UKCore-VitalSignsObservationType.xml (gone)                                                                                                           |  127 --------------
+ valuesets/ValueSet-UKCore-VitalSignsObservationValue.xml (gone)                                                                                                          |   31 ----
+ 245 files changed, 2542 insertions(+), 23206 deletions(-)
