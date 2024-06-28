@@ -1,0 +1,17 @@
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Condition-Extension-ConditionEpisode-Example" />
+    <!--  **************extension start**************  -->
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionEpisodicity" />
+          <code value="new" />
+          <display value="New" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <!--  **************extension end**************  -->
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+</Condition>
