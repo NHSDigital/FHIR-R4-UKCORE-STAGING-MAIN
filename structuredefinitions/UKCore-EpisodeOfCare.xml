@@ -3,9 +3,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
   <version value="2.2.0" />
   <name value="UKCoreEpisodeOfCare" />
-  <title value="UK Core EpisodeOfCare" />
+  <title value="UK Core Episode Of Care" />
   <status value="draft" />
-  <date value="2023-12-16" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

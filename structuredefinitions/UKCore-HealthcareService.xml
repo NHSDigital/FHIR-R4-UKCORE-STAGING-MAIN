@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
   <version value="1.3.0" />
   <name value="UKCoreHealthcareService" />
-  <title value="UK Core HealthcareService" />
+  <title value="UK Core Healthcare Service" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

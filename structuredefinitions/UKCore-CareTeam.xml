@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
   <version value="2.1.0" />
   <name value="UKCoreCareTeam" />
-  <title value="UK Core CareTeam" />
+  <title value="UK Core Care Team" />
   <status value="draft" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

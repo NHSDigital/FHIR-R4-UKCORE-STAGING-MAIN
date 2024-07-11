@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance" />
   <version value="2.5.0" />
   <name value="UKCoreAllergyIntolerance" />
-  <title value="UK Core AllergyIntolerance" />
+  <title value="UK Core Allergy Intolerance" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

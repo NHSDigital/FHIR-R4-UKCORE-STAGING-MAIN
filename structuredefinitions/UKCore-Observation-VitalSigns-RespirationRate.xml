@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-RespirationRate" />
   <version value="1.0.0" />
   <name value="UKCoreObservationVitalSignsRespirationRate" />
-  <title value="UKCore Observation Vital Signs Respiration Rate" />
+  <title value="UK Core Observation Vital Signs Respiration Rate" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

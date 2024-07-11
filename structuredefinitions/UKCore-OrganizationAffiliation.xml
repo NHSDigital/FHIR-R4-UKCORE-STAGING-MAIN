@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
   <version value="0.0.1" />
   <name value="UKCoreOrganizationAffiliation" />
-  <title value="UK Core OrganizationAffiliation" />
+  <title value="UK Core Organization Affiliation" />
   <status value="draft" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
