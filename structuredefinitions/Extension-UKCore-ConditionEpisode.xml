@@ -55,7 +55,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionEpisodity" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionEpisodicity" />
       </binding>
     </element>
   </differential>
