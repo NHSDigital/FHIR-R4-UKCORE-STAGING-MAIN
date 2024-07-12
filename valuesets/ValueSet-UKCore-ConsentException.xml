@@ -3,9 +3,9 @@
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConsentException" />
   <version value="0.0.1" />
   <name value="UKCoreConsentException" />
-  <title value="UK Core ConsentException" />
+  <title value="UK Core Consent Exception" />
   <status value="draft" />
-  <date value="2024-02-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" />
   <version value="2.1.0" />
   <name value="ExtensionUKCoreMedicationStatementLastIssueDate" />
-  <title value="Extension UKCore Medication Statement Last Issue Date" />
+  <title value="Extension UK Core Medication Statement Last Issue Date" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
