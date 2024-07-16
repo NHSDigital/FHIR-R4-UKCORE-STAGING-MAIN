@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ObservationInterpretationCode" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-UKCore-ObservationInterpretationCode" />
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationInterpretationCode" />
   <version value="0.0.1" />
   <name value="UKCoreObservationInterpretationCode" />
   <title value="UK Core Observation Interpretation Code" />
