@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-ObservationInterpretationCode" />
-  <url value="https://fhir.hl7.org.uk/CodeSystem/ObservationInterpretationCode" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ObservationInterpretationCode" />
   <version value="0.0.1" />
   <name value="UKCoreObservationInterpretationCode" />
   <title value="UK Core Observation Interpretation Code" />
