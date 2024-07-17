@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
   <version value="2.3.0" />
   <name value="UKCoreMedicationAdministration" />
-  <title value="UK Core MedicationAdministration" />
+  <title value="UK Core Medication Administration" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

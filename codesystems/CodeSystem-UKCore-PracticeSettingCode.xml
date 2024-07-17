@@ -3,9 +3,9 @@
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
   <version value="1.0.1" />
   <name value="UKCorePracticeSettingCode" />
-  <title value="UKCore Practice Setting Code" />
+  <title value="UK Core Practice Setting Code" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

@@ -3,9 +3,9 @@
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordingSetting" />
   <version value="1.0.0" />
   <name value="UKCoreRecordingSetting" />
-  <title value="UK Core RecordingSetting" />
+  <title value="UK Core Recording Setting" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

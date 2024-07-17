@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-BirthSex" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex" />
-  <version value="2.0.0" />
+  <version value="2.1.0" />
   <name value="ExtensionUKCoreBirthSex" />
   <title value="Extension UK Core Birth Sex" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-06-28" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -54,6 +54,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BirthSex" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

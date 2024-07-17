@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
   <version value="2.4.0" />
   <name value="UKCoreMessageHeader" />
-  <title value="UK Core MessageHeader" />
+  <title value="UK Core Message Header" />
   <status value="draft" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

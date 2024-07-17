@@ -4,9 +4,9 @@
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreFamilyMemberHistoryParticipant" />
-  <title value="Extension UKCore Family Member History Participant" />
+  <title value="Extension UK Core Family Member History Participant" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
