@@ -1,30 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-ObservationInterpretationCode" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationInterpretationCode" />
-  <version value="0.0.1" />
-  <name value="UKCoreObservationInterpretationCode" />
-  <title value="UK Core Observation Interpretation Code" />
-  <status value="active" />
-  <date value="2024-07-16" />
-  <publisher value="HL7 UK" />
+  <id value="UKCore-ObservationInterpretationCode"/>
+  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationInterpretationCode"/>
+  <version value="0.0.1"/>
+  <name value="UKCoreObservationInterpretationCode"/>
+  <title value="UK Core Observation Interpretation Code"/>
+  <status value="active"/>
+  <date value="2024-07-16"/>
+  <publisher value="HL7 UK"/>
   <contact>
-    <name value="HL7 UK" />
+    <name value="HL7 UK"/>
     <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
+      <system value="email"/>
+      <value value="ukcore@hl7.org.uk"/>
+      <use value="work"/>
+      <rank value="1"/>
     </telecom>
   </contact>
-  <description value="A set of codes that define the type of Address Key." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <description value="A set of codes that define the type of Address Key."/>
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
   <compose>
     <include>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" />
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
     </include>
     <include>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ObservationInterpretationCode" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ObservationInterpretationCode"/>
     </include>
   </compose>
+  <expansion>
+    <identifier value="ae223e38-e1dd-4f5c-a89f-d05786c01f31"/>
+    <timestamp value="2024-07-16T15:53:00+00:00"/>
+    <total value="1"/>
+    <offset value="0"/>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-ObservationInterpretationCode"/>
+      <code value="PA"/>
+      <display value="Potentially abnormal"/>
+    </contains>
+  </expansion>
 </ValueSet>
