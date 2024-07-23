@@ -1,129 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Organization" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-  <version value="2.5.0" />
-  <name value="UKCoreOrganization" />
-  <title value="UK Core Organization" />
-  <status value="active" />
-  <date value="2023-12-12" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)." />
-  <purpose value="This profile allows exchange of a formally or informally recognised grouping of people or organisations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc." />
-  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Organization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Organization.extension:mainLocation">
-      <path value="Organization.extension" />
-      <sliceName value="mainLocation" />
-      <short value="The main location of the organisation." />
-      <definition value="The main location of the organisation." />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation" />
-      </type>
-    </element>
-    <element id="Organization.extension:organizationPeriod">
-      <path value="Organization.extension" />
-      <sliceName value="organizationPeriod" />
-      <short value="The date range that this organization SHOULD be considered available." />
-      <definition value="The date range that this organization SHOULD be considered available." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
-      </type>
-    </element>
-    <element id="Organization.extension:organizationPeriod.value[x]">
-      <path value="Organization.extension.value[x]" />
-      <short value="The date range that this organization SHOULD be considered available." />
-      <definition value="The date range that this organization SHOULD be considered available." />
-    </element>
-    <element id="Organization.identifier">
-      <path value="Organization.identifier" />
-      <short value="Identifies this organization across multiple systems." />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.identifier:odsOrganisationCode">
-      <path value="Organization.identifier" />
-      <sliceName value="odsOrganisationCode" />
-      <short value="Organisation Data Service code" />
-      <definition value="Identifier code supplier by the Organisation Data Service." />
-      <max value="1" />
-    </element>
-    <element id="Organization.identifier:odsOrganisationCode.system">
-      <path value="Organization.identifier.system" />
-      <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
-    </element>
-    <element id="Organization.identifier:odsOrganisationCode.value">
-      <path value="Organization.identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Organization.identifier:odsSiteCode">
-      <path value="Organization.identifier" />
-      <sliceName value="odsSiteCode" />
-      <short value="ODS Site code to identify the organisation at site level" />
-      <definition value="ODS Site code to identify the organisation at site level." />
-      <max value="1" />
-    </element>
-    <element id="Organization.identifier:odsSiteCode.system">
-      <path value="Organization.identifier.system" />
-      <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/Id/ods-site-code" />
-    </element>
-    <element id="Organization.identifier:odsSiteCode.value">
-      <path value="Organization.identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Organization.active">
-      <path value="Organization.active" />
-      <short value="Identifies this organization across multiple systems." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.type">
-      <path value="Organization.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A set of concepts indicating the organisation type, derived from the base CodeSystem, and Genomics specific concepts" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" />
-      </binding>
-    </element>
-    <element id="Organization.name">
-      <path value="Organization.name" />
-      <short value="A name associated with the organization." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <short value="Contact details for the organization." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.address">
-      <path value="Organization.address" />
-      <short value="An address for the organization." />
-      <mustSupport value="true" />
-    </element>
-  </differential>
+    <id value="UKCore-Organization" />
+    <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+    <version value="2.5.1" />
+    <name value="UKCoreOrganization" />
+    <title value="UK Core Organization" />
+    <status value="active" />
+    <date value="2024-07-23" />
+    <publisher value="HL7 UK" />
+    <contact>
+        <name value="HL7 UK" />
+        <telecom>
+            <system value="email" />
+            <value value="ukcore@hl7.org.uk" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)." />
+    <purpose value="This profile allows exchange of a formally or informally recognised grouping of people or organisations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc." />
+    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Organization" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Organization.extension:mainLocation">
+            <path value="Organization.extension" />
+            <sliceName value="mainLocation" />
+            <short value="The main location of the organisation." />
+            <definition value="The main location of the organisation." />
+            <type>
+                <code value="Extension" />
+                <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation" />
+            </type>
+        </element>
+        <element id="Organization.extension:organizationPeriod">
+            <path value="Organization.extension" />
+            <sliceName value="organizationPeriod" />
+            <short value="The date range that this organization SHOULD be considered available." />
+            <definition value="The date range that this organization SHOULD be considered available." />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
+            </type>
+        </element>
+        <element id="Organization.extension:organizationPeriod.value[x]">
+            <path value="Organization.extension.value[x]" />
+            <short value="The date range that this organization SHOULD be considered available." />
+            <definition value="The date range that this organization SHOULD be considered available." />
+        </element>
+        <element id="Organization.identifier">
+            <path value="Organization.identifier" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="system" />
+                </discriminator>
+                <ordered value="false" />
+                <rules value="open" />
+            </slicing>
+            <short value="Identifies this organization across multiple systems." />
+            <mustSupport value="true" />
+        </element>
+        <element id="Organization.identifier:odsOrganisationCode">
+            <path value="Organization.identifier" />
+            <sliceName value="odsOrganisationCode" />
+            <short value="Organisation Data Service code" />
+            <definition value="Identifier code supplier by the Organisation Data Service." />
+            <max value="1" />
+        </element>
+        <element id="Organization.identifier:odsOrganisationCode.system">
+            <path value="Organization.identifier.system" />
+            <min value="1" />
+            <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
+        </element>
+        <element id="Organization.identifier:odsOrganisationCode.value">
+            <path value="Organization.identifier.value" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:odsSiteCode">
+            <path value="Organization.identifier" />
+            <sliceName value="odsSiteCode" />
+            <short value="ODS Site code to identify the organisation at site level" />
+            <definition value="ODS Site code to identify the organisation at site level." />
+            <max value="1" />
+        </element>
+        <element id="Organization.identifier:odsSiteCode.system">
+            <path value="Organization.identifier.system" />
+            <min value="1" />
+            <fixedUri value="https://fhir.nhs.uk/Id/ods-site-code" />
+        </element>
+        <element id="Organization.identifier:odsSiteCode.value">
+            <path value="Organization.identifier.value" />
+            <min value="1" />
+        </element>
+        <element id="Organization.active">
+            <path value="Organization.active" />
+            <short value="Identifies this organization across multiple systems." />
+            <mustSupport value="true" />
+        </element>
+        <element id="Organization.type">
+            <path value="Organization.type" />
+            <binding>
+                <strength value="extensible" />
+                <description value="A set of concepts indicating the organisation type, derived from the base CodeSystem, and Genomics specific concepts" />
+                <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" />
+            </binding>
+        </element>
+        <element id="Organization.name">
+            <path value="Organization.name" />
+            <short value="A name associated with the organization." />
+            <mustSupport value="true" />
+        </element>
+        <element id="Organization.telecom">
+            <path value="Organization.telecom" />
+            <short value="Contact details for the organization." />
+            <mustSupport value="true" />
+        </element>
+        <element id="Organization.address">
+            <path value="Organization.address" />
+            <short value="An address for the organization." />
+            <mustSupport value="true" />
+        </element>
+    </differential>
 </StructureDefinition>
