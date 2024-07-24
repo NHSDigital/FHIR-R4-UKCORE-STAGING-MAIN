@@ -2,7 +2,7 @@
     <id value="UKCore-Composition-Discharge-Example" />
     <text>
         <status value="additional" />
-        --- We have skipped the narrative for better readability of the resource ---
+        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a composition containing a discharge summary</div>
     </text>
     <!--  Extension to carry details of the Correspondence Care Setting Type.  -->
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType">
