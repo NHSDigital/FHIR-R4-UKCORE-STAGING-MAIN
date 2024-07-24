@@ -5,37 +5,37 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a heart rate vital sign</div>
   </text>
   <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="vital-signs" />
-      <display value="Vital Signs" />
-    </coding>
-    <text value="Vital Signs" />
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="444981005" />
-      <display value="Resting heart rate" />
-    </coding>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+        </coding>
+        <text value="Vital Signs" />
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="444981005" />
+            <display value="Resting heart rate" />
+        </coding>
         <coding>
             <system value="http://loinc.org" />
             <code value="8867-4" />
             <display value="Heart rate" />
         </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <effectiveDateTime value="2023-08-10" />
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
-  <valueQuantity>
-    <value value="104" />
-    <code value="/min" />
-    <system value="http://unitsofmeasure.org" />
-    <unit value="per minute" />
-  </valueQuantity>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <effectiveDateTime value="2023-08-10" />
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
+    <valueQuantity>
+        <value value="104" />
+        <unit value="per minute" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="/min" />
+    </valueQuantity>
 </Observation>
