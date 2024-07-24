@@ -2,7 +2,7 @@
     <id value="UKCore-Observation-24HourBloodPressure-Example" />
     <text>
         <status value="additional" />
-        --- We have skipped the narrative for better readability of the resource ---
+        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an average blood pressure over 24 hours</div>
     </text>
     <status value="final" />
     <category>
