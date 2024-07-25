@@ -1,66 +1,66 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="UKCore-MedicationRequestCategory" />
-  <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
-  <version value="1.1.1" />
-  <name value="UKCoreMedicationRequestCategory" />
-  <title value="UK Core Medication Request Category" />
-  <status value="active" />
-  <date value="2023-10-06" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="A set of codes to define a category for a medication request." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <compose>
-    <include>
-      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-    </include>
-    <include>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
-    </include>
-  </compose>
-  <expansion>
-    <identifier value="242c10eb-0ecc-47b2-9f97-78e80577a16e" />
-    <timestamp value="2023-10-06T13:57:59+00:00" />
-    <total value="6" />
-    <offset value="0" />
-    <contains>
-      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-      <code value="inpatient" />
-      <display value="Inpatient" />
-    </contains>
-    <contains>
-      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-      <code value="outpatient" />
-      <display value="Outpatient" />
-    </contains>
-    <contains>
-      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-      <code value="community" />
-      <display value="Community" />
-    </contains>
-    <contains>
-      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-      <code value="discharge" />
-      <display value="Discharge" />
-    </contains>
-    <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
-      <code value="leave" />
-      <display value="Leave" />
-    </contains>
-    <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
-      <code value="primarycare" />
-      <display value="Primary Care" />
-      <inactive value="true" />
-    </contains>
-  </expansion>
+    <id value="UKCore-MedicationRequestCategory" />
+    <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
+    <version value="1.1.2" />
+    <name value="UKCoreMedicationRequestCategory" />
+    <title value="UK Core Medication Request Category" />
+    <status value="active" />
+    <date value="2024-07-23" />
+    <publisher value="HL7 UK" />
+    <contact>
+        <name value="HL7 UK" />
+        <telecom>
+            <system value="email" />
+            <value value="ukcore@hl7.org.uk" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="A set of codes to define a category for a medication request." />
+    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <compose>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+        </include>
+        <include>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
+        </include>
+    </compose>
+    <expansion>
+        <identifier value="242c10eb-0ecc-47b2-9f97-78e80577a16e" />
+        <timestamp value="2023-10-06T13:57:59+00:00" />
+        <total value="6" />
+        <offset value="0" />
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="Inpatient" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="outpatient" />
+            <display value="Outpatient" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="community" />
+            <display value="Community" />
+        </contains>
+        <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="discharge" />
+            <display value="Discharge" />
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
+            <code value="leave" />
+            <display value="Leave" />
+        </contains>
+        <contains>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory" />
+            <inactive value="true" />
+            <code value="primarycare" />
+            <display value="Primary Care" />
+        </contains>
+    </expansion>
 </ValueSet>

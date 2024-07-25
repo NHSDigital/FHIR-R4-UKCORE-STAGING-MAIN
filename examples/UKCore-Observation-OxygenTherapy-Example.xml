@@ -5,27 +5,27 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an observation of a patient being assisted by oxygen therapy</div>
   </text>
   <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="therapy" />
-      <display value="Therapy" />
-    </coding>
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="371825009" />
-      <display value="Patient on oxygen" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
-  <effectiveDateTime value="2023-08-10" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="therapy" />
+            <display value="Therapy" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="371825009" />
+            <display value="Patient on oxygen" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <effectiveDateTime value="2023-08-10" />
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
     <valueQuantity>
         <value value="2" />
         <unit value="litre per minute" />
