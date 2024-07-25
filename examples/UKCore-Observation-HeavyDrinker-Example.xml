@@ -5,31 +5,31 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a patient who is a heavy drinker</div>
   </text>
   <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="social-history" />
-      <display value="Social History" />
-    </coding>
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="1082631000000102" />
-      <display value="Alcohol units consumed per day" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <effectiveDateTime value="2023-08-10" />
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
-  <valueQuantity>
-    <value value="20" />
-    <code value="/d" />
-    <system value="http://unitsofmeasure.org" />
-    <unit value="per day" />
-  </valueQuantity>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="social-history" />
+            <display value="Social History" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1082631000000102" />
+            <display value="Alcohol units consumed per day" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <effectiveDateTime value="2023-08-10" />
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
+    <valueQuantity>
+        <value value="20" />
+        <unit value="per day" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="/d" />
+    </valueQuantity>
 </Observation>

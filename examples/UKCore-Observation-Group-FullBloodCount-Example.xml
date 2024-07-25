@@ -5,31 +5,31 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a full blood count using multiple lab observation references</div>
   </text>
   <identifier>
-    <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="53dd97da-082c-450d-a47d-3ffa44941a68" />
+      <system value="https://tools.ietf.org/html/rfc4122" />
+      <value value="53dd97da-082c-450d-a47d-3ffa44941a68" />
   </identifier>
   <status value="final" />
   <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="laboratory" />
-      <display value="Laboratory" />
-    </coding>
+      <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="laboratory" />
+          <display value="Laboratory" />
+      </coding>
   </category>
   <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="26604007" />
-      <display value="Full blood count" />
-    </coding>
+      <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="26604007" />
+          <display value="Full blood count" />
+      </coding>
   </code>
   <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+      <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
   <hasMember>
-    <reference value="Observation/UKCore-Observation-Lab-WhiteCellCount-Example" />
+      <reference value="Observation/UKCore-Observation-Lab-WhiteCellCount-Example" />
   </hasMember>
   <hasMember>
-    <reference value="Observation/UKCore-Observation-Lab-RedCellCount-Example" />
+      <reference value="Observation/UKCore-Observation-Lab-RedCellCount-Example" />
   </hasMember>
 </Observation>

@@ -1,165 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-ServiceRequest" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-  <version value="2.5.0" />
-  <name value="UKCoreServiceRequest" />
-  <title value="UK Core Service Request" />
-  <status value="active" />
-  <date value="2024-07-11" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [ServiceRequest](https://hl7.org/fhir/R4/ServiceRequest.html)." />
-  <purpose value="This profile is a record of a request for a procedure or diagnostic or other service to be planned, proposed, or performed, as distinguished by the ServiceRequest.intent field value, with or on a patient." />
-  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="ServiceRequest" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="ServiceRequest.extension:sourceOfServiceRequest">
-      <path value="ServiceRequest.extension" />
-      <sliceName value="sourceOfServiceRequest" />
-      <short value="Describes the source of the Service Request." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ServiceRequest.extension:additionalContact">
-      <path value="ServiceRequest.extension" />
-      <sliceName value="additionalContact" />
-      <short value="Supports recording of additional contacts, who should be contacted regarding questions arising from the service request. This differs from the requester and responsibleClinician." />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ServiceRequest.extension:coverage">
-      <path value="ServiceRequest.extension" />
-      <sliceName value="coverage" />
-      <short value="Supports the exchange of information describing the method of funding for the Service Request." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ServiceRequest.basedOn">
-      <path value="ServiceRequest.basedOn" />
-      <short value="What the service request fulfils." />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.status">
-      <path value="ServiceRequest.status" />
-      <short value="The status of the order." />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.intent">
-      <path value="ServiceRequest.intent" />
-      <short value="Whether the request is a proposal, plan, an original order or a reflex order." />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.category">
-      <path value="ServiceRequest.category" />
-      <short value="A code that classifies the service for searching, sorting and display purposes." />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.category:genomicsWholeCaseSequencing">
-      <path value="ServiceRequest.category" />
-      <sliceName value="genomicsWholeCaseSequencing" />
-      <short value="Classification of Genomics service" />
-      <definition value="A code that classifies the service for Genomics, whether it is a Whole Case Genome Sequencing or non-Whole Genome Sequencing for cancer or rare diseases" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory" />
-      </binding>
-    </element>
-    <element id="ServiceRequest.category:genomicsWholeCaseSequencing.coding.system">
-      <path value="ServiceRequest.category.coding.system" />
-      <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
-    </element>
-    <element id="ServiceRequest.priority">
-      <path value="ServiceRequest.priority" />
-      <short value="Indicates how quickly the ServiceRequest should be addressed with respect to other requests." />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.priority.extension:priorityReason">
-      <path value="ServiceRequest.priority.extension" />
-      <sliceName value="priorityReason" />
-      <short value="Supports the underlying reason why a Service Request is urgent." />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ServiceRequest.code">
-      <path value="ServiceRequest.code" />
-      <short value="What is being requested/ordered." />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
-      </binding>
-    </element>
-    <element id="ServiceRequest.orderDetail">
-      <path value="ServiceRequest.orderDetail" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
-      </binding>
-    </element>
-    <element id="ServiceRequest.subject">
-      <path value="ServiceRequest.subject" />
-      <short value="The individual or entity the service is ordered for." />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.authoredOn">
-      <path value="ServiceRequest.authoredOn" />
-      <short value="The date the request was signed." />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.requester">
-      <path value="ServiceRequest.requester" />
-      <short value="Who / what is requesting the service" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.reasonCode">
-      <path value="ServiceRequest.reasonCode" />
-      <binding>
-        <strength value="preferred" />
-        <description value="A set of codes that define a reason for a service request." />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode" />
-      </binding>
-    </element>
-    <element id="ServiceRequest.bodySite">
-      <path value="ServiceRequest.bodySite" />
-      <binding>
-        <strength value="preferred" />
-      </binding>
-    </element>
-  </differential>
+    <id value="UKCore-ServiceRequest" />
+    <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+    <version value="2.5.1" />
+    <name value="UKCoreServiceRequest" />
+    <title value="UK Core Service Request" />
+    <status value="active" />
+    <date value="2024-07-23" />
+    <publisher value="HL7 UK" />
+    <contact>
+        <name value="HL7 UK" />
+        <telecom>
+            <system value="email" />
+            <value value="ukcore@hl7.org.uk" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="This profile defines the UK constraints and extensions on the International FHIR resource [ServiceRequest](https://hl7.org/fhir/R4/ServiceRequest.html)." />
+    <purpose value="This profile is a record of a request for a procedure or diagnostic or other service to be planned, proposed, or performed, as distinguished by the ServiceRequest.intent field value, with or on a patient." />
+    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="ServiceRequest" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="ServiceRequest.extension:sourceOfServiceRequest">
+            <path value="ServiceRequest.extension" />
+            <sliceName value="sourceOfServiceRequest" />
+            <short value="Describes the source of the Service Request." />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest" />
+            </type>
+            <isModifier value="false" />
+        </element>
+        <element id="ServiceRequest.extension:additionalContact">
+            <path value="ServiceRequest.extension" />
+            <sliceName value="additionalContact" />
+            <short value="Supports recording of additional contacts, who should be contacted regarding questions arising from the service request. This differs from the requester and responsibleClinician." />
+            <type>
+                <code value="Extension" />
+                <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact" />
+            </type>
+            <isModifier value="false" />
+        </element>
+        <element id="ServiceRequest.extension:coverage">
+            <path value="ServiceRequest.extension" />
+            <sliceName value="coverage" />
+            <short value="Supports the exchange of information describing the method of funding for the Service Request." />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage" />
+            </type>
+            <isModifier value="false" />
+        </element>
+        <element id="ServiceRequest.basedOn">
+            <path value="ServiceRequest.basedOn" />
+            <short value="What the service request fulfils." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.status">
+            <path value="ServiceRequest.status" />
+            <short value="The status of the order." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.intent">
+            <path value="ServiceRequest.intent" />
+            <short value="Whether the request is a proposal, plan, an original order or a reflex order." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.category">
+            <path value="ServiceRequest.category" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="coding.system" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <short value="A code that classifies the service for searching, sorting and display purposes." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.category:genomicsWholeCaseSequencing">
+            <path value="ServiceRequest.category" />
+            <sliceName value="genomicsWholeCaseSequencing" />
+            <short value="Classification of Genomics service" />
+            <definition value="A code that classifies the service for Genomics, whether it is a Whole Case Genome Sequencing or non-Whole Genome Sequencing for cancer or rare diseases" />
+            <binding>
+                <strength value="extensible" />
+                <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-GenomeSequencingCategory" />
+            </binding>
+        </element>
+        <element id="ServiceRequest.category:genomicsWholeCaseSequencing.coding.system">
+            <path value="ServiceRequest.category.coding.system" />
+            <fixedUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory" />
+        </element>
+        <element id="ServiceRequest.priority">
+            <path value="ServiceRequest.priority" />
+            <short value="Indicates how quickly the ServiceRequest should be addressed with respect to other requests." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.priority.extension:priorityReason">
+            <path value="ServiceRequest.priority.extension" />
+            <sliceName value="priorityReason" />
+            <short value="Supports the underlying reason why a Service Request is urgent." />
+            <type>
+                <code value="Extension" />
+                <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason" />
+            </type>
+            <isModifier value="false" />
+        </element>
+        <element id="ServiceRequest.code">
+            <path value="ServiceRequest.code" />
+            <short value="What is being requested/ordered." />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="preferred" />
+                <description value="A set of codes that define a procedure or a procedure with explicit context. Selected from the SNOMED CT UK coding system." />
+                <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
+            </binding>
+        </element>
+        <element id="ServiceRequest.orderDetail">
+            <path value="ServiceRequest.orderDetail" />
+            <binding>
+                <strength value="preferred" />
+                <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
+            </binding>
+        </element>
+        <element id="ServiceRequest.subject">
+            <path value="ServiceRequest.subject" />
+            <short value="The individual or entity the service is ordered for." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.authoredOn">
+            <path value="ServiceRequest.authoredOn" />
+            <short value="The date the request was signed." />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.requester">
+            <path value="ServiceRequest.requester" />
+            <short value="Who / what is requesting the service" />
+            <mustSupport value="true" />
+        </element>
+        <element id="ServiceRequest.reasonCode">
+            <path value="ServiceRequest.reasonCode" />
+            <binding>
+                <strength value="preferred" />
+                <description value="A set of codes that define a reason for a service request." />
+                <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ServiceRequestReasonCode" />
+            </binding>
+        </element>
+        <element id="ServiceRequest.bodySite">
+            <path value="ServiceRequest.bodySite" />
+            <binding>
+                <strength value="preferred" />
+            </binding>
+        </element>
+    </differential>
 </StructureDefinition>

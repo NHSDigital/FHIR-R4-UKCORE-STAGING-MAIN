@@ -1,29 +1,29 @@
-<Observation>
-  <id value="UKCore-Observation-BreathingNormally-Example" />
-  <text>
-    <status value="additional" />
-    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an observation of a patient breathing room air</div>
-  </text>
-  <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="exam" />
-      <display value="Exam" />
-    </coding>
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="722742002" />
-      <display value="Breathing room air" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <effectiveDateTime value="2023-08-10" />
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Observation-BreathingNormally-Example" />
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an observation of a patient breathing room air</div>
+    </text>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="exam" />
+            <display value="Exam" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="722742002" />
+            <display value="Breathing room air" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <effectiveDateTime value="2023-08-10" />
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
 </Observation>
