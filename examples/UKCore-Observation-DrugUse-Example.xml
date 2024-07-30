@@ -1,32 +1,32 @@
-<Observation>
-  <id value="UKCore-Observation-DrugUse-Example" />
-  <text>
-    <status value="additional" />
-    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate n observation of the patient's drug use</div>
-  </text>
-  <identifier>
-    <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
-  </identifier>
-  <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="social-history" />
-      <display value="Social History" />
-    </coding>
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="307052004" />
-      <display value="Illicit drug use" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Observation-DrugUse-Example" />
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate n observation of the patient's drug use</div>
+    </text>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+    </identifier>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="social-history" />
+            <display value="Social History" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="307052004" />
+            <display value="Illicit drug use" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
 </Observation>

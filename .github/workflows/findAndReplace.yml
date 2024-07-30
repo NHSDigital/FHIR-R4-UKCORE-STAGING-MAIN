@@ -24,7 +24,7 @@ jobs:
         run: find ./ -type f -name *.xml -exec sed -i -e 's/\t/  /g' -e 's/\"\/>/\" \/>/g' {} \;
         
       # Commit all changed files back to the repository
-      - uses: planetscale/ghcommit-action@v0.1.13
+      - uses: planetscale/ghcommit-action@v0.1.43
         with:
           commit_message: "GitHub Action: Find and Replace"
           repo: ${{ github.repository }}

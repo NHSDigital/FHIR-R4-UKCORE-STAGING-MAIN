@@ -4,25 +4,25 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate sending a priority reason for an urgent ServiceRequest, using a SNOMED CT concept</div>
   </text>
-  <priority value="urgent">
-    <!-- ***************extension start*************** -->
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="1321851000000109" />
-          <display value="Provision of advice, assessment or treatment delayed due to COVID-19 pandemic" />
-        </coding>
-      </valueCodeableConcept>
-    </extension>
-    <!-- **************extension end ****************** -->
-  </priority>
   <status value="active" />
   <intent value="order" />
+  <priority value="urgent">
+      <!--  ***************extension start***************  -->
+      <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
+          <valueCodeableConcept>
+              <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="1321851000000109" />
+                  <display value="Provision of advice, assessment or treatment delayed due to COVID-19 pandemic" />
+              </coding>
+          </valueCodeableConcept>
+      </extension>
+      <!--  **************extension end ******************  -->
+  </priority>
   <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+      <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>
   <requester>
-    <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
+      <reference value="Practitioner/UKCore-Practitioner-DoctorPaulRastall-Example" />
   </requester>
 </ServiceRequest>

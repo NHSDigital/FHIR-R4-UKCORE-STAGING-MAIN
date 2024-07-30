@@ -3,9 +3,9 @@
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfServiceRequest" />
   <version value="1.2.0" />
   <name value="UKCoreSourceOfServiceRequest" />
-  <title value="UK Core Source Of ServiceRequest" />
+  <title value="UK Core Source Of Service Request" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

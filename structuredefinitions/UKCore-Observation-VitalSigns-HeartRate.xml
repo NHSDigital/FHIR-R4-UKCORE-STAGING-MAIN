@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeartRate" />
   <version value="1.0.0" />
   <name value="UKCoreObservationVitalSignsHeartRate" />
-  <title value="UKCore Observation Vital Signs Heart Rate" />
+  <title value="UK Core Observation Vital Signs Heart Rate" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

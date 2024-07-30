@@ -4,9 +4,9 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter" />
   <version value="1.1.0" />
   <name value="ExtensionUKCoreAssociatedEncounter" />
-  <title value="Extension UKCore AssociatedEncounter" />
+  <title value="Extension UK Core Associated Encounter" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-07-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

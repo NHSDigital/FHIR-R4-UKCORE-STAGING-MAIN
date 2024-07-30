@@ -5,31 +5,31 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the observation of a patient who smokes a pipe</div>
   </text>
   <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="social-history" />
-      <display value="Social History" />
-    </coding>
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="230058003" />
-      <display value="Pipe tobacco consumption" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <effectiveDateTime value="2023-08-10" />
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
-  <valueQuantity>
-    <value value="5" />
-    <code value="/d" />
-    <system value="http://unitsofmeasure.org" />
-    <unit value="per day" />
-  </valueQuantity>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="social-history" />
+            <display value="Social History" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="230058003" />
+            <display value="Pipe tobacco consumption" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <effectiveDateTime value="2023-08-10" />
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
+    <valueQuantity>
+        <value value="5" />
+        <unit value="per day" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="/d" />
+    </valueQuantity>
 </Observation>

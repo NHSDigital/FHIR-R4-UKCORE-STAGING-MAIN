@@ -5,44 +5,44 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the observation of a red cell count for a blood specimen</div>
   </text>
   <identifier>
-    <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="fcd8af5a-18a0-4d0b-8c79-5b6bdf55fb32" />
-  </identifier>
-  <status value="final" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <code value="laboratory" />
-      <display value="Laboratory" />
-    </coding>
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="58571000237106" />
-      <display value="Nucleated red blood cell count in blood" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <performer>
-    <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-  </performer>
-  <valueQuantity>
-    <value value="3.9" />
-    <unit value="10*12/L" />
-    <system value="http://unitsofmeasure.org" />
-  </valueQuantity>
-  <specimen>
-    <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
-  </specimen>
-  <referenceRange>
-    <low>
-      <value value="4.0" />
-    </low>
-    <high>
-      <value value="5.9" />
-    </high>
-  </referenceRange>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="fcd8af5a-18a0-4d0b-8c79-5b6bdf55fb32" />
+    </identifier>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="58571000237106" />
+            <display value="Nucleated red blood cell count in blood" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+    </performer>
+    <valueQuantity>
+        <value value="3.9" />
+        <unit value="10*12/L" />
+        <system value="http://unitsofmeasure.org" />
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
+    </specimen>
+    <referenceRange>
+        <low>
+            <value value="4.0" />
+        </low>
+        <high>
+            <value value="5.9" />
+        </high>
+    </referenceRange>
 </Observation>
