@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ConditionBodyStructure" />
-  <url value="http://hl7.org/fhir/6.0/StructureDefinition/Extension-UKCore-ConditionBodyStructure" />
-  <version value="1.0.0" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.extension:bodyStructureR6" />
+  <version value="0.0.1" />
   <name value="ExtensionUKCoreConditionBodyStructure" />
   <title value="Extension UKCore Condition BodyStructure" />
   <status value="draft" />
@@ -42,7 +42,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/Extension-UKCore-ConditionBodyStructure" />
+      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.extension:bodyStructureR6" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
