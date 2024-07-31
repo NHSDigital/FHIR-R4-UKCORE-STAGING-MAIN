@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-ConditionBodyStructure" />
-  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.extension:bodyStructureR6" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure" />
   <version value="0.0.1" />
   <name value="ExtensionUKCoreConditionBodyStructure" />
-  <title value="Extension UKCore Condition BodyStructure" />
+  <title value="Extension UK Core Condition Body Structure" />
   <status value="draft" />
   <date value="2024-06-07" />
   <publisher value="HL7 UK" />
@@ -42,7 +42,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.extension:bodyStructureR6" />
+      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

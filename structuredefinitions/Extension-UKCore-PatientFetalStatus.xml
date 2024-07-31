@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-PatientBornStatus" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-PatientBornStatus" />
-  <version value="1.0.0" />
-  <name value="ExtensionUKCorePatientBornStatus" />
-  <title value="Extension UKCore Patient BornStatus" />
+  <id value="Extension-UKCore-PatientFetalStatus" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.fetalStatus" />
+  <version value="0.0.1" />
+  <name value="ExtensionUKCorePatientFetalStatus" />
+  <title value="Extension UK Core Patient Fetal Status" />
   <status value="draft" />
-  <date value="2024-06-07" />
+  <date value="2024-07-23" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -38,11 +38,13 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="An indicator on the fetal status of a baby." />
+      <definition value="Typically used in maternity where the patient record may be created before the birth of the baby." />
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-PatientBornStatus" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.fetalStatus" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -52,7 +54,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/patient-bornstatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/patient-fetalstatus" />
       </binding>
     </element>
   </differential>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DiagnosticReportMedia" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-DiagnosticReportMedia" />
-  <version value="1.0.0" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
+  <version value="0.0.1" />
   <name value="ExtensionUKCoreDiagnosticReportMedia" />
-  <title value="Extension UKCore DiagnosticReport Media" />
+  <title value="Extension UK Core Diagnostic Report Media" />
   <status value="draft" />
   <date value="2024-06-07" />
   <publisher value="HL7 UK" />
@@ -79,7 +79,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-DiagnosticReportMedia" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

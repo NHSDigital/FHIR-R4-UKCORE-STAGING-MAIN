@@ -33,7 +33,7 @@
       <short value="An extension to replicate the changes within R6 to support adding a reference to the body part affected by the diagnosed condition." />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.extension:bodyStructureR6" />
+        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure" />
       </type>
       <isModifier value="false" />
     </element>
