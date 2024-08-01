@@ -48,7 +48,7 @@
       <sliceName value="mediaR5" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
       </type>
       <isModifier value="false" />
     </element>
