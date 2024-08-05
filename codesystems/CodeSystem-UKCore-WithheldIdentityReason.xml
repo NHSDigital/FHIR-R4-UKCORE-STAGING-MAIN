@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-WithheldIdentityReason" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+  <version value="0.0.1" />
+  <name value="UKCoreWithheldIdentityReason" />
+  <title value="UK Core Withheld Identity Reason" />
+  <status value="draft" />
+  <date value="2024-06-14" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description
+    value="A set of codes that define the valid reason for which a record has been purposely anonymised. These codes and their descriptions are copied from the content of the [NHS Data Model and Dictionary](https://www.datadictionary.nhs.uk/data_elements/withheld_identity_reason.html) web page on 2024-06-14." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <count value="5" />
+  <concept>
+    <code value="01" />
+    <display value="Record anonymised for legal/statutory reasons" />
+  </concept>
+  <concept>
+    <code value="02" />
+    <display value="Record anonymised at request of Caldicott Guardian" />
+  </concept>
+  <concept>
+    <code value="03" />
+    <display value="Record anonymised at request of Patient" />
+  </concept>
+  <concept>
+    <code value="97" />
+    <display value="Record anonymised for other reason" />
+  </concept>
+  <concept>
+    <code value="99" />
+    <display value="Identity withheld but reason not known" />
+  </concept>
+</CodeSystem>

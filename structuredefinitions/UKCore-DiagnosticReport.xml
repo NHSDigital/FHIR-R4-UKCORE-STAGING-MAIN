@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-  <version value="2.4.0" />
+  <version value="2.5.0" />
   <name value="UKCoreDiagnosticReport" />
   <title value="UK Core Diagnostic Report" />
   <status value="active" />
-  <date value="2024-07-11" />
+  <date value="2024-06-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -42,6 +42,24 @@
       <path value="DiagnosticReport.extension.value[x]" />
       <short value="Reference to a Composition resource." />
       <definition value="Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
+    </element>
+    <element id="DiagnosticReport.extension:mediaR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="mediaR5" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:mediaR5.extension">
+      <path value="DiagnosticReport.extension.extension" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.extension:mediaR5.extension:link">
+      <path value="DiagnosticReport.extension.extension" />
+      <sliceName value="link" />
+      <min value="1" />
     </element>
     <element id="DiagnosticReport.extension:noteR5">
       <path value="DiagnosticReport.extension" />
