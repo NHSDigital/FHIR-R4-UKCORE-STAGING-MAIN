@@ -2,7 +2,7 @@
     <id value="UKCore-Observation-DrugUse-Example" />
     <text>
         <status value="additional" />
-        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate n observation of the patient's drug use</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate an observation of the patient's illicit drug use</div>
     </text>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
