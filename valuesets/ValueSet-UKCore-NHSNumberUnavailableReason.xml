@@ -47,27 +47,27 @@
       <display value="Devolved nation" />
     </contains>
     <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
       <code value="01" />
       <display value="Record anonymised for legal/statutory reasons" />
     </contains>
     <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
       <code value="02" />
       <display value="Record anonymised at request of Caldicott Guardian" />
     </contains>
     <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
       <code value="03" />
       <display value="Record anonymised at request of Patient" />
     </contains>
     <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
       <code value="97" />
       <display value="Record anonymised for other reason" />
     </contains>
     <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReaso" />
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
       <code value="99" />
       <display value="Identity withheld but reason not known" />
     </contains>
