@@ -22,8 +22,8 @@
   <content value="complete" />
   <hierarchyMeaning value="is-a" />
   <concept>
-    <code value="nhs-england" />
-    <display value="NHS England" />
+    <code value="england" />
+    <display value="England" />
   </concept>
   <concept>
     <code value="private" />
@@ -33,16 +33,16 @@
     <code value="devolved-nations" />
     <display value="Devolved nations" />
     <concept>
-      <code value="nhs-scotland" />
-      <display value="NHS Scotland" />
+      <code value="scotland" />
+      <display value="Scotland" />
     </concept>
     <concept>
-      <code value="nhs-wales" />
-      <display value="NHS Wales" />
+      <code value="wales" />
+      <display value="Wales" />
     </concept>
     <concept>
-      <code value="nhs-northern-ireland" />
-      <display value="NHS Northern Ireland" />
+      <code value="northern-ireland" />
+      <display value="Northern Ireland" />
     </concept>
   </concept>
   <concept>
