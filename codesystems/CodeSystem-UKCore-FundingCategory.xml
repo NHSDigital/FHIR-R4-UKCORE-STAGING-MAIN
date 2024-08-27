@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-FundingCategory" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
-  <version value="1.1.0" />
+  <version value="2.0.0" />
   <name value="UKCoreFundingCategory" />
   <title value="UK Core Funding Category" />
   <status value="active" />
@@ -22,8 +22,8 @@
   <content value="complete" />
   <hierarchyMeaning value="is-a" />
   <concept>
-    <code value="nhs" />
-    <display value="NHS" />
+    <code value="nhs-england" />
+    <display value="NHS England" />
   </concept>
   <concept>
     <code value="private" />
@@ -33,16 +33,16 @@
     <code value="devolved-nations" />
     <display value="Devolved nations" />
     <concept>
-      <code value="scotland" />
-      <display value="Scotland" />
+      <code value="nhs-scotland" />
+      <display value="NHS Scotland" />
     </concept>
     <concept>
-      <code value="wales" />
-      <display value="Wales" />
+      <code value="nhs-wales" />
+      <display value="NHS Wales" />
     </concept>
     <concept>
-      <code value="northern-ireland" />
-      <display value="Northern Ireland" />
+      <code value="nhs-northern-ireland" />
+      <display value="NHS Northern Ireland" />
     </concept>
   </concept>
   <concept>
