@@ -95,7 +95,7 @@
       <sliceName value="fetalStatus" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.fetalStatus" />
+        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus" />
       </type>
       <isModifier value="false" />
     </element>

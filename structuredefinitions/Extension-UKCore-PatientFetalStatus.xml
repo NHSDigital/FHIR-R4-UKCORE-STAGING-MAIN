@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-PatientFetalStatus" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.fetalStatus" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus" />
   <version value="0.0.1" />
   <name value="ExtensionUKCorePatientFetalStatus" />
   <title value="Extension UK Core Patient Fetal Status" />
@@ -44,7 +44,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.fetalStatus" />
+      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
