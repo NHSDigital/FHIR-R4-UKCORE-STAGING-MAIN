@@ -1,50 +1,50 @@
-<Observation>
+<Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-TriggeredBy-Example" />
   <text>
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustration observation triggered by another observation</div>
   </text>
-  <!-- ***************extension start*************** -->
+  <!--  ***************extension start***************  -->
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy">
-        <extension url="observation">
-            <valueReference>
-                <reference value="Observation/UKCore-Observation-DrugUse-Example" />
-            </valueReference>
-        </extension>
-        <extension url="type">
-            <valueCode value="reflex" />
-        </extension>
-        <extension url="reason">
-            <valueString value="Patient admitted to recreational drug use." />
-        </extension>
-    </extension>
-    <!--  ***************extension end***************  -->
-    <identifier>
-        <system value="https://tools.ietf.org/html/rfc4122" />
-        <value value="293a6418-9dcf-4d42-b97a-b119afd200ba" />
-    </identifier>
-    <status value="final" />
-    <category>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="laboratory" />
-            <display value="Laboratory" />
-        </coding>
-    </category>
-    <code>
-        <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="1014801000000101" />
-            <display value="Urine tricyclic drug screen" />
-        </coding>
-    </code>
-    <subject>
-        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-    </subject>
-    <performer>
-        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
-    </performer>
-    <specimen>
-        <reference value="Specimen/UKCore-Specimen-UrineSpecimen-Example" />
-    </specimen>
+      <extension url="observation">
+          <valueReference>
+              <reference value="Observation/UKCore-Observation-DrugUse-Example" />
+          </valueReference>
+      </extension>
+      <extension url="type">
+          <valueCode value="reflex" />
+      </extension>
+      <extension url="reason">
+          <valueString value="Patient admitted to recreational drug use." />
+      </extension>
+  </extension>
+  <!--   ***************extension end***************   -->
+  <identifier>
+      <system value="https://tools.ietf.org/html/rfc4122" />
+      <value value="293a6418-9dcf-4d42-b97a-b119afd200ba" />
+  </identifier>
+  <status value="final" />
+  <category>
+      <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="laboratory" />
+          <display value="Laboratory" />
+      </coding>
+  </category>
+  <code>
+      <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="1014801000000101" />
+          <display value="Urine tricyclic drug screen" />
+      </coding>
+  </code>
+  <subject>
+      <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <performer>
+      <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  </performer>
+  <specimen>
+      <reference value="Specimen/UKCore-Specimen-UrineSpecimen-Example" />
+  </specimen>
 </Observation>

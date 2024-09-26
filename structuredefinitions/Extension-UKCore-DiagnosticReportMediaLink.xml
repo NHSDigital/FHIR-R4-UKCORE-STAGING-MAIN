@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-DiagnosticReportMediaLink" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+  <version value="0.0.1" />
+  <name value="ExtensionUKCoreDiagnosticReportMediaLink" />
+  <title value="Extension UK Core Diagnostic Report Media Link" />
+  <status value="draft" />
+  <date value="2024-06-07" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to replicate the changes within R5 to support adding a reference to image or data source(DocumentReference)." />
+  <purpose value="This is a Genomics use case to support the backporting of R5 functionality to support adding a reference to image or data source(DocumentReference)." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DiagnosticReport" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Reference to a  DocumentReference resource." />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:comment">
+      <path value="Extension.extension" />
+      <sliceName value="comment" />
+    </element>
+    <element id="Extension.extension:comment.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="comment" />
+    </element>
+    <element id="Extension.extension:comment.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:link">
+      <path value="Extension.extension" />
+      <sliceName value="link" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:link.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="link" />
+    </element>
+    <element id="Extension.extension:link.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

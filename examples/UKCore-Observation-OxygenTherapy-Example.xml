@@ -1,4 +1,4 @@
-<Observation>
+<Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-OxygenTherapy-Example" />
   <text>
     <status value="additional" />

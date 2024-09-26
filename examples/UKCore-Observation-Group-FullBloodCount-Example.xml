@@ -1,4 +1,4 @@
-<Observation>
+<Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-Group-FullBloodCount-Example" />
   <text>
     <status value="additional" />

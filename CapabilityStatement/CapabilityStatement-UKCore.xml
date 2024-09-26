@@ -26,6 +26,10 @@
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent" />
     </resource>
     <resource>
+      <type value="BodyStructure" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-BodyStructure" />
+    </resource>
+    <resource>
       <type value="Bundle" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
     </resource>
