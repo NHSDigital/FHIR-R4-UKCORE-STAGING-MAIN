@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-NHSNumberUnavailableReason" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-NHSNumberUnavailableReason" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreNHSNumberUnavailableReason" />
   <title value="UK Core NHS Number Unavailable Reason" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2024-06-14" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -22,11 +22,14 @@
     <include>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason" />
     </include>
+    <include>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+    </include>
   </compose>
   <expansion>
     <identifier value="a130430a-9572-4a68-9952-87907c3c2915" />
     <timestamp value="2023-03-29T15:09:15+00:00" />
-    <total value="3" />
+    <total value="8" />
     <offset value="0" />
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason" />
@@ -42,6 +45,31 @@
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason" />
       <code value="devolved-nation" />
       <display value="Devolved nation" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+      <code value="01" />
+      <display value="Record anonymised for legal/statutory reasons" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+      <code value="02" />
+      <display value="Record anonymised at request of Caldicott Guardian" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+      <code value="03" />
+      <display value="Record anonymised at request of Patient" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+      <code value="97" />
+      <display value="Record anonymised for other reason" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-WithheldIdentityReason" />
+      <code value="99" />
+      <display value="Identity withheld but reason not known" />
     </contains>
   </expansion>
 </ValueSet>
