@@ -14,7 +14,7 @@
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
       <code value="public" />
-      <display value="Public"/>
+      <display value="Public" />
     </contains>
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" /> 
@@ -29,7 +29,7 @@
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
       <code value="nhs-wales" />
-      <display value="NHS Wales"/>
+      <display value="NHS Wales" />
     </contains>
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
