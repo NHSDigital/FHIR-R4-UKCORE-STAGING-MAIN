@@ -53,8 +53,8 @@
             <display value="Isle of Man" />
         </concept>
         <concept>
-            <code value="oversea-visitor" />
-            <display value="Oversea visitor" />
+            <code value="overseas-visitor" />
+            <display value="Overseas visitor" />
         </concept>
     </concept>
     <concept>
