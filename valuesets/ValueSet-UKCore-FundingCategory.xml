@@ -69,8 +69,8 @@
     </contains>
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
-      <code value="oversea-visitor" />
-      <display value="Oversea visitor" />
+      <code value="overseas-visitor" />
+      <display value="Overseas visitor" />
     </contains>
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
