@@ -1,5 +1,4 @@
-<CodeSystem
-    xmlns="http://hl7.org/fhir">
+<CodeSystem xmlns="http://hl7.org/fhir">
     <id value="UKCore-FundingCategory" />
     <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
     <version value="2.0.0" />
