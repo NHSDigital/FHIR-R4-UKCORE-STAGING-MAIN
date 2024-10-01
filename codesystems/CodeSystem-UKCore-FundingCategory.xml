@@ -1,64 +1,64 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="UKCore-FundingCategory" />
-  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
-  <version value="2.0.0" />
-  <name value="UKCoreFundingCategory" />
-  <title value="UK Core Funding Category" />
-  <status value="active" />
-  <date value="2024-06-14" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="A set of codes that define the funding category for a patient." />
-  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <caseSensitive value="true" />
-  <content value="complete" />
-  <hierarchyMeaning value="is-a" />
-  <concept>
-    <code value="england" />
-    <display value="England" />
-  </concept>
-  <concept>
-    <code value="private" />
-    <display value="Private" />
-  </concept>
-  <concept>
-    <code value="devolved-nations" />
-    <display value="Devolved nations" />
+    <id value="UKCore-FundingCategory" />
+    <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+    <version value="2.0.0" />
+    <name value="UKCoreFundingCategory" />
+    <title value="UK Core Funding Category" />
+    <status value="active" />
+    <date value="2024-06-14" />
+    <publisher value="HL7 UK" />
+    <contact>
+        <name value="HL7 UK" />
+        <telecom>
+            <system value="email" />
+            <value value="ukcore@hl7.org.uk" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="A set of codes that define the funding category for a patient." />
+    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <caseSensitive value="true" />
+    <content value="complete" />
+    <hierarchyMeaning value="is-a" />
     <concept>
-      <code value="scotland" />
-      <display value="Scotland" />
+        <code value="public" />
+        <display value="Public" />
+        <concept>
+            <code value="nhs-england" />
+            <display value="NHS England" />
+        </concept>
+        <concept>
+            <code value="nhs-scotland" />
+            <display value="NHS Scotland" />
+        </concept>
+        <concept>
+            <code value="nhs-wales" />
+            <display value="NHS Wales" />
+        </concept>
+        <concept>
+            <code value="hsc-northern-ireland" />
+            <display value="HSC Northern Ireland" />
+        </concept>
+        <concept>
+            <code value="jersey" />
+            <display value="Jersey" />
+        </concept>
+        <concept>
+            <code value="guernsey" />
+            <display value="Guernsey" />
+        </concept>
+        <concept>
+            <code value="isle-of-man" />
+            <display value="Isle of Man" />
+        </concept>
+        <concept>
+            <code value="overseas-visitor" />
+            <display value="Overseas Visitor" />
+        </concept>
     </concept>
     <concept>
-      <code value="wales" />
-      <display value="Wales" />
+        <code value="private" />
+        <display value="Private" />
     </concept>
-    <concept>
-      <code value="northern-ireland" />
-      <display value="Northern Ireland" />
-    </concept>
-  </concept>
-  <concept>
-    <code value="jersey" />
-    <display value="Jersey" />
-  </concept>
-  <concept>
-    <code value="guernsey" />
-    <display value="Guernsey" />
-  </concept>
-  <concept>
-    <code value="isle-of-man" />
-    <display value="Isle of Man" />
-  </concept>
-  <concept>
-    <code value="oversea-visitor" />
-    <display value="Oversea visitor" />
-  </concept>
 </CodeSystem>
