@@ -24,24 +24,58 @@
     </include>
   </compose>
   <expansion>
-    <identifier value="c2047257-9de9-45c5-b0cb-38a6d478fcfa" />
-    <timestamp value="2023-04-28T09:15:53+00:00" />
-    <total value="3" />
-    <offset value="0" />
+    <identifier value="b641d39a-e7c1-43f3-95a7-f88f3196b968" />
+    <timestamp value="2024-09-30T12:46:49+00:00" />
+    <total value="10" />
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
-      <code value="nhs" />
-      <display value="NHS" />
+      <code value="public" />
+      <display value="Public" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" /> 
+      <code value="nhs-england" />
+      <display value="NHS England" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="nhs-scotland" />
+      <display value="NHS Scotland" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="nhs-wales" />
+      <display value="NHS Wales" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="hsc-northern-ireland" />
+      <display value="HSC Northern Ireland" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="jersey" />
+      <display value="Jersey" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="guernsey" />
+      <display value="Guernsey" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="isle-of-man" />
+      <display value="Isle of Man" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
+      <code value="overseas-visitor" />
+      <display value="Overseas Visitor" />
     </contains>
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
       <code value="private" />
       <display value="Private" />
-    </contains>
-    <contains>
-      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory" />
-      <code value="devolved-nations" />
-      <display value="Devolved nations" />
     </contains>
   </expansion>
 </ValueSet>
