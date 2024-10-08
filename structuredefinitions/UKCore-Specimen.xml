@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Specimen" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-  <version value="2.4.0" />
+  <version value="3.0.0" />
   <name value="UKCoreSpecimen" />
   <title value="UK Core Specimen" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2024-10-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -159,7 +159,7 @@
       <path value="Specimen.condition" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BiopsyState" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SampleState" />
       </binding>
     </element>
   </differential>

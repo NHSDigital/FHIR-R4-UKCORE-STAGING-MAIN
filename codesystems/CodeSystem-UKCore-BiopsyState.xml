@@ -4,8 +4,8 @@
   <version value="1.0.0" />
   <name value="UKCoreBiopsyState" />
   <title value="UK Core Biopsy State" />
-  <status value="active" />
-  <date value="2023-04-28" />
+  <status value="retired" />
+  <date value="2023-10-07" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
