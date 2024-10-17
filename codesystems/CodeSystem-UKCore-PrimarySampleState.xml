@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UKCore-PrimarySampleState" />
+  <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState" />
+  <version value="1.0.0" />
+  <name value="UKCorePrimarySampleState" />
+  <title value="UK Core Primary Sample State" />
+  <status value="active" />
+  <date value="2024-10-07" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem used to indicate the sample state/condition. The codes and their description are datasets definition from the Genomics Master Datasets." />
+  <copyright
+    value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="blood-spot" />
+    <display value="Blood spot" />
+  </concept>
+  <concept>
+    <code value="FFPE" />
+    <display value="Formalin-fixed paraffin-embedded" />
+  </concept>
+  <concept>
+    <code value="fresh" />
+    <display value="Fresh" />
+  </concept>
+  <concept>
+    <code value="frozen" />
+    <display value="Frozen" />
+  </concept>
+  <concept>
+    <code value="other" />
+    <display value="Other" />
+    <definition value="Any other suitable sample condition that is an alternative to concepts provided in this CodeSystem. This should be provided by free text." />
+  </concept>
+</CodeSystem>
