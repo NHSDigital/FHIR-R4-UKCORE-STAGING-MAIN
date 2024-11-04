@@ -1,5 +1,5 @@
 <Specimen xmlns='http://hl7.org/fhir'>
-  <id value='Specimen-PheobeSmitham-Example'/>
+  <id value='UKCore-Extension-SampleCategory-PheobeSmitham-Example'/>
   <extension url='https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory'>
     <valueCodeableConcept>
       <coding>
