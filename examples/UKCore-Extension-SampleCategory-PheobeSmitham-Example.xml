@@ -1,0 +1,56 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-PheobeSmitham-Example",
+    "extension": [
+      {
+        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+              "code": "germline",
+              "display": "Germline"
+            }
+          ]
+        }
+      }
+    ],
+  "identifier": [
+    {
+      "system": "https://fhir.leedssth.nhs.uk//Id/specimenId",
+      "value": "RGD-69050-P-RR12764"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "445295009",
+        "display": "Blood specimen with EDTA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
+  },
+  "collection": {
+    "collector": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "9999999998"
+      },
+      "display": "Phletobomist-Lois Lane"
+    },
+    "collectedDateTime": "2023-09-17"
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+    }
+  ]
+}
