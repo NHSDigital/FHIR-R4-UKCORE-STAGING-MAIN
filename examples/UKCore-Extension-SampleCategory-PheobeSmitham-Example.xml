@@ -1,0 +1,44 @@
+<Specimen xmlns='http://hl7.org/fhir'>
+  <id value='UKCore-Extension-SampleCategory-PheobeSmitham-Example'/>
+  <extension url='https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory'>
+    <valueCodeableConcept>
+      <coding>
+        <system value='https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory'/>
+        <code value='germline'/>
+        <display value='Germline'/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value='https://fhir.leedssth.nhs.uk//Id/specimenId'/>
+    <value value='RGD-69050-P-RR12764'/>
+  </identifier>
+  <status value='available'/>
+  <type>
+    <coding>
+      <system value='http://snomed.info/sct'/>
+      <code value='445295009'/>
+      <display value='Blood specimen with EDTA'/>
+    </coding>
+  </type>
+  <subject>
+    <reference value='Patient/Patient-PheobeSmitham-Example'/>
+    <identifier>
+      <system value='https://fhir.nhs.uk/Id/nhs-number'/>
+      <value value='9449307539'/>
+    </identifier>
+  </subject>
+  <request>
+    <reference value='ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example'/>
+  </request>
+  <collection>
+    <collector>
+      <identifier>
+        <system value='https://fhir.nhs.uk/Id/sds-user-id'/>
+        <value value='9999999998'/>
+      </identifier>
+      <display value='Phletobomist-Lois Lane'/>
+    </collector>
+    <collectedDateTime value='2023-09-17'/>
+  </collection>
+</Specimen>
