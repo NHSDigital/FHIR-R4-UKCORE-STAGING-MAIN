@@ -34,10 +34,6 @@
     <display value="Fresh" />
   </concept>
   <concept>
-    <code value="frozen" />
-    <display value="Frozen" />
-  </concept>
-  <concept>
     <code value="other" />
     <display value="Other" />
     <definition value="Any other suitable sample condition that is an alternative to concepts provided in this CodeSystem. This should be provided by free text." />
