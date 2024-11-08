@@ -148,13 +148,13 @@
             <short value="The reference range for a test group or profile." />
             <definition value="The reference range element defines acceptable or expected ranges for a group lab observation result." />
             <min value="0" />
-            <max value="*"/>
-            <mustSupport value="true"/>
+            <max value="*" />
+            <mustSupport value="true" />
             <type>
-                <code value="BackboneElement"/>
+                <code value="BackboneElement" />
             </type>
         </element>
-		<element id="Observation.referenceRange.low">
+    <element id="Observation.referenceRange.low">
             <path value="Observation.referenceRange.low" />
             <short value="Low boundary of the reference range" />
             <definition value="Low limit for the reference range, if applicable." />
@@ -164,7 +164,7 @@
                 <code value="Quantity" />
             </type>
         </element>
-		<element id="Observation.referenceRange.high">
+    <element id="Observation.referenceRange.high">
             <path value="Observation.referenceRange.high" />
             <short value="High boundary of the reference range" />
             <definition value="High limit for the reference range, if applicable." />
@@ -174,7 +174,7 @@
                 <code value="Quantity" />
             </type>
         </element>
-		 <element id="Observation.referenceRange.text">
+     <element id="Observation.referenceRange.text">
             <path value="Observation.referenceRange.text" />
             <short value="Textual representation of the reference range" />
             <definition value="Free-text representation for complex reference ranges, if needed." />
