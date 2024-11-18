@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-PrimarySampleState" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="UKCorePrimarySampleState" />
   <title value="UK Core Primary Sample State" />
   <status value="active" />
-  <date value="2024-10-07" />
+  <date value="2024-11-08" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -32,10 +32,6 @@
   <concept>
     <code value="fresh" />
     <display value="Fresh" />
-  </concept>
-  <concept>
-    <code value="frozen" />
-    <display value="Frozen" />
   </concept>
   <concept>
     <code value="other" />
