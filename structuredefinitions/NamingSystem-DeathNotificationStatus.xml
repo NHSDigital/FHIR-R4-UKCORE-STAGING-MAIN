@@ -1,0 +1,30 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+    <id value="NamingSystem-DeathNotificationStatus" />
+    <name value="DeathNotificationStatus" />
+    <status value="active" />
+    <kind value="identifier" />
+    <date value="2023-12-05" />
+    <publisher value="HL7 UK" />
+    <contact>
+        <name value="HL7 UK" />
+        <telecom>
+            <system value="email" />
+            <value value="ukcore@hl7.org.uk" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <responsible value="NHS England" />
+    <description value="The identifier system for an Organisation site registered with the Organisation Data Service (ODS)." />
+    <usage value="To be used to identify Organisation sites registered with the Organisation Data Service (ODS)." />
+    <uniqueId>
+        <type value="uri" />
+        <value value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+        <preferred value="true" />
+    </uniqueId>
+    <uniqueId>
+        <type value="uri" />
+        <value value="https://fhir.hl7.org.uk/STU3/CodeSystem/UKCore-DeathNotificationStatus" />
+        <preferred value="false" />
+    </uniqueId>
+</NamingSystem>
