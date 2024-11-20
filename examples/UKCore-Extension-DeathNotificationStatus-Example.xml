@@ -9,7 +9,7 @@
     <extension url="deathNotificationStatus">
       <valueCodeableConcept>
         <coding>
-          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus" />
+          <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/UKCore-DeathNotificationStatus" />
           <code value="U" />
           <display value="Removed" />
         </coding>
