@@ -11,7 +11,7 @@
     <status value="final" />
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category1" />
             <code value="social-history" />
             <display value="Social History" />
         </coding>
