@@ -9,7 +9,7 @@
       <valueCodeableConcept>
         <coding>
           <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/UKCore-DeathNotificationStatus1" />
-          <code value="U2" />
+          <code value="U23" />
           <display value="Removed" />
         </coding>
       </valueCodeableConcept>
