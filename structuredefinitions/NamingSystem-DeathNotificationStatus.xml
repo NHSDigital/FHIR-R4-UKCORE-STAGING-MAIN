@@ -24,7 +24,7 @@
     </uniqueId>
     <uniqueId>
         <type value="uri" />
-        <value value="https://fhir.hl7.org.uk/STU3/CodeSystem/UKCore-DeathNotificationStatus" />
+        <value value="https://fhir.hl7.org.uk/STU3/CodeSystem/UKCore-DeathNotificationStatus1" />
         <preferred value="false" />
     </uniqueId>
 </NamingSystem>
