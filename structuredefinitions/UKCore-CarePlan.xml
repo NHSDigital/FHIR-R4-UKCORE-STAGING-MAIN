@@ -57,7 +57,12 @@
     </element>
     <element id="CarePlan.category">
       <path value="CarePlan.category" />
+      <short value="Type of actions or events that should occur after the closure of an episode." />
       <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-EpisodeFinalActionCode" />
+      </binding>
     </element>
     <element id="CarePlan.subject">
       <path value="CarePlan.subject" />
