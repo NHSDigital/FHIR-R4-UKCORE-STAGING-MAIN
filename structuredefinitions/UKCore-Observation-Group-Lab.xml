@@ -149,20 +149,5 @@
       <definition value="The reference range element defines acceptable or expected ranges for a group lab observation result." />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.referenceRange.low">
-      <path value="Observation.referenceRange.low" />
-      <short value="Low boundary of the reference range" />
-      <definition value="Low limit for the reference range, if applicable." />
-    </element>
-    <element id="Observation.referenceRange.high">
-      <path value="Observation.referenceRange.high" />
-      <short value="High boundary of the reference range" />
-      <definition value="High limit for the reference range, if applicable." />
-    </element>
-    <element id="Observation.referenceRange.text">
-      <path value="Observation.referenceRange.text" />
-      <short value="Textual representation of the reference range" />
-      <definition value="Free-text representation for complex reference ranges, if needed." />
-    </element>
   </differential>
 </StructureDefinition>
