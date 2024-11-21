@@ -143,11 +143,5 @@
         <strength value="preferred" />
       </binding>
     </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <short value="The reference range for a test group or profile." />
-      <definition value="The reference range element defines acceptable or expected ranges for a group lab observation result." />
-      <mustSupport value="true" />
-    </element>
   </differential>
 </StructureDefinition>
