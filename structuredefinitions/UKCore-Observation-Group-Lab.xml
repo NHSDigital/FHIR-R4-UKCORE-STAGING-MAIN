@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-Group-Lab" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
-  <version value="2.0.1" />
+  <version value="2.1.0" />
   <name value="UKCoreObservationGroupLab" />
   <title value="UK Core Observation Group Lab" />
   <status value="active" />
