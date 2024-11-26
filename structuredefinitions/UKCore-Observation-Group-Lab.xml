@@ -1,151 +1,147 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="UKCore-Observation-Group-Lab" />
-    <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
-    <version value="2.0.1" />
-    <name value="UKCoreObservationGroupLab" />
-    <title value="UK Core Observation Group Lab" />
-    <status value="active" />
-    <date value="2024-07-23" />
-    <publisher value="HL7 UK" />
-    <contact>
-        <name value="HL7 UK" />
-        <telecom>
-            <system value="email" />
-            <value value="ukcore@hl7.org.uk" />
-            <use value="work" />
-            <rank value="1" />
-        </telecom>
-    </contact>
-    <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Observation](https://hl7.org/fhir/R4/Observation.html), in order to allow the grouping of multiple UKCore-Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count." />
-    <purpose value="This profile allows the creation of a report for results borne from a single request panel, or profile, e.g. Full Blood Count, Lipid Profile, etc. allowing the results to be logically ordered according to the given profile and/or best practice guidelines." />
-    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-    <fhirVersion value="4.0.1" />
-    <kind value="resource" />
-    <abstract value="false" />
-    <type value="Observation" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
-    <derivation value="constraint" />
-    <differential>
-        <element id="Observation">
-            <path value="Observation" />
-            <constraint>
-                <key value="ukcore-obs-grplab-001" />
-                <severity value="warning" />
-                <human value="`value[x]` SHOULD NOT be used within this Profile" />
-                <expression value="value.empty()" />
-            </constraint>
-        </element>
-        <element id="Observation.extension:triggeredByR5">
-            <path value="Observation.extension" />
-            <sliceName value="triggeredByR5" />
-            <short value="Triggering observation(s). This is a R5 backport." />
-            <type>
-                <code value="Extension" />
-                <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
-            </type>
-        </element>
-        <element id="Observation.extension:triggeredByR5.extension:observation">
-            <path value="Observation.extension.extension" />
-            <sliceName value="observation" />
-        </element>
-        <element id="Observation.extension:triggeredByR5.extension:observation.value[x]">
-            <path value="Observation.extension.extension.value[x]" />
-            <short value="Triggering observation." />
-            <definition value="A reference to the triggering observation." />
-        </element>
-        <element id="Observation.extension:triggeredByR5.extension:type">
-            <path value="Observation.extension.extension" />
-            <sliceName value="type" />
-        </element>
-        <element id="Observation.extension:triggeredByR5.extension:type.value[x]">
-            <path value="Observation.extension.extension.value[x]" />
-            <short value="The type of trigger. Reflex | Repeat | Re-run" />
-            <definition value="The type of trigger. Reflex | Repeat | Re-run" />
-        </element>
-        <element id="Observation.extension:triggeredByR5.extension:reason">
-            <path value="Observation.extension.extension" />
-            <sliceName value="reason" />
-        </element>
-        <element id="Observation.extension:triggeredByR5.extension:reason.value[x]">
-            <path value="Observation.extension.extension.value[x]" />
-            <short value="Reason that the observation was triggered." />
-            <definition value="Provides the reason why this observation was performed as a result of the observation referenced." />
-        </element>
-        <element id="Observation.extension:bodyStructureR5">
-            <path value="Observation.extension" />
-            <sliceName value="bodyStructureR5" />
-            <short value="Observed body structure. This is a R5 backport." />
-            <type>
-                <code value="Extension" />
-                <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
-            </type>
-        </element>
-        <element id="Observation.status">
-            <path value="Observation.status" />
-            <short value="The status of the result value." />
-            <mustSupport value="true" />
-        </element>
-        <element id="Observation.category">
-            <path value="Observation.category" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="coding.code" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-            <short value="A code that classifies the general type of observation being made." />
-            <min value="1" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Observation.category:laboratory">
-            <path value="Observation.category" />
-            <sliceName value="laboratory" />
-            <short value="A mandatory code, to identify this observation as being Lab related." />
-            <min value="1" />
-            <max value="1" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Observation.category:laboratory.coding.system">
-            <path value="Observation.category.coding.system" />
-            <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
-        </element>
-        <element id="Observation.category:laboratory.coding.code">
-            <path value="Observation.category.coding.code" />
-            <fixedCode value="laboratory" />
-        </element>
-        <element id="Observation.code">
-            <path value="Observation.code" />
-            <short value="The type of observation (code / type)." />
-            <mustSupport value="true" />
-            <binding>
-                <strength value="preferred" />
-                <description value="A code from the SNOMED Clinical Terminology UK coding system regarding laboratory medicine test requests and test group results" />
-                <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
-            </binding>
-        </element>
-        <element id="Observation.subject">
-            <path value="Observation.subject" />
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-        </element>
-        <element id="Observation.bodySite">
-            <path value="Observation.bodySite" />
-            <binding>
-                <strength value="preferred" />
-            </binding>
-        </element>
-        <element id="Observation.method">
-            <path value="Observation.method" />
-            <binding>
-                <strength value="preferred" />
-            </binding>
-        </element>
-        <element id="Observation.referenceRange">
-            <path value="Observation.referenceRange" />
-            <max value="0" />
-        </element>
-    </differential>
+  <id value="UKCore-Observation-Group-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
+  <version value="2.1.0" />
+  <name value="UKCoreObservationGroupLab" />
+  <title value="UK Core Observation Group Lab" />
+  <status value="active" />
+  <date value="2024-11-20" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Observation](https://hl7.org/fhir/R4/Observation.html), in order to allow the grouping of multiple UKCore-Observation-Lab tests to be referenced within the DiagnosticReport as a single display, e.g. Full Blood Count." />
+  <purpose value="This profile allows the creation of a report for results borne from a single request panel, or profile, e.g. Full Blood Count, Lipid Profile, etc. allowing the results to be logically ordered according to the given profile and/or best practice guidelines." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="ukcore-obs-grplab-001" />
+        <severity value="warning" />
+        <human value="`value[x]` SHOULD NOT be used within this Profile" />
+        <expression value="value.empty()" />
+      </constraint>
+    </element>
+    <element id="Observation.extension:triggeredByR5">
+      <path value="Observation.extension" />
+      <sliceName value="triggeredByR5" />
+      <short value="Triggering observation(s). This is a R5 backport." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
+      </type>
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:observation">
+      <path value="Observation.extension.extension" />
+      <sliceName value="observation" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:observation.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="Triggering observation." />
+      <definition value="A reference to the triggering observation." />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:type">
+      <path value="Observation.extension.extension" />
+      <sliceName value="type" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:type.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="The type of trigger. Reflex | Repeat | Re-run" />
+      <definition value="The type of trigger. Reflex | Repeat | Re-run" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:reason">
+      <path value="Observation.extension.extension" />
+      <sliceName value="reason" />
+    </element>
+    <element id="Observation.extension:triggeredByR5.extension:reason.value[x]">
+      <path value="Observation.extension.extension.value[x]" />
+      <short value="Reason that the observation was triggered." />
+      <definition value="Provides the reason why this observation was performed as a result of the observation referenced." />
+    </element>
+    <element id="Observation.extension:bodyStructureR5">
+      <path value="Observation.extension" />
+      <sliceName value="bodyStructureR5" />
+      <short value="Observed body structure. This is a R5 backport." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure" />
+      </type>
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <short value="The status of the result value." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="A code that classifies the general type of observation being made." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:laboratory">
+      <path value="Observation.category" />
+      <sliceName value="laboratory" />
+      <short value="A mandatory code, to identify this observation as being Lab related." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:laboratory.coding.system">
+      <path value="Observation.category.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
+    </element>
+    <element id="Observation.category:laboratory.coding.code">
+      <path value="Observation.category.coding.code" />
+      <fixedCode value="laboratory" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <short value="The type of observation (code / type)." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A code from the SNOMED Clinical Terminology UK coding system regarding laboratory medicine test requests and test group results" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineProcedures" />
+      </binding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <binding>
+        <strength value="preferred" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>
