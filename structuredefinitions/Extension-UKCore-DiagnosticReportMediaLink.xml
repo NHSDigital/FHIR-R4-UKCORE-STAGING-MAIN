@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DiagnosticReportMediaLink" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="ExtensionUKCoreDiagnosticReportMediaLink" />
   <title value="Extension UK Core Diagnostic Report Media Link" />
   <status value="draft" />
-  <date value="2024-06-07" />
+  <date value="2024-12-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -39,11 +39,6 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Reference to a  DocumentReference resource." />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <min value="1" />
     </element>
     <element id="Extension.extension:comment">
       <path value="Extension.extension" />
@@ -63,7 +58,6 @@
     <element id="Extension.extension:link">
       <path value="Extension.extension" />
       <sliceName value="link" />
-      <min value="1" />
     </element>
     <element id="Extension.extension:link.url">
       <path value="Extension.extension.url" />
