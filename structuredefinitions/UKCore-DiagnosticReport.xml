@@ -43,15 +43,6 @@
       <short value="Reference to a Composition resource." />
       <definition value="Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
     </element>
-    <element id="DiagnosticReport.extension:mediaR5">
-      <path value="DiagnosticReport.extension" />
-      <sliceName value="mediaR5" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
-      </type>
-      <isModifier value="false" />
-    </element>
     <element id="DiagnosticReport.extension:noteR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="noteR5" />
@@ -139,6 +130,25 @@
       <path value="DiagnosticReport.result" />
       <short value="Observations that are part of this diagnostic report." />
       <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.media">
+      <path value="DiagnosticReport.media" />
+      <constraint>
+        <key value="ukcore-diag-lab-002" />
+        <severity value="error" />
+        <human
+          value="Only one of DiagnosticReport.media.link or DiagnosticReport.media:mediaLinkR5 can be used at a time." />
+        <expression value="media.where(sliceName.exists()).count() = 0 or media.link.exists() = false" />
+      </constraint>
+    </element>
+    <element id="DiagnosticReport.media.extension:mediaLinkR5">
+      <path value="DiagnosticReport.media.extension" />
+      <sliceName value="mediaLinkR5" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
