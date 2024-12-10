@@ -33,7 +33,7 @@
         <key value="ukcore-diag-lab-002" />
         <severity value="error" />
         <human value="Only one of DiagnosticReport.media.link or DiagnosticReport.media.extension:mediaLinkR5 can be populated at a time." />
-        <expression value="media.link.empty() XAND extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').empty()" />
+        <expression value="not(media.link.exists() and extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').exists())" />
       </constraint>
     </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
