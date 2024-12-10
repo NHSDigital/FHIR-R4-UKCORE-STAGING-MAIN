@@ -51,7 +51,6 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference" />
       </type>
-      <isSummary value="true" /> 
     </element>
   </differential>
 </StructureDefinition>
