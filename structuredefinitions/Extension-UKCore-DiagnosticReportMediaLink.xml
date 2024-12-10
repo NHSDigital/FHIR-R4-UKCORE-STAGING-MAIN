@@ -39,7 +39,6 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Reference to a  DocumentReference resource." />
-      <min value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
