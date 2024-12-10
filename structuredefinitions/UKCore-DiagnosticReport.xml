@@ -27,6 +27,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport">
+      <path value="DiagnosticReport" />
+      <constraint>
+        <key value="ukcore-diag-lab-002" />
+        <severity value="error" />
+        <human value="Only one of DiagnosticReport.media.link or DiagnosticReport.media.extension:mediaLinkR5 can be populated at a time." />
+        <expression value="media.link.exists() xor extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').exist()" />
+      </constraint>
+    </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="compositionReferenceR5" />
@@ -42,6 +51,16 @@
       <path value="DiagnosticReport.extension.value[x]" />
       <short value="Reference to a Composition resource." />
       <definition value="Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
+    </element>
+    <element id="DiagnosticReport.extension:mediaLinkR5">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="mediaLinkR5" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+      </type>
+      <isModifier value="false" />
+      <isSummary value='true' />
     </element>
     <element id="DiagnosticReport.extension:noteR5">
       <path value="DiagnosticReport.extension" />
@@ -130,26 +149,6 @@
       <path value="DiagnosticReport.result" />
       <short value="Observations that are part of this diagnostic report." />
       <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.media">
-      <path value="DiagnosticReport.media" />
-      <constraint>
-        <key value="ukcore-diag-lab-002" />
-        <severity value="error" />
-        <human
-          value="Only one of DiagnosticReport.media.link or DiagnosticReport.media.extension:mediaLinkR5 can be used at a time." />
-        <expression
-          value="link.exists() xor extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').exist()" />
-      </constraint>
-    </element>
-    <element id="DiagnosticReport.media.extension:mediaLinkR5">
-      <path value="DiagnosticReport.media.extension" />
-      <sliceName value="mediaLinkR5" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
