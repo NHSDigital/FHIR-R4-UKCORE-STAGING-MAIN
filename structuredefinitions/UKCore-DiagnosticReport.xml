@@ -137,8 +137,9 @@
         <key value="ukcore-diag-lab-002" />
         <severity value="error" />
         <human
-          value="Only one of DiagnosticReport.media.link or DiagnosticReport.media:mediaLinkR5 can be used at a time." />
-        <expression value="media.where(sliceName.exists()).count() = 0 or media.link.exists() = false" />
+          value="Only one of DiagnosticReport.media.link or DiagnosticReport.media.extension:mediaLinkR5 can be used at a time." />
+        <expression
+          value="link.exists() xor extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').exist()" />
       </constraint>
     </element>
     <element id="DiagnosticReport.media.extension:mediaLinkR5">
