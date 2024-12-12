@@ -52,15 +52,15 @@
       <short value="Reference to a Composition resource." />
       <definition value="Reference to a Composition resource instance that provides structure for organizing the contents of the DiagnosticReport." />
     </element>
-    <element id="DiagnosticReport.extension:mediaLinkR5">
+    <element id="DiagnosticReport.extension:mediaR5">
       <path value="DiagnosticReport.extension" />
-      <sliceName value="mediaLinkR5" />
+      <sliceName value="mediaR5" />
+      <short value="Reference to a DocuentReference resource instance that provides structure for organizing the contents of the DiagnosticReport." />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
       </type>
       <isModifier value="false" />
-      <isSummary value="true" />
     </element>
     <element id="DiagnosticReport.extension:noteR5">
       <path value="DiagnosticReport.extension" />

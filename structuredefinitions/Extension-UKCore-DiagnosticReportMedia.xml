@@ -62,6 +62,7 @@
     <element id="Extension.extension:link">
       <path value="Extension.extension" />
       <sliceName value="link" />
+      <short value="Reference to a DocuentReference resource instance that provides structure for organizing the contents of the DiagnosticReport." />
       <min value="1" />
     </element>
     <element id="Extension.extension:link.url">
