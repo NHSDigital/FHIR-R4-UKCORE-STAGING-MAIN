@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-DiagnosticReport" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-  <version value="2.5.0" />
+  <version value="2.6.0" />
   <name value="UKCoreDiagnosticReport" />
   <title value="UK Core Diagnostic Report" />
   <status value="active" />
-  <date value="2024-06-07" />
+  <date value="2024-12-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,6 +27,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport">
+      <path value="DiagnosticReport" />
+      <constraint>
+        <key value="ukcore-diag-lab-002" />
+        <severity value="error" />
+        <human
+          value="Only one of DiagnosticReport.media or DiagnosticReport.extension:mediaR5 can be populated at a time." />
+        <expression value="media.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media').empty()" />
+      </constraint>
+    </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="compositionReferenceR5" />
@@ -46,20 +56,12 @@
     <element id="DiagnosticReport.extension:mediaR5">
       <path value="DiagnosticReport.extension" />
       <sliceName value="mediaR5" />
+      <short value="Reference to a DocuentReference resource instance that provides structure for organizing the contents of the DiagnosticReport." />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="DiagnosticReport.extension:mediaR5.extension">
-      <path value="DiagnosticReport.extension.extension" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.extension:mediaR5.extension:link">
-      <path value="DiagnosticReport.extension.extension" />
-      <sliceName value="link" />
-      <min value="1" />
     </element>
     <element id="DiagnosticReport.extension:noteR5">
       <path value="DiagnosticReport.extension" />
