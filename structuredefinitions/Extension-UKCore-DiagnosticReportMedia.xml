@@ -66,7 +66,7 @@
     <element id="Extension.extension:link">
       <path value="Extension.extension" />
       <sliceName value="link" />
-      <short value="Reference to the image or data source" />
+      <short value="Reference to the image or data source." />
       <definition value="Reference to the image or data source." />
       <min value="1" />
     </element>
