@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-DiagnosticReportMediaLink" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
-  <version value="0.0.1" />
-  <name value="ExtensionUKCoreDiagnosticReportMediaLink" />
-  <title value="Extension UK Core Diagnostic Report Media Link" />
+  <id value="Extension-UKCore-DiagnosticReportMedia" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
+  <version value="0.0.3" />
+  <name value="ExtensionUKCoreDiagnosticReportMedia" />
+  <title value="Extension UK Core Diagnostic Report Media" />
   <status value="draft" />
-  <date value="2024-06-07" />
+  <date value="2024-12-16" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -38,8 +38,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Reference to a  DocumentReference resource." />
-      <min value="1" />
+      <short value="Key images or data associated with this report" />
+      <definition value="A list of key images or data associated with this report. The images or data are generally created during the diagnostic process, and may be directly of the patient, or of treated specimens (i.e. slides of interest)." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -48,6 +48,9 @@
     <element id="Extension.extension:comment">
       <path value="Extension.extension" />
       <sliceName value="comment" />
+      <short value="Comment about the image or data (e.g. explanation)" />
+      <definition value="A comment about the image or data. Typically, this is used to provide an explanation for why the image or data is included, or to draw the viewer's attention to important features." />
+      <comment value="The comment should be displayed with the image or data. It would be common for the report to include additional discussion of the image or data contents or in other sections such as the conclusion." />
     </element>
     <element id="Extension.extension:comment.url">
       <path value="Extension.extension.url" />
@@ -63,6 +66,8 @@
     <element id="Extension.extension:link">
       <path value="Extension.extension" />
       <sliceName value="link" />
+      <short value="Reference to the image or data source." />
+      <definition value="Reference to the image or data source." />
       <min value="1" />
     </element>
     <element id="Extension.extension:link.url">
@@ -79,7 +84,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
