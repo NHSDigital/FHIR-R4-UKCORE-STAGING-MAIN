@@ -17,6 +17,6 @@
   </patient>
   <occurrenceDateTime value="2013-01-10" />
   <location>
-    <reference value="UKCore-Location-GeneralPracticeNurseClinic-Example" />
+    <reference value="Location/UKCore-Location-GeneralPracticeNurseClinic-Example" />
   </location>
 </Immunization>
