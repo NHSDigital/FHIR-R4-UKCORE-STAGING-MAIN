@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-DiagnosticReportMediaLink" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+  <version value="0.1.0" />
+  <name value="ExtensionUKCoreDiagnosticReportMediaLink" />
+  <title value="Extension Diagnostic Report Media Link" />
+  <status value="draft" />
+  <date value="2025-01-22" />
+  <description value="Backport to allow referencing to the image or data source via the DocumentReference profile as per R6 version of the DiagnosticReport" />
+  <purpose value="Backport use case from Genomics" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DiagnosticReport.media" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Reference to the image or data source" />
+      <definition value="Reference to the image or data source." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Reference to the image or data source" />
+      <definition value="Reference to the image or data source." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="DocumentReference" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
