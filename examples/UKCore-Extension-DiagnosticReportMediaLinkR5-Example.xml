@@ -12,8 +12,8 @@
       <valueReference="DocumentReference/UKCore-DocumentReference-ECG-Example-Example" />
     </extension>
     <link>
-      <extension url='http://hl7.org/fhir/StructureDefinition/data-absent-reason'>
-        <valueCode value='unsupported'/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unsupported"/>
       </extension>
     </link>
   </media>
