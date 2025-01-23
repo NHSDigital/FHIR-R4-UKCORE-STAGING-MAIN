@@ -1,5 +1,6 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Extension-DiagnosticReportMediaLinkR5-Example" />
+  <id value="Extension-UKCore-DiagnosticReportMediaLinkR5-Example" />
+  <title value="Extension UK Core Diagnostic Report Media Link" />
   <code>
     <coding>
       <system value="http://snomed.info/sct" />
@@ -9,7 +10,7 @@
   </code>
   <media>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media">
-      <valueReference="DocumentReference/UKCore-DocumentReference-ECG-Example-Example"/>
+      <valueReference="DocumentReference/UKCore-DocumentReference-ECG-Example-Example" />
     </extension>
     <link>
       <extension url='http://hl7.org/fhir/StructureDefinition/data-absent-reason'>
