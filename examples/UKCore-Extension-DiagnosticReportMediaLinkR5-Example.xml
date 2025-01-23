@@ -9,7 +9,9 @@
   </code>
   <media>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media">
-      <valueReference value="DocumentReference/UKCore-DocumentReference-ECG-Example" />
+      <valueReference>
+        <reference value="DocumentReference/UKCore-DocumentReference-ECG-Example" />
+      </valueReference>
     </extension>
     <link>
       <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
