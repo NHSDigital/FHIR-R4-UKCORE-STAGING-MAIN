@@ -1,6 +1,5 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DiagnosticReportMediaLinkR5-Example" />
-  <title value="Extension UK Core Diagnostic Report Media Link" />
   <code>
     <coding>
       <system value="http://snomed.info/sct" />
