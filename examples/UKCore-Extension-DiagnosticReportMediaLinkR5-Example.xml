@@ -9,7 +9,7 @@
     </coding>
   </code>
   <media>
-    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media">
+    <extension url="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media">
       <valueReference>
         <reference value="DocumentReference/UKCore-DocumentReference-ECG-Example" />
       </valueReference>
