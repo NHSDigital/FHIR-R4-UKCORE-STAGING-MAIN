@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media.link" />
   <version value="0.1.0" />
   <name value="ExtensionUKCoreDiagnosticReportMediaLink" />
-  <title value="Extension Diagnostic Report Media Link" />
+  <title value="Extension UK Core Diagnostic Report Media Link" />
   <status value="draft" />
   <date value="2025-01-22" />
   <publisher value="HL7 UK" />
