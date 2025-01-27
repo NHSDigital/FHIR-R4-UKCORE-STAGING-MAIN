@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DiagnosticReportMediaLink" />
-  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
   <version value="0.1.0" />
   <name value="ExtensionUKCoreDiagnosticReportMediaLink" />
   <title value="Extension UK Core Diagnostic Report Media Link" />
@@ -38,7 +38,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

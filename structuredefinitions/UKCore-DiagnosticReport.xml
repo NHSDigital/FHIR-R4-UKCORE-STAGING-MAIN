@@ -140,13 +140,13 @@
       <short value="Observations that are part of this diagnostic report." />
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.media.extension:linkR6">
+    <element id="DiagnosticReport.media.extension:linkR5">
       <path value="DiagnosticReport.media.extension" />
-      <sliceName value="linkR6" />
+      <sliceName value="linkR5" />
       <comment value="To use this element the R4 version of DiagnosticReport.media.link SHALL have the value as extension http://hl7.org/fhir/StructureDefinition/data-absent-reason and valueCode as &quot;unsupported&quot;.  See https://build.fhir.org/versions.html#extensions-examples-complex for more details" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/extension-DiagnosticReport.media.link" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link" />
       </type>
       <isModifier value="false" />
     </element>

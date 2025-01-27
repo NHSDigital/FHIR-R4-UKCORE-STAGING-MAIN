@@ -68,7 +68,7 @@
       <constraint>
         <key value="ukcore-spec-001" />
         <severity value="error" />
-        <human value="Only one of Specimen.collection.collectior or Speciment.collection.extension:collectorR5 can be populated at a time." />
+        <human value="Only one of Specimen.collection.collector or Specimen.collection.extension:collectorR5 can be populated at a time." />
         <expression value="collector.reference.empty() or collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
       </constraint>
     </element>
@@ -83,7 +83,7 @@
     </element>
     <element id="Specimen.collection.extension:CollectorR5">
       <path value="Specimen.collection.extension" />
-      <sliceName value="CollectorR5" />
+      <sliceName value="collectorR5" />
       <comment value="If this extension is used then Specimen.collection.collector SHALL NOT have a value to keep the cardinality restraint 0..1" />
       <max value="1" />
       <type>
