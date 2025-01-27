@@ -1,0 +1,24 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Extension-DiagnosticReportMediaLinkR5-Example" />
+  <status value="preliminary" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1129261000000102" />
+      <display value="Cardiac electrophysiology report" />
+    </coding>
+  </code>
+  <media>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link">
+      <valueReference>
+        <reference value="DocumentReference/UKCore-DocumentReference-ECG-Example" />
+      </valueReference>
+    </extension>
+    <link>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unsupported" />
+      </extension>
+      <display value ="unsupported" />
+    </link>
+  </media>
+</DiagnosticReport>
