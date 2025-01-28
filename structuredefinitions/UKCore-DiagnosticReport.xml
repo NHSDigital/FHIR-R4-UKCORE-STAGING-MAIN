@@ -32,8 +32,8 @@
       <constraint>
         <key value="ukcore-diag-lab-002" />
         <severity value="error" />
-        <human value="Only one of DiagnosticReport.media or DiagnosticReport.extension:mediaR5 can be populated at a time." />
-        <expression value="media.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media').empty()" />
+        <human value="If extension-DiagnosticReport.media.link R5 Backport is used then DiagnsoticReport.media.link reference SHALL be empty" />
+        <expression value="DiagnosticReport.media.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').empty() or DiagnosticReport.media.link.reference.empty()" />
       </constraint>
     </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
