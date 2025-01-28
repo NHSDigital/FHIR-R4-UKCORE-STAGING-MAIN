@@ -1,0 +1,43 @@
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="UKCore-DocumentReference-ECG-Example" />
+  <status value="current" />
+  <docStatus value="preliminary" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="29303009" />
+      <display value="Electrocardiographic procedure" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <date value="2025-01-24T14:30:00Z" />
+  <author>
+    <reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example" />
+  </author>
+  <content>
+    <attachment>
+      <contentType value="application/pdf" />
+      <url value="DocumentReference/UKCore-DocumentReference-ECG-Example.pdf" />
+      <title value="Electrocardiogram (ECG) Report" />
+      <creation value="2025-01-24T14:00:00Z" />
+    </attachment>
+  </content>
+  <context>
+    <encounter>
+      <reference value="Encounter/example" />
+    </encounter>
+    <event>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="1129261000000102" />
+        <display value="Cardiac electrophysiology report" />
+      </coding>
+    </event>
+    <period>
+      <start value="2025-01-24T13:00:00Z" />
+      <end value="2025-01-24T14:00:00Z" />
+    </period>
+  </context>
+</DocumentReference>

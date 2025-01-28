@@ -1,5 +1,5 @@
 <Specimen xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Extension-CollectionCollector-Example" />
+  <id value="UKCore-Extension-SpecimenCollectionCollector-Example" />
   <text>
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector</div>
@@ -17,16 +17,13 @@
   </subject>
   <receivedTime value="2022-11-25T11:10:00Z" />
   <collection>
-    <collector>
-      <!--  ***************extension start***************  -->
-      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector">
-        <valueReference>
-          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-        </valueReference>
-      </extension>
-      <!--  **************extension end ******************  -->
-      <display value="Patient: Richard Smith" />
-    </collector>
+    <!--  ***************extension start***************  -->
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector">
+      <valueReference>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+      </valueReference>
+    </extension>
+    <!--  **************extension end ******************  -->
     <collectedDateTime value="2022-11-25T16:00:00Z" />
   </collection>
 </Specimen>

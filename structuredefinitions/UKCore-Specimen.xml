@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Specimen" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-  <version value="3.0.0" />
+  <version value="3.1.0" />
   <name value="UKCoreSpecimen" />
   <title value="UK Core Specimen" />
   <status value="active" />
-  <date value="2024-10-07" />
+  <date value="2025-01-22" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -27,15 +27,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
   <derivation value="constraint" />
   <differential>
-    <element id="Specimen">
-      <path value="Specimen" />
-      <constraint>
-        <key value="ukcore-spec-001" />
-        <severity value="error" />
-        <human value="There SHALL be only one reference between `collection.collector` and the extension `collectionCollectorR5`" />
-        <expression value="collection.collector.reference.empty() or collection.collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
-      </constraint>
-    </element>
     <element id="Specimen.extension:sampleCategory">
       <path value="Specimen.extension" />
       <sliceName value="sampleCategory" />
@@ -72,6 +63,15 @@
       <short value="The time when specimen was received for processing." />
       <mustSupport value="true" />
     </element>
+    <element id="Specimen.collection">
+      <path value="Specimen.collection" />
+      <constraint>
+        <key value="ukcore-spec-001" />
+        <severity value="error" />
+        <human value="Only one of Specimen.collection.collector or Specimen.collection.extension:collectorR5 can be populated at a time." />
+        <expression value="collector.reference.empty() or collector.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector').empty()" />
+      </constraint>
+    </element>
     <element id="Specimen.collection.extension:specialHandling">
       <path value="Specimen.collection.extension" />
       <sliceName value="specialHandling" />
@@ -81,20 +81,16 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/specimen-specialHandling" />
       </type>
     </element>
-    <element id="Specimen.collection.collector.extension:collectionCollectorR5">
-      <path value="Specimen.collection.collector.extension" />
-      <sliceName value="collectionCollectorR5" />
-      <short value="The person who collected the specimen. This is an R5 backport." />
-      <definition value="Person who collected the specimen. This is an R5 backport" />
+    <element id="Specimen.collection.extension:CollectorR5">
+      <path value="Specimen.collection.extension" />
+      <sliceName value="collectorR5" />
+      <comment value="If this extension is used then Specimen.collection.collector SHALL NOT have a value to keep the cardinality restraint 0..1" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="Specimen.collection.collector.extension:collectionCollectorR5.value[x]">
-      <path value="Specimen.collection.collector.extension.value[x]" />
     </element>
     <element id="Specimen.collection.bodySite">
       <path value="Specimen.collection.bodySite" />
@@ -118,21 +114,9 @@
       <path value="Specimen.collection.bodySite.extension.value[x]" />
       <short value="A reference to a BodyStructure" />
     </element>
-    <element id="Specimen.container.extension">
-      <path value="Specimen.container.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Specimen.container.extension:deviceR5">
       <path value="Specimen.container.extension" />
       <sliceName value="deviceR5" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -142,7 +126,6 @@
     <element id="Specimen.container.extension:locationR5">
       <path value="Specimen.container.extension" />
       <sliceName value="locationR5" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
