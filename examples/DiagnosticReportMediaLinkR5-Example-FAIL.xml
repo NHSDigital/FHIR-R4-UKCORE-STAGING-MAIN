@@ -14,6 +14,8 @@
         <reference value="DocumentReference/UKCore-DocumentReference-ECG-Example" />
       </valueReference>
     </extension>
-    <link value = "Media/pleasefail" />
+    <link>
+      <reference value = "Media/pleasefail" />
+    </link>
   </media>
 </DiagnosticReport>
