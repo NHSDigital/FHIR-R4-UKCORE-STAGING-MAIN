@@ -33,7 +33,7 @@
         <key value="ukcore-diag-lab-002" />
         <severity value="error" />
         <human value="If extension-DiagnosticReport.media.link R5 Backport is used then DiagnsoticReport.media.link reference SHALL be empty" />
-        <expression value="extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').empty() or DiagnosticReport.media.link.reference.empty()" />
+        <expression value="DiagnosticReport.media.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link').empty() or DiagnosticReport.media.link.reference.empty()" />
       </constraint>
     </element>
     <element id="DiagnosticReport.extension:compositionReferenceR5">
