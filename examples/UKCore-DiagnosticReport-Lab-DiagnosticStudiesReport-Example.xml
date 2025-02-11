@@ -35,6 +35,6 @@
     <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
   </specimen>
   <result>
-    <reference value="UKCore-Observation-Group-FullBloodCount-Example" />
+    <reference value="Observation/UKCore-Observation-Group-FullBloodCount-Example" />
   </result>
 </DiagnosticReport>
