@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-VitalSigns-BodyHeight" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BodyHeight" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreObservationVitalSignsBodyHeight" />
   <title value="UK Core Observation Vital Signs Body Height" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-02-19" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,7 +17,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="Defines the additional constraints and extensions on the UK Core Observation Vital Signs profile, for recording body height vital signs clinical observations." />
+  <description value="Defines the additional constraints and extensions on the UK Core Observation Vital Signs profile, for recording body height for adults and body length for infants and children . Body height / length is expected to be recorded in meters (m) or centimetres (cm) as per https://www.datadictionary.nhs.uk/nhs_business_definitions/height.html?hl=height." />
   <purpose value="To provide implementers with additional support when implementing length / height measuring and to provide a consistent structure to how the data is presented." />
   <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -48,20 +48,13 @@
       <path value="Observation.value[x]" />
       <min value="1" />
       <type>
-        <code value="Quantity" />
+        <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Observation.value[x].unit">
-      <path value="Observation.value[x].unit" />
-      <fixedString value="meter" />
-    </element>
-    <element id="Observation.value[x].system">
-      <path value="Observation.value[x].system" />
-      <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element id="Observation.value[x].code">
-      <path value="Observation.value[x].code" />
-      <fixedCode value="m" />
+      <binding>
+        <strength value="required" />
+        <description value="Include codes from http://unitsofmeasure.org where canonical = m" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-distance-units" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
