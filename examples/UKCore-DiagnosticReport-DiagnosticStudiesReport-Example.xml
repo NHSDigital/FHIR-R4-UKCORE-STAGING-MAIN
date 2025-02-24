@@ -30,4 +30,5 @@
     <result>
         <reference value="Observation/UKCore-Observation-FingerJointInflamed-Example" />
     </result>
+    <conclusion value="Mild soft tissue injury with slight bruising, consistent with minor trauma. No clinical evidence of fracture or joint dislocation." />
 </DiagnosticReport>
