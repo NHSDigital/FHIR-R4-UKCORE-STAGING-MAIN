@@ -1,0 +1,35 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="UKCore-DiagnosticReport-DiagnosticStudiesReport-Example" />
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="727071dc-eb01-4224-8ee8-cc0a029787ac" />
+    </identifier>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+            <code value="PHY" />
+            <display value="Physician (Hx. Dx, admission note, etc.)" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <effectiveDateTime value="2023-01-13T14:53:23+00:00" />
+    <issued value="2023-01-13T15:07:32+00:00" />
+    <performer>
+        <reference value="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+        <display value="LEEDS TEACHING HOSPITALS NHS TRUST" />
+    </performer>
+    <result>
+        <reference value="Observation/UKCore-Observation-FingerJointInflamed-Example" />
+    </result>
+    <conclusion value="Mild soft tissue injury with slight bruising, consistent with minor trauma. No clinical evidence of fracture or joint dislocation." />
+</DiagnosticReport>
