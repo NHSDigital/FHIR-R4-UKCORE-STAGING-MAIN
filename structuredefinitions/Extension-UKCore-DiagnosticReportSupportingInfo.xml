@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-DiagnosticReportSupportingInfo" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="ExtensionUKCoreDiagnosticReportSupportingInfo" />
   <title value="Extension UK Core Diagnostic Report Supporting Info" />
   <status value="active" />
-  <date value="2023-12-12" />
+  <date value="2025-02-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
