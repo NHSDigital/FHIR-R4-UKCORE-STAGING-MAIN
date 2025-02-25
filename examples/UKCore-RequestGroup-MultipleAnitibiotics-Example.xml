@@ -41,13 +41,13 @@
     <action id="UKCore-MedicationRequest-Clarithromycin-Example">
       <description value="Clarithromycin 500mg tablet, three times a day." />
       <resource>
-        <reference value="UKCore-MedicationRequest-Clarithromycin-Example" />
+        <reference value="MedicationRequest/UKCore-MedicationRequest-Clarithromycin-Example" />
       </resource>
     </action>
     <action id="UKCore-MedicationRequest-Doxycycline-Example">
       <description value="Doxycycline 200mg stat (now), followed by 100mg daily." />
       <resource>
-        <reference value="UKCore-MedicationRequest-Doxycycline-Example" />
+        <reference value="MedicationRequest/UKCore-MedicationRequest-Doxycycline-Example" />
       </resource>
     </action>
   </action>
