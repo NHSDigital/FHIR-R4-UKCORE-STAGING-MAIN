@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ReportCode" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreReportCode" />
   <title value="UK Core Report Code" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

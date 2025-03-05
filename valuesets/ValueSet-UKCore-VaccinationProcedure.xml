@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-VaccinationProcedure" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccinationProcedure" />
-  <version value="2.1.0" />
+  <version value="2.1.1" />
   <name value="UKCoreVaccinationProcedure" />
   <title value="UK Core Vaccination Procedure" />
   <status value="active" />
-  <date value="2021-09-10" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

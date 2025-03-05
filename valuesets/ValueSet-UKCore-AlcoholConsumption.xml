@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-AlcoholConsumption" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-AlcoholConsumption" />
-  <version value="0.0.1" />
+  <version value="0.1.1" />
   <name value="UKCoreAlcoholConsumption" />
   <title value="UK Core Alcohol Consumption" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

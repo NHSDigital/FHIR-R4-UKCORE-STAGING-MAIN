@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-EarlyWarningTotalScore" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-EarlyWarningTotalScore" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreEarlyWarningTotalScore" />
   <title value="UK Core Early Warning Total Score" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />

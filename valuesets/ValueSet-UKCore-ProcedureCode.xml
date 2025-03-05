@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-ProcedureCode" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode" />
-  <version value="2.2.0" />
+  <version value="2.2.1" />
   <name value="UKCoreProcedureCode" />
   <title value="UK Core Procedure Code" />
   <status value="active" />
-  <date value="2022-12-16" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
