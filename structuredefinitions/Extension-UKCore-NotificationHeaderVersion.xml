@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-NotificationHeaderVersion" />
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
   <version value="0.0.1" />
   <name value="ExtensionUKCoreNotificationHeaderVersion" />
-  <title value="Extension UKCore NotificationvHeader Version" />
+  <title value="Extension UKCore Notification Header Version" />
   <status value="draft" />
   <date value="2025-03-10" />
   <publisher value="HL7 UK" />
@@ -73,7 +73,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

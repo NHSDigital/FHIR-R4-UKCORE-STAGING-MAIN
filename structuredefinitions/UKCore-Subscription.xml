@@ -42,7 +42,7 @@
       <sliceName value="notificationHeaderVersionR5" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
       </type>
       <isModifier value="false" />
     </element>
