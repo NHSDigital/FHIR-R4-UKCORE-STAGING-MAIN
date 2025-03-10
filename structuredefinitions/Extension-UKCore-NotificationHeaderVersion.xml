@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
   <version value="0.0.1" />
   <name value="ExtensionUKCoreNotificationHeaderVersion" />
-  <title value="Extension UKCore Notification Header Version" />
+  <title value="Extension UK Core Notification Header Version" />
   <status value="draft" />
   <date value="2025-03-10" />
   <publisher value="HL7 UK" />

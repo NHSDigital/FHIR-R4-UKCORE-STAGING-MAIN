@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-SubscriptionNotificationPayloadSize" />
   <version value="0.0.1" />
   <name value="ExtensionUKCoreSubscriptionNotificationPayloadSize" />
-  <title value="Extension UKCore Subscription Notification Payload Size" />
+  <title value="Extension UK Core Subscription Notification Payload Size" />
   <status value="draft" />
   <date value="2025-03-10" />
   <publisher value="HL7 UK" />
