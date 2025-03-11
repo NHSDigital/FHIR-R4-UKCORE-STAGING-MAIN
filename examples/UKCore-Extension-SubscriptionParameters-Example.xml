@@ -20,7 +20,7 @@
   <end value='2025-03-13T13:17:18Z' />
   <reason value='Subscription for a Change of GP event for patient' />
   <criteria
-    value='Patient?identifier=https://fhir.nhs.uk/Id/nhs-number||8449303649&generalPractitioner=https://fhir.hl7.org.uk/Id/gmp-number||G9999999' />
+    value='Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|8449303649&amp;generalPractitioner=https://fhir.hl7.org.uk/Id/gmp-number|G9999999' />
   <channel>
     <type value='rest-hook' />
     <endpoint value='https://app.nhs.uk/change-of-gp-handler' />
