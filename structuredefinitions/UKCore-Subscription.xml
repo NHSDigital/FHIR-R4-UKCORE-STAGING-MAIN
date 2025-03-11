@@ -27,22 +27,22 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Subscription" />
   <derivation value="constraint" />
   <differential>
+    <element id="Subscription.extension:subscriptionHeaderVersionR5">
+      <path value="Subscription.extension" />
+      <sliceName value="subscriptionHeaderVersionR5" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.parameter" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Subscription.extension:subscriptionPayloadSizeR5">
       <path value="Subscription.extension" />
       <sliceName value="subscriptionPayloadSizeR5" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-SubscriptionNotificationPayloadSize" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="Subscription.extension:notificationHeaderVersionR5">
-      <path value="Subscription.extension" />
-      <sliceName value="notificationHeaderVersionR5" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/Extension-UKCore-NotificationHeaderVersion" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.content" />
       </type>
       <isModifier value="false" />
     </element>
