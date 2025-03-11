@@ -67,7 +67,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscriptionparameter" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.parameter" />
     </element>
   </differential>
 </StructureDefinition>
