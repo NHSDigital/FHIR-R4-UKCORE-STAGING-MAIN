@@ -7,6 +7,7 @@
     "4.0.1"
   ],
   "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1"
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.terminology.r5 ": "6.2.0"
   }
 }
