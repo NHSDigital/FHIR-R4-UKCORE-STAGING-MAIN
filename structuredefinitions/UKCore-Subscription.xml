@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Subscription" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Subscription" />
-  <version value="0.0.1" />
+  <version value="0.1.0" />
   <name value="UKCoreSubscription" />
   <title value="UK Core Subscription" />
   <status value="draft" />
@@ -27,9 +27,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Subscription" />
   <derivation value="constraint" />
   <differential>
-    <element id="Subscription.extension:subscriptionNotificationR5">
+    <element id="Subscription.extension:subscriptionContentR5">
       <path value="Subscription.extension" />
-      <sliceName value="subscriptionNotificationR5" />
+      <sliceName value="subscriptionContentR5" />
       <max value="1" />
       <type>
         <code value="Extension" />

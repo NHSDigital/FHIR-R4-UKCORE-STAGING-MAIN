@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-UKCore-SubscriptionNotificationHydration" />
+  <id value="Extension-UKCore-SubscriptionContent" />
   <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.content" />
   <version value="0.1.0" />
-  <name value="ExtensionUKCoreSubscriptionNotificationHydration" />
-  <title value="Extension UK Core Subscription Notification Hydration" />
+  <name value="ExtensionUKCoreSubscriptionContent" />
+  <title value="Extension UK Core Subscription Content" />
   <status value="draft" />
   <date value="2025-03-10" />
   <publisher value="HL7 UK" />
@@ -33,7 +33,6 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <mustSupport value="false" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

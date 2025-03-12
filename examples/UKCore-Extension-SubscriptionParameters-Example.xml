@@ -16,6 +16,7 @@
       <valueString value='Bearer secret-token-abc-123' />
     </extension>
   </extension>
+  <!--  **************extension end**************  -->
   <status value='active' />
   <end value='2025-03-13T13:17:18Z' />
   <reason value='Subscription for a Change of GP event for patient' />
@@ -26,5 +27,4 @@
     <endpoint value='https://app.nhs.uk/change-of-gp-handler' />
     <payload value='application/fhir+json' />
   </channel>
-  <!--  **************extension end**************  -->
 </Subscription>
