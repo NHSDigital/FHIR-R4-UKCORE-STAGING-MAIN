@@ -1,10 +1,9 @@
 <Subscription xmlns='http://hl7.org/fhir'>
   <id value='UKCore-Extension-SubscriptionParameters-Example' />
   <text>
-    <status value="additional" />
-    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the pre-adopted R5 element
-      via an extension, which is used to provide API parameters</div>
-  </text>
+    <status value="additional" /> --- We have skipped the narrative for better readability of the
+    resource --- </text>
+  <!--  **************extension start**************  -->
   <extension url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.content'>
     <valueCode value='id-only' />
   </extension>
@@ -26,4 +25,5 @@
     <endpoint value='https://app.nhs.uk/change-of-gp-handler' />
     <payload value='application/fhir+json' />
   </channel>
+  <!--  **************extension end**************  -->
 </Subscription>
