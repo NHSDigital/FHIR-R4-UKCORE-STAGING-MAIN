@@ -1,0 +1,28 @@
+<Subscription xmlns='http://hl7.org/fhir'>
+  <id value='UKCore-Extension-SubscriptionParameters-Example' />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate identification and provision of API parameters in R4 Subscription.</div>
+  </text>
+  <extension url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.content'>
+    <valueCode value='id-only' />
+  </extension>
+  <extension url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.parameter'>
+    <extension url='name'>
+      <valueString value='Authorization' />
+    </extension>
+    <extension url='value'>
+      <valueString value='Bearer secret-token-abc-123' />
+    </extension>
+  </extension>
+  <status value='active' />
+  <end value='2025-03-13T13:17:18Z' />
+  <reason value='Subscription for a Change of GP event for patient' />
+  <criteria
+    value='Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|8449303649&amp;generalPractitioner=https://fhir.hl7.org.uk/Id/gmp-number|G9999999' />
+  <channel>
+    <type value='rest-hook' />
+    <endpoint value='https://app.nhs.uk/change-of-gp-handler' />
+    <payload value='application/fhir+json' />
+  </channel>
+</Subscription>
