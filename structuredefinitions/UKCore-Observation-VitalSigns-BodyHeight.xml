@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Observation-VitalSigns-BodyHeight" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BodyHeight" />
-  <version value="1.1.0" />
+  <version value="1.1.1" />
   <name value="UKCoreObservationVitalSignsBodyHeight" />
   <title value="UK Core Observation Vital Signs Body Height" />
   <status value="active" />
-  <date value="2025-02-19" />
+  <date value="2025-03-11" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -48,7 +48,7 @@
       <path value="Observation.value[x]" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Quantity" />
       </type>
       <binding>
         <strength value="required" />
