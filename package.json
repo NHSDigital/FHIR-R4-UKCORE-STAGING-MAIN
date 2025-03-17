@@ -8,6 +8,6 @@
   ],
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "hl7.terminology.r5.tgz": "5.0.0"
+    "hl7.terminology.r5": "5.5.0"
   }
 }
