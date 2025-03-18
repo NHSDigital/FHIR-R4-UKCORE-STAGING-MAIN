@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-EarlyWarningSubScore" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-EarlyWarningSubScore" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreEarlyWarningSubScore" />
   <title value="UK Core Early Warning Sub Score" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,28 +17,28 @@
     </telecom>
   </contact>
   <description value="A set of codes for the recording of Early Warning Score sub scores. Selected from the SNOMED CT UK coding system:
-&#13; - 1104351000000103 | Royal College of Physicians National Early Warning Score 2 - pulse score (observable entity) 
-&#13; - 1104371000000107 | Royal College of Physicians National Early Warning Score 2 - temperature score (observable entity)
-&#13; - 1104331000000105 | Royal College of Physicians National Early Warning Score 2 - air or oxygen score (observable entity)
-&#13; - 1104361000000100 | Royal College of Physicians National Early Warning Score 2 - consciousness score (observable entity)
-&#13; - 1104301000000104 | Royal College of Physicians National Early Warning Score 2 - respiration rate score (observable entity)
-&#13; - 1104341000000101 | Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score (observable entity)
-&#13; - 1104311000000102 | Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score (observable entity)
-&#13; - 1104321000000108 | Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 2 score (observable entity)
+&#13; - 1104351000000103 | Royal College of Physicians National Early Warning Score 2 - pulse score (observable entity) |
+&#13; - 1104371000000107 | Royal College of Physicians National Early Warning Score 2 - temperature score (observable entity) |
+&#13; - 1104331000000105 | Royal College of Physicians National Early Warning Score 2 - air or oxygen score (observable entity) |
+&#13; - 1104361000000100 | Royal College of Physicians National Early Warning Score 2 - consciousness score (observable entity) |
+&#13; - 1104301000000104 | Royal College of Physicians National Early Warning Score 2 - respiration rate score (observable entity) |
+&#13; - 1104341000000101 | Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score (observable entity) |
+&#13; - 1104311000000102 | Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score (observable entity) |
+&#13; - 1104321000000108 | Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 2 score (observable entity) |
 &#13;
-&#13; - 1364091000000101 | National Paediatric Early Warning Score chart used (observable entity)
-&#13; - 1363331000000103 | National Paediatric Early Warning Score heart rate score (observable entity)
-&#13; - 1363361000000108 | National Paediatric Early Warning Score temperature score (observable entity)
-&#13; - 1363351000000105 | National Paediatric Early Warning Score consciousness score (observable entity)
-&#13; - 1363321000000100 | National Paediatric Early Warning Score inspired oxygen score (observable entity)
-&#13; - 1363271000000106 | National Paediatric Early Warning Score respiration rate score (observable entity)
-&#13; - 1363301000000109 | National Paediatric Early Warning Score respiratory distress score (observable entity)
-&#13; - 1363341000000107 | National Paediatric Early Warning Score capillary refill time score (observable entity)
-&#13; - 1364081000000103 | National Paediatric Early Warning Score level of respiratory distress (observable entity)
-&#13; - 1363291000000105 | National Paediatric Early Warning Score systolic blood pressure score (observable entity)
-&#13; - 1363311000000106 | National Paediatric Early Warning Score peripheral oxygen saturation score (observable entity)
-&#13; - 1364131000000103 | National Paediatric Early Warning Score nursing concern, clinical intuition (observable entity)
-&#13; - 1364121000000100 | National Paediatric Early Warning Score how is your child different since I last saw them? (observable entity)" />
+&#13; - 1364091000000101 | National Paediatric Early Warning Score chart used (observable entity) |
+&#13; - 1363331000000103 | National Paediatric Early Warning Score heart rate score (observable entity) |
+&#13; - 1363361000000108 | National Paediatric Early Warning Score temperature score (observable entity) |
+&#13; - 1363351000000105 | National Paediatric Early Warning Score consciousness score (observable entity) |
+&#13; - 1363321000000100 | National Paediatric Early Warning Score inspired oxygen score (observable entity) |
+&#13; - 1363271000000106 | National Paediatric Early Warning Score respiration rate score (observable entity) |
+&#13; - 1363301000000109 | National Paediatric Early Warning Score respiratory distress score (observable entity) |
+&#13; - 1363341000000107 | National Paediatric Early Warning Score capillary refill time score (observable entity) |
+&#13; - 1364081000000103 | National Paediatric Early Warning Score level of respiratory distress (observable entity) |
+&#13; - 1363291000000105 | National Paediatric Early Warning Score systolic blood pressure score (observable entity) |
+&#13; - 1363311000000106 | National Paediatric Early Warning Score peripheral oxygen saturation score (observable entity) |
+&#13; - 1364131000000103 | National Paediatric Early Warning Score nursing concern, clinical intuition (observable entity) |
+&#13; - 1364121000000100 | National Paediatric Early Warning Score how is your child different since I last saw them? (observable entity) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>

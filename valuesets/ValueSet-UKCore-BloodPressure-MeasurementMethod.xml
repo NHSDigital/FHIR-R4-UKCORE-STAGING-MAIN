@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BloodPressure-MeasurementMethod" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-MeasurementMethod" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreBloodPressureMeasurementMethod" />
   <title value="UK Core Blood Pressure Measurement Method" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,13 +17,13 @@
     </telecom>
   </contact>
   <description value="A code for recording the method in which blood pressure was measured. Selected from the SNOMED CT UK coding system:
-&#13; - 37931006 | Auscultation (procedure)
-&#13; - 810061000000102 | Measurement of blood pressure using manual sphygmomanometer by auscultation over brachial artery (procedure)
-&#13; - 13385008 | Mediate auscultation (procedure)
-&#13; - 765172009 | Doppler ultrasound (procedure)
-&#13; - 113011001 | Palpation (procedure)
-&#13; - 31813000 | Vascular oscillometry (procedure)
-&#13; - descendantOrSelfOf 42826002 | Systemic arterial pressure monitoring (regime/therapy)" />
+&#13; - 37931006 | Auscultation (procedure) |
+&#13; - 810061000000102 | Measurement of blood pressure using manual sphygmomanometer by auscultation over brachial artery (procedure) |
+&#13; - 13385008 | Mediate auscultation (procedure) |
+&#13; - 765172009 | Doppler ultrasound (procedure) |
+&#13; - 113011001 | Palpation (procedure) |
+&#13; - 31813000 | Vascular oscillometry (procedure) |
+&#13; - descendantOrSelfOf 42826002 | Systemic arterial pressure monitoring (regime/therapy) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
