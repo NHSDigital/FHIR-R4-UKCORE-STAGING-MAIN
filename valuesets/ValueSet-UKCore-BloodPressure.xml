@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BloodPressure" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure" />
-  <version value="1.0.1" />
+  <version value="1.0.2" />
   <name value="UKCoreBloodPressure" />
   <title value="UK Core Blood Pressure" />
   <status value="active" />
-  <date value="2024-02-27" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,46 +17,46 @@
     </telecom>
   </contact>
   <description value="A code from the SNOMED CT UK coding system for recording and grouping of a single set of blood pressure readings, and excludes specific systolic / diastolic readings. Selected from the SNOMED CT UK coding system:
-&#13; - 163020007 | On examination - blood pressure reading (finding) 
-&#13; - 392570002 | Blood pressure finding (finding)
-&#13; - 392571003 | Finding of arterial pulse pressure (finding)
-&#13; - 301141002 | Finding of pulmonary arterial pressure (finding)
-&#13; - 366161004 | Finding of venous pressure (finding) 
-&#13; - 366162006 | Finding of central venous pressure (finding)
-&#13; - 366163001 | Finding of jugular venous pressure (finding) 
-&#13; - 75367002 | Blood pressure (observable entity) 
-&#13; - 386534000 | Arterial blood pressure (observable entity)
-&#13; - 87179004 | Arterial pulse pressure (observable entity)
-&#13; - 386533006 | Invasive blood pressure (observable entity)
-&#13; - 386532001 | Invasive arterial pressure (observable entity)
-&#13; - 723237002 | Non-invasive blood pressure (observable entity)
-&#13; - 251076008 | Non-invasive arterial pressure (observable entity)
-&#13; - 1036531000000108 | Non-invasive central blood pressure (observable entity)
-&#13; - 335661000000109 | Self measured blood pressure reading (observable entity)
-&#13; - 163033001 | Lying blood pressure (observable entity) 
-&#13; - 163035008 | Sitting blood pressure (observable entity)
-&#13; - 163034007 | Standing blood pressure (observable entity)
-&#13; - 252076005 | Venous pressure (observable entity)
-&#13; - 76882007 | Venous wedge pressure (observable entity) 
-&#13; - 71420008 | Central venous pressure (observable entity)
-&#13; - 37476000 | Jugular venous pressure (observable entity)
-&#13; - 364090009 | Systemic arterial pressure (observable entity)
-&#13; - 386536003 | Systemic blood pressure (observable entity)
-&#13; - 251068006 | Atrial pressure (observable entity)
-&#13; - 276760007 | Left atrial pressure (observable entity)
-&#13; - 276755008 | Right atrial pressure (observable entity)
-&#13; - 165077006 | Intracardiac pressure (observable entity)
-&#13; - 37087001 | Arterial wedge pressure (observable entity)
-&#13; - 371829003 | Pulmonary vein wedge pressure (observable entity)
+&#13; - 163020007 | On examination - blood pressure reading (finding) |
+&#13; - 392570002 | Blood pressure finding (finding) |
+&#13; - 392571003 | Finding of arterial pulse pressure (finding) |
+&#13; - 301141002 | Finding of pulmonary arterial pressure (finding) |
+&#13; - 366161004 | Finding of venous pressure (finding) |
+&#13; - 366162006 | Finding of central venous pressure (finding) |
+&#13; - 366163001 | Finding of jugular venous pressure (finding) |
+&#13; - 75367002 | Blood pressure (observable entity) |
+&#13; - 386534000 | Arterial blood pressure (observable entity) |
+&#13; - 87179004 | Arterial pulse pressure (observable entity) |
+&#13; - 386533006 | Invasive blood pressure (observable entity) |
+&#13; - 386532001 | Invasive arterial pressure (observable entity) |
+&#13; - 723237002 | Non-invasive blood pressure (observable entity) |
+&#13; - 251076008 | Non-invasive arterial pressure (observable entity) |
+&#13; - 1036531000000108 | Non-invasive central blood pressure (observable entity) |
+&#13; - 335661000000109 | Self measured blood pressure reading (observable entity) |
+&#13; - 163033001 | Lying blood pressure (observable entity) |
+&#13; - 163035008 | Sitting blood pressure (observable entity) |
+&#13; - 163034007 | Standing blood pressure (observable entity) |
+&#13; - 252076005 | Venous pressure (observable entity) |
+&#13; - 76882007 | Venous wedge pressure (observable entity) |
+&#13; - 71420008 | Central venous pressure (observable entity) |
+&#13; - 37476000 | Jugular venous pressure (observable entity) |
+&#13; - 364090009 | Systemic arterial pressure (observable entity) |
+&#13; - 386536003 | Systemic blood pressure (observable entity) |
+&#13; - 251068006 | Atrial pressure (observable entity) |
+&#13; - 276760007 | Left atrial pressure (observable entity) |
+&#13; - 276755008 | Right atrial pressure (observable entity) |
+&#13; - 165077006 | Intracardiac pressure (observable entity) |
+&#13; - 37087001 | Arterial wedge pressure (observable entity) |
+&#13; - 371829003 | Pulmonary vein wedge pressure (observable entity) |
 &#13; - MINUS
-&amp;nbsp;&#13; - 170599006 | 24 hr blood pressure monitoring (regime/therapy)
-&amp;nbsp;&#13; - descendantOrSelfOf 371830008 | Pulmonary vein mean wedge pressure (observable entity)
-&amp;nbsp;&#13; - descendantOrSelfOf 6797001 | Mean blood pressure (observable entity)
-&amp;nbsp;&#13; - descendantOrSelfOf 723232008 | Average blood pressure (observable entity)
-&amp;nbsp;&#13; - descendantOf 276769008 | Left ventricular pressure (observable entity)
-&amp;nbsp;&#13; - descendantOf 276756009 | Right ventricular pressure (observable entity)
-&amp;nbsp;&#13; - descendantOf 276760007 | Left atrial pressure (observable entity)
-&amp;nbsp;&#13; - descendantOf 276755008 | Right atrial pressure (observable entity)" />
+&amp;nbsp;&#13; - 170599006 | 24 hr blood pressure monitoring (regime/therapy) |
+&amp;nbsp;&#13; - descendantOrSelfOf 371830008 | Pulmonary vein mean wedge pressure (observable entity) |
+&amp;nbsp;&#13; - descendantOrSelfOf 6797001 | Mean blood pressure (observable entity) |
+&amp;nbsp;&#13; - descendantOrSelfOf 723232008 | Average blood pressure (observable entity) |
+&amp;nbsp;&#13; - descendantOf 276769008 | Left ventricular pressure (observable entity) |
+&amp;nbsp;&#13; - descendantOf 276756009 | Right ventricular pressure (observable entity) |
+&amp;nbsp;&#13; - descendantOf 276760007 | Left atrial pressure (observable entity) |
+&amp;nbsp;&#13; - descendantOf 276755008 | Right atrial pressure (observable entity) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>

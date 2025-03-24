@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-EarlyWarningTotalScore" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-EarlyWarningTotalScore" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreEarlyWarningTotalScore" />
   <title value="UK Core Early Warning Total Score" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,8 +17,8 @@
     </telecom>
   </contact>
   <description value="A set of codes for the recording of Early Warning Score systems total scores. Selected from the SNOMED CT UK coding system:
-&#13; - 1104051000000101 | Royal College of Physicians National Early Warning Score 2 total score (observable entity)
-&#13; - 1363261000000104 | National Paediatric Early Warning Score total score (observable entity)" />
+&#13; - 1104051000000101 | Royal College of Physicians National Early Warning Score 2 total score (observable entity) |
+&#13; - 1363261000000104 | National Paediatric Early Warning Score total score (observable entity) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
