@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BodyHeightMeasurements" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyHeightMeasurements" />
-  <version value="1.0.1" />
+  <version value="1.0.2" />
   <name value="UKCoreBodyHeightMeasurements" />
   <title value="UK Core Body Height Measurements" />
   <status value="active" />
-  <date value="2024-02-27" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,17 +17,17 @@
     </telecom>
   </contact>
   <description value="A code from the SNOMED CT UK coding system for the measurement of body lengths or heights. Selected from the SNOMED CT UK coding system:
-&#13; - 248337003 | Height from demispan (observable entity)
-&#13; - 1003998008 | Arm demispan (observable entity)
-&#13; - DescendantOrSelfOf 50373000 | Body height measure (observable entity)
+&#13; - 248337003 | Height from demispan (observable entity) |
+&#13; - 1003998008 | Arm demispan (observable entity) |
+&#13; - DescendantOrSelfOf 50373000 | Body height measure (observable entity) |
 &#13; - MINUS 
-&amp;nbsp;&#13; - 925931000000103 | Mid-parental height (observable entity))
-&amp;nbsp;&#13; - 925951000000105 | Predicted adult height (observable entity)
-&amp;nbsp;&#13; - 248336007 | Pubis to ground height (observable entity)
-&amp;nbsp;&#13; - 276350001 | Subischial leg length (observable entity)
-&amp;nbsp;&#13; - 1153591001 | Length for age percentile (observable entity)
-&amp;nbsp;&#13; - 1153604005 | Body height for age z-score (observable entity)
-&amp;nbsp;&#13; - 1153590000 | Length for age z score (observable entity)" />
+&amp;nbsp;&#13; - 925931000000103 | Mid-parental height (observable entity) |
+&amp;nbsp;&#13; - 925951000000105 | Predicted adult height (observable entity) |
+&amp;nbsp;&#13; - 248336007 | Pubis to ground height (observable entity) |
+&amp;nbsp;&#13; - 276350001 | Subischial leg length (observable entity) |
+&amp;nbsp;&#13; - 1153591001 | Length for age percentile (observable entity) |
+&amp;nbsp;&#13; - 1153604005 | Body height for age z-score (observable entity) |
+&amp;nbsp;&#13; - 1153590000 | Length for age z score (observable entity) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
