@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BodyPosition" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyPosition" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreBodyPosition" />
   <title value="UK Core Body Position" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,19 +17,19 @@
     </telecom>
   </contact>
   <description value="A set of codes that define a patients body position when a clinical observation was taken. Selected from the SNOMED CT UK coding system:
-&#13; - 30212006 | Fowler's position (finding)
-&#13; - 26527006 | Inverse Trendelenburg position (finding)
-&#13; - 102536004 | Left lateral decubitus position (finding)
-&#13; - 414585002 | Left lateral tilt (finding)
-&#13; - 10904000 | Orthostatic body position (finding)
-&#13; - 1240000 | Prone body position (finding)
-&#13; - 102538003 | Recumbent body position (finding)
-&#13; - 423413008 | Reverse trendelenburg positioning (finding)
-&#13; - 102535000 | Right lateral decubitus position (finding)
-&#13; - 415346000 | Right lateral tilt (finding)
-&#13; - 33586001 | Sitting position (finding)
-&#13; - 40199007 | Supine body position (finding)
-&#13; - 34106002 | Trendelenburg position (finding)" />
+&#13; - 30212006 | Fowler's position (finding) |
+&#13; - 26527006 | Inverse Trendelenburg position (finding) |
+&#13; - 102536004 | Left lateral decubitus position (finding) |
+&#13; - 414585002 | Left lateral tilt (finding) |
+&#13; - 10904000 | Orthostatic body position (finding) |
+&#13; - 1240000 | Prone body position (finding) |
+&#13; - 102538003 | Recumbent body position (finding) |
+&#13; - 423413008 | Reverse trendelenburg positioning (finding) |
+&#13; - 102535000 | Right lateral decubitus position (finding) |
+&#13; - 415346000 | Right lateral tilt (finding) |
+&#13; - 33586001 | Sitting position (finding) |
+&#13; - 40199007 | Supine body position (finding) |
+&#13; - 34106002 | Trendelenburg position (finding) |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>
