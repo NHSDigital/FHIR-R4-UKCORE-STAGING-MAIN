@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Bindings
+  filename: Bindings.page.md
+- name: patient
+  filename: patient.page.md
+- name: telecom
+  filename: telecom.page.md
+- name: communication
+  filename: communication.page.md

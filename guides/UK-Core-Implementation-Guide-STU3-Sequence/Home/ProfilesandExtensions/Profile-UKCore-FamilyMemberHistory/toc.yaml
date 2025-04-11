@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Bindings
+  filename: Bindings.page.md
+- name: instantiatesCanonical
+  filename: instantiatesCanonical.page.md
+- name: patient
+  filename: patient.page.md
+- name: relationship
+  filename: relationship.page.md
+- name: reasonReference
+  filename: reasonReference.page.md
+- name: note
+  filename: note.page.md

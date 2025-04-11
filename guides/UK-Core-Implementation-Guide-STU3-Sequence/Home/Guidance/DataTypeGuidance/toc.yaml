@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: ContactPoint
+  filename: ContactPoint.page.md
+- name: Address
+  filename: Address.page.md
+- name: HumanName
+  filename: HumanName.page.md

@@ -1,0 +1,10 @@
+- name: Sitemap Overview
+  filename: Sitemap-Overview
+- name: DataType Guidance
+  filename: DataTypeGuidance
+- name: CodeableConcept Guidance
+  filename: CodeableConcept-Guidance
+- name: FHIR Version Guidance
+  filename: FHIR-Version-Guidance
+- name: MustSupport Guidance
+  filename: MustSupport-Guidance
