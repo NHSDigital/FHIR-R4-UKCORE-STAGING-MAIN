@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-VitalSigns-BodyWeight
+topic: Observation-VitalSigns-BodyWeight-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BodyWeight
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-BodyWeight

@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation
+topic: Observation-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation

@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-VitalSigns-RespirationRate
+topic: Observation-VitalSigns-RespirationRate-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-RespirationRate
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-RespirationRate

@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-AlcoholConsumption
+topic: Observation-AlcoholConsumption-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-AlcoholConsumption

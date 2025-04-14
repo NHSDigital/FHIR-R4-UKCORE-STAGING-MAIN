@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-BloodGlucose
+topic: Observation-BloodGlucose-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlucose
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-BloodGlucose

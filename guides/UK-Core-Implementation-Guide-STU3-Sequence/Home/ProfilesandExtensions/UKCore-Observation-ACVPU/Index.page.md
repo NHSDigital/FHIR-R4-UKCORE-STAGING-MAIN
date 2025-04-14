@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-ACVPU
+topic: Observation-ACVPU-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-ACVPU
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-ACVPU

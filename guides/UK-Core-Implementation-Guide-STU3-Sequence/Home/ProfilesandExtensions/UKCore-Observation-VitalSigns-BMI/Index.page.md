@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-VitalSigns-BMI
+topic: Observation-VitalSigns-BMI-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BMI
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-BMI

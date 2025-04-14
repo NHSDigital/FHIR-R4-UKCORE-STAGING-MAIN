@@ -1,5 +1,5 @@
 ---
-topic: Profile-MedicationAdministration
+topic: MedicationAdministration-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration
 usage: http://hl7.org/fhir/StructureDefinition/MedicationAdministration
 issue: UKCore-MedicationAdministration

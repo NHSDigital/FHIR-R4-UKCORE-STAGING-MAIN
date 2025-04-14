@@ -1,5 +1,5 @@
 ---
-topic: Profile-Medication
+topic: Medication-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication
 usage: http://hl7.org/fhir/StructureDefinition/Medication
 issue: UKCore-Medication

@@ -1,5 +1,5 @@
 ---
-topic: Profile-Slot
+topic: Slot-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot
 usage: http://hl7.org/fhir/StructureDefinition/Slot
 issue: UKCore-Slot

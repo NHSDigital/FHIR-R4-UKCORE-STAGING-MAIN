@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-VitalSigns-HeadCircumference
+topic: Observation-VitalSigns-HeadCircumference-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeadCircumference
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-HeadCircumference

@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-VitalSigns-BloodPressure-Component
+topic: Observation-VitalSigns-BloodPressure-Component-Profile
 ---
 ## `{{page-title}}`
 

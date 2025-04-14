@@ -1,5 +1,5 @@
 ---
-topic: Profile-RelatedPerson
+topic: RelatedPerson-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson
 usage: http://hl7.org/fhir/StructureDefinition/RelatedPerson
 issue: UKCore-RelatedPerson

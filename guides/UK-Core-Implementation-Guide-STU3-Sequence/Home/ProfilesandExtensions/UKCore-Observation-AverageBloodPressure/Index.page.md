@@ -1,5 +1,5 @@
 ---
-topic: Profile-Observation-AverageBloodPressure
+topic: Observation-AverageBloodPressure-Profile
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AverageBloodPressure
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-AverageBloodPressure
