@@ -6,33 +6,6 @@ from update_IG import import_IG
 from update_json import *
 import os
 
-def list_ig_pages(ig):
-    '''returns a list of all resources in the ig'''
-    '''needs to have parent folders so we can follow the structure'''
-    
-    pass
-
-def asset(self, file):
-    ''' get info about the asset, inc asset type, id, url, and status. '''
-
-    pass
-
-def check_asset_in_ig(ig, asset):
-    '''check if the asset is in the ig'''
-    pass
-
-def add_asset_to_ig(ig, asset):
-    '''add the asset to the ig'''
-    pass
-
-def check_asset_ammended(ig, asset):
-    '''check if the asset has been ammended'''
-    pass
-
-def update_asset_in_ig(ig, asset):
-    '''update the asset in the ig'''
-    pass
-
 class FHIRAsset:
     def __init__(self, url, name, status, id, filename):
         self.url = url

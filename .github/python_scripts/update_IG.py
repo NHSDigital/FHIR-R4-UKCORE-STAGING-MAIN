@@ -8,6 +8,7 @@ def import_IG():
     '''imports the latest version of the ig from the url provided and adds it the guides folder'''
     variables = openJSONFile('variables.json')
     ig_url = variables['ig_url']
+    ig_folder = variables['ig_folder']
     username = os.getenv("SIMPLIFIER_USERNAME")
     password = os.getenv("SIMPLIFIER_PASSWORD")
     response = requests.get(ig_url, auth=(username, password))
