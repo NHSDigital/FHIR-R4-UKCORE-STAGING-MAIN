@@ -24,7 +24,7 @@ issue: Extension-UKCore-FamilyMemberHistoryParticipant
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profile-ukcore-careteam)
-- [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/UKCore-Device)
+- [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Patient}}
 - {{pagelink:Profile-Practitioner}}

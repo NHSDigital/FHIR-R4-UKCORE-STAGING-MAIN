@@ -23,6 +23,6 @@ issue: Extension-UKCore-DeviceReference
 
 <h3 id="guidance-devicereference">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/UKCore-Device).
+Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device).
 
 ---

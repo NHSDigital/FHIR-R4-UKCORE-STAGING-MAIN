@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-ImagingStudy (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/UKCore-ImagingStudy).
+Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-ImagingStudy (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy).
 
 ---

@@ -7,6 +7,6 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 - {{pagelink:Profile-Practitioner}}
 - {{pagelink:Profile-PractitionerRole}}
 - {{pagelink:Profile-RelatedPerson}}
-- [UKCore-Device (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/UKCore-Device)
+- [UKCore-Device (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
 
 ---

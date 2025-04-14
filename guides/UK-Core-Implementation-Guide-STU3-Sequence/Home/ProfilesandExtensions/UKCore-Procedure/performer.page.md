@@ -2,7 +2,7 @@
 
 The resource referenced in `Procedure.performer.actor` SHALL conform to one the following:
 
-- [UKCore-Device (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/UKCore-Device)
+- [UKCore-Device (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Patient}}
 - {{pagelink:Profile-Practitioner}}
