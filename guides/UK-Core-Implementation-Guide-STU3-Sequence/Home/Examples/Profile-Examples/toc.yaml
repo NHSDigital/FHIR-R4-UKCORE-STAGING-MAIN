@@ -1,0 +1,148 @@
+- name: Index
+  filename: Index.page.md
+- name: Example UKCore-AllergyIntolerance-Amoxicillin
+  filename: UKCore-AllergyIntolerance-Amoxicillin-Example.page.md
+- name: Example UKCore-AllergyIntolerance-EnteredInError
+  filename: UKCore-AllergyIntolerance-EnteredInError-Example.page.md
+- name: Example UKCore-Appointment-OrthopaedicSurgery
+  filename: UKCore-Appointment-OrthopaedicSurgery-Example.page.md
+- name: Example UKCore-Bundle-AllergyList
+  filename: UKCore-Bundle-AllergyList-Example.page.md
+- name: Example UKCore-Bundle-NEWS2Observations
+  filename: UKCore-Bundle-NEWS2Observations-Example.page.md
+- name: Example UKCore-Composition-Discharge
+  filename: UKCore-Composition-Discharge-Example.page.md
+- name: Example UKCore-Condition-BleedingFromEar
+  filename: UKCore-Condition-BleedingFromEar-Example.page.md
+- name: Example UKCore-Condition-HipReplacement
+  filename: UKCore-Condition-HipReplacement-Example.page.md
+- name: Example UKCore-Consent-ForInformationAccess
+  filename: UKCore-Consent-ForInformationAccess-Example.page.md
+- name: Example UKCore-DiagnosticReport-CTChestScan
+  filename: UKCore-DiagnosticReport-CTChestScan-Example.page.md
+- name: Example UKCore-DiagnosticReport-DiagnosticStudiesReport
+  filename: UKCore-DiagnosticReport-DiagnosticStudiesReport-Example.page.md
+- name: Example UKCore-DiagnosticReport-ECG
+  filename: UKCore-DiagnosticReport-ECG-Example.page.md
+- name: Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport
+  filename: UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport-Example.page.md
+- name: Example UKCore-Device-SoftwareAsAMedicalDevice
+  filename: UKCore-Device-SoftwareAsAMedicalDevice-Example.page.md
+- name: Example UKCore-Device-Sphygmomanometer
+  filename: UKCore-Device-Sphygmomanometer-Example.page.md
+- name: Example UKCore-DocumentReference-ECG
+  filename: UKCore-DocumentReference-ECG-Example.page.md
+- name: Example UKCore-Encounter-InpatientEncounter
+  filename: UKCore-Encounter-InpatientEncounter-Example.page.md
+- name: Example UKCore-FamilyMemberHistory-FatherDiabetes
+  filename: UKCore-FamilyMemberHistory-FatherDiabetes-Example.page.md
+- name: Example UKCore-HealthcareService-OrthopaedicService
+  filename: UKCore-HealthcareService-OrthopaedicService-Example.page.md
+- name: Example UKCore-ImagingStudy-CTChestScan
+  filename: UKCore-ImagingStudy-CTChestScan-Example.page.md
+- name: Example UKCore-Immunization-InfluenzaVaccine
+  filename: UKCore-Immunization-InfluenzaVaccine-Example.page.md
+- name: Example UKCore-List-EmptyList
+  filename: UKCore-List-EmptyList-Example.page.md
+- name: Example UKCore-Location-GeneralPracticeNurseClinic
+  filename: UKCore-Location-GeneralPracticeNurseClinic-Example.page.md
+- name: Example UKCore-Location-CardiologySJUH
+  filename: UKCore-Location-CardiologySJUH-Example.page.md
+- name: Example UKCore-Location-HospitalSJUH
+  filename: UKCore-Location-HospitalSJUH-Example.page.md
+- name: Example UKCore-Medication-COVID-Vaccine
+  filename: UKCore-Medication-COVID-Vaccine-Example.page.md
+- name: Example UKCore-Medication-TimololVTM
+  filename: UKCore-Medication-TimololVTM-Example.page.md
+- name: Example UKCore-Medication-TimoptolEyeDrops
+  filename: UKCore-Medication-TimoptolEyeDrops-Example.page.md
+- name: Example UKCore-MedicationAdministration-TimoptolEyeDrops
+  filename: UKCore-MedicationAdministration-TimoptolEyeDrops-Example.page.md
+- name: Example UKCore-MedicationDispense-EyeDrops
+  filename: UKCore-MedicationDispense-EyeDrops-Example.page.md
+- name: Example UKCore-MedicationRequest-EyeDrops
+  filename: UKCore-MedicationRequest-EyeDrops-Example.page.md
+- name: Example UKCore-MedicationStatement-Amoxicillin
+  filename: UKCore-MedicationStatement-Amoxicillin-Example.page.md
+- name: Example UKCore-Observation-24HourBloodPressure
+  filename: UKCore-Observation-24HourBloodPressure-Example.page.md
+- name: Example UKCore-Observation-AwarenessOfDiagnosis
+  filename: UKCore-Observation-AwarenessOfDiagnosis-Example.page.md
+- name: Example UKCore-Observation-BreathingNormally
+  filename: UKCore-Observation-BreathingNormally-Example.page.md
+- name: Example UKCore-Observation-DrugUse
+  filename: UKCore-Observation-DrugUse-Example.page.md
+- name: Example UKCore-Observation-FastingTest
+  filename: UKCore-Observation-FastingTest-Example.page.md
+- name: Example UKCore-Observation-FingerJointInflamed
+  filename: UKCore-Observation-FingerJointInflamed-Example.page.md
+- name: Example UKCore-Observation-Group-FullBloodCount
+  filename: UKCore-Observation-Group-FullBloodCount-Example.page.md
+- name: Example UKCore-Observation-HeavyDrinker
+  filename: UKCore-Observation-HeavyDrinker-Example.page.md
+- name: Example UKCore-Observation-Lab-RedCellCount
+  filename: UKCore-Observation-Lab-RedCellCount-Example.page.md
+- name: Example UKCore-Observation-Lab-WhiteCellCount
+  filename: UKCore-Observation-Lab-WhiteCellCount-Example.page.md
+- name: Example UKCore-Observation-NPEWSTotal
+  filename: UKCore-Observation-NPEWSTotal-Example.page.md
+- name: Example UKCore-Observation-OxygenTherapy
+  filename: UKCore-Observation-OxygenTherapy-Example.page.md
+- name: Example UKCore-Observation-PatientConsciousness
+  filename: UKCore-Observation-PatientConsciousness-Example.page.md
+- name: Example UKCore-Observation-PipeSmoker
+  filename: UKCore-Observation-PipeSmoker-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-BloodPressure
+  filename: UKCore-Observation-VitalSigns-BloodPressure-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-BMI
+  filename: UKCore-Observation-VitalSigns-BMI-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-BodyHeight
+  filename: UKCore-Observation-VitalSigns-BodyHeight-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-BodyTemperature
+  filename: UKCore-Observation-VitalSigns-BodyTemperature-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-BodyWeight
+  filename: UKCore-Observation-VitalSigns-BodyWeight-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-HeadCircumference
+  filename: UKCore-Observation-VitalSigns-HeadCircumference-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-HeartRate
+  filename: UKCore-Observation-VitalSigns-HeartRate-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-OxygenSaturation
+  filename: UKCore-Observation-VitalSigns-OxygenSaturation-Example.page.md
+- name: Example UKCore-Observation-VitalSigns-RespiratoryRate
+  filename: UKCore-Observation-VitalSigns-RespiratoryRate-Example.page.md
+- name: Example UKCore-Organization-WhiteRoseMedicalCentre
+  filename: UKCore-Organization-WhiteRoseMedicalCentre-Example.page.md
+- name: Example UKCore-Organization-LeedsTeachingHospital
+  filename: UKCore-Organization-LeedsTeachingHospital-Example.page.md
+- name: Example UKCore-Patient-BabyPatient
+  filename: UKCore-Patient-BabyPatient-Example.page.md
+- name: Example UKCore-Patient-RichardSmith
+  filename: UKCore-Patient-RichardSmith-Example.page.md
+- name: Example UKCore-Practitioner-ConsultantSandraGose
+  filename: UKCore-Practitioner-ConsultantSandraGose-Example.page.md
+- name: Example UKCore-Practitioner-DoctorPaulRastall
+  filename: UKCore-Practitioner-DoctorPaulRastall-Example.page.md
+- name: Example UKCore-Practitioner-PharmacistJimmyChuck
+  filename: UKCore-Practitioner-PharmacistJimmyChuck-Example.page.md
+- name: Example UKCore-PractitionerRole-GP
+  filename: UKCore-PractitionerRole-GP-Example.page.md
+- name: Example UKCore-Procedure-ExaminationOfSkin
+  filename: UKCore-Procedure-ExaminationOfSkin-Example.page.md
+- name: Example UKCore-RelatedPerson-JoySmith
+  filename: UKCore-RelatedPerson-JoySmith-Example.page.md
+- name: Example UKCore-Schedule-Immunization
+  filename: UKCore-Schedule-Immunization-Example.page.md
+- name: Example UKCore-ServiceRequest-ColonoscopyRequest
+  filename: UKCore-ServiceRequest-ColonoscopyRequest-Example.page.md
+- name: Example UKCore-ServiceRequest-CTChestScan
+  filename: UKCore-ServiceRequest-CTChestScan-Example.page.md
+- name: Example UKCore-ServiceRequest-ECG
+  filename: UKCore-ServiceRequest-ECG-Example.page.md
+- name: Example UKCore-ServiceRequest-Lab-CReactiveProtein
+  filename: UKCore-ServiceRequest-Lab-CReactiveProtein-Example.page.md
+- name: Example UKCore-Slot-AvailableWalkInVisit
+  filename: UKCore-Slot-AvailableWalkInVisit-Example.page.md
+- name: Example UKCore-Specimen-BloodSpecimen
+  filename: UKCore-Specimen-BloodSpecimen-Example.page.md
+- name: Example UKCore-Specimen-UrineSpecimen
+  filename: UKCore-Specimen-UrineSpecimen-Example.page.md
