@@ -12,7 +12,7 @@ issue: UKCore-Procedure
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Skin Examination</b>- An example to illustrate a procedure of skin examination.<br>
-{{pagelink:Example-UKCore-Procedure-ExaminationOfSkin}}
+{{pagelink:UKCore-Procedure-ExaminationOfSkin-Example}}
 </div>
 </nocheck>
 

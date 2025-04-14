@@ -20,9 +20,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-Bloo
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Electronic Sphygmomanometer</b> - An example to illustrate recording of a specific blood pressure device.<br/>
-{{pagelink:Example-UKCore-Device-Sphygmomanometer}}<br><br>
+{{pagelink:UKCore-Device-Sphygmomanometer-Example}}<br><br>
 <b>Cuff Size</b> - An example to illustrate recording of a cuff size used on a blood pressure device.<br/>
-{{pagelink:Example-UKCore-Extension-CuffSize}}<br><br>
+{{pagelink:UKCore-Extension-CuffSize-Example}}<br><br>
 </div>
 </nocheck>
 

@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Pipe Smoker</b> - An example to illustrate recording a patient who smokes a pipe.<br/>
-{{pagelink:Example-UKCore-Observation-PipeSmoker}}<br><br>
+{{pagelink:UKCore-Observation-PipeSmoker-Example}}<br><br>
 </div>
 </nocheck>
 

@@ -12,7 +12,7 @@ issue: UKCore-RelatedPerson
   <h3>Examples</h3>
   <b>Related Person</b> - An example to illustrate a person who is related to the patient.
   <br>
-{{pagelink:Example-UKCore-RelatedPerson-JoySmith}}
+{{pagelink:UKCore-RelatedPerson-JoySmith-Example}}
 <br><br>
 </div>
 </nocheck>

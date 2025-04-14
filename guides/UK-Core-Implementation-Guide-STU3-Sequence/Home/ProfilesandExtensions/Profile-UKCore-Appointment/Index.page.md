@@ -13,13 +13,13 @@ issue: UKCore-Appointment
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Orthopaedic Surgery</b> - An example to illustrate an Orthopaedic Surgery appointment.<br/>
-{{pagelink:Example-UKCore-Appointment-OrthopaedicSurgery}}
+{{pagelink:UKCore-Appointment-OrthopaedicSurgery-Example}}
 <br/><br/>
 <b>Booking Organization</b> - An example to illustrate the booking organization extension associated with an appointment.<br/>
-{{pagelink:Example-UKCore-Extension-BookingOrganization}}
+{{pagelink:UKCore-Extension-BookingOrganization-Example}}
 <br/><br/>
 <b>Delivery Channel</b> - An example to illustrate the delivery channel associated with an appointment.<br/>
-{{pagelink:Example-UKCore-Extension-DeliveryChannel}}
+{{pagelink:UKCore-Extension-DeliveryChannel-Example}}
 </div>
 </nocheck>
 

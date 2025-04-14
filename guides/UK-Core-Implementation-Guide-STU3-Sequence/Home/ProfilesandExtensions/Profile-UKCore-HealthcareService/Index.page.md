@@ -12,7 +12,7 @@ issue: UKCore-HealthcareService
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Orthopaedic Service</b> - An example to illustrate information about an orthopaedic service within a HealthcareService resource. <br>
-{{pagelink:Example-UKCore-HealthcareService-OrthopaedicService}}
+{{pagelink:UKCore-HealthcareService-OrthopaedicService-Example}}
 </div>
 </nocheck>
 

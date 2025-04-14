@@ -22,7 +22,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-C
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Cuff Size</b> - An example to illustrate a blood pressure monitoring device with a large cuff.<br>
-{{pagelink:Example-UKCore-Extension-CuffSize}}
+{{pagelink:UKCore-Extension-CuffSize-Example}}
 <br><br>
 </div>
 

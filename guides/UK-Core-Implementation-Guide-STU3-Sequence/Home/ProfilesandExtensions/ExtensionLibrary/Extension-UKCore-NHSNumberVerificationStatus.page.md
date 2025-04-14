@@ -15,7 +15,7 @@ issue: Extension-UKCore-NHSNumberVerificationStatus
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>NHS Number Verification Status</b>- An example of the extension which states the patient's NHS number verification status.<br>
-{{pagelink:Example-UKCore-Extension-NHSNumberVerificationStatus}}
+{{pagelink:UKCore-Extension-NHSNumberVerificationStatus-Example}}
 <br><br>
 </div>
 

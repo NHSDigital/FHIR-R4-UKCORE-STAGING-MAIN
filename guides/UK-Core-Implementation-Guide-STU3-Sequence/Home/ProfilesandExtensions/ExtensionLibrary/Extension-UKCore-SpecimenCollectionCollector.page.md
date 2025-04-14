@@ -15,7 +15,7 @@ issue: Extension-UKCore-SpecimenCollectionCollector
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector.<br>
-  {{pagelink:Example-UKCore-Extension-CollectionCollector}}
+  {{pagelink:UKCore-Extension-CollectionCollector-Example}}
   <br><br>
 </div>
 

@@ -12,7 +12,7 @@ issue: UKCore-Schedule
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Immunization</b> - An example to illustrate a schedule regarding an immunization.
-<br>{{pagelink:Example-UKCore-Schedule-Immunization}}
+<br>{{pagelink:UKCore-Schedule-Immunization-Example}}
 <br><br>
 </div>
 </nocheck>

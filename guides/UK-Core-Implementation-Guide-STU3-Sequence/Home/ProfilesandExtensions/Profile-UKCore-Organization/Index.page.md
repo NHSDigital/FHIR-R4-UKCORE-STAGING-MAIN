@@ -12,16 +12,16 @@ issue: UKCore-Organization
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>General Practice</b> - Example to illustrate a General Practice organisation.
-</br>{{pagelink:Example-UKCore-Organization-WhiteRoseMedicalCentre}}   <br><br>
+</br>{{pagelink:UKCore-Organization-WhiteRoseMedicalCentre-Example}}   <br><br>
 
 <b>Hospital</b> - Example to illustrate a Hospital organisation.
-</br>{{pagelink:Example-UKCore-Organization-LeedsTeachingHospital}}   <br><br>
+</br>{{pagelink:UKCore-Organization-LeedsTeachingHospital-Example}}   <br><br>
 
 <b>Main Location</b> - Example to illustrate the mainLocation extension.
-</br>{{pagelink:Example-UKCore-Extension-MainLocation}}   <br><br>
+</br>{{pagelink:UKCore-Extension-MainLocation-Example}}   <br><br>
 
 <b>Organization Period</b> - Example to illustrate the core-defined organization-period extension.
-</br>{{pagelink:Example-UKCore-Extension-OrganizationPeriod}}
+</br>{{pagelink:UKCore-Extension-OrganizationPeriod-Example}}
 </div>
 
 </nocheck>

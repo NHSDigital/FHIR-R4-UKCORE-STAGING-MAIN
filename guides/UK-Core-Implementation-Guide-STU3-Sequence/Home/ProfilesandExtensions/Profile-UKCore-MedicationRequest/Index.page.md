@@ -12,10 +12,10 @@ issue: UKCore-MedicationRequest
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Eye drops</b> - An example to illustrate a request for eye drops. 
-</br>{{pagelink:Example-UKCore-MedicationRequest-EyeDrops}}
+</br>{{pagelink:UKCore-MedicationRequest-EyeDrops-Example}}
 <br><br>
 <b>Repeat Information</b> - An example to illustrate the RepeatInformation extension. 
-</br>{{pagelink:Example-UKCore-Extension-RepeatInformation}}
+</br>{{pagelink:UKCore-Extension-RepeatInformation-Example}}
 </div>
 </nocheck>
 

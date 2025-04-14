@@ -16,7 +16,7 @@ issue: Extension-UKCore-DiagnosticReportComposition
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to send a composition resource with a diagnostic report.<br>
-  {{pagelink:Example-UKCore-Extension-CompositionReference}}
+  {{pagelink:UKCore-Extension-CompositionReference-Example}}
   <br><br>
 </div>
 

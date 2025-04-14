@@ -12,7 +12,7 @@ issue: UKCore-MedicationAdministration
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Timoptol Eye Drops</b> - An example to illustrate a medication administration of eye drops.<br>
- {{pagelink:Example-UKCore-MedicationAdministration-TimoptolEyeDrops}}
+ {{pagelink:UKCore-MedicationAdministration-TimoptolEyeDrops-Example}}
 </div>
 </nocheck>
 

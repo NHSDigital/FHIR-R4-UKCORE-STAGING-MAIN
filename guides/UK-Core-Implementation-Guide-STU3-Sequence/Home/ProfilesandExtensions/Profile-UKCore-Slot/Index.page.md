@@ -13,7 +13,7 @@ issue: UKCore-Slot
   <h3>Examples</h3>
   <b>Available Walk In Visit</b> - An example to illustrate a slot regarding a walk in visit.
   <br>
-  {{pagelink:Example-UKCore-Slot-AvailableWalkInVisit}}
+  {{pagelink:UKCore-Slot-AvailableWalkInVisit-Example}}
   <br><br>
 </div>
 </nocheck>

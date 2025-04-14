@@ -13,24 +13,24 @@ issue: UKCore-DiagnosticReport
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to send a composition resource with a diagnostic report.<br>
-  {{pagelink:Example-UKCore-Extension-CompositionReference}}
+  {{pagelink:UKCore-Extension-CompositionReference-Example}}
   <br><br>
   <b>CT Chest Scan Report</b> - An example to illustrate a diagnostic report containing an imaging study for a patient.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-CTChestScan}}<br>
-  NOTE: The above example references {{pagelink:Example-UKCore-ImagingStudy-CTChestScan}}
+{{pagelink:UKCore-DiagnosticReport-CTChestScan-Example}}<br>
+  NOTE: The above example references {{pagelink:UKCore-ImagingStudy-CTChestScan-Example}}
 <br><br>
   <b>Diagnostic Report Note</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to add notes and annotations to a diagnostic report.<br>
-  {{pagelink:Example-UKCore-Extension-Note}}
+  {{pagelink:UKCore-Extension-Note-Example}}
   <br><br>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}
+{{pagelink:UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport-Example}}
 <br><br>
  <b>Device Reference</b> - An example to illustrate the extension which is used to indicate the performer of a Diagnostic Report was a device.<br>
-  {{pagelink:Example-UKCore-Extension-DeviceReference}}<br>
-  NOTE: The above example references {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}
+  {{pagelink:UKCore-Extension-DeviceReference-Example}}<br>
+  NOTE: The above example references {{pagelink:UKCore-Device-SoftwareAsAMedicalDevice-Example}}
 <br><br>
   <b>ECG Report</b> - An example to illustrate a diagnostic report presented in pdf, for an ECG.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-ECG}}
+{{pagelink:UKCore-DiagnosticReport-ECG-Example}}
 </div>
 </nocheck>
 

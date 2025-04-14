@@ -12,28 +12,28 @@ issue: UKCore-ServiceRequest
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
    <b>Additional Contact</b> - An example to illustrate providing an additional contact with a service request.<br>
-{{pagelink:Example-UKCore-Extension-AdditionalContact}}
+{{pagelink:UKCore-Extension-AdditionalContact-Example}}
 <br><br>
   <b>Colonoscopy Request</b> - An example to illustrate a service request regarding a colonoscopy.<br/>
-{{pagelink:Example-UKCore-ServiceRequest-ColonoscopyRequest}}
+{{pagelink:UKCore-ServiceRequest-ColonoscopyRequest-Example}}
 <br><br>
 <b>Coverage</b> - An example to illustrate the extension for a service request, to state the the coverage of the funding for this request.<br>
-{{pagelink:Example-UKCore-Extension-Coverage}}
+{{pagelink:UKCore-Extension-Coverage-Example}}
 <br/><br/>
   <b>CT Chest Scan Request</b> - An example to illustrate a service request for a CT scan.<br/>
-{{pagelink:Example-UKCore-ServiceRequest-CTChestScan}}
+{{pagelink:UKCore-ServiceRequest-CTChestScan-Example}}
 <br><br>
   <b>ECG Request</b> - An example to illustrate a service request for an ECG.<br/>
-{{pagelink:Example-UKCore-ServiceRequest-ECG}}
+{{pagelink:UKCore-ServiceRequest-ECG-Example}}
 <br><br>
 <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a SNOMED CT concept, for a service request marked as urgent.<br>
-{{pagelink:Example-UKCore-Extension-PriorityReason}}
+{{pagelink:UKCore-Extension-PriorityReason-Example}}
 <br><br>
   <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a plain text reason, for a service request marked as urgent.<br>
-{{pagelink:Example-UKCore-Extension-PriorityReason-SendingAsText}}
+{{pagelink:UKCore-Extension-PriorityReason-SendingAsText-Example}}
 <br><br>
 <b>Source of Service Request</b> - An example to illustrate the source of service request extension associated with a service request.<br/>
-{{pagelink:Example-UKCore-Extension-SourceOfServiceRequest}}
+{{pagelink:UKCore-Extension-SourceOfServiceRequest-Example}}
 <br><br>
 </div>
 </nocheck>

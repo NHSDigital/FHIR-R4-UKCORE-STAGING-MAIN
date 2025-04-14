@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Body Temperature</b> - An example to illustrate recording a patients temperature.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BodyTemperature}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BodyTemperature-Example}}<br><br>
 </div>
 </nocheck>
 

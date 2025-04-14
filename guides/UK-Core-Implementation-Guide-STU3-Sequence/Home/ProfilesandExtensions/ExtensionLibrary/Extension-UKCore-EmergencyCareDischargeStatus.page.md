@@ -15,7 +15,7 @@ issue: Extension-UKCore-EmergencyCareDischargeStatus
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Emergency Care Discharge Status</b>- An example to illustrate the extension which is used to indicate the status of an individual on discharge from an Emergency Care Department.<br>
-  {{pagelink:Example-UKCore-Extension-EmergencyCareDischargeStatus}}
+  {{pagelink:UKCore-Extension-EmergencyCareDischargeStatus-Example}}
   <br><br>
 </div>
 

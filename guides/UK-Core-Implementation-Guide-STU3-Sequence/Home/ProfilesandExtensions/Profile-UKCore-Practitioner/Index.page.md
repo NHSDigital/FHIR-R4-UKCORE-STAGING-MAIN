@@ -13,15 +13,15 @@ issue: UKCore-Practitioner
   <h3>Examples</h3>
 <b>General Practitioner</b> - An example to illustrate a practitioner who is the Patient's GP. 
 <br>
-{{pagelink:Example-UKCore-Practitioner-DoctorPaulRastall}}
+{{pagelink:UKCore-Practitioner-DoctorPaulRastall-Example}}
 <br><br>
 <b>Consultant</b> - An example to illustrate a practitioner who is a Consultant. 
 <br>
-{{pagelink:Example-UKCore-Practitioner-ConsultantSandraGose}}
+{{pagelink:UKCore-Practitioner-ConsultantSandraGose-Example}}
 <br><br>
 <b>Pharmacist</b> - An example to illustrate a practitioner who is a Pharmacist.
 <br>
-{{pagelink:Example-UKCore-Practitioner-PharmacistJimmyChuck}}
+{{pagelink:UKCore-Practitioner-PharmacistJimmyChuck-Example}}
 <br><br>
 Note: the practitioner's role information is carried in the {{pagelink:Profile-PractitionerRole}}   <br><br>
 </div>

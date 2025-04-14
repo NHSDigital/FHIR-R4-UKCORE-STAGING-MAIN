@@ -12,7 +12,7 @@ issue: UKCore-ServiceRequest-Lab
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>C Reactive Protein Request</b> - An example to illustrate a request for a C Reactive Protein test based on an inflammed finger joint observation.<br>
-{{pagelink:Example-UKCore-ServiceRequest-Lab-CReactiveProtein}}
+{{pagelink:UKCore-ServiceRequest-Lab-CReactiveProtein-Example}}
 <br><br>
 </div>
 </nocheck>

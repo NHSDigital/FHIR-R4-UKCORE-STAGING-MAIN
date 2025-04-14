@@ -16,7 +16,7 @@ issue: Extension-UKCore-ContactPreference
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Contact Preference</b>- An example to illustrate the extension for a patient's contact preferences.<br>
-{{pagelink:Example-UKCore-Extension-ContactPreference}}
+{{pagelink:UKCore-Extension-ContactPreference-Example}}
 <br><br>
 </div>
 

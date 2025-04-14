@@ -12,16 +12,16 @@ issue: UKCore-MedicationStatement
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Amoxicillin</b> - An example to illustrate a medication statement of Amoxicillin.
-<br>{{pagelink:Example-UKCore-MedicationStatement-Amoxicillin}}
+<br>{{pagelink:UKCore-MedicationStatement-Amoxicillin-Example}}
 <br><br>
 <b>Last Issue Date</b> - An example to illustrate the LastIssueDate extension.
-<br>{{pagelink:Example-UKCore-Extension-LastIssueDate}}
+<br>{{pagelink:UKCore-Extension-LastIssueDate-Example}}
 <br><br>
 <b>Medication Prescribing Organization Type</b> - An example to illustrate the MedicationPrescribingOrganizationType extension.
-<br>{{pagelink:Example-UKCore-Extension-MedicationPrescribingOrganizationType}}
+<br>{{pagelink:UKCore-Extension-MedicationPrescribingOrganizationType-Example}}
 <br><br>
 <b>Pharmacist Verified Indicator</b> - An example to illustrate the PharmacistVerifiedIndicator extension. 
-<br>{{pagelink:Example-UKCore-Extension-PharmacistVerifiedIndicator}}
+<br>{{pagelink:UKCore-Extension-PharmacistVerifiedIndicator-Example}}
 </div>
 </nocheck>
 

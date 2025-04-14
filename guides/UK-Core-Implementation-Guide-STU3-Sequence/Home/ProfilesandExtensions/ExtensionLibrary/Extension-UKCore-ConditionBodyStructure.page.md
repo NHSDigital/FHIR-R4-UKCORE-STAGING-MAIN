@@ -17,7 +17,7 @@ issue: Extension-UKCore-ConditionBodyStructure
 <!--<div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Condition episode</b>- An example to illustrate the extension which is used to indicate the episodicity status of a condition.<br>
-  {{pagelink:Example-UKCore-Extension-ConditionEpisode}}
+  {{pagelink:UKCore-Extension-ConditionEpisode-Example}}
 </div>-->
 
 </div>

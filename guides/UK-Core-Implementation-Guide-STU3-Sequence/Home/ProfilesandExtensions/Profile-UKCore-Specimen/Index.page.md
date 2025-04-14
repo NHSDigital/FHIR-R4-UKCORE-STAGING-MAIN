@@ -12,22 +12,22 @@ issue: UKCore-Specimen
 <div id="Examples" class="tabcontent">
 <h3>Examples</h3>
 <b>Blood Specimen</b> - An example to illustrate a blood specimen for a patient.<br/>
-{{pagelink:Example-UKCore-Specimen-BloodSpecimen}}
+{{pagelink:UKCore-Specimen-BloodSpecimen-Example}}
 <br><br>
 <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector.<br>
-{{pagelink:Example-UKCore-Extension-CollectionCollector}}
+{{pagelink:UKCore-Extension-CollectionCollector-Example}}
 <br><br>
 <b>High Risk Specimen</b> - An example to illustrate using the HL7 core-defined Extension specimen-specialHandling to record why a specimen should be treated as a high risk.<br/>
-{{pagelink:Example-UKCore-Extension-SpecialHandling}}
+{{pagelink:UKCore-Extension-SpecialHandling-Example}}
 <br><br>
 <b>Median Cubital Vein</b> - An example to illustrate the extension for a referenced body site.<br>
-{{pagelink:Example-UKCore-Extension-BodySiteReference}}
+{{pagelink:UKCore-Extension-BodySiteReference-Example}}
 <br><br>
 <b>Sample Category</b> - An example to illustrate the extension to show the Genomics classification of a sample.<br>
-{{pagelink:Example-UKCore-Extension-SampleCategory}}
+{{pagelink:UKCore-Extension-SampleCategory-Example}}
 <br><br>
 <b>Urine Sample</b> - An example to illustrate a urine specimen for a patient.<br>
-{{pagelink:Example-UKCore-Specimen-UrineSpecimen}}
+{{pagelink:UKCore-Specimen-UrineSpecimen-Example}}
 </div>
 </nocheck>
 

@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Head Circumference</b> - An example to illustrate recording the measurement of a patients head circumference.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-HeadCircumference}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-HeadCircumference-Example}}<br><br>
 </div>
 </nocheck>
 

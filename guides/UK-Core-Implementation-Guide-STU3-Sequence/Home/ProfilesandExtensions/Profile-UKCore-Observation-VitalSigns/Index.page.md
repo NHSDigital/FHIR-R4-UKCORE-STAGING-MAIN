@@ -20,23 +20,23 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Blood Pressure</b> - An example to illustrate a vital signs blood pressure reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BloodPressure}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BloodPressure-Example}}<br><br>
 <b>BMI</b> - An example to illustrate a vital signs body mass index reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BMI}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BMI-Example}}<br><br>
 <b>Body Height</b> - An example to illustrate a vital signs body height reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BodyHeight}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BodyHeight-Example}}<br><br>
 <b>Body Temperature</b> - An example to illustrate a vital signs body temperature reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BodyTemperature}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BodyTemperature-Example}}<br><br>
 <b>Body Weight</b> - An example to illustrate a vital signs body weight reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BodyWeight}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BodyWeight-Example}}<br><br>
 <b>Head Circumference</b> - An example to illustrate a vital signs head circumference reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-HeadCircumference}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-HeadCircumference-Example}}<br><br>
 <b>Heart Rate</b> - An example to illustrate a vital signs heart rate reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-HeartRate}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-HeartRate-Example}}<br><br>
 <b>Oxygen Saturation</b> - An example to illustrate a vital signs oxygen saturation reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-OxygenSaturation}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-OxygenSaturation-Example}}<br><br>
 <b>Respiratory Rate</b> - An example to illustrate a vital signs respiration rate reading.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-RespiratoryRate}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-RespiratoryRate-Example}}<br><br>
 </div>
 </nocheck>
 

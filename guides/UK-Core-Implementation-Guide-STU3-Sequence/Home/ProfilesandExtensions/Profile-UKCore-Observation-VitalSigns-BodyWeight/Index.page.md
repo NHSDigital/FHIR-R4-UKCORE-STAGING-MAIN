@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Body Weight</b> - An example to illustrate recordings a patients weight.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BodyWeight}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BodyWeight-Example}}<br><br>
 </div>
 </nocheck>
 

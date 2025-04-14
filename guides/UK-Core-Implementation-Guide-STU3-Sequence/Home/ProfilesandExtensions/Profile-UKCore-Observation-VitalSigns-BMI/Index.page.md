@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Body Mass Index</b> - An example to illustrate recording a obese body mass index.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BMI}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BMI-Example}}<br><br>
 </div>
 </nocheck>
 

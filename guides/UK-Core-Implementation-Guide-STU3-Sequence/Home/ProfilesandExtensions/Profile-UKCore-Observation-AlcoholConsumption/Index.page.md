@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Heavy Drinker</b> - An example to illustrate the alcohol consumption of a heavy drinker.<br/>
-{{pagelink:Example-UKCore-Observation-HeavyDrinker}}<br><br>
+{{pagelink:UKCore-Observation-HeavyDrinker-Example}}<br><br>
 </div>
 </nocheck>
 

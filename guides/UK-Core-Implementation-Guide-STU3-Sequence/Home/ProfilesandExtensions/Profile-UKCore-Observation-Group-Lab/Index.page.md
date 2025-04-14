@@ -17,7 +17,7 @@ The <code>id</code> / <code>title</code> / <code>name</code> / <code>url</code> 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Full Blood count</b> - An example to illustrate a full blood count using multiple lab observation references.<br/>
-{{pagelink:Example-UKCore-Observation-Group-FullBloodCount}}
+{{pagelink:UKCore-Observation-Group-FullBloodCount-Example}}
 </div>
 </nocheck>
 

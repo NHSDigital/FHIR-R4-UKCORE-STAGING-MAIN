@@ -13,13 +13,13 @@ issue: UKCore-Medication
   <h3>Examples</h3>
 
 <b>COVID Vaccine</b> - An example to illustrate the batch element.  <br>
-{{pagelink:Example-UKCore-Medication-COVID-Vaccine}}   <br><br>
+{{pagelink:UKCore-Medication-COVID-Vaccine-Example}}   <br><br>
 <b>Medication Trade Family</b> - An example to illustrate the Medication Trade Family.  <br>
-{{pagelink:Example-UKCore-Extension-MedicationTradeFamily}} <br><br>
+{{pagelink:UKCore-Extension-MedicationTradeFamily-Example}} <br><br>
 <b>Timolol</b> - An example to illustrate the form element with a VTM.  <br>
-{{pagelink:Example-UKCore-Medication-TimololVTM}}   <br><br>
+{{pagelink:UKCore-Medication-TimololVTM-Example}}   <br><br>
 <b>Timoptol Eye Drops</b> - An example to illustrate a representation of eye drops.  <br>
-{{pagelink:Example-UKCore-Medication-TimoptolEyeDrops}}   <br><br>
+{{pagelink:UKCore-Medication-TimoptolEyeDrops-Example}}   <br><br>
 </div>
 </nocheck>
 

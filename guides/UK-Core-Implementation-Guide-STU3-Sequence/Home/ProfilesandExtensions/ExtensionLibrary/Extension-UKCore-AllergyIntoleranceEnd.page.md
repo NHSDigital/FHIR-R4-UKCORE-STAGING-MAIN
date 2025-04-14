@@ -15,7 +15,7 @@ issue: Extension-UKCore-AllergyIntoleranceEnd
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Allergy Intolerance End</b>- An example to illustrate the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid.<br>
-  {{pagelink:Example-UKCore-Extension-AllergyIntolEnd}}
+  {{pagelink:UKCore-Extension-AllergyIntolEnd-Example}}
   <br><br>
 </div>
 

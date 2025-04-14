@@ -13,27 +13,27 @@ issue: UKCore-Encounter
   <h3>Examples</h3>
 
   <b>Admission Method</b>- An example to illustrate the extension for an encounter to support the method by which an individual was admitted into hospital.<br>
-  {{pagelink:Example-UKCore-Extension-AdmissionMethod}}
+  {{pagelink:UKCore-Extension-AdmissionMethod-Example}}
   <br><br>
 
   <b>Discharge Method</b>- An example to illustrate the extension for an encounter to support the method of discharge from a hospital.<br>
-  {{pagelink:Example-UKCore-Extension-DischargeMethod}}
+  {{pagelink:UKCore-Extension-DischargeMethod-Example}}
   <br><br>
 
   <b>Emergency Care Discharge Status</b>- An example to illustrate the extension which is used to indicate the status of an individual on discharge from an Emergency Care Department.<br>
-  {{pagelink:Example-UKCore-Extension-EmergencyCareDischargeStatus}}
+  {{pagelink:UKCore-Extension-EmergencyCareDischargeStatus-Example}}
   <br><br>
 
 <b>Inpatient Encounter</b> - An example to illustrate an inpatient encounter.
-<br>{{pagelink:Example-UKCore-Encounter-InpatientEncounter}}
+<br>{{pagelink:UKCore-Encounter-InpatientEncounter-Example}}
   <br><br>
 
   <b>Legal Status</b>- An example to illustrate the extension which is used to indicate a patient's legal status on admission or discharge.<br>
-  {{pagelink:Example-UKCore-Extension-LegalStatus}}
+  {{pagelink:UKCore-Extension-LegalStatus-Example}}
   <br><br>
   
   <b>Outcome of Attendance</b>- An example to illustrate the extension which is used to indicate the outcome of an outpatient attendance.<br>
-  {{pagelink:Example-UKCore-Extension-OutcomeOfAttendance}}
+  {{pagelink:UKCore-Extension-OutcomeOfAttendance-Example}}
   <br><br>
 </div>
 </nocheck>

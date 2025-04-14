@@ -20,9 +20,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Breathing Normally</b> - An example to illustrate a patient breathing room air.<br/>
-{{pagelink:Example-UKCore-Observation-BreathingNormally}}<br><br>
+{{pagelink:UKCore-Observation-BreathingNormally-Example}}<br><br>
 <b>Using Oxygen Therapy</b> - An example to illustrate a patient on supplemental oxygen.<br/>
-{{pagelink:Example-UKCore-Observation-OxygenTherapy}}<br><br>
+{{pagelink:UKCore-Observation-OxygenTherapy-Example}}<br><br>
 </div>
 </nocheck>
 

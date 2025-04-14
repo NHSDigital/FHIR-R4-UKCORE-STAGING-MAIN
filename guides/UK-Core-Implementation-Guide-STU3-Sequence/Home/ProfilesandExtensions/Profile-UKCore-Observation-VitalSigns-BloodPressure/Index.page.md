@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Blood Pressure</b> - An example to illustrate recording a high blood pressure.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-BloodPressure}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-BloodPressure-Example}}<br><br>
 </div>
 </nocheck>
 

@@ -13,7 +13,7 @@ issue: UKCore-PractitionerRole
   <h3>Examples</h3>
 <b>Patient's GP</b>- An example to illustrate the role of General Practitioner.
 <br>
-{{pagelink:Example-UKCore-PractitionerRole-GP}}
+{{pagelink:UKCore-PractitionerRole-GP-Example}}
 </div>
 </nocheck>
 

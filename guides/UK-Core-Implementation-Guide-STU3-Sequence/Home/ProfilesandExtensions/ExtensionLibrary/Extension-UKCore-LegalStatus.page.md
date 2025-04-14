@@ -15,7 +15,7 @@ issue: Extension-UKCore-LegalStatus
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Legal Status</b>- An example to illustrate the extension which is used to indicate a patient's legal status on admission or discharge.<br>
-  {{pagelink:Example-UKCore-Extension-LegalStatus}}
+  {{pagelink:UKCore-Extension-LegalStatus-Example}}
   <br><br>
 </div>
 

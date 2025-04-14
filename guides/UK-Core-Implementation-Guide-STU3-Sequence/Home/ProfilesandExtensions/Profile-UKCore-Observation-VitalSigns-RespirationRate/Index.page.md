@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Respiratory Rate</b> - An example to illustrate recording a p[atients rate of breathing.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-RespiratoryRate}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-RespiratoryRate-Example}}<br><br>
 </div>
 </nocheck>
 

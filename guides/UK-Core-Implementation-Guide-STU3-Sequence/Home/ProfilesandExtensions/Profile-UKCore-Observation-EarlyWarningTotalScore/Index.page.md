@@ -20,9 +20,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>NEWS2 Bundle</b> - An example to illustrate a full bundle of National Early Warning Score (NEWS) 2 observations, sub scores, and total score.<br/>
-{{pagelink:Example-UKCore-Bundle-NEWS2Observations}}<br><br>
+{{pagelink:UKCore-Bundle-NEWS2Observations-Example}}<br><br>
 <b>NPEWS Total</b> - An example to illustrate a National Paediatric Early Warning System (NPEWS) total score.<br/>
-{{pagelink:Example-UKCore-Observation-NPEWSTotal}}<br><br>
+{{pagelink:UKCore-Observation-NPEWSTotal-Example}}<br><br>
 </div>
 </nocheck>
 

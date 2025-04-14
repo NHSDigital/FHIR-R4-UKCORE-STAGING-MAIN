@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Fasting Test</b> - An example to illustrate recording the blood glucose level following a period of fasting.<br/>
-{{pagelink:Example-UKCore-Observation-FastingTest}}<br><br>
+{{pagelink:UKCore-Observation-FastingTest-Example}}<br><br>
 </div>
 </nocheck>
 

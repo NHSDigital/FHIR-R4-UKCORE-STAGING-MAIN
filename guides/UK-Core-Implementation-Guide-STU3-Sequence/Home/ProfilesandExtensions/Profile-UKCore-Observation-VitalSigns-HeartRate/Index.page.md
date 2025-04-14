@@ -20,7 +20,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Heart Rate</b> - An example to illustrate recording an elevated heart rate.<br/>
-{{pagelink:Example-UKCore-Observation-VitalSigns-HeartRate}}<br><br>
+{{pagelink:UKCore-Observation-VitalSigns-HeartRate-Example}}<br><br>
 </div>
 </nocheck>
 

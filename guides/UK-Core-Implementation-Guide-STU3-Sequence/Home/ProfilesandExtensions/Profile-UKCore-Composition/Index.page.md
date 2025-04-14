@@ -13,10 +13,10 @@ issue: UKCore-Composition
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Discharge</b> - An example to illustrate a composition containing a discharge summary.<br/>
-{{pagelink:Example-UKCore-Composition-Discharge}}
+{{pagelink:UKCore-Composition-Discharge-Example}}
 <br/><br/>
 <b>CareSetting Type</b> - An example to illustrate the care setting of a FHIR document.<br/>
-{{pagelink:Example-UKCore-Extension-CareSettingType}}
+{{pagelink:UKCore-Extension-CareSettingType-Example}}
 </div>
 </nocheck>
 

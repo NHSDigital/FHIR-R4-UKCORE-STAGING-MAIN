@@ -16,8 +16,8 @@ issue: Extension-UKCore-DeviceReference
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Device Reference</b> - An example to illustrate the extension which is used to indicate the performer of a Diagnostic Report was software as a medical device.<br>
-  {{pagelink:Example-UKCore-Extension-DeviceReference}}<br>
-  NOTE: The above example references {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}
+  {{pagelink:UKCore-Extension-DeviceReference-Example}}<br>
+  NOTE: The above example references {{pagelink:UKCore-Device-SoftwareAsAMedicalDevice-Example}}
   <br><br>
 </div>
 

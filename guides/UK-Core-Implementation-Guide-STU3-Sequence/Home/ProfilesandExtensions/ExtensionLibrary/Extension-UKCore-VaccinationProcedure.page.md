@@ -15,10 +15,10 @@ issue: Extension-UKCore-VaccinationProcedure
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Vaccination Procedure</b> - An example to illustrate the extension for a vaccination procedure.<br>
-   {{pagelink:Example-UKCore-Extension-VaccinationProcedure}}
+   {{pagelink:UKCore-Extension-VaccinationProcedure-Example}}
    <br><br>
    <b>Covid Vaccination Procedure</b> - An example to illustrate the extension for a vaccination procedure for COVID.<br>
-   {{pagelink:Example-UKCore-Extension-VaccinationProcedure-Covid}}
+   {{pagelink:UKCore-Extension-VaccinationProcedure-Covid-Example}}
    <br><br>
 </div>
 

@@ -13,7 +13,7 @@ issue: UKCore-DiagnosticReport-Lab
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}
+{{pagelink:UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport-Example}}
 </div>
 </nocheck>
 
