@@ -1,5 +1,5 @@
 ---
-topic: MedicationRequest-Profile
+topic: MedicationRequest
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest
 usage: http://hl7.org/fhir/StructureDefinition/MedicationRequest
 issue: UKCore-MedicationRequest

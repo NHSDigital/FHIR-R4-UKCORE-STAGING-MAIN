@@ -1,5 +1,5 @@
 ---
-topic: Observation-VitalSigns-BloodPressure-Profile
+topic: Observation-VitalSigns-BloodPressure
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-BloodPressure

@@ -1,5 +1,5 @@
 ---
-topic: Specimen-Profile
+topic: Specimen
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen
 usage: http://hl7.org/fhir/StructureDefinition/Specimen
 issue: UKCore-Specimen

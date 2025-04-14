@@ -1,5 +1,5 @@
 ---
-topic: Observation-VitalSigns-OxygenSaturation-Profile
+topic: Observation-VitalSigns-OxygenSaturation
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-OxygenSaturation
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-OxygenSaturation

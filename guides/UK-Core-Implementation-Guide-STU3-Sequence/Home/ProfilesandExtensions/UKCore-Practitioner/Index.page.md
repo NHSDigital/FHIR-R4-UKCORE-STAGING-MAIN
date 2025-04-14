@@ -1,5 +1,5 @@
 ---
-topic: Practitioner-Profile
+topic: Practitioner
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner
 usage: http://hl7.org/fhir/StructureDefinition/Practitioner
 issue: UKCore-Practitioner
