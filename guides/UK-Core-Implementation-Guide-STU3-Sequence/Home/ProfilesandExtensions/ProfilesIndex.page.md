@@ -1,5 +1,5 @@
 ---
-topic: Library Profiles
+topic: Library-Profiles
 ---
 ## Profiles and Extensions
 
