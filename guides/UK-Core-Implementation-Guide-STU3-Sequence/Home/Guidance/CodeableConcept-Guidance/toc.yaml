@@ -1,0 +1,28 @@
+- name: Index
+  filename: Index.page.md
+- name: Description of elements (in terms of SNOMED CT)
+  filename: Description-of-elements--in-terms-of-SNOMED-CT.page.md
+- name: Populating the CodeableConcept
+  filename: Populating-the-CodeableConcept.page.md
+- name: Sending dm+d codes
+  filename: Sending-dm-d-codes.page.md
+- name: Sending a SNOMED CT Concept with its associated preferred term
+  filename: Sending-a-SNOMED-CT-concept-with-its-associated-preferred-term.page.md
+- name: Sending a description where the coding system and code is unknown
+  filename: Sending-a-description-where-the-coding-system-and-code-is-unknown.page.md
+- name: Sending a SNOMED CT Description ID that is not the preferred term
+  filename: Sending-a-SNOMED-CT-Description-ID-that-is-not-the-preferred-term.page.md
+- name: Sending a mapped concept set
+  filename: Sending-a-mapped-concept-set.page.md
+- name: Rules for populating legacy coding
+  filename: Rules-for-populating-legacy-coding.page.md
+- name: Sending a Description Id not in the UK Edition
+  filename: Sending-a-description-id-not-in-the-UK-Edition.page.md
+- name: Clinical codes
+  filename: Clinical-codes.page.md
+- name: Original term text
+  filename: Original-term-text.page.md
+- name: Coding.userSelected
+  filename: Coding.userSelected.page.md
+- name: Sending a local language translation
+  filename: Sending-a-local-language-translation.page.md
