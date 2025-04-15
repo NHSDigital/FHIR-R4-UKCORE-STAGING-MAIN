@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Bindings
+  filename: Bindings.page.md
+- name: status
+  filename: status.page.md
+- name: category
+  filename: category.page.md
+- name: subject
+  filename: subject.page.md
+- name: effective[x]
+  filename: effective-x.page.md
+- name: value[x]
+  filename: value-x.page.md

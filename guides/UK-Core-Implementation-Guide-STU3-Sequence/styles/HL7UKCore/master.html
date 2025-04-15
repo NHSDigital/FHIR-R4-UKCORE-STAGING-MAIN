@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+                <div id="header" class="row">
+                    <div class="col-md-4 hl7-fhir-logo-lhs">
+                        <a href="http://hl7.org/fhir/{{guide-fhir-version}}/">
+                            <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" width="150" alt="HL7 FHIR logo"/>
+                        </a>
+                    </div>
+                    <div class="col-md-16">
+                        <h3 class="guide-title">{{ guide-title }}</h3>
+                    </div>
+                    <div class="col-md-4 hl7-logo">
+                        <!-- base64 blob of hl7 uk logo -->
+                        <a href="https://www.hl7.org.uk/">
+                            <img src="data:image;base64, iVBORw0KGgoAAAANSUhEUgAAAWgAAACCCAYAAABrTVKFAAATwklEQVR4nO3dd1QUV/sH8NnKIsKCYLAAdoqaV4k92BNFBFQsoKhIIJZETYwYS0AkiWiirybGGgUFA4ioRFGxxhZFY+yAGnsAwUKXssu237n+Xs/J66sR5g67s5vv5xz+yAl35rl3xofdO3OfywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQG0I9DlKVQyjY9vWPDPTnenY8Qq3Eb1etUCgn1gzMvpXe3gcZ3MeIWNXZqZ7as2mrT6oWnV8oH6Q3YKv8dWG2fgJe4QJP414+VcrKirs96cfWpaZlT1Sq9WKra3luX379F7Rs0e3H1/+3ZKSkpZLv11xn20MXy6KsDE3l5XWQ/deKzv7xoj4nxJ/ZtNWJpOVfRUVUav7cvuOXXEXL16exOY8vT16rRrm6z2LTdu6evLkqdv6HzedqqyssqM5jkAg0AZNCBzVoYPbboHgzelXXE/9ATBZGo1GunHTlqNubi77whfMdSTJMz+/oPOOXT/H1tTUWPTt47ESV990lJaWOm2K2XKEi+Q81n90EEnOtW0j/OcMMwA3srKv+zWytbnnNWTwgh/WrLuwes36848fP+kwaWKg34mTv87VarUiDLVpqKysbLwxZsvRsvLy5rQdGuk37CN3906JdWmDBA1QRw8fFri7ujgfIK2UypqG7u6dE7Kv3xhubW2dY2nZ8HE5B/+YwfAUCoU8JjbuUGFhUTvaYw0f5vNJj+7dNta1HRI0QB0JBIxOp9U9/7dDpjtOn8mY9WLuGZ+eTYNKpWoQF5+Q9jC/wJ22Q+Sblse7PVezaYsEDVBHLZyczmZmXx+p0+kELZwcz/mPGRVM/vvp00IX8qlLLpfnYkyNF3nom5i0Pfne/Qd9aTsxYEC/pQP69/2GbXskaIA6Ig8HVSqVOXkoOMzX+9OmTewzO7i5psVu2Zo+ZPCgCAHFG0BgWOSPbsrO1M3Xb9z0pQ2kT+93v/PyHPQFzTHwFgdAHZGn8ZNDgz1/OXYiPG5rwp7q6mqbxnZ2t3x9vGZ3aO+2B+NpvPbuS//+0qUrE2k70LNH9w0+3l5htMdBggZgQSqVVpC5RfKD8TMNR44eW3T6zNlPaDvj3rlTkt8I34+5+CaFKQ4A+MfLyDg348jRY1G04/D22x12BviPCuJqmgsJGgD+0S5fuRq4O20fq7cs/qq9m+vewLH+44VCoYar8USCBvgbAlu7QoyP6bpx8w/vlB2pcbQdbNOm9fHxgQEBIpGohsvBQoIGeD2N4NMZyzA+pun+/Qd9EhKTd2g0GglNB1u0cMoICZ7oI5FIqrkeKDwkhHojyTjcW6LWGOYe0+kEKs/hh9U3r7Rlewjz2WGxTOs2t7gNDPigoOBRpy1xPz1/XZImHEdHh/OhHwQNlUgkVfXRLSRoqD9Nm+UZbHR37pxAk5wFjKyamTuX+qER8E9RUVHbjTFbjiiUSiua4JrY22eFBAd5k+p99dVJTHGA6VEqZTVhi6Jp+iWLjvyOsX+rAHeHaSkrK3fYGBN3hBRBoumYnZ3t7alTQgZaWDSo12cUSNBgemJiZmpyrjux7ZeQaVbMTJ++HHeGaSHlQmM2xx0k9blpOmZr2+ju1MmhAy0sLJ7W9wAhQYNpKS6xVc6ICqfpk9m6iCWM3EqvBfKhfpE63Zvjtu4nZWFpTiS3snr4YcikIXK5lV6m75CgwbSsXLFQyxTK2fZJ5OCWy4SErMVdYTpIxcG4rYl7cnPzutN0ikxnTJ0SOsDW1vaOvgYHCRpMx58P2iiioz+m6Y90eeQixsxMgbvCNJDyr0nbUpLu3Ln7Hk2HnifnyaEDydyzPgcGCRpMhu7LxUt1DMP6nVaxe89sxt8/HneEaSCV6VJ/3vNjZlb2KJoOyczMyj8IDvJp0sQ+U98DgwQNpuHixZ6KLbFjaPoiWRr1BSMUanFHmIb0A4eWnf/9YihNZ8jik9CQSV5Ojg6/GWJQkKDBJGgWLPw3TT+kg7zOMJ6eabgbTAPZG/LkqdNzaDojFosVHwRP9CErBQ01KEjQYPzS0/1qjhzwoOmHKDpqHu4E03D+9wsfph849C1NZ0QikWpC4NiAtm1aHzPkoCBBg3HTqMWqOQup/jGaBY5PY7p1P4M7wfhlZmaP3pW650eajpANGQLH+ge2b+9q8G9USNBg3OK2TlPfuESz67JWuGgh1bZEwA+3b98ZlJSckqTT6VjnNVLHeaz/6CBS15kPnUKCBuNVUWGlnBa1iCZ+2YyZ8YyzSzbuAuOWk5vXI25r4m7aynQjhvtOd3fvlMiXwTCaYknqaTNjBHLLCh6EAnzxw+p5WnWuHdtoBIxUIZiPgkjG7tHjxx03b4lPV6lUDWi64uszdHavnt3X82k4jCZBq86c6MKDMIAvCvIdFOFRs2mikUXOX8s0d8jBNTVexcUlrWJj4w9WVVU3ounEEM9B4WQXbr4NBKY4wCjpopcu1jE1MraxCxm7MmbWZ0tw9Y1XRUWl/abYLUfKysub03SCLEQhu3DzcSCQoMH4ZGd3UqxdE0QTt9n34csYG+tiXH3jdeXqtbFFRcVtaDtA6kKn7NgVR1Ye8m0wkKDB6GgjIpc/n0JmSdS4TQEzdRrvvs6C4Vy/cdP3TMa5T/h2CZCgwbgcP+Gp3J06iCZm6YpFUYxMxvn+cWDc9qcfXJb3MJ9Xz7qQoMF4aLVC1dxwqkL64g5dbjGB4zbjqsPLSFnSxKTk7Uql0pIvg4MEDcYjJWWS+kLG2zTxSr6N+oIRidW46vAqZE6bdiUil5CgwTgoFOY1ny1cTBOrpN/755mh3qm44vB3rly9No7U8+DDICFBg3FYtz5M8+hOM5pYxdFR8xmBQIcrDm+yJ23/KtrtsbiABA38V1j4liJs8VyaOKVjAg4wHh7HcbWhNsiqxMSk7ckqlcrckAOGBA38t2z5Ih1TTPPgRieKjEBBJKgTsoQ8be/+VYYcNSRo4Le7d1yqly+bShOj2ZRpSUzHjlcM1U+hUET1UFKhqLbmLpr6Z24u48WO6FaWlgW0x/jt/IXJV69lBnATUd0hQQOvaaO++oasLWEbo4BhVMLwBQsN2UepVEpV5EunY78oxxCEQqHB35Jx79wpaU7Yp26N7exu0R5r167dG7lYsciG0RRLMt+wfjbj1OK+vs5XPXToz/o6F7zGb7/1USb8NIJmeMwWLNjAODnp7b55FYlETLVLeGVlZeNGjWz02geFQiFn25b2DxKt9m6uewP8R00ifygCAwPGrlm74Rx5x5ntYclS8MRt25OnfzTFQyQS1eizL0aToBmP3scN+TUV9EynE6jnRVDtMyhgrCsEYWFfG/rSkb3taNqXP3vWlLtoaudZxbMmbNtKKPtLw9XF+cDECeNGv/gU37xZ08tDvTzn7d2XTrW0Py/vYdcDBw8v9fH2CtNnfzDFAfy0N22M6uTR7jSxyZZHLGdsbZ/yoX8NGpizLsxUWFhEs2MMK8XFpS3ZtrW0op/7ZaNNm9bHSXJ++VNub49eq1xdnNNpj3/q1zOzb9z4w0effUKCBv5RqaSqsIhvaOISWbR8wnw8bSVf+iaXy/PYts0vKOjMbTRv9ujRY9YrNq3l8lw9hvqck5PjuZDgiT4SiaTq5f9HtrEK8B8VbGnZ8BHtebbv2BVXVlbuQHuc2kKCBv7ZHDtdfSerFU1c0lULv2YaWPBmBx65lRXrBH3/3oO+3Ebz99RqtSzv4UPWRYOsrfWboB0dHc5/GDJpyKuS8wsWFhZPyV6DAsqFSlVVVbbbklMStVot6wfXdYEEDfxSVm6tnPZ1BE1MYudOd5mgiRv51C+ah3ylZWWO+lzVdu/e/X4kSbNtb2tre4fbiF6vib19VugHQUNlMlnZm363Xbu2R/r17U1VbIu4d/9B36O/HKfaC7O2kKCBX1auiNAy+VTbF0mWRkYyEolen7a/SdOmTa/StL946TLVBgV1cenK1fE07R2aN7uojzgbN7b7Y+qUkIENGjQoqm0bz8HvR5BP3LTn/uXYifA7d+8NpD3OmyBBA3/k5rZUfBU9gyYeybv9LjN+ftv4dlVpk9b53y+G1tTUNOQuolcjb4xcu5Y1hm17C4sGhdbW1nrZ59HFud1BMnVRlzYikUgVONY/0MzM7BnNuXU6nTA5eUdCRUXlWzTHeRMkaOAN7eIli3WMxowmHnH0l7wsiNSkiX2mWCxWsm1P5j5Pnjo9h9uo/texYyfCaaY3HB3oP53WN1vbRndH+g2bRnsa8sdse8rO+PrcKgsJGvjh6tWuyo0bqL5am/mMOMb073eYj1eUfHJr1arlKZpjHD9xan59zkX/mZPT6+y58x/RHMPV1YX6dTZ9ICsNu3Rxj6c91R+3bg85eer05/UVMhI08IImPJL64Y1wcdQ8Pl9NssKNpr1arTbbmpC0i2aV3+s8e1bRJCEheQf56k5zHDdXl31cx1Zf/Ib7zrCzs71Ne/iDh45E5+Tk9qyPMJGgwfCOHPap2Z/WnyYO2aSQnUynThf4fDXbu7lQJWji6dNCl02xcYfJ8m9uomKY0tJSp3UbNv1aVl7enOY4zZo1vWJjY/0nV3HVN7Ikffy4gLG0y7e1Wq04cVvKturqahuuQ0aCBsPSqMXquRHLKGPQCBaF876cqI2NzYM2rVudoD1Obm5e9+9/WHvp7r37VH/UmP/sZr1q9bqLRUVFbWmP1aNb1020x9C35s2bXfIaMngB7WlLSkpa7ty1m/P+I0GDYSVtC1Fd+d2NJgbzOZ9vZFq1pv6qqg+9evVYx8VpyGq2HzfGHk9ITE55+DD/nbq2J+/yxm6OPxAXn5BWWVllRxsP+TT6zjudf6I9jiH06f3ud6SGB+2pM7OyR9HO4b/MeIolwf/QMoVWqlYdH/BhZCQ748cyXbqcq1OjqsqGNTMjv6I5r4CxqGLmzDF4QaTa6tDebTdZCk0Wn3BxvGuZWWPID1mw4eLifKBFC8ezZF7VytIqXyqVVOp0OlFNTY1FaWmZ49PCQpc//8zpdePmLe/i4uLWXParR/euMbSvrhkKWV3oP2ZU8HerVl8lc/E0YZCiTC1bOGU0bdqE6r33F5CgjZtA/SC7BR96IFEq6/5q1pq1n2vKHtjTnFe2JPw7xv4tgxTnYYO8zTF40HuLUnambubyuGT3D/Kjt478hczMrHzggP7Rhjg3Vxo2tHhCloLHbI4/RPPaHHmQm5CUvP3TmR935aLsKqY4wDAeP2mqmBdNVbpRKG5exMyYQf32h76R17vIJ15ji/t1BvTv+w1ZoMLP6GqPq6Xg5EHuz3v2ruEiJiRoMAjdkqVf65hyC5pzm62OWMJYWr6xBgPfCAQCrd8I349pC/fwgb39W9l9+njwpmogLa6Wgl+8eHnSpUtXJtIeBwka9O+Pmx0VP3wfTHNekVP7HCYkZK2xXr1WrVr+2rePxwoehMIaWRk5LmDMBJoVknzD1VJwInV32vqnhYXONMdAgga900bS7TNISJdFRjJSqVEnhiGeg74giZoHobBCvgWQd5+NMPS/xdVScPJwlrxlQ7N0Hgka9Ov0r+8pU7Z505xT3KVXFjNmjFG+0vVX5NNa0ITAkaQqG3+iqp33BvaP7ta1C6cPOvmEq6XgBQWPOu3bf4D11m1I0KA/Wq1QPT+SdlEKI1katYARCrWmcOXIw7UpH4a8z8WSY33p36/vt2Su1ljiZYssBeeitnXG2d+mZ2Vf92PTFgka9Cc1NVB15kSdF1X8lXSw12lm0GCjqfdQG3K5VR7ZMbqFk9NZPsdJHm4O8/WeNdRr8HwehFPvni8FD3y+FFxFe64dO1M3l5SU1vmVWCRo0A+FwrwmbBH1u7Ki6C95XRCJLVLXeOqUkAHv9urBywefVpaWBZNDgweTDVh5EI7ekDreXkMGUS8Fr65WWCdu255M6nbUpR0SNOhHTMxMTc51J5pzmU2YuJvp2i3DVK8YeRtixHDfGR+GBnvSbJHFJfIqYNeu72yZ/dnMt9u2bfMLH2LStz69PVY6O7c7RHtaUvHu4KGji+vSBgka6l9xia1y5pe0xYw0woUR4f+Eq+Xcru3hz8NmuQ7z9f7UkAtAXF2c02d9Mt3df/TIkLpsK2VqyB8pssqwYcOGj2m7duLkqXm3bt8ZXNvfR4KG+rfi35FappCqhrFs5ifxjLPz9X/K1SIlMHt79Pphwbw5LUePGjGZVF3Tx3nJvGuP7l03kcQc8kGQN1c1JYzd86XgAaM52RdyW/KOBLIbS21+V6+1OISMHftVXyKRhtNg3kBvsYrFaqpz8YVYrH5lJPkPHZUrE8dR9VFmUSNYME8vuyjzjVQqrezerWsM+SkoePQvUh705s1b3jm5uT1oi+u/YGnZ8JGLs/NBNzeXfS7O7Q5xUUOitqQSSVVtduR+FYlEUq2vOJn/fLMhy9ppK9ZpNBrp7v9fCj7qTb9bb3tpvYpOZ/QrWwF4gSyCyC8o6JyXl9/lyZMn7Um1utLSMifyyUyr0UgUSqXVizjJ3LZYLFaYm5uX2FjLc+RyeV6jRjb3mjdrdtnBodkFfW3yCv9NINBr+gUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKPCMMz/AWJHsgs0twTPAAAAAElFTkSuQmCC" width="130" alt="HL7 UK logo"/>
+                        </a> 
+                    </div>
+
+                </div>
+            </div>
+            {{ dropdown-navigation }}
+        </header>
+
+        <!-- Implementation guide content -->
+        <div role="main" class="content container">
+
+            <!-- Header to be displayed on each page -->
+            <!--Comment out for publication, start--> 
+            <div id="development-notice" markdown="span" class="alert alert-info" role="alert">
+               <i class="fa fa-info-circle"></i>
+                <b>Please note:</b>
+                <ul>
+                    <li>This version of the UK Core is a development copy.</li>
+                    <li>This contains <b>BREAKING CHANGES</b> as a result of the C&TA Sprint 7 Review, and STU2 Sequence ballot reconciliation.</li>
+                    <li>This version is not yet reviewed for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
+                    <li>Please follow the guidance on the <a id="header-contactus" href="{{content}}/../Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
+                    <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence/index.page.md?version=current">STU3 Sequence Change Log</a></li>
+                    </ul>
+            </div>
+            <!--Comment out for publication, end-->
+
+            <!-- This is the main rendering of simplifier content -->
+            {{ page-with-children }}
+        </div>
+
+        <!-- back to top button -->
+        <a role="button" title="Back To top button" id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+            back to top
+        </a>
+
+        <footer>
+
+            <!-- Consent Bar -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and HL7 UK, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
+            <!-- main footer container, sizes match NHSE IG for consistent look and feel -->
+            <div class="container">
+                <table role="none" title="Footer Links" width="100%">
+                    	<col style="width:19%">
+	                    <col style="width:17%">
+    	                <col style="width:18%">
+	                    <col style="width:13%">
+    	                <col style="width:33%">
+                  <tr>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
+                      <td> IG © 2021+ HL7 UK</td>
+                      <td> <span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }}</span></td>
+                      <td><b>Packages are based on:</b>  <a href="http://hl7.org/fhir/R4/" target="_blank" class="external">FHIR 4.0.1</a> </td>
+                  </tr>
+                  <tr>
+                    <td><b>Released:</b> TBC</td>
+                    <td colspan="4"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/UKCoreVersionHistory/Home" target="_blank">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/HL7FHIRUKCoreR4/~issues" target="_blank" >Propose a change</a></td>
+                      </tr>  
+                   </table>
+            </div>
+        </footer>
+
+        <script>
+            //Back to top button functionality
+            var backToTopButton = document.getElementById("back-to-top");
+
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function () { 
+                showTopButton();
+                try {
+                scrollProfileSideBar();
+                } catch {
+
+                }
+            };
+
+            function showTopButton() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function goBackToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                $(window.location)[0].replace("#");
+            }
+
+            //Ensures footer is at the bottom of the page 
+            function updateFooterPosition() {
+                if ($('footer') != undefined && $('footer') .length > 0){
+                    var bottomOfFooter = $('footer').offset().top + $('footer').outerHeight(true);
+                    var heightShortage = $(document).height() - bottomOfFooter;
+                    if (heightShortage < 0) heightShortage = 0;
+                    $('footer').css('margin-top', heightShortage);
+                }
+            }
+            function scrollProfileSideBar() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    if (hasSDH1[0].getBoundingClientRect().top < 0) {
+                        var amountToMove=hasSDH1[0].getBoundingClientRect().top * -1;
+                        $("div.col-md-6").css({
+                            "top": amountToMove + 20 + "px"
+                        });
+                    } else {
+                        $("div.col-md-6").css({
+                             "top": "0"
+                        });
+                    }
+                }
+            }
+
+            // main code to handle all tabs, editting this will probably break everything
+            function openTab(evt, tabName) {
+                // Find the element that has been clicked with jQuery
+                var element = $(evt.target);
+
+                // Remove the current class of .active in the buttons next to it
+                element.parent().find(".tablinks").removeClass("active");
+
+                // Add a class of .active to the clicked tab
+                element.addClass("active");
+
+                // Cache the parent of the button clicked
+                var parent = element.parent().parent();
+
+                // Clear out the current view (e.g. Table, XML, JSON)
+                parent.find(".tabcontent").hide(0);
+
+                // Show the desired content with the current view
+                parent.find(".tabcontent[id^='"+tabName+"']").show(0);
+            }  
+        </script>
+        <script>
+            // add any additional extension bindings to the fql bindings
+            function addExtensionBindingsToFQLTable() {
+                //look for a div with id bindings
+                $("div#preview-content div#Bindings").each(function(index) {
+                    //within this div, look for an fql table
+                    var fqlTable = $(this).children("table.table-bordered");
+                    //and the table you want to combine with the bindings one
+                    var contextTable = $(this).children("table#addToBindings");
+                    //only continue to add if  if we have both tables
+                    if (fqlTable == undefined || fqlTable.length == 0 || contextTable == undefined || contextTable.length == 0) {
+                        return; 
+                    }
+                    contextTable.find("tbody tr").each(function(index){
+                        fqlTable.children("tbody").append($(this));
+                    });
+                    contextTable.remove();
+                });
+            }
+
+            // function to turn multiple columns into rows for an fql table, within a specific div
+            function transposeFQLTables() {
+                //look for a div with id transpose
+                $('div#transpose').each(function(index) {
+                    //within this div, look for an fql table
+                    var fqlTable = $(this).children("table.table-bordered");
+
+                    // simplifier 31.1.0.0 broke fql tables, so if empty, look for one above 
+                    if (fqlTable == undefined || fqlTable.length == 0) {
+                        fqlTable = $(this).prevAll().filter("table.table-bordered");
+                    }
+
+                    //only continue to transpose if we have an fql table
+                    if (fqlTable == undefined || fqlTable.length == 0) {
+                        return; 
+                    }
+
+                    //and optionally a 2 column table you want to combine with the transposed one
+                    var contextTable = $(this).children("table#addToTranspose");
+
+                    //create a new table to be populated during the transpose
+                    var newTable = document.createElement('table');
+                    newTable.classList.add("table-bordered");
+                    newTable.classList.add("scrollbar");
+                    newTable.setAttribute("title","Profile Details");
+                    
+                    // Find the max number of columns in the fql table
+                    var maxColumns = 0;
+                    for(var r = 0; r < fqlTable[0].rows.length; r++) {
+                        if(fqlTable[0].rows[r].cells.length > maxColumns) {
+                            maxColumns = fqlTable[0].rows[r].cells.length;
+                        }
+                    }                   
+
+                    //create the header row
+                    let header = newTable.createTHead();
+                    let headerRow = header.insertRow();
+                    headerRow.innerHTML= '<th colspan=2>Profile Details</th>';
+
+                    //populate the body by transposing columns to rows
+                    let body = newTable.createTBody();
+                    for(var c = 0; c < maxColumns; c++) {
+                        let addedRow = body.insertRow(c);
+                        var isCanonicalURL = false;
+                        for(var r = 0; r < fqlTable[0].rows.length; r++) {
+                            if(r==0) {
+                                if (fqlTable[0].rows[r].cells[c].innerText == "Canonical_URL"){
+                                    isCanonicalURL= true;
+                                }
+                                addedRow.insertCell(r);
+                                addedRow.cells[r].innerHTML = "<b>" + fqlTable[0].rows[r].cells[c].innerHTML.split("_").join(" ") + "</b>";
+                                addedRow.cells[r].classList.add('width20');
+                            }
+                            else {
+                                addedRow.insertCell(r);
+
+                                pTag = "<p>";
+                                pTagClose = "</p>"
+                                if (isCanonicalURL) {
+                                    str = '<span class="copy-text">' + fqlTable[0].rows[r].cells[c].innerText + '<button title="Click to copy URL" class="btn-copy" data-clipboard-text="' +  fqlTable[0].rows[r].cells[c].innerText + '"/></span>';
+                                } else {
+                                    str = fqlTable[0].rows[r].cells[c].innerHTML;
+                                }
+
+                                str = str.replace(pTag, '');
+                                str = str.replace(pTagClose, '');
+                                addedRow.cells[r].innerHTML = str;
+                            }
+                        }
+                    }
+
+                    //optionally add rows from a two column table to be joined to the bottom of the transposed table
+                    if (contextTable != undefined && contextTable.length > 0) {
+                        let addedRow = body.insertRow(c);
+                        for(var r = 0; r < contextTable[0].rows.length; r++) {
+                            addedRow.insertCell(-1);
+                            addedRow.cells[0].innerHTML = "<b>" + contextTable[0].rows[r].cells[0].innerHTML.split("_").join(" ") + "</b>";
+                            addedRow.cells[0].classList.add('width20');
+                            addedRow.insertCell(-1);
+                            addedRow.cells[1].innerHTML = contextTable[0].rows[r].cells[1].innerHTML;
+                        }
+                    }
+
+                    //add the transposed table to the div, and remove the other tables
+                    $(this).append(newTable);
+                    fqlTable.remove();
+                    contextTable.remove();
+                });
+			}
+
+            // function to turn the first column of an fql table into a concatentated string, within a specific span
+            //  Used on the Usage tab of profile pages
+            function detablifyUsageFQL() {
+
+                let url = window.location.href;
+                let pageVersion = "?" + url.split("?")[1];
+                let slashCount = url.split("/").length;
+                let newUrl='';
+                let iSlashRemove = 1;
+                if (url.split("?")[0].endsWith('.page.md')) {
+                    iSlashRemove = 2;
+                }
+                for (i=0;i<slashCount-iSlashRemove;i++) {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                }
+
+                //look for a span with id usage
+                $('span#usage').each(function(index) {
+                    //within this span, look for an fql table                    
+                    var fqlTable = $(this).children("table.table-bordered");
+                    var stringToSet = "";
+                    //only continue to de-table'ify if we have an fql table
+                    if (fqlTable != undefined && fqlTable.length > 0) {
+                        for(var r = 1; r < fqlTable[0].rows.length; r++) {
+                            var profile = fqlTable[0].rows[r].cells[0].innerHTML;
+                            
+                            let thisUrl = '';
+                            if (profile.startsWith("Extension")) {
+                                if (pageVersion.startsWith("?version=current")){
+                                    thisUrl = newUrl + "ExtensionLibrary/" + profile +  ".page.md" + pageVersion;
+                                } else {
+                                    thisUrl = newUrl + "ExtensionLibrary/" + profile + pageVersion;
+                                }
+                            } else {
+                                thisUrl = newUrl + "Profile-" + profile + pageVersion;
+                            }
+                            profile = "<li><a href=" + thisUrl + ">" + profile + "</a></li>";
+                            stringToSet += profile;
+                        }
+                    }
+                    if (stringToSet == "") {
+                        stringToSet = "None";
+                    } else {
+                        stringToSet = "<ul>" + stringToSet + "</ul>";
+                    }
+                    $(this).replaceWith(stringToSet);
+                });
+            }
+
+            // function alters styling of FQL tables
+            function tidyUpFQLTables() {
+                //fix the contents of FQL table headers by swapping _ for spaces
+                $('table.table-bordered > thead > tr > th').each(function(index) {
+                   $(this).text($(this).text().split("_").join(" "));
+                });
+
+                //remove the FQL table css on CodeSystems/Extensions when they are in a list page
+                $('[id^=CodeSystem-UKCore-] > table.table-bordered').each(function(index) {
+                    $(this).removeClass('scrollbar');
+                    $(this).removeClass('table-bordered');
+                    $(this).removeClass('table');
+                });
+
+                //for any remaining FQL tables, remove the scrollbar, and add our UKCore assets and forceWhite class
+                $('table.table-bordered').each(function(index) {
+                    $(this).removeClass('scrollbar');
+                    $(this).addClass('assets');
+                    $(this).addClass('forceWhite');
+                });
+            }
+        </script>
+        <script>
+            // function handles changing new items to be green
+            function highlightBallotItems() {
+                //new balloted assets should have an info div on them, 
+                // this changes the sub pages to be green, and forces the info box and trees/tabs to be white
+                $('div#newAsset').each(function(index){
+                    //this check handles the sub page in All Extensions/ValueSets/CodeSystems
+                    // without it, the whole list goes green
+                    // NOTE:
+                    //  Codesystem, Valueset, codesystem, valueSet etc will still cause page to go full green
+                    //  ensure your Page Title, FileName and Topic are capitalised right - CodeSystem, ValueSet !!!
+                    var parentCodeSystem = $(this).closest('[id^=CodeSystem-UKCore-]'); 
+                    var parentExtension = $(this).closest('[id^=Extension-UKCore-]');
+                    var parentValueSet = $(this).closest('[id^=ValueSet-UKCore-]');
+                   
+                    if (parentCodeSystem != undefined && parentCodeSystem.length > 0)
+                    {
+                        parentCodeSystem.addClass('forceGreen');
+                        $(this).parent().find('h2').addClass('forceGreen');
+                        $(this).parent().find('hr').insertAfter($(this).parent())
+                    } else if (parentExtension != undefined && parentExtension.length > 0)
+                    {
+                        parentExtension.addClass('forceGreen');
+                        $(this).parent().find('h2').addClass('forceGreen');
+                        $(this).parent().find('hr').insertAfter($(this).parent())
+                    } else if (parentValueSet != undefined && parentValueSet.length > 0)
+                    {
+                        parentValueSet.addClass('forceGreen');
+                        $(this).parent().find('h2').addClass('forceGreen');
+                        $(this).parent().find('hr').insertAfter($(this).parent())
+                    } else
+                    {
+                        $('div.row:not(#header)').addClass('forceGreen');
+                        $(this).parent().find('hr').addClass('forceWhite');
+                    }
+                    $(this).addClass('forceWhite');
+                    $(this).parent().find('div.tabcontent').addClass('forceWhite');
+                });
+            }
+
+            // function adds a hr line item after Extension/Bindings/Constraints
+            // and one before any uk core access guidance
+            // in the left hand list, AND the same on the main page
+            function separateOutGuidance() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    //add a Profile link that jumps back to the top
+                    var firstLi = $('ul.nav-stacked li:first');
+                    if (firstLi != undefined && firstLi.length > 0) {
+                        firstLi.before("<li><a title='Profile' href='#" + hasSDH1[0].id +  "'>Profile</a></li>");
+                    }
+
+                    //probably can be made more efficient, but put the specific sidebar divs into objects, to make checking if they exist and adding lines easier
+                    var mvcLi = $('ul.nav-stacked li a[title|="Minimum Viable Content"]');
+                    var extensionsLi = $('ul.nav-stacked li a[title|="Extensions"]');
+                    var bindingsLi = $('ul.nav-stacked li a[title|="Bindings"]');
+                    var constraintsLi = $('ul.nav-stacked li a[title|="Constraints"]');
+
+                    var patientApiLi = $('ul.nav-stacked li a[title|="Patient Index Provider"]');
+                    var clinicalApiLi = $('ul.nav-stacked li a[title|="Clinical Data Provider"]');
+
+                    // work backwards from the specific guidances
+                    if (constraintsLi != undefined && constraintsLi.length > 0) {
+                        constraintsLi.parent().after("<li><hr></li>");
+                    } else if (bindingsLi != undefined && bindingsLi.length > 0) {
+                        bindingsLi.parent().after("<li><hr></li>");
+                    } else if (extensionsLi != undefined && extensionsLi.length > 0) {
+                        extensionsLi.parent().after("<li><hr></li>");
+                    } else if (mvcLi != undefined && mvcLi.length > 0) {
+                        mvcLi.parent().after("<li><hr></li>");
+                    }
+
+                     // this little chunk shouldn't be needed- uk core access page in main ig prototype
+                    if (patientApiLi != undefined && patientApiLi.length > 0)
+                    {
+                        patientApiLi.parent().before("<li><hr></li>");
+                    }
+                    if (clinicalApiLi != undefined && clinicalApiLi.length > 0)
+                    {
+                        clinicalApiLi.parent().before("<li><hr></li>");
+                    }
+
+                    // similar code to above, but for main page content specific divs
+                    var extensionsDiv = $('div#preview-content div#Extensions');
+                    var bindingsDiv = $('div#preview-content div#Bindings');
+                    var constraintsDiv = $('div#preview-content div#Constraints');
+                    var checkForHR;
+                    var addToDiv;
+
+                    //check for a hr at the end, and if not, add one, or give it a class
+                    if (constraintsDiv != undefined && constraintsDiv.length > 0) {
+                        checkForHR = constraintsDiv.children('hr');
+                        addToDiv = constraintsDiv;
+                    } else if (bindingsDiv != undefined && bindingsDiv.length > 0) {
+                        checkForHR = bindingsDiv.children('hr');
+                        addToDiv = bindingsDiv;
+                    } else if (extensionsDiv != undefined && extensionsDiv.length > 0) {
+                        checkForHR = extensionsDiv.children('hr');
+                        addToDiv = extensionsDiv;
+                    }
+                    // main difference is that all pages should already have a --- at the bottom, so we are either adding a thick line if theres no ---, or adding a class
+                    if (checkForHR != undefined && checkForHR.length > 0) {
+                        checkForHR.addClass('thickline');
+                    } else {
+                        if (addToDiv != undefined && addToDiv.length > 0) {
+                            addToDiv.append("<hr class='thickline'>");
+                        }
+                    }
+                    checkForHR = undefined;
+                    addToDiv = undefined;
+
+                    // this chunk shouldn't be needed - would allow us to add the UK Core Access Index Provider / CLincial Data Provider pages into the profiles at the bottom
+                    var patientApiDiv = $('div#preview-content div[id$="IndexProvider"]');
+                    var clinicalApiDiv = $('div#preview-content div[id$="ClinicalDataProvider"]');
+                    if (patientApiDiv != undefined && patientApiDiv.length > 0) {
+                        var prevDiv = patientApiDiv.prev();
+                        checkForHR = prevDiv.children('hr');
+                        addToDiv = prevDiv;
+                    }
+                    if (clinicalApiDiv != undefined && clinicalApiDiv.length > 0) {
+                        var prevDiv = clinicalApiDiv.prev();
+                        checkForHR = prevDiv.children('hr');
+                        addToDiv = prevDiv;
+                    }
+                    if (checkForHR != undefined && checkForHR.length > 0) {
+                        checkForHR.addClass('thickline');
+                    } else {
+                        if (addToDiv != undefined && addToDiv.length > 0) {
+                            addToDiv.append("<hr class='thickline'>");
+                        }
+                    }
+                }
+            }
+            
+            // function add the submenus for profiles
+            function createProfileSubMenus() {
+               //mobile friendly tweak - check window size, and add sub menu if we can
+                if (window.matchMedia("(min-width: 992px)").matches){
+                    //add classes to the profiles - slice 3 here means 4th item onwards (0 Extensions Index, 1 All Extensions, 2 Profiles Index)
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li').slice(3).addClass("profile-item");
+                    //add menu1 class for profiles items 0 to 10 (A to K)
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(0,11).addClass("menu1");
+                    //add menu2 class for profiles items 11 to 17 (List to MedicationStatement)
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(11,18).addClass("menu2");
+                    //add menu3 class for profiles items 39 onwards (P to Z)
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(39).addClass("menu3");
+                    //because Ob-Group-Lab, Obs-Lab, Obs-VitalSigns are mixed in amongst the others, this bit is messy, add obs-derived and obs-vitalsign-deriveds classes were we can
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(19,24).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,26).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(27,28).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(29,38).addClass("obsvital-derived");
+
+                    //add the sub menu's for profile chunks A-K, L-O, P-Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentThree" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentTwo" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles L to O <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentOne" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to K <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    //add a seperator between extensions, and profiles
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
+                    
+                    //and move the items into the sub menus
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu1')); //A to K
+
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu2')); //L to N
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(18,19)); //Obs
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;&nbsp;Derived Profiles of UKCore-Observation</a><ul class="submenu-sublist subhidden"></ul></li>'); //Obs Parent
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(24,25)); //Obs Group Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(26,27)); //Obs Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(28,29)); //Obs Vital
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsVitalParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;Derived Profiles of UKCore-Observation-VitalSigns</a><ul class="submenu-sublist subhidden"></ul></li>'); //ObsVital Parent
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obs-derived')); //Obs Derived
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obsvital-derived')); //ObsVital Derived 
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(38,39)); //Other O's 
+
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu3')); //P to Z
+                } else {
+                    // small screen / mobile, so can't really do a dropdown in a drop down!
+                    // just add a seperator between extensions, and profiles
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
+                }
+            }
+
+            //handles state of cookies and open menus
+            function setInitialDropdownState(){
+                if (getDropdownExpandedState("dropdownParentOne") == 'true'){
+                    $('li#dropdownParentOne ul').removeClass("hidden");
+                    $('li#dropdownParentOne ul').removeClass('visuallyhidden');
+                } 
+                if (getDropdownExpandedState("dropdownParentTwo") == 'true'){
+                    $('li#dropdownParentTwo ul').removeClass("hidden");
+                    $('li#dropdownParentTwo ul').removeClass('visuallyhidden');
+                }
+                if (getDropdownExpandedState("dropdownParentThree") == 'true'){
+                    $('li#dropdownParentThree ul').removeClass("hidden");
+                    $('li#dropdownParentThree ul').removeClass('visuallyhidden');
+                }
+                
+                if (getDropdownExpandedState("dropdownObsParent") == 'true'){
+                    $('li#dropdownObsParent ul').removeClass("subhidden");
+                    $('li#dropdownObsParent ul').removeClass('visuallysubhidden');
+                }
+                if (getDropdownExpandedState("dropdownObsVitalParent") == 'true'){
+                    $('li#dropdownObsVitalParent ul').removeClass("subhidden");
+                    $('li#dropdownObsVitalParent ul').removeClass('visuallysubhidden');
+                }
+
+            }
+
+            // function add a seperator into terminology dropdown
+            function createTerminologySeparator() {
+                $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
+            }
+
+            
+            // UNUSED - looks for the pagetitle of Clinical Data Provider, and removes and sub h2's of Clinical Data Provider
+            function hideMultipleClincialDataProviders() {
+                var hasPageTitleH2 = $('h2[id^=page-title]:contains(Clinical Data Provider)');
+                if (hasPageTitleH2 != undefined && hasPageTitleH2.length > 0)
+                {
+                    $('h2#clinical-data-provider').each(function(index){
+                        $(this).remove();
+                    });
+                }
+            }
+
+            // handles click on a drop down menu, inside a dropdown menu, inside a dropdown nav bar...
+            function handleSubMenuEvents() {
+                var dropdownParentOne, dropdownParentTwo, dropdownParentThree
+                var dropdownObsParent, dropdownObsVitalParent
+
+                //this is on the Profile A-K, L-O, P-Z level
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
+                    if ($(this).parent().parent().hasClass("submenu-list")) {
+                        return;
+                    }
+                    if ($(this).parent().parent().hasClass("submenu-sublist")) {
+                        return;
+                    }
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+
+                    if (list.parent()[0].id== "dropdownParentOne") {
+                        clearTimeout(dropdownParentOne);
+                    } else if (list.parent()[0].id== "dropdownParentTwo") {
+                        clearTimeout(dropdownParentTwo);
+                    } else if (list.parent()[0].id== "dropdownParentThree") {
+                        clearTimeout(dropdownParentThree);
+                    }
+
+                    if (list.hasClass("hidden")) {
+                        list.addClass("visuallyhidden");
+                        list.removeClass("hidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallyhidden');
+                            setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallyhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallyhidden');
+                                setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownParentOne") {
+                                dropdownParentOne = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentOne",false);
+                                }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentTwo") {
+                                dropdownParentTwo = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentTwo",false);
+                                }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentThree") {
+                                dropdownParentThree = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentThree",false);
+                                }, 20);
+                            }
+
+                        }
+                    }
+                });
+                //this is on the Derived Profiles of level
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent a').click(function(e) {   
+                    if ($(this).parent().parent().hasClass("submenu-sublist")) {
+                        return;
+                    }
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+                    if (list.parent()[0].id== "dropdownObsParent") {
+                        clearTimeout(dropdownObsParent);
+                    } else if (list.parent()[0].id== "dropdownObsVitalParent") {
+                        clearTimeout(dropdownObsVitalParent);
+                    }
+
+                    if (list.hasClass("subhidden")) {
+                        list.addClass("visuallysubhidden");
+                        list.removeClass("subhidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallysubhidden');
+                            setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallysubhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallysubhidden');
+                                setDropdownExpandedState(list.parent()[0].id,true);
+                                }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownObsParent") {
+                                dropdownObsParent = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').addClass("visuallysubhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').addClass("subhidden");
+                                setDropdownExpandedState("dropdownObsParent",false);
+                                }, 20);
+                             } else if (list.parent()[0].id== "dropdownObsVitalParent") {
+                                dropdownObsVitalParent = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').addClass("visuallysubhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').addClass("subhidden");
+                                setDropdownExpandedState("dropdownObsVitalParent",false);
+                                }, 20);
+                            }
+
+                        }
+                    }
+                });
+            }
+            
+            //these two handle getting / setting the dropdown state cookies
+            function getDropdownExpandedState(dropdownMenuId) {
+                var nameEQ = dropdownMenuId + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return false;
+            }
+            function setDropdownExpandedState(dropdownMenuId, open){
+                var date = new Date();
+                date.setTime(date.getTime() + (7*24*60*60*1000));
+                var expires = "; expires=" + date.toUTCString();
+                document.cookie = dropdownMenuId + "=" + (open || "")  + expires + "; path=/";
+            }
+        </script>
+        <script>
+            // look for codesytsem URL's and add a copy url button
+            function findCodeSystemURLS() {
+                $('div[id^="HTML View"] div p').each(function(index) {
+                    if ($(this)[0].innerText.startsWith("This code system")) {
+                        var theCodeSystemURL = $(this)[0].innerText.replace("This code system ","").replace(" defines the following codes:","");
+                        var buttonString = 'This code system <span class="copy-text">' + theCodeSystemURL + '<button title="Click to copy URL" class="btn-copy" data-clipboard-text="' +  theCodeSystemURL + '"> </button></span> defines the following codes:';
+                        $(this)[0].innerHTML = buttonString;
+                    }
+                });
+            }
+
+            //look for any anchor tags going to XML, which would open the resource in simpifier
+            // and remap these to the relevant asset in the IG
+           function swapProfileTreeLinks() {
+               //create arrays of different target words
+                var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','DiagnosticReport','Encounter','FamilyMemberHistory','HealthcareService','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','Observation','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen'];
+                var draftProfiles = ['AuditEvent','Bundle','CarePlan','CareTeam','Communication','Consent','Device','DocumentReference','EpisodeOfCare','Flag','ImagingStudy','MessageHeader','OperationOutcome','OrganizationAffiliation','Provenance','QuestionnaireResponse','RequestGroup','Task'];
+                var baseDataTypes = ['base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Data','Types','Address','Age','Annotation','Attachment','CodeableConcept','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','SampledData','Signature','Timing'];
+                var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression','ParameterDefinition','RelatedArtifact','TriggerDefinition','UsageContext'];
+
+                // build a base url
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+                //for each  link ending in xml
+                $('a[href$="xml"]').each(function(index) {
+                    //check if it currently resolves to UK Core on simplifier
+                    let urlReference = $(this)[0].href;
+                    if (urlReference.includes("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath="))
+                    {
+                        //and remap
+                        var swapUrl = newUrl;
+                        var addExtraIfNeeded = true;
+                        if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-")) {
+                            swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
+                        } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-")) {
+                            swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
+                            addExtraIfNeeded=false;
+                        } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-")) {
+                            swapUrl = swapUrl + "Terminology/ValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
+                        } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-")) {
+                            swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
+                        }
+                        swapUrl= swapUrl.replace(".xml","");
+                        
+                        let exampleVersion = "?" + url.split("?")[1];
+                        if (exampleVersion.startsWith("?version=current") && addExtraIfNeeded){
+                            exampleVersion = ".page.md" + exampleVersion;
+                        }
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                    }
+				});
+                // for each link ending in JSON
+                $('a[href$="json"]').each(function(index) {
+                    //check if it currently resolves tosimplifier base 4.0.1 package (i.e. basically everything)
+                    let urlReference = $(this)[0].href;
+                    if (urlReference.includes("https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-"))
+                    {
+                        //and remap based on which array its label is in
+                        var profileName =  $(this)[0].innerText;
+                        if (ukCoreProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            let exampleVersion = "?" + url.split("?")[1];
+                            swapUrl = swapUrl + exampleVersion;
+                            $(this).attr("href", swapUrl);
+                        } else if (draftProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = "https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (baseDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/datatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (metaDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/metadatatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Reference") {
+                            var swapUrl = "https://hl7.org/fhir/R4/references.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Extension") {
+                            var swapUrl = "https://hl7.org/fhir/R4/extensibility.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Dosage") {
+                            var swapUrl = "https://hl7.org/fhir/R4/dosage.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "BackboneElement") {
+                            var swapUrl = "https://hl7.org/fhir/R4/backboneelement.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Resource") {
+                            var swapUrl = "https://hl7.org/fhir/R4/resourcelist.html";
+                            $(this).attr("href", swapUrl);
+                        }                       
+                    }
+				});
+
+                //finally add "Or UK Core equivalent" if a reference has a uk core version
+                $('a[href="https://hl7.org/fhir/R4/references.html"]').each(function(index) {
+                    let parentObj = $(this).parent();
+                    if (parentObj.prop("tagName") == "P" || parentObj.prop("tagName") == "TD")
+                    {
+                        if (parentObj.find('a[href*="Profile-UKCore-"]') != undefined && parentObj.find('a[href*="Profile-UKCore-"]').length > 0) {
+                            parentObj.find('span:contains(")")')[0].innerText = ") or UK Core equivalent profile."
+                        }
+                    }
+				});
+			}
+
+            //this looks for FQL versions of the extensions and bindings tables, and alters the fql link to a pagelink
+            function swapFQLTableLinks() {
+                // build a base url
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
+                $("div#preview-content div#Extensions table.table tbody tr td a").each(function(index) {
+                    //check if it currently resolves to UK Core on simplifier
+                    let urlReference = $(this)[0].href;
+                    var swapUrl = newUrl;
+                    if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
+                        let extensionName = urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/StructureDefinition/","").replace("&scope=HL7FHIRUKCoreR4@current","");
+                        swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/" + extensionName;
+                        
+                        let exampleVersion = "?" + url.split("?")[1];
+                        if (exampleVersion.startsWith("?version=current")){
+                            exampleVersion = ".page.md" + exampleVersion;
+                        }
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                        $(this).text(extensionName);
+                    }
+                });
+                $("div#preview-content div#Bindings table.table tbody tr td a").each(function(index) {
+                    //check if it currently resolves to UK Core on simplifier
+                    let urlReference = $(this)[0].href;
+                    var swapUrl = newUrl;
+                    if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
+                        let valuesetName =  urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/ValueSet/","").replace("&scope=HL7FHIRUKCoreR4@current","");
+                        swapUrl = swapUrl + "Terminology/ValueSets/ValueSet-" + valuesetName;
+                        let exampleVersion = "?" + url.split("?")[1];
+                        if (exampleVersion.startsWith("?version=current")){
+                            exampleVersion = ".page.md" + exampleVersion;
+                        }
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                        $(this).text("ValueSet " + valuesetName);
+                    }
+                });
+            }
+
+            //look for a div's called Table View, and the rows in the table
+            // if the first cell on a row is reference[0], remap the link to the matching example
+            // if the first cell on a row is url[0] or system[0], remap the link to the matching asset in the IG
+            // if the first cell on a row is code[0], remap the link to termbrowser for the SNOMED CT concept id
+            function swapReferenceExampleLinks() {
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++) {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
+                var isSNOMEDCT = false;
+                $("div[id='Table View'] div.path table tbody tr").each(function(index) {
+                    if ($(this)[0].cells[0].innerText.endsWith("reference[0]"))
+					{
+						let reference = $(this)[0].cells[1].innerText;
+                        if (reference.includes("/") && reference.includes("UKCore"))
+                        {
+                            exampleSuffix = "-Example";
+                            let assetType = reference.split("/")[0];
+                            let exampleName = "Example-" + reference.split("/")[1].replace(exampleSuffix,'');
+                            let exampleVersion = "?" + url.split("?")[1];
+                            if (exampleVersion.startsWith("?version=current")){
+                                exampleVersion = ".page.md" + exampleVersion;
+                            }
+                            var swapUrl = newUrl;
+                            if (exampleName.includes("-Extension-")) {
+                                swapUrl = swapUrl + "Examples/Extension-Examples/";
+                            } else {
+                                swapUrl = swapUrl + "Examples/Profile-Examples/";
+                            }
+                            swapUrl = swapUrl + exampleName + exampleVersion;
+                            $(this)[0].cells[1].innerHTML = "<a href=" + swapUrl + ">" + reference + "</a>";
+                        }
+                        isSNOMEDCT=false;
+					} else if ($(this)[0].cells[0].innerText.endsWith("url[0]") || $(this)[0].cells[0].innerText.endsWith("system[0]"))
+					{
+                        isSNOMEDCT = false;
+
+						let urlReference = $(this)[0].cells[1].innerText;
+                        if (urlReference.includes("https://fhir.hl7.org.uk"))
+                        {
+                            var swapUrl = newUrl;
+							var addExtraIfNeeded = true;
+							if (urlReference.startsWith("https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-")) {
+								swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-","");
+							} else if (urlReference.startsWith("https://fhir.hl7.org.uk/StructureDefinition/UKCore-")) {
+								swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/StructureDefinition/UKCore-","");
+								addExtraIfNeeded=false;
+							} else if (urlReference.startsWith("https://fhir.hl7.org.uk/ValueSet/UKCore-")) {
+								swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/ValueSet/UKCore-","");
+							} else if (urlReference.startsWith("https://fhir.hl7.org.uk/CodeSystem/UKCore-")) {
+								swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/CodeSystem/UKCore-","");
+							}
+                            let exampleVersion = "?" + url.split("?")[1];
+                            if (exampleVersion.startsWith("?version=current") && addExtraIfNeeded){
+                                exampleVersion = ".page.md" + exampleVersion;
+                            }
+                            swapUrl = swapUrl + exampleVersion;
+                            $(this)[0].cells[1].innerHTML = "<a href=" + swapUrl + ">" + urlReference + "</a>";
+                        } else if (urlReference.includes("http://terminology.hl7.org")) {
+                            $(this)[0].cells[1].innerHTML = "<a href=" + urlReference + ">" + urlReference + "</a>";
+                        } else if (urlReference.includes("http://snomed.info/sct")) {
+                            isSNOMEDCT= true;
+                        }
+					} else if ($(this)[0].cells[0].innerText.endsWith("code[0]") && isSNOMEDCT) {
+						let conceptID = $(this)[0].cells[1].innerText;
+                        $(this)[0].cells[1].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>";
+                        isSNOMEDCT=false;
+					} else {
+                        isSNOMEDCT=false;
+                    }
+				});
+			}
+
+            //remaps sitemap and licence links to always point within the IG being read
+            function fixFooterVersion() {
+                let pageUrl = window.location.href;
+                let pageVersion = "?" + pageUrl.split("?")[1];
+                pageVersion = pageVersion.split("#")[0];
+                pageUrl = pageUrl.split("?")[0];
+                let slashCount = pageUrl.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + pageUrl.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+                if (newUrl.endsWith("/")) {
+                    newUrl = newUrl.slice(0, -1);
+                }
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
+                    newUrl = newUrl + "/Home";
+                }
+                $("a#header-contactus").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + "/ContactUs" + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
+                $("a#footer-sitemap").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + "/Guidance/Sitemap-Overview" + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, pageVersion);
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
+                $("a#footer-licence").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, pageVersion);
+                    }
+                    if (!destUrl.endsWith("#Licence")) {
+                        destUrl = destUrl+"#Licence";
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
+			}
+        </script>
+        <script>
+            function expandProfileNodes() {
+                //look for any treetable parent divs
+                $("div.expandedProfile div.stu3-treetable").each(function(index) {
+                    //call a hacked version of the simplifier expandnode, 
+                    // with the first tr as its start point, and tparent div as we lose the context their js has
+                    expandProfileNode($(this).find('table.treetable').children('tbody').children('tr:first'), $(this)[0]);
+                });
+            }
+
+            //copy of simplifier getVisibleElements, but with the lack of context handled
+            function getVisibleElements(id, treeDiv) {
+                for (var rows = '[data-ParentId="' + id + '"]', n = treeDiv.querySelectorAll(rows), i = [], r = 0, a = 0; a < n.length; a++)
+                    TreeHelper.hasClass(n[a], "mode-hidden") || (i[r] = n[a],
+                    r++);
+                return i;
+            }
+
+            //tweaked version of simplifier expandNode
+            // but is more intelligent, so only expands identifier/resource etc if sliced, or an [x] if modified
+            function expandProfileNode(node, treeDiv) {
+                //handle node being blank / array of tr’s / single tr
+                if (node == null)
+                    return;
+                var n = node;
+                if (node.length > 0)
+                    n = node[0];
+
+                //find all visible children, loop through them and call the click, then try and expand them
+                var rows = getVisibleElements(n.getAttribute("data-id"), treeDiv);
+                rows.forEach(function(e, r) {
+                    var doExpand = false;
+                    //check the 3 main css classes that can be set
+                    var c = TreeHelper.hasClass(e, "collapsed");
+                    var s = TreeHelper.hasClass(e, "sliced"); 
+                    var m = TreeHelper.hasClass(e, "constraints");
+                   
+                    //and only expand if its collpased
+                    if (c) {
+                        //look inside this tr, and basically, if its not a backbone element, check if we should expand
+                        var elementDataType = e.children[3].innerText;
+                        var elementName = e.children[0].innerText;
+                        // Identifier/Reference - if sliced/different or has an Extension, expand
+                        if (elementDataType == "Identifier" || elementDataType.startsWith("Reference") )
+                        {
+                            if (s) {
+                                doExpand = true;
+                            } else {
+                               var subRows = getVisibleElements(e.getAttribute("data-id"), treeDiv);
+                               subRows.forEach(function(s, sr) {
+                                   if (s.children[3].innerText == "Extension")
+                                    doExpand = true;
+                               })
+                            }
+                        } else if (elementDataType =="Coding" || elementDataType =="Annotation" || elementDataType.startsWith("Address")  || elementDataType.startsWith("ContactPoint") || elementDataType.startsWith("Extension(")) {
+                            //Coding/Annotation/Address/ContactPoint/Extension(Complex)
+                            //only expand if sliced
+                            if (s && elementName != "(All Slices)")
+                                doExpand = true;
+                            if (!s && e.querySelector("span.individualSlice") != undefined)
+                                doExpand = true;
+                        } else if ((elementDataType == "" || elementDataType == null)) {
+                                //a value[x] style element, expand if modified
+                                if (m && elementName !="(All Slices)")
+                                    doExpand = true;
+                        } else {
+                                //expand anything else (top level extension, backboneelement)
+                                doExpand = true;
+                        }
+                        if (doExpand){
+                            var o = e.querySelector(".vjoinexpandable");
+                            null == o && (o = e.querySelector(".vjoinendexpandable")), 
+                            null != o && o.click()
+                            expandProfileNode(e, treeDiv);
+                        }
+                    }
+                })
+            }
+        </script>
+        <script>
+            //function flips valueset expansion table visibility
+            function toggleExpandedValueSetTableVisibility(anchor) {
+                var table = anchor.parentElement.nextElementSibling;
+                if (table.style.display != 'none') {
+                    table.style.display = "none"
+                } else {
+                    table.style.display = "table"
+                }
+            }
+
+            //code finds valuesets on their sub page / all valueset page
+            // and looks for the expansion table
+            // for the all valuesets, it hides this, and makes the concepts text above a link to show/hide the table, and also swaps links for snomed ct concepts to go to termbrowser
+            // for sub page displays, just looks for expansion tables containing snomed ct concepts, and rewrites them to termbrowser
+            function alterValueSetTables() {
+                // 
+                $('div#preview-content div[id^=ValueSet-UKCore] div[id^=HTML]').each(function(index) {
+                    if ($(this).children('table.regular').length > 1){
+                        var lookForP = $(this).children('p:contains("This value set contains")');
+                        var lookForSNOMEDCT = $(this).children('ul').children('li:contains("Include codes from SNOMED_CT")');
+                        var tableToAlter = $(this).children('table.regular').eq(1);
+
+                        if (lookForP != undefined && lookForP.length > 0) {
+                            lookForP[0].innerHTML = lookForP[0].innerHTML.replace("concepts","<a href='#' onclick='toggleExpandedValueSetTableVisibility(this);return false;'>concepts</a>")
+                            tableToAlter.addClass('codes');
+                            tableToAlter.css({
+                                "display": "none"
+                            });
+                            tableToAlter.removeClass('regular');
+
+                            if (lookForSNOMEDCT != undefined && lookForSNOMEDCT.length >0 ) {
+                                for(var r = 1; r < tableToAlter[0].rows.length; r++) {
+                                    var conceptID = tableToAlter[0].rows[r].cells[0].innerText;
+                                    tableToAlter[0].rows[r].cells[0].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>"
+                                }  
+                            }
+                        }
+                    }
+                });
+
+                $('div#preview-content div[id^=HTML]').each(function(index) {
+                    if ($(this).children('table.regular').length > 1){
+                        var lookForP = $(this).children('p:contains("This value set contains")');
+                        var lookForSNOMEDCT = $(this).children('ul').children('li:contains("Include codes from SNOMED_CT")');
+                        var tableToAlter = $(this).children('table.regular').eq(1);
+                        if (lookForP != undefined && lookForP.length > 0 && lookForSNOMEDCT != undefined && lookForSNOMEDCT.length >0 ) {
+                            
+                            tableToAlter.addClass('codes');
+                            tableToAlter.removeClass('regular');
+
+                            for(var r = 1; r < tableToAlter[0].rows.length; r++) {
+                                var conceptID = tableToAlter[0].rows[r].cells[0].innerText;
+                                tableToAlter[0].rows[r].cells[0].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>"
+                            }  
+                        }
+                    }
+                });
+            }
+        </script>
+        <script>
+            /* following chunk replicates old nhsd ig style /\ and \/ sort buttons */
+
+            //for tables with class codes (codesystems, altered valusets)
+            // shift the first row into a thead
+            // then call function to add /\ and \/ sort buttons
+            function addCodesSortButton() {
+                $('table.codes').each(function(index) {
+                    var firstTr = $(this).find('tr:first').remove();
+                    firstTr.find('td').contents().unwrap().wrap('<th>');
+                    $(this).prepend($('<thead></thead>').append(firstTr));
+
+                    if ($(this).find("thead tr th").length <= $(this).find("tbody tr:first td").length) {
+                        $(this).find("thead tr th:last").attr('colspan',2);
+                    }
+
+                    addSortButtons($(this).parent());
+                });
+            }//function thats called to get the sort button chunk working
+            function addSortButtons(tableDiv) {
+                const tableList = tableDiv[0].querySelectorAll("table");
+                if (0 === tableList.length)
+                    return null;
+                    
+                Array.from(tableList).forEach(
+                    table => {
+                        normalSortButtons(table)
+                    }
+                )
+            }
+
+            //an array for the svg paths
+            const sortObj = {
+                asc: '<path d="M8,4l7,6.5L13.5,12L8,6.8L2.5,12L1,10.5L8,4z"/>',
+                desc: '<path d="M8,12L1,5.5L2.5,4L8,9.2L13.5,4L15,5.5L8,12z"/>'
+            };
+            // a function to create the svg based on the sort type
+            function getIcon(type="asc") {
+                return `<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="100%" height="100%">\n ${sortObj[type]}\n</svg>`
+            }
+            //function to actually add the buttons
+            function normalSortButtons(table) {
+                if (void 0 !== table.dataset.noSort)
+                    return;
+                const headerCells = table.querySelectorAll("thead tr:first-child td, thead tr:first-child th");
+                Array.from(headerCells).forEach(
+                    (headerCell,index) => {
+                        if (void 0 !== headerCell.dataset.noSort)
+                            return;
+                        headerCell.classList.add("orderable");
+                        const buttonSpan = `<span class="sort-icon">${getIcon("asc")}</span>`;
+                        headerCell.innerHTML = `<button><span>${headerCell.innerHTML}</span><span>${buttonSpan}</span></button>`;
+                        setupSortButton(headerCell, index, table);
+                    }
+                )
+            }
+            //funciton to set up the sort button onclick
+            function setupSortButton(headerCell, index, table) {
+                const buttonObj = headerCell.querySelector("button");
+                buttonObj.onclick = function(){sortButtonClick(headerCell, table, headerCell.dataset.sort)};
+            }
+            //function that actually does the onclick
+            function sortButtonClick(headerCell, table){
+                const hCells = table.querySelectorAll("thead td,th");
+                var sortAsc = true;
+                Array.from(hCells).forEach(
+                    hCell => {
+                        const icon = hCell.querySelector(".sort-icon");
+                        if (hCell === headerCell)
+                        {
+                            if (headerCell.dataset.sort == undefined || headerCell.dataset.sort == "" || headerCell.dataset.sort == "desc"){
+                                headerCell.dataset.sort = "asc";
+                            } else {
+                                headerCell.dataset.sort = "desc";
+                                sortAsc=false;
+                            }
+                            icon.innerHTML = getIcon(headerCell.dataset.sort);
+                        } else {
+                            hCell.dataset.sort = "";
+                            icon.innerHTML = getIcon("asc");
+                        }
+                    }
+                )
+                sortCells(headerCell.cellIndex, table, sortAsc);
+            }
+            //and function that does the sorting/re-tabling
+            function sortCells(index, table, sortAsc) {
+                const bodyList = table.querySelectorAll("tbody");
+                Array.from(bodyList).forEach(
+                    body => {
+                        const rowArray = []
+                        , rowList = body.querySelectorAll("tr");
+                        Array.from(rowList).forEach(
+                            (row,rowIndex) => {
+                                const cell = row.querySelectorAll("td, th")[index];
+                                cell && rowArray.push({
+                                    row: rowIndex,
+                                    value: cell.innerText
+                                })
+                            }
+                        )
+                        rowArray.sort(
+                            (row1,row0) => {
+                                const sortResult = sortFunction(row1.value, row0.value);
+                                return false === sortAsc ? sortResult : -1 * sortResult
+                            }
+                        )
+                        body.innerHTML = "";
+                        rowArray.forEach(
+                            rowItem => {
+                                body.append(rowList[rowItem.row])
+                            }
+                        )
+                    }	
+                )
+            }
+            //function for the sort comparator
+            function sortFunction(row0Value, row1Value) {
+                const n = /[^a-zA-Z]/g
+                , s = /[^0-9]/g
+                , o = row1Value.replace(n, "")
+                , i = row0Value.replace(n, "");
+                if (o === i) {
+                    const n = parseInt(row1Value, 15)
+                    , o = parseInt(row0Value, 15);
+                    return n === o ? 0 : n > o ? 1 : -1
+                }
+                return o > i ? 1 : -1
+            }
+        </script>
+        <script>
+            //this function wraps the left hand menu items if they are too long
+            // numbers are arbitarily, but work for NHSE / UKCore IGs
+            // less useful in UK Core due to stripAssetNameFromSideBar()
+            function wrapSideBar() {
+                $('div.col-md-6 ul.nav li a').each(function(index) {
+                    if ($(this)[0].scrollWidth > $(this).innerWidth()) {
+                        var numberOfCapitalsToFind = 0;
+                        if ($(this)[0].scrollWidth -  $(this).innerWidth() < 35) {
+                                numberOfCapitalsToFind = 1;
+                        } else if ($(this)[0].scrollWidth -  $(this).innerWidth() < 70) {
+                                numberOfCapitalsToFind = 2;
+                        } else {
+                                numberOfCapitalsToFind = 3;
+                        }
+                        var lastCapitalLetter = lastCapitalLetterIndex($(this)[0].text, numberOfCapitalsToFind);
+                        if (lastCapitalLetter > -1) {
+                            $(this)[0].text = $(this)[0].text.substring(0,lastCapitalLetter) + ' ' + $(this)[0].text.substring(lastCapitalLetter);
+                        }
+                        $(this).css('word-wrap', "break-word");
+                    }
+                });
+            }
+            function lastCapitalLetterIndex(word, numberOfCapitalsToFind) {
+                var numberOfCapitalsToFound = 0;
+                var lastCapitalFound = -1;
+                for(i = word.length - 1; i >= 0; i--) {
+                    if (word[i].toUpperCase() == word[i]) {
+                        if (numberOfCapitalsToFound < numberOfCapitalsToFind -1 ){
+                            numberOfCapitalsToFound++;
+                            lastCapitalFound = i;
+                        } else {
+                            lastCapitalFound = i;
+                            return lastCapitalFound;
+                        }
+                    }
+                }
+                return lastCapitalFound;
+            }
+
+            //for All Extensions / All ValueSets / All CodeSystems / All Examples pages, strip off the repeated word to make things easier to see
+            function stripAssetNameFromSideBar() {
+                $('div.col-md-6 ul.nav li a').each(function(index) {
+                    if ($(this)[0].text.startsWith("Example UKCore-Extension-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Example UKCore-Extension-", "");
+                    }
+                    if ($(this)[0].text.startsWith("Example UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Example UKCore-", "");
+                    }
+                    if ($(this)[0].text.startsWith("ValueSet UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("ValueSet UKCore-", "");
+                    }
+                    if ($(this)[0].text.startsWith("CodeSystem UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("CodeSystem UKCore-", "");
+                    }
+                    if ($(this)[0].text.startsWith("Extension UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Extension UKCore-", "");
+                    }
+                });
+            }
+        </script>
+        <script>
+        
+            //fix issues with the templating
+            function fixTemplatingIssues() {
+                // handle shifting context of use tables into the transpose div
+                $('table#addToTranspose').each(function(index) {
+                    if ($(this).parent().attr("id") != "transpose") {
+                        $(this).parent().find("div#transpose").append($(this));
+                    }
+                });
+                //remove empty <p> before examples
+                $('div.tabcontent[id^="Examples"]').each(function(index) {
+                    $(this).prev("p:empty").remove();
+                });
+            }
+
+            //fix wcag compliance issues caused by the way simplifier renders
+            function fixWebAccessibility() {
+                // remove additional unneeded role on navbar
+                $('nav.navbar').removeAttr("role");
+                //set title and role on all trees
+                $('table.treetable').each(function(index) {
+                    //$(this).attr("role","presentation");
+                    $(this).attr("title","FHIR Tree View");
+                });
+                //set title on all valuset tables
+                $('table.regular').each(function(index) {
+                    if ($(this).find("th").length > 0) {
+                        if ($(this).find(":contains('System')")) {
+                            $(this).attr("title","Expanded ValueSet codes");
+                        } else {
+                            $(this).attr("title","Imported ValueSet codes");
+                        }
+                    } else {
+                        $(this).attr("role","presentation");
+                        $(this).attr("title","ValueSet details");
+                    }
+                });
+                // set title on all code lists
+                $('table.codes').each(function(index) {
+                    $(this).attr("title","Expanded code list");
+                });
+                // set role on table view
+                $('div.path table').each(function(index) {
+                    $(this).attr("role","presentation");
+                    $(this).attr("title","Table View");
+                });
+                //set title on FQL generated tables, ideally from the first column of the thead
+                $('table.table.table-bordered.assets.forceWhite').each(function(index) {
+                    if ($(this).attr("title") == undefined || $(this).attr("title") == "") {
+                        if ($(this).find("thead tr th").length > 0) {
+                            $(this).attr("title",$(this).find("thead tr th")[0].innerText);
+                        } else {
+                            $(this).attr("title","FQL Generated Details");
+                        }
+                    }
+                });
+                //set a unique id on all tree/table/example divs etc
+                var iHTMLCount=0;
+                var iTreeCount=0;
+                var iTableCount=0;
+                var iXMLCount=0;
+                var iJSONCount=0;
+                var iExamplesCount=0;
+                var iUsageCount=0;
+                var iDetailedCount=0;
+                var iFeedbackCount=0;
+                $('div.tabcontent').each(function(index) {
+                    if ($(this).attr("id") == "HTML View") {
+                        iHTMLCount++;
+                        $(this).attr("id","HTML View" + iHTMLCount);
+                    } else if ($(this).attr("id") == "Tree View") {
+                        iTreeCount++;
+                        $(this).attr("id","Tree View" + iTreeCount);
+                    } else if ($(this).attr("id") == "Table View") {
+                        iTableCount++;
+                        $(this).attr("id","Table View" + iTableCount);
+                    } else if ($(this).attr("id") == "XML View") {
+                        iXMLCount++;
+                        $(this).attr("id","XML View" + iXMLCount);
+                    } else if ($(this).attr("id") == "JSON View") {
+                        iJSONCount++;
+                        $(this).attr("id","JSON View" + iJSONCount);
+                    } else if ($(this).attr("id") == "Examples") {
+                        iExamplesCount++;
+                        $(this).attr("id","Examples" + iExamplesCount);
+                    } else if ($(this).attr("id") == "Usage") {
+                        iUsageCount++;
+                        $(this).attr("id","Usage" + iUsageCount);
+                    } else if ($(this).attr("id") == "Detailed") {
+                        iDetailedCount++;
+                        $(this).attr("id","Detailed" + iDetailedCount);
+                    } else if ($(this).attr("id") == "Feedback") {
+                        iFeedbackCount++;
+                        $(this).attr("id","Feedback" + iFeedbackCount);
+                    }
+                });
+                // set unique id on all transposed fl table divs
+                var iTransposeCount=0;
+                $('div[id="transpose"]').each(function(index) { 
+                    iTransposeCount++;
+                    $(this).attr("id","transpose" + iTransposeCount);
+                });
+                //loop through all div's with id's
+                $('div').each(function(index) { 
+                    if ($(this).attr("id") != undefined && $(this).attr("id") != "preview-content") {
+                        // look for an h2, with either a matching id or page-title
+                        // and update it to be unique
+                        var sectionHeading = $(this).find("h2");
+                        if (sectionHeading != undefined && sectionHeading.length > 0){
+                            if (sectionHeading.attr("id") == $(this).attr("id")) {
+                                sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
+                            } else if (sectionHeading.attr("id") == "page-title") {
+                                sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
+                            }
+                            var basedetails = $(this).find("div#elementdetails");
+                            if (basedetails != undefined && basedetails.length > 0){
+                                basedetails.attr("id", $(this).attr("id") + "-elementdetails");
+                            }
+                        }
+                        //if the div is renderParent, shift its title into the alt of the img it contains
+                        if ($(this).attr("id") == "renderParent"){
+                            var imgTitle = $(this).attr("title");
+                            $(this).removeAttr("title");
+                            $(this).find("img.img-responsive").attr("alt",imgTitle);
+                        }
+                    }
+                });
+            }
+        </script>
+        
+        <script>
+            //code finds sub elements page
+            // and looks for the base details box table
+            function alterBaseElementOverrides() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    var profileName = hasSDH1[0].innerText.split("-")[1];
+                    var listOfElements = $('table.dict tbody tr td.structure')
+                    var allRows = $('table.dict tbody tr')
+                    var fromRow, toRow
+                    var lookFor
+                    var box
+
+                    $("div h2").each(function(index) {
+                        //sub element pages always have a lower case starting letter, profile, bindings etc are uppper case
+                        var headerText = $(this)[0].innerText
+                        var firstLetter = headerText.charAt(0);
+                        if (firstLetter === firstLetter.toLowerCase()) {
+                            //add a class to the parent div
+                            $(this).parent().addClass("elementGuidance");
+                        
+                           if (!headerText.startsWith("extension:")) {
+                                lookFor = profileName  + "." + headerText
+    $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert"><table class="dict baseFhir" title="Element Details"><tbody></tbody></table></div>').insertAfter($(this))
+                $(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + headerText + "</code>";
+                                box = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
+                                box.style.display = "none";
+                                for (var elementLoop = 0, elementCount = listOfElements.length-1; elementLoop <= elementCount; elementLoop++) {
+                                    if (listOfElements[elementLoop].innerText == lookFor) {
+                                        fromRow = listOfElements[elementLoop].parentElement.rowIndex
+                                        if (elementLoop == elementCount) {
+                                            toRow = allRows.length-1
+                                        } else {
+                                            toRow = listOfElements[elementLoop+1].parentElement.rowIndex - 1
+                                        }
+                                        for (var rowLoop = fromRow; rowLoop <= toRow; rowLoop++) {
+                                            box.querySelector("table tbody").append(allRows[rowLoop].cloneNode(true))
+                                        }
+                                    }
+                                }
+                            }
+                        }                   
+                    });
+                }
+            }
+            //function flips valueset expansion table visibility
+            function toggleCoreDetailsVisibility(anchor,force) {
+                var detailsBox;
+                if (anchor.nodeName == "CODE") {
+                    detailsBox = anchor.parentElement.parentElement.querySelector("div[id$='elementdetails']");
+                } else if (anchor.nodeName == "H2") {
+                    detailsBox = anchor.parentElement.querySelector("div[id$='elementDetails']");
+                } else if (anchor.nodeName == "LI") {
+                    detailsBox =  anchor.parentElement.parentElement.parentElement.querySelector("div[id='" + anchor.querySelector("a").getAttribute("href").replace("#","") + "-elementdetails']");
+                } else if (anchor.nodeName == "SPAN") {
+                    detailsBox =  document.querySelector("div[id='" + anchor.innerText + "-elementdetails']");
+                
+                }
+                if (detailsBox != undefined){
+                    if (detailsBox.style.display == 'none' || force == true) {
+                        detailsBox.style.display = "block";
+                    } else {
+                        detailsBox.style.display = "none";
+                    }
+                }
+            }
+            function sidebarClickAndOpen() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    $('ul.nav-stacked li').each(function(index) {               
+                        var firstLetter = $(this)[0].innerText.charAt(0);
+                        if (firstLetter != "" && firstLetter === firstLetter.toLowerCase()) {
+                            $(this)[0].addEventListener('click', function(){
+                                toggleCoreDetailsVisibility(this, true);
+                                return false;
+                            });
+                        }
+                    });
+                }
+            }
+            function redirectTreeviewElementsToPage() {
+                //loop thru all spans in the tree
+                $('div.treetable-left-panel table.treetable tbody tr td.profile:first-child').each(function(index) {
+                    $(this).find('span:not([class]), span.constraints').each(function(index) {          
+                        var elementName = $(this)[0].innerText;   
+                        var divToFind = $("div[id='" + elementName + "-elementdetails']");
+                        if (divToFind != undefined && divToFind.length > 0){
+                            var pinPanel = $(this).parent().parent().find('td.details');
+                            if (pinPanel != undefined && pinPanel.length > 0){
+                                $('<p><a href="#'+elementName+'">View UK Core Guidance</a></p>').insertAfter(pinPanel.find("div:not([class]) pre"))
+                            }
+                        }
+                    });
+                });
+            }
+        </script>
+
+        <script>
+            // this looks at snippet examples and highlights the specific part in grey
+            function highlightSnippetExamples() {
+                var changeIt = false;
+                //XML view - snippets should have snippet start/end as xml comments
+                // so loop thru each span and look for that text
+                $("div.tabcontent[id^='XML View'] pre span").each(function(index) { 
+                    if ($(this)[0].innerText.toLowerCase().includes("snippet start")) {
+                        changeIt = true;
+                    }
+                    if (changeIt == true) {
+                        $(this).addClass("snippetBackground");
+                    }
+                    if ($(this)[0].innerText.toLowerCase().includes("snippet end")) {
+                        changeIt = false;
+                    }
+                });
+
+                // Table view - use a data-Snippet on the parent div, with the Resource.element[x]
+                // it gets this attribute, and loops thru the rows, and checks if the first column starts with that
+                $("div.tabcontent[id^='Table View']").each(function(index) { 
+                    var tableElementToColour = $(this)[0].getAttribute("data-Snippet");
+                    if (tableElementToColour != null) {
+                        $(this).find("div.path table tbody tr").each(function(index) { 
+                            if ($(this).find("td:first-child")[0].innerText.startsWith(tableElementToColour)) {
+                                    $(this).addClass("snippetBackground");
+                            }
+                        });
+                    }
+                });
+
+                // Tree View - more complex - specify a dataSnippetStart which is the element, e,g, code to colour
+                //  and a data-SnippetEnd, which is the element after
+                // trees are actually tables, so look for the td with bold tezxt that matches, and which has a collapsible icon
+                // NOTE: this one is flakey!
+                $("div.tabcontent[id^='Tree View']").each(function(index) { 
+                    var tableElementToColourStart = $(this)[0].getAttribute("data-SnippetStart");
+                    var tableElementToColourStop = $(this)[0].getAttribute("data-SnippetEnd");
+                    if (tableElementToColourStart != null && tableElementToColourStop != null) {
+                        $(this).find("div.stu3-treetable div.treetable-wrapper div.treetable-left-panel table tbody tr").each(function(index) { 
+                            if ($(this).find("td.instance b").length>0) {
+                                var collapsible = $(this).find("td.instance span.vjoincollapsible").length>0 || $(this).find("td.instance span.vjoinendcollapsible").length>0
+                                if (collapsible && $(this).find("td.instance b")[0].innerText.startsWith(tableElementToColourStart)) { 
+                                    changeIt = true;
+                                }
+                                if (collapsible && $(this).find("td.instance b")[0].innerText.startsWith(tableElementToColourStop)) { 
+                                    changeIt = false;
+                                }
+                                if (changeIt == true) {
+                                    $(this).addClass("snippetBackground");
+                                }
+                            }
+                        });
+                    }
+                });
+                 
+                // JSON View, similar,  - specify a dataSnippetStart which is the element, e,g, code to colour
+                //  and a data-SnippetEnd, which is the element after
+                // loop thru the pre / span's, and look for matching text
+                //  if it find the start, make sure theres a { a few spans later, and also move back a span
+                // NOTE: this one is flakey!
+                $("div.tabcontent[id^='JSON View']").each(function(index) { 
+                    var tableElementToColourStart = $(this)[0].getAttribute("data-SnippetStart");
+                    var tableElementToColourStop = $(this)[0].getAttribute("data-SnippetEnd");
+                    if (tableElementToColourStart != null && tableElementToColourStop != null) {
+                        $(this).find("pre span").each(function(index) { 
+                            if ($(this)[0].innerText.toLowerCase() == tableElementToColourStart) {
+                                if ($(this)[0].nextSibling.nextSibling.nextSibling != undefined && $(this)[0].nextSibling.nextSibling.nextSibling.innerText == "{") {
+                                    changeIt = true;
+                                    $(this).prev("span").addClass("snippetBackground");
+                                }
+                            }
+                            if ($(this)[0].innerText.toLowerCase() == tableElementToColourStop) {
+                                changeIt = false;
+                                    $(this).prev("span").removeClass("snippetBackground");
+                            }
+                            if (changeIt == true) {
+                                $(this).addClass("snippetBackground");
+                            }
+                        });
+                    }
+                });
+            }
+        </script>
+
+        <script>
+            //removes any development notice and footer if its being rendered in an iframe
+            function pageInIframe() {
+                const frame = window.frameElement;
+                if (frame !== null && frame.nodeName == "IFRAME") {
+                    // if no class set on the iframe, then remove dev notice and footer
+                    //  i.e. leave header and nav bar
+                    if (frame.classList.length==0){
+                        $('div#development-notice').remove();
+                        $('div#newAsset').remove();
+                        $('footer').remove();
+                    }
+
+                    // class that strips everything out except the tabs
+                    if (frame.classList.contains("justTabs")) {
+                        $('header').remove();
+                        $('div#development-notice').remove();
+                        $('div.col-md-6').remove();
+                        $('div.col-md-18').addClass("col-md-24");
+                        $('div.col-md-18').removeClass("col-md-18");
+                        $('div#preview-content h1[id^=structuredefinition]').remove();
+                        $('div#newAsset').remove();
+                        $('table[title="Profile Details"]').remove();
+                        $('table[title="Profile Purpose"]').remove();
+                        $('div#ProfileGuidance').remove();
+                        $('div#Extensions').remove();
+                        $('div#Bindings').remove();
+                        $('div#Constraints').remove(); 
+                        $('div.elementGuidance').remove();
+                        $('footer').remove();  
+                    }
+                    else {
+                        //or more granular stripping out
+                        if (frame.classList.contains("noDevBanner")) {
+                            $('div#development-notice').remove();
+                            $('div#newAsset').remove();
+                        }
+                        if (frame.classList.contains("noFooter")) { 
+                            $('footer').remove();  
+                        }
+                        if (frame.classList.contains("noHeader")) {   
+                            $('header').remove();
+                        }
+                        if (frame.classList.contains("noSidebar")) {   
+                            //if we remove the side bar, we can expand the main panel
+                            $('div.col-md-6').remove();  
+                            $('div.col-md-18').addClass("col-md-24");
+                            $('div.col-md-18').removeClass("col-md-18");
+                        }
+                        if (frame.classList.contains("noAssetName")) {   
+                            $('div#preview-content h1[id^=structuredefinition]').remove();
+                            $('div#newAsset').remove();
+                        }
+                        if (frame.classList.contains("noDescription")) {   
+                            $('table[title="Profile Details"]').remove();
+                        }
+                        if (frame.classList.contains("noPurpose")) {   
+                            $('table[title="Profile Purpose"]').remove();
+                        }
+                        if (frame.classList.contains("noProfileGuidance")) {   
+                            $('div#ProfileGuidance').remove();
+                            $('div#Extensions').remove();
+                            $('div#Bindings').remove();
+                            $('div#Constraints').remove();
+                        }
+                        if (frame.classList.contains("noElementGuidance")) {   
+                            $('div.elementGuidance').remove();
+                        }
+                    }
+                }
+            }
+
+            // function runs on page load
+            // ordering of these can be critical as some alter classes / divs that other then rely on
+            $(function() {
+                fixTemplatingIssues();
+                transposeFQLTables();
+                detablifyUsageFQL();
+                tidyUpFQLTables();
+                //highlightBallotItems(); //comment out when not at ballot / review as it makes it easier to see!
+                createProfileSubMenus();
+                createTerminologySeparator();
+                swapReferenceExampleLinks();
+                separateOutGuidance();
+                hideMultipleClincialDataProviders();
+                expandProfileNodes();
+                fixFooterVersion();
+                alterValueSetTables();
+                swapProfileTreeLinks();
+                addCodesSortButton();
+                stripAssetNameFromSideBar();
+                wrapSideBar();
+                findCodeSystemURLS();
+                alterBaseElementOverrides();
+                sidebarClickAndOpen();
+                fixWebAccessibility();
+                redirectTreeviewElementsToPage();
+                swapFQLTableLinks();
+                addExtensionBindingsToFQLTable();
+                handleSubMenuEvents();
+                setInitialDropdownState();
+                updateFooterPosition();
+                //highlightSnippetExamples(); //prototype, un comment with caution
+                pageInIframe();
+            });
+        </script>
+
+<!-- next chunks come from Wards test Ig, and give us copy to clipboard buttons on URLs on profiles/codesystems - minified js because we can't add other js, or corss loadf from other domains due to security-->
+<!-- <script type="text/javascript" src="{{content}}/{{style-folder}}/content/assets/js/clipboard.min.js"> </script> -->
+  <script type="text/javascript">
+/*!
+ * clipboard.js v2.0.8
+ * https://clipboardjs.com/
+ *
+ * Licensed MIT © Zeno Rocha
+ */
+ !function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.ClipboardJS=e():t.ClipboardJS=e()}(this,function(){return n={686:function(t,e,n){"use strict";n.d(e,{default:function(){return o}});var e=n(279),i=n.n(e),e=n(370),u=n.n(e),e=n(817),c=n.n(e);function a(t){try{return document.execCommand(t)}catch(t){return}}var f=function(t){t=c()(t);return a("cut"),t};var l=function(t){var e,n,o,r=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{container:document.body},i="";return"string"==typeof t?(e=t,n="rtl"===document.documentElement.getAttribute("dir"),(o=document.createElement("textarea")).style.fontSize="12pt",o.style.border="0",o.style.padding="0",o.style.margin="0",o.style.position="absolute",o.style[n?"right":"left"]="-9999px",n=window.pageYOffset||document.documentElement.scrollTop,o.style.top="".concat(n,"px"),o.setAttribute("readonly",""),o.value=e,o=o,r.container.appendChild(o),i=c()(o),a("copy"),o.remove()):(i=c()(t),a("copy")),i};function r(t){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var s=function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{},e=t.action,n=void 0===e?"copy":e,o=t.container,e=t.target,t=t.text;if("copy"!==n&&"cut"!==n)throw new Error('Invalid "action" value, use either "copy" or "cut"');if(void 0!==e){if(!e||"object"!==r(e)||1!==e.nodeType)throw new Error('Invalid "target" value, use a valid Element');if("copy"===n&&e.hasAttribute("disabled"))throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');if("cut"===n&&(e.hasAttribute("readonly")||e.hasAttribute("disabled")))throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes')}return t?l(t,{container:o}):e?"cut"===n?f(e):l(e,{container:o}):void 0};function d(t){return(d="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function p(t,e){for(var n=0;n<e.length;n++){var o=e[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,o.key,o)}}function y(t,e){return(y=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function h(n){var o=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],function(){})),!0}catch(t){return!1}}();return function(){var t,e=m(n);return t=o?(t=m(this).constructor,Reflect.construct(e,arguments,t)):e.apply(this,arguments),e=this,!(t=t)||"object"!==d(t)&&"function"!=typeof t?function(t){if(void 0!==t)return t;throw new ReferenceError("this hasn't been initialised - super() hasn't been called")}(e):t}}function m(t){return(m=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function v(t,e){t="data-clipboard-".concat(t);if(e.hasAttribute(t))return e.getAttribute(t)}var o=function(){!function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&y(t,e)}(r,i());var t,e,n,o=h(r);function r(t,e){var n;return function(t){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this),(n=o.call(this)).resolveOptions(e),n.listenClick(t),n}return t=r,n=[{key:"copy",value:function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{container:document.body};return l(t,e)}},{key:"cut",value:function(t){return f(t)}},{key:"isSupported",value:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:["copy","cut"],t="string"==typeof t?[t]:t,e=!!document.queryCommandSupported;return t.forEach(function(t){e=e&&!!document.queryCommandSupported(t)}),e}}],(e=[{key:"resolveOptions",value:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{};this.action="function"==typeof t.action?t.action:this.defaultAction,this.target="function"==typeof t.target?t.target:this.defaultTarget,this.text="function"==typeof t.text?t.text:this.defaultText,this.container="object"===d(t.container)?t.container:document.body}},{key:"listenClick",value:function(t){var e=this;this.listener=u()(t,"click",function(t){return e.onClick(t)})}},{key:"onClick",value:function(t){var e=t.delegateTarget||t.currentTarget,t=s({action:this.action(e),container:this.container,target:this.target(e),text:this.text(e)});this.emit(t?"success":"error",{action:this.action,text:t,trigger:e,clearSelection:function(){e&&e.focus(),document.activeElement.blur(),window.getSelection().removeAllRanges()}})}},{key:"defaultAction",value:function(t){return v("action",t)}},{key:"defaultTarget",value:function(t){t=v("target",t);if(t)return document.querySelector(t)}},{key:"defaultText",value:function(t){return v("text",t)}},{key:"destroy",value:function(){this.listener.destroy()}}])&&p(t.prototype,e),n&&p(t,n),r}()},828:function(t){var e;"undefined"==typeof Element||Element.prototype.matches||((e=Element.prototype).matches=e.matchesSelector||e.mozMatchesSelector||e.msMatchesSelector||e.oMatchesSelector||e.webkitMatchesSelector),t.exports=function(t,e){for(;t&&9!==t.nodeType;){if("function"==typeof t.matches&&t.matches(e))return t;t=t.parentNode}}},438:function(t,e,n){var u=n(828);function i(t,e,n,o,r){var i=function(e,n,t,o){return function(t){t.delegateTarget=u(t.target,n),t.delegateTarget&&o.call(e,t)}}.apply(this,arguments);return t.addEventListener(n,i,r),{destroy:function(){t.removeEventListener(n,i,r)}}}t.exports=function(t,e,n,o,r){return"function"==typeof t.addEventListener?i.apply(null,arguments):"function"==typeof n?i.bind(null,document).apply(null,arguments):("string"==typeof t&&(t=document.querySelectorAll(t)),Array.prototype.map.call(t,function(t){return i(t,e,n,o,r)}))}},879:function(t,n){n.node=function(t){return void 0!==t&&t instanceof HTMLElement&&1===t.nodeType},n.nodeList=function(t){var e=Object.prototype.toString.call(t);return void 0!==t&&("[object NodeList]"===e||"[object HTMLCollection]"===e)&&"length"in t&&(0===t.length||n.node(t[0]))},n.string=function(t){return"string"==typeof t||t instanceof String},n.fn=function(t){return"[object Function]"===Object.prototype.toString.call(t)}},370:function(t,e,n){var f=n(879),l=n(438);t.exports=function(t,e,n){if(!t&&!e&&!n)throw new Error("Missing required arguments");if(!f.string(e))throw new TypeError("Second argument must be a String");if(!f.fn(n))throw new TypeError("Third argument must be a Function");if(f.node(t))return c=e,a=n,(u=t).addEventListener(c,a),{destroy:function(){u.removeEventListener(c,a)}};if(f.nodeList(t))return o=t,r=e,i=n,Array.prototype.forEach.call(o,function(t){t.addEventListener(r,i)}),{destroy:function(){Array.prototype.forEach.call(o,function(t){t.removeEventListener(r,i)})}};if(f.string(t))return t=t,e=e,n=n,l(document.body,t,e,n);throw new TypeError("First argument must be a String, HTMLElement, HTMLCollection, or NodeList");var o,r,i,u,c,a}},817:function(t){t.exports=function(t){var e,n="SELECT"===t.nodeName?(t.focus(),t.value):"INPUT"===t.nodeName||"TEXTAREA"===t.nodeName?((e=t.hasAttribute("readonly"))||t.setAttribute("readonly",""),t.select(),t.setSelectionRange(0,t.value.length),e||t.removeAttribute("readonly"),t.value):(t.hasAttribute("contenteditable")&&t.focus(),n=window.getSelection(),(e=document.createRange()).selectNodeContents(t),n.removeAllRanges(),n.addRange(e),n.toString());return n}},279:function(t){function e(){}e.prototype={on:function(t,e,n){var o=this.e||(this.e={});return(o[t]||(o[t]=[])).push({fn:e,ctx:n}),this},once:function(t,e,n){var o=this;function r(){o.off(t,r),e.apply(n,arguments)}return r._=e,this.on(t,r,n)},emit:function(t){for(var e=[].slice.call(arguments,1),n=((this.e||(this.e={}))[t]||[]).slice(),o=0,r=n.length;o<r;o++)n[o].fn.apply(n[o].ctx,e);return this},off:function(t,e){var n=this.e||(this.e={}),o=n[t],r=[];if(o&&e)for(var i=0,u=o.length;i<u;i++)o[i].fn!==e&&o[i].fn._!==e&&r.push(o[i]);return r.length?n[t]=r:delete n[t],this}},t.exports=e,t.exports.TinyEmitter=e}},r={},o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},o(686).default;function o(t){if(r[t])return r[t].exports;var e=r[t]={exports:{}};return n[t](e,e.exports,o),e.exports}var n,r});
+  </script>
+  <!-- <script type="text/javascript" src="{{content}}/{{style-folder}}/content/assets/js/clipboard-btn.js"> </script> -->
+  <script type="text/javascript">
+// Tooltip
+$('.btn-copy').tooltip({
+  trigger: 'hover',
+  placement: 'bottom' 
+});
+
+function setTooltip(message) {
+  button = $(event.target)
+  oldMsg = button.tooltip().attr('data-original-title')
+  button.tooltip()
+    .attr('data-original-title', message)
+    .tooltip('show');
+  setTimeout(function() {
+    button.tooltip()
+    .attr('data-original-title', oldMsg)
+    .tooltip('hide');
+  }, 1000);
+}
+
+// Clipboard
+
+var clipboard = new ClipboardJS('.btn-copy');
+
+clipboard.on('success', function(e) {
+  setTooltip('Copied!');
+});
+
+clipboard.on('error', function(e) {
+  setTooltip('Failed :( - copy manually');
+});
+  </script>
+
+
+<!-- next chunk handles a cookie consent popup bar on first view -->
+  <script>function initCookieConsentBar(){!1!=$.areCookiesEnabled()&&((void 0===(level=(bar=document.getElementsByClassName("cookie-consent")[0]).dataset.level)||level>=50)&&(level=1),(void 0===(duration=bar.dataset.duration)||duration>8760)&&(duration=8),$.cookie("cookie-consent",level,36e5*duration),showCookieConsentBar())}function showCookieConsentBar(){bar=document.getElementsByClassName("cookie-consent")[0],button=document.getElementsByClassName("cookie-accept")[0],setEventListeners(),fadeIn(bar,250)}function setEventListeners(){void 0===(level=button.dataset.level)&&(level=50),(void 0===(duration=button.dataset.duration)||duration>8760)&&(duration=8),button.addEventListener("click",function(){$.cookie("cookie-consent",level,36e5*duration),fadeOut(bar,250)})}function fadeIn(e,o){var t=e.style;t.opacity=0,t.display="block",function e(){(t.opacity-=-.1)>.9||setTimeout(e,o/10)}()}function fadeOut(e,o){var t=e.style;t.opacity=1,function e(){(t.opacity-=.1)<.1?t.display="none":setTimeout(e,o/10)}()}$.areCookiesEnabled=function(){try{document.cookie="cookietest=1";var e=-1!=document.cookie.indexOf("cookietest=");return document.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(o){return!1}},$.cookie=function(e,o,t){if(arguments.length<2){for(var n=document.cookie.split(";"),i=0;i<n.length;i++){var s=n[i].replace(/^\s+/,"");if(0==s.indexOf(e+"="))return decodeURIComponent(s.substring(e.length+1).split("+").join(" "))}return null}var a=new Date;a.setTime(a.getTime()+t),document.cookie=e+"="+encodeURIComponent(o)+(t?";expires="+a.toGMTString():"")+";path=/"},document.addEventListener("DOMContentLoaded",function(){var e=$.cookie("cookie-consent");console.log(e),null===e?initCookieConsentBar():e>0&&e<50&&showCookieConsentBar()});
+</script>
+
+</html>

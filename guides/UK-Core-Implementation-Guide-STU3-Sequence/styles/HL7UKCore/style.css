@@ -1,0 +1,644 @@
+html, body {
+     padding: 0;
+     margin: 0;
+}
+ body {
+     position: relative;
+     height: 100%;
+}
+ body header {
+     background-color: #f5f5f5;
+}
+ body header .title {
+     font-size: 24px;
+     font-weight: 700;
+     padding-top: 23px;
+}
+ body header .title a {
+     color: #222;
+     text-decoration: none;
+}
+ body header h3 {
+     text-align: center;
+}
+ body header .hl7-fhir-logo-lhs {
+     text-align: left;
+     margin-top: 7px;
+     margin-bottom: 5px;
+}
+ body header .hl7-logo {
+     text-align: right;
+     float: left;
+}
+ body header .guide-title {
+    font-size: 18px;
+    margin-top: 18px;
+}
+ body .content {
+     overflow: hidden;
+     min-height: 70%;
+     position: relative;
+     height: auto !important;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
+}
+ body footer {
+     background-color: #dddddd;
+     color: #222;
+     height: 105px;
+     position: relative;
+     padding-top: 40px;
+}
+ body .logos {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+}
+ .logocolumn {
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+}
+ .logorow::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+a {
+color:revert;
+}
+
+hr {
+    height: 1px;
+    background-color:#eee;
+}
+hr.thickline{
+    height: 2px;
+    background-color:#990000;
+}
+
+ .tab {
+     overflow: hidden;
+     border: 1px solid #ccc;
+     background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+ .tab button {
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 14px;
+}
+/* Change background color of buttons on hover */
+ .tab button:hover {
+     background-color: #ddd;
+}
+/* Create an active/current tablink class */
+ .tab button.active {
+     background-color: #990000;
+     color: #fff;
+}
+/* Style the tab content */
+ .tabcontent {
+     display: none;
+     padding: 6px 12px;
+     border: 1px solid #ccc;
+     border-top: none;
+}
+.tab button.feedback {
+    float: right;
+}
+
+/* css for simplifier diff/hybrid/snap buttons */
+.treetable-buttons {
+    padding-bottom: 5px !important
+}
+.tree-control button {
+     background-color: #f1f1f1 !important;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: 0.3s;
+     font-size: 14px;
+     color: #000 !important;
+}
+/* Change background color of buttons on hover */
+.tree-control button:hover {
+     background-color: #ddd !important;
+}
+/* Create an active/current tablink class */
+.tree-control button.active {
+     background-color: #990000 !important;
+     color: #fff !important;
+}
+
+/*css for simplifier tabs*/
+.cool-tabs .nav-tabs {
+     overflow: hidden;
+     border: 1px solid #ccc;
+     background-color: #f1f1f1;
+}
+.cool-tabs .nav-tabs>li>a {
+     color: #000;
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 14px;
+}
+.cool-tabs .nav-tabs>li>a:focus,.cool-tabs .nav-tabs>li>a:hover {
+    background-color: #ddd;
+}
+.cool-tabs .nav-tabs>li.active>a,.cool-tabs .nav-tabs>li.active>a:focus,.cool-tabs .nav-tabs>li.active>a:hover {
+    color: #fff;
+    background-color: #990000;
+    border-radius: 0;
+    border: 1px solid transparent;
+    border-bottom-color: transparent;
+}
+.cool-tabs .tab-content {
+    padding: 6px 12px !important;
+    color: #000 !important;
+    border: 1px solid #ccc;
+    border-top: none
+}
+.cool-tabs .tab-content .tab-pane {
+    padding-bottom: 0
+}
+
+/*core UKCore table style*/
+table.assets {
+     font-family: Arial, Helvetica, sans-serif !important;
+     border-collapse: collapse !important;
+     width: 100% !important;
+}
+table.assets td, table.assets th {
+     border: 1px solid #ddd !important;
+     padding: 8px !important;
+}
+ table.assets tr:nth-child(odd){
+    background-color: #fff;
+}
+ table.assets tr:nth-child(even){
+    background-color: #f2f2f2;
+} 
+ table.assets tr:hover {
+    background-color: #ddd !important;
+}
+table.assets tr.balloted {
+    background-color:#dff0d8 !important;
+}
+table.assets tr td.balloted {
+    background-color:#dff0d8 !important;
+}
+ table.assets th {
+     padding-top: 12px !important;
+     padding-bottom: 12px !important;
+     text-align: left !important;
+     background-color: #990000 !important;
+     color: white !important;
+}
+
+/*New Added Pages*/
+.NewAddedItem
+{
+   background-color: #dff0d8;
+}
+
+
+
+ th.width05 { width: 5%; overflow-wrap: anywhere; }
+ th.width10 { width: 10%; overflow-wrap: anywhere; }
+ th.width15 { width: 15%; overflow-wrap: anywhere; }
+ th.width20 { width: 20%; overflow-wrap: anywhere; }
+ th.width25 { width: 25%; overflow-wrap: anywhere; }
+ th.width30 { width: 30%; overflow-wrap: anywhere; }
+ th.width35 { width: 35%; overflow-wrap: anywhere; }
+ th.width40 { width: 40%; overflow-wrap: anywhere; }
+ th.width45 { width: 45%; overflow-wrap: anywhere; }
+ th.width50 { width: 50%; overflow-wrap: anywhere; }
+ th.width55 { width: 55%; overflow-wrap: anywhere; }
+ th.width60 { width: 60%; overflow-wrap: anywhere; }
+ th.width65 { width: 65%; overflow-wrap: anywhere; }
+ th.width70 { width: 70%; overflow-wrap: anywhere; }
+ th.width75 { width: 75%; overflow-wrap: anywhere; }
+
+ td.width20 { width: 20%; overflow-wrap: anywhere; }
+ td.width25 { width: 25%; overflow-wrap: anywhere; }
+ td.width30 { width: 30%; overflow-wrap: anywhere; }
+ td.width35 { width: 35%; overflow-wrap: anywhere; }
+ td.width40 { width: 40%; overflow-wrap: anywhere; }
+
+
+ th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ th.comparison-note { width: 34%; overflow-wrap: anywhere; }
+ td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ td.comparison-note { width: 34%; overflow-wrap: anywhere; }
+
+ .underconstruction {
+     display: grid;
+     background-color: rgb(255, 208, 0);
+     border: 3px solid black;
+     padding-left: 50px;
+     padding-right: 50px;
+     font-size: 20px;
+     text-align: center;
+}
+
+table.valuesetlist {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+table.valuesetlist td, table.valuesetlist th {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+table.valuesetlist tr:nth-child{
+    background-color: #f2f2f2;
+}
+table.valuesetlist tr:hover {
+    background-color: #ddd;
+}
+
+table.valuesetlist tr.balloted {
+    background-color:#dff0d8 !important;
+}
+table.valuesetlist th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #990000;
+     color: white;
+}
+/* back to top button - renders when scrolling */
+ #back-to-top {
+     position: fixed;
+     bottom: 20px;
+     right: 30px;
+     z-index: 99;
+     display: none;
+}
+/* remove the padding on pages under the header */
+ #preview-content {
+     padding-top: 0px !important;
+}
+/* bootstrap overrides */
+ .btn-fhir {
+     background: #990000;
+     color: #fff;
+}
+
+/* Firely Simplifier base style overrides */
+ .navbar-nav>li>a:hover,
+ .navbar-nav>li>a:active,
+ .navbar-nav>li>a:focus  {
+    background-color: #ddd !important;
+    color: #990000 !important;
+}
+ .container-fluid>.navbar-collapse,
+ .container-fluid>.navbar-header,
+ .container>.navbar-collapse,
+ .container>.navbar-header {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+ div>pre {
+     border: 1px solid #ddd !important;
+     background-color: #f9f9f9 !important;
+ }
+
+li.submenu-subparent{
+    list-style-type: none;
+}
+
+.submenu-list, .submenu-sublist{
+  transition: all 0.5s linear;
+  width:max-content;
+}
+.hidden , .subhidden {
+  display:none;
+}
+.visuallyhidden , .visuallysubhidden {
+  opacity: 0;
+}
+
+.submenu-list>li>a, .submenu-sublist>li>a {
+    font-weight: 400;
+    color: #333;
+    display: block;
+    padding: 3px 20px;
+    line-height: 1.42857;
+    white-space: nowrap;
+}
+
+.forceWhite {
+    background-color: #fff;
+}
+.forceGreen {
+    background-color: #dff0d8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+p.balloted {
+    background-color: #dff0d8;
+    padding: 5px 10px;
+}
+
+li.balloted {
+    background-color: #dff0d8;
+}
+
+tr.a-to-z {
+  vertical-align: top;
+}
+
+tr.frm-group {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 0px none black;
+  font-weight: bold;
+}
+
+tr.frm-group-n {
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+tr.frm-contents {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  vertical-align: top;
+}
+
+td.frm-category {
+  border-left: 1px solid #eeeeee;
+  font-weight: bold;
+  text-align: center;
+}
+
+td.frm-group {
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+
+td.frm-set {
+  border-left: 1px solid #eeeeee;
+}
+
+.rotate {
+  text-align: center;
+  vertical-align: middle;
+  width: 1.5em;
+}
+.rotate div {
+     -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+       -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+         margin-left: -4em;
+         margin-right: -10em;
+         min-height:100px;
+}
+
+
+/*recreating base simplifier table.regular class to enable display override for showing/hiding */
+#preview-content table.codes, #preview-content table.baseFhir {
+    border: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    width: 100%;
+    position: relative;
+    display: table;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    margin-bottom: 10px;
+}
+
+#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead, 
+#preview-content table.baseFhir tbody {
+    width: 100%;
+    border-color: #e0e0e0
+}
+
+
+#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child), 
+#preview-content table.baseFhir tr:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0
+}
+
+#preview-content table.codes thead th {
+    background-color: #f9f9f9
+}
+
+#preview-content table.codes tbody td, 
+#preview-content table.baseFhir tbody td {
+    background-color: #fff
+}
+
+#preview-content table.codes td,#preview-content table.codes th, 
+#preview-content table.baseFhir td,#preview-content table.baseFhir th{
+    padding: 5px;
+    color: #000;
+    border-color: #e0e0e0
+}
+
+#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child), 
+#preview-content table.baseFhir td:not(:last-child),#preview-content table.baseFhir th:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+}
+
+/* styling for nhse style sort buttons */
+.sort-icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.sort-icon,
+.sort-icon:after,
+.sort-icon:before {
+  box-sizing: border-box;
+}
+
+.sort-icon>img,
+.sort-icon>svg {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sort-icon>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.sort-icon>svg+img {
+  width: 50%;
+  height: 50%;
+}
+
+/* additional styling on headers for nhse style sort buttons */
+table.codes thead tr:first-child td.orderable button,
+table.codes thead tr:first-child th.orderable button {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3px;
+  padding: .5555555556rem;
+  border: 0;
+  color: inherit;
+  background: 0 0;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  align-items: center;
+}
+
+table.codes thead tr:first-child td.orderable button:hover .sort-icon,
+table.codes thead tr:first-child th.orderable button:hover .sort-icon {
+  margin-bottom: 0;
+  border-bottom: 3px solid #231f20;
+  color: #231f20;
+  background-color: #ddd;
+}
+
+
+/* this part adds an icon after external links, using FontAwesome*/
+a.external:after {
+     font-family: 'FontAwesome';
+   font-weight: 900;
+   content: "\f08e";
+    padding-left: 5px;
+}
+
+h2 code {
+    cursor: pointer;
+}
+
+.alert-baseFhir {
+    background-color: #f5f5f5;
+    border-color: #919ea8;
+    color: #231f20
+}
+
+.alert-baseFhir hr {
+    border-top-color: #a6e1ec
+}
+
+.alert-baseFhir .alert-link {
+    color: #245269
+}
+
+
+.copy-text .btn-copy{
+  visibility: hidden;
+  display: none;
+}
+
+.copy-text:hover .btn-copy {
+  visibility: visible;
+  display: inline-block;
+}
+
+.btn-copy {
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.copy-text .btn-copy:after {
+     font-family: 'FontAwesome';
+   font-weight: 900;
+   content: "\f0c5";
+    padding-left: 5px;
+}
+
+
+
+.cookie-consent {
+  /*Hide by default*/
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 900;
+}
+
+.cookie-consent {
+  background: #222;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  box-sizing: border-box;
+  padding: 15px 30px 15px;
+}
+
+.cookie-consent p {
+  float: left;
+  width: 80%;
+  margin: 0;
+}
+
+.cookie-consent a {
+  color: #fff;
+}
+
+.cookie-consent .btn {
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  background-color: #990000;
+  border: 1px solid transparent;
+  border-color: #fff;
+  border-radius: 7px;
+  text-align: center;
+
+  padding: 8px 15px;
+  display: block;
+  width: 20%;
+  margin-left: 10px;
+  float: right;
+  max-width: 120px;
+}
+
+.cookie-consent .btn:hover,
+.cookie-consent .btn:active {
+  background-color: #d6d8d9;
+  border-color: #c6c8ca;
+  color: #1b1e21;
+}
+
+@media (max-width: 480px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+.snippetBackground {
+    background-color: #ddd;
+}
