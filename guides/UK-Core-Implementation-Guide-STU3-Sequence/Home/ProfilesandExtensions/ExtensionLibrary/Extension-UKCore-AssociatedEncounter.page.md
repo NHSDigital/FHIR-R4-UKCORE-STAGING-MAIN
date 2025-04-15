@@ -15,7 +15,7 @@ issue: Extension-UKCore-AssociatedEncounter
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Associated Encounter</b> - An example to illustrate using the extension to indicate the encounter for which the family members condition was recorded.<br>
-{{pagelink:Example-UKCore-Extension-AssociatedEncounter}}
+{{pagelink:UKCore-Extension-AssociatedEncounter-Example}}
 </div>
 
 <h3 id="guidance-associatedencounter">Extension Specific Guidance</h3>

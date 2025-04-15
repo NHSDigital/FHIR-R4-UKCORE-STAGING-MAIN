@@ -16,7 +16,7 @@ issue: Extension-UKCore-CopyCorrespondenceIndicator
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Copy Correspondence Indicator</b>- This shows the extension that uses a Boolean value of true to indicate that the person named should be sent a copy of the correspondence.<br>
-{{pagelink:Example-UKCore-Extension-CopyCorrespondenceIndicator}}
+{{pagelink:UKCore-Extension-CopyCorrespondenceIndicator-Example}}
 <br><br>
 </div>
 

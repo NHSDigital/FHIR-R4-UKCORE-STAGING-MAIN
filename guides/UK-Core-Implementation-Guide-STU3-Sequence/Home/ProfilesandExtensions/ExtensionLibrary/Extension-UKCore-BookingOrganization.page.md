@@ -15,7 +15,7 @@ issue: Extension-UKCore-BookingOrganization
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Booking Organisation</b>- An example to illustrate the booking organisation extension associated with an appointment.<br>
-{{pagelink:Example-UKCore-Extension-BookingOrganization}}
+{{pagelink:UKCore-Extension-BookingOrganization-Example}}
 <br><br>
 </div>
 

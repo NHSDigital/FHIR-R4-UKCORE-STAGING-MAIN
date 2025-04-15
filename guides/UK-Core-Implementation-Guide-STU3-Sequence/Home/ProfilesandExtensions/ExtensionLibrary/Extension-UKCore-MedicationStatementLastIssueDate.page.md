@@ -15,7 +15,7 @@ issue: Extension-UKCore-MedicationStatementLastIssueDate
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Last Issue Date</b>- An example to illustrate the date when a prescription was last issued.<br>
-  {{pagelink:Example-UKCore-Extension-LastIssueDate}}
+  {{pagelink:UKCore-Extension-LastIssueDate-Example}}
   <br><br>
 </div>
 

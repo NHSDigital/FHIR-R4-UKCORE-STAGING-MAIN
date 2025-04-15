@@ -15,7 +15,7 @@ issue: Extension-UKCore-ListWarningCode
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>List Warning Code</b>- An example to illustrate a warning being provided in a List resource.<br>
-  {{pagelink:Example-UKCore-Extension-ListWarningCode}}
+  {{pagelink:UKCore-Extension-ListWarningCode-Example}}
   <br><br>
 </div>
 

@@ -22,7 +22,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-R
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Home Recording</b> - An example to illustrate a blood pressure recorded at home.<br>
-{{pagelink:Example-UKCore-Extension-RecordingSetting}}
+{{pagelink:UKCore-Extension-RecordingSetting-Example}}
 <br><br>
 </div>
 

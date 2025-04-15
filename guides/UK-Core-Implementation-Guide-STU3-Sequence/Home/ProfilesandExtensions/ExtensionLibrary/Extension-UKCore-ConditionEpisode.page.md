@@ -15,7 +15,7 @@ issue: Extension-UKCore-ConditionEpisode
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Condition episode</b>- An example to illustrate the extension which is used to indicate the episodicity status of a condition.<br>
-  {{pagelink:Example-UKCore-Extension-ConditionEpisode}}
+  {{pagelink:UKCore-Extension-ConditionEpisode-Example}}
 </div>
 
 <h3 id="guidance-conditionepisode">Extension Specific Guidance</h3>

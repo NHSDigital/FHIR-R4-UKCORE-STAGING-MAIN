@@ -15,7 +15,7 @@ issue: Extension-UKCore-MedicationRepeatInformation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Repeat Information</b>- An example to illustrate the specific repeat information of a medication item.<br>
-  {{pagelink:Example-UKCore-Extension-RepeatInformation}}
+  {{pagelink:UKCore-Extension-RepeatInformation-Example}}
   <br><br>
 </div>
 

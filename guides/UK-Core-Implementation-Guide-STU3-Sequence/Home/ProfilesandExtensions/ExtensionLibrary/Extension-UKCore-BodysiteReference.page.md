@@ -15,7 +15,7 @@ issue: Extension-UKCore-BodySiteReference
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Median Cubital Vein</b>- An example to illustrate the extension for a referenced body site.<br>
-  {{pagelink:Example-UKCore-Extension-BodySiteReference}}
+  {{pagelink:UKCore-Extension-BodySiteReference-Example}}
   <br><br>
 </div>
 
