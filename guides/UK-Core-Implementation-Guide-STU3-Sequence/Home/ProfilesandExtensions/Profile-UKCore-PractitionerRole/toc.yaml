@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Bindings
+  filename: Bindings.page.md
+- name: practitioner
+  filename: practitioner.page.md
+- name: organization
+  filename: organization.page.md
+- name: location
+  filename: location.page.md
+- name: healthcareService
+  filename: healthcareService.page.md
+- name: telecom
+  filename: telecom.page.md

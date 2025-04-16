@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Bindings
+  filename: Bindings.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: telecom
+  filename: telecom.page.md
+- name: address
+  filename: address.page.md
+- name: partOf
+  filename: partOf.page.md
