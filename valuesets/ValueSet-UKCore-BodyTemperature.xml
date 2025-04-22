@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-BodyTemperature" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodyTemperature" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="UKCoreBodyTemperature" />
   <title value="UK Core Body Temperature" />
   <status value="active" />
-  <date value="2023-09-12" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,23 +17,23 @@
     </telecom>
   </contact>
   <description value="A set of codes regarding laboratory medicine test requests and results intended for use by pathology services and their users. Selected from the SNOMED CT UK coding system: &#xD;&#xA;
-&#13; - DescendantOrSelfOf 386725007 | Body temperature 
+&#13; - DescendantOrSelfOf 386725007 | Body temperature |
 &#13; - MINUS
-&#13; - DescendantOrSelfOf 248458005 | Comparative temperature in limbs 
-&#13; - DescendantOrSelfOf 852591000000107 | Maximum body temperature 
-&amp;nbsp;&#13; - DescendantOrSelfOf 852601000000101 | Minimum body temperature 
-&amp;nbsp;&#13; - DescendantOrSelfOf 852581000000105 | Target body temperature 
-&amp;nbsp;&#13; - DescendantOrSelfOf 364419004 | Temperature of cervical spine 
-&amp;nbsp;&#13; - DescendantOrSelfOf 364424001 | Temperature of thoracic spine 
-&amp;nbsp;&#13; - DescendantOrSelfOf 364429006 | Temperature of lumbar spine
-&amp;nbsp;&#13; - DescendantOrSelfOf 248835004 | Temperature of breast 
-&amp;nbsp;&#13; - DescendantOrSelfOf 250124002 | Temperature of joint 
-&amp;nbsp;&#13; - DescendantOrSelfOf 431197002 | Temperature of digit 
-&amp;nbsp;&#13; - DescendantOrSelfOf 364518005 | Temperature of foot 
-&amp;nbsp;&#13; - DescendantOrSelfOf 363997004 | Temperature of pinna 
-&amp;nbsp;&#13; - DescendantOrSelfOf 364537001 | Temperature of skin 
-&amp;nbsp;&#13; - DescendantOrSelfOf 364246006 | Temperature of vagina 
-&amp;nbsp;&#13; - DescendantOrSelfOf 431598003 | Temperature of oesophagus)" />
+&#13; - DescendantOrSelfOf 248458005 | Comparative temperature in limbs |
+&#13; - DescendantOrSelfOf 852591000000107 | Maximum body temperature |
+&amp;nbsp;&#13; - DescendantOrSelfOf 852601000000101 | Minimum body temperature |
+&amp;nbsp;&#13; - DescendantOrSelfOf 852581000000105 | Target body temperature |
+&amp;nbsp;&#13; - DescendantOrSelfOf 364419004 | Temperature of cervical spine |
+&amp;nbsp;&#13; - DescendantOrSelfOf 364424001 | Temperature of thoracic spine |
+&amp;nbsp;&#13; - DescendantOrSelfOf 364429006 | Temperature of lumbar spine |
+&amp;nbsp;&#13; - DescendantOrSelfOf 248835004 | Temperature of breast |
+&amp;nbsp;&#13; - DescendantOrSelfOf 250124002 | Temperature of joint |
+&amp;nbsp;&#13; - DescendantOrSelfOf 431197002 | Temperature of digit |
+&amp;nbsp;&#13; - DescendantOrSelfOf 364518005 | Temperature of foot |
+&amp;nbsp;&#13; - DescendantOrSelfOf 363997004 | Temperature of pinna |
+&amp;nbsp;&#13; - DescendantOrSelfOf 364537001 | Temperature of skin |
+&amp;nbsp;&#13; - DescendantOrSelfOf 364246006 | Temperature of vagina | 
+&amp;nbsp;&#13; - DescendantOrSelfOf 431598003 | Temperature of oesophagus |)" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.&lt;br$gt;This value set includes content from SNOMED CT, which is copyright &#169; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
   <compose>
     <include>

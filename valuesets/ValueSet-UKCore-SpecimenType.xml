@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-SpecimenType" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenType" />
-  <version value="2.2.0" />
+  <version value="2.2.1" />
   <name value="UKCoreSpecimenType" />
   <title value="UK Core Specimen Type" />
   <status value="active" />
-  <date value="2023-04-28" />
+  <date value="2025-03-05" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -17,11 +17,11 @@
     </telecom>
   </contact>
   <description value="A set of codes to record a specimen type. Selected from the following SNOMED CT UK coding system:
-&#13; - descendantOf 49755003 | Morphologically abnormal structure
-&#13; - descendantOf 105590001 | Substance
-&#13; - descendantOf 123037004 | Body structure
-&#13; - descendantOf 123038009 | Specimen
-&#13; - descendantOf 260787004 | Physical object" />
+&#13; - descendantOf 49755003 | Morphologically abnormal structure |
+&#13; - descendantOf 105590001 | Substance |
+&#13; - descendantOf 123037004 | Body structure |
+&#13; - descendantOf 123038009 | Specimen |
+&#13; - descendantOf 260787004 | Physical object |" />
   <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <compose>
     <include>

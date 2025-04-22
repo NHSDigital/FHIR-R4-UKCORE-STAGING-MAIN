@@ -5,6 +5,10 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a pharmacist practitioner</div>
   </text>
   <identifier>
+    <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+    <value value="2298676" />
+  </identifier>
+  <identifier>
     <system value="https://fhir.nhs.uk/Id/sds-user-id" />
     <value value="P12345678" />
   </identifier>

@@ -5,7 +5,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate  a practitioner who is a doctor</div>
   </text>
   <identifier>
-    <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+    <system value="https://fhir.hl7.org.uk/Id/gmp-number" />
     <value value="G12345678" />
   </identifier>
   <name>
