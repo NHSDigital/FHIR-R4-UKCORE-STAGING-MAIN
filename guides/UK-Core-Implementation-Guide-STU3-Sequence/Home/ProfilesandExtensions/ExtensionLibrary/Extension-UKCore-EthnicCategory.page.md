@@ -15,7 +15,7 @@ issue: Extension-UKCore-EthnicCategory
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Ethnic Category</b> - An example to illustrate patient Ethnic Category information. </br>
-{{pagelink:Example-UKCore-Extension-EthnicCategory}}
+{{pagelink:UKCore-Extension-EthnicCategory-Example}}
 <br><br>
 </div>
 

@@ -15,7 +15,7 @@ issue: Extension-UKCore-Coverage
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Coverage</b>- An example to illustrate the extension for a service request, to state the the coverage of the funding for this request.<br>
-  {{pagelink:Example-UKCore-Extension-Coverage}}
+  {{pagelink:UKCore-Extension-Coverage-Example}}
   <br><br>
 </div>
 

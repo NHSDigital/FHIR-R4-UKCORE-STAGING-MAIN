@@ -16,7 +16,7 @@ issue: Extension-UKCore-ResidentialStatus
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Residential Status</b>- An example to illustrate the extension to show the patient's residential status.<br>
-{{pagelink:Example-UKCore-Extension-ResidentialStatus}}
+{{pagelink:UKCore-Extension-ResidentialStatus-Example}}
 <br><br>
 </div>
 

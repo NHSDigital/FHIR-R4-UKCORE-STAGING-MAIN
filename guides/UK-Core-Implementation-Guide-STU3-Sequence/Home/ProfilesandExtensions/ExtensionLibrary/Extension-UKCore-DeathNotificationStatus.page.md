@@ -15,7 +15,7 @@ issue: Extension-UKCore-DeathNotificationStatus
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Death notification Status</b>- An example to illustrate the extension to indicate the death notification status of the patient.<br>
-{{pagelink:Example-UKCore-Extension-DeathNotificationStatus}}
+{{pagelink:UKCore-Extension-DeathNotificationStatus-Example}}
 <br><br>
 </div>
 

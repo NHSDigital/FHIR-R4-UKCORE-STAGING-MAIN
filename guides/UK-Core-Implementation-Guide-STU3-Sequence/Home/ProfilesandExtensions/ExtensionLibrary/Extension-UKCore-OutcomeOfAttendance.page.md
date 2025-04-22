@@ -15,7 +15,7 @@ issue: Extension-UKCore-OutcomeOfAttendance
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Outcome of Attendance</b>- An example to illustrate the extension which is used to indicate the outcome of an outpatient attendance.<br>
-  {{pagelink:Example-UKCore-Extension-OutcomeOfAttendance}}
+  {{pagelink:UKCore-Extension-OutcomeOfAttendance-Example}}
   <br><br>
 </div>
 

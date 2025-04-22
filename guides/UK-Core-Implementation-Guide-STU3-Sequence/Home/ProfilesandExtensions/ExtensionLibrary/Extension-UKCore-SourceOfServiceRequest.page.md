@@ -15,7 +15,7 @@ issue: Extension-UKCore-SourceOfServiceRequest
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Source of Service Request</b>- An example to illustrate the source of service request extension associated with a service request.<br>
-{{pagelink:Example-UKCore-Extension-SourceOfServiceRequest}}
+{{pagelink:UKCore-Extension-SourceOfServiceRequest-Example}}
 <br><br>
 </div>
 

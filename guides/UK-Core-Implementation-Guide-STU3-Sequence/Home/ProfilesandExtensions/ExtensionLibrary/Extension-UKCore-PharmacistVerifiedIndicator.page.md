@@ -15,7 +15,7 @@ issue: Extension-UKCore-PharmacistVerifiedIndicator
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Pharmacist Verified Indicator</b>- An example to illustrate whether a pharmacist verified a medication.<br>
-{{pagelink:Example-UKCore-Extension-PharmacistVerifiedIndicator}}
+{{pagelink:UKCore-Extension-PharmacistVerifiedIndicator-Example}}
 <br><br>
 </div>
 

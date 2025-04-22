@@ -16,7 +16,7 @@ issue: Extension-UKCore-DeliveryChannel
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Delivery Channel</b>- An example to illustrate the delivery channel associated with an appointment.<br>
-{{pagelink:Example-UKCore-Extension-DeliveryChannel}}
+{{pagelink:UKCore-Extension-DeliveryChannel-Example}}
 <br><br>
 </div>
 

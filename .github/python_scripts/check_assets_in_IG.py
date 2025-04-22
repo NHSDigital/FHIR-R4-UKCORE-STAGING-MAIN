@@ -47,6 +47,12 @@ def list_files(folder):
     json_files = []
 
     for dirpath, dirnames, filenames in os.walk(folder):
+        dirnames[:] = [d for d in dirnames if d not in ['.git', '.github']]
+        
+        # Skip files in the root folder, as these arent FHIR assets
+        if dirpath == folder:
+            continue
+        
         for filename in filenames:
             if filename.endswith('.xml'):
                 xml_files.append(os.path.join(dirpath, filename))
@@ -63,21 +69,18 @@ def list_ig_pages(path):
     return pages
 
 
-
-
-#import_IG(ig_url, 'ryan.may2@nhs.net', 'T1gger22')
 if __name__ == "__main__":
-#    import_IG()
+    # imoprts IG and returns the ig_folder name
+    ig_folder = import_IG()
 
-    variables = openJSONFile('variables.json')
-    ig_folder = variables['ig_folder']
-    ig_path = './'+ig_folder
+
+    ig_path = './'+ig_folder+'/Home'
     ig_pages = list_ig_pages(ig_path)
     codesystem_pages = list_ig_pages(ig_path+'/Terminology/CodeSystems')
     valueset_pages = list_ig_pages(ig_path+'/Terminology/ValueSets')
 
 
-    xml_files, json_files = list_files('../../')
+    xml_files, json_files = list_files('.')
     assets = []
     dict_elements = {'url': 'url', 'name': 'name', 'status': 'status', 'id': 'id'}
     for f in xml_files:
@@ -153,14 +156,17 @@ if __name__ == "__main__":
             print(f"{asset.id} is not in the IG.")
 
     for asset in examples:
+        if '-Sn-' in asset.id: #ignore snippets
+            continue
         for page in ig_pages:
-            if asset.id.replace('-Example','') in page: #replace is workaround as IG page not the same as the id
+            #if asset.id.replace('-Example','') in page: #replace is workaround as IG page not the same as the id
+            if asset.id in page:
                 break
         else:   
             print(f"{asset.id} is not in the IG.")
-            #add_asset_to_ig(asset)
+                #add_asset_to_ig(asset)
 
 '''N.B Above does not work if asset has the same name / id as another asset.
-This should be fixed, but in mean time need to look in the specific folder '''
+This should be fixed, but in mean time the code needs to look in the specific folder '''
 
 

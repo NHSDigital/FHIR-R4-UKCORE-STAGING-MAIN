@@ -1,118 +1,118 @@
 - name: Index
   filename: Index.page.md
-- name: Example UKCore-Extension-AdditionalContact
+- name: UKCore-Extension-AdditionalContact-Example
   filename: UKCore-Extension-AdditionalContact-Example.page.md
-- name: Example UKCore-Extension-AddressKey
+- name: UKCore-Extension-AddressKey-Example
   filename: UKCore-Extension-AddressKey-Example.page.md
-- name: Example UKCore-Extension-AdmissionMethod
+- name: UKCore-Extension-AdmissionMethod-Example
   filename: UKCore-Extension-AdmissionMethod-Example.page.md
-- name: Example UKCore-Extension-AllergyIntolEnd
+- name: UKCore-Extension-AllergyIntolEnd-Example
   filename: UKCore-Extension-AllergyIntolEnd-Example.page.md
-- name: Example UKCore-Extension-AssociatedEncounter
+- name: UKCore-Extension-AssociatedEncounter-Example
   filename: UKCore-Extension-AssociatedEncounter-Example.page.md
-- name: Example UKCore-Extension-BirthPlace
+- name: UKCore-Extension-BirthPlace-Example
   filename: UKCore-Extension-BirthPlace-Example.page.md
-- name: Example UKCore-Extension-BirthSex
+- name: UKCore-Extension-BirthSex-Example
   filename: UKCore-Extension-BirthSex-Example.page.md
-- name: Example UKCore-Extension-BirthTime
+- name: UKCore-Extension-BirthTime-Example
   filename: UKCore-Extension-BirthTime-Example.page.md
-- name: Example UKCore-Extension-BodySiteReference
+- name: UKCore-Extension-BodySiteReference-Example
   filename: UKCore-Extension-BodySiteReference-Example.page.md
-- name: Example UKCore-Extension-BookingOrganization
+- name: UKCore-Extension-BookingOrganization-Example
   filename: UKCore-Extension-BookingOrganization-Example.page.md
-- name: Example UKCore-Extension-CadavericDonor
+- name: UKCore-Extension-CadavericDonor-Example
   filename: UKCore-Extension-CadavericDonor-Example.page.md
-- name: Example UKCore-Extension-CareSettingType
+- name: UKCore-Extension-CareSettingType-Example
   filename: UKCore-Extension-CareSettingType-Example.page.md
-- name: Example UKCore-Extension-CodingSCTDescId
+- name: UKCore-Extension-CodingSCTDescId-Example
   filename: UKCore-Extension-CodingSCTDescId-Example.page.md
-- name: Example UKCore-Extension-CollectionCollector
+- name: UKCore-Extension-CollectionCollector-Example
   filename: UKCore-Extension-CollectionCollector-Example.page.md
-- name: Example UKCore-Extension-CompositionReference
+- name: UKCore-Extension-CompositionReference-Example
   filename: UKCore-Extension-CompositionReference-Example.page.md
-- name: Example UKCore-Extension-ConditionEpisode
+- name: UKCore-Extension-ConditionEpisode-Example
   filename: UKCore-Extension-ConditionEpisode-Example.page.md
-- name: Example UKCore-Extension-ContactPreference
+- name: UKCore-Extension-ContactPreference-Example
   filename: UKCore-Extension-ContactPreference-Example.page.md
-- name: Example UKCore-Extension-ContactRank
+- name: UKCore-Extension-ContactRank-Example
   filename: UKCore-Extension-ContactRank-Example.page.md
-- name: Example UKCore-Extension-CopyCorrespondenceIndicator
+- name: UKCore-Extension-CopyCorrespondenceIndicator-Example
   filename: UKCore-Extension-CopyCorrespondenceIndicator-Example.page.md
-- name: Example UKCore-Extension-Coverage
+- name: UKCore-Extension-Coverage-Example
   filename: UKCore-Extension-Coverage-Example.page.md
-- name: Example UKCore-Extension-CuffSize
+- name: UKCore-Extension-CuffSize-Example
   filename: UKCore-Extension-CuffSize-Example.page.md
-- name: Example UKCore-Extension-DeathNotificationStatus
+- name: UKCore-Extension-DeathNotificationStatus-Example
   filename: UKCore-Extension-DeathNotificationStatus-Example.page.md
-- name: Example UKCore-Extension-DeliveryChannel
+- name: UKCore-Extension-DeliveryChannel-Example
   filename: UKCore-Extension-DeliveryChannel-Example.page.md
-- name: Example UKCore-Extension-DeviceReference
+- name: UKCore-Extension-DeviceReference-Example
   filename: UKCore-Extension-DeviceReference-Example.page.md
-- name: Example UKCore-Extension-DischargeMethod
+- name: UKCore-Extension-DischargeMethod-Example
   filename: UKCore-Extension-DischargeMethod-Example.page.md
-- name: Example UKCore-Extension-DiagnosticReportMediaLinkR5
+- name: UKCore-Extension-DiagnosticReportMediaLinkR5-Example
   filename: UKCore-Extension-DiagnosticReportMediaLinkR5-Example.page.md
-- name: Example UKCore-Extension-EmergencyCareDischargeStatus
+- name: UKCore-Extension-EmergencyCareDischargeStatus-Example
   filename: UKCore-Extension-EmergencyCareDischargeStatus-Example.page.md
-- name: Example UKCore-Extension-EthnicCategory
+- name: UKCore-Extension-EthnicCategory-Example
   filename: UKCore-Extension-EthnicCategory-Example.page.md
-- name: Example UKCore-Extension-Evidence
+- name: UKCore-Extension-Evidence-Example
   filename: UKCore-Extension-Evidence-Example.page.md
-- name: Example UKCore-Extension-InterpreterRequired
+- name: UKCore-Extension-InterpreterRequired-Example
   filename: UKCore-Extension-InterpreterRequired-Example.page.md
-- name: Example UKCore-Extension-LegalStatus
+- name: UKCore-Extension-LegalStatus-Example
   filename: UKCore-Extension-LegalStatus-Example.page.md
-- name: Example UKCore-Extension-LastIssueDate
+- name: UKCore-Extension-LastIssueDate-Example
   filename: UKCore-Extension-LastIssueDate-Example.page.md
-- name: Example UKCore-Extension-ListWarningCode
+- name: UKCore-Extension-ListWarningCode-Example
   filename: UKCore-Extension-ListWarningCode-Example.page.md
-- name: Example UKCore-Extension-MainLocation
+- name: UKCore-Extension-MainLocation-Example
   filename: UKCore-Extension-MainLocation-Example.page.md
-- name: Example UKCore-Extension-MedicationPrescribingOrganizationType
+- name: UKCore-Extension-MedicationPrescribingOrganizationType-Example
   filename: UKCore-Extension-MedicationPrescribingOrganizationType-Example.page.md
-- name: Example UKCore-Extension-MedicationTradeFamily
+- name: UKCore-Extension-MedicationTradeFamily-Example
   filename: UKCore-Extension-MedicationTradeFamily-Example.page.md
-- name: Example UKCore-Extension-NHSNumberUnavailableReason
+- name: UKCore-Extension-NHSNumberUnavailableReason-Example
   filename: UKCore-Extension-NHSNumberUnavailableReason-Example.page.md
-- name: Example UKCore-Extension-NHSNumberVerificationStatus
+- name: UKCore-Extension-NHSNumberVerificationStatus-Example
   filename: UKCore-Extension-NHSNumberVerificationStatus-Example.page.md
-- name: Example UKCore-Extension-Note
+- name: UKCore-Extension-Note-Example
   filename: UKCore-Extension-Note-Example.page.md
-- name: Example UKCore-Extension-OrganizationPeriod
+- name: UKCore-Extension-OrganizationPeriod-Example
   filename: UKCore-Extension-OrganizationPeriod-Example.page.md
-- name: Example UKCore-Extension-OtherContactSystem
+- name: UKCore-Extension-OtherContactSystem-Example
   filename: UKCore-Extension-OtherContactSystem-Example.page.md
-- name: Example UKCore-Extension-OutcomeOfAttendance
+- name: UKCore-Extension-OutcomeOfAttendance-Example
   filename: UKCore-Extension-OutcomeOfAttendance-Example.page.md
-- name: Example UKCore-Extension-ParentPresent
+- name: UKCore-Extension-ParentPresent-Example
   filename: UKCore-Extension-ParentPresent-Example.page.md
-- name: Example UKCore-Extension-Participant
+- name: UKCore-Extension-Participant-Example
   filename: UKCore-Extension-Participant-Example.page.md
-- name: Example UKCore-Extension-PharmacistVerifiedIndicator
+- name: UKCore-Extension-PharmacistVerifiedIndicator-Example
   filename: UKCore-Extension-PharmacistVerifiedIndicator-Example.page.md
-- name: Example UKCore-Extension-PriorityReason
+- name: UKCore-Extension-PriorityReason-Example
   filename: UKCore-Extension-PriorityReason-Example.page.md
-- name: Example UKCore-Extension-PriorityReason-SendingAsText
+- name: UKCore-Extension-PriorityReason-SendingAsText-Example
   filename: UKCore-Extension-PriorityReason-SendingAsText-Example.page.md
-- name: Example UKCore-Extension-RecordingSetting
+- name: UKCore-Extension-RecordingSetting-Example
   filename: UKCore-Extension-RecordingSetting-Example.page.md
-- name: Example UKCore-Extension-RepeatInformation
+- name: UKCore-Extension-RepeatInformation-Example
   filename: UKCore-Extension-RepeatInformation-Example.page.md
-- name: Example UKCore-Extension-ResidentialStatus
+- name: UKCore-Extension-ResidentialStatus-Example
   filename: UKCore-Extension-ResidentialStatus-Example.page.md
-- name: Example UKCore-Extension-SampleCategory
+- name: UKCore-Extension-SampleCategory-Example
   filename: UKCore-Extension-SampleCategory-Example.page.md
-- name: Example UKCore-Extension-SampleCategory-PheobeSmitham
+- name: UKCore-Extension-SampleCategory-PheobeSmitham-Example
   filename: UKCore-Extension-SampleCategory-PheobeSmitham-Example.page.md
-- name: Example UKCore-Extension-SourceOfServiceRequest
+- name: UKCore-Extension-SourceOfServiceRequest-Example
   filename: UKCore-Extension-SourceOfServiceRequest-Example.page.md
-- name: Example UKCore-Extension-SpecialHandling
+- name: UKCore-Extension-SpecialHandling-Example
   filename: UKCore-Extension-SpecialHandling-Example.page.md
-- name: Example UKCore-Extension-SpecimenCollectionCollector
+- name: UKCore-Extension-SpecimenCollectionCollector-Example
   filename: UKCore-Extension-SpecimenCollectionCollector-Example.page.md
-- name: Example UKCore-Extension-TriggeredBy
+- name: UKCore-Extension-TriggeredBy-Example
   filename: UKCore-Extension-TriggeredBy-Example.page.md
-- name: Example UKCore-Extension-VaccinationProcedure
+- name: UKCore-Extension-VaccinationProcedure-Example
   filename: UKCore-Extension-VaccinationProcedure-Example.page.md
-- name: Example UKCore-Extension-VaccinationProcedure-COVID
+- name: UKCore-Extension-VaccinationProcedure-COVID-Example
   filename: UKCore-Extension-VaccinationProcedure-COVID-Example.page.md

@@ -15,7 +15,7 @@ issue: Extension-UKCore-MedicationTradeFamily
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Medication Trade family</b>- An example to illustrate the use of a trade family or brand.<br>
-  {{pagelink:Example-UKCore-Extension-MedicationTradeFamily}}
+  {{pagelink:UKCore-Extension-MedicationTradeFamily-Example}}
   <br><br>
 </div>
 

@@ -15,7 +15,7 @@ issue: Extension-UKCore-ParentPresent
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Parent Present</b>- An example to illustrate the extension for a vaccination procedure where the parent of the patient is present.<br>
-  {{pagelink:Example-UKCore-Extension-ParentPresent}}
+  {{pagelink:UKCore-Extension-ParentPresent-Example}}
   <br><br>
 </div>
 

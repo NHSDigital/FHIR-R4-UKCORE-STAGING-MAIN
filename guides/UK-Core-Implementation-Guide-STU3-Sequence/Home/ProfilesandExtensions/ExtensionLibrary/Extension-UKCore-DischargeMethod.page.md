@@ -15,7 +15,7 @@ issue: Extension-UKCore-DischargeMethod
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Discharge Method</b>- An example to illustrate the extension for an encounter to support the method of discharge from a hospital.<br>
-  {{pagelink:Example-UKCore-Extension-DischargeMethod}}
+  {{pagelink:UKCore-Extension-DischargeMethod-Example}}
   <br><br>
 </div>
 

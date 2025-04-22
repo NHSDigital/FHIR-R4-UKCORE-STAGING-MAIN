@@ -15,10 +15,10 @@ issue: Extension-UKCore-PriorityReason
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a SNOMED CT concept, for a service request marked as urgent.<br>
-{{pagelink:Example-UKCore-Extension-PriorityReason}}
+{{pagelink:UKCore-Extension-PriorityReason-Example}}
 <br><br>
   <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a plain text reason, for a service request marked as urgent.<br>
-{{pagelink:Example-UKCore-Extension-PriorityReason-SendingAsText}}
+{{pagelink:UKCore-Extension-PriorityReason-SendingAsText-Example}}
 <br><br>
 </div>
 

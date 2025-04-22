@@ -15,7 +15,7 @@ issue: Extension-UKCore-CodingSCTDescDisplay
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Coding SNOMED CT Description Id</b>- An example to illustrate the extension of adding a SNOMED CT description Id and display Term.<br>
-{{pagelink:Example-UKCore-Extension-CodingSCTDescId}}
+{{pagelink:UKCore-Extension-CodingSCTDescId-Example}}
 <br><br>
 </div>
 

@@ -9,7 +9,6 @@ def import_IG():
     '''imports the latest version of the ig from the url provided and adds it the guides folder'''
     #load_dotenv()
     variables = openJSONFile('.github/python_scripts/variables.json')
-    
     ig_url = variables['ig_url']
     ig_folder = variables['ig_folder']
     username = os.getenv("simplifier_username")
@@ -33,7 +32,7 @@ def import_IG():
     else:
         print(f"Failed to download ZIP: {response.status_code} - {response.text}")
 
-    return
+    return ig_folder
 
 if __name__ == "__main__":
     import_IG()
