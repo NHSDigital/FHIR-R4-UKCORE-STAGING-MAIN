@@ -3,11 +3,11 @@ from zipfile import ZipFile
 import os
 from io import BytesIO
 from update_json import openJSONFile
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 def import_IG():
     '''imports the latest version of the ig from the url provided and adds it the guides folder'''
-    load_dotenv()
+    #load_dotenv()
     variables = openJSONFile('.github/python_scripts/variables.json')
     ig_url = variables['ig_url']
     ig_folder = variables['ig_folder']
