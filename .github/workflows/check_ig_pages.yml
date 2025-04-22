@@ -1,6 +1,5 @@
 name: Check IG Pages
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 env:
   simplifier_username: ${{secrets.SIMPLIFIER_USERNAME}}
