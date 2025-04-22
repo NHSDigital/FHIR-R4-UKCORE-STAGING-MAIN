@@ -2,4 +2,4 @@ Examples/org.hl7.fhir.validator.jar
 .idea
 .simplifier/quality.control.result.json
 .simplifier/folder.settings.json
-.env.env
+.env
