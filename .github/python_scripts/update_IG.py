@@ -3,6 +3,7 @@ from zipfile import ZipFile
 import os
 from io import BytesIO
 from update_json import openJSONFile
+from dotenv import load_dotenv
 
 def import_IG():
     '''imports the latest version of the ig from the url provided and adds it the guides folder'''
@@ -11,6 +12,7 @@ def import_IG():
     ig_folder = variables['ig_folder']
     username = os.getenv("SIMPLIFIER_USERNAME")
     password = os.getenv("SIMPLIFIER_PASSWORD")
+    
     response = requests.get(ig_url, auth=(username, password))
 
     if response.status_code == 200:
