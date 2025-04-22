@@ -3,3 +3,4 @@ Examples/org.hl7.fhir.validator.jar
 .simplifier/quality.control.result.json
 .simplifier/folder.settings.json
 .env
+.github/python_scripts/__pycache__
