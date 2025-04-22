@@ -13,7 +13,7 @@
 - name: Extension UKCore-BirthSex
   filename: Extension-UKCore-BirthSex.page.md
 - name: Extension UKCore-BodySiteReference
-  filename: Extension-UKCore-BodysiteReference.page.md
+  filename: Extension-UKCore-BodySiteReference.page.md
 - name: Extension UKCore-BookingOrganization
   filename: Extension-UKCore-BookingOrganization.page.md
 - name: Extension UKCore-CareSettingType
