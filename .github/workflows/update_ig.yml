@@ -8,8 +8,8 @@ on:
       - reopened
 
 env:
-  simplifier_username: ${{secrets:SIMPLIFIER_USERNAME}}
-  simplifier_password: ${{secrets:SIMPLIFIER_PASSWORD}}
+  simplifier_username: ${{secrets.SIMPLIFIER_USERNAME}}
+  simplifier_password: ${{secrets.SIMPLIFIER_PASSWORD}}
 jobs:
   update_IG:
     runs-on: ubuntu-latest
