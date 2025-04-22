@@ -13,5 +13,5 @@ def getJSONElement(jsonFile, element):
     try:
         return jsonFile[element]
     except KeyError:
-        print(f"the element {element} wsa not found")
+        print(f"the element {element} was not found")
         return None
