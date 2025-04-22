@@ -15,7 +15,7 @@ issue: Extension-UKCore-MainLocation
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Main Location</b>- An example to illustrate the extension of an organisation to carry the main location of that organisation.</br>
-{{pagelink:Example-UKCore-Extension-MainLocation}}
+{{pagelink:UKCore-Extension-MainLocation-Example}}
 <br><br>
 </div>
 

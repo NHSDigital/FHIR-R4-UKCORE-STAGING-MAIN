@@ -15,7 +15,7 @@ issue: Extension-UKCore-AddressKey
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Address Key</b>- An example to illustrate how the address key information is carried in a patient example. </br>
-{{pagelink:Example-UKCore-Extension-AddressKey}}
+{{pagelink:UKCore-Extension-AddressKey-Example}}
 <br><br>
 </div>
 

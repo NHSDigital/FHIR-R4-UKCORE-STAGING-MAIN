@@ -15,10 +15,10 @@ issue: Extension-UKCore-SampleCategory
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Sample Category</b>- An example to illustrate the extension to show the Genomics classification of a sample.<br>
-{{pagelink:Example-UKCore-Extension-SampleCategory}}
+{{pagelink:UKCore-Extension-SampleCategory-Example}}
 <br><br>
  <b>Germline Specimen Sample</b>- An example to illustrate the extension to show the classification of Germline Specimen Sample.<br>
-{{pagelink:Example-UKCore-Extension-SampleCategory-PheobeSmitham}} 
+{{pagelink:UKCore-Extension-SampleCategory-PheobeSmitham-Example}} 
 <br><br>
 </div>
 

@@ -7,11 +7,12 @@ from dotenv import load_dotenv
 
 def import_IG():
     '''imports the latest version of the ig from the url provided and adds it the guides folder'''
-    variables = openJSONFile('variables.json')
+    load_dotenv()
+    variables = openJSONFile('.github/python_scripts/variables.json')
     ig_url = variables['ig_url']
     ig_folder = variables['ig_folder']
-    username = os.getenv("SIMPLIFIER_USERNAME")
-    password = os.getenv("SIMPLIFIER_PASSWORD")
+    username = os.getenv("simplifier_username")
+    password = os.getenv("simplifier_password")
     
     response = requests.get(ig_url, auth=(username, password))
 
@@ -31,7 +32,7 @@ def import_IG():
     else:
         print(f"Failed to download ZIP: {response.status_code} - {response.text}")
 
-    return
+    return ig_folder
 
 if __name__ == "__main__":
     import_IG()

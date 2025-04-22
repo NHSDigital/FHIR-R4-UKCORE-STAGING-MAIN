@@ -20,7 +20,7 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>media.link R5 Backport extension</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to link a DocumentReference resource rather than a Media Resource<br>
-  {{pagelink:Example-UKCore-Extension-DiagnosticReportMediaLinkR5}}
+  {{pagelink:UKCore-Extension-DiagnosticReportMediaLinkR5-Example}}
   <br><br>
 </div>
 <h3 id="guidance-diagnosticreportcomposition">Extension Specific Guidance</h3>

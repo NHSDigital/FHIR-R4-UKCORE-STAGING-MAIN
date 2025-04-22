@@ -16,7 +16,7 @@ issue: Extension-UKCore-CareSettingType
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Care Setting Type</b>- An example to illustrate the care setting of a FHIR document.<br>
-{{pagelink:Example-UKCore-Extension-CareSettingType}}
+{{pagelink:UKCore-Extension-CareSettingType-Example}}
 <br><br>
 </div>
 

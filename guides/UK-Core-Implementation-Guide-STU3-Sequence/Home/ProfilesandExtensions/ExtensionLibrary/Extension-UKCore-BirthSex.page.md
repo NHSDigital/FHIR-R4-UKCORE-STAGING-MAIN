@@ -15,7 +15,7 @@ issue: Extension-UKCore-BirthSex
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Birth Sex</b>- An example to illustrate the extension for a patient's birth sex.<br>
-  {{pagelink:Example-UKCore-Extension-BirthSex}}
+  {{pagelink:UKCore-Extension-BirthSex-Example}}
   <br><br>
 </div>
 

@@ -15,7 +15,7 @@ issue: Extension-UKCore-MedicationPrescribingOrganizationType
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Prescribing Organisation</b>- An example to illustrate the type of organisation or setting responsible for authorising and issuing a medication, but not the organisation or setting delivering the patient care.<br>
-  {{pagelink:Example-UKCore-Extension-MedicationPrescribingOrganizationType}}
+  {{pagelink:UKCore-Extension-MedicationPrescribingOrganizationType-Example}}
   <br><br>
 </div>
 
