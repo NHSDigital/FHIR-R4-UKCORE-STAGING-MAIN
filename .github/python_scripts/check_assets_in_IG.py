@@ -2,14 +2,12 @@
 
 
 import xml.etree.ElementTree as ET
-from update_IG import import_IG
-from update_json import *
 import os
 
 class FHIRAsset:
-    def __init__(self, url, name, status, id, filename, baseDefinition):
+    def __init__(self, url, title, status, id, filename, baseDefinition):
         self.url = url
-        self.name = name
+        self.title = title
         self.status = status
         self.id = id
         self.filename = filename
@@ -17,7 +15,7 @@ class FHIRAsset:
         self.context = None
 
     def __repr__(self):
-        return f"FHIRAsset(url={self.url}, name={self.name}, status={self.status}, id={self.id}, filename={self.filename}), baseDefinition={self.baseDefinition})"
+        return f"FHIRAsset(url={self.url}, name={self.title}, status={self.status}, id={self.id}, filename={self.filename}), baseDefinition={self.baseDefinition})"
     
 def openXMLFile(xml_file):        
     try:
@@ -71,16 +69,12 @@ def list_files(folder):
                 json_files.append(os.path.join(dirpath, filename))
     return xml_files, json_files
 
-def list_ig_pages(path):
-    '''returns a list of all the files within a folder'''
-    pages = []
-    for dirpath, dirnames, filenames in os.walk(path):
-        for filename in filenames:
-            pages.append(os.path.join(dirpath, filename))
-    return pages
-
 
 if __name__ == "__main__":
+    from update_IG import import_IG, list_ig_pages
+    from update_json import *
+    from create_pages import *
+
     # imoprts IG and returns the ig_folder name
     ig_folder = import_IG()
 
@@ -88,11 +82,13 @@ if __name__ == "__main__":
     ig_path = './'+ig_folder+'/Home'
     ig_pages = list_ig_pages(ig_path)
     
-    '''!!!!!!!!! add str path to variables!!!!!!!!!!!!!!'''
+    '''!!!!!!!!! add str path to variables.json!!!!!!!!!!!!!!'''
     extension_path = ig_path+'/ProfilesandExtensions/ExtensionLibrary'
     profile_path = ig_path+'/ProfilesandExtensions'
     codesystem_path = ig_path+'/Terminology/CodeSystems'
     valueset_path = ig_path+'/Terminology/ValueSets'
+    examples_profile_path = ig_path+'/Examples/Profile-Examples'
+    examples_extension_path = ig_path+'/Examples/Extension-Examples'
 
     codesystem_pages = list_ig_pages(codesystem_path)
     valueset_pages = list_ig_pages(valueset_path)
@@ -100,13 +96,21 @@ if __name__ == "__main__":
 
     xml_files, json_files = list_files('.')
     assets = []
-    dict_elements = {'url': 'url', 'name': 'name', 'status': 'status', 'id': 'id', 'baseDefinition': 'baseDefinition'}
-    for f in xml_files:
+    dict_elements = {'url': 'url', 'title': 'title', 'status': 'status', 'id': 'id', 'baseDefinition': 'baseDefinition'}
+    for filename in xml_files:
         asset_elements = dict_elements.copy()
-        data = openXMLFile(f)
+        data = openXMLFile(filename)
         for key in dict_elements:
             asset_elements[key] = getXMLElement(data, key)
-        asset = FHIRAsset(asset_elements['url'], asset_elements['name'], asset_elements['status'], asset_elements['id'], f, asset_elements['baseDefinition'])
+        asset = FHIRAsset(
+            asset_elements['url'], 
+            asset_elements['title'], 
+            asset_elements['status'], 
+            asset_elements['id'], 
+            filename, 
+            asset_elements['baseDefinition']
+            )
+        
         try:
             if 'extension' in asset.url.lower():
                 asset.context = get_extension_context_expression(data)
@@ -114,15 +118,10 @@ if __name__ == "__main__":
             pass
         assets.append(asset)
 
-    '''all assets are within assets.
-
+    '''
     todo:
-    add asset.filename for bug checking
-    sort assets in Profiles, extensions, etc
-    check asset in IG
-    add new page if not in ig
-    check if asset is newly ammended
-    create ignore list
+    add examples to index page
+    check if asset is newly amended
     '''
     profiles = []
     extensions = []
@@ -153,7 +152,7 @@ if __name__ == "__main__":
                 break
         else:   
             print(f"{asset.id} is not in the IG.")
-            #add_asset_to_ig(asset)
+            #create_Profile_page(asset, profile_path)
 
     for asset in extensions:
         for page in ig_pages:
@@ -161,7 +160,8 @@ if __name__ == "__main__":
                 break
         else:   
             print(f"{asset.id} is not in the IG.")
-            #add_asset_to_ig(asset)
+            create_Extension_page(asset, extension_path)
+    create_toc(extension_path)
 
     for asset in valuesets:
         for page in valueset_pages:
@@ -169,25 +169,31 @@ if __name__ == "__main__":
                 break
         else:   
             print(f"{asset.id} is not in the IG.")
-            #add_asset_to_ig(asset)
+            create_Terminology_page(asset, valueset_path, 'ValueSet')
+    create_toc(valueset_path)
 
     for asset in codesystems:
         for page in codesystem_pages:
             if asset.id in page:
                 break
         else:   
-            print(f"{asset.id} is not in the IG.")
+            create_Terminology_page(asset, codesystem_path, 'CodeSystem')
+    create_toc(codesystem_path)
 
     for asset in examples:
         if '-Sn-' in asset.id: #ignore snippets
             continue
         for page in ig_pages:
-            #if asset.id.replace('-Example','') in page: #replace is workaround as IG page not the same as the id
             if asset.id in page:
                 break
         else:   
             print(f"{asset.id} is not in the IG.")
-                #add_asset_to_ig(asset)
+            if 'extension' in asset.id.lower():
+                create_Example_page(asset, examples_extension_path)
+            else:
+                create_Example_page(asset, examples_profile_path)
+    create_toc(examples_profile_path)
+    create_toc(examples_extension_path)
 
 '''N.B Above does not work if asset has the same name / id as another asset.
 This should be fixed, but in mean time the code needs to look in the specific folder '''

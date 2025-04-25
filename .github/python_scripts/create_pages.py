@@ -1,5 +1,5 @@
-from check_assets_in_IG import FHIRAsset
 import os
+from update_IG import list_ig_pages
 
 
 def create_Profile_page(asset, path):
@@ -103,11 +103,72 @@ issue: {asset.id}
         print(f"File '{path}/{asset.id}.page.md' already exists.")
         return  
 
+def create_Terminology_page(asset, path, terminology_type):
+    try:
+        with open(path+"/"+asset.id+".page.md", "x") as file:
+            print(f'''
+---
+subject: {asset.url}
+issue: {asset.id}
+---
+## {asset.title}
 
+{{{{page:{terminology_type}Template}}}}
+    ''', file=file)
+        return
+    except FileExistsError:
+        print(f"File '{path}/{asset.id}.page.md' already exists.")
+        return  
+    
+def create_Example_page(asset, path):
+    try:
+        with open(path+"/"+asset.id+".page.md", "x") as file:
+            print(f'''
+---
+subject: {asset.id}
+---
+{{page:ExampleTemplate}}
+    ''', file=file)
+        return
+    except FileExistsError:
+        print(f"File '{path}/{asset.id}.page.md' already exists.")
+        return  
 
+def create_toc(path):
+    pages = sorted(list_ig_pages(path))
+    with open(path+"/toc.yaml", "w") as file:
+        print(f'''- name: Index
+  filename: Index.page.md''', file=file)
+        for page in pages:
+            if any(keyword in page.lower() for keyword in ['template', 'toc', 'index']):
+                continue
+            filename = page.split('/')[-1]
+            name = filename.split('.')[0]
+            print(f'''- name: {name}
+  filename: {filename}''', file=file)
+    return
 
+def create_profile_toc(path):
+    subfolders = sorted([f.name for f in os.scandir(path) if f.is_dir()])
+    with open(path+"/toc.yaml", "w") as file:
+        print(f'''- name: Index
+  filename: Index
+- name: Extensions Index
+  filename: Extensions-Index
+- name: All Extensions
+  filename: ExtensionLibrary
+- name: Profiles Index
+  filename: ProfilesIndex.page.md''', file=file)
+        for subfolder in subfolders:
+                if any(keyword in subfolder.lower() for keyword in ['template', 'toc', 'index', 'extension']):
+                    continue
+                print(f'''- name: {subfolder}
+  filename: {subfolder}''', file=file)
+        return
 
 if __name__ == "__main__":
+    from check_assets_in_IG import FHIRAsset, list_ig_pages
+
     asset = FHIRAsset('https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest','ServiceRequest', 'active', 'UKCore-ServiceRequest', 'UKCore-ServiceRequest.xml', 'http://hl7.org/fhir/StructureDefinition/ServiceRequest')
 
     ig_folder =  "guides/UK-Core-Implementation-Guide-STU3-Sequence"
@@ -120,4 +181,11 @@ if __name__ == "__main__":
     valueset_path = ig_path+'/Terminology/ValueSets'
     #create_Profile_page(asset, profile_path)
     asset.context = ['Condition', 'Observation']
-    create_Extension_page(asset, extension_path)
+    #create_Extension_page(asset, extension_path)
+    #create_Terminology_page(asset, valueset_path, 'ValueSet')
+
+    #create_toc(codesystem_path)
+    create_profile_toc(profile_path)
+
+
+    

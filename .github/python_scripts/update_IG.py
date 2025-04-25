@@ -34,5 +34,13 @@ def import_IG():
 
     return ig_folder
 
+def list_ig_pages(path):
+    '''returns a list of all the files within a folder'''
+    pages = []
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in filenames:
+            pages.append(os.path.join(dirpath, filename))
+    return pages
+
 if __name__ == "__main__":
     import_IG()
