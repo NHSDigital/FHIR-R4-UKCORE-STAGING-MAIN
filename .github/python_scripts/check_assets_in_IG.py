@@ -7,15 +7,17 @@ from update_json import *
 import os
 
 class FHIRAsset:
-    def __init__(self, url, name, status, id, filename):
+    def __init__(self, url, name, status, id, filename, baseDefinition):
         self.url = url
         self.name = name
         self.status = status
         self.id = id
         self.filename = filename
+        self.baseDefinition = baseDefinition 
+        self.context = None
 
     def __repr__(self):
-        return f"FHIRAsset(url={self.url}, name={self.name}, status={self.status}, id={self.id}, filename={self.filename})"
+        return f"FHIRAsset(url={self.url}, name={self.name}, status={self.status}, id={self.id}, filename={self.filename}), baseDefinition={self.baseDefinition})"
     
 def openXMLFile(xml_file):        
     try:
@@ -35,11 +37,20 @@ def openXMLFile(xml_file):
     root = tree.getroot()
     return root
 
-def getXMLElement(xml_file, element):
+def getXMLElement(xml_file, element, child=0):
     try:
-        return xml_file.findall('./{*}'+element)[0].get('value')
+        return xml_file.findall('./{*}'+element)[child].get('value')
     except IndexError:
         return None
+    
+def get_extension_context_expression(xml_file):
+    namespace = {'fhir': 'http://hl7.org/fhir'}
+    return [
+        expr.get('value')
+        for context in xml_file.findall('fhir:context', namespace)
+        for expr in context.findall('fhir:expression', namespace)
+        if expr is not None and expr.get('value') is not None
+    ]
  
 def list_files(folder):
     ''' gather a list of xml & json files within a folder. Returns xml_files, json_files '''
@@ -76,19 +87,31 @@ if __name__ == "__main__":
 
     ig_path = './'+ig_folder+'/Home'
     ig_pages = list_ig_pages(ig_path)
-    codesystem_pages = list_ig_pages(ig_path+'/Terminology/CodeSystems')
-    valueset_pages = list_ig_pages(ig_path+'/Terminology/ValueSets')
+    
+    '''!!!!!!!!! add str path to variables!!!!!!!!!!!!!!'''
+    extension_path = ig_path+'/ProfilesandExtensions/ExtensionLibrary'
+    profile_path = ig_path+'/ProfilesandExtensions'
+    codesystem_path = ig_path+'/Terminology/CodeSystems'
+    valueset_path = ig_path+'/Terminology/ValueSets'
+
+    codesystem_pages = list_ig_pages(codesystem_path)
+    valueset_pages = list_ig_pages(valueset_path)
 
 
     xml_files, json_files = list_files('.')
     assets = []
-    dict_elements = {'url': 'url', 'name': 'name', 'status': 'status', 'id': 'id'}
+    dict_elements = {'url': 'url', 'name': 'name', 'status': 'status', 'id': 'id', 'baseDefinition': 'baseDefinition'}
     for f in xml_files:
         asset_elements = dict_elements.copy()
         data = openXMLFile(f)
         for key in dict_elements:
             asset_elements[key] = getXMLElement(data, key)
-        asset = FHIRAsset(asset_elements['url'], asset_elements['name'], asset_elements['status'], asset_elements['id'], f)
+        asset = FHIRAsset(asset_elements['url'], asset_elements['name'], asset_elements['status'], asset_elements['id'], f, asset_elements['baseDefinition'])
+        try:
+            if 'extension' in asset.url.lower():
+                asset.context = get_extension_context_expression(data)
+        except:
+            pass
         assets.append(asset)
 
     '''all assets are within assets.
