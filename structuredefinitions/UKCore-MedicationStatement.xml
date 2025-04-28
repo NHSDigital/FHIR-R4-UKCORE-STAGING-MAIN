@@ -54,6 +54,15 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:courseOfTherapyType">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="courseOfTherapyType" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationCourseOfTherapyType" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
       <short value="Allows the resource to be referenced within / by other resources." />
