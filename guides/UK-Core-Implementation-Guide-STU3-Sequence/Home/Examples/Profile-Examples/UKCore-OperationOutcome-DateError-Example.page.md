@@ -1,4 +1,4 @@
 ---
 subject: UKCore-OperationOutcome-DateError-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

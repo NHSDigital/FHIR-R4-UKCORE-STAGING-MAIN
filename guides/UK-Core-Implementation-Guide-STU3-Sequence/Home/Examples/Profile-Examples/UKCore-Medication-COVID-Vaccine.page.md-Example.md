@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Medication-COVID-Vaccine-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationDispense-ParacetamolOral-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

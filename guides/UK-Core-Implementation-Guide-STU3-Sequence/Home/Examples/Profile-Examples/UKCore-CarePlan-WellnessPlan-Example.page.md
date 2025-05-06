@@ -1,4 +1,4 @@
 ---
 subject: UKCore-CarePlan-WellnessPlan-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

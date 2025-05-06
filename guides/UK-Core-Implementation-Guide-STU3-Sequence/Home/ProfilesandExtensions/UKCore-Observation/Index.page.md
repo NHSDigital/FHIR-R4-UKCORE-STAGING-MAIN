@@ -8,7 +8,7 @@ issue: UKCore-Observation
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -93,7 +93,7 @@ There are additional Lab related Observation profiles, that are not derived from
 - {{pagelink:Profile-Observation-Lab}}
 - {{pagelink:Profile-Observation-Group-Lab}}
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

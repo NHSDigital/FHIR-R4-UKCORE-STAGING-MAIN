@@ -1,5 +1,5 @@
 ---
 subject: UKCore-DocumentReference-ECG-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}
 

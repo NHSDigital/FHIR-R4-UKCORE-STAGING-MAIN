@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Appointment-OrthopaedicSurgery-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

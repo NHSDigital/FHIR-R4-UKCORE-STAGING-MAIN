@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Specimen-UrineSpecimen-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

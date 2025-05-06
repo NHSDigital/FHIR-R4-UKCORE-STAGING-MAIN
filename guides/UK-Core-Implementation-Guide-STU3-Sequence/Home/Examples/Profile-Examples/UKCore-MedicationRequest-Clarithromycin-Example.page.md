@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationRequest-Clarithromycin-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

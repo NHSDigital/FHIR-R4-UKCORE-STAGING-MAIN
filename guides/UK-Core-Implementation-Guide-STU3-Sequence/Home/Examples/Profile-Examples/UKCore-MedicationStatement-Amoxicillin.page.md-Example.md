@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationStatement-Amoxicillin-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

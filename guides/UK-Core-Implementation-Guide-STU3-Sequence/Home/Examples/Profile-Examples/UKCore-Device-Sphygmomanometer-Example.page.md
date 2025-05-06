@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Device-Sphygmomanometer-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

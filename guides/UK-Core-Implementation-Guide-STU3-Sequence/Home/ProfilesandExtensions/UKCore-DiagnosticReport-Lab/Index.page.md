@@ -8,7 +8,7 @@ issue: UKCore-DiagnosticReport-Lab
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -57,7 +57,7 @@ Depending upon the countries or trusts workflow, an alternative is to have any s
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

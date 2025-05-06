@@ -7,7 +7,7 @@ issue: UKCore-Practitioner
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -39,7 +39,7 @@ The following are example usage scenarios for the UK Core Practitioner profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

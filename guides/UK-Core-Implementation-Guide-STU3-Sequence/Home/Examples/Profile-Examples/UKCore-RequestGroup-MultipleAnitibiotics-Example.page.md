@@ -1,4 +1,4 @@
 ---
 subject: UKCore-RequestGroup-MultipleAnitibiotics-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

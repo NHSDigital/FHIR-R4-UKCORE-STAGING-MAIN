@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Communication-FirstMMRVaccination-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

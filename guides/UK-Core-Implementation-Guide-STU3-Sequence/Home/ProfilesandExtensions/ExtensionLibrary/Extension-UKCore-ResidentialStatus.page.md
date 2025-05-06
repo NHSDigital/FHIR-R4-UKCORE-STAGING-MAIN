@@ -10,7 +10,7 @@ issue: Extension-UKCore-ResidentialStatus
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 
 <div id="Examples" class="tabcontent">

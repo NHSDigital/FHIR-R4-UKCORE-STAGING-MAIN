@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Medication-TimoptolEyeDrops-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

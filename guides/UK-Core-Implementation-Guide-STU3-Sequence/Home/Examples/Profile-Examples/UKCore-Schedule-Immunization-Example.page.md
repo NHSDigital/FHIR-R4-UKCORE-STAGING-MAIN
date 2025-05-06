@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Schedule-Immunization-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

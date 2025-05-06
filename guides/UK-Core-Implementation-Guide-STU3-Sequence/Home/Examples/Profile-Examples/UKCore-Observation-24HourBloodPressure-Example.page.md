@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-24HourBloodPressure-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

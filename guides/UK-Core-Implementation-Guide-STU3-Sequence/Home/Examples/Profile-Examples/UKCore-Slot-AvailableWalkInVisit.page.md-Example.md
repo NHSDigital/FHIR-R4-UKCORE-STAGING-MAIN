@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Slot-AvailableWalkInVisit-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

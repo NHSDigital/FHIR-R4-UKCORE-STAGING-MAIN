@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-AwarenessOfDiagnosis-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-Lab-WhiteCellCount-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

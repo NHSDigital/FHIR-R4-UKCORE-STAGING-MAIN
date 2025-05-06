@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Device-BloodSpotContainer-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

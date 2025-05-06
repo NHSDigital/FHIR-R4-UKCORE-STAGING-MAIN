@@ -1,5 +1,5 @@
 
 
-{{page:ProfileExtensionsTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}
 
 ---

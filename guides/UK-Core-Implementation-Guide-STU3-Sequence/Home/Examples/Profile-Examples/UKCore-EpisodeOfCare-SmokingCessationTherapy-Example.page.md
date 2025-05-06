@@ -1,4 +1,4 @@
 ---
 subject: UKCore-EpisodeOfCare-SmokingCessationTherapy-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

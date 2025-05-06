@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Immunization-InfluenzaVaccine-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

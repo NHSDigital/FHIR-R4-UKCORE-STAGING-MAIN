@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Patient-BabyPatient-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

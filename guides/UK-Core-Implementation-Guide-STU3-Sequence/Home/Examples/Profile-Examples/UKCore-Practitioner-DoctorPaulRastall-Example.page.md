@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Practitioner-DoctorPaulRastall-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

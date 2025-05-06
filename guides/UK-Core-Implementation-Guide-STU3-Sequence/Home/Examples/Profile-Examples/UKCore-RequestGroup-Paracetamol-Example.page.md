@@ -1,4 +1,4 @@
 ---
 subject: UKCore-RequestGroup-Paracetamol-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

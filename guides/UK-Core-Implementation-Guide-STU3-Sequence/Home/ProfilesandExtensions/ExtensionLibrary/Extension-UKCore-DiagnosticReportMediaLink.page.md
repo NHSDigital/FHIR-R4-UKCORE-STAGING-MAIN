@@ -15,7 +15,7 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 </table>
 
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

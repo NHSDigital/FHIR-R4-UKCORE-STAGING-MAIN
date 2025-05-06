@@ -1,4 +1,4 @@
 ---
 subject: UKCore-AuditEvent-Query-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

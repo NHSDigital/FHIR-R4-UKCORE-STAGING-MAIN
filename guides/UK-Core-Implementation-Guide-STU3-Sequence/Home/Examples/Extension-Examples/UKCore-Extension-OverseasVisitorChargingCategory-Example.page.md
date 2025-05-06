@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-OverseasVisitorChargingCategory-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-VitalSigns-BloodPressure-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

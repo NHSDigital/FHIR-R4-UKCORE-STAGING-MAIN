@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationRequest-CiprofloxacinIV-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

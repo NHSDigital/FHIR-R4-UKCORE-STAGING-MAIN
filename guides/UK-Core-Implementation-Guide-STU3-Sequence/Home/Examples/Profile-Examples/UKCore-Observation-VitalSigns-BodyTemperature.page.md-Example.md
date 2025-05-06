@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-VitalSigns-BodyTemperature-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}
