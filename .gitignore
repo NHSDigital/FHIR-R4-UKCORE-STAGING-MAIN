@@ -3,3 +3,5 @@ Examples/org.hl7.fhir.validator.jar
 .simplifier/quality.control.result.json
 .simplifier/folder.settings.json
 .env
+__pycache__/
+
