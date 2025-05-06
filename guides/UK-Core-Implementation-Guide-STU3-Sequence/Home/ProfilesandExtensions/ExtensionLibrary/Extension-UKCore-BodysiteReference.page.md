@@ -6,7 +6,7 @@ issue: Extension-UKCore-BodySiteReference
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Specimen,text:Specimen.collection.bodySite}}</td>
+<td>{{pagelink:UKCore-Specimen,text:Specimen.collection.bodySite}}</td>
 </tr>
 </table>
 

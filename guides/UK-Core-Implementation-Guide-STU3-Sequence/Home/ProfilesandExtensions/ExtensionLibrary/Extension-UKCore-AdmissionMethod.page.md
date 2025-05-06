@@ -6,7 +6,7 @@ issue: Extension-UKCore-AdmissionMethod
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Encounter,text:Encounter.hospitalization}}</td>
+<td>{{pagelink:UKCore-Encounter,text:Encounter.hospitalization}}</td>
 </tr>
 </table>
 

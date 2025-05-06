@@ -6,7 +6,7 @@ issue: Extension-UKCore-DiagnosticReportSupportingInfo
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport}}</td>
 </tr>
 </table>
 
@@ -22,9 +22,9 @@ issue: Extension-UKCore-DiagnosticReportSupportingInfo
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- {{pagelink:Profile-DiagnosticReport}}
-- {{pagelink:Profile-Observation}}
-- {{pagelink:Profile-Procedure}}
+- {{pagelink:UKCore-DiagnosticReport}}
+- {{pagelink:UKCore-Observation}}
+- {{pagelink:UKCore-Procedure}}
 
 
 ---

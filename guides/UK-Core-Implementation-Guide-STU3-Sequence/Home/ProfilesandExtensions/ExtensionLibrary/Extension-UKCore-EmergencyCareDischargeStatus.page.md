@@ -6,7 +6,7 @@ issue: Extension-UKCore-EmergencyCareDischargeStatus
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Encounter,text:Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter,text:Encounter}}</td>
 </tr>
 </table>
 

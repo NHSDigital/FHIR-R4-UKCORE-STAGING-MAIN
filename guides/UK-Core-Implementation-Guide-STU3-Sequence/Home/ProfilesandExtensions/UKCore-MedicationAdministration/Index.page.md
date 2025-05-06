@@ -23,7 +23,7 @@ issue: UKCore-MedicationAdministration
 
 The following are example usage scenarios for the UK Core Medication Administration profile:
 
--	To share inpatient or outpatient non-immunization administrations of medication between clinical systems. Example scenarios include inpatient patient transfer from ward-to-ward or hospital-to-hospital, where different clinical systems are in use. For immunisations use the {{pagelink:Profile-Immunization}} resource.
+-	To share inpatient or outpatient non-immunization administrations of medication between clinical systems. Example scenarios include inpatient patient transfer from ward-to-ward or hospital-to-hospital, where different clinical systems are in use. For immunisations use the {{pagelink:UKCore-Immunization}} resource.
 -	To share patient self-administration of medication.
 -	To share home-health reporting from medicines administration and monitoring devices.
 

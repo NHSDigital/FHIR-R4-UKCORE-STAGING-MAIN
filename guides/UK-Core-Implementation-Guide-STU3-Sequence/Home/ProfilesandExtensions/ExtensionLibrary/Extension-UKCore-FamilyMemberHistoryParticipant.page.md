@@ -6,7 +6,7 @@ issue: Extension-UKCore-FamilyMemberHistoryParticipant
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-FamilyMemberHistory,text:FamilyMemberHistory}}</td>
+<td>{{pagelink:UKCore-FamilyMemberHistory,text:FamilyMemberHistory}}</td>
 </tr>
 </table>
 
@@ -25,11 +25,11 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 
 - [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profile-ukcore-careteam)
 - [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
-- {{pagelink:Profile-Organization}}
-- {{pagelink:Profile-Patient}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
-- {{pagelink:Profile-RelatedPerson}}
+- {{pagelink:UKCore-Organization}}
+- {{pagelink:UKCore-Patient}}
+- {{pagelink:UKCore-Practitioner}}
+- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:UKCore-RelatedPerson}}
 
 
 ---

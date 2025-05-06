@@ -4,7 +4,7 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 
 - [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
 - [DeviceRequest Group](https://hl7.org/fhir/R4/group.html)
-- {{pagelink:Profile-Location}}
-- {{pagelink:Profile-Patient}}
+- {{pagelink:UKCore-Location}}
+- {{pagelink:UKCore-Patient}}
 
 ---

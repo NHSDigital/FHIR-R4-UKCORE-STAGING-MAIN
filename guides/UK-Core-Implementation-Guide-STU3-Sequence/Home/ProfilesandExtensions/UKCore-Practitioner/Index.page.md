@@ -23,7 +23,7 @@ issue: UKCore-Practitioner
 <br>
 {{pagelink:UKCore-Practitioner-PharmacistJimmyChuck-Example}}
 <br><br>
-Note: the practitioner's role information is carried in the {{pagelink:Profile-PractitionerRole}}   <br><br>
+Note: the practitioner's role information is carried in the {{pagelink:UKCore-PractitionerRole}}   <br><br>
 </div>
 </nocheck>
 
