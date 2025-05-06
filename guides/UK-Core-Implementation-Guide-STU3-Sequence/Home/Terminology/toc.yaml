@@ -1,5 +1,7 @@
 - name: Terminology Index
   filename: Terminology-Index.page.md
+- name: Terminology Index v2
+  filename: Terminology-Index-v2.page.md
 - name: ValueSets
   filename: ValueSets
 - name: CodeSystems

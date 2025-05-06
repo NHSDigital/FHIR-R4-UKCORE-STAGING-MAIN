@@ -7,7 +7,7 @@ issue: UKCore-Patient
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

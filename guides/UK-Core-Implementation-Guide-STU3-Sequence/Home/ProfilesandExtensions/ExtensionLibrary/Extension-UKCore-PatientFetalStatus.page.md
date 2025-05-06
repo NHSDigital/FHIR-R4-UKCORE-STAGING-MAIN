@@ -15,7 +15,7 @@ issue: Extension-UKCore-PatientFetalStatus
 </table>
 
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate_new}}
 </div>
 
 ---

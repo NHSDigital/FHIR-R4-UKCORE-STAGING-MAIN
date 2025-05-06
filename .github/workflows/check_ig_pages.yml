@@ -1,0 +1,15 @@
+name: Check IG Pages
+on: workflow_dispatch
+
+env:
+  simplifier_username: ${{secrets.SIMPLIFIER_USERNAME}}
+  simplifier_password: ${{secrets.SIMPLIFIER_PASSWORD}}
+jobs:
+  update_IG:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Tabs to spaces
+        run: python -u .github/python_scripts/check_assets_in_IG.py
