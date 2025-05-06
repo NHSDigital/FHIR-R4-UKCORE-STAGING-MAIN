@@ -4,10 +4,10 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 - [Profile UKCore-CareTeam (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-CareTeam)
 - [Profile UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
 - {{pagelink:UKCore-HealthcareService}}
-- {{pagelink:Profile-Organization}}
-- {{pagelink:Profile-Patient}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
-- {{pagelink:Profile-RelatedPerson}}
+- {{pagelink:UKCore-Organization}}
+- {{pagelink:UKCore-Patient}}
+- {{pagelink:UKCore-Practitioner}}
+- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:UKCore-RelatedPerson}}
 
 ---

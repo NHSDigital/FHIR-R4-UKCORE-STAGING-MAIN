@@ -1,5 +1,5 @@
 ## `partOf`
 
-Where possible, it is expected that the resource being referenced SHOULD conform to  {{pagelink:Profile-Organization}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to  {{pagelink:UKCore-Organization}}.
 
 ---

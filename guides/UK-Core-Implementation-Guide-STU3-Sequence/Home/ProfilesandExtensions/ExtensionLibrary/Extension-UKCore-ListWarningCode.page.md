@@ -6,7 +6,7 @@ issue: Extension-UKCore-ListWarningCode
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-List,text:List}}</td>
+<td>{{pagelink:UKCore-List,text:List}}</td>
 </tr>
 </table>
 

@@ -6,7 +6,7 @@ issue: Extension-UKCore-BookingOrganization
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Appointment,text:Appointment}}</td>
+<td>{{pagelink:UKCore-Appointment,text:Appointment}}</td>
 </tr>
 </table>
 
@@ -21,6 +21,6 @@ issue: Extension-UKCore-BookingOrganization
 
 <h3 id="guidance-bookingorganization">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Organization}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:UKCore-Organization}}.
 
 ---

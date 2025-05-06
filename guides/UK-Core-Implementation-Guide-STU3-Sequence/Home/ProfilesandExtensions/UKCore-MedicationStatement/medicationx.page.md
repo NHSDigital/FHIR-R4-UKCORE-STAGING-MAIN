@@ -30,12 +30,12 @@ Where a dm+d code exists it SHALL be used either as `MedicationStatement.medicat
 
 Where CodeableConcept is used, `MedicationStatement.medicationCodeableConcept.coding` is the dm+d code and `MedicationStatement.medicationCodeableConcept.text` is dm+d concept name/description. 
 
-Can be either a dm+d code as a CodeableConcept or reference to {{pagelink:Profile-Medication}}
- resource. Using a CodeableConcept is preferred unless additional data if required that would be contained within a {{pagelink:Profile-Medication}} resource.
+Can be either a dm+d code as a CodeableConcept or reference to {{pagelink:UKCore-Medication}}
+ resource. Using a CodeableConcept is preferred unless additional data if required that would be contained within a {{pagelink:UKCore-Medication}} resource.
 
 The elements `MedicationStatement.medicationCodeableConcept.coding` and `MedicationStatement.medicationReference:Medication.code` are both bound to {{pagelink:ValueSet-UKCore-MedicationCode}}
 
-Examples where a reference to a {{pagelink:Profile-Medication}} would be applicable include:
+Examples where a reference to a {{pagelink:UKCore-Medication}} would be applicable include:
 
 
 - Record a VTM with a specific form 

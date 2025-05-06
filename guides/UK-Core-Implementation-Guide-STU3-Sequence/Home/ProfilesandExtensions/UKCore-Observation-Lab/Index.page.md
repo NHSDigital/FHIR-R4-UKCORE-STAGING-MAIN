@@ -27,7 +27,7 @@ The following are example usage scenarios for the UK Core Observation profile:
 <br>
 The Observation-Lab profile is for individual laboratory tests (Observation-Lab) which may form a larger set of tests, for example a urea and electrolyte test that contains many sub tests, or as a single test, for example Serum ferritin level.
 <br><br>
-The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:Profile-Observation-Group-Lab}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
+The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:UKCore-Observation-Group-Lab}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
 <br>
 
 <div id="renderParent" title="Dervied Lab profile structure">
@@ -35,7 +35,7 @@ The workflow below shows a possible way to group a set of related laboratory obs
 </div>
 
 <br><br>
-Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:Profile-Observation-Group-Lab}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
+Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:UKCore-Observation-Group-Lab}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
 
 <div id="renderParent" title="Dervied Lab profile alternative structure">
 {{render:Derived-Profiles-Lab-Example-Extra-Group}}

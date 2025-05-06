@@ -31,92 +31,92 @@ The Profiles are rendered in several formats:
 <th class="width35">Report Issue</th>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</td>
 <td>A profile derived from the draft UK Core Device profile to define the minimal set of data to query and retrieve information regarding the specific blood pressure monitoring device used to record a Blood Pressure observation.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-BloodPressure/~issues?level=File">Report Issue for UKCore-Device-BloodPressure</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</td>
+<td>{{pagelink:UKCore-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's level of consciousness.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-ACVPU/~issues?level=File">Report Issue for UKCore-Observation-ACVPU</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</td>
+<td>{{pagelink:UKCore-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's alcohol consumption.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AlcoholConsumption/~issues?level=File">Report Issue for UKCore-Observation-AlcoholConsumption</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's average blood pressure over a specific time period.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AverageBloodPressure/~issues?level=File">Report Issue for UKCore-Observation-AverageBloodPressure</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</td>
+<td>{{pagelink:UKCore-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's blood glucose level.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</td>
+<td>{{pagelink:UKCore-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's Early Warning Score, such as NEWS2.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-EarlyWarningTotalScore/~issues?level=File">Report Issue for UKCore-Observation-EarlyWarningTotalScore</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</td>
+<td>{{pagelink:UKCore-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding whether a patient is breathing room air or is on oxygen.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-InspiredOxygen/~issues?level=File">Report Issue for UKCore-Observation-InspiredOxygen</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</td>
+<td>{{pagelink:UKCore-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's tobacco consumption.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-TobaccoConsumption/~issues?level=File">Report Issue for UKCore-Observation-TobaccoConsumption</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information of a patient's Vital Signs measurements, in order to be FHIR compliant with the base "Vital Signs" guidance.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a single instance of a patient's blood pressure.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BloodPressure/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BloodPressure</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's body mass index.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BMI/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BMI</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's height.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BodyHeight/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BodyHeight</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's temperature.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BodyTemperature</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's weight.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BodyTemperature/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BodyWeight</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's head circumference.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-HeadCircumference/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-HeadCircumference</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's heart rate.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-HeartRate/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-HeartRate</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's level of oxygen saturation in their blood.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-OxygenSaturation/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-OxygenSaturation</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</td>
 <td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's breathing rate.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-RespirationRate/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-RespirationRate</td>
 </tr>
@@ -132,17 +132,17 @@ The Profiles are rendered in several formats:
 </tr>
 <tr>
 <td>{{pagelink:Extension-UKCore-CuffSize,text:Extension-UKCore-CuffSize}}</td>
-<td>An extension on the {{pagelink:Profile-Device-BloodPressure}} to record the cuff size used on the device which was used to monitor the patient's blood pressure.</td>
+<td>An extension on the {{pagelink:UKCore-Device-BloodPressure}} to record the cuff size used on the device which was used to monitor the patient's blood pressure.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</td>
 </tr>
 <tr>
 <td>{{pagelink:Extension-UKCore-RecordingSetting,text:Extension-UKCore-RecordingSetting}}</td>
-<td>An extension on the {{pagelink:Profile-Observation-VitalSigns}} to record the setting in which the observation was made.</td>
+<td>An extension on the {{pagelink:UKCore-Observation-VitalSigns}} to record the setting in which the observation was made.</td>
 <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-RecordingSetting/~issues?level=File">Report Issue for Extension-UKCore-RecordingSetting</td>
 </tr>
 <tr>
 <td><a href="http://hl7.org/fhir/R4/extension-observation-bodyposition.html">observation-bodyPosition</a></td>
-<td>A HL7 core-defined extension, on the {{pagelink:Profile-Observation-VitalSigns}}, to record the body position at the time an observation was made. This has a binding to {{pagelink:ValueSet-UKCore-BodyPosition}}.</td>
+<td>A HL7 core-defined extension, on the {{pagelink:UKCore-Observation-VitalSigns}}, to record the body position at the time an observation was made. This has a binding to {{pagelink:ValueSet-UKCore-BodyPosition}}.</td>
 <td></td>
 </tr>
 </table>
