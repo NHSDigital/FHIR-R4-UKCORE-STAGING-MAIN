@@ -7,7 +7,7 @@ issue: UKCore-Medication
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -38,7 +38,7 @@ The UK Core Medication profile will likely not be used in isolation. It does not
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

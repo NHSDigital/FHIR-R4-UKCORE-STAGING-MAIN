@@ -7,7 +7,7 @@ issue: UKCore-MedicationAdministration
 # StructureDefinition-UKCore-MedicationAdministration
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -31,7 +31,7 @@ The following are example usage scenarios for the UK Core Medication Administrat
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 
