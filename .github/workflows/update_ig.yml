@@ -25,7 +25,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       # Run steps that make changes to the local repo here.
-      - name: Tabs to spaces
+      - name: run python script
         run: python -u .github/python_scripts/update_IG.py
         
       # Commit all changed files back to the repository
