@@ -1,6 +1,7 @@
 import requests
 from zipfile import ZipFile
 import os
+import sys
 from io import BytesIO
 from update_json import openJSONFile
 #from dotenv import load_dotenv
@@ -28,9 +29,11 @@ def import_IG():
                 zfile.extractall(members=ig_files)
             else:
                 print(f"IG Folder '{ig_folder}' not found in the ZIP file.")
+                sys.exit(1)
 
     else:
         print(f"Failed to download ZIP: {response.status_code} - {response.text}")
+        sys.exit(1)
 
     return ig_folder
 
