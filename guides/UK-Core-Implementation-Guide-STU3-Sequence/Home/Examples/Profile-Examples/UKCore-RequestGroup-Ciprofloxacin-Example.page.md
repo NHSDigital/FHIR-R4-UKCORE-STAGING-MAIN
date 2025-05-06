@@ -1,4 +1,4 @@
 ---
 subject: UKCore-RequestGroup-Ciprofloxacin-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

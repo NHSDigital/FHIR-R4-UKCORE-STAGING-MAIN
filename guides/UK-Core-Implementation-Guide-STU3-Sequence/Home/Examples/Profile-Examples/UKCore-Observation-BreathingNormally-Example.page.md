@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-BreathingNormally-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

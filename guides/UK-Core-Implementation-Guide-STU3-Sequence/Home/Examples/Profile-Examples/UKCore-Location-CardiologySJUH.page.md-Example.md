@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Location-CardiologySJUH-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

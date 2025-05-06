@@ -1,12 +1,12 @@
 ## <code>{{page-title}}</code>
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
-- {{pagelink:UKCore-Condition}}
-- {{pagelink:UKCore-DiagnosticReport}}
-- {{pagelink:UKCore-DiagnosticReport-Lab}}
+- {{pagelink:Profile-Condition}}
+- {{pagelink:Profile-DiagnosticReport}}
+- {{pagelink:Profile-DiagnosticReport-Lab}}
 - [Profile UKCore-DocumentReference (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-DocumentReference)
-- {{pagelink:UKCore-Observation}}
-- {{pagelink:UKCore-Observation-Group-Lab}}
-- {{pagelink:UKCore-Observation-Lab}}
+- {{pagelink:Profile-Observation}}
+- {{pagelink:Profile-Observation-Group-Lab}}
+- {{pagelink:Profile-Observation-Lab}}
 
 ---

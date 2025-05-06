@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-CopyCorrespondenceIndicator-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

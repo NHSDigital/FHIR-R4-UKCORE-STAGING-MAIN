@@ -7,7 +7,7 @@ issue: UKCore-Organization
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -37,7 +37,7 @@ issue: UKCore-Organization
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

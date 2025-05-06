@@ -6,11 +6,11 @@ issue: Extension-UKCore-NHSNumberUnavailableReason
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Patient,text:Patient}}</td>
+<td>{{pagelink:Profile-Patient,text:Patient}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

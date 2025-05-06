@@ -1,4 +1,4 @@
 ---
 subject: UKCore-CareTeam-WeightManagementTeam-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

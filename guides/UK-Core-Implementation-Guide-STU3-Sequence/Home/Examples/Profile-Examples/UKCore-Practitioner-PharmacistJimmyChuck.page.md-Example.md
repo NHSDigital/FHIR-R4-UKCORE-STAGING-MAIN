@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Practitioner-PharmacistJimmyChuck-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

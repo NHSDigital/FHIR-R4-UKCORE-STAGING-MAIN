@@ -6,11 +6,11 @@ issue: Extension-UKCore-DiagnosticReportSupportingInfo
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport}}</td>
+<td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -22,9 +22,9 @@ issue: Extension-UKCore-DiagnosticReportSupportingInfo
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- {{pagelink:UKCore-DiagnosticReport}}
-- {{pagelink:UKCore-Observation}}
-- {{pagelink:UKCore-Procedure}}
+- {{pagelink:Profile-DiagnosticReport}}
+- {{pagelink:Profile-Observation}}
+- {{pagelink:Profile-Procedure}}
 
 
 ---

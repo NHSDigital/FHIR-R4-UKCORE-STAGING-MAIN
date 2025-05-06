@@ -7,7 +7,7 @@ issue: UKCore-Medication
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -29,16 +29,16 @@ issue: UKCore-Medication
 ### Example Usage Scenarios
 
 The UK Core Medication profile will likely not be used in isolation. It does not provide the context for the medication, e.g. the patient or medication related process. It will be typically used as a referenced resource within
-- {{pagelink:UKCore-MedicationAdministration}}
-- {{pagelink:UKCore-MedicationDispense}}
-- {{pagelink:UKCore-MedicationRequest}}
-- {{pagelink:UKCore-MedicationStatement}}
+- {{pagelink:Profile-MedicationAdministration}}
+- {{pagelink:Profile-MedicationDispense}}
+- {{pagelink:Profile-MedicationRequest}}
+- {{pagelink:Profile-MedicationStatement}}
 
 <hr class="thickline">
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

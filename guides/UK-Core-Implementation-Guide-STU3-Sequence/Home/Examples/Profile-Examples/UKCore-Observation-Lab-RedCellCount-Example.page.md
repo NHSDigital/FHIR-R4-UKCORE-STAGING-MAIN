@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-Lab-RedCellCount-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

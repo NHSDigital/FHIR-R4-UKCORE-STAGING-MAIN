@@ -6,11 +6,11 @@ issue: Extension-UKCore-ObservationBodyStructure
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Observation,text:Observation}}</td>
+<td>{{pagelink:Profile-Observation,text:Observation}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

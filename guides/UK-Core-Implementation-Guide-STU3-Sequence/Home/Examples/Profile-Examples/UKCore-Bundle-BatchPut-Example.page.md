@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Bundle-BatchPut-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

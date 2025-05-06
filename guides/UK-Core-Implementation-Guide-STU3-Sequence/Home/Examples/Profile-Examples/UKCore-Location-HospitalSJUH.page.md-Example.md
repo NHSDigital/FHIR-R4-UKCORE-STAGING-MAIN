@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Location-HospitalSJUH-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

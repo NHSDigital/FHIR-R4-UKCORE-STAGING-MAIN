@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationRequest-ParacetamolOral-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-ServiceRequest-CTChestScan-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

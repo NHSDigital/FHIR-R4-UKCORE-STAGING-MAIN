@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Questionnaire-FitnessForWork-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -6,11 +6,11 @@ issue: Extension-UKCore-MainLocation
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Organization,text:Organization}}</td>
+<td>{{pagelink:Profile-Organization,text:Organization}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -21,6 +21,6 @@ issue: Extension-UKCore-MainLocation
 
 <h3 id="guidance-mainlocation">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:UKCore-Location}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Location}}.
 
 ---

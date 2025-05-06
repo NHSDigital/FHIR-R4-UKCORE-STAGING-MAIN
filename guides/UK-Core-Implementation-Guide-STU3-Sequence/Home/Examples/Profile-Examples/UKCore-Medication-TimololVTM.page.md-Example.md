@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Medication-TimololVTM-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

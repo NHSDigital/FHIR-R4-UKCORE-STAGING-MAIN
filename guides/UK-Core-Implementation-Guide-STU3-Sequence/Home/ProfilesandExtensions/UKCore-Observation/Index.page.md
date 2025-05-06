@@ -8,7 +8,7 @@ issue: UKCore-Observation
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -78,22 +78,22 @@ The following are example usage scenarios for the UK Core Observation profile:
 ## Profile Specific Implementation Guidance: ##
 
 The guidance on this page also applies to the following profiles, that are derived from the UK Core Observation profile:
-- {{pagelink:UKCore-Observation-ACVPU}}
-- {{pagelink:UKCore-Observation-Alcoholconsumption}}
-- {{pagelink:UKCore-Observation-AverageBloodPressure}}
-- {{pagelink:UKCore-Observation-BloodGlucose}}
-- {{pagelink:UKCore-Observation-EarlyWarningTotalScore}}
-- {{pagelink:UKCore-Observation-InspiredOxygen}}
-- {{pagelink:UKCore-Observation-TobaccoConsumption}}
+- {{pagelink:Profile-Observation-ACVPU}}
+- {{pagelink:Profile-Observation-Alcoholconsumption}}
+- {{pagelink:Profile-Observation-AverageBloodPressure}}
+- {{pagelink:Profile-Observation-BloodGlucose}}
+- {{pagelink:Profile-Observation-EarlyWarningTotalScore}}
+- {{pagelink:Profile-Observation-InspiredOxygen}}
+- {{pagelink:Profile-Observation-TobaccoConsumption}}
 
 The guidance on this page also applies to the Vital Signs parent profile, and the profiles that are derived from the UK Core Observation Vital Signs profile:
-- {{pagelink:UKCore-Observation-VitalSigns}}
+- {{pagelink:Profile-Observation-VitalSigns}}
 
 There are additional Lab related Observation profiles, that are not derived from the UK Core Observation profile:
-- {{pagelink:UKCore-Observation-Lab}}
-- {{pagelink:UKCore-Observation-Group-Lab}}
+- {{pagelink:Profile-Observation-Lab}}
+- {{pagelink:Profile-Observation-Group-Lab}}
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

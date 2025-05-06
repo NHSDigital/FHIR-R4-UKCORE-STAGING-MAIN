@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationDispense-EyeDrops-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

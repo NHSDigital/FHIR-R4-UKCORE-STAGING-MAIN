@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-PatientConsciousness-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

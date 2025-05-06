@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Task-Colonoscopy-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

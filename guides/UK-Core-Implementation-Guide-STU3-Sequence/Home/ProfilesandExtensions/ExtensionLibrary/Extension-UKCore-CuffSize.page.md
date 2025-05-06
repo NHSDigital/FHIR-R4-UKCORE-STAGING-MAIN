@@ -13,11 +13,11 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-C
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Device-BloodPressure,text:Device}}</td>
+<td>{{pagelink:Profile-Device-BloodPressure,text:Device}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

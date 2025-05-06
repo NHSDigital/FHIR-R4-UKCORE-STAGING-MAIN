@@ -4,7 +4,7 @@ The ValueSet is changed from BiospyState to SampleState for Specimen.condition
 
 </div>
 
-{{page:ProfileBindingsTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
 
 <table id="addToBindings">
 <tr>

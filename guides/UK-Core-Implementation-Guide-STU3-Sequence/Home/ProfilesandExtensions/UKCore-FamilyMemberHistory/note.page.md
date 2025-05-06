@@ -2,9 +2,9 @@
 
 The resource being referenced by `FamilyMemberHistory.note.authorReference` SHALL conform to one of the following:
 
-- {{pagelink:UKCore-Organization}}
-- {{pagelink:UKCore-Patient}}
-- {{pagelink:UKCore-Practitioner}}
-- {{pagelink:UKCore-RelatedPerson}}
+- {{pagelink:Profile-Organization}}
+- {{pagelink:Profile-Patient}}
+- {{pagelink:Profile-Practitioner}}
+- {{pagelink:Profile-RelatedPerson}}
 
 ---

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-SubscriptionParameters-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

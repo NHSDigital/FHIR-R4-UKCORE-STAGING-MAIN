@@ -6,11 +6,11 @@ issue: Extension-UKCore-MedicationTradeFamily
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Medication,text:Medication}}</td>
+<td>{{pagelink:Profile-Medication,text:Medication}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

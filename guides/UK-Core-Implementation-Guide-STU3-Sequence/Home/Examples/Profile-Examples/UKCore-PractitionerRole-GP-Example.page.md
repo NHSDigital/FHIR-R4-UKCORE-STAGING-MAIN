@@ -1,4 +1,4 @@
 ---
 subject: UKCore-PractitionerRole-GeneralPractitioner-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

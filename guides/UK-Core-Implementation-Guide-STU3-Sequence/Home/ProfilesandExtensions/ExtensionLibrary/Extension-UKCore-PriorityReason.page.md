@@ -6,11 +6,11 @@ issue: Extension-UKCore-PriorityReason
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-ServiceRequest,text:ServiceRequest.priority}}</td>
+<td>{{pagelink:Profile-ServiceRequest,text:ServiceRequest.priority}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

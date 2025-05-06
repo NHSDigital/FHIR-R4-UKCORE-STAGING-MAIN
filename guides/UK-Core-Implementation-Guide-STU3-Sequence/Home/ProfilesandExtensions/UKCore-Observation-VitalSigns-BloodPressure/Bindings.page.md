@@ -30,6 +30,6 @@ More information about the bindings to UK Core ValueSets, and other ValueSets di
 </tr>
 </table>
 
-{{page:ProfileBindingsTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
 
 ---

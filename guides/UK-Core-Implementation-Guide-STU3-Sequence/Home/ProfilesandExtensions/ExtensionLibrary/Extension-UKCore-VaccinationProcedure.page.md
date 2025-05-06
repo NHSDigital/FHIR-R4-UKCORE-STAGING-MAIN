@@ -6,11 +6,11 @@ issue: Extension-UKCore-VaccinationProcedure
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Immunization,text:Immunization}}</td>
+<td>{{pagelink:Profile-Immunization,text:Immunization}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

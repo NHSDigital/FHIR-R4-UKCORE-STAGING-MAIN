@@ -1,4 +1,4 @@
 ---
 subject: UKCore-HealthcareService-OrthopaedicService-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

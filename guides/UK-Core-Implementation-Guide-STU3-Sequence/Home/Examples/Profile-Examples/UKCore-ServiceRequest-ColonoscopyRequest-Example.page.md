@@ -1,4 +1,4 @@
 ---
 subject: UKCore-ServiceRequest-ColonoscopyRequest-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

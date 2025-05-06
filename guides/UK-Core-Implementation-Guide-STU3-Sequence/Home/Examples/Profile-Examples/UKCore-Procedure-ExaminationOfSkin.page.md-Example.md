@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Procedure-ExaminationOfSkin-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

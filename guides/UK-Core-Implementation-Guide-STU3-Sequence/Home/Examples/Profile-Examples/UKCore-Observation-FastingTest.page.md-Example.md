@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-FastingTest-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-QuestionnaireResponse-BabyPatientSurvey-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

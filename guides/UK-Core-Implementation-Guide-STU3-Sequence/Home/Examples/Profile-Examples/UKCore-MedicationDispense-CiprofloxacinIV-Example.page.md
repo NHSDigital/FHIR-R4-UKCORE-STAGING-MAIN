@@ -1,4 +1,4 @@
 ---
 subject: UKCore-MedicationDispense-CiprofloxacinIV-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

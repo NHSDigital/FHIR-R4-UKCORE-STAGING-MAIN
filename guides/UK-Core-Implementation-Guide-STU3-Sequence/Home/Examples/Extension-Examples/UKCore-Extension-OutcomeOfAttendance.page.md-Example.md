@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-OutcomeOfAttendance-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

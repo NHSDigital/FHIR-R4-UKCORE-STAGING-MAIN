@@ -8,11 +8,11 @@ issue: Extension-UKCore-ConditionBodyStructure
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Condition,text:Condition}}</td>
+<td>{{pagelink:Profile-Condition,text:Condition}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <!--<div id="Examples" class="tabcontent">
   <h3>Examples</h3>

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-Evidence-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

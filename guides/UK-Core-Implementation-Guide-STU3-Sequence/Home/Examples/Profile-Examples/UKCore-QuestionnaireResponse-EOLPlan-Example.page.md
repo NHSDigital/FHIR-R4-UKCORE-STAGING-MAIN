@@ -1,4 +1,4 @@
 ---
 subject: UKCore-QuestionnaireResponse-EOLPlan-Example 
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

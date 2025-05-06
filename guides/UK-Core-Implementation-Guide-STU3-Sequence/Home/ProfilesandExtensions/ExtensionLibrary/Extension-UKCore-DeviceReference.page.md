@@ -6,12 +6,12 @@ issue: Extension-UKCore-DeviceReference
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport.performer}}<br>
-{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport.resultsInterpreter}}</td>
+<td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport.performer}}<br>
+{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport.resultsInterpreter}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

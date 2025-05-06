@@ -1,4 +1,4 @@
 ---
 subject: UKCore-DiagnosticReport-CTChestScan-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

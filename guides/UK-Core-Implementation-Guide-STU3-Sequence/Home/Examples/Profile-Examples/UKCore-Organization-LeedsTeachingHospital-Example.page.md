@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Organization-LeedsTeachingHospital-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

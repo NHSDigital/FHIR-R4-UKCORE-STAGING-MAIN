@@ -12,7 +12,7 @@ The <code>id</code> / <code>title</code> / <code>name</code> / <code>url</code> 
 </div>
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -34,7 +34,7 @@ The following are example usage scenarios for the UK Core Observation profile:
 <br>
 The Observation-Group-Lab profile is used to reference multiple individual laboratory observations (Observation-Lab) which together form a larger test set.
 
-The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:UKCore-Observation-Group-Lab}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
+The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:Profile-Observation-Group-Lab}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
 <br>
 
 <div id="renderParent" title="Dervied Lab profile structure">
@@ -42,7 +42,7 @@ The workflow below shows a possible way to group a set of related laboratory obs
 </div>
 
 <br><br>
-Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:UKCore-Observation-Group-Lab}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
+Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:Profile-Observation-Group-Lab}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
 
 <div id="renderParent" title="Dervied Lab profile alternative structure">
 {{render:Derived-Profiles-Lab-Example-Extra-Group}}
@@ -53,7 +53,7 @@ Depending upon the countries or trusts workflow, an alternative is to have any s
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:ProfileMustSupportTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

@@ -6,11 +6,11 @@ issue: Extension-UKCore-SpecimenCollectionCollector
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-Specimen,text:Specimen}}</td>
+<td>{{pagelink:Profile-Specimen,text:Specimen}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -23,8 +23,8 @@ issue: Extension-UKCore-SpecimenCollectionCollector
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- {{pagelink:UKCore-Patient}}
-- {{pagelink:UKCore-RelatedPerson}}
+- {{pagelink:Profile-Patient}}
+- {{pagelink:Profile-RelatedPerson}}
 
 
 ---

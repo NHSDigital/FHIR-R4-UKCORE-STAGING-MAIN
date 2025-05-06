@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-OxygenTherapy-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Composition-Discharge-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -6,11 +6,11 @@ issue: Extension-UKCore-Coverage
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-ServiceRequest,text:ServiceRequest}}</td>
+<td>{{pagelink:Profile-ServiceRequest,text:ServiceRequest}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

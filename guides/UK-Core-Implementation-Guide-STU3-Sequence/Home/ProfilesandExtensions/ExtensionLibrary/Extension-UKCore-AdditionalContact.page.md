@@ -6,11 +6,11 @@ issue: Extension-UKCore-AdditionalContact
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:UKCore-ServiceRequest,text:ServiceRequest}}</td>
+<td>{{pagelink:Profile-ServiceRequest,text:ServiceRequest}}</td>
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -23,9 +23,9 @@ issue: Extension-UKCore-AdditionalContact
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- {{pagelink:UKCore-Organization}}
-- {{pagelink:UKCore-Practitioner}}
-- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:Profile-Organization}}
+- {{pagelink:Profile-Practitioner}}
+- {{pagelink:Profile-PractitionerRole}}
 
 
 ---

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-CodingSCT-Weight-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

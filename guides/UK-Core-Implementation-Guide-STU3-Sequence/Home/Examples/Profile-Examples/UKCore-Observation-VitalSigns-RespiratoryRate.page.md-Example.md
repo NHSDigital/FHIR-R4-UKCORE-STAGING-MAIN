@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-VitalSigns-RespiratoryRate-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

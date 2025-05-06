@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-DiagnosticReportMediaLinkR5-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

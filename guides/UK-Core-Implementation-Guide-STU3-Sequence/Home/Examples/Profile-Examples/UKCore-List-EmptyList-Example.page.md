@@ -1,4 +1,4 @@
 ---
 subject: UKCore-List-EmptyList-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Flag-FoodAllergy-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

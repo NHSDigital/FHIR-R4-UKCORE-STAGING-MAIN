@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Extension-BookingOrganization-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

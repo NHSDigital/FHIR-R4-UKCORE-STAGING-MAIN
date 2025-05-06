@@ -15,7 +15,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 </div>
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -53,24 +53,24 @@ The following are example usage scenarios for the UK Core Observation Vital Sign
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of {{pagelink:UKCore-Observation,text:UKCore-Observation}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
+This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observation}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
 This guidance is also designed to align with [https://hl7.org/fhir/R4/observation-vitalsigns.html](HL7 Observation Vital Signs guidance) where possible.
 
 The guidance on this page also applies to the following profiles, that are derived from the UK Core Observation Vital Signs profile:
-- {{pagelink:UKCore-Observation-VitalSigns-BloodPressure}}
-- {{pagelink:UKCore-Observation-VitalSigns-BMI}}
-- {{pagelink:UKCore-Observation-VitalSigns-BodyHeight}}
-- {{pagelink:UKCore-Observation-VitalSigns-BodyTemperature}}
-- {{pagelink:UKCore-Observation-VitalSigns-BodyWeight}}
-- {{pagelink:UKCore-Observation-VitalSigns-HeadCircumference}}
-- {{pagelink:UKCore-Observation-VitalSigns-HeartRate}}
-- {{pagelink:UKCore-Observation-VitalSigns-OxygenSaturation}}
-- {{pagelink:UKCore-Observation-VitalSigns-RespirationRate}}
+- {{pagelink:Profile-Observation-VitalSigns-BloodPressure}}
+- {{pagelink:Profile-Observation-VitalSigns-BMI}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyHeight}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyTemperature}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyWeight}}
+- {{pagelink:Profile-Observation-VitalSigns-HeadCircumference}}
+- {{pagelink:Profile-Observation-VitalSigns-HeartRate}}
+- {{pagelink:Profile-Observation-VitalSigns-OxygenSaturation}}
+- {{pagelink:Profile-Observation-VitalSigns-RespirationRate}}
 
 ### Mandatory and Must Support Data Elements
 
-The following elements, in addition to those in the corresponding {{pagelink:UKCore-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
+The following elements, in addition to those in the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
 <table class="assets" title="MustSupport element list">
 <tr>

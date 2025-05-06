@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-NPEWSTotal-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

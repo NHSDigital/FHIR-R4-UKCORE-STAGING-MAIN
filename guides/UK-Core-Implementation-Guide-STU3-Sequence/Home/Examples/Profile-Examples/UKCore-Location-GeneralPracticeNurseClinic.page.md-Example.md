@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Location-GeneralPracticeNurseClinic-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

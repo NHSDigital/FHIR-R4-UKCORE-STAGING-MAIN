@@ -3,8 +3,8 @@
 ### `Specimen.collection.collector`
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
-- {{pagelink:UKCore-Practitioner}}
-- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:Profile-Practitioner}}
+- {{pagelink:Profile-PractitionerRole}}
 
 ### `Specimen.collection.bodySite`
 

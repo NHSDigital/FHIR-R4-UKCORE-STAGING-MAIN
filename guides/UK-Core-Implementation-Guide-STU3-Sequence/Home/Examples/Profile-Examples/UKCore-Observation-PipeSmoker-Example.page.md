@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-PipeSmoker-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

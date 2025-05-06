@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Observation-VitalSigns-OxygenSaturation-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}

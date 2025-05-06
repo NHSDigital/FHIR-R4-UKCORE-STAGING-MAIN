@@ -1,4 +1,4 @@
 ---
 subject: UKCore-Condition-BleedingFromEar-Example
 ---
-{{page:ExampleTemplate}}
+{{page:Home/Examples/ExampleTemplate.page.md}}
