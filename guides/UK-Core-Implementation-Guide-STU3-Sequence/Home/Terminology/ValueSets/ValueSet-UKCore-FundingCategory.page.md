@@ -4,4 +4,4 @@ issue: ValueSet-UKCore-FundingCategory
 ---
 ## UK Core Funding Category 
 
-{{page:ValueSetTemplate}}
+{{page:ValueSetTemplate_new}}
