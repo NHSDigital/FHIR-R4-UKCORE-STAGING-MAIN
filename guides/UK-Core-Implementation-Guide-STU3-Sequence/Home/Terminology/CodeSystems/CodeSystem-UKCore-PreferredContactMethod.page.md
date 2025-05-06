@@ -4,4 +4,4 @@ issue: CodeSystem-UKCore-PreferredContactMethod
 ---
 ## UK Core Preferred Contact Method
 
-{{page:CodeSystemTemplate_new}}
+{{page:CodeSystemTemplate}}

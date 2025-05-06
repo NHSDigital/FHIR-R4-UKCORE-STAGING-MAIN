@@ -4,4 +4,4 @@ issue: CodeSystem-UKCore-RecordStandardHeadings
 ---
 ## UK Core Record Standard Headings
 
-{{page:CodeSystemTemplate_new}}
+{{page:CodeSystemTemplate}}

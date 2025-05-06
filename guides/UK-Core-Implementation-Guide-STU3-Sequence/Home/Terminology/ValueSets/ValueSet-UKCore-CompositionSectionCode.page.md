@@ -4,4 +4,4 @@ issue: ValueSet-UKCore-CompositionSectionCode
 ---
 ## UK Core Composition Section Code
 
-{{page:ValueSetTemplate_new}}
+{{page:ValueSetTemplate}}

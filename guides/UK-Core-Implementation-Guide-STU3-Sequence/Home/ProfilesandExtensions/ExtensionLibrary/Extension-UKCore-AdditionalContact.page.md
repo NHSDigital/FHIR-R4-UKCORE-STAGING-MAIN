@@ -29,9 +29,3 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 
 
 ---
-
-https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/extensionlibrary/
-extension-ukcore-actualproblem.page.md?version=1.9.0
-
-https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/extensionlibrary/
-extension-ukcore-additionalcontact.page.md?version=current

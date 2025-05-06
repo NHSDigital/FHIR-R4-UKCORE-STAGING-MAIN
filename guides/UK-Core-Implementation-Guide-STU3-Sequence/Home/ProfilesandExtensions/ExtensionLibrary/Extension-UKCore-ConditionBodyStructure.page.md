@@ -2,8 +2,6 @@
 subject: http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure
 issue: Extension-UKCore-ConditionBodyStructure
 ---
-{{page:ExtensionTemplate_new}}
-
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4> This extension is a backport from R6 and has been newly added for UK Core STU3 
 
 ## StructureDefinition {{variable:issue}}
@@ -14,7 +12,7 @@ issue: Extension-UKCore-ConditionBodyStructure
 </tr>
 </table>
 
-
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <!--<div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -24,3 +22,6 @@ issue: Extension-UKCore-ConditionBodyStructure
 
 </div>
 ---
+
+
+

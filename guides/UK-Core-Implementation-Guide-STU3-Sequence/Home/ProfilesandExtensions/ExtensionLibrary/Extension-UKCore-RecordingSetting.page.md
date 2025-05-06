@@ -17,7 +17,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-R
 </tr>
 </table>
 
-{{page:ExtensionTemplate_new}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

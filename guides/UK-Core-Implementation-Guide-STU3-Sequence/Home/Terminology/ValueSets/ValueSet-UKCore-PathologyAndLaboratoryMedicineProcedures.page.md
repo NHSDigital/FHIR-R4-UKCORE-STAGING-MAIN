@@ -4,4 +4,4 @@ issue: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures
 ---
 ## UK Core Pathology And Laboratory Medicine Procedures
 
-{{page:ValueSetTemplate_new}}
+{{page:ValueSetTemplate}}

@@ -10,7 +10,7 @@ issue: Extension-UKCore-SpecimenCollectionCollector
 </tr>
 </table>
 
-{{page:ExtensionTemplate_new}}
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -25,5 +25,6 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 
 - {{pagelink:Profile-Patient}}
 - {{pagelink:Profile-RelatedPerson}}
+
 
 ---

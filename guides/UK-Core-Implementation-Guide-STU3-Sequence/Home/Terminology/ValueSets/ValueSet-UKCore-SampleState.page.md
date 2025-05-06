@@ -4,6 +4,6 @@ issue: ValueSet-UKCore-SampleState
 ---
 ## UK Core Sample State
 
-{{page:ValueSetTemplate_new}}
-
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4> This ValueSet replaces the BiopsyState ValueSet. 
+
+{{page:ValueSetTemplate}}
