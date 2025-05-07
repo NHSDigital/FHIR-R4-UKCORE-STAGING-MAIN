@@ -1,9 +1,9 @@
 ## `performer`
 
 Indicates who performed the immunisation event by reference. Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
-- {{pagelink:Profile-Organization}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
+- {{pagelink:UKCore-Organization}}
+- {{pagelink:UKCore-Practitioner}}
+- {{pagelink:UKCore-PractitionerRole}}
 
 #### Example of `Immunization.performer` usage:
 <div class="tab">

@@ -46,7 +46,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ACVPU}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-ACVPU}}</td>
+<td>{{pagelink:UKCore-Observation-ACVPU}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-AlcoholConsumption}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-AlcoholConsumption}}</td>
+<td>{{pagelink:UKCore-Observation-AlcoholConsumption}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -101,7 +101,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>              
 <td><h4>{{pagelink:ValueSet-UKCore-AllergyCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-AllergyIntolerance}}</td>
+<td>{{pagelink:UKCore-AllergyIntolerance}}</td>
 <td>2</td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-AllergyManifestation}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-AllergyIntolerance}}</td>
+<td>{{pagelink:UKCore-AllergyIntolerance}}</td>
 <td>2</td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-AllergySubstance}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-AllergyIntolerance}}</td>
+<td>{{pagelink:UKCore-AllergyIntolerance}}</td>
 <td>2</td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Appointment}}</td>
+<td>{{pagelink:UKCore-Appointment}}</td>
 <td>5</td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodGlucose}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-BloodGlucose}}</td>
+<td>{{pagelink:UKCore-Observation-BloodGlucose}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -213,7 +213,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-Average}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-AverageBloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-AverageBloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -226,7 +226,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-AverageDiastolic}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-AverageBloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-AverageBloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -239,7 +239,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-AverageSystolic}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-AverageBloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-AverageBloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -252,7 +252,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-CuffSize}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Device-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Device-BloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -265,7 +265,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-DeviceType}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Device-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Device-BloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -278,7 +278,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-Diastolic}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -291,8 +291,8 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-MeasurementMethod}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-AverageBloodPressure}}
-<br>{{pagelink:Profile-Observation-VitalSigns-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-AverageBloodPressure}}
+<br>{{pagelink:UKCore-Observation-VitalSigns-BloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -305,7 +305,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BloodPressure-Systolic}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BloodPressure}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BMI}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BMI}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BMI}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -332,7 +332,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BodyHeightMeasurements}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyHeight}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BodyHeight}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -345,7 +345,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BodyPosition}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -359,10 +359,10 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td><h4>{{pagelink:ValueSet-UKCore-BodySite}}</h4></td>
 <td>active</td>
 <td>
-{{pagelink:Profile-MedicationAdministration}}<br/>
-{{pagelink:Profile-MedicationDispense}}<br/>
-{{pagelink:Profile-MedicationRequest}}<br/>
-{{pagelink:Profile-MedicationStatement}}
+{{pagelink:UKCore-MedicationAdministration}}<br/>
+{{pagelink:UKCore-MedicationDispense}}<br/>
+{{pagelink:UKCore-MedicationRequest}}<br/>
+{{pagelink:UKCore-MedicationStatement}}
 </td>
 <td>3</td>
 </tr>
@@ -376,7 +376,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BodyTemperature}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyTemperature}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BodyTemperature}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BodyWeightMeasurements}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyWeight}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-BodyWeight}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -403,7 +403,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td><h4>{{pagelink:ValueSet-UKCore-CareSettingType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-CareSettingType}}<br>
-{{pagelink:Profile-Encounter}}</td>
+{{pagelink:UKCore-Encounter}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-CompositionCategory}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Composition}}</td>
+<td>{{pagelink:UKCore-Composition}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Composition}}</td>
+<td>{{pagelink:UKCore-Composition}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -442,7 +442,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ConditionCategory}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Condition}}</td>
+<td>{{pagelink:UKCore-Condition}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -455,8 +455,8 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ConditionCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Condition}}<br>
-{{pagelink:Profile-Procedure}}
+<td>{{pagelink:UKCore-Condition}}<br>
+{{pagelink:UKCore-Procedure}}
 </td>
 <td>4</td>
 </tr>
@@ -509,7 +509,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-DischargeDestination}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -542,7 +542,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-DocumentType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Composition}}</td>
+<td>{{pagelink:UKCore-Composition}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -555,7 +555,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EarlyWarningSubScore}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-EarlyWarningTotalScore}}</td>
+<td>{{pagelink:UKCore-Observation-EarlyWarningTotalScore}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -568,7 +568,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EarlyWarningTotalScore}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-EarlyWarningTotalScore}}</td>
+<td>{{pagelink:UKCore-Observation-EarlyWarningTotalScore}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -597,7 +597,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -613,7 +613,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EncounterType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>4</td>
 </tr>
 </tr>
@@ -657,7 +657,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>6</td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-HeadCircumferenceMeasurements}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-HeadCircumference}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-HeadCircumference}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -683,7 +683,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-HeartRate}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-HeartRate}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-HeartRate}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -696,7 +696,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ImmunizationAdministrationBodySite}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Immunization}}</td>
+<td>{{pagelink:UKCore-Immunization}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -709,7 +709,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ImmunizationExplanationReason}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Immunization}}</td>
+<td>{{pagelink:UKCore-Immunization}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -722,7 +722,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-InspiredOxygen}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-InspiredOxygen}}</td>
+<td>{{pagelink:UKCore-Observation-InspiredOxygen}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -764,7 +764,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ListCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-List}}</td>
+<td>{{pagelink:UKCore-List}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -777,7 +777,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-List}}</td>
+<td>{{pagelink:UKCore-List}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -807,7 +807,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationAdministrationCategory}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-MedicationAdministration}}</td>
+<td>{{pagelink:UKCore-MedicationAdministration}}</td>
 <td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> (See footnote)</div></td>
 </tr>
 <tr>
@@ -823,11 +823,11 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Medication}}<br/>
-{{pagelink:Profile-MedicationAdministration}}<br/>
-{{pagelink:Profile-MedicationDispense}}<br/>
-{{pagelink:Profile-MedicationRequest}}<br/>
-{{pagelink:Profile-MedicationStatement}}</td>
+<td>{{pagelink:UKCore-Medication}}<br/>
+{{pagelink:UKCore-MedicationAdministration}}<br/>
+{{pagelink:UKCore-MedicationDispense}}<br/>
+{{pagelink:UKCore-MedicationRequest}}<br/>
+{{pagelink:UKCore-MedicationStatement}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -841,10 +841,10 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationDosageMethod}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-MedicationAdministration}}<br/>
-{{pagelink:Profile-MedicationDispense}}<br/>
-{{pagelink:Profile-MedicationRequest}}<br/>
-{{pagelink:Profile-MedicationStatement}}</td>
+<td>{{pagelink:UKCore-MedicationAdministration}}<br/>
+{{pagelink:UKCore-MedicationDispense}}<br/>
+{{pagelink:UKCore-MedicationRequest}}<br/>
+{{pagelink:UKCore-MedicationStatement}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -857,7 +857,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationForm}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Medication}}</td>
+<td>{{pagelink:UKCore-Medication}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -885,7 +885,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationRequestCategory}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-MedicationRequest}}</td>
+<td>{{pagelink:UKCore-MedicationRequest}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -901,7 +901,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationRequestCourseOfTherapy}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-MedicationRequest}}</td>
+<td>{{pagelink:UKCore-MedicationRequest}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -917,7 +917,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationStatementCategory}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-MedicationStatement}}</td>
+<td>{{pagelink:UKCore-MedicationStatement}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -934,7 +934,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationSupplyType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-MedicationDispense}}</td>
+<td>{{pagelink:UKCore-MedicationDispense}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -960,7 +960,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>6</td>
 </tr>
 <tr>
@@ -992,7 +992,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ObservationType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Observation}}</td>
+<td>{{pagelink:UKCore-Observation}}</td>
 <td>6</td>
 </tr>
 <tr >
@@ -1005,7 +1005,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ObservationVitalSignsType}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -1018,7 +1018,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-OrganizationType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Organization}}</td>
+<td>{{pagelink:UKCore-Organization}}</td>
 <td>6</td>
 </tr>
 <tr >
@@ -1047,7 +1047,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -1063,7 +1063,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-OxygenSaturation}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-OxygenSaturation}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -1076,7 +1076,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Observation-Lab}}</td>
+<td>{{pagelink:UKCore-Observation-Lab}}</td>
 <td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>(See footnote)</div></td>
 </tr>
 <tr>
@@ -1089,8 +1089,8 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Observation-Group-Lab}}<br>
-{{pagelink:Profile-ServiceRequest-Lab}}</td>
+<td>{{pagelink:UKCore-Observation-Group-Lab}}<br>
+{{pagelink:UKCore-ServiceRequest-Lab}}</td>
 <td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>(See footnote)</div></td>
 </tr>
 <tr>
@@ -1103,7 +1103,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>1</td>
 </tr>
 <tr>
@@ -1126,9 +1126,9 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PersonRelationshipType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-FamilyMemberHistory}}<br>
-{{pagelink:Profile-Patient}}<br>
-{{pagelink:Profile-RelatedPerson}}</td>
+<td>{{pagelink:UKCore-FamilyMemberHistory}}<br>
+{{pagelink:UKCore-Patient}}<br>
+{{pagelink:UKCore-RelatedPerson}}</td>
 <td>1</td>
 </tr>
 <tr>
@@ -1147,11 +1147,11 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Appointment}}<br>
-{{pagelink:Profile-HealthcareService}}<br>
-{{pagelink:Profile-PractitionerRole}}<br>
-{{pagelink:Profile-Schedule}}<br>
-{{pagelink:Profile-Slot}}
+<td>{{pagelink:UKCore-Appointment}}<br>
+{{pagelink:UKCore-HealthcareService}}<br>
+{{pagelink:UKCore-PractitionerRole}}<br>
+{{pagelink:UKCore-Schedule}}<br>
+{{pagelink:UKCore-Slot}}
 </td>
 <td>1</td>
 </tr>
@@ -1191,8 +1191,8 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:Valueset-UKCore-ProcedureCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Procedure}}<br>
-{{pagelink:Profile-ServiceRequest}}</td>
+<td>{{pagelink:UKCore-Procedure}}<br>
+{{pagelink:UKCore-ServiceRequest}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -1205,7 +1205,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ReasonImmunizationNotAdministered}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Immunization}}</td>
+<td>{{pagelink:UKCore-Immunization}}</td>
 <td>3</td>
 </tr>
 <tr>
@@ -1231,7 +1231,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ReportCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-DiagnosticReport}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}</td>
 <td>6</td>
 </tr>
 <tr>
@@ -1257,7 +1257,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-RespirationRate}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-VitalSigns-RespirationRate}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns-RespirationRate}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -1284,7 +1284,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr style="background-color: #dff0d8;">
   <td><h4>{{pagelink:ValueSet-UKCore-SampleState}}</h4></td>
   <td>active</td>
-  <td>{{pagelink:Profile-Specimen}}</td>
+  <td>{{pagelink:UKCore-Specimen}}</td>
   <td>6</td>
 </tr>
 <tr style="background-color: #dff0d8;">
@@ -1302,7 +1302,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <td><h4>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-PriorityReason}}<br>
-{{pagelink:Profile-ServiceRequest}}</td>
+{{pagelink:UKCore-ServiceRequest}}</td>
 <td>5</td>
 </tr>
 <tr>
@@ -1315,7 +1315,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>4</td>
 </tr>
 <tr>
@@ -1344,7 +1344,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>6</td>
 </tr>
 <tr>
@@ -1357,7 +1357,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SpecimenType}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>6</td>
 </tr>
 <tr>
@@ -1370,12 +1370,12 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SubstanceOrProductAdministrationRoute}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-AllergyIntolerance}}<br/>
-{{pagelink:Profile-Immunization}}<br/>
-{{pagelink:Profile-MedicationAdministration}}<br/>
-{{pagelink:Profile-MedicationDispense}}<br/>
-{{pagelink:Profile-MedicationRequest}}<br/>
-{{pagelink:Profile-MedicationStatement}}
+<td>{{pagelink:UKCore-AllergyIntolerance}}<br/>
+{{pagelink:UKCore-Immunization}}<br/>
+{{pagelink:UKCore-MedicationAdministration}}<br/>
+{{pagelink:UKCore-MedicationDispense}}<br/>
+{{pagelink:UKCore-MedicationRequest}}<br/>
+{{pagelink:UKCore-MedicationStatement}}
 </td>
 <td>3</td>
 </tr>
@@ -1389,7 +1389,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-TobaccoConsumption}}</h4></td>
 <td>draft</td>
-<td>{{pagelink:Profile-Observation-TobaccoConsumption}}</td>
+<td>{{pagelink:UKCore-Observation-TobaccoConsumption}}</td>
 <td>7</td>
 </tr>
 <tr>
@@ -1428,7 +1428,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-VaccineCode}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Immunization}}</td>
+<td>{{pagelink:UKCore-Immunization}}</td>
 <td>3</td>
 </tr>
 <tr>

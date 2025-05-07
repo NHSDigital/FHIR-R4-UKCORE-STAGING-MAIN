@@ -8,7 +8,7 @@ issue: UKCore-DiagnosticReport-Lab
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -39,7 +39,7 @@ The DiagnosticReport-Lab profile is expected to reference either:
 - combinations of the above, for example a blood test may include multiple grouped tests such as Urea and electrolytes, Liver function tests, Full blood count, each having a single instance of Observation-LabGroup, along with single tests such as Serum C reactive protein level, eGFR using creatinine and Serum ferritin level, each having a single instance of Observation-Lab.
 
 <br>
-The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:Profile-Observation-Group-Lab}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
+The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:UKCore-Observation-Group-Lab}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
 <br>
 
 <div id="renderParent" title="Dervied Lab profile structure">
@@ -47,7 +47,7 @@ The workflow below shows a possible way to group a set of related laboratory obs
 </div>
 
 <br><br>
-Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:Profile-Observation-Group-Lab}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
+Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:UKCore-Observation-Group-Lab}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
 
 <div id="renderParent" title="Dervied Lab profile alternative structure">
 {{render:Derived-Profiles-Lab-Example-Extra-Group}}
@@ -57,7 +57,7 @@ Depending upon the countries or trusts workflow, an alternative is to have any s
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

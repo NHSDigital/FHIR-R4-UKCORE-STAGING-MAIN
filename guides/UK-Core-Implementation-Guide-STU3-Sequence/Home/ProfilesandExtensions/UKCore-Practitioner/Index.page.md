@@ -7,7 +7,7 @@ issue: UKCore-Practitioner
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -23,7 +23,7 @@ issue: UKCore-Practitioner
 <br>
 {{pagelink:UKCore-Practitioner-PharmacistJimmyChuck-Example}}
 <br><br>
-Note: the practitioner's role information is carried in the {{pagelink:Profile-PractitionerRole}}   <br><br>
+Note: the practitioner's role information is carried in the {{pagelink:UKCore-PractitionerRole}}   <br><br>
 </div>
 </nocheck>
 
@@ -39,7 +39,7 @@ The following are example usage scenarios for the UK Core Practitioner profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

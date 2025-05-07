@@ -6,11 +6,11 @@ issue: Extension-UKCore-ObservationTriggeredBy
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Observation,text:Observation}}</td>
+<td>{{pagelink:UKCore-Observation,text:Observation}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -21,6 +21,6 @@ issue: Extension-UKCore-ObservationTriggeredBy
 
 <h3 id="guidance-obstriggeredby">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Observation}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:UKCore-Observation}}.
 
 ---

@@ -6,11 +6,11 @@ issue: Extension-UKCore-Evidence
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-AllergyIntolerance,text:AllergyIntolerance}}</td>
+<td>{{pagelink:UKCore-AllergyIntolerance,text:AllergyIntolerance}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -22,6 +22,6 @@ issue: Extension-UKCore-Evidence
 
 <h3 id="guidance-evidence">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-DiagnosticReport}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:UKCore-DiagnosticReport}}.
 
 ---

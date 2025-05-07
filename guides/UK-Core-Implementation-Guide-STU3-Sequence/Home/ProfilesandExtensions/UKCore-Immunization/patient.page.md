@@ -1,6 +1,6 @@
 ## `patient`
 
-A reference to the patient who either received or did not receive the immunisation. Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Patient}}.
+A reference to the patient who either received or did not receive the immunisation. Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:UKCore-Patient}}.
 
 #### Example of `Immunization.patient` usage:
 <div class="tab">

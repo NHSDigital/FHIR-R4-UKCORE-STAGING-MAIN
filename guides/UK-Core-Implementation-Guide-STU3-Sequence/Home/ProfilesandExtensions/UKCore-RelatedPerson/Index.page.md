@@ -7,7 +7,7 @@ issue: UKCore-RelatedPerson
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}} 
+{{page:ProfileTemplate}} 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Related Person</b> - An example to illustrate a person who is related to the patient.
@@ -28,7 +28,7 @@ The following are example usage scenarios for the UK Core RelatedPerson profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

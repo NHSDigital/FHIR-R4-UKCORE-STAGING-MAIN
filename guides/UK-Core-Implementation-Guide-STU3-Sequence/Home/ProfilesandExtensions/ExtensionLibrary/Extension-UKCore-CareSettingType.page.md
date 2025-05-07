@@ -6,12 +6,12 @@ issue: Extension-UKCore-CareSettingType
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Composition,text:Composition}} <br/> 
-{{pagelink:Profile-List,text:List}}</td>
+<td>{{pagelink:UKCore-Composition,text:Composition}} <br/> 
+{{pagelink:UKCore-List,text:List}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

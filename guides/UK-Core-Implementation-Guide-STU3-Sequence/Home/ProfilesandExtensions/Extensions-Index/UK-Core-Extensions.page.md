@@ -34,7 +34,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-AdditionalContact}}</td>
 <td>active</td>
 <td>ServiceRequest</td>
-<td>{{pagelink:Profile-ServiceRequest}}</td>
+<td>{{pagelink:UKCore-ServiceRequest}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -43,7 +43,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-AddressKey}}</td>
 <td>active</td>
 <td>Address</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -52,7 +52,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-AdmissionMethod}}</td>
 <td>active</td>
 <td>Encounter.hospitalization</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -61,7 +61,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-AllergyIntoleranceEnd}}</td>
 <td>active</td>
 <td>AllergyIntolerance.<br>clinicalStatus</td>
-<td>{{pagelink:Profile-AllergyIntolerance}}</td>
+<td>{{pagelink:UKCore-AllergyIntolerance}}</td>
 <td>NO</td>
 <td>2</td>
 </tr>
@@ -70,7 +70,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-AssociatedEncounter}}</td>
 <td>active</td>
 <td>FamilyMemberHistory</td>
-<td>{{pagelink:Profile-FamilyMemberHistory}}</td>
+<td>{{pagelink:UKCore-FamilyMemberHistory}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -79,7 +79,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-BirthSex}}</td>
 <td>active</td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -88,7 +88,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-BodySiteReference}}</td>
 <td>active</td>
 <td>Specimen.collection.bodySite</td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -97,7 +97,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-BookingOrganization}}</td>
 <td>active</td>
 <td>Appointment</td>
-<td>{{pagelink:Profile-Appointment}}</td>
+<td>{{pagelink:UKCore-Appointment}}</td>
 <td>NO</td>
 <td>5</td>
 </tr>
@@ -106,8 +106,8 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-CareSettingType}}</td>
 <td>active</td>
 <td>Composition <br/>List  </td>
-<td> {{pagelink:Profile-Composition}} <br> 
-{{pagelink:Profile-List}}</td>
+<td> {{pagelink:UKCore-Composition}} <br> 
+{{pagelink:UKCore-List}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -125,7 +125,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-ConditionEpisode}}</td>
 <td>active</td>
 <td>Condition</td>
-<td>{{pagelink:Profile-Condition}}</td>
+<td>{{pagelink:UKCore-Condition}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -134,7 +134,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-ConditionBodyStructure}}</td>
 <td>active</td>
 <td>Condition</td>
-<td>{{pagelink:Profile-Condition}}</td>
+<td>{{pagelink:UKCore-Condition}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -143,8 +143,8 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-ContactPreference}}</td>
 <td>active</td>
 <td>Patient,<br>RelatedPerson</td>
-<td> {{pagelink:Profile-Patient}} <br> 
-{{pagelink:Profile-RelatedPerson}}</td>
+<td> {{pagelink:UKCore-Patient}} <br> 
+{{pagelink:UKCore-RelatedPerson}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -153,7 +153,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-ContactRank}}</td>
 <td>active</td>
 <td>Patient.contact</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -162,7 +162,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-Coverage}}</td>
 <td>active</td>
 <td>ServiceRequest</td>
-<td>{{pagelink:Profile-ServiceRequest}}</td>
+<td>{{pagelink:UKCore-ServiceRequest}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -171,8 +171,8 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-CopyCorrespondenceIndicator}}</td>
 <td>active</td>
 <td>Patient.contact,<br>RelatedPerson</td>
-<td>{{pagelink:Profile-Patient}} <br> 
-{{pagelink:Profile-RelatedPerson}}</td>
+<td>{{pagelink:UKCore-Patient}} <br> 
+{{pagelink:UKCore-RelatedPerson}}</td>
 <td>NO</td>
 <td>1</td> 
 </tr>
@@ -181,7 +181,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-CuffSize}}</td>
 <td>draft</td>
 <td>Device</td>
-<td>{{pagelink:Profile-Device-BloodPressure}}</td>
+<td>{{pagelink:UKCore-Device-BloodPressure}}</td>
 <td>NO</td>
 <td>7</td> 
 </tr>
@@ -190,7 +190,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-DeathNotificationStatus}}</td>
 <td>active</td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -199,8 +199,8 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-DeliveryChannel}}</td>
 <td>active</td>
 <td>Appointment, Slot</td>
-<td>{{pagelink:Profile-Appointment}}<br>
-{{pagelink:Profile-Slot}}</td>
+<td>{{pagelink:UKCore-Appointment}}<br>
+{{pagelink:UKCore-Slot}}</td>
 <td>NO</td>
 <td>5</td>
 </tr>
@@ -209,7 +209,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-DeviceReference}}</td>
 <td>active</td>
 <td>DiagnosticReport.performer,<br>DiagnosticReport.<br>resultsInterpreter</td>
-<td>{{pagelink:Profile-DiagnosticReport}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -218,7 +218,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-DischargeMethod}}</td>
 <td>active</td>
 <td>Encounter</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -227,7 +227,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink}}</td>
 <td>active</td>
 <td>DiagnosticReport</td>
-<td>{{pagelink:Profile-DiagnosticReport}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -237,7 +237,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus}}</td>
 <td>active</td>
 <td>Encounter</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -246,7 +246,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-EthnicCategory}}</td>
 <td>active</td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -255,7 +255,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-Evidence}}</td>
 <td>active</td>
 <td>AllergyIntolerance</td>
-<td>{{pagelink:Profile-AllergyIntolerance}}</td>
+<td>{{pagelink:UKCore-AllergyIntolerance}}</td>
 <td>NO</td>
 <td>2</td>
 </tr>
@@ -264,7 +264,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-LegalStatus}}</td>
 <td>active</td>
 <td>Encounter</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -273,7 +273,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-ListWarningCode}}</td>
 <td>active</td>
 <td>List</td>
-<td>{{pagelink:Profile-List}}</td>
+<td>{{pagelink:UKCore-List}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -282,7 +282,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-MainLocation}}</td>
 <td>active</td>
 <td>Organization</td>
-<td>{{pagelink:Profile-Organization}}</td>
+<td>{{pagelink:UKCore-Organization}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -291,7 +291,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-MedicationPrescribingOrganizationType}}</td>
 <td>active</td>
 <td>MedicationStatement</td>
-<td>{{pagelink:Profile-MedicationStatement}}</td>
+<td>{{pagelink:UKCore-MedicationStatement}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>
@@ -300,7 +300,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-MedicationRepeatInformation}}</td>
 <td>active</td>
 <td>MedicationRequest</td>
-<td>{{pagelink:Profile-MedicationRequest}}</td>
+<td>{{pagelink:UKCore-MedicationRequest}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>
@@ -309,7 +309,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-MedicationStatementLastIssueDate}}</td>
 <td>active</td>
 <td>MedicationStatement</td>
-<td>{{pagelink:Profile-MedicationStatement}}</td>
+<td>{{pagelink:UKCore-MedicationStatement}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>
@@ -318,7 +318,7 @@ topic: Library-Extensions-UKCore
 <td> {{pagelink:Extension-UKCore-MedicationTradeFamily}}</td>
 <td>active</td>
 <td>Medication</td>
-<td>{{pagelink:Profile-Medication}}</td>
+<td>{{pagelink:UKCore-Medication}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>
@@ -327,7 +327,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason}}</td>
 <td>active</td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -336,7 +336,7 @@ topic: Library-Extensions-UKCore
 <td>{{pagelink:Extension-UKCore-NHSNumberVerificationStatus}}</td>
 <td>active</td>
 <td>Patient.identifier</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -347,8 +347,8 @@ topic: Library-Extensions-UKCore
 <td>ContactPoint.system,<br>
 Patient.telecom.system,<br>
 RelatedPerson.telecom.system</td>
-<td>{{pagelink:Profile-Patient}} <br> 
-{{pagelink:Profile-RelatedPerson}}</td>
+<td>{{pagelink:UKCore-Patient}} <br> 
+{{pagelink:UKCore-RelatedPerson}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -357,7 +357,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-OutcomeOfAttendance}}</td>
 <td>active</td>
 <td>Encounter</td>
-<td>{{pagelink:Profile-Encounter}}</td>
+<td>{{pagelink:UKCore-Encounter}}</td>
 <td>NO</td>
 <td>4</td>
 </tr>
@@ -366,7 +366,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-PatientFetalStatus}}</td>
 <td>active</td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -376,7 +376,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-ParentPresent}}</td>
 <td>active</td>
 <td>Immunization</td>
-<td>{{pagelink:Profile-Immunization}}</td>
+<td>{{pagelink:UKCore-Immunization}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>
@@ -385,7 +385,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-PharmacistVerifiedIndicator}}</td>
 <td>active</td>
 <td>MedicationStatement</td>
-<td>{{pagelink:Profile-MedicationStatement}}</td>
+<td>{{pagelink:UKCore-MedicationStatement}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>
@@ -394,7 +394,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-PriorityReason}}</td>
 <td>active</td>
 <td>ServiceRequest.priority</td>
-<td>{{pagelink:Profile-ServiceRequest}}</td>
+<td>{{pagelink:UKCore-ServiceRequest}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -403,7 +403,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-RecordingSetting}}</td>
 <td>draft</td>
 <td>Observation</td>
-<td>{{pagelink:Profile-Observation-VitalSigns}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns}}</td>
 <td>NO</td>
 <td>7</td> 
 </tr>
@@ -412,7 +412,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-ResidentialStatus}}</td>
 <td>active</td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 <td>1</td>
 </tr>
@@ -421,7 +421,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-SampleCategory}}</td>
 <td>active</td>
 <td>Specimen</td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>NO</td>
 <td>6</td>
 </tr>
@@ -430,7 +430,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-SourceOfServiceRequest}}</td>
 <td>active</td>
 <td>ServiceRequest</td>
-<td>{{pagelink:Profile-ServiceRequest}}</td>
+<td>{{pagelink:UKCore-ServiceRequest}}</td>
 <td>NO</td>
 <td>5</td>
 </tr>
@@ -439,7 +439,7 @@ RelatedPerson.telecom.system</td>
 <td>{{pagelink:Extension-UKCore-VaccinationProcedure}}</td>
 <td>active</td>
 <td>Immunization</td>
-<td>{{pagelink:Profile-Immunization}}</td>
+<td>{{pagelink:UKCore-Immunization}}</td>
 <td>NO</td>
 <td>3</td>
 </tr>

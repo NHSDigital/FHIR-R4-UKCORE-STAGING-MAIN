@@ -2,11 +2,11 @@
 
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
-- {{pagelink:Profile-Organization}}
-- {{pagelink:Profile-Patient}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
-- {{pagelink:Profile-RelatedPerson}}
+- {{pagelink:UKCore-Organization}}
+- {{pagelink:UKCore-Patient}}
+- {{pagelink:UKCore-Practitioner}}
+- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:UKCore-RelatedPerson}}
 
 Referencing an organisation is likely to be more useful than a person. Individual work patterns and/or employer may change while the care setting organisation is likely to be more static and relevant within historic instances of this resource.
 

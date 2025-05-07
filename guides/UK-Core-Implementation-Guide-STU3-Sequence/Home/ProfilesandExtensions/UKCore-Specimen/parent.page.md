@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to the following {{pagelink:Profile-Specimen}}.
+The resource being referenced SHALL conform to the following {{pagelink:UKCore-Specimen}}.
 
 ---

@@ -6,11 +6,11 @@ issue: Extension-UKCore-ContactRank
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Patient,text:Patient.contact}}</td>
+<td>{{pagelink:UKCore-Patient,text:Patient.contact}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
