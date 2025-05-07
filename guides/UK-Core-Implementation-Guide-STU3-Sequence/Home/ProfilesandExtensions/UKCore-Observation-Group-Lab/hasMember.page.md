@@ -2,8 +2,8 @@
 
 The resource being referenced SHALL conform to at least one of the following:
 
-- {{pagelink:Profile-Observation}}
-- {{pagelink:Profile-Observation-Group-Lab}}
-- {{pagelink:Profile-Observation-Lab}}
+- {{pagelink:UKCore-Observation}}
+- {{pagelink:UKCore-Observation-Group-Lab}}
+- {{pagelink:UKCore-Observation-Lab}}
 
 ---

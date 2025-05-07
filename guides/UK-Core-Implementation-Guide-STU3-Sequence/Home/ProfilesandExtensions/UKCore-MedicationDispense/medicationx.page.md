@@ -6,12 +6,12 @@ Where a dm+d code exists it SHALL be used either as `MedicationDispense.medicati
 
 Where CodeableConcept is used, `MedicationDispense.medicationCodeableConcept.coding` is the dm+d code and `MedicationDispense.medicationCodeableConcept.text` is dm+d concept name/description. 
 
-Can be either a dm+d code as a CodeableConcept or reference to UK Core {{pagelink:Profile-Medication}}
-resource. Using a CodeableConcept is preferred unless additional data if required that would be contained within a UK Core {{pagelink:Profile-Medication}} resource.
+Can be either a dm+d code as a CodeableConcept or reference to UK Core {{pagelink:UKCore-Medication}}
+resource. Using a CodeableConcept is preferred unless additional data if required that would be contained within a UK Core {{pagelink:UKCore-Medication}} resource.
 
 The elements `MedicationDispense.medicationCodeableConcept.coding` and `MedicationDispense.medicationReference.Medication.code` are both bound to {{pagelink:ValueSet-UKCore-MedicationCode}}
 
-Examples where a reference to a UK Core {{pagelink:Profile-Medication}} would be applicable include:
+Examples where a reference to a UK Core {{pagelink:UKCore-Medication}} would be applicable include:
 
 - Record a VTM with a specific form 
 - Record manufacturer with a concept as described in {{pagelink:ValueSet-UKCore-MedicationCode}}

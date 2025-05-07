@@ -3,11 +3,11 @@
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - [UKCore-Device (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
-- {{pagelink:Profile-HealthcareService}}
-- {{pagelink:Profile-Location}}
-- {{pagelink:Profile-Patient}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
-- {{pagelink:Profile-RelatedPerson}}
+- {{pagelink:UKCore-HealthcareService}}
+- {{pagelink:UKCore-Location}}
+- {{pagelink:UKCore-Patient}}
+- {{pagelink:UKCore-Practitioner}}
+- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:UKCore-RelatedPerson}}
 
 ---

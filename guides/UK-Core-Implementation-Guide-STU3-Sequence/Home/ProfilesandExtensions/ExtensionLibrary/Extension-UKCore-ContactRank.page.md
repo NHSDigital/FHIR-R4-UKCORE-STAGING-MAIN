@@ -6,7 +6,7 @@ issue: Extension-UKCore-ContactRank
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Patient,text:Patient.contact}}</td>
+<td>{{pagelink:UKCore-Patient,text:Patient.contact}}</td>
 </tr>
 </table>
 

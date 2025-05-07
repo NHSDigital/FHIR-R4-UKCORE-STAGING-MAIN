@@ -6,8 +6,8 @@ issue: Extension-UKCore-DeliveryChannel
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Appointment,text:Appointment}}<br/>
-{{pagelink:Profile-Slot,text:Slot}}</td>
+<td>{{pagelink:UKCore-Appointment,text:Appointment}}<br/>
+{{pagelink:UKCore-Slot,text:Slot}}</td>
 </tr>
 </table>
 

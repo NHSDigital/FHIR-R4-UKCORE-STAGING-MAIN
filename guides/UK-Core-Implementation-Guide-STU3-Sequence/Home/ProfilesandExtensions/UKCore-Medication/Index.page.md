@@ -29,10 +29,10 @@ issue: UKCore-Medication
 ### Example Usage Scenarios
 
 The UK Core Medication profile will likely not be used in isolation. It does not provide the context for the medication, e.g. the patient or medication related process. It will be typically used as a referenced resource within
-- {{pagelink:Profile-MedicationAdministration}}
-- {{pagelink:Profile-MedicationDispense}}
-- {{pagelink:Profile-MedicationRequest}}
-- {{pagelink:Profile-MedicationStatement}}
+- {{pagelink:UKCore-MedicationAdministration}}
+- {{pagelink:UKCore-MedicationDispense}}
+- {{pagelink:UKCore-MedicationRequest}}
+- {{pagelink:UKCore-MedicationStatement}}
 
 <hr class="thickline">
 

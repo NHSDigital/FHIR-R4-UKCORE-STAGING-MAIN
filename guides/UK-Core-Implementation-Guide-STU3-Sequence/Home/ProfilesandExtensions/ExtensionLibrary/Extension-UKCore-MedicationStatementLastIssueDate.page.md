@@ -6,7 +6,7 @@ issue: Extension-UKCore-MedicationStatementLastIssueDate
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-MedicationStatement,text:MedicationStatement}}</td>
+<td>{{pagelink:UKCore-MedicationStatement,text:MedicationStatement}}</td>
 </tr>
 </table>
 

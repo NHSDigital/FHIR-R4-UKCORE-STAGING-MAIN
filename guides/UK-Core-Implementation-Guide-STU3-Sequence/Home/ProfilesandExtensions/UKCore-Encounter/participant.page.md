@@ -85,8 +85,8 @@ The `Encounter.participant.type` element SHOULD include the role of the particip
 
 <br><br>
 Where possible, the `Encounter.participant.individual` is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
-- {{pagelink:Profile-RelatedPerson}}
+- {{pagelink:UKCore-Practitioner}}
+- {{pagelink:UKCore-PractitionerRole}}
+- {{pagelink:UKCore-RelatedPerson}}
 
 ---
