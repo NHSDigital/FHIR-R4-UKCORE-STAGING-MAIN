@@ -53,7 +53,7 @@
 - name: CodeSystem UKCore-MedicationAdministrationCategory
   filename: CodeSystem-UKCore-MedicationAdministrationCategory.page.md
 - name: CodeSystem UKCore-MedicationPrescribingOrganizationType
-  filename: CodeSystem-UKCore-MedicationPrescribingOrganization.page.md
+  filename: CodeSystem-UKCore-MedicationPrescribingOrganizationType.page.md
 - name: CodeSystem UKCore-MedicationRequestCategory
   filename: CodeSystem-UKCore-MedicationRequestCategory.page.md
 - name: CodeSystem UKCore-MedicationRequestCourseOfTherapy

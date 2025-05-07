@@ -1,8 +1,6 @@
 - name: Index
   filename: Index.page.md
-- name: UK Core Extensions
+- name: UK-Core-Extensions
   filename: UK-Core-Extensions.page.md
 - name: HL7 Core-defined Extensions
   filename: HL7-Core-defined-Extensions.page.md
-- name: HL7 Backport Elements
-  filename: HL7-Backport-Elements.page.md
