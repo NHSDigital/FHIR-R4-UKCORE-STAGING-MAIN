@@ -6,11 +6,11 @@ issue: Extension-UKCore-SampleCategory
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Specimen,text:Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen,text:Specimen}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

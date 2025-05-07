@@ -20,56 +20,56 @@ The following <a href="https://hl7.org/fhir/versions.html#extensions" class="ext
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.composition" class="external">DiagnosticReport.composition</a></td>
-<td>{{pagelink:Profile-DiagnosticReport}}<br>
-{{pagelink:Profile-DiagnosticReport-Lab}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}<br>
+{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-DiagnosticReportComposition}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.note" class="external">DiagnosticReport.note</a></td>
-<td>{{pagelink:Profile-DiagnosticReport}}<br>
-{{pagelink:Profile-DiagnosticReport-Lab}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}<br>
+{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-DiagnosticReportNote}}</td>
 <td>NO</td>
 </tr>
 <td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.media.link" class="external">DiagnosticReport.media</a></td>
-<td>{{pagelink:Profile-DiagnosticReport}}<br>
-{{pagelink:Profile-DiagnosticReport-Lab}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}<br>
+{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.supportingInfo" class="external">DiagnosticReport.supportingInfo</a></td>
-<td>{{pagelink:Profile-DiagnosticReport}}<br>
-{{pagelink:Profile-DiagnosticReport-Lab}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport}}<br>
+{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-DiagnosticReportSupportingInfo}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/familymemberhistory-definitions.html#FamilyMemberHistory.participant" class="external">FamilyMemberHistory.participant</a></td>
-<td>{{pagelink:Profile-FamilyMemberHistory}}</td>
+<td>{{pagelink:UKCore-FamilyMemberHistory}}</td>
 <td>{{pagelink:Extension-UKCore-FamilyMemberHistoryParticipant}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.bodyStructure" class="external">Observation.bodyStructure</a></td>
-<td>{{pagelink:Profile-Observation}}<br>
-{{pagelink:Profile-Observation-Lab}}<br>
-{{pagelink:Profile-Observation-Group-Lab}}</td>
+<td>{{pagelink:UKCore-Observation}}<br>
+{{pagelink:UKCore-Observation-Lab}}<br>
+{{pagelink:UKCore-Observation-Group-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-ObservationBodyStructure}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.triggeredBy" class="external">Observation.triggeredBy</a></td>
-<td>{{pagelink:Profile-Observation}}<br>
-{{pagelink:Profile-Observation-Lab}}<br>
-{{pagelink:Profile-Observation-Group-Lab}}</td>
+<td>{{pagelink:UKCore-Observation}}<br>
+{{pagelink:UKCore-Observation-Lab}}<br>
+{{pagelink:UKCore-Observation-Group-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-ObservationTriggeredBy}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/specimen-definitions.html#Specimen.collection.collector" class="external">Specimen.collection.collector</a></td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>{{pagelink:Extension-UKCore-SpecimenCollectionCollector}}</td>
 <td>NO</td>
 </tr>
@@ -85,7 +85,7 @@ The following <a href="https://hl7.org/fhir/versions.html#extensions" class="ext
 </tr>
 <tr>
 <td><a href="https://build.fhir.org/condition-definitions.html#Condition.bodyStructure" class="external">Condition.bodyStructure</a></td>
-<td>{{pagelink:Profile-Condition}}</td>
+<td>{{pagelink:UKCore-Condition}}</td>
 <td>{{pagelink:Extension-UKCore-ConditionBodyStructure}}</td>
 <td>NO</td>
 </tr>

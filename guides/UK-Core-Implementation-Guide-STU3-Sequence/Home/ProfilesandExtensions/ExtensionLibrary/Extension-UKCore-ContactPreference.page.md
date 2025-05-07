@@ -6,12 +6,12 @@ issue: Extension-UKCore-ContactPreference
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-RelatedPerson,text:RelatedPerson}}<br/>
-{{pagelink:Profile-Patient,text:Patient}}</td>
+<td>{{pagelink:UKCore-RelatedPerson,text:RelatedPerson}}<br/>
+{{pagelink:UKCore-Patient,text:Patient}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

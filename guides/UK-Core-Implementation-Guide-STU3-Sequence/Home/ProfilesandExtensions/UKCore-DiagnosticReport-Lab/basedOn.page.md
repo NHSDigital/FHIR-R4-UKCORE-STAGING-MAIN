@@ -4,8 +4,8 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 
 - [UKCore-CarePlan (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-CarePlan)
 - [ImmunizationRecommendation Resource](https://hl7.org/fhir/R4/ImmunizationRecommendation.html)
-- {{pagelink:Profile-MedicationRequest}}
+- {{pagelink:UKCore-MedicationRequest}}
 - [NutritionOrder Resource](https://hl7.org/fhir/R4/NutritionOrder.html)
-- {{pagelink:Profile-ServiceRequest}}
+- {{pagelink:UKCore-ServiceRequest}}
 
 ---

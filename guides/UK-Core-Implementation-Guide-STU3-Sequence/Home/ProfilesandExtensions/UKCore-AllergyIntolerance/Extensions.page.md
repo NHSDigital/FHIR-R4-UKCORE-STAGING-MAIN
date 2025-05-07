@@ -1,3 +1,3 @@
-{{page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}
+{{page:ProfileExtensionsTemplate}}
 
 ---

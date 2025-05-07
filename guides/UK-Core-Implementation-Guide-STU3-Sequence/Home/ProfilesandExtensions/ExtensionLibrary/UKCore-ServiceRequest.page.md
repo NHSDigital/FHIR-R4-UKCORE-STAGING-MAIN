@@ -12,5 +12,5 @@ issue: UKCore-ServiceRequest
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
     

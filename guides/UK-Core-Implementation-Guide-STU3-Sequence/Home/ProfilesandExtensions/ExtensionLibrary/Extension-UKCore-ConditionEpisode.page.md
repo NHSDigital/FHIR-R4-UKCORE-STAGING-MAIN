@@ -6,11 +6,11 @@ issue: Extension-UKCore-ConditionEpisode
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Condition,text:Condition}}</td>
+<td>{{pagelink:UKCore-Condition,text:Condition}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

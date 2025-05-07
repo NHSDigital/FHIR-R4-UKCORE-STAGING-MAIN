@@ -1,3 +1,3 @@
-{{page:Home/ProfilesandExtensions/ProfileConstraintsTemplate.page.md}}
+{{page:ProfileConstraintsTemplate}}
 
 ---

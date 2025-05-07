@@ -15,7 +15,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-Bloo
 </div>
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

@@ -1,4 +1,4 @@
-{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
+{{page:ProfileBindingsTemplate}}
 
 <table id="addToBindings">
 <tr>

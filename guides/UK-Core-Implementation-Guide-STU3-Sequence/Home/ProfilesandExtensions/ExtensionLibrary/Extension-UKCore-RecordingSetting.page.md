@@ -13,11 +13,11 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-R
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-Observation-VitalSigns}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

@@ -7,11 +7,11 @@ issue: Extension-UKCore-DiagnosticReportComposition
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -22,6 +22,6 @@ issue: Extension-UKCore-DiagnosticReportComposition
 
 <h3 id="guidance-diagnosticreportcomposition">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Composition}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:UKCore-Composition}}.
 
 ---

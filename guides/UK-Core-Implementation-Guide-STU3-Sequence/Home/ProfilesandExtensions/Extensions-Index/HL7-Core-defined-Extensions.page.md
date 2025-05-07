@@ -23,49 +23,49 @@ Implementers of the UK Core profiles MAY also use other HL7 core-defined extensi
 <tr>
 <td><a href="http://hl7.org/fhir/R4/extension-observation-bodyposition.html" class="external">Extension observation-bodyPosition</a></td>
 <td>Observation</td>
-<td>{{pagelink:Profile-Observation-VitalSigns}}</td>
+<td>{{pagelink:UKCore-Observation-VitalSigns}}</td>
 <td>NO</td>
 </tr>
 <tr>            
 <td><a href="https://hl7.org/fhir/R4/extension-organization-period.html" class="external">Extension organization-period</a></td>
 <td>Organization</td>
-<td>{{pagelink:Profile-Organization}}</td>
+<td>{{pagelink:UKCore-Organization}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R4/extension-patient-birthPlace.html" class="external">Extension patient-birthPlace</a></td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R4/extension-patient-birthTime.html" class="external">Extension patient-birthTime</a></td>
 <td>Patient.birthDate</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R4/extension-patient-cadavericDonor.html" class="external">Extension patient-cadavericDonor</a></td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R4/extension-patient-interpreterRequired.html" class="external">Extension patient-interpreterRequired</a></td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R4/extension-patient-proficiency.html">Core-defined Extension patient-proficiency</a></td>
 <td>Patient</td>
-<td>{{pagelink:Profile-Patient}}</td>
+<td>{{pagelink:UKCore-Patient}}</td>
 <td>NO</td>
 </tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R4/extension-specimen-specialhandling.html" class="external">Extension specimen-specialHandling</a></td>
 <td>Specimen.collection</td>
-<td>{{pagelink:Profile-Specimen}}</td>
+<td>{{pagelink:UKCore-Specimen}}</td>
 <td>NO</td>
 </tr>
 

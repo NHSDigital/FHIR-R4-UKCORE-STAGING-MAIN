@@ -1,3 +1,3 @@
-{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
+{{page:ProfileBindingsTemplate}}
 
 ---

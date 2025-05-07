@@ -9,13 +9,13 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
-<td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport}}</td>
+<td>{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport}}</td>
 </tr>
 
 </table>
 
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

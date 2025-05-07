@@ -6,7 +6,7 @@ issue: UKCore-List
 ---
 # StructureDefinition-UKCore-List
 
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <nocheck>
 <div id="Examples" class="tabcontent">
@@ -37,7 +37,7 @@ The following are example usage scenarios for the UK Core List profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 
