@@ -151,34 +151,34 @@ if __name__ == "__main__":
         for page in ig_pages:
             if asset.id in page:
                 break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            #create_Profile_page(asset, profile_path)
+            else:   
+                print(f"{asset.id} is not in the IG.")
+                create_Profile_page(asset, profile_path)
 
     for asset in extensions:
         for page in ig_pages:
             if asset.id in page:
                 break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            create_Extension_page(asset, extension_path)
+            else:   
+                print(f"{asset.id} is not in the IG.")
+                create_Extension_page(asset, extension_path)
     create_toc(extension_path)
 
     for asset in valuesets:
         for page in valueset_pages:
             if asset.id in page:
                 break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            create_Terminology_page(asset, valueset_path, 'ValueSet')
+            else:   
+                print(f"{asset.id} is not in the IG.")
+                create_Terminology_page(asset, valueset_path, 'ValueSet')
     create_toc(valueset_path)
 
     for asset in codesystems:
         for page in codesystem_pages:
             if asset.id in page:
                 break
-        else:   
-            create_Terminology_page(asset, codesystem_path, 'CodeSystem')
+            else:   
+                create_Terminology_page(asset, codesystem_path, 'CodeSystem')
     create_toc(codesystem_path)
 
     for asset in examples:
@@ -189,12 +189,12 @@ if __name__ == "__main__":
         for page in ig_pages:
             if asset.id in page:
                 break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            if 'extension' in asset.id.lower():
-                create_Example_page(asset, examples_extension_path)
-            else:
-                create_Example_page(asset, examples_profile_path)
+            else:   
+                print(f"{asset.id} is not in the IG.")
+                if 'extension' in asset.id.lower():
+                    create_Example_page(asset, examples_extension_path)
+                else:
+                    create_Example_page(asset, examples_profile_path)
     create_toc(examples_profile_path)
     create_toc(examples_extension_path)
 

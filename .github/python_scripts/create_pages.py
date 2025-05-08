@@ -14,7 +14,6 @@ def create_Profile_page(asset, path):
     try:
         os.mkdir(directory_name)
     except FileExistsError:
-        print(f"Directory '{directory_name}' already exists.")
         return
     except PermissionError:
         print(f"Permission denied: Unable to create '{directory_name}'.")
@@ -100,7 +99,6 @@ issue: {asset.id}
     ''', file=file)
         return  
     except FileExistsError:
-        print(f"File '{path}/{asset.id}.page.md' already exists.")
         return  
 
 def create_Terminology_page(asset, path, terminology_type):
@@ -117,7 +115,6 @@ issue: {asset.id}
     ''', file=file)
         return
     except FileExistsError:
-        print(f"File '{path}/{asset.id}.page.md' already exists.")
         return  
     
 def create_Example_page(asset, path):
@@ -131,7 +128,6 @@ subject: {asset.id}
     ''', file=file)
         return
     except FileExistsError:
-        print(f"File '{path}/{asset.id}.page.md' already exists.")
         return  
 
 def create_toc(path):
