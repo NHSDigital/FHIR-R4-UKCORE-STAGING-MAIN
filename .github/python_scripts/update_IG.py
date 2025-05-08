@@ -42,7 +42,7 @@ def list_ig_pages(path):
     pages = []
     for dirpath, dirnames, filenames in os.walk(path):
         for filename in filenames:
-            pages.append(os.path.join(dirpath, filename))
+            pages.append(os.path.join(dirpath, filename).replace('\\', '/'))
     return pages
 
 if __name__ == "__main__":

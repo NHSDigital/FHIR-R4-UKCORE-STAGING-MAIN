@@ -90,7 +90,7 @@ More information about the extensions can be found using the links below.
 <tr>
 <td>PatientFetalStatus</td>
 <td>Patient</td>
-<td>{{pagelink:Extension-UKCore-PatientFetalStatus"}}</td>
+<td>{{pagelink:Extension-UKCore-PatientFetalStatus}}</td>
 <td>to replicate the changes within R5 to record the born status of fetus (Patient)</td>
 </tr>
 <tr>

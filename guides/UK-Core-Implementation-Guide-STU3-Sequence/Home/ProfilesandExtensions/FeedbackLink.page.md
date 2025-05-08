@@ -1,4 +1,4 @@
-<fql output="inline" delimiter="">
+<fql output="inline" delimiter=" ">
 select
     Link: {
         text: 'Report issue for ' + %issue,
