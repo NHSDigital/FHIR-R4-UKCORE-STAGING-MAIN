@@ -185,7 +185,7 @@ if __name__ == "__main__":
     #create_Terminology_page(asset, valueset_path, 'ValueSet')
 
     #create_toc(codesystem_path)
-    create_profile_toc(profile_path)
+    #create_profile_toc(profile_path)
 
 
     

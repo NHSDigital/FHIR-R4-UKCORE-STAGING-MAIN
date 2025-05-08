@@ -1,4 +1,8 @@
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
+This CodeSystem has may be new or has been amended since the last ballot. Users are advised to review all content carefully. Details of the changes can be found within the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence.page.md?version=current">UK Core Version History</a>.
+
+{{page:Home/ProfilesandExtensions/DiffLinkTemplate.page.md}}
+</div>
 
 <fql>
 from
@@ -63,29 +67,8 @@ with header
 {{json}}
 </div>
 
-<!--
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-{ {page:Home/ProfilesandExtensions/UsageFQLDerived.page.md}}
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-{ {page:Home/ProfilesandExtensions/UsageFQLExtensions.page.md}}
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-{ {page:Home/ProfilesandExtensions/UsageFQLReferences.page.md}}
-</span>
-</div>
--->
-
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
 Click here to: {{page:Home/ProfilesandExtensions/FeedbackLink.page.md}}
 </div>
 
-</div>
