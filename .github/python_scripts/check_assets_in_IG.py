@@ -145,6 +145,7 @@ if __name__ == "__main__":
                 codesystems.append(asset)
         except Exception as e:
             print(f"Error processing asset {asset}: {e}")
+    print(examples)
 
     for asset in profiles:
         for page in ig_pages:
@@ -181,6 +182,8 @@ if __name__ == "__main__":
     create_toc(codesystem_path)
 
     for asset in examples:
+        if 'audit' in asset.id.lower():
+            pass
         if '-Sn-' in asset.id: #ignore snippets
             continue
         for page in ig_pages:
