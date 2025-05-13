@@ -86,13 +86,13 @@
         </element>
         <element id="DiagnosticReport.category">
             <path value="DiagnosticReport.category" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="coding.code" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
+                  <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
             <short value="A code that classifies the clinical discipline, department or diagnostic service that created the report." />
             <min value="1" />
             <mustSupport value="true" />
@@ -121,16 +121,6 @@
                 <strength value="preferred" />
                 <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
             </binding>
-        </element>
-        <element id="DiagnosticReport.subject">
-            <path value="DiagnosticReport.subject" />
-            <short value="The patient that is the subject of the report." />
-            <min value="1" />
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <mustSupport value="true" />
         </element>
         <element id="DiagnosticReport.issued">
             <path value="DiagnosticReport.issued" />
