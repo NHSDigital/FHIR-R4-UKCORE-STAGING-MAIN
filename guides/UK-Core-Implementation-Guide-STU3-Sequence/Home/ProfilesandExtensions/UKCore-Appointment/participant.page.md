@@ -96,7 +96,6 @@ Optional Person, Location/HealthcareService or Device that is participating in t
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- [UKCore-Device](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profileukcore-device)
 - {{pagelink:UKCore-HealthcareService}}
 - {{pagelink:UKCore-Location}}
 - {{pagelink:UKCore-Patient}}

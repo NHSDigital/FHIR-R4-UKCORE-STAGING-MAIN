@@ -60,7 +60,7 @@
                     <li>This contains <b>BREAKING CHANGES</b> as a result of the C&TA Sprint 7 Review, and STU2 Sequence ballot reconciliation.</li>
                     <li>This version is not yet reviewed for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
                     <li>Please follow the guidance on the <a id="header-contactus" href="{{content}}/../Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
-                    <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence/index.page.md?version=current">STU3 Sequence Change Log</a></li>
+                    <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence.page.md?version=current" target="_blank">STU3 Sequence Change Log</a></li>
                     </ul>
             </div>
             <!--Comment out for publication, end-->
@@ -834,52 +834,55 @@
 
             //this looks for FQL versions of the extensions and bindings tables, and alters the fql link to a pagelink
             function swapFQLTableLinks() {
-                // build a base url
-                let url = window.location.href;
-                let slashCount = url.split("/").length;
-                let newUrl = '';
-                for (i=0;i<slashCount;i++)
-                {
-                    newUrl = newUrl + url.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
-                        i = slashCount;
-                    }
-                }
+    // Build base URL up to Home/
+    let currentUrl = window.location.href;
+    let baseParts = currentUrl.split("/");
+    let swapBaseUrl = "";
 
-                $("div#preview-content div#Extensions table.table tbody tr td a").each(function(index) {
-                    //check if it currently resolves to UK Core on simplifier
-                    let urlReference = $(this)[0].href;
-                    var swapUrl = newUrl;
-                    if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
-                        let extensionName = urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/StructureDefinition/","").replace("&scope=HL7FHIRUKCoreR4@current","");
-                        swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/" + extensionName;
-                        
-                        let exampleVersion = "?" + url.split("?")[1];
-                        if (exampleVersion.startsWith("?version=current")){
-                            exampleVersion = ".page.md" + exampleVersion;
-                        }
-                        swapUrl = swapUrl + exampleVersion;
-                        $(this).attr("href", swapUrl);
-                        $(this).text(extensionName);
-                    }
-                });
-                $("div#preview-content div#Bindings table.table tbody tr td a").each(function(index) {
-                    //check if it currently resolves to UK Core on simplifier
-                    let urlReference = $(this)[0].href;
-                    var swapUrl = newUrl;
-                    if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
-                        let valuesetName =  urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/ValueSet/","").replace("&scope=HL7FHIRUKCoreR4@current","");
-                        swapUrl = swapUrl + "Terminology/ValueSets/ValueSet-" + valuesetName;
-                        let exampleVersion = "?" + url.split("?")[1];
-                        if (exampleVersion.startsWith("?version=current")){
-                            exampleVersion = ".page.md" + exampleVersion;
-                        }
-                        swapUrl = swapUrl + exampleVersion;
-                        $(this).attr("href", swapUrl);
-                        $(this).text("ValueSet " + valuesetName);
-                    }
-                });
-            }
+    for (let i = 0; i < baseParts.length; i++) {
+        swapBaseUrl += baseParts[i] + "/";
+        if (swapBaseUrl.endsWith("Home/") || swapBaseUrl.endsWith("home/")) {
+            break;
+        }
+    }
+
+    // Function to build version suffix (e.g., .page.md?version=current)
+    function buildVersionSuffix(url) {
+        let versionQuery = url.includes("?") ? "?" + url.split("?")[1] : "";
+        if (versionQuery.startsWith("?version=current")) {
+            versionQuery = ".page.md" + versionQuery;
+        }
+        return versionQuery;
+    }
+
+    // Handle UK Core Extensions
+    $("div#preview-content div#Extensions table.table tbody tr td a").each(function () {
+        let link = $(this)[0];
+        let urlReference = link.href;
+        let ukExtPrefix = "https://fhir.hl7.org.uk/StructureDefinition/";
+
+        if (urlReference.startsWith(ukExtPrefix)) {
+            let extensionName = urlReference.replace(ukExtPrefix, "");
+            let newHref = swapBaseUrl + "ProfilesandExtensions/ExtensionLibrary/" + extensionName + buildVersionSuffix(currentUrl);
+            $(link).attr("href", newHref);
+            $(link).text(extensionName); // Show only the asset name
+        }
+    });
+
+    // Handle UK Core ValueSets
+    $("div#preview-content div#Bindings table.table tbody tr td a").each(function () {
+        let link = $(this)[0];
+        let urlReference = link.href;
+        let ukVsPrefix = "https://fhir.hl7.org.uk/ValueSet/";
+
+        if (urlReference.startsWith(ukVsPrefix)) {
+            let valuesetName = urlReference.replace(ukVsPrefix, "");
+            let newHref = swapBaseUrl + "Terminology/ValueSets/ValueSet-" + valuesetName + buildVersionSuffix(currentUrl);
+            $(link).attr("href", newHref);
+            $(link).text(valuesetName); // Show only the asset name
+        }
+    });
+}
 
             //look for a div's called Table View, and the rows in the table
             // if the first cell on a row is reference[0], remap the link to the matching example

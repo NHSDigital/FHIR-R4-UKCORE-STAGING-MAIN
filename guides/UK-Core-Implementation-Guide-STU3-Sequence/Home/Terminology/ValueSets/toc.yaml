@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: UKCore-ServiceRequest
-  filename: UKCore-ServiceRequest.page.md
 - name: ValueSet-UKCore-ACVPU
   filename: ValueSet-UKCore-ACVPU.page.md
 - name: ValueSet-UKCore-AddressKeyType
@@ -64,6 +62,8 @@
   filename: ValueSet-UKCore-ConditionCode.page.md
 - name: ValueSet-UKCore-ConditionEpisodicity
   filename: ValueSet-UKCore-ConditionEpisodicity.page.md
+- name: ValueSet-UKCore-ConsentException
+  filename: ValueSet-UKCore-ConsentException.page.md
 - name: ValueSet-UKCore-DeathNotificationStatus
   filename: ValueSet-UKCore-DeathNotificationStatus.page.md
 - name: ValueSet-UKCore-DeliveryChannel
@@ -150,6 +150,8 @@
   filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables.page.md
 - name: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures
   filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures.page.md
+- name: ValueSet-UKCore-PeriodType
+  filename: ValueSet-UKCore-PeriodType.page.md
 - name: ValueSet-UKCore-PersonMaritalStatusCode
   filename: ValueSet-UKCore-PersonMaritalStatusCode.page.md
 - name: ValueSet-UKCore-PersonRelationshipType

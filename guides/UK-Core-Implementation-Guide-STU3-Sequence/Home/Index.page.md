@@ -6,6 +6,8 @@ topic: Home-Guide
 ---
 ## UK Core Implementation Guide Current Draft Build ##
 
+
+
 <p>
 <h3>Project Description and Scope</h3>
 

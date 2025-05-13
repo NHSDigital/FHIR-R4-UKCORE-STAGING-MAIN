@@ -10,7 +10,7 @@ issue: Extension-UKCore-BodySiteReference
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

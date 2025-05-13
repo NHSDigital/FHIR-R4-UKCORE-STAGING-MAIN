@@ -102,5 +102,19 @@
   filename: Extension-UKCore-SourceOfServiceRequest.page.md
 - name: Extension-UKCore-SpecimenCollectionCollector
   filename: Extension-UKCore-SpecimenCollectionCollector.page.md
+- name: Extension-UKCore-SpecimenContainerDevice
+  filename: Extension-UKCore-SpecimenContainerDevice.page.md
+- name: Extension-UKCore-SpecimenContainerLocation
+  filename: Extension-UKCore-SpecimenContainerLocation.page.md
+- name: Extension-UKCore-SubscriptionContent
+  filename: Extension-UKCore-SubscriptionContent.page.md
+- name: Extension-UKCore-SubscriptionParameter
+  filename: Extension-UKCore-SubscriptionParameter.page.md
+- name: Extension-UKCore-TreatmentCategory
+  filename: Extension-UKCore-TreatmentCategory.page.md
+- name: Extension-UKCore-TypedDateTime
+  filename: Extension-UKCore-TypedDateTime.page.md
+- name: Extension-UKCore-TypedPeriod
+  filename: Extension-UKCore-TypedPeriod.page.md
 - name: Extension-UKCore-VaccinationProcedure
   filename: Extension-UKCore-VaccinationProcedure.page.md

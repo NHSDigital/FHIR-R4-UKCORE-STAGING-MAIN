@@ -9,6 +9,8 @@ topic: UK-Core-Extensions
 
 <p>Implementers of the UK Core profiles MAY also create their own Extensions where required, but are encouraged to engage with the UK Core development process to ensure that there is not an existing suitable extension available, and to assist in  guidance around the use of an extension with the UK Core, and with wider use by the UK FHIR Community.</p>
 
+
+
 <fql>
 from StructureDefinition
 where
@@ -20,12 +22,16 @@ select
 
 <script>
 $(document).ready(function () {
-    const fullUrl = window.location.href;
-    const queryString = window.location.search || "?version=current";
+    const queryString = window.location.search || "?version={{guide-version}}";
+    
+    // Detect if we are in a preview/unpublished guide by checking if .page.md is in the URL
+    const isUnpublished = window.location.pathname.includes(".page.md");
+
     const extensionBase = "https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/extensionlibrary/";
     const profileBase = "https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/UKCore-";
 
-    // Select your specific table — modify selector if needed
+    const extSuffix = isUnpublished ? ".page.md" : ""; // only use .page.md in preview
+
     const $table = $("table.table-bordered");
     if ($table.length === 0) return;
 
@@ -39,27 +45,28 @@ $(document).ready(function () {
         // --- Extension Column ---
         const extText = $extensionCell.text().trim();
         if (extText) {
-            const extHref = `${extensionBase}${extText}.page.md${queryString}`;
-            $extensionCell.html(`<a href="${extHref}" target="_blank">${extText}</a>`);
+            const extHref = `${extensionBase}${extText}${extSuffix}${queryString}`;
+            $extensionCell.html(`<a href="${extHref}">${extText}</a>`);
         }
 
-        // --- Profiles Column (ignore "Coding", no deduplication) ---
+        // --- Profiles Column ---
         const profilesRaw = $profilesCell.text().trim().split(";");
         const profileLinks = profilesRaw.map(profile => {
             const clean = profile.trim();
             if (!clean) return "";
 
-            if (clean === "Coding") return "Coding"; // leave as plain text
+            if (clean === "Coding") return "Coding";
 
             const resource = clean.split(".")[0];
             const profileHref = `${profileBase}${resource}${queryString}`;
-            return `<a href="${profileHref}" target="_blank">${clean}</a>`;
-        }).filter(link => link); // remove any empty ones
+            return `<a href="${profileHref}">${clean}</a>`;
+        }).filter(link => link);
 
         $profilesCell.html(profileLinks.join("<br>"));
     });
 });
 </script>
+
 
 
 ---

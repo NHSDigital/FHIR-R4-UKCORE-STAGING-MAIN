@@ -1,5 +1,5 @@
 ---
-topic: Observation-VitalSigns-BloodPressure-Component
+topic: UKCore-Observation-VitalSigns-BloodPressure-Component
 ---
 ## `{{page-title}}`
 
