@@ -85,19 +85,6 @@
             <short value="The status of the result value." />
             <mustSupport value="true" />
         </element>
-        <element id="Observation.category">
-            <path value="Observation.category" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="coding.code" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-            <short value="A code that classifies the general type of observation being made." />
-            <min value="1" />
-            <mustSupport value="true" />
-        </element>
         <element id="Observation.category:laboratory">
             <path value="Observation.category" />
             <sliceName value="laboratory" />
@@ -122,25 +109,6 @@
                 <strength value="preferred" />
                 <description value="A code from the SNOMED Clinical Terminology UK coding system regarding laboratory medicine test results" />
                 <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineObservables" />
-            </binding>
-        </element>
-        <element id="Observation.subject">
-            <path value="Observation.subject" />
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-        </element>
-        <element id="Observation.bodySite">
-            <path value="Observation.bodySite" />
-            <binding>
-                <strength value="preferred" />
-            </binding>
-        </element>
-        <element id="Observation.method">
-            <path value="Observation.method" />
-            <binding>
-                <strength value="preferred" />
             </binding>
         </element>
     </differential>
