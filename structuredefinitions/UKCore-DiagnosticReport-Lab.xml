@@ -5,7 +5,7 @@
     <name value="UKCoreDiagnosticReportLab" />
     <title value="UK Core Diagnostic Report Lab" />
     <status value="active" />
-    <date value="2024-07-23" />
+    <date value="2025-05-13" />
     <publisher value="HL7 UK" />
     <contact>
         <name value="HL7 UK" />
@@ -23,7 +23,7 @@
     <kind value="resource" />
     <abstract value="false" />
     <type value="DiagnosticReport" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+    <baseDefinition value="http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab" />
     <derivation value="constraint" />
     <differential>
         <element id="DiagnosticReport">
