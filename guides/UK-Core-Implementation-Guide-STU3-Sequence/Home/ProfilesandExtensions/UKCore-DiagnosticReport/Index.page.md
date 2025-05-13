@@ -8,7 +8,7 @@ issue: UKCore-DiagnosticReport
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:ProfileTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

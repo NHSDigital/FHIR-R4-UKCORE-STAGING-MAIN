@@ -4,4 +4,4 @@ issue: CodeSystem-UKCore-ConditionCategory
 ---
 ## UK Core Condition Category
 
-{{page:CodeSystemTemplate}}
+{{page:CodeSystemTemplate_new}}

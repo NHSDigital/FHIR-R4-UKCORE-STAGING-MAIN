@@ -5,7 +5,7 @@
 - name: All Extensions
   filename: ExtensionLibrary
 - name: Profiles Index
-  filename: ProfilesIndex.page.md
+  filename: Profiles-Index.page.md
 - name: UKCore-AllergyIntolerance
   filename: UKCore-AllergyIntolerance
 - name: UKCore-Appointment

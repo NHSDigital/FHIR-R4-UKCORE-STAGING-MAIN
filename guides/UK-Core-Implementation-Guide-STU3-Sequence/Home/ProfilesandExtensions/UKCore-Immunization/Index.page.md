@@ -13,16 +13,16 @@ issue: UKCore-Immunization
   <h3>Examples</h3>
 
 <b>Influenza virus vaccine</b> - An example to illustrate an Influenza virus vaccine.  <br>
-{{pagelink: Example-UKCore-Immunization-InfluenzaVaccine}}
+{{pagelink: UKCore-Immunization-InfluenzaVaccine-Example}}
 <br><br>
 <b>Parent Present</b> - An example to illustrate the ParentPresent extension. <br>
-{{pagelink: Example-UKCore-Extension-ParentPresent}}
+{{pagelink: UKCore-Extension-ParentPresent-Example}}
 <br><br>
 <b>Vaccination Procedure</b> - An example to illustrate the VaccinationProcedure extension, with a vaccination procedure for an administered Influenza virus vaccine.  <br>
-{{pagelink: Example-UKCore-Extension-VaccinationProcedure}}
+{{pagelink: UKCore-Extension-VaccinationProcedure-Example}}
 <br><br>
 <b>Vaccination Procedure Covid</b> - An example to illustrate the VaccinationProcedureCovid extension, with a vaccination procedure for the COVID-19 Vaccine Vaxzevria.  <br>
-{{pagelink: Example-UKCore-Extension-VaccinationProcedure-Covid}}
+{{pagelink: UKCore-Extension-VaccinationProcedure-Covid-Example}}
 </div>
 </nocheck>
 

@@ -10,7 +10,7 @@ issue: Extension-UKCore-DiagnosticReportNote
 </tr>
 </table>
 
-{{page:ExtensionTemplate}}
+{{page:ExtensionTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

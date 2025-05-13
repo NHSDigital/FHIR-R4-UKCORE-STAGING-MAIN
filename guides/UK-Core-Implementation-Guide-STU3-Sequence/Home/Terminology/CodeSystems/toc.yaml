@@ -78,6 +78,8 @@
   filename: CodeSystem-UKCore-OutcomeOfAttendanceEngland.page.md
 - name: CodeSystem-UKCore-OutcomeOfAttendanceWales
   filename: CodeSystem-UKCore-OutcomeOfAttendanceWales.page.md
+- name: CodeSystem-UKCore-PeriodType
+  filename: CodeSystem-UKCore-PeriodType.page.md
 - name: CodeSystem-UKCore-PersonMaritalStatusEngland
   filename: CodeSystem-UKCore-PersonMaritalStatusEngland.page.md
 - name: CodeSystem-UKCore-PersonMaritalStatusWales
