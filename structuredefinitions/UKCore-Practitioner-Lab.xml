@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Practitioner-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner-Lab" />
+  <version value="2.4.0" />
+  <name value="UKCorePractitionerLab" />
+  <title value="UK Core Practitioner Lab" />
+  <status value="draft" />
+  <date value="2025-05-13" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Practitioner](https://hl7.org/fhir/R4/Practitioner.html)." />
+  <purpose value="This profile allows exchange of information about all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities, is used for attribution of activities and responsibilities to these individuals." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.eu/fhir/laboratory/StructureDefinition/Practitioner-eu-lab" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <short value="An identifier that applies to this person in this role." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <short value="The name(s) associated with the practitioner." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom">
+      <path value="Practitioner.telecom" />
+      <short value="A contact detail for the practitioner (that apply to all roles)." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.communication">
+      <path value="Practitioner.communication" />
+      <binding>
+        <strength value="required" />
+        <description value="A ValueSet that identifies the language used by a person." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
