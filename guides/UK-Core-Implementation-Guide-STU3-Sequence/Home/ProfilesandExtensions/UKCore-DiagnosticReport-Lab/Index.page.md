@@ -1,5 +1,5 @@
 ---
-topic: DiagnosticReport-Lab
+topic: UKCore-DiagnosticReport-Lab
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab
 usage: http://hl7.org/fhir/StructureDefinition/DiagnosticReport
 issue: UKCore-DiagnosticReport-Lab
@@ -8,7 +8,7 @@ issue: UKCore-DiagnosticReport-Lab
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:ProfileTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

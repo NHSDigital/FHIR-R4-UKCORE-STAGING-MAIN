@@ -3,10 +3,6 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.
 issue: Extension-UKCore-DiagnosticReportMediaLink
 ---
 
-<div class="NewAddedItem">
-<h2> StructureDefinition {{variable:issue}} </h2>
-
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:UKCore-DiagnosticReport,text:DiagnosticReport}}</td>
@@ -15,7 +11,7 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 </table>
 
 
-{{page:ExtensionTemplate}}
+{{page:ExtensionTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

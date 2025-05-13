@@ -39,6 +39,10 @@ distinct
 $(document).ready(function () {
     const queryString = window.location.search || "?version=current";
 
+    // Detect if we're in an unpublished guide (which uses .page.md links)
+    const isUnpublished = window.location.pathname.includes(".page.md");
+    const pageSuffix = isUnpublished ? ".page.md" : "";
+
     // Convert {{guide-title}} into URL-safe form
     const guideTitleUrl = "{{guide-title}}"
         .replace(/[^a-zA-Z0-9 ]/g, "")   // remove special characters
@@ -72,8 +76,8 @@ $(document).ready(function () {
         const nameText = $nameTd.text().trim();
         if (nameText.startsWith("UKCore")) {
             const assetLower = nameText.toLowerCase();
-            const href = `${vsBase}${assetLower}.page.md${queryString}`;
-            $nameTd.html(`<a href="${href}" target="_blank">${nameText}</a>`);
+            const href = `${vsBase}${assetLower}${pageSuffix}${queryString}`;
+            $nameTd.html(`<a href="${href}">${nameText}</a>`);
         }
 
         // --- Merge & linkify systems and valueSets ---
@@ -99,12 +103,12 @@ $(document).ready(function () {
 
                         if (section) {
                             const lowerAsset = assetName.toLowerCase();
-                            href = `${section}${lowerAsset}.page.md${queryString}`;
+                            href = `${section}${lowerAsset}${pageSuffix}${queryString}`;
                         }
                     }
                 }
 
-                combinedLinks.push(`<a href="${href}" target="_blank">${displayText}</a>`);
+                combinedLinks.push(`<a href="${href}">${displayText}</a>`);
             });
         };
 
@@ -124,6 +128,7 @@ $(document).ready(function () {
     });
 });
 </script>
+
 
 
 

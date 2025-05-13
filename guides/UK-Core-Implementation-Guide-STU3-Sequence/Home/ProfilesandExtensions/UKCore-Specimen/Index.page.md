@@ -7,7 +7,7 @@ issue: UKCore-Specimen
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:ProfileTemplate}}
+{{page:ProfileTemplate_new}}
 
 <div id="Examples" class="tabcontent">
 <h3>Examples</h3>
@@ -15,7 +15,7 @@ issue: UKCore-Specimen
 {{pagelink:UKCore-Specimen-BloodSpecimen-Example}}
 <br><br>
 <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector.<br>
-{{pagelink:UKCore-Extension-CollectionCollector-Example}}
+{{pagelink:UKCore-Extension-SpecimenCollectionCollector-Example}}
 <br><br>
 <b>High Risk Specimen</b> - An example to illustrate using the HL7 core-defined Extension specimen-specialHandling to record why a specimen should be treated as a high risk.<br/>
 {{pagelink:UKCore-Extension-SpecialHandling-Example}}
