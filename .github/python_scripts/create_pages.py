@@ -55,7 +55,7 @@ issue: {asset.id}
 ---
 ''', file=file)
         
-    #create the TOC page
+    #create the Profile TOC page
     with open(directory_name+"/toc.page.md", "x") as file:
         print(f'''- name: Index
   filename: Index.page.md
@@ -132,17 +132,14 @@ def santise_toc(toc_path):
         return filtered_lines
 
 def create_toc(path):
-    pages = sorted(list_ig_pages(path))
+    # Find all pages that contain 'ukcore' in their name. This removes all that are currently in the toc, or should be invisible pages
+    pages = sorted(page for page in list_ig_pages(path) if "ukcore" in page.lower())
     toc_path = path+"/toc.yaml"
     filtered_lines = santise_toc(toc_path)
 
     with open(toc_path, "w") as file:
         file.writelines(filtered_lines)
-        print(f'''- name: Index
-  filename: Index.page.md''', file=file)
         for page in pages:
-            if any(keyword in page.lower() for keyword in ['template', 'toc', 'index']):
-                continue
             filename = page.split('/')[-1]
             name = filename.split('.')[0]
             print(f'''- name: {name}
@@ -151,19 +148,11 @@ def create_toc(path):
 
 def create_profile_toc(path):
     subfolders = sorted([f.name for f in os.scandir(path) if f.is_dir()])
+    filtered_lines = santise_toc(toc_path)
     with open(path+"/toc.yaml", "w") as file:
-        print(f'''- name: Index
-  filename: Index
-- name: Extensions Index
-  filename: Extensions-Index
-- name: All Extensions
-  filename: ExtensionLibrary
-- name: Profiles Index
-  filename: ProfilesIndex.page.md''', file=file)
+        file.writelines(filtered_lines)
         for subfolder in subfolders:
-                if any(keyword in subfolder.lower() for keyword in ['template', 'toc', 'index', 'extension']):
-                    continue
-                print(f'''- name: {subfolder}
+            print(f'''- name: {subfolder}
   filename: {subfolder}''', file=file)
         return
 
