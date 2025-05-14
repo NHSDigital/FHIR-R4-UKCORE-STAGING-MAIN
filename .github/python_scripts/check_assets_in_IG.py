@@ -97,7 +97,7 @@ if __name__ == "__main__":
     example_profile_pages = list_ig_pages(examples_profile_path)
     example_extension_pages = list_ig_pages(examples_extension_path)
 
-
+    print("Checking assets in IG...")
     xml_files, json_files = list_files('.')
     assets = []
     dict_elements = {'url': 'url', 'title': 'title', 'status': 'status', 'id': 'id', 'baseDefinition': 'baseDefinition'}
@@ -121,12 +121,9 @@ if __name__ == "__main__":
         except:
             pass
         assets.append(asset)
+    print(f"Found {len(assets)} assets in the IG.")
 
-    '''
-    todo:
-    add examples to index page
-    check if asset is newly amended
-    '''
+    print(f"sorting assets into types...")
     profiles = []
     extensions = []
     valuesets = []
@@ -149,7 +146,9 @@ if __name__ == "__main__":
                 codesystems.append(asset)
         except Exception as e:
             print(f"Error processing asset {asset}: {e}")
+    print(f"assets sorted")
 
+    print(f"Checking assets have a page in the IG...")
     for asset in profiles:
         match_found = any(asset.id in page for page in profile_pages)
         if not match_found:
@@ -195,8 +194,7 @@ if __name__ == "__main__":
                 create_Example_page(asset, examples_profile_path)
     create_toc(examples_profile_path)
     create_toc(examples_extension_path)
+    print(f"Script Complete")
 
-'''N.B Above does not work if asset has the same name / id as another asset.
-This should be fixed, but in mean time the code needs to look in the specific folder '''
 
 
