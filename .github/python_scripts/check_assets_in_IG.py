@@ -188,7 +188,7 @@ if __name__ == "__main__":
                 print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_extension_path)
         else:
-            match_found = any(asset.id in page for page in example_extension_pages)
+            match_found = any(asset.id in page for page in example_profile_pages)
             if not match_found:
                 print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_profile_path)
