@@ -42,7 +42,7 @@ issue: {asset.id}
     #create the Extensions page
     with open(directory_name+"/Extensions.page.md", "x") as file:
         print(f'''
-{{{{page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}}}
+{{{{page:ProfileExtensionsTemplate}}}}
 
 ---
 ''', file=file)
@@ -50,7 +50,7 @@ issue: {asset.id}
     #create the Bindings page       
     with open(directory_name+"/Bindings.page.md", "x") as file:
         print(f'''
-{{{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}}}
+{{{{page:ProfileBindingsTemplate}}}}
 
 ---
 ''', file=file)
@@ -85,7 +85,7 @@ issue: {asset.id}
             print(f'''</tr>
 </table>
 
-{{{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}}}
+{{{{page:ExtensionTemplate_new}}}}
     ''', file=file)
         return  
     except FileExistsError:
@@ -94,7 +94,7 @@ issue: {asset.id}
 
 def create_Terminology_page(asset, path, terminology_type):
     try:
-        with open(path+"/"+asset.id+".page.md", "x") as file:
+        with open(path+"/"+terminology_type+"-"+asset.id+".page.md", "x") as file:
             print(f'''
 ---
 subject: {asset.url}
@@ -102,7 +102,7 @@ issue: {asset.id}
 ---
 ## {asset.title}
 
-{{{{page:{terminology_type}Template}}}}
+{{{{page:{terminology_type}Template_new}}}}
     ''', file=file)
         return
     except FileExistsError:
@@ -116,7 +116,7 @@ def create_Example_page(asset, path):
 ---
 subject: {asset.id}
 ---
-{{page:ExampleTemplate}}
+{{page:ExampleTemplate_new}}
     ''', file=file)
         return
     except FileExistsError:
