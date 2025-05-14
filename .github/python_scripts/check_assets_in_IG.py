@@ -121,7 +121,7 @@ if __name__ == "__main__":
         except:
             pass
         assets.append(asset)
-    print(f"Found {len(assets)} assets in the IG.")
+    print(f"Found {len(assets)} assets and examples in the IG.")
 
     print(f"sorting assets into types...")
     profiles = []
@@ -131,70 +131,71 @@ if __name__ == "__main__":
     examples = []
     for asset in assets:
         try:
-            if 'example' in asset.id.lower():
+            asset_id = asset.id.lower()
+            try:
+                asset_url = asset.url.lower()
+            except:
+                pass
+
+            if 'example' in asset_id:
                 examples.append(asset)
                 continue
+            
             if asset.status != 'active':
                 continue
-            if 'extension' in asset.url.lower():
+            
+            if 'extension' in asset_url:
                 extensions.append(asset)
-            elif 'structuredefinition' in asset.url.lower():
+            elif 'structuredefinition' in asset_url:
                 profiles.append(asset)
-            elif 'valueset'in asset.url.lower():
+            elif 'valueset' in asset_url:
                 valuesets.append(asset)
-            elif 'codesystem' in asset.url.lower():
+            elif 'codesystem' in asset_url:
                 codesystems.append(asset)
         except Exception as e:
             print(f"Error processing asset {asset}: {e}")
+
     print(f"assets sorted")
 
     print(f"Checking assets have a page in the IG...")
-    for asset in profiles:
-        match_found = any(asset.id in page for page in profile_pages)
-        if not match_found:
-            print(f"{asset.id} is not in the IG.")
-            create_Profile_page(asset, profile_path)
-    create_toc(profile_path)
+    def process_assets(assets, pages, create_fn, path, *extra):
+        for asset in assets:
+            if not any(asset.id in page for page in pages):
+                print(f"{asset.id} is not in the IG.")
+                create_fn(asset, path, *extra)
+        create_toc(path)
 
-    for asset in extensions:
-        match_found = any(asset.id in page for page in extension_pages)
-        if not match_found:
-            print(f"{asset.id} is not in the IG.")
-            create_Extension_page(asset, extension_path)
-    create_toc(extension_path)
+    # General assets mapping
+    asset_fn_map = {
+        'profiles':    (profiles, profile_pages, create_Profile_page, profile_path),
+        'extensions':  (extensions, extension_pages, create_Extension_page, extension_path),
+        'valuesets':   (valuesets, valueset_pages, create_Terminology_page, valueset_path, 'ValueSet'),
+        'codesystems': (codesystems, codesystem_pages, create_Terminology_page, codesystem_path, 'CodeSystem'),
+    }
 
-    for asset in valuesets:
-        match_found = any(asset.id in page for page in valueset_pages)
-        if not match_found: 
-            print(f"{asset.id} is not in the IG.")
-            create_Terminology_page(asset, valueset_path, 'ValueSet')
-    create_toc(valueset_path)
-
-    for asset in codesystems:
-        match_found = any(asset.id in page for page in codesystem_pages)
-        if not match_found:
-            print(f"{asset.id} is not in the IG.")
-            create_Terminology_page(asset, codesystem_path, 'CodeSystem')
-    create_toc(codesystem_path)
-
+    # Process general assets
+    for name, data in asset_fn_map.items():
+        assets, pages, create_fn, path, *extra = data
+        process_assets(assets, pages, create_fn, path, *extra)
+    
+    # Process examples separately
     for asset in examples:
-        if 'audit' in asset.id.lower():
-            pass
-        if '-Sn-' in asset.id: #ignore snippets
-            continue
-        if 'extension' in asset.id.lower():
-            match_found = any(asset.id in page for page in example_extension_pages)
-            if not match_found:
+        asset_id = asset.id.lower()
+
+        if '-sn-' in asset_id:
+            continue  # Skip snippet examples
+
+        if 'extension' in asset_id:
+            if not any(asset.id in page for page in example_extension_pages):
                 print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_extension_path)
         else:
-            match_found = any(asset.id in page for page in example_profile_pages)
-            if not match_found:
+            if not any(asset.id in page for page in example_profile_pages):
                 print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_profile_path)
-    create_toc(examples_profile_path)
+
+    # Only call TOC builders once per section
     create_toc(examples_extension_path)
-    print(f"Script Complete")
+    create_toc(examples_profile_path)
 
-
-
+    print("Script Complete")
