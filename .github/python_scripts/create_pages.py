@@ -10,7 +10,7 @@ def create_Profile_page(asset, path):
     create bindings
     create toc
     '''
-    directory_name = path+'/'+asset.id+'TEST'
+    directory_name = path+'/'+asset.id
     try:
         os.mkdir(directory_name)
     except FileExistsError:
@@ -64,17 +64,6 @@ issue: {asset.id}
 - name: Bindings
   filename: Bindings.page.md
 ''', file=file)
-
-    ''' 
-    ### Need to work out how to add bindings from extensions to the list, expect format to be: ###
-    <table id="addToBindings">
-    <tr>
-    <td>ServiceRequest.extension:coverage</td>
-    <td>extensible</td>
-    <td>{{pagelink:ValueSet-UKCore-FundingCategory}}</td>
-    </tr>
-    </table>
-    '''  
     return
 
 def create_Extension_page(asset, path):
@@ -134,9 +123,21 @@ subject: {asset.id}
         print(f"File '{path}/{asset.id}.page.md' already exists.")
         return  
 
+def santise_toc(toc_path):
+    ''' Input: toc.yaml
+        Output: list of only lines that do not contain UKCore. This is to keep the non-asset pages'''
+    with open(toc_path, "r") as f:
+        lines = f.readlines()
+        filtered_lines = [line for line in lines if 'UK-Core' not in line and 'UKCore' not in line]
+        return filtered_lines
+
 def create_toc(path):
     pages = sorted(list_ig_pages(path))
-    with open(path+"/toc.yaml", "w") as file:
+    toc_path = path+"/toc.yaml"
+    filtered_lines = santise_toc(toc_path)
+
+    with open(toc_path, "w") as file:
+        file.writelines(filtered_lines)
         print(f'''- name: Index
   filename: Index.page.md''', file=file)
         for page in pages:

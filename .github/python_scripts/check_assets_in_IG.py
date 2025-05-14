@@ -78,9 +78,9 @@ if __name__ == "__main__":
     # imoprts IG and returns the ig_folder name
     ig_folder = import_IG()
 
-
+    '''########### Instead of checking every file, check only in path below. Quicker and more accurate#######'''
     ig_path = './'+ig_folder+'/Home'
-    ig_pages = list_ig_pages(ig_path)
+    #ig_pages = list_ig_pages(ig_path)
     
     '''!!!!!!!!! add str path to variables.json!!!!!!!!!!!!!!'''
     extension_path = ig_path+'/ProfilesandExtensions/ExtensionLibrary'
@@ -92,6 +92,10 @@ if __name__ == "__main__":
 
     codesystem_pages = list_ig_pages(codesystem_path)
     valueset_pages = list_ig_pages(valueset_path)
+    profile_pages = list_ig_pages(profile_path)
+    extension_pages = list_ig_pages(extension_path)
+    example_profile_pages = list_ig_pages(examples_profile_path)
+    example_extension_pages = list_ig_pages(examples_extension_path)
 
 
     xml_files, json_files = list_files('.')
@@ -145,39 +149,32 @@ if __name__ == "__main__":
                 codesystems.append(asset)
         except Exception as e:
             print(f"Error processing asset {asset}: {e}")
-    print(examples)
 
     for asset in profiles:
-        for page in ig_pages:
-            if asset.id in page:
-                break
-        else:   
+        match_found = any(asset.id in page for page in profile_pages)
+        if not match_found:
             print(f"{asset.id} is not in the IG.")
-            #create_Profile_page(asset, profile_path)
+            create_Profile_page(asset, profile_path)
+    create_toc(profile_path)
 
     for asset in extensions:
-        for page in ig_pages:
-            if asset.id in page:
-                break
-        else:   
+        match_found = any(asset.id in page for page in extension_pages)
+        if not match_found:
             print(f"{asset.id} is not in the IG.")
             create_Extension_page(asset, extension_path)
     create_toc(extension_path)
 
     for asset in valuesets:
-        for page in valueset_pages:
-            if asset.id in page:
-                break
-        else:   
+        match_found = any(asset.id in page for page in valueset_pages)
+        if not match_found: 
             print(f"{asset.id} is not in the IG.")
             create_Terminology_page(asset, valueset_path, 'ValueSet')
     create_toc(valueset_path)
 
     for asset in codesystems:
-        for page in codesystem_pages:
-            if asset.id in page:
-                break
-        else:   
+        match_found = any(asset.id in page for page in codesystem_pages)
+        if not match_found:
+            print(f"{asset.id} is not in the IG.")
             create_Terminology_page(asset, codesystem_path, 'CodeSystem')
     create_toc(codesystem_path)
 
@@ -186,14 +183,15 @@ if __name__ == "__main__":
             pass
         if '-Sn-' in asset.id: #ignore snippets
             continue
-        for page in ig_pages:
-            if asset.id in page:
-                break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            if 'extension' in asset.id.lower():
+        if 'extension' in asset.id.lower():
+            match_found = any(asset.id in page for page in example_extension_pages)
+            if not match_found:
+                print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_extension_path)
-            else:
+        else:
+            match_found = any(asset.id in page for page in example_extension_pages)
+            if not match_found:
+                print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_profile_path)
     create_toc(examples_profile_path)
     create_toc(examples_extension_path)
