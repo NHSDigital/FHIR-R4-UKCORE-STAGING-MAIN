@@ -78,9 +78,9 @@ if __name__ == "__main__":
     # imoprts IG and returns the ig_folder name
     ig_folder = import_IG()
 
-
+    '''########### Instead of checking every file, check only in path below. Quicker and more accurate#######'''
     ig_path = './'+ig_folder+'/Home'
-    ig_pages = list_ig_pages(ig_path)
+    #ig_pages = list_ig_pages(ig_path)
     
     '''!!!!!!!!! add str path to variables.json!!!!!!!!!!!!!!'''
     extension_path = ig_path+'/ProfilesandExtensions/ExtensionLibrary'
@@ -92,8 +92,12 @@ if __name__ == "__main__":
 
     codesystem_pages = list_ig_pages(codesystem_path)
     valueset_pages = list_ig_pages(valueset_path)
+    profile_pages = list_ig_pages(profile_path)
+    extension_pages = list_ig_pages(extension_path)
+    example_profile_pages = list_ig_pages(examples_profile_path)
+    example_extension_pages = list_ig_pages(examples_extension_path)
 
-
+    print("Checking assets in IG...")
     xml_files, json_files = list_files('.')
     assets = []
     dict_elements = {'url': 'url', 'title': 'title', 'status': 'status', 'id': 'id', 'baseDefinition': 'baseDefinition'}
@@ -117,12 +121,9 @@ if __name__ == "__main__":
         except:
             pass
         assets.append(asset)
+    print(f"Found {len(assets)} assets and examples in the IG.")
 
-    '''
-    todo:
-    add examples to index page
-    check if asset is newly amended
-    '''
+    print(f"sorting assets into types...")
     profiles = []
     extensions = []
     valuesets = []
@@ -130,75 +131,71 @@ if __name__ == "__main__":
     examples = []
     for asset in assets:
         try:
-            if 'example' in asset.id.lower():
+            asset_id = asset.id.lower()
+            try:
+                asset_url = asset.url.lower()
+            except:
+                pass
+
+            if 'example' in asset_id:
                 examples.append(asset)
                 continue
+            
             if asset.status != 'active':
                 continue
-            if 'extension' in asset.url.lower():
+            
+            if 'extension' in asset_url:
                 extensions.append(asset)
-            elif 'structuredefinition' in asset.url.lower():
+            elif 'structuredefinition' in asset_url:
                 profiles.append(asset)
-            elif 'valueset'in asset.url.lower():
+            elif 'valueset' in asset_url:
                 valuesets.append(asset)
-            elif 'codesystem' in asset.url.lower():
+            elif 'codesystem' in asset_url:
                 codesystems.append(asset)
         except Exception as e:
             print(f"Error processing asset {asset}: {e}")
-    print(examples)
 
-    for asset in profiles:
-        for page in ig_pages:
-            if asset.id in page:
-                break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            #create_Profile_page(asset, profile_path)
+    print(f"assets sorted")
 
-    for asset in extensions:
-        for page in ig_pages:
-            if asset.id in page:
-                break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            create_Extension_page(asset, extension_path)
-    create_toc(extension_path)
+    print(f"Checking assets have a page in the IG...")
+    def process_assets(assets, pages, create_fn, path, *extra):
+        for asset in assets:
+            if not any(asset.id+'TEST' in page for page in pages):
+                print(f"{asset.id} is not in the IG.")
+                create_fn(asset, path, *extra)
+        create_toc(path)
 
-    for asset in valuesets:
-        for page in valueset_pages:
-            if asset.id in page:
-                break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            create_Terminology_page(asset, valueset_path, 'ValueSet')
-    create_toc(valueset_path)
+    # General assets mapping
+    asset_fn_map = {
+        'profiles':    (profiles, profile_pages, create_Profile_page, profile_path),
+        'extensions':  (extensions, extension_pages, create_Extension_page, extension_path),
+        'valuesets':   (valuesets, valueset_pages, create_Terminology_page, valueset_path, 'ValueSet'),
+        'codesystems': (codesystems, codesystem_pages, create_Terminology_page, codesystem_path, 'CodeSystem'),
+    }
 
-    for asset in codesystems:
-        for page in codesystem_pages:
-            if asset.id in page:
-                break
-        else:   
-            create_Terminology_page(asset, codesystem_path, 'CodeSystem')
-    create_toc(codesystem_path)
-
+    # Process general assets
+    for name, data in asset_fn_map.items():
+        assets, pages, create_fn, path, *extra = data
+        process_assets(assets, pages, create_fn, path, *extra)
+    
+    # Process examples separately
     for asset in examples:
-        if 'audit' in asset.id.lower():
-            pass
-        if '-Sn-' in asset.id: #ignore snippets
-            continue
-        for page in ig_pages:
-            if asset.id in page:
-                break
-        else:   
-            print(f"{asset.id} is not in the IG.")
-            if 'extension' in asset.id.lower():
+        asset_id = asset.id.lower()
+
+        if '-sn-' in asset_id:
+            continue  # Skip snippet examples
+
+        if 'extension' in asset_id:
+            if not any(asset.id+'TEST' in page for page in example_extension_pages):
+                print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_extension_path)
-            else:
+        else:
+            if not any(asset.id+'TEST' in page for page in example_profile_pages):
+                print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_profile_path)
-    create_toc(examples_profile_path)
+
+    # Only call TOC builders once per section
     create_toc(examples_extension_path)
+    create_toc(examples_profile_path)
 
-'''N.B Above does not work if asset has the same name / id as another asset.
-This should be fixed, but in mean time the code needs to look in the specific folder '''
-
-
+    print("Script Complete")
