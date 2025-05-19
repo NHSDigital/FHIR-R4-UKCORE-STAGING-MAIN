@@ -4,73 +4,73 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the despensing of Ciprofloxacin via IV when prescribing multiple routes</div>
   </text>
-  <status value="completed" />
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category" />
-      <code value="inpatient" />
-      <display value="Inpatient" />
-    </coding>
-  </category>
-  <medicationCodeableConcept>
-    <coding>
-      <system value="https://dmd.nhs.uk" />
-      <code value="35831211000001109" />
-      <display value="Ciprofloxacin 400mg/200ml infusion bags (Hikma Pharmaceuticals International Ltd)" />
-    </coding>
-  </medicationCodeableConcept>
-  <supportingInformation>
-    <reference value="RequestGroup/UKCore-RequestGroup-Ciprofloxacin-Example" />
-  </supportingInformation>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <performer>
-    <actor>
-      <reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example" />
-    </actor>
-  </performer>
-  <authorizingPrescription>
-    <reference value="UKCore-MedicationRequest-CiprofloxacinIV-Example" />
-  </authorizingPrescription>
-  <quantity>
-    <value value="10" />
-    <unit value="Bag" />
-    <system value="http://snomed.info/sct" />
-    <code value="732982009" />
-  </quantity>
-  <daysSupply>
-    <value value="5" />
-    <unit value="Day" />
-    <system value="http://unitsofmeasure.org" />
-    <code value="d" />
-  </daysSupply>
-  <whenPrepared value="2023-06-15T18:00:00+00:00" />
-  <receiver>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </receiver>
-  <dosageInstruction>
-    <text value="1 bag, twice daily" />
-    <timing>
-      <repeat>
-        <frequency value="2" />
-        <period value="1" />
-        <periodUnit value="d" />
-      </repeat>
-    </timing>
-    <route>
-      <coding>
+ <status value="completed" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category" />
+            <code value="inpatient" />
+            <display value="Inpatient" />
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="35831211000001109" />
+            <display value="Ciprofloxacin 400mg/200ml infusion bags (Hikma Pharmaceuticals International Ltd)" />
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <supportingInformation>
+        <reference value="RequestGroup/UKCore-RequestGroup-Ciprofloxacin-Example" />
+    </supportingInformation>
+    <performer>
+        <actor>
+            <reference value="Practitioner/UKCore-Practitioner-PharmacistJimmyChuck-Example" />
+        </actor>
+    </performer>
+    <authorizingPrescription>
+        <reference value="UKCore-MedicationRequest-CiprofloxacinIV-Example" />
+    </authorizingPrescription>
+    <quantity>
+        <value value="10" />
+        <unit value="Bag" />
         <system value="http://snomed.info/sct" />
-        <code value="47625008" />
-        <display value="Intravenous" />
-      </coding>
-    </route>
-    <method>
-      <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="13283701000001109" />
-        <display value="Infusion" />
-      </coding>
-    </method>
-  </dosageInstruction>
+        <code value="732982009" />
+    </quantity>
+    <daysSupply>
+        <value value="5" />
+        <unit value="Day" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="d" />
+    </daysSupply>
+    <whenPrepared value="2023-06-15T18:00:00+00:00" />
+    <receiver>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </receiver>
+    <dosageInstruction>
+        <text value="1 bag, twice daily" />
+        <timing>
+            <repeat>
+                <frequency value="2" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="47625008" />
+                <display value="Intravenous" />
+            </coding>
+        </route>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="13283701000001109" />
+                <display value="Infusion" />
+            </coding>
+        </method>
+    </dosageInstruction>
 </MedicationDispense>
