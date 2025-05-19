@@ -26,8 +26,8 @@
     <text value="Condition(s)" />
     <type value="group" />
     <item>
-      <linkId value="Q2g" />
       <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <linkId value="Q2g" />    
         <valueCodeableConcept>
           <coding>
             <system value="http://hl7.org/fhir/questionnaire-item-control" />
