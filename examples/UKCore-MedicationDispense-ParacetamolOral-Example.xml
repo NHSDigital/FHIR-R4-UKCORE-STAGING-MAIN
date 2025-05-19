@@ -2,10 +2,11 @@
   <id value="UKCore-MedicationDispense-ParacetamolOral-Example" />
   <text>
   <status value="additional" />
-    </text>
-    <status value="completed" />
-    <category>
-        <coding>
+     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the despensing of Paracetamol orally when prescribing multiple routes</div>
+  </text>
+  <status value="completed" />
+  <category>
+    <coding>
             <system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category" />
             <code value="inpatient" />
             <display value="Inpatient" />
