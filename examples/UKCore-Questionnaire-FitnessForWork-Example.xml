@@ -1,70 +1,70 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Questionnaire-FitnessForWork-Example" />
-  <text>
-    <status value="additional" />
-    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a fitness for work form questions</div>
-  </text>
-  <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-FitnessForWork-Example" />
-  <title value="Statement of Fitness for Work (Mock up)" />
-  <status value="draft" />
-  <experimental value="true" />
-  <subjectType value="Patient" />
-  <description value="This is based on Med 3 from DWP purely for demonstration purposes" />
-  <code>
-    <system value="http://snomed.info/sct" />
-    <code value="18381000000107" />
-    <display value="Sickness certificates" />
-  </code>
-  <item>
-    <linkId value="Q1" />
-    <text value="Assessment Date" />
-    <type value="date" />
-    <required value="true" />
-  </item>
-  <item>
-    <linkId value="Q2" />
-    <text value="Condition(s)" />
-    <type value="group" />
-    <item>
-      <linkId value="Q2g" />
-      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://hl7.org/fhir/questionnaire-item-control" />
-            <code value="autocomplete" />
-            <display value="Auto-complete" />
-          </coding>
-        </valueCodeableConcept>
-      </extension>
-      <text value="Condition (Coded)" />
-      <type value="choice" />
-      <repeats value="true" />
-      <answerValueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
-    </item>
-  </item>
-  <item>
-    <linkId value="Q3" />
+    <id value="UKCore-Questionnaire-FitnessForWork-Example" />
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a fitness for work form questions</div>
+    </text>
+    <url value="https://example.com/base/Questionnaire/UKCore-Questionnaire-FitnessForWork-Example" />
+    <title value="Statement of Fitness for Work (Mock up)" />
+    <status value="draft" />
+    <experimental value="true" />
+    <subjectType value="Patient" />
+    <description value="This is based on Med 3 from DWP purely for demonstration purposes" />
     <code>
-      <system value="http://snomed.info/sct" />
-      <code value="365524007" />
-      <display value="Fitness for work - finding" />
+        <system value="http://snomed.info/sct" />
+        <code value="18381000000107" />
+        <display value="Sickness certificates" />
     </code>
-    <text value="I find you" />
-    <type value="choice" />
-    <required value="true" />
-    <answerOption>
-      <valueCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="160910001" />
-        <display value="Unfit for work" />
-      </valueCoding>
-    </answerOption>
-    <answerOption>
-      <valueCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="225891002" />
-        <display value="Fit for work with restrictions" />
-      </valueCoding>
-    </answerOption>
-  </item>
+    <item>
+        <linkId value="Q1" />
+        <text value="Assessment Date" />
+        <type value="date" />
+        <required value="true" />
+    </item>
+    <item>
+        <linkId value="Q2" />
+        <text value="Condition(s)" />
+        <type value="group" />
+        <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://hl7.org/fhir/questionnaire-item-control" />
+                        <code value="autocomplete" />
+                        <display value="Auto-complete" />
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="Q2g" />
+            <text value="Condition (Coded)" />
+            <type value="choice" />
+            <repeats value="true" />
+            <answerValueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" />
+        </item>
+    </item>
+    <item>
+        <linkId value="Q3" />
+        <code>
+            <system value="http://snomed.info/sct" />
+            <code value="365524007" />
+            <display value="Fitness for work - finding" />
+        </code>
+        <text value="I find you" />
+        <type value="choice" />
+        <required value="true" />
+        <answerOption>
+            <valueCoding>
+                <system value="http://snomed.info/sct" />
+                <code value="160910001" />
+                <display value="Unfit for work" />
+            </valueCoding>
+        </answerOption>
+        <answerOption>
+            <valueCoding>
+                <system value="http://snomed.info/sct" />
+                <code value="225891002" />
+                <display value="Fit for work with restrictions" />
+            </valueCoding>
+        </answerOption>
+    </item>
 </Questionnaire>

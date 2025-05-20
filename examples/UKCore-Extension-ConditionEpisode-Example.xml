@@ -4,7 +4,6 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension which is used to indicate the episodicity status of a condition</div>
   </text>
-  <!--  **************extension start**************  -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode">
         <valueCode value="new" />
         <valueCodeableConcept>
@@ -15,7 +14,6 @@
             </coding>
         </valueCodeableConcept>
     </extension>
-    <!--   **************extension end**************   -->
     <subject>
         <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
     </subject>
