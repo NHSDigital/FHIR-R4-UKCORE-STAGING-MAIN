@@ -1,6 +1,6 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-  <id value="UKCore-Questionnaire-FitnessForWork-Example" />
-  <text>
+    <id value="UKCore-Questionnaire-FitnessForWork-Example" />
+    <text>
         <status value="additional" />
         --- We have skipped the narrative for better readability of the resource ---
     </text>
