@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-BodyStructure" />
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-BodyStructure" />
-  <version value="0.0.1" />
-  <name value="UKCoreBodyStructure" />
-  <title value="UK Core Body Structure" />
-  <status value="draft" />
-  <date value="2024-08-12" />
-  <publisher value="HL7 UK" />
-  <contact>
-    <name value="HL7 UK" />
-    <telecom>
-      <system value="email" />
-      <value value="ukcore@hl7.org.uk" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [BodyStructure](https://hl7.org/fhir/R4/BodyStructure.html)." />
-  <purpose value="This profile allows exchange of information of body structure details, such as site, laterality, location." />
-  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="BodyStructure" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/BodyStructure" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="BodyStructure">
-      <path value="BodyStructure" />
-      <constraint>
-        <key value="ukcore-bodstr-001" />
-        <severity value="warning" />
-        <human value="The body structure shall at least have location or description or an image" />
-        <expression value="location.exists() or description.exists() or image.exists()" />
-      </constraint>
-    </element>
-    <element id="BodyStructure.morphology">
-      <path value="BodyStructure.morphology" />
-      <binding>
-        <strength value="preferred" />
-      </binding>
-      <mustSupport value="true" />
-    </element>
-    <element id="BodyStructure.location">
-      <path value="BodyStructure.location" />
-      <binding>
-        <strength value="preferred" />
-      </binding>
-      <mustSupport value="true" />
-    </element>
-    <element id="BodyStructure.locationQualifier">
-      <path value="BodyStructure.locationQualifier" />
-      <binding>
-        <strength value="preferred" />
-      </binding>
-      <mustSupport value="true" />
-    </element>
-    <element id="BodyStructure.description">
-      <path value="BodyStructure.description" />
-      <mustSupport value="true" />
-    </element>
-    <element id="BodyStructure.patient">
-      <path value="BodyStructure.patient" />
-      <mustSupport value="true" />
-    </element>
-  </differential>
+    <id value="UKCore-BodyStructure" />
+    <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-BodyStructure" />
+    <version value="0.1.1" />
+    <name value="UKCoreBodyStructure" />
+    <title value="UK Core Body Structure" />
+    <status value="draft" />
+    <date value="2025-05-20" />
+    <publisher value="HL7 UK" />
+    <contact>
+        <name value="HL7 UK" />
+        <telecom>
+            <system value="email" />
+            <value value="ukcore@hl7.org.uk" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="This profile defines the UK constraints and extensions on the International FHIR resource [BodyStructure](https://hl7.org/fhir/R4/BodyStructure.html)." />
+    <purpose value="This profile allows exchange of information of body structure details, such as site, laterality, location." />
+    <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="BodyStructure" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/BodyStructure" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="BodyStructure">
+            <path value="BodyStructure" />
+            <constraint>
+                <key value="ukcore-bodstr-001" />
+                <severity value="warning" />
+                <human value="The body structure shall at least have location or description or an image" />
+                <expression value="location.exists() or description.exists() or image.exists()" />
+            </constraint>
+        </element>
+        <element id="BodyStructure.morphology">
+            <path value="BodyStructure.morphology" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="preferred" />
+            </binding>
+        </element>
+        <element id="BodyStructure.location">
+            <path value="BodyStructure.location" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="preferred" />
+            </binding>
+        </element>
+        <element id="BodyStructure.locationQualifier">
+            <path value="BodyStructure.locationQualifier" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="preferred" />
+            </binding>
+        </element>
+        <element id="BodyStructure.description">
+            <path value="BodyStructure.description" />
+            <mustSupport value="true" />
+        </element>
+        <element id="BodyStructure.patient">
+            <path value="BodyStructure.patient" />
+            <mustSupport value="true" />
+        </element>
+    </differential>
 </StructureDefinition>
