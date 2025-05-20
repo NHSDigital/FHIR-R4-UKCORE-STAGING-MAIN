@@ -66,10 +66,7 @@
             </coding>
         </route>
     </dosageInstruction>
-</MedicationDispense>value="http://snomed.info/sct" />
-        <code value="26643006" />
-        <display value="Oral" />
-      </coding>
+</MedicationDispense>
     </route>
   </dosageInstruction>
 </MedicationDispense>
