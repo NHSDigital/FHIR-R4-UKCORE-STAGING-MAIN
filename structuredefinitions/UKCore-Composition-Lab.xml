@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UKCore-Composition-Lab" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition-Lab" />
+  <version value="2.4.0" />
+  <name value="UKCoreCompositionLab" />
+  <title value="UK Core Composition Lab" />
+  <status value="draft" />
+  <date value="2025-05-13" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Composition](https://hl7.org/fhir/R4/Composition.html)." />
+  <purpose value="This profile allows a record of a set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. &#xD;&#xA;&#xD;&#xA;A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition SHALL be the first entry in a Bundle where `Bundle.type=document`, and any other resources referenced from Composition SHALL be included as subsequent entries in the Bundle, for example Patient, Practitioner, Encounter, etc." />
+  <copyright value="Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <definition value="A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition SHALL be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition SHALL be included as subsequent entries in the Bundle, for example Patient, Practitioner, Encounter, etc." />
+    </element>
+    <element id="Composition.extension:careSettingType">
+      <path value="Composition.extension" />
+      <sliceName value="careSettingType" />
+      <short value="Used to support the type of care setting associated with a composition or a list." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType" />
+      </type>
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <short value="The workflow / clinical status of this composition." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <short value="Specifies the particular kind of composition." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="SNOMED CT Document Type" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType" />
+      </binding>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <binding>
+        <strength value="preferred" />
+        <description value="A ValueSet to identify the category of a composition." />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionCategory" />
+      </binding>
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <short value="Who and / or what the composition is about." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <short value="Identifies who is responsible for the information in the composition." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <short value="The code specifying the level of confidentiality of the Composition." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <short value="Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section.code">
+      <path value="Composition.section.code" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
