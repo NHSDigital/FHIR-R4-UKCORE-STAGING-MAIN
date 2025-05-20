@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="UKCore-BodyStructure" />
     <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-BodyStructure" />
-    <version value="0.0.1" />
+    <version value="0.1.1" />
     <name value="UKCoreBodyStructure" />
     <title value="UK Core Body Structure" />
     <status value="draft" />
-    <date value="2024-08-12" />
+    <date value="2025-05-20" />
     <publisher value="HL7 UK" />
     <contact>
         <name value="HL7 UK" />
