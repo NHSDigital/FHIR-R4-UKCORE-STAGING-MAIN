@@ -1,5 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
-  <id value="UKCore-CodingSCT-CodeUnknown-Example" />
+  <id value="UKCore-Extension-CodingSCT-CodeUnknown-Example" />
   <text>
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the use of the CodeableConcept.text field only if the coding system and code is unknown</div>
