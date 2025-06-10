@@ -1,26 +1,22 @@
 <Bundle xmlns="http://hl7.org/fhir">
- <id value="UKCore-Bundle-Batch-Example" />
- <text>
-      <status value="additional" />
-      <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a batch of Patients</div>
-  </text>
- <type value="batch" />
- <entry>
-  <request>
-   <method value="GET" />
-   <url value="https://fhir.hl7.org.uk/Patient/UKCore-Patient-RichardSmith-Example" />
-  </request>
- </entry>
- <entry>
-   <request>
-    <method value="GET" />
-    <url value="https://fhir.hl7.org.uk/Condition?UKCore-Patient-RichardSmith-Example" />
-   </request>
- </entry>
- <entry>
-   <request>
-    <method value="GET" />
-    <url value="https://fhir.hl7.org.uk/MedicationStatement?UKCore-Patient-RichardSmith-Example" />
-  </request>
- </entry>
+  <id value="UKCore-Bundle-Batch-Example" />
+  <type value="batch" />
+  <entry>
+    <request>
+      <method value="GET" />
+      <url value="https://fhir.hl7.org.uk/Patient/UKCore-Patient-RichardSmith-Example" />
+    </request>
+  </entry>
+  <entry>
+    <request>
+      <method value="GET" />
+      <url value="https://fhir.hl7.org.uk/Condition?UKCore-Patient-RichardSmith-Example" />
+    </request>
+  </entry>
+  <entry>
+    <request>
+      <method value="GET" />
+      <url value="https://fhir.hl7.org.uk/MedicationStatement?UKCore-Patient-RichardSmith-Example" />
+    </request>
+  </entry>
 </Bundle>
