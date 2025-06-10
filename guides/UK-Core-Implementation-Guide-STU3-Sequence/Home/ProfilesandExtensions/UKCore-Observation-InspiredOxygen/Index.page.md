@@ -3,6 +3,7 @@ topic: UKCore-Observation-InspiredOxygen
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-InspiredOxygen
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-InspiredOxygen
+examples: Observation-InspiredOxygen
 ---
 
 # StructureDefinition {{variable:issue}}

@@ -1,6 +1,9 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-Translation-Example" />
-  <!-- **************Snippet start************** -->
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the translation extension from one language to another</div>
+  </text>
   <code>
     <coding>
       <system value="http://snomed.info/sct" />
@@ -17,7 +20,6 @@
       </display>
     </coding>
   </code>
-  <!-- **************Snippet end************** -->
   <subject>
     <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
   </subject>

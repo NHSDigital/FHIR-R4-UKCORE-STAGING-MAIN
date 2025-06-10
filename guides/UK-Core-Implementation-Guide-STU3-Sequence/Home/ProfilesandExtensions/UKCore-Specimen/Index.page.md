@@ -3,6 +3,7 @@ topic: UKCore-Specimen
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen
 usage: http://hl7.org/fhir/StructureDefinition/Specimen
 issue: UKCore-Specimen
+examples: Specimen
 ---
 # StructureDefinition {{variable:issue}}
 

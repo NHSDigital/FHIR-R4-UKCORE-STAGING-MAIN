@@ -1,5 +1,9 @@
 <DocumentReference xmlns="http://hl7.org/fhir">
   <id value="UKCore-DocumentReference-ECG-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a DocumentReference to an ECG report</div>
+  </text>
   <status value="current" />
   <docStatus value="preliminary" />
   <type>

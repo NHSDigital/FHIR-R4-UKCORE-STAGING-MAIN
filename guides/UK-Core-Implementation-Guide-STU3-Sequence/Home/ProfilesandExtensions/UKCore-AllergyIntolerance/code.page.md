@@ -5,11 +5,10 @@ Identifies the causative agent for the allergy or intolerance.
 When recording an allergy to a medication substance, the provider system SHOULD use a dm+d concept class or alternatively, when the allergy is not recorded against a medication substance, the relevant set of SNOMED CT. These can be found within the {{pagelink:ValueSet-UKCore-AllergyCode}}.
 
 ### Using transfer degraded drug / non-drug allergy codes
-<br>
-Degraded drug allergy codes can be used in three scenarios, with examples.
-<br>
 
-#### 1. If only a text representation of the allergy is known. 
+Degraded drug allergy codes can be used in three scenarios, with examples.    
+    
+1. #### If only a text representation of the allergy is known. 
 
 <div>
 <div class="tab">
@@ -41,7 +40,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
 </div>
 <br>
 
-#### 2. If a text representation of the allergy is known but any associated coding is not recognised by the system.
+2. #### If a text representation of the allergy is known but any associated coding is not recognised by the system.
 
 <div>
 <div class="tab">
@@ -75,7 +74,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
 **Note:** “Septrin” is a long discontinued brand name of an antibiotic.
 
 
-#### 3. If a pre-coordinated allergy code is known which this is not part of the permitted value set for causative agent defined above.
+3. #### If a pre-coordinated allergy code is known which this is not part of the permitted value set for causative agent defined above.
 
 <div>
 <div class="tab">
