@@ -10,7 +10,7 @@ def create_Profile_page(asset, path):
     create bindings
     create toc
     '''
-    directory_name = path+'/'+asset.id+'t'
+    directory_name = path+'/'+asset.id
     try:
         os.mkdir(directory_name)
     except FileExistsError:
