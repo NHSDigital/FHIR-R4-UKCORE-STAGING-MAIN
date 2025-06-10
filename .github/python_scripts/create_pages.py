@@ -157,25 +157,4 @@ def create_profile_toc(path):
         return
 
 if __name__ == "__main__":
-    from check_assets_in_IG import FHIRAsset, list_ig_pages
-
-    asset = FHIRAsset('https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest','ServiceRequest', 'active', 'UKCore-ServiceRequest', 'UKCore-ServiceRequest.xml', 'http://hl7.org/fhir/StructureDefinition/ServiceRequest')
-
-    ig_folder =  "guides/UK-Core-Implementation-Guide-STU3-Sequence"
-    ig_path = './'+ig_folder+'/Home'
-    
-    '''!!!!!!!!! add str path to variables!!!!!!!!!!!!!!'''
-    extension_path = ig_path+'/ProfilesandExtensions/ExtensionLibrary'
-    profile_path = ig_path+'/ProfilesandExtensions'
-    codesystem_path = ig_path+'/Terminology/CodeSystems'
-    valueset_path = ig_path+'/Terminology/ValueSets'
-    #create_Profile_page(asset, profile_path)
-    asset.context = ['Condition', 'Observation']
-    #create_Extension_page(asset, extension_path)
-    #create_Terminology_page(asset, valueset_path, 'ValueSet')
-
-    #create_toc(codesystem_path)
-    #create_profile_toc(profile_path)
-
-
-    
+    pass
