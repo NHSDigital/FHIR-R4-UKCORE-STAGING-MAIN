@@ -131,9 +131,9 @@ if __name__ == "__main__":
     examples = []
     for asset in assets:
         try:
-            asset_id = asset.id.lower()+'t'
+            asset_id = asset.id.lower()
             try:
-                asset_url = asset.url.lower()+'t'
+                asset_url = asset.url.lower()
             except:
                 pass
 
