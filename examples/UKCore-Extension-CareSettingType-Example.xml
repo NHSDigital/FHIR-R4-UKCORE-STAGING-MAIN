@@ -4,7 +4,6 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the care setting of a FHIR document</div>
   </text>
-  <!-- **************extension start************** -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType">
     <valueCodeableConcept>
       <coding>
@@ -14,10 +13,8 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <!-- *************extension end *****************-->
   <status value="final" />
   <type>
-    <!--Discharge Summary document type-->
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="373942005" />

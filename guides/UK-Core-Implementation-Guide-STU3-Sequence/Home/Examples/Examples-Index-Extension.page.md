@@ -22,7 +22,7 @@ $(document).ready(function () {
         .replace(/[^a-zA-Z0-9 ]/g, "")
         .replace(/\s+/g, "-");
 
-    const profileBase = `https://simplifier.net/guide/${guideTitleUrl}/home/examples/profile-examples/`;
+    const profileBase = `https://simplifier.net/guide/${guideTitleUrl}/home/examples/extension-examples/`;
 
     const $table = $("table.table-bordered");
     if ($table.length === 0) return;
