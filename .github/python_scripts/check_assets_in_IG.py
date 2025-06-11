@@ -160,7 +160,7 @@ if __name__ == "__main__":
     print(f"Checking assets have a page in the IG...")
     def process_assets(assets, pages, create_fn, path, *extra):
         for asset in assets:
-            if not any(asset.id+'TEST' in page for page in pages):
+            if not any(asset.id in page for page in pages):
                 print(f"{asset.id} is not in the IG.")
                 create_fn(asset, path, *extra)
         create_toc(path)
@@ -186,11 +186,11 @@ if __name__ == "__main__":
             continue  # Skip snippet examples
 
         if 'extension' in asset_id:
-            if not any(asset.id+'TEST' in page for page in example_extension_pages):
+            if not any(asset.id in page for page in example_extension_pages):
                 print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_extension_path)
         else:
-            if not any(asset.id+'TEST' in page for page in example_profile_pages):
+            if not any(asset.id in page for page in example_profile_pages):
                 print(f"{asset.id} is not in the IG.")
                 create_Example_page(asset, examples_profile_path)
 
