@@ -28,6 +28,8 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <fql>
 from
 	ValueSet
+where
+    status !='retired'
 select
 	ValueSet: id, Status: status, CodeSystem: compose.include.system, ValueSets: compose.include.valueSet
 order by

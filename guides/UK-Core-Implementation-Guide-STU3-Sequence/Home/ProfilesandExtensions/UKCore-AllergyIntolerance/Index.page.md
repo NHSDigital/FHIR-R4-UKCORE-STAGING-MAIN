@@ -3,10 +3,11 @@ topic: UKCore-AllergyIntolerance
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance
 usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 issue: UKCore-AllergyIntolerance
+examples: AllergyIntolerance
 ---
 # StructureDefinition {{variable:issue}}
 
-<nocheck>
+<nospellcheck>
 {{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
@@ -23,7 +24,8 @@ issue: UKCore-AllergyIntolerance
 <b>Allergy List</b> - An example to illustrate a list of allergies contained in a Bundle resource.
 <br>{{pagelink:UKCore-Bundle-AllergyList-Example}}
 </div>
-</nocheck>
+</nospellcheck>
+
 
 
 <div id="ProfileGuidance">

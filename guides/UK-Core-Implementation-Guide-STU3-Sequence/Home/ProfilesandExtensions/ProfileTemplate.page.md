@@ -27,61 +27,47 @@ with header
 </fql>
 
 <div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-  <button class="tablinks" onclick="openTab(event, 'Detailed View')">Detailed View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <!--<button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>-->
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks feedback" onclick="openTab(event, 'Feedback')">Feedback</button>
+ <button class="tablinks active" onclick="openTab(event, 'tree-view')">Tree View</button>
+  <button class="tablinks" onclick="openTab(event, 'detailed-view')">Detailed View</button>
+   <button class="tablinks" onclick="openTab(event, 'table-view')">Table View</button>
+   <button class="tablinks" onclick="openTab(event, 'xml-view')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'json-view')">JSON View</button>
+  <button class="tablinks" onclick="openTab(event, 'examples')">Examples</button>
+  <button class="tablinks feedback" onclick="openTab(event, 'feedback')">Feedback</button>
 </div>
 
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
+<div id="tree-view" class="tabcontent expandedProfile" style="display:block">
 {{tree, buttons}}
 </div>
 
-<div id="Detailed View" class="tabcontent">
+<div id="detailed-view" class="tabcontent">
   <h3>Detailed Descriptions</h3>
 {{dict}}
 </div>
 
-<div id="Table View" class="tabcontent">
+<div id="table-view" class="tabcontent">
   <h3>Table View</h3>
 {{table}}
 </div>
 
-<div id="XML View" class="tabcontent">
+<div id="xml-view" class="tabcontent">
   <h3>XML View</h3>
 {{xml}}
 </div>
 
-<div id="JSON View" class="tabcontent">
+<div id="json-view" class="tabcontent">
   <h3>JSON View</h3>
 {{json}}
 </div>
 
-<!--
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-{ {page:Home/ProfilesandExtensions/UsageFQLDerived.page.md}}
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-{ {page:Home/ProfilesandExtensions/UsageFQLExtensions.page.md}}
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-{ {page:Home/ProfilesandExtensions/UsageFQLReferences.page.md}}
-</span>
+<div id="examples"
+class="tabcontent">
+  <h3>Examples</h3>
+{{page:Home/ProfilesandExtensions/ExampleLinksFQL.page.md}}
 </div>
--->
 
-<div id="Feedback" class="tabcontent">
+<div id="feedback" class="tabcontent">
   <h3>Feedback</h3>
 Click here to: {{page:Home/ProfilesandExtensions/FeedbackLink.page.md}}
 </div>
+
