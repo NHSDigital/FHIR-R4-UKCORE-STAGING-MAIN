@@ -1,8 +1,5 @@
 ---
 topic: Library-ValueSets
 ---
-## Terminology
 
----
-
-## {{page-title}}
+# {{page-title}}

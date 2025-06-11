@@ -14,7 +14,9 @@ topic: UK-Core-Extensions
 <fql>
 from StructureDefinition
 where
-    type = 'Extension' and status != 'retired'
+    type = 'Extension' 
+    and status != 'retired'
+    and url.contains('http://hl7.org/fhir/').not()
 select
     'Id': id, 'Context of Use':context.expression, 'Status':status
 </fql>

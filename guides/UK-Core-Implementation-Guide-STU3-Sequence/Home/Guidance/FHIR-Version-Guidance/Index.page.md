@@ -1,11 +1,7 @@
 ---
 topic: Guidance-FHIRVersions
 ---
-## Guidance
-
----
-
-## {{page-title}}
+# {{page-title}}
 
 This section details the development of UK Core with regards to alignment with HL7 FHIR sequences and versions, see the [FHIR version history](https://hl7.org/fhir/directory.html) for further information on FHIR sequences and versions.
 

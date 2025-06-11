@@ -1,5 +1,5 @@
 <Bundle xmlns='http://hl7.org/fhir'>
-  <id value="UKCore-Bundle-BatchPut-Example" />
+  <id value="UKCore-Bundle-BatchPOST-Example" />
   <type value='batch'/>
   <entry>
     <fullUrl value="urn:uuid:857d3c72-1672-4c8f-b6a1-4d04b44b0d7a" />

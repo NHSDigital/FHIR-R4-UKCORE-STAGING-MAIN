@@ -22,13 +22,13 @@ An optional value from a required terminology binding containing the values;
 - `moderate`
 - `severe`
 
-<h3 id="providersystems-allergyintolerance-reaction-severity">Provider Systems</h3>
+#### Provider Systems
 
 Where a `severity` is available in the provider system it SHALL be included to convey severity even if no other reaction details are explicitly available.
 
 Where the severity is not known, this element SHOULD be omitted.
 
-<h3 id="consumersystems-allergyintolerance-reaction-severity">Provider Systems</h3>
+#### Provider Systems
 
 Use of this element when populated as `severe` MAY be used to express life threatening allergies, used in conjunction with the `AllergyIntolerance.criticality` element.
 
@@ -39,11 +39,11 @@ An omitted `AllergyIntolerance.reaction.severity` will either mean severity data
 
 An optional element to identify the route by which the patient was exposed to the substance.
 
-<h3 id="providersystems-allergyintolerance-reaction-exposureroute">Provider Systems</h3>
+#### Provider Systems
 
 If this data is available the binding SHOULD be to the {{pagelink:ValueSet-UKCore-SubstanceOrProductAdministrationRoute}}.
 
-<h3 id="consumersystems-allergyintolerance-reaction-exposureroute">Provider Systems</h3>
+#### Provider Systems
 
 Consumer systems are recommended not to include this coded information within automated clinical decision support. This is because it could either mean two quite different things;
 1. The reaction only occurs if the substance enters the body via the specified route, implying the use of other routes is safe.

@@ -3,6 +3,7 @@ topic: UKCore-Composition
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition
 usage: http://hl7.org/fhir/StructureDefinition/Composition
 issue: UKCore-Composition
+examples: Composition
 ---
 
 # StructureDefinition {{variable:issue}}
