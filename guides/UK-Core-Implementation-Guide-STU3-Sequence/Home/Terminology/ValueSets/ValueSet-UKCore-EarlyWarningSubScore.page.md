@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/ValueSet/UKCore-EarlyWarningSubScore
-issue: ValueSet-UKCore-EarlyWarningsubScore
+issue: ValueSet-UKCore-EarlyWarningSubScore
 ---
 ## UK Core Early Warning Sub Score
 

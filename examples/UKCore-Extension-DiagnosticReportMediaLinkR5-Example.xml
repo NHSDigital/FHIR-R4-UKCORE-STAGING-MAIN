@@ -1,5 +1,9 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-DiagnosticReportMediaLinkR5-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the backport extension to allow referencing a DocumentReference instance within DiagnosticReport.media.link</div>
+  </text>
   <status value="preliminary" />
   <code>
     <coding>

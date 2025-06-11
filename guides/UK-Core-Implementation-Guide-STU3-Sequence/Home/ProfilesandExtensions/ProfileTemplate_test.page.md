@@ -46,17 +46,17 @@ with header
 </div>
 
 <div id="table-view" class="tabcontent">
-  <h3>Table View</h3>
+  <h3>table-view</h3>
 {{table}}
 </div>
 
 <div id="xml-view" class="tabcontent">
-  <h3>XML View</h3>
+  <h3>xml-view</h3>
 {{xml}}
 </div>
 
 <div id="json-view" class="tabcontent">
-  <h3>JSON View</h3>
+  <h3>json-view</h3>
 {{json}}
 </div>
 

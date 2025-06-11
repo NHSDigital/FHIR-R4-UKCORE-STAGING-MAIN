@@ -1,11 +1,8 @@
 ---
 topic: Guidance-MustSupport
 ---
-## Guidance
 
----
-
-## {{page-title}}
+# {{page-title}}
 
 ### Mandatory Elements
 

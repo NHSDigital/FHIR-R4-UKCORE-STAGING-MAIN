@@ -206,8 +206,8 @@
   filename: UKCore-RelatedPerson-JoySmith-Example.page.md
 - name: UKCore-RequestGroup-Ciprofloxacin-Example
   filename: UKCore-RequestGroup-Ciprofloxacin-Example.page.md
-- name: UKCore-RequestGroup-MultipleAnitibiotics-Example
-  filename: UKCore-RequestGroup-MultipleAnitibiotics-Example.page.md
+- name: UKCore-RequestGroup-MultipleAntibiotics-Example
+  filename: UKCore-RequestGroup-MultipleAntibiotics-Example.page.md
 - name: UKCore-RequestGroup-Paracetamol-Example
   filename: UKCore-RequestGroup-Paracetamol-Example.page.md
 - name: UKCore-Schedule-Immunization-Example

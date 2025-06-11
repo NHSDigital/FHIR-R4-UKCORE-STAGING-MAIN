@@ -1,11 +1,7 @@
 ---
 topic: Guidance-CodeableConcept
 ---
-## Guidance 
-
----
-
-## CodeableConcept Guidance
+# {{page-title}}
 
 Aimed at FHIR developers, this guidance will show how to process the CodeableConcept, including:
 

@@ -3,6 +3,7 @@ topic: UKCore-Observation-VitalSigns-BodyTemperature
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BodyTemperature
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-BodyTemperature
+examples: Observation-VitalSigns-BodyTemperature
 ---
 
 # StructureDefinition {{variable:issue}}

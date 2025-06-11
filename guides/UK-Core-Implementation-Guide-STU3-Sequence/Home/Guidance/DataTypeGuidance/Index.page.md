@@ -1,11 +1,8 @@
 ---
 topic: Guidance-DataType
 ---
-## Guidance
 
----
-
-## DataType Guidance
+# {{page-title}}
 
 This page gives guidance on the representation of constructs like:
 <ul>
@@ -15,10 +12,6 @@ This page gives guidance on the representation of constructs like:
 </ul>
 
 ---
-
-
-
-
 
 
 

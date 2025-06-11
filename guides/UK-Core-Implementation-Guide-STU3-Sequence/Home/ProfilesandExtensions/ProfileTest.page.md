@@ -8,22 +8,7 @@ examples: AllergyIntolerance
 # StructureDefinition {{variable:issue}}
 
 <nospellcheck>
-{{page:ProfileTemplate}}
-
-<div id="Examples" class="tabcontent">
-  <h3>Examples</h3>
-<b>Allergy</b> - An example to illustrate an allergy to medication.
-<br>{{pagelink:UKCore-AllergyIntolerance-Amoxicillin-Example}}
-<br><br>
-<b>Allergy entered in error</b> - An example to illustrate an allergy which was entered in error and has been marked as ended.
-<br>{{pagelink:UKCore-AllergyIntolerance-EnteredInError-Example}}
-<br><br>
-<b>Allergy evidence</b> - An example to illustrate a reference to results of investigations that confirmed the certainty of the diagnosis for an allergy or intolerance.
-<br>{{pagelink:UKCore-Extension-Evidence-Example}}
-<br><br>
-<b>Allergy List</b> - An example to illustrate a list of allergies contained in a Bundle resource.
-<br>{{pagelink:UKCore-Bundle-AllergyList-Example}}
-</div>
+{{page:ProfileTemplate_test}}
 </nospellcheck>
 
 
@@ -69,3 +54,4 @@ Where migrated data is not coded, uses retired / invalidated codes, or coded wit
 </div>
 
 ---
+

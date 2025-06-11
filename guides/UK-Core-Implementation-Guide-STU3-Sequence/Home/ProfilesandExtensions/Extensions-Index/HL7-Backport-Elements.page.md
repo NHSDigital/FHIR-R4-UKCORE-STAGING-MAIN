@@ -11,84 +11,64 @@ The following <a href="https://hl7.org/fhir/versions.html#extensions" class="ext
 
 <i>As of 19/05/2023, the package to enable pre-adopted elements to function as per the guidance, is not available. To enable rendering and validation of these pre-adopted elements, we have provided UK Core proxy extensions, as per the current threads on <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/R5.20Extensions.20for.20R4.3F" class="external">chat.fhir.org</a>, with the R5 canonical urls. These proxy extensions will be retired once the HL7 package is released.</i>
 
-<table class="assets" title="Pre-adopted FHIR R5 elements list and context of use details">
-<tr>
-<th>R5 Element</th>
-<th>Related Profile</th>
-<th>Proxy Extension</th>
-<th>Modifier Extension</th>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.composition" class="external">DiagnosticReport.composition</a></td>
-<td>{{pagelink:UKCore-DiagnosticReport}}<br>
-{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
-<td>{{pagelink:Extension-UKCore-DiagnosticReportComposition}}</td>
-<td>NO</td>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.note" class="external">DiagnosticReport.note</a></td>
-<td>{{pagelink:UKCore-DiagnosticReport}}<br>
-{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
-<td>{{pagelink:Extension-UKCore-DiagnosticReportNote}}</td>
-<td>NO</td>
-</tr>
-<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.media.link" class="external">DiagnosticReport.media</a></td>
-<td>{{pagelink:UKCore-DiagnosticReport}}<br>
-{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
-<td>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink}}</td>
-<td>NO</td>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.supportingInfo" class="external">DiagnosticReport.supportingInfo</a></td>
-<td>{{pagelink:UKCore-DiagnosticReport}}<br>
-{{pagelink:UKCore-DiagnosticReport-Lab}}</td>
-<td>{{pagelink:Extension-UKCore-DiagnosticReportSupportingInfo}}</td>
-<td>NO</td>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/familymemberhistory-definitions.html#FamilyMemberHistory.participant" class="external">FamilyMemberHistory.participant</a></td>
-<td>{{pagelink:UKCore-FamilyMemberHistory}}</td>
-<td>{{pagelink:Extension-UKCore-FamilyMemberHistoryParticipant}}</td>
-<td>NO</td>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.bodyStructure" class="external">Observation.bodyStructure</a></td>
-<td>{{pagelink:UKCore-Observation}}<br>
-{{pagelink:UKCore-Observation-Lab}}<br>
-{{pagelink:UKCore-Observation-Group-Lab}}</td>
-<td>{{pagelink:Extension-UKCore-ObservationBodyStructure}}</td>
-<td>NO</td>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.triggeredBy" class="external">Observation.triggeredBy</a></td>
-<td>{{pagelink:UKCore-Observation}}<br>
-{{pagelink:UKCore-Observation-Lab}}<br>
-{{pagelink:UKCore-Observation-Group-Lab}}</td>
-<td>{{pagelink:Extension-UKCore-ObservationTriggeredBy}}</td>
-<td>NO</td>
-</tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R5/specimen-definitions.html#Specimen.collection.collector" class="external">Specimen.collection.collector</a></td>
-<td>{{pagelink:UKCore-Specimen}}</td>
-<td>{{pagelink:Extension-UKCore-SpecimenCollectionCollector}}</td>
-<td>NO</td>
-</tr>
-</table>
-<br><br>
+<fql>
+from StructureDefinition
+where
+    type = 'Extension' 
+    and status != 'retired'
+    and url.contains('http://hl7.org/fhir/')
+select
+    'Id': id, 'Context of Use':context.expression, 'url': url,'Status':status
+</fql>
 
-<table class="assets" title="Pre-adopted FHIR R6 elements list and context of use details">
-<tr>
-<th>R6 Element</th>
-<th>Related Profile</th>
-<th>Proxy Extension</th>
-<th>Modifier Extension</th>
-</tr>
-<tr>
-<td><a href="https://build.fhir.org/condition-definitions.html#Condition.bodyStructure" class="external">Condition.bodyStructure</a></td>
-<td>{{pagelink:UKCore-Condition}}</td>
-<td>{{pagelink:Extension-UKCore-ConditionBodyStructure}}</td>
-<td>NO</td>
-</tr>
-</table>
+
+<script>
+$(document).ready(function () {
+    const queryString = window.location.search || "?version={{guide-version}}";
+    
+    // Detect if we are in a preview/unpublished guide by checking if .page.md is in the URL
+    const isUnpublished = window.location.pathname.includes(".page.md");
+
+    const extensionBase = "https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/extensionlibrary/";
+    const profileBase = "https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/UKCore-";
+
+    const extSuffix = isUnpublished ? ".page.md" : ""; // only use .page.md in preview
+
+    const $table = $("table.table-bordered");
+    if ($table.length === 0) return;
+
+    $table.find("tbody tr").each(function () {
+        const $cells = $(this).find("td");
+        if ($cells.length < 2) return;
+
+        const $extensionCell = $cells.eq(0);
+        const $profilesCell = $cells.eq(1);
+
+        // --- Extension Column ---
+        const extText = $extensionCell.text().trim();
+        if (extText) {
+            const extHref = `${extensionBase}${extText}${extSuffix}${queryString}`;
+            $extensionCell.html(`<a href="${extHref}">${extText}</a>`);
+        }
+
+        // --- Profiles Column ---
+        const profilesRaw = $profilesCell.text().trim().split(";");
+        const profileLinks = profilesRaw.map(profile => {
+            const clean = profile.trim();
+            if (!clean) return "";
+
+            if (clean === "Coding") return "Coding";
+
+            const resource = clean.split(".")[0];
+            const profileHref = `${profileBase}${resource}${queryString}`;
+            return `<a href="${profileHref}">${clean}</a>`;
+        }).filter(link => link);
+
+        $profilesCell.html(profileLinks.join("<br>"));
+    });
+});
+</script>
+
+
 
 ---

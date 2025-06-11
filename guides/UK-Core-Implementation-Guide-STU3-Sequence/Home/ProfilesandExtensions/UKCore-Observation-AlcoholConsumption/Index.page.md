@@ -3,6 +3,7 @@ topic: UKCore-Observation-AlcoholConsumption
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-AlcoholConsumption
+examples: Observation-AlcoholConsumption
 ---
 
 # StructureDefinition {{variable:issue}}
