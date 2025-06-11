@@ -1,5 +1,9 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="UKCore-Extension-CodingSCT-Weight-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the use of an extension to represent a SNOMED CT concept with a specific Description ID — typically to preserve or specify which synonym or preferred term was originally used in a clinical system</div>
+  </text>
   <status value="final" />
   <!-- **************Snippet start************** -->
   <code>
