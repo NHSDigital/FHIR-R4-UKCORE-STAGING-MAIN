@@ -4,7 +4,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CallbackConsent" />
   <version value="1.0.0" />
   <name value="ExtensionUKCoreCallbackConsent" />
-  <title value="Extension UK Core UKCore Callback Consent" />
+  <title value="Extension UK Core Callback Consent" />
   <status value="draft" />
   <date value="2025-06-13" />
   <publisher value="HL7 UK" />
