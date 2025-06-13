@@ -11,20 +11,20 @@ usage: http://hl7.org/fhir/StructureDefinition/DiagnosticReport
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to send a composition resource with a diagnostic report.<br>
-  {{pagelink:UKCore-Extension-CompositionReference-Example}}
+  {{pagelink:Extension-UKCore-CompositionReference-Example}}
   <br><br>
   <b>CT Chest Scan Report</b> - An example to illustrate a diagnostic report containing an imaging study for a patient.<br/>
 {{pagelink:UKCore-DiagnosticReport-CTChestScan-Example}}<br>
   NOTE: The above example references {{pagelink:UKCore-ImagingStudy-CTChestScan-Example}}
 <br><br>
   <b>Diagnostic Report Note</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to add notes and annotations to a diagnostic report.<br>
-  {{pagelink:UKCore-Extension-Note-Example}}
+  {{pagelink:Extension-UKCore-Note-Example}}
   <br><br>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
 {{pagelink:UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport-Example}}
 <br><br>
  <b>Device Reference</b> - An example to illustrate the extension which is used to indicate the performer of a Diagnostic Report was a device.<br>
-  {{pagelink:UKCore-Extension-DeviceReference-Example}}<br>
+  {{pagelink:Extension-UKCore-DeviceReference-Example}}<br>
   NOTE: The above example references {{pagelink:UKCore-Device-SoftwareAsAMedicalDevice-Example}}
 <br><br>
   <b>ECG Report</b> - An example to illustrate a diagnostic report presented in pdf, for an ECG.<br/>

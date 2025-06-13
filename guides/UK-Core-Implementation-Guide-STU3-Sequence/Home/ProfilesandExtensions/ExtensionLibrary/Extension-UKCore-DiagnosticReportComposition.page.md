@@ -15,7 +15,7 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to send a composition resource with a diagnostic report.<br>
-  {{pagelink:UKCore-Extension-CompositionReference-Example}}
+  {{pagelink:Extension-UKCore-CompositionReference-Example}}
   <br><br>
 </div>
 

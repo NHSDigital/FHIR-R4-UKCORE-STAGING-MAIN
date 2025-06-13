@@ -1,0 +1,23 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-MedicationStatementLastIssueDate-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the date the medication were last issued</div>
+  </text>
+  <!-- **************extension start************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate">
+    <valueDateTime value="2017-02-24" />
+  </extension>
+  <!-- **************extension end************** -->
+  <status value="active" />
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="39732311000001104" />
+      <display value="Amoxicillin 250mg capsules" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+</MedicationStatement>

@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocati
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Main Location</b>- An example to illustrate the extension of an organisation to carry the main location of that organisation.</br>
-{{pagelink:UKCore-Extension-MainLocation-Example}}
+{{pagelink:Extension-UKCore-MainLocation-Example}}
 <br><br>
 </div>
 

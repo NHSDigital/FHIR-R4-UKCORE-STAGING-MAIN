@@ -13,22 +13,22 @@ In the example below, the SNOMED CT Description Id is populated with the Id of t
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Extension-CodingSCT-Myocardial-Example}}
+{{table:Extension-UKCore-CodingSCT-Myocardial-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Extension-CodingSCT-Myocardial-Example, expand:9}}
+{{tree:Extension-UKCore-CodingSCT-Myocardial-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Extension-CodingSCT-Myocardial-Example}}
+{{xml:Extension-UKCore-CodingSCT-Myocardial-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Extension-CodingSCT-Myocardial-Example}}
+{{json:Extension-UKCore-CodingSCT-Myocardial-Example}}
 </div>
 
 ---

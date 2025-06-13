@@ -15,7 +15,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorres
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Copy Correspondence Indicator</b>- This shows the extension that uses a Boolean value of true to indicate that the person named should be sent a copy of the correspondence.<br>
-{{pagelink:UKCore-Extension-CopyCorrespondenceIndicator-Example}}
+{{pagelink:Extension-UKCore-CopyCorrespondenceIndicator-Example}}
 <br><br>
 </div>
 

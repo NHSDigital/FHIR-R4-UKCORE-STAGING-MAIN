@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCate
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Ethnic Category</b> - An example to illustrate patient Ethnic Category information. </br>
-{{pagelink:UKCore-Extension-EthnicCategory-Example}}
+{{pagelink:Extension-UKCore-EthnicCategory-Example}}
 <br><br>
 </div>
 

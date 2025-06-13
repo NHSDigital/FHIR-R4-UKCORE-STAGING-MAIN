@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfA
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Outcome of Attendance</b>- An example to illustrate the extension which is used to indicate the outcome of an outpatient attendance.<br>
-  {{pagelink:UKCore-Extension-OutcomeOfAttendance-Example}}
+  {{pagelink:Extension-UKCore-OutcomeOfAttendance-Example}}
   <br><br>
 </div>
 

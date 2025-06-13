@@ -10,13 +10,13 @@ usage: http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Associated Encounter</b> - An example to illustrate using the extension to indicate the encounter for which the family members condition was recorded.<br>
-{{pagelink:UKCore-Extension-AssociatedEncounter-Example}}
+{{pagelink:Extension-UKCore-AssociatedEncounter-Example}}
   <br><br>
   <b>Father with Diabetes</b> - An example to illustrate the the use of FamilyMemberHistory to record a father with diabetes.
   <br>{{pagelink:UKCore-FamilyMemberHistory-FatherDiabetes-Example}}
   <br><br>
   <b>Participant Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate the performer of the family member history related activity.<br>
-  {{pagelink:UKCore-Extension-Participant-Example}}
+  {{pagelink:Extension-UKCore-Participant-Example}}
 </div>
 </nocheck>
 

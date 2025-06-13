@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionM
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Admission Method</b>- An example to illustrate the extension for an encounter to support the method by which an individual was admitted into hospital.<br>
-  {{pagelink:UKCore-Extension-AdmissionMethod-Example}}
+  {{pagelink:Extension-UKCore-AdmissionMethod-Example}}
   <br><br>
 </div>
 

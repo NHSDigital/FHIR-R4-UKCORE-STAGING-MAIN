@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfSe
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Source of Service Request</b>- An example to illustrate the source of service request extension associated with a service request.<br>
-{{pagelink:UKCore-Extension-SourceOfServiceRequest-Example}}
+{{pagelink:Extension-UKCore-SourceOfServiceRequest-Example}}
 <br><br>
 </div>
 

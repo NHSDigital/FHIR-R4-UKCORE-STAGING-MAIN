@@ -13,22 +13,22 @@ The example below demonstrates how a translation SHOULD be sent.
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Extension-Translation-Example}}
+{{table:Extension-UKCore-Translation-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Extension-Translation-Example, expand:9}}
+{{tree:Extension-UKCore-Translation-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Extension-Translation-Example}}
+{{xml:Extension-UKCore-Translation-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Extension-Translation-Example}}
+{{json:Extension-UKCore-Translation-Example}}
 </div>
 
 

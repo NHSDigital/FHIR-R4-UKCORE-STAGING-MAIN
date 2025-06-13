@@ -17,7 +17,7 @@ usage: http://hl7.org/fhir/StructureDefinition/List
   {{pagelink:UKCore-Bundle-AllergyList-Example}}
   <br><br>
   <b>List Warning Code</b> - An example to illustrate a warning being provided in a List resource.<br>
-  {{pagelink:UKCore-Extension-ListWarningCode-Example}}
+  {{pagelink:Extension-UKCore-ListWarningCode-Example}}
   <br><br>
 </div>
 </nocheck>

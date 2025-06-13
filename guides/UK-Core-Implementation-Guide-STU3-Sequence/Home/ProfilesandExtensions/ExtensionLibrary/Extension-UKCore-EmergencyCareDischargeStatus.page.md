@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyC
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Emergency Care Discharge Status</b>- An example to illustrate the extension which is used to indicate the status of an individual on discharge from an Emergency Care Department.<br>
-  {{pagelink:UKCore-Extension-EmergencyCareDischargeStatus-Example}}
+  {{pagelink:Extension-UKCore-EmergencyCareDischargeStatus-Example}}
   <br><br>
 </div>
 

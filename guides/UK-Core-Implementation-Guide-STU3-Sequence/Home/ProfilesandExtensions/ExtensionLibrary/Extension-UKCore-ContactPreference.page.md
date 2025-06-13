@@ -15,7 +15,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPre
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Contact Preference</b>- An example to illustrate the extension for a patient's contact preferences.<br>
-{{pagelink:UKCore-Extension-ContactPreference-Example}}
+{{pagelink:Extension-UKCore-ContactPreference-Example}}
 <br><br>
 </div>
 

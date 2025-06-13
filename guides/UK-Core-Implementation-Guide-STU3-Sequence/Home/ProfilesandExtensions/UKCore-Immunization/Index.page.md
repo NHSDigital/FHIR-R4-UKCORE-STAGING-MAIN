@@ -14,13 +14,13 @@ usage: http://hl7.org/fhir/StructureDefinition/Immunization
 {{pagelink: UKCore-Immunization-InfluenzaVaccine-Example}}
 <br><br>
 <b>Parent Present</b> - An example to illustrate the ParentPresent extension. <br>
-{{pagelink: UKCore-Extension-ParentPresent-Example}}
+{{pagelink: Extension-UKCore-ParentPresent-Example}}
 <br><br>
 <b>Vaccination Procedure</b> - An example to illustrate the VaccinationProcedure extension, with a vaccination procedure for an administered Influenza virus vaccine.  <br>
-{{pagelink: UKCore-Extension-VaccinationProcedure-Example}}
+{{pagelink: Extension-UKCore-VaccinationProcedure-Example}}
 <br><br>
 <b>Vaccination Procedure Covid</b> - An example to illustrate the VaccinationProcedureCovid extension, with a vaccination procedure for the COVID-19 Vaccine Vaxzevria.  <br>
-{{pagelink: UKCore-Extension-VaccinationProcedure-Covid-Example}}
+{{pagelink: Extension-UKCore-VaccinationProcedure-Covid-Example}}
 </div>
 </nocheck>
 

@@ -14,7 +14,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Composition
 {{pagelink:UKCore-Composition-Discharge-Example}}
 <br/><br/>
 <b>CareSetting Type</b> - An example to illustrate the care setting of a FHIR document.<br/>
-{{pagelink:UKCore-Extension-CareSettingType-Example}}
+{{pagelink:Extension-UKCore-CareSettingType-Example}}
 </div>
 </nocheck>
 

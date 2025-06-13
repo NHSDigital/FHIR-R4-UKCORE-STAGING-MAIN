@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Birth Sex</b>- An example to illustrate the extension for a patient's birth sex.<br>
-  {{pagelink:UKCore-Extension-BirthSex-Example}}
+  {{pagelink:Extension-UKCore-BirthSex-Example}}
   <br><br>
 </div>
 

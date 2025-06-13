@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTD
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Coding SNOMED CT Description Id</b>- An example to illustrate the extension of adding a SNOMED CT description Id and display Term.<br>
-{{pagelink:UKCore-Extension-CodingSCTDescId-Example}}
+{{pagelink:Extension-UKCore-CodingSCTDescId-Example}}
 <br><br>
 </div>
 

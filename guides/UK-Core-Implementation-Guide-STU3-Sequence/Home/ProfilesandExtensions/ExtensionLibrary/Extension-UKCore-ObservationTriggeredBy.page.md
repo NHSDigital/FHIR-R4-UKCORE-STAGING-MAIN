@@ -14,7 +14,7 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.trigg
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Triggered By Drug Use</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate a triggering observation.<br>
-  {{pagelink:UKCore-Extension-TriggeredBy-Example}}
+  {{pagelink:Extension-UKCore-TriggeredBy-Example}}
   <br><br>
 </div>
 
