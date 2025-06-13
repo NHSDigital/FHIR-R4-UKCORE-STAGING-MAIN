@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus
-issue: Extension-UKCore-NHSNumberVerificationStatus
 ---
 ## StructureDefinition {{variable:issue}}
 

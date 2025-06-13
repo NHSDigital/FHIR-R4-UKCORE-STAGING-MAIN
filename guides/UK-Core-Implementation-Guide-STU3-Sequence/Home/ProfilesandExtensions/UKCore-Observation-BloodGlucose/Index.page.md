@@ -2,7 +2,6 @@
 topic: UKCore-Observation-BloodGlucose
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlucose
 usage: http://hl7.org/fhir/StructureDefinition/Observation
-issue: UKCore-Observation-BloodGlucose
 ---
 
 # StructureDefinition {{variable:issue}}

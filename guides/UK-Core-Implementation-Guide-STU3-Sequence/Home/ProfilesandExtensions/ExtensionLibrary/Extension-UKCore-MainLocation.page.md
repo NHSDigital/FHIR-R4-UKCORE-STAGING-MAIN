@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation
-issue: Extension-UKCore-MainLocation
 ---
 ## StructureDefinition {{variable:issue}}
 
