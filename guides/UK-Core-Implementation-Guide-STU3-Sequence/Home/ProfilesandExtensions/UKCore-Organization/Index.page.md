@@ -3,7 +3,6 @@ topic: UKCore-Organization
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization
 usage: http://hl7.org/fhir/StructureDefinition/Organization
 issue: UKCore-Organization
-examples: Organization
 ---
 # StructureDefinition {{variable:issue}}
 

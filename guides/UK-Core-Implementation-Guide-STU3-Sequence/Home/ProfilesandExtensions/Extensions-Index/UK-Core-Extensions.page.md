@@ -1,6 +1,7 @@
 ---
 topic: UK-Core-Extensions
 ---
+
 ## UK Core Extensions
 
 <p>The Extensions listed below have been defined as UK Core extensions. Also included in this library are some HL7 core-defined extensions which have been added to the UK Core profiles because they have been deemed to be "core" to UK FHIR data exchanges. These will have a page with guidance on usage in the UK and examples to illustrate usage.</p>

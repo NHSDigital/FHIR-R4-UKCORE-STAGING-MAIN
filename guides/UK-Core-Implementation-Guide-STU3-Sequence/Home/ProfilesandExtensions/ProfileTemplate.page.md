@@ -63,11 +63,13 @@ with header
 <div id="examples"
 class="tabcontent">
   <h3>Examples</h3>
-{{page:Home/ProfilesandExtensions/ExampleLinksFQL.page.md}}
+{{page:ExampleLinksFQL}}
+
+<i>UK Core Extensions examples can be found on the relevant Extension page.</i>
 </div>
 
 <div id="feedback" class="tabcontent">
   <h3>Feedback</h3>
-Click here to: {{page:Home/ProfilesandExtensions/FeedbackLink.page.md}}
+Click here to: {{page:FeedbackLink}}
 </div>
 
