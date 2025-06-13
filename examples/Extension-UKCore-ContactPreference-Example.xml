@@ -1,0 +1,42 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-ContactPreference-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension for a patient's contact preferences</div>
+  </text>
+  <!-- **************extension start************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
+    <extension url="PreferredContactMethod">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod" />
+          <code value="3" />
+          <display value="Telephone" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="PreferredContactTimes">
+      <valueTiming>
+        <repeat>
+          <frequency value="1" />
+          <period value="1" />
+          <periodUnit value="d" />
+          <dayOfWeek value="mon" />
+          <dayOfWeek value="wed" />
+          <dayOfWeek value="fri" />
+          <when value="MORN" />
+        </repeat>
+      </valueTiming>
+    </extension>
+    <extension url="PreferredWrittenCommunicationFormat">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
+          <code value="11" />
+          <display value="Large print" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <!-- **************extension end************** -->
+</Patient>

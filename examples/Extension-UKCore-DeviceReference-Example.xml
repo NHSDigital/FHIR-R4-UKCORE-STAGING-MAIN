@@ -1,0 +1,44 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-DeviceReference-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a device performing a diagnostic report</div>
+  </text>
+  <status value="final" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+    </subject>
+    <performer>
+        <!--  ***************extension start***************  -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference">
+            <valueReference>
+                <reference value="Device/UKCore-Device-SoftwareAsAMedicalDevice-Example" />
+            </valueReference>
+        </extension>
+        <display value="Software as a medical device" />
+        <!--  ***************extension end***************  -->
+    </performer>
+    <resultsInterpreter>
+        <!--  ***************extension start***************  -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference">
+            <valueReference>
+                <reference value="Device/UKCore-Device-SoftwareAsAMedicalDevice-Example" />
+            </valueReference>
+        </extension>
+        <display value="Software as a medical device" />
+        <!--  ***************extension end***************  -->
+    </resultsInterpreter>
+    <specimen>
+        <reference value="Specimen/UKCore-Specimen-BloodSpecimen-Example" />
+    </specimen>
+    <result>
+        <reference value="Observation/UKCore-Observation-WhiteCellCount-Example" />
+    </result>
+</DiagnosticReport>
