@@ -1,3 +1,5 @@
+# StructureDefinition {{variable:topic}}
+
 <fql>
 from
 	StructureDefinition
