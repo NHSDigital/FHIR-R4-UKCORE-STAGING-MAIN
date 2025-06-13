@@ -4,7 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition
 usage: http://hl7.org/fhir/StructureDefinition/Condition
 ---
 
-# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:ProfileTemplate}}
