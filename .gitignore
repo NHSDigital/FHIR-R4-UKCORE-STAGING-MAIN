@@ -4,4 +4,6 @@ Examples/org.hl7.fhir.validator.jar
 .simplifier/folder.settings.json
 .env
 __pycache__/
+fhirpkg.lock.json
+
 

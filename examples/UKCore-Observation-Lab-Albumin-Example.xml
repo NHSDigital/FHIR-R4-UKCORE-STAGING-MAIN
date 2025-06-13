@@ -1,0 +1,72 @@
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="UKCore-Observation-Lab-Albumin-Example" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="78443cb9-f248-44ef-9e6b-37fc4a592c1b" />
+    </identifier>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+        </coding>
+    </category>
+    <code>
+        <!--  Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example.  -->
+        <!--  In practice, it is likely that only a code from one reference set will be carried.  -->
+        <coding>
+            <!--  From PBCL observable entity reference set  -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-reference">
+                <valueUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyBoundedCodeListObservables" />
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1000821000000103" />
+            <display value="Serum albumin level" />
+        </coding>
+        <coding>
+            <!--  From PaLM observable entity reference set  -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-reference">
+                <valueUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PathologyAndLaboratoryMedicineObservables" />
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1105861000000106" />
+            <display value="Albumin mass concentration in serum" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+        <display value="WELSH, Joel" />
+    </subject>
+    <issued value="2022-03-08T14:23:00+00:00" />
+    <performer>
+        <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+        <display value="TD008362 PATH LAB 001" />
+    </performer>
+    <valueQuantity>
+        <value value="47" />
+        <unit value="g/L" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="g/L" />
+    </valueQuantity>
+    <specimen>
+        <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+    </specimen>
+    <referenceRange>
+        <low>
+            <value value="35" />
+            <unit value="g/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="g/L" />
+        </low>
+        <high>
+            <value value="50" />
+            <unit value="g/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="g/L" />
+        </high>
+    </referenceRange>
+</Observation>
