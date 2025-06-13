@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="UKCore-PeriodType" />
   <url value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
-  <version value="2.0.0" />
+  <version value="1.1.0" />
   <name value="UKCorePeriodType" />
   <title value="UK Core Period Type" />
   <status value="draft" />
@@ -29,7 +29,7 @@
     <display value="Operational" />
   </concept>
   <concept>
-    <code value="system effective" />
+    <code value="system-effective" />
     <display value="System Effective" />
   </concept>
 </CodeSystem>

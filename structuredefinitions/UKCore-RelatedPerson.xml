@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-RelatedPerson" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-  <version value="2.5.1" />
+  <version value="2.6.0" />
   <name value="UKCoreRelatedPerson" />
   <title value="UK Core Related Person" />
   <status value="active" />
@@ -27,6 +27,14 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
   <derivation value="constraint" />
   <differential>
+    <element id="RelatedPerson.extension:callbackConsent">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="callbackConsent" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CallbackConsent" />
+      </type>
+    </element>
     <element id="RelatedPerson.extension:contactPreference">
       <path value="RelatedPerson.extension" />
       <sliceName value="contactPreference" />
