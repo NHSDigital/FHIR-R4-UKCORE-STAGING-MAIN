@@ -55,7 +55,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Observation
 <b>Responds to Voice</b> - An example to illustrate recording a patients level of consiousness.<br/>
 {{pagelink:UKCore-Observation-PatientConsciousness-Example}}<br><br>
   <b>Triggered By Drug Use</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate a triggering observation.<br>
-  {{pagelink:UKCore-Extension-TriggeredBy-Example}}<br><br>
+  {{pagelink:Extension-UKCore-TriggeredBy-Example}}<br><br>
 <b>Using Oxygen Therapy</b> - An example to illustrate a patient on supplemental oxygen.<br/>
 {{pagelink:UKCore-Observation-OxygenTherapy-Example}}<br><br>
 <b>White cell count</b> - An example to illustrate the observation of a white cell count for a blood specimen.<br/>

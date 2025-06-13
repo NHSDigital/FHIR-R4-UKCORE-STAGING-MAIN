@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Cuff Size</b> - An example to illustrate a blood pressure monitoring device with a large cuff.<br>
-{{pagelink:UKCore-Extension-CuffSize-Example}}
+{{pagelink:Extension-UKCore-CuffSize-Example}}
 <br><br>
 </div>
 

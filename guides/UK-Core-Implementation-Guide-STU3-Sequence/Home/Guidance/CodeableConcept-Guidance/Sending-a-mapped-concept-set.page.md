@@ -18,22 +18,22 @@ Exceptionally, mappings could correspond to a SNOMED CT Concept Id only and so n
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Extension-CodingSCT-Potassium-Example}}
+{{table:Extension-UKCore-CodingSCT-Potassium-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Extension-CodingSCT-Potassium-Example, expand:9}}
+{{tree:Extension-UKCore-CodingSCT-Potassium-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Extension-CodingSCT-Potassium-Example}}
+{{xml:Extension-UKCore-CodingSCT-Potassium-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Extension-CodingSCT-Potassium-Example}}
+{{json:Extension-UKCore-CodingSCT-Potassium-Example}}
 </div>
 
 ---

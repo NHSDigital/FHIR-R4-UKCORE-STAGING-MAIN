@@ -15,7 +15,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryCh
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Delivery Channel</b>- An example to illustrate the delivery channel associated with an appointment.<br>
-{{pagelink:UKCore-Extension-DeliveryChannel-Example}}
+{{pagelink:Extension-UKCore-DeliveryChannel-Example}}
 <br><br>
 </div>
 

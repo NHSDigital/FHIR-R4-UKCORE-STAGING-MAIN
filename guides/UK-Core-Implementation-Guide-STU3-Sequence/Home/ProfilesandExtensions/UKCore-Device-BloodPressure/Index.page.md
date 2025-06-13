@@ -15,7 +15,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Device
 <b>Electronic Sphygmomanometer</b> - An example to illustrate recording of a specific blood pressure device.<br/>
 {{pagelink:UKCore-Device-Sphygmomanometer-Example}}<br><br>
 <b>Cuff Size</b> - An example to illustrate recording of a cuff size used on a blood pressure device.<br/>
-{{pagelink:UKCore-Extension-CuffSize-Example}}<br><br>
+{{pagelink:Extension-UKCore-CuffSize-Example}}<br><br>
 </div>
 </nocheck>
 

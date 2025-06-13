@@ -11,22 +11,22 @@ In the exceptional case that the code is not known, then the <code>code.text</co
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Extension-CodingSCT-CodeUnknown-Example}}
+{{table:Extension-UKCore-CodingSCT-CodeUnknown-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Extension-CodingSCT-CodeUnknown-Example, expand:9}}
+{{tree:Extension-UKCore-CodingSCT-CodeUnknown-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Extension-CodingSCT-CodeUnknown-Example}}
+{{xml:Extension-UKCore-CodingSCT-CodeUnknown-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Extension-CodingSCT-CodeUnknown-Example}}
+{{json:Extension-UKCore-CodingSCT-CodeUnknown-Example}}
 </div>
 
 ---

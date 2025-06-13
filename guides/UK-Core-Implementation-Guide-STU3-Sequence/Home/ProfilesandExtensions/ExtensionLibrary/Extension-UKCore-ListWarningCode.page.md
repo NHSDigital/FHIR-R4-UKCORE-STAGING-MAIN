@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarnin
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>List Warning Code</b>- An example to illustrate a warning being provided in a List resource.<br>
-  {{pagelink:UKCore-Extension-ListWarningCode-Example}}
+  {{pagelink:Extension-UKCore-ListWarningCode-Example}}
   <br><br>
 </div>
 

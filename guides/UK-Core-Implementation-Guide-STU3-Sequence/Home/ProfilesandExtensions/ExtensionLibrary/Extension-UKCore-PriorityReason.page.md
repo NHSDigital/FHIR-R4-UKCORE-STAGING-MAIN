@@ -14,10 +14,10 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityRe
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a SNOMED CT concept, for a service request marked as urgent.<br>
-{{pagelink:UKCore-Extension-PriorityReason-Example}}
+{{pagelink:Extension-UKCore-PriorityReason-Example}}
 <br><br>
   <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a plain text reason, for a service request marked as urgent.<br>
-{{pagelink:UKCore-Extension-PriorityReason-SendingAsText-Example}}
+{{pagelink:Extension-UKCore-PriorityReason-SendingAsText-Example}}
 <br><br>
 </div>
 

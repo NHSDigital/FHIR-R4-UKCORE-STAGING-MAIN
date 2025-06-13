@@ -10,13 +10,13 @@ usage: http://hl7.org/fhir/StructureDefinition/ServiceRequest
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
    <b>Additional Contact</b> - An example to illustrate providing an additional contact with a service request.<br>
-{{pagelink:UKCore-Extension-AdditionalContact-Example}}
+{{pagelink:Extension-UKCore-AdditionalContact-Example}}
 <br><br>
   <b>Colonoscopy Request</b> - An example to illustrate a service request regarding a colonoscopy.<br/>
 {{pagelink:UKCore-ServiceRequest-ColonoscopyRequest-Example}}
 <br><br>
 <b>Coverage</b> - An example to illustrate the extension for a service request, to state the the coverage of the funding for this request.<br>
-{{pagelink:UKCore-Extension-Coverage-Example}}
+{{pagelink:Extension-UKCore-Coverage-Example}}
 <br/><br/>
   <b>CT Chest Scan Request</b> - An example to illustrate a service request for a CT scan.<br/>
 {{pagelink:UKCore-ServiceRequest-CTChestScan-Example}}
@@ -25,13 +25,13 @@ usage: http://hl7.org/fhir/StructureDefinition/ServiceRequest
 {{pagelink:UKCore-ServiceRequest-ECG-Example}}
 <br><br>
 <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a SNOMED CT concept, for a service request marked as urgent.<br>
-{{pagelink:UKCore-Extension-PriorityReason-Example}}
+{{pagelink:Extension-UKCore-PriorityReason-Example}}
 <br><br>
   <b>Priority Reason</b> - An example to illustrate the priority reason extension, using a plain text reason, for a service request marked as urgent.<br>
-{{pagelink:UKCore-Extension-PriorityReason-SendingAsText-Example}}
+{{pagelink:Extension-UKCore-PriorityReason-SendingAsText-Example}}
 <br><br>
 <b>Source of Service Request</b> - An example to illustrate the source of service request extension associated with a service request.<br/>
-{{pagelink:UKCore-Extension-SourceOfServiceRequest-Example}}
+{{pagelink:Extension-UKCore-SourceOfServiceRequest-Example}}
 <br><br>
 </div>
 </nocheck>

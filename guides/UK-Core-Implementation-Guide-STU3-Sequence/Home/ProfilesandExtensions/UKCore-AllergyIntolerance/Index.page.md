@@ -16,7 +16,7 @@ usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 <br>{{pagelink:UKCore-AllergyIntolerance-EnteredInError-Example}}
 <br><br>
 <b>Allergy evidence</b> - An example to illustrate a reference to results of investigations that confirmed the certainty of the diagnosis for an allergy or intolerance.
-<br>{{pagelink:UKCore-Extension-Evidence-Example}}
+<br>{{pagelink:Extension-UKCore-Evidence-Example}}
 <br><br>
 <b>Allergy List</b> - An example to illustrate a list of allergies contained in a Bundle resource.
 <br>{{pagelink:UKCore-Bundle-AllergyList-Example}}

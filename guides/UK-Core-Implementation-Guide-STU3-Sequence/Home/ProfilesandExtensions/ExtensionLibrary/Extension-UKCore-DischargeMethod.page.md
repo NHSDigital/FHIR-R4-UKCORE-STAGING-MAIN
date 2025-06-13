@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeM
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Discharge Method</b>- An example to illustrate the extension for an encounter to support the method of discharge from a hospital.<br>
-  {{pagelink:UKCore-Extension-DischargeMethod-Example}}
+  {{pagelink:Extension-UKCore-DischargeMethod-Example}}
   <br><br>
 </div>
 
