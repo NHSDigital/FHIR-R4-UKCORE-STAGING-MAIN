@@ -2,11 +2,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="UKCore-PeriodType" />
   <url value="https://fhir.hl7.org.uk/ValueSet/UKCore-PeriodType" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCorePeriodType" />
   <title value="UK Core Period Type" />
   <status value="draft" />
-  <date value="2023-10-13" />
+  <date value="2025-06-13" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -26,8 +26,8 @@
   </compose>
   <expansion>
     <identifier value="94af73b0-8078-4323-be5e-43ced75666fb" />
-    <timestamp value="2023-10-13T13:34:44+00:00" />
-    <total value="2" />
+    <timestamp value="2025-06-13T13:34:44+00:00" />
+    <total value="3" />
     <offset value="0" />
     <contains>
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
@@ -38,6 +38,11 @@
       <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
       <code value="operational" />
       <display value="Operational" />
+    </contains>
+    <contains>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
+      <code value="system-effective" />
+      <display value="System Effective" />
     </contains>
   </expansion>
 </ValueSet>
