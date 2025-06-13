@@ -1,6 +1,5 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link
-issue: Extension-UKCore-DiagnosticReportMediaLink
 ---
 
 <table id="addToTranspose">

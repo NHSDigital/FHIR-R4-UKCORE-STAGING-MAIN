@@ -1,6 +1,5 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo
-issue: Extension-UKCore-DiagnosticReportSupportingInfo
 ---
 ## StructureDefinition {{variable:issue}}
 

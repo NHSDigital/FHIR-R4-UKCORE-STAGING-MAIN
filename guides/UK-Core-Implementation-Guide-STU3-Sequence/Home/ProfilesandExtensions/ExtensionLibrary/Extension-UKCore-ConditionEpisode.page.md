@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode
-issue: Extension-UKCore-ConditionEpisode
 ---
 ## StructureDefinition {{variable:issue}}
 

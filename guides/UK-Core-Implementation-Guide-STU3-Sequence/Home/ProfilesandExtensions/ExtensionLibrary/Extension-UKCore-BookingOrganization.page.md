@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization
-issue: Extension-UKCore-BookingOrganization
 ---
 ## StructureDefinition {{variable:issue}}
 
