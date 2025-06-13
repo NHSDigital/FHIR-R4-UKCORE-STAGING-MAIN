@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily
-issue: Extension-UKCore-MedicationTradeFamily
 ---
 ## StructureDefinition Extension-UKCore-MedicationTradeFamily
 

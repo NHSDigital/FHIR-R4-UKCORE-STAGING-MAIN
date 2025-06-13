@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex
-issue: Extension-UKCore-BirthSex
 ---
 ## StructureDefinition {{variable:issue}}
 

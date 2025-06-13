@@ -1,6 +1,5 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant
-issue: Extension-UKCore-FamilyMemberHistoryParticipant
 ---
 ## StructureDefinition {{variable:issue}}
 

@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate
-issue: Extension-UKCore-MedicationStatementLastIssueDate
 ---
 ## StructureDefinition Extension-UKCore-MedicationStatementLastIssueDate
 

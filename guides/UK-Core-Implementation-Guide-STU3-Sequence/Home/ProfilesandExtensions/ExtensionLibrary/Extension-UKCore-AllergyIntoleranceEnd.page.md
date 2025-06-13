@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd
-issue: Extension-UKCore-AllergyIntoleranceEnd
 ---
 ## StructureDefinition {{variable:issue}}
 

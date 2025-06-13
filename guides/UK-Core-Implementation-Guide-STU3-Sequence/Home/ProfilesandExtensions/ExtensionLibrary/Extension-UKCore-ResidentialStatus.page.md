@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus
-issue: Extension-UKCore-ResidentialStatus
 ---
 ## StructureDefinition {{variable:issue}}
 
