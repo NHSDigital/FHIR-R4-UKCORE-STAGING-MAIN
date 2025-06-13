@@ -3,7 +3,6 @@ topic: UKCore-AllergyIntolerance
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance
 usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 ---
-# StructureDefinition {{variable:issue}}
 
 <nospellcheck>
 {{page:ProfileTemplate}}

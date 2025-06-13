@@ -4,7 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment
 usage: http://hl7.org/fhir/StructureDefinition/Appointment
 ---
 
-# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:ProfileTemplate}}
