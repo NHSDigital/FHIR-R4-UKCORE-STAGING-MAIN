@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure
-issue: Extension-UKCore-VaccinationProcedure
 ---
 ## StructureDefinition {{variable:issue}}
 

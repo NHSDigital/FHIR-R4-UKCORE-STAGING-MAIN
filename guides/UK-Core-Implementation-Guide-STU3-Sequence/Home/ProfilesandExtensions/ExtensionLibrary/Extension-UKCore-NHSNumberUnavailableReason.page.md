@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason
-issue: Extension-UKCore-NHSNumberUnavailableReason
 ---
 ## StructureDefinition {{variable:issue}}
 

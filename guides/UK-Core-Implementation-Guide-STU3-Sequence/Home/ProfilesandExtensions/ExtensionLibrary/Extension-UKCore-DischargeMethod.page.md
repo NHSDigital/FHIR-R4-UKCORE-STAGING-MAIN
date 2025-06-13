@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod
-issue: Extension-UKCore-DischargeMethod
 ---
 ## StructureDefinition {{variable:issue}}
 

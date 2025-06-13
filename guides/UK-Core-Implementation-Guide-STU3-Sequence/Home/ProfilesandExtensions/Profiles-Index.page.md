@@ -1,11 +1,8 @@
 ---
 topic: Library-Profiles
 ---
-## Profiles and Extensions
 
----
-
-## Profiles Index
+# Profiles Index
 
 This index contains all the profiles Clinically and Technically Assured for use with UK Core. 
 

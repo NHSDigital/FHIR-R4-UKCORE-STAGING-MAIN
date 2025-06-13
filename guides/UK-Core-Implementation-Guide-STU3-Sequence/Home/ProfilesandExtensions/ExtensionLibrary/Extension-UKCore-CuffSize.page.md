@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize
-issue: Extension-UKCore-CuffSize
 ---
 ## StructureDefinition {{variable:issue}}
 

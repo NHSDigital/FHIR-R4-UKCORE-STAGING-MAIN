@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus
-issue: Extension-UKCore-EmergencyCareDischargeStatus
 ---
 ## StructureDefinition {{variable:issue}}
 

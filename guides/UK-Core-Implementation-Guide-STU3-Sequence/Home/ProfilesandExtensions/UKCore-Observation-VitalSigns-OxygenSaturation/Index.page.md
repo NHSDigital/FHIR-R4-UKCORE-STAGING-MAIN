@@ -2,11 +2,8 @@
 topic: UKCore-Observation-VitalSigns-OxygenSaturation
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-OxygenSaturation
 usage: http://hl7.org/fhir/StructureDefinition/Observation
-issue: UKCore-Observation-VitalSigns-OxygenSaturation
-examples: Observation-VitalSigns-OxygenSaturation
 ---
 
-# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:ProfileTemplate_new}}

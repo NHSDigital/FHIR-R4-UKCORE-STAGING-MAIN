@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence
-issue: Extension-UKCore-Evidence
 ---
 ## StructureDefinition {{variable:issue}}
 

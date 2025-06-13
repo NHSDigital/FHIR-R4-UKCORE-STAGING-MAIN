@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference
-issue: Extension-UKCore-DeviceReference
 ---
 ## StructureDefinition {{variable:issue}}
 

@@ -1,6 +1,5 @@
 ---
 subject: http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure
-issue: Extension-UKCore-ConditionBodyStructure
 ---
 
 ## StructureDefinition {{variable:issue}}

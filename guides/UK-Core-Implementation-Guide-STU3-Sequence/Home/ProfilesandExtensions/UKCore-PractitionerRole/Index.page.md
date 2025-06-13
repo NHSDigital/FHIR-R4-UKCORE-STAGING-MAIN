@@ -2,10 +2,7 @@
 topic: UKCore-PractitionerRole
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole
 usage: http://hl7.org/fhir/StructureDefinition/PractitionerRole
-issue: UKCore-PractitionerRole
-examples: PractitionerRole
 ---
-# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:ProfileTemplate}}

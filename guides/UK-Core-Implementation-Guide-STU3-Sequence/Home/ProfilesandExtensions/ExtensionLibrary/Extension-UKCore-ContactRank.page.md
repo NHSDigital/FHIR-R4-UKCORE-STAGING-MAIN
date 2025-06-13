@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank
-issue: Extension-UKCore-ContactRank
 ---
 ## StructureDefinition {{variable:issue}}
 

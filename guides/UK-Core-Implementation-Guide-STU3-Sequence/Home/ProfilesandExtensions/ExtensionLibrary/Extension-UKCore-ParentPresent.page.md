@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent
-issue: Extension-UKCore-ParentPresent
 ---
 ## StructureDefinition {{variable:issue}}
 

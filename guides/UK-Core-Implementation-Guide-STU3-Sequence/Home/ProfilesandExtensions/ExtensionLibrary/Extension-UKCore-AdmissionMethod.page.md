@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod
-issue: Extension-UKCore-AdmissionMethod
 ---
 ## StructureDefinition {{variable:issue}}
 

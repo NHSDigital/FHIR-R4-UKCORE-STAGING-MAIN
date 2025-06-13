@@ -2,11 +2,8 @@
 topic: UKCore-Observation-EarlyWarningTotalScore
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-EarlyWarningTotalScore
 usage: http://hl7.org/fhir/StructureDefinition/Observation
-issue: UKCore-Observation-EarlyWarningTotalScore
-examples: Observation-EarlyWarningTotalScore
 ---
 
-# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:ProfileTemplate_new}}
