@@ -53,6 +53,10 @@
       <definition value="The preferred method of contact given by a Patient or Related Person." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:PreferredContactMethod.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:PreferredContactMethod.url">
       <path value="Extension.extension.url" />
       <fixedUri value="PreferredContactMethod" />
@@ -77,6 +81,10 @@
       <definition value="The preferred contact times given by a Patient or Related Person." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:PreferredContactTimes.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:PreferredContactTimes.url">
       <path value="Extension.extension.url" />
       <fixedUri value="PreferredContactTimes" />
@@ -99,6 +107,10 @@
       <short value="Preferred Written Communication Format" />
       <definition value="The preferred written communication format given by a Patient or Related Person." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:PreferredWrittenCommunicationFormat.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:PreferredWrittenCommunicationFormat.url">
       <path value="Extension.extension.url" />

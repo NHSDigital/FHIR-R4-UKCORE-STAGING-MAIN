@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-RelatedPerson" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-  <version value="2.5.0" />
+  <version value="2.5.1" />
   <name value="UKCoreRelatedPerson" />
   <title value="UK Core Related Person" />
   <status value="active" />
-  <date value="2024-07-11" />
+  <date value="2025-06-13" />
   <publisher value="HL7 UK" />
   <contact>
     <name value="HL7 UK" />
@@ -30,7 +30,6 @@
     <element id="RelatedPerson.extension:contactPreference">
       <path value="RelatedPerson.extension" />
       <sliceName value="contactPreference" />
-      <short value="The preferred method of contact, contact times and written communication format given by a Patient or Related Person." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
@@ -43,6 +42,14 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
+      </type>
+    </element>
+    <element id="RelatedPerson.extension:periodType">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="periodType" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod" />
       </type>
     </element>
     <element id="RelatedPerson.active">
