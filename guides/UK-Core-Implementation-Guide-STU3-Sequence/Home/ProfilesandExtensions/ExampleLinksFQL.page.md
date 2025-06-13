@@ -2,7 +2,7 @@
 from
   Instance
 where
-  id.contains(%examples) and id.contains('Sn-').not()
+  id.contains(%topic+'-') and id.contains('Sn-').not()
 select
   id, text.div
 </fql>

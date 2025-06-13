@@ -3,7 +3,6 @@ topic: UKCore-Observation-VitalSigns
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns
-examples: Observation-VitalSigns
 ---
 
 # StructureDefinition {{variable:issue}}

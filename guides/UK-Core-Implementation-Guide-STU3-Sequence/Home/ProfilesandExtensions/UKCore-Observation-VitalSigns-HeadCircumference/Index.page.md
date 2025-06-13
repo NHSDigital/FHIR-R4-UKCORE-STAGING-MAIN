@@ -3,7 +3,6 @@ topic: UKCore-Observation-VitalSigns-HeadCircumference
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeadCircumference
 usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-HeadCircumference
-examples: Observation-VitalSigns-HeadCircumference
 ---
 
 # StructureDefinition {{variable:issue}}
