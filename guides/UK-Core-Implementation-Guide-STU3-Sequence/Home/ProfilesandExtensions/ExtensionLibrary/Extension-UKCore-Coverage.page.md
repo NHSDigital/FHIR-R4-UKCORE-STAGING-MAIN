@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage
-issue: Extension-UKCore-Coverage
 ---
 ## StructureDefinition {{variable:issue}}
 

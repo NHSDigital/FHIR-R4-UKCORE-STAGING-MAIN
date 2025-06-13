@@ -2,7 +2,6 @@
 topic: UKCore-Device-BloodPressure
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure
 usage: http://hl7.org/fhir/StructureDefinition/Device
-issue: UKCore-Device-BloodPressure
 ---
 
 # StructureDefinition {{variable:issue}}

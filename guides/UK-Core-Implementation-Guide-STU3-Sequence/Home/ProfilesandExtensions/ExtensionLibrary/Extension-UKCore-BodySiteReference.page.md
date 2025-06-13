@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference
-issue: Extension-UKCore-BodySiteReference
 ---
 ## StructureDefinition {{variable:issue}}
 

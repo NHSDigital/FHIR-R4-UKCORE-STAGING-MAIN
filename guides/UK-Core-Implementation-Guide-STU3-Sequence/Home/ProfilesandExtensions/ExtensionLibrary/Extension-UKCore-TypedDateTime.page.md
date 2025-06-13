@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime
-issue: Extension-UKCore-TypedDateTime
 ---
 ## StructureDefinition {{variable:issue}}
 

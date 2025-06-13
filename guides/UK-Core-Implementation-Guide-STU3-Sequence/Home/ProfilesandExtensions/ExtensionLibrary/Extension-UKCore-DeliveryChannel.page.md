@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel
-issue: Extension-UKCore-DeliveryChannel
 ---
 ## StructureDefinition {{variable:issue}}
 

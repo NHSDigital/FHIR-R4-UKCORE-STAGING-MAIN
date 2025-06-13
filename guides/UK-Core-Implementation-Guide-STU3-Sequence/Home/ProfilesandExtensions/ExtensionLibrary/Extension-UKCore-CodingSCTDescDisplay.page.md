@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay
-issue: Extension-UKCore-CodingSCTDescDisplay
 ---
 ## StructureDefinition {{variable:issue}}
 

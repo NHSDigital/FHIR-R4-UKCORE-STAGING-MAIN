@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference
-issue: Extension-UKCore-ContactPreference
 ---
 ## StructureDefinition {{variable:issue}}
 

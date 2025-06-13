@@ -1,6 +1,5 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason
-issue: Extension-UKCore-PriorityReason
 ---
 ## StructureDefinition {{variable:issue}}
 
