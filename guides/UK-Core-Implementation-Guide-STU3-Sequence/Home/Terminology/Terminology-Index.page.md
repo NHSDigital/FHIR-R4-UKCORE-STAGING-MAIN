@@ -42,7 +42,7 @@ $(document).ready(function () {
     const queryString = window.location.search || "?version=current";
 
     // Detect if we're in an unpublished guide (which uses .page.md links)
-    const isUnpublished = window.location.pathname.includes(".page.md");
+    const isUnpublished = window.location.search.includes("version=current");
     const pageSuffix = isUnpublished ? ".page.md" : "";
 
     // Convert {{guide-title}} into URL-safe form

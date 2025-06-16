@@ -24,7 +24,7 @@ select
    <button class="tablinks" onclick="openTab(event, 'table-view')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'xml-view')">XML View</button>
    <button class="tablinks" onclick="openTab(event, 'json-view')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+  <button class="tablinks" onclick="openTab(event, 'examples')">Examples</button>
   <button class="tablinks feedback" onclick="openTab(event, 'Feedback')">Feedback</button>
 </div>
 
@@ -47,6 +47,10 @@ select
 <div id="json-view" class="tabcontent">
   <h3>JSON View</h3>
 {{json}}
+</div>
+<div id="examples" class="tabcontent">
+  <h3>Examples</h3>
+{{page:ExampleLinksFQL}}
 </div>
 
 <div id="Feedback" class="tabcontent">
