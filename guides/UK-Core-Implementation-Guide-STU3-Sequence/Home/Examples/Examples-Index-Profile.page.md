@@ -1,6 +1,6 @@
 <fql>
 from
-	Instance
+	Example
 select
 	'id': id, 'Description': text.div
 where
@@ -14,7 +14,7 @@ $(document).ready(function () {
     const queryString = window.location.search || "?version=current";
 
     // Detect if we're in unpublished preview mode (i.e., using .page.md links)
-    const isUnpublished = window.location.pathname.includes(".page.md");
+    const isUnpublished = window.location.search.includes("version=current");
     const pageSuffix = isUnpublished ? ".page.md" : "";
 
     // Convert {{guide-title}} into a URL-safe format
