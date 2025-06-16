@@ -1,7 +1,7 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TreatmentCategory
 ---
-## StructureDefinition {{variable:issue}}
+## StructureDefinition {{variable:topic}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

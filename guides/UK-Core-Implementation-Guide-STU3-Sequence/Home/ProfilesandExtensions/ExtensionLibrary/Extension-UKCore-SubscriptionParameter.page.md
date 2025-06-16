@@ -1,7 +1,7 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.parameter
 ---
-## StructureDefinition {{variable:issue}}
+## StructureDefinition {{variable:topic}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
