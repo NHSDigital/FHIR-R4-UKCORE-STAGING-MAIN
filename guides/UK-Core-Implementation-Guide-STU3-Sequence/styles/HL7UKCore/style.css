@@ -642,3 +642,25 @@ h2 code {
 .snippetBackground {
     background-color: #ddd;
 }
+
+/*from here*/
+
+
+
+.container, .container-fluid {
+    padding-left: 10% !important; 
+    padding-right: 10% !important; 
+    width: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
