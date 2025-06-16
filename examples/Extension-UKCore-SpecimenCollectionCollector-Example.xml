@@ -1,0 +1,29 @@
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-SpecimenCollectionCollector-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector</div>
+  </text>
+  <status value="available" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="78014005" />
+      <display value="Urine" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+  </subject>
+  <receivedTime value="2022-11-25T11:10:00Z" />
+  <collection>
+    <!--  ***************extension start***************  -->
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector">
+      <valueReference>
+        <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+      </valueReference>
+    </extension>
+    <!--  **************extension end ******************  -->
+    <collectedDateTime value="2022-11-25T16:00:00Z" />
+  </collection>
+</Specimen>

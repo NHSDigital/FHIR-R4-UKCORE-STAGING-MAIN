@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Address Key</b>- An example to illustrate how the address key information is carried in a patient example. </br>
-{{pagelink:UKCore-Extension-AddressKey-Example}}
+{{pagelink:Extension-UKCore-AddressKey-Example}}
 <br><br>
 </div>
 

@@ -14,10 +14,10 @@ usage: http://hl7.org/fhir/StructureDefinition/Appointment
 {{pagelink:UKCore-Appointment-OrthopaedicSurgery-Example}}
 <br/><br/>
 <b>Booking Organization</b> - An example to illustrate the booking organization extension associated with an appointment.<br/>
-{{pagelink:UKCore-Extension-BookingOrganization-Example}}
+{{pagelink:Extension-UKCore-BookingOrganization-Example}}
 <br/><br/>
 <b>Delivery Channel</b> - An example to illustrate the delivery channel associated with an appointment.<br/>
-{{pagelink:UKCore-Extension-DeliveryChannel-Example}}
+{{pagelink:Extension-UKCore-DeliveryChannel-Example}}
 </div>
 </nocheck>
 

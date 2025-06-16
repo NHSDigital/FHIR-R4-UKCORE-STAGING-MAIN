@@ -13,16 +13,16 @@ usage: http://hl7.org/fhir/StructureDefinition/Specimen
 {{pagelink:UKCore-Specimen-BloodSpecimen-Example}}
 <br><br>
 <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector.<br>
-{{pagelink:UKCore-Extension-SpecimenCollectionCollector-Example}}
+{{pagelink:Extension-UKCore-SpecimenCollectionCollector-Example}}
 <br><br>
 <b>High Risk Specimen</b> - An example to illustrate using the HL7 core-defined Extension specimen-specialHandling to record why a specimen should be treated as a high risk.<br/>
-{{pagelink:UKCore-Extension-SpecialHandling-Example}}
+{{pagelink:Extension-UKCore-SpecialHandling-Example}}
 <br><br>
 <b>Median Cubital Vein</b> - An example to illustrate the extension for a referenced body site.<br>
-{{pagelink:UKCore-Extension-BodySiteReference-Example}}
+{{pagelink:Extension-UKCore-BodySiteReference-Example}}
 <br><br>
 <b>Sample Category</b> - An example to illustrate the extension to show the Genomics classification of a sample.<br>
-{{pagelink:UKCore-Extension-SampleCategory-Example}}
+{{pagelink:Extension-UKCore-SampleCategory-Example}}
 <br><br>
 <b>Urine Sample</b> - An example to illustrate a urine specimen for a patient.<br>
 {{pagelink:UKCore-Specimen-UrineSpecimen-Example}}

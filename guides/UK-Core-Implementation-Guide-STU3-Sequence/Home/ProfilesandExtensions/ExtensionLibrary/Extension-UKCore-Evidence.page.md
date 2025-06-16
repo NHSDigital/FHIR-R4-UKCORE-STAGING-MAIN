@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Evidence</b>- An example to illustrate a reference to results of investigations that confirmed the certainty of the diagnosis for an allergy or intolerance.<br>
-{{pagelink:UKCore-Extension-Evidence-Example}}
+{{pagelink:Extension-UKCore-Evidence-Example}}
 <br><br>
 </div>
 

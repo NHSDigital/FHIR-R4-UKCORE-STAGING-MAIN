@@ -13,7 +13,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Medication
 <b>COVID Vaccine</b> - An example to illustrate the batch element.  <br>
 {{pagelink:UKCore-Medication-COVID-Vaccine-Example}}   <br><br>
 <b>Medication Trade Family</b> - An example to illustrate the Medication Trade Family.  <br>
-{{pagelink:UKCore-Extension-MedicationTradeFamily-Example}} <br><br>
+{{pagelink:Extension-UKCore-MedicationTradeFamily-Example}} <br><br>
 <b>Timolol</b> - An example to illustrate the form element with a VTM.  <br>
 {{pagelink:UKCore-Medication-TimololVTM-Example}}   <br><br>
 <b>Timoptol Eye Drops</b> - An example to illustrate a representation of eye drops.  <br>

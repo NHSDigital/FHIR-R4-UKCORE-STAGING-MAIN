@@ -14,10 +14,10 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Vaccinatio
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Vaccination Procedure</b> - An example to illustrate the extension for a vaccination procedure.<br>
-   {{pagelink:UKCore-Extension-VaccinationProcedure-Example}}
+   {{pagelink:Extension-UKCore-VaccinationProcedure-Example}}
    <br><br>
    <b>Covid Vaccination Procedure</b> - An example to illustrate the extension for a vaccination procedure for COVID.<br>
-   {{pagelink:UKCore-Extension-VaccinationProcedure-Covid-Example}}
+   {{pagelink:Extension-UKCore-VaccinationProcedure-Covid-Example}}
    <br><br>
 </div>
 
