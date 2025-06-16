@@ -1,7 +1,7 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant
 ---
-## StructureDefinition {{variable:topic}}
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

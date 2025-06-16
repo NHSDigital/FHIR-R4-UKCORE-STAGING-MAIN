@@ -2,7 +2,7 @@
 subject: http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure
 ---
 
-## StructureDefinition {{variable:topic}}
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
