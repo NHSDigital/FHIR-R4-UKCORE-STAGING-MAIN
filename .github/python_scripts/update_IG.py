@@ -12,8 +12,8 @@ def import_IG():
     variables = openJSONFile('.github/python_scripts/variables.json')
     ig_url = variables['ig_url']
     ig_folder = variables['ig_folder']
-    username = os.getenv("SIMPLIFIER_USERNAME")
-    password = os.getenv("SIMPLIFIER_PASSWORD")
+    username = os.getenv("simplifier_username")
+    password = os.getenv("simplifier_password")
     
     response = requests.get(ig_url, auth=(username, password))
 
