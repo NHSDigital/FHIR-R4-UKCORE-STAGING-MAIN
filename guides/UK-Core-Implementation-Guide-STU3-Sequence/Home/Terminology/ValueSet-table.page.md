@@ -1,102 +1,105 @@
 <fql>
 from
 	ValueSet
+where
+    status !='retired'
 select
-	ValueSet: id, Status: status, CodeSystem: compose.include.system, name
+	ValueSet: id, Status: status, CodeSystem: compose.include.system, ValueSets: compose.include.valueSet
 order by
-	name
+	id
 distinct
 </fql>
 
-<!-- JQuery to seperate CodeSystems onto seperate lines per ValueSet and remove dulicate CodeSystems-->
 <script>
 $(document).ready(function () {
-  $(".table tbody tr").each(function () {
-    var $systemCell = $(this).find("td:eq(2)");
-    var $links = $systemCell.find("a");
+    const queryString = window.location.search || "?version=current";
 
-    let seen = new Set();
-    let uniqueLinks = [];
+    // Detect if we're in an unpublished guide (which uses .page.md links)
+    const isUnpublished = window.location.search.includes("version=current");
+    const pageSuffix = isUnpublished ? ".page.md" : "";
 
-    $links.each(function () {
-      var href = $(this).attr("href");
-      if (!seen.has(href)) {
-        seen.add(href);
-        uniqueLinks.push($(this).clone());
-      }
-    });
+    // Convert {{guide-title}} into URL-safe form
+    const guideTitleUrl = "{{guide-title}}"
+        .replace(/[^a-zA-Z0-9 ]/g, "")   // remove special characters
+        .replace(/\s+/g, "-");           // convert spaces to hyphens
 
-    if (uniqueLinks.length > 1) {
-      $systemCell.empty();
-      uniqueLinks.forEach(function ($link, index) {
-        if (index > 0) $systemCell.append("<br>");
-        $systemCell.append($link);
-      });
+    const baseUrl = `https://simplifier.net/guide/${guideTitleUrl}/Home/`;
+    const vsBase = `${baseUrl}terminology/valuesets/valueset-`;
+    const csBase = `${baseUrl}terminology/codesystems/codesystem-`;
+
+    const $table = $("table.table-bordered");
+    if ($table.length === 0) return;
+
+    // Update header
+    const $headerCells = $table.find("thead tr th");
+    if ($headerCells.length >= 4) {
+        $headerCells.eq(2).text("Composed of");
+        $headerCells.eq(3).remove(); // remove 4th column (valueSet)
     }
-  });
-});
 
-function rewriteFQLTableLinks() {
-    const fullUrl = window.location.href;
-    const guideBase = fullUrl.split("/home/")[0] + "/home/";
-    const queryString = window.location.search || "";
+    // Process each row
+    $table.find("tbody tr").each(function () {
+        const $cells = $(this).find("td");
+        if ($cells.length < 4) return;
 
-    $("table.table tbody tr").each(function () {
-        const $tds = $(this).find("td");
-        const $nameTd = $tds.eq(0);
-        const $statusTd = $tds.eq(1);
-        const $systemTd = $tds.eq(2);
+        const $nameTd = $cells.eq(0);
+        const $statusTd = $cells.eq(1);
+        const $systemTd = $cells.eq(2);
+        const $valueSetTd = $cells.eq(3);
 
-        // --- Update 'name' column to be a link to the ValueSet page ---
-        const nameValue = $nameTd.text().trim();
-        if (nameValue.startsWith("UKCore")) {
-            const assetLower = nameValue.toLowerCase();
-            const href = `${guideBase}terminology/valuesets/valueset-${assetLower}.page.md${queryString}`;
-            $nameTd.html(`<a href="${href}" target="_blank">${nameValue}</a>`);
+        // --- Linkify name column if UKCore ---
+        const nameText = $nameTd.text().trim();
+        if (nameText.startsWith("UKCore")) {
+            const assetLower = nameText.toLowerCase();
+            const href = `${vsBase}${assetLower}${pageSuffix}${queryString}`;
+            $nameTd.html(`<a href="${href}">${nameText}</a>`);
         }
 
-        // --- Rewrite 'system' column: remove duplicates, format links, split by <br> ---
-        const $links = $systemTd.find("a");
-        if ($links.length === 0) return;
+        // --- Merge & linkify systems and valueSets ---
+        const combinedLinks = [];
 
-        const seen = new Set();
-        const newSystemContent = [];
+        const linkify = (text) => {
+            text.split(";").forEach(item => {
+                const trimmed = item.trim();
+                if (!trimmed) return;
 
-        $links.each(function () {
-            const $a = $(this);
-            const text = $a.text().trim();
-            if (seen.has(text)) return;
-            seen.add(text);
+                let displayText = trimmed;
+                let href = trimmed;
 
-            let finalHref = $a.attr("href"); // fallback
+                if (trimmed.startsWith("https://fhir.hl7.org.uk/")) {
+                    const parts = trimmed.split("/");
+                    const assetType = parts[3];
+                    const assetName = parts[4];
 
-            if (text.startsWith("https://fhir.hl7.org.uk/")) {
-                const urlParts = text.split("/");
-                const assetType = urlParts[3]; // CodeSystem or ValueSet
-                const assetName = urlParts[4]; // UKCore-...
+                    if (assetType && assetName) {
+                        const section = assetType.toLowerCase() === "codesystem" ? csBase
+                                     : assetType.toLowerCase() === "valueset"   ? vsBase
+                                     : null;
 
-                if (assetType && assetName) {
-                    const sectionPath = (assetType.toLowerCase() === "codesystem")
-                        ? "terminology/codesystems/codesystem-"
-                        : (assetType.toLowerCase() === "valueset")
-                            ? "terminology/valuesets/valueset-"
-                            : null;
-
-                    if (sectionPath) {
-                        const lowerAsset = assetName.toLowerCase();
-                        finalHref = `${guideBase}${sectionPath}${lowerAsset}.page.md${queryString}`;
+                        if (section) {
+                            const lowerAsset = assetName.toLowerCase();
+                            href = `${section}${lowerAsset}${pageSuffix}${queryString}`;
+                        }
                     }
                 }
-            }
 
-            newSystemContent.push(`<a href="${finalHref}" target="_blank">${text}</a>`);
-        });
+                combinedLinks.push(`<a href="${href}">${displayText}</a>`);
+            });
+        };
 
-        $systemTd.html(newSystemContent.join("<br>"));
+        linkify($systemTd.text());
+        linkify($valueSetTd.text());
+
+        // Remove duplicates (based on text shown)
+        const uniqueLinks = Array.from(
+            new Map(combinedLinks.map(link => {
+                const textMatch = link.match(/>(.*?)</);
+                return textMatch ? [textMatch[1], link] : null;
+            }).filter(Boolean))
+        ).map(pair => pair[1]);
+
+        $systemTd.html(uniqueLinks.join("<br>"));
+        $valueSetTd.remove(); // cleanup 4th column
     });
-}
-
-$(document).ready(function () {
-    rewriteFQLTableLinks();
 });
 </script>
