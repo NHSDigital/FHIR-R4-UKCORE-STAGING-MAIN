@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotif
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Death notification Status</b>- An example to illustrate the extension to indicate the death notification status of the patient.<br>
-{{pagelink:UKCore-Extension-DeathNotificationStatus-Example}}
+{{pagelink:Extension-UKCore-DeathNotificationStatus-Example}}
 <br><br>
 </div>
 

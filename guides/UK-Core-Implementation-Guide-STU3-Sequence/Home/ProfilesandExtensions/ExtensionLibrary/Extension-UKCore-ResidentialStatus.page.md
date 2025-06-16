@@ -15,7 +15,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Residentia
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Residential Status</b>- An example to illustrate the extension to show the patient's residential status.<br>
-{{pagelink:UKCore-Extension-ResidentialStatus-Example}}
+{{pagelink:Extension-UKCore-ResidentialStatus-Example}}
 <br><br>
 </div>
 

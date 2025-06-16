@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Medication
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Medication Trade family</b>- An example to illustrate the use of a trade family or brand.<br>
-  {{pagelink:UKCore-Extension-MedicationTradeFamily-Example}}
+  {{pagelink:Extension-UKCore-MedicationTradeFamily-Example}}
   <br><br>
 </div>
 

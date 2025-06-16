@@ -1,0 +1,23 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-NHSNumberUnavailableReason-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate the extension which states the reason a patient does not have a NHS number</div>
+  </text>
+  <!-- **************extension start************** -->
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason" />
+        <code value="overseas-patient" />
+        <display value="Overseas patient" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <!-- **************extension end************** -->
+  <name>
+    <use value="official" />
+    <family value="BAPTISTE" />
+    <given value="Jean" />
+  </name>
+</Patient>

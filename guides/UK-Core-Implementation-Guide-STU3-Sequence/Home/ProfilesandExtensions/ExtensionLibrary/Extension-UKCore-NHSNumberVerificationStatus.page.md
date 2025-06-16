@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberV
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>NHS Number Verification Status</b>- An example of the extension which states the patient's NHS number verification status.<br>
-{{pagelink:UKCore-Extension-NHSNumberVerificationStatus-Example}}
+{{pagelink:Extension-UKCore-NHSNumberVerificationStatus-Example}}
 <br><br>
 </div>
 

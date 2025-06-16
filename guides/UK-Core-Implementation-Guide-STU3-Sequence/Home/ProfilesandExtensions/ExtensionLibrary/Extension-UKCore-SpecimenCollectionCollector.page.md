@@ -14,7 +14,7 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collecti
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to reference a Patient or RelatedPerson within Specimen.collection.collector.<br>
-  {{pagelink:UKCore-Extension-SpecimenCollectionCollector-Example}}
+  {{pagelink:Extension-UKCore-SpecimenCollectionCollector-Example}}
   <br><br>
 </div>
 

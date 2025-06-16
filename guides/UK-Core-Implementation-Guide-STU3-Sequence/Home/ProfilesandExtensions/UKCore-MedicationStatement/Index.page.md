@@ -13,13 +13,13 @@ usage: http://hl7.org/fhir/StructureDefinition/MedicationStatement
 <br>{{pagelink:UKCore-MedicationStatement-Amoxicillin-Example}}
 <br><br>
 <b>Last Issue Date</b> - An example to illustrate the LastIssueDate extension.
-<br>{{pagelink:UKCore-Extension-LastIssueDate-Example}}
+<br>{{pagelink:Extension-UKCore-LastIssueDate-Example}}
 <br><br>
 <b>Medication Prescribing Organization Type</b> - An example to illustrate the MedicationPrescribingOrganizationType extension.
-<br>{{pagelink:UKCore-Extension-MedicationPrescribingOrganizationType-Example}}
+<br>{{pagelink:Extension-UKCore-MedicationPrescribingOrganizationType-Example}}
 <br><br>
 <b>Pharmacist Verified Indicator</b> - An example to illustrate the PharmacistVerifiedIndicator extension. 
-<br>{{pagelink:UKCore-Extension-PharmacistVerifiedIndicator-Example}}
+<br>{{pagelink:Extension-UKCore-PharmacistVerifiedIndicator-Example}}
 </div>
 </nocheck>
 

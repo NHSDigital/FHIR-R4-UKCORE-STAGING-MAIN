@@ -13,7 +13,7 @@ usage: http://hl7.org/fhir/StructureDefinition/MedicationRequest
 </br>{{pagelink:UKCore-MedicationRequest-EyeDrops-Example}}
 <br><br>
 <b>Repeat Information</b> - An example to illustrate the RepeatInformation extension. 
-</br>{{pagelink:UKCore-Extension-RepeatInformation-Example}}
+</br>{{pagelink:Extension-UKCore-RepeatInformation-Example}}
 </div>
 </nocheck>
 

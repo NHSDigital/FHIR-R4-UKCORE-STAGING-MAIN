@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrg
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Booking Organisation</b>- An example to illustrate the booking organisation extension associated with an appointment.<br>
-{{pagelink:UKCore-Extension-BookingOrganization-Example}}
+{{pagelink:Extension-UKCore-BookingOrganization-Example}}
 <br><br>
 </div>
 
