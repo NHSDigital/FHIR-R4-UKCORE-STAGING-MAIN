@@ -162,24 +162,31 @@
 
             // main code to handle all tabs, editting this will probably break everything
             function openTab(evt, tabName) {
-                // Find the element that has been clicked with jQuery
-                var element = $(evt.target);
+    // Find the element that has been clicked with jQuery
+    var element = $(evt.target);
 
-                // Remove the current class of .active in the buttons next to it
-                element.parent().find(".tablinks").removeClass("active");
+    // Remove the current class of .active in the buttons next to it
+    element.parent().find(".tablinks").removeClass("active");
 
-                // Add a class of .active to the clicked tab
-                element.addClass("active");
+    // Add a class of .active to the clicked tab
+    element.addClass("active");
 
-                // Cache the parent of the button clicked
-                var parent = element.parent().parent();
+    // Cache the parent of the button clicked
+    var parent = element.parent().parent();
 
-                // Clear out the current view (e.g. Table, XML, JSON)
-                parent.find(".tabcontent").hide(0);
+    // Clear out the current view (e.g. Table, XML, JSON)
+    parent.find(".tabcontent").hide(0);
 
-                // Show the desired content with the current view
-                parent.find(".tabcontent[id^='"+tabName+"']").show(0);
-            }  
+    // Show the desired content with the current view
+    parent.find(".tabcontent[id^='" + tabName + "']").show(0);
+
+    // used for terminology index to allow links rendered in codesystem tab
+    if (tabName === "valuesets") {
+        processValueSetsTable();
+    } else if (tabName === "codesystems") {
+        processCodeSystemsTable();
+    }
+}
         </script>
         <script>
             // add any additional extension bindings to the fql bindings

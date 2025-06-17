@@ -28,8 +28,8 @@ $(document).ready(function () {
     const queryString = window.location.search || "?version={{guide-version}}";
     
     // Detect if we are in a preview/unpublished guide by checking if .page.md is in the URL
-    const isUnpublished = window.location.pathname.includes(".page.md");
-
+    const isUnpublished = window.location.search.includes("version=current");
+    
     const extensionBase = "https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/extensionlibrary/";
     const profileBase = "https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/UKCore-";
 

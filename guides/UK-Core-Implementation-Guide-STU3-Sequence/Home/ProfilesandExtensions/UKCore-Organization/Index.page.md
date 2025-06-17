@@ -16,10 +16,10 @@ usage: http://hl7.org/fhir/StructureDefinition/Organization
 </br>{{pagelink:UKCore-Organization-LeedsTeachingHospital-Example}}   <br><br>
 
 <b>Main Location</b> - Example to illustrate the mainLocation extension.
-</br>{{pagelink:UKCore-Extension-MainLocation-Example}}   <br><br>
+</br>{{pagelink:Extension-UKCore-MainLocation-Example}}   <br><br>
 
 <b>Organization Period</b> - Example to illustrate the core-defined organization-period extension.
-</br>{{pagelink:UKCore-Extension-OrganizationPeriod-Example}}
+</br>{{pagelink:Extension-UKCore-OrganizationPeriod-Example}}
 </div>
 
 </nocheck>

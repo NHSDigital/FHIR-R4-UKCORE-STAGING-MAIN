@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyInt
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Allergy Intolerance End</b>- An example to illustrate the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid.<br>
-  {{pagelink:UKCore-Extension-AllergyIntolEnd-Example}}
+  {{pagelink:Extension-UKCore-AllergyIntolEnd-Example}}
   <br><br>
 </div>
 

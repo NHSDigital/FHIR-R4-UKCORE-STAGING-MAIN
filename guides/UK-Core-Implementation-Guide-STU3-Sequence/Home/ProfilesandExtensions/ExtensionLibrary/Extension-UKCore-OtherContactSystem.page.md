@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherConta
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
 <b>Other Contact System</b> - An example to illustrate other contact methods for a patient. </br>
-{{pagelink:UKCore-Extension-OtherContactSystem-Example}}
+{{pagelink:Extension-UKCore-OtherContactSystem-Example}}
 <br><br>
 </div>
 

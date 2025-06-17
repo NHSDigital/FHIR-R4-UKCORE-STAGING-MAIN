@@ -14,7 +14,7 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHisto
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Participant Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate the performer of the family member history related activity.<br>
-  {{pagelink:UKCore-Extension-Participant-Example}}
+  {{pagelink:Extension-UKCore-Participant-Example}}
   <br><br>
 </div>
 

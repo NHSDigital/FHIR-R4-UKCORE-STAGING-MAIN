@@ -14,7 +14,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Coverage</b>- An example to illustrate the extension for a service request, to state the the coverage of the funding for this request.<br>
-  {{pagelink:UKCore-Extension-Coverage-Example}}
+  {{pagelink:Extension-UKCore-Coverage-Example}}
   <br><br>
 </div>
 

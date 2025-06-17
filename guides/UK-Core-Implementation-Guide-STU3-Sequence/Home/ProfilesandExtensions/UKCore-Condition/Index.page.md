@@ -14,10 +14,10 @@ usage: http://hl7.org/fhir/StructureDefinition/Condition
 {{pagelink:UKCore-Condition-BleedingFromEar-Example}}
 <br/><br/>
 <b>CodingSCT DescId</b> - An example to illustrate the extension which adds a SNOMED CT description Id to CodeableConcept.<br/>
-{{pagelink:UKCore-Extension-CodingSCTDescId-Example}}
+{{pagelink:Extension-UKCore-CodingSCTDescId-Example}}
 <br/><br/>
 <b>Condition Episode</b> - An example to illustrate the extension which is used to indicate the episodicity status of a condition.<br/>
-{{pagelink:UKCore-Extension-ConditionEpisode-Example}}
+{{pagelink:Extension-UKCore-ConditionEpisode-Example}}
 </div>
 </nocheck>
 
