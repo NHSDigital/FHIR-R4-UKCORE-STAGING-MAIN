@@ -1,6 +1,6 @@
 <fql>
 from
-  Instance
+  Example
 where
   id.contains(%topic+'-') and id.contains('Sn-').not()
 select
