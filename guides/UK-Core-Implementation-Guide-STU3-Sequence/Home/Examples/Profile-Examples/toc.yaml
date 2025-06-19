@@ -12,8 +12,6 @@
   filename: UKCore-BodyStructure-MedianCubitalVein-Example.page.md
 - name: UKCore-Bundle-AllergyList-Example
   filename: UKCore-Bundle-AllergyList-Example.page.md
-- name: UKCore-Bundle-AllergyList
-  filename: UKCore-Bundle-AllergyList.page.md-Example.md
 - name: UKCore-Bundle-Batch-Example
   filename: UKCore-Bundle-Batch-Example.page.md
 - name: UKCore-Bundle-BatchPOST-Example
@@ -210,8 +208,6 @@
   filename: UKCore-RelatedPerson-JoySmith-Example.page.md
 - name: UKCore-RequestGroup-Ciprofloxacin-Example
   filename: UKCore-RequestGroup-Ciprofloxacin-Example.page.md
-- name: UKCore-RequestGroup-MultipleAnitibiotics-Example
-  filename: UKCore-RequestGroup-MultipleAnitibiotics-Example.page.md
 - name: UKCore-RequestGroup-MultipleAntibiotics-Example
   filename: UKCore-RequestGroup-MultipleAntibiotics-Example.page.md
 - name: UKCore-RequestGroup-Paracetamol-Example
