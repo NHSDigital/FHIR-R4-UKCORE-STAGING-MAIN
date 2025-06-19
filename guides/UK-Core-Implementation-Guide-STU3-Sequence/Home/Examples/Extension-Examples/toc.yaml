@@ -162,10 +162,6 @@
   filename: Extension-UKCore-MedicationPrescribingOrganizationType-Example.page.md
 - name: Extension-UKCore-MedicationPrescribingOrganizationType
   filename: Extension-UKCore-MedicationPrescribingOrganizationType.page.md-Example.md
-- name: Extension-UKCore-MedicationStatementLastIssueDate-Example
-  filename: Extension-UKCore-MedicationStatementLastIssueDate-Example.page.md
-- name: Extension-UKCore-MedicationTradeFamily-Example
-  filename: Extension-UKCore-MedicationTradeFamily-Example.page.md
 - name: Extension-UKCore-MedicationTradeFamily
   filename: Extension-UKCore-MedicationTradeFamily.page.md-Example.md
 - name: Extension-UKCore-NHSNumberUnavailableReason-Example
