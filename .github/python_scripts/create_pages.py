@@ -147,9 +147,10 @@ def create_toc(path):
     return
 
 def create_profile_toc(path):
-    subfolders = sorted([f.name for f in os.scandir(path) if f.is_dir()])
+    subfolders = sorted([f.name for f in os.scandir(path) if f.is_dir() and 'UKCore' in f.name])
+    toc_path = path+"/toc.yaml"
     filtered_lines = santise_toc(toc_path)
-    with open(path+"/toc.yaml", "w") as file:
+    with open(toc_path, "w") as file:
         file.writelines(filtered_lines)
         for subfolder in subfolders:
             print(f'''- name: {subfolder}

@@ -163,7 +163,10 @@ if __name__ == "__main__":
             if not any(asset.id in page for page in pages):
                 print(f"{asset.id} is not in the IG.")
                 create_fn(asset, path, *extra)
-        create_toc(path)
+        if 'profile' in create_fn.__name__.lower():
+            create_profile_toc(path)
+        else:
+            create_toc(path)
 
     # General assets mapping
     asset_fn_map = {
