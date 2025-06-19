@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: UKCore-ServiceRequest
+  filename: UKCore-ServiceRequest.page.md
 - name: ValueSet-UKCore-ACVPU
   filename: ValueSet-UKCore-ACVPU.page.md
 - name: ValueSet-UKCore-AddressKeyType
