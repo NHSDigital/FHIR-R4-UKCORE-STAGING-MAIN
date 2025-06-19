@@ -25,7 +25,154 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 	 }
 </style>
 
-<fql>
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'valuesets')">ValueSets</button>
+  <button class="tablinks" onclick="openTab(event, 'codesystems')">CodeSystems</button>
+</div>
+
+<div id="valuesets" class="tabcontent" style="display:block">
+  <h3>ValueSets</h3>
+  {{page:ValueSet-table}}
+</div>
+
+<div id="codesystems" class="tabcontent" style="display:none">
+  <h3>CodeSystems</h3>
+  {{page:CodeSystem-table}}
+</div>
+
+<script>
+let valueSetsProcessed = false;
+let codeSystemsProcessed = false;
+
+function openTab(evt, tabName) {
+    // Hide all tab contents
+    $(".tabcontent").hide();
+    // Remove active class from all tab buttons
+    $(".tablinks").removeClass("active");
+
+    // Show selected tab and mark it active
+    $("#" + tabName).show();
+    $(evt.currentTarget).addClass("active");
+
+    // Run table logic as needed
+    if (tabName === 'valuesets') {
+        processValueSetsTable();
+    } else if (tabName === 'codesystems') {
+        processCodeSystemsTable();
+    }
+}
+
+function processValueSetsTable() {
+    if (valueSetsProcessed) return;
+    valueSetsProcessed = true;
+
+    const queryString = window.location.search || "?version=current";
+    const isUnpublished = window.location.pathname.includes(".page.md");
+    const pageSuffix = isUnpublished ? ".page.md" : "";
+    const guideTitleUrl = "{{guide-title}}"
+        .replace(/[^a-zA-Z0-9 ]/g, "")
+        .replace(/\s+/g, "-");
+
+    const baseUrl = `https://simplifier.net/guide/${guideTitleUrl}/Home/`;
+    const vsBase = `${baseUrl}terminology/valuesets/valueset-`;
+    const csBase = `${baseUrl}terminology/codesystems/codesystem-`;
+
+    const $table = $("#valuesets table.table-bordered");
+    if ($table.length === 0) return;
+
+    const $headerCells = $table.find("thead tr th");
+    if ($headerCells.length >= 4) {
+        $headerCells.eq(2).text("Composed of");
+        $headerCells.eq(3).remove();
+    }
+
+    $table.find("tbody tr").each(function () {
+        const $cells = $(this).find("td");
+        if ($cells.length < 4) return;
+
+        const $nameTd = $cells.eq(0);
+        const $systemTd = $cells.eq(2);
+        const $valueSetTd = $cells.eq(3);
+
+        const nameText = $nameTd.text().trim();
+        if (nameText.startsWith("UKCore")) {
+            const assetLower = nameText.toLowerCase();
+            const href = `${vsBase}${assetLower}${pageSuffix}${queryString}`;
+            $nameTd.html(`<a href="${href}">${nameText}</a>`);
+        }
+
+        const combinedLinks = [];
+        const linkify = (text) => {
+            text.split(";").forEach(item => {
+                const trimmed = item.trim();
+                if (!trimmed) return;
+
+                let displayText = trimmed;
+                let href = trimmed;
+
+                if (trimmed.startsWith("https://fhir.hl7.org.uk/")) {
+                    const parts = trimmed.split("/");
+                    const assetType = parts[3];
+                    const assetName = parts[4];
+                    if (assetType && assetName) {
+                        const section = assetType.toLowerCase() === "codesystem" ? csBase
+                                     : assetType.toLowerCase() === "valueset" ? vsBase
+                                     : null;
+
+                        if (section) {
+                            const lowerAsset = assetName.toLowerCase();
+                            href = `${section}${lowerAsset}${pageSuffix}${queryString}`;
+                        }
+                    }
+                }
+
+                combinedLinks.push(`<a href="${href}">${displayText}</a>`);
+            });
+        };
+
+        linkify($systemTd.text());
+        linkify($valueSetTd.text());
+
+        const uniqueLinks = Array.from(
+            new Map(combinedLinks.map(link => {
+                const textMatch = link.match(/>(.*?)</);
+                return textMatch ? [textMatch[1], link] : null;
+            }).filter(Boolean))
+        ).map(pair => pair[1]);
+
+        $systemTd.html(uniqueLinks.join("<br>"));
+        $valueSetTd.remove();
+    });
+}
+
+function processCodeSystemsTable() {
+    console.log("Processing CodeSystems table...");
+
+    const $table = $("#codesystems table");
+    if ($table.length === 0) return;
+
+    const baseUrl = "https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/terminology/codesystems/codesystem-";
+
+    $table.find("tbody tr").each(function () {
+        const $cells = $(this).find("td");
+        if ($cells.length < 1) return;
+
+        const codeSystemId = $cells.eq(0).text().trim();
+        const href = `${baseUrl}${codeSystemId}`; // casing preserved
+
+        $cells.eq(0).html(`<a href="${href}">${codeSystemId}</a>`);
+    });
+}
+
+
+// Optionally trigger default tab on page load
+$(document).ready(function () {
+    processValueSetsTable(); // If ValueSets is shown by default
+});
+</script>
+
+
+<!--<fql>
 from
 	ValueSet
 where
@@ -42,7 +189,7 @@ $(document).ready(function () {
     const queryString = window.location.search || "?version=current";
 
     // Detect if we're in an unpublished guide (which uses .page.md links)
-    const isUnpublished = window.location.pathname.includes(".page.md");
+    const isUnpublished = window.location.search.includes("version=current");
     const pageSuffix = isUnpublished ? ".page.md" : "";
 
     // Convert {{guide-title}} into URL-safe form
@@ -129,7 +276,7 @@ $(document).ready(function () {
         $valueSetTd.remove(); // cleanup 4th column
     });
 });
-</script>
+</script>-->
 
 
 

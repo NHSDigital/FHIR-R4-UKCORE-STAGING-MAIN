@@ -1,38 +1,47 @@
-name: Update IG
-on:
-  # NOTE: Need to run on a PR so that the ${{ github.head_ref }} (branch) is non-null
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+name: Daily Python Sync
 
-env:
-  simplifier_username: ${{secrets.SIMPLIFIER_USERNAME}}
-  simplifier_password: ${{secrets.SIMPLIFIER_PASSWORD}}
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
 jobs:
-  update_IG:
+  update-script:
     runs-on: ubuntu-latest
 
-    permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
-      contents: write
-
     steps:
-      - uses: actions/checkout@v4.2.2
+      - name: Checkout main branch
+        uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: develop
+          fetch-depth: 0
 
-      # Run steps that make changes to the local repo here.
-      - name: run python script
-        run: python -u .github/python_scripts/update_IG.py
-        
-      # Commit all changed files back to the repository
-      - uses: planetscale/ghcommit-action@v0.2.11
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Create or reset auto-update branch
+        run: git checkout -B auto-update-branch
+
+      - name: setup python
+        uses: actions/setup-python@v5
+      
+      - name: Run script
+        run: python3 .github/python_scripts/update_IG.py
+         
+      - name: Commit changes if any
+        run: |
+          git diff --cached --quiet || git commit -m "Update tool.py from remote $(date +'%Y-%m-%d %H:%M:%S')"
+          git push -f origin auto-update-branch
+
+      - name: Create or update PR
+        uses: peter-evans/create-pull-request@v7.0.8
         with:
-          commit_message: "GitHub Action: Update IG"
-          repo: ${{ github.repository }}
-          branch: ${{ github.head_ref || github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{secrets.FindAndReplacePAT}} #uses PAT rather than GITHUB_TOKEN due to not running actions once merged https://github.com/orgs/community/discussions/25702
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto-update-branch
+          base: main
+          title: "Update: IG daily sync"
+          body: "This PR updates the IG"
+          commit-message: "Automated update of IG"
+          update-existing: true
