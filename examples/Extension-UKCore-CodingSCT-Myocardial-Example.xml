@@ -1,5 +1,9 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-CodingSCT-Myocardial-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This FHIR Condition resource records that the patient has had a myocardial infarction (heart attack), using the SNOMED code 22298006 with user-selected terminology.</div>
+  </text>
   <!-- **************Snippet start************** -->
   <code>
     <coding>

@@ -150,6 +150,8 @@
   filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables.page.md
 - name: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures
   filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures.page.md
+- name: ValueSet-UKCore-PathologyBoundedCodeListObservables
+  filename: ValueSet-UKCore-PathologyBoundedCodeListObservables.page.md
 - name: ValueSet-UKCore-PeriodType
   filename: ValueSet-UKCore-PeriodType.page.md
 - name: ValueSet-UKCore-PersonMaritalStatusCode
