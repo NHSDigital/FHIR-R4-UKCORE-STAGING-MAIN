@@ -2,10 +2,9 @@
   filename: Index
 - name: Extensions Index
   filename: Extensions-Index
-- name: All Extensions
-  filename: ExtensionLibrary
 - name: Profiles Index
   filename: Profiles-Index.page.md
+
 - name: UKCore-AllergyIntolerance
   filename: UKCore-AllergyIntolerance
 - name: UKCore-Appointment
@@ -64,10 +63,10 @@
   filename: UKCore-Observation-TobaccoConsumption
 - name: UKCore-Observation-VitalSigns
   filename: UKCore-Observation-VitalSigns
-- name: UKCore-Observation-VitalSigns-BloodPressure
-  filename: UKCore-Observation-VitalSigns-BloodPressure
 - name: UKCore-Observation-VitalSigns-BMI
   filename: UKCore-Observation-VitalSigns-BMI
+- name: UKCore-Observation-VitalSigns-BloodPressure
+  filename: UKCore-Observation-VitalSigns-BloodPressure
 - name: UKCore-Observation-VitalSigns-BodyHeight
   filename: UKCore-Observation-VitalSigns-BodyHeight
 - name: UKCore-Observation-VitalSigns-BodyTemperature
@@ -104,4 +103,3 @@
   filename: UKCore-Slot
 - name: UKCore-Specimen
   filename: UKCore-Specimen
-
