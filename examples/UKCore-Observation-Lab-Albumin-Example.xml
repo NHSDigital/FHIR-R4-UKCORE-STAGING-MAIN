@@ -1,5 +1,9 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="UKCore-Observation-Lab-Albumin-Example" />
+      <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This is a FHIR Observation representing a laboratory test for a patient's serum albumin level. It includes test codes from UK reference sets, the measured value, the performing laboratory, the date of issue, and a reference range to interpret the result.</div>
+  </text>
     <meta>
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
     </meta>
