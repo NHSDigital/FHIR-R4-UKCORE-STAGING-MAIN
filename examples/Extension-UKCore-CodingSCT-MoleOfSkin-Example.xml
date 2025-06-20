@@ -1,5 +1,9 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="Extension-UKCore-CodingSCT-MoleOfSkin-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This is a FHIR Condition resource recording that the patient has a benign mole (melanocytic naevus) on the skin. It includes both CTV3 and SNOMED codes, along with user-facing text "Moles".</div>
+  </text>
   <!-- **************Snippet start************** -->
   <code>
     <coding>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Device xmlns="http://hl7.org/fhir">
   <id value="UKCore-Device-BloodSpotContainer-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">An example to illustrate a simple device instance, with type being a snomed ct code for a Capillary blood collection tube.</div>
+  </text>
   <identifier>
     <system value="https://www.leedsth.nhs.uk/identifier/devices" />
     <value value="SAMP_AP_23198" />
