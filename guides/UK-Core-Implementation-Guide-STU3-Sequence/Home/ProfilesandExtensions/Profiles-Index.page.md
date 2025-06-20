@@ -69,7 +69,7 @@ $(document).ready(function () {
         if (!resourceName || resourceName.toLowerCase() === "coding") return;
 
         const baseResource = resourceName.split(".")[0];
-        const url = `${profileBase}${baseResource}${pageSuffix}${queryString}`;
+        const url = `${profileBase}${baseResource}/index${pageSuffix}${queryString}`;
         $resourceCell.html(`<a href="${url}">${resourceName}</a>`);
     });
 });

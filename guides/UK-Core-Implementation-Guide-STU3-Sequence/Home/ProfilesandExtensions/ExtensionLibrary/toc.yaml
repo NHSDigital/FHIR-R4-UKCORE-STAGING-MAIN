@@ -1,5 +1,4 @@
-- name: Index
-  filename: Index.page.md
+
 - name: Extension-UKCore-AdditionalContact
   filename: Extension-UKCore-AdditionalContact.page.md
 - name: Extension-UKCore-AddressKey
