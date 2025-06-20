@@ -12,10 +12,12 @@
   filename: UKCore-BodyStructure-MedianCubitalVein-Example.page.md
 - name: UKCore-Bundle-AllergyList-Example
   filename: UKCore-Bundle-AllergyList-Example.page.md
-- name: UKCore-Bundle-Batch-Example-duplicate-2
-  filename: UKCore-Bundle-Batch-Example-duplicate-2.page.md
+- name: UKCore-Bundle-AllergyList
+  filename: UKCore-Bundle-AllergyList.page.md-Example.md
 - name: UKCore-Bundle-Batch-Example
   filename: UKCore-Bundle-Batch-Example.page.md
+- name: UKCore-Bundle-BatchPOST-Example
+  filename: UKCore-Bundle-BatchPOST-Example.page.md
 - name: UKCore-Bundle-BatchPut-Example
   filename: UKCore-Bundle-BatchPut-Example.page.md
 - name: UKCore-Bundle-NEWS2Observations-Example
@@ -34,6 +36,8 @@
   filename: UKCore-Condition-HipReplacement-Example.page.md
 - name: UKCore-Consent-ForInformationAccess-Example
   filename: UKCore-Consent-ForInformationAccess-Example.page.md
+- name: UKCore-Device-BloodPressure-Sphygmomanometer-Example
+  filename: UKCore-Device-BloodPressure-Sphygmomanometer-Example.page.md
 - name: UKCore-Device-BloodSpotContainer-Example
   filename: UKCore-Device-BloodSpotContainer-Example.page.md
 - name: UKCore-Device-ColostomyBag-Example
@@ -134,6 +138,8 @@
   filename: UKCore-Observation-Group-FullBloodCount-Example.page.md
 - name: UKCore-Observation-HeavyDrinker-Example
   filename: UKCore-Observation-HeavyDrinker-Example.page.md
+- name: UKCore-Observation-Lab-Albumin-Example
+  filename: UKCore-Observation-Lab-Albumin-Example.page.md
 - name: UKCore-Observation-Lab-RedCellCount-Example
   filename: UKCore-Observation-Lab-RedCellCount-Example.page.md
 - name: UKCore-Observation-Lab-WhiteCellCount-Example
@@ -206,6 +212,8 @@
   filename: UKCore-RelatedPerson-JoySmith-Example.page.md
 - name: UKCore-RequestGroup-Ciprofloxacin-Example
   filename: UKCore-RequestGroup-Ciprofloxacin-Example.page.md
+- name: UKCore-RequestGroup-MultipleAnitibiotics-Example
+  filename: UKCore-RequestGroup-MultipleAnitibiotics-Example.page.md
 - name: UKCore-RequestGroup-MultipleAntibiotics-Example
   filename: UKCore-RequestGroup-MultipleAntibiotics-Example.page.md
 - name: UKCore-RequestGroup-Paracetamol-Example

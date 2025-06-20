@@ -43,12 +43,18 @@ select
 $(document).ready(function () {
     const queryString = window.location.search || "?version=current";
 
+    // Detect if we're in an unpublished preview (i.e., ?version=current)
+    const isUnpublished = window.location.search.includes("version=current");
+
     // Convert {{guide-title}} into a URL-safe format
     const guideTitleUrl = "{{guide-title}}"
         .replace(/[^a-zA-Z0-9 ]/g, "")
         .replace(/\s+/g, "-");
 
     const profileBase = `https://simplifier.net/guide/${guideTitleUrl}/home/profilesandextensions/`;
+
+    // Use .page.md suffix for unpublished preview
+    const pageSuffix = isUnpublished ? ".page.md" : "";
 
     const $table = $("table.table-bordered");
     if ($table.length === 0) return;
@@ -62,13 +68,12 @@ $(document).ready(function () {
 
         if (!resourceName || resourceName.toLowerCase() === "coding") return;
 
-        // Remove sub-elements like .clinicalStatus
         const baseResource = resourceName.split(".")[0];
-
-        const url = `${profileBase}${baseResource}${queryString}`;
+        const url = `${profileBase}${baseResource}/index${pageSuffix}${queryString}`;
         $resourceCell.html(`<a href="${url}">${resourceName}</a>`);
     });
 });
 </script>
+
 
 

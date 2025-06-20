@@ -1,4 +1,4 @@
 ---
-subject: UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport-Example
+subject: UKCore-DiagnosticReport-DiagnosticStudiesReport-Example
 ---
 {{page:ExampleTemplate}}

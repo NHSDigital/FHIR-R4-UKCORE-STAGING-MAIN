@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: UKCore-ServiceRequest
+  filename: UKCore-ServiceRequest.page.md
 - name: ValueSet-UKCore-ACVPU
   filename: ValueSet-UKCore-ACVPU.page.md
 - name: ValueSet-UKCore-AddressKeyType
@@ -150,6 +152,8 @@
   filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables.page.md
 - name: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures
   filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures.page.md
+- name: ValueSet-UKCore-PathologyBoundedCodeListObservables
+  filename: ValueSet-UKCore-PathologyBoundedCodeListObservables.page.md
 - name: ValueSet-UKCore-PeriodType
   filename: ValueSet-UKCore-PeriodType.page.md
 - name: ValueSet-UKCore-PersonMaritalStatusCode
