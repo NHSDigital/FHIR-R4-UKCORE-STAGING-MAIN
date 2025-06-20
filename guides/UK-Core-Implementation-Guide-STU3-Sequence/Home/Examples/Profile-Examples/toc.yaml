@@ -136,6 +136,8 @@
   filename: UKCore-Observation-Group-FullBloodCount-Example.page.md
 - name: UKCore-Observation-HeavyDrinker-Example
   filename: UKCore-Observation-HeavyDrinker-Example.page.md
+- name: UKCore-Observation-Lab-Albumin-Example
+  filename: UKCore-Observation-Lab-Albumin-Example.page.md
 - name: UKCore-Observation-Lab-RedCellCount-Example
   filename: UKCore-Observation-Lab-RedCellCount-Example.page.md
 - name: UKCore-Observation-Lab-WhiteCellCount-Example
