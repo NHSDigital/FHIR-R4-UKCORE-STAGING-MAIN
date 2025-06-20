@@ -1,5 +1,9 @@
 <Location xmlns="http://hl7.org/fhir">
   <id value="UKCore-Location-NeoNatalLGI-Example" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This is a FHIR Location resource describing the Neonatal Medicine Unit at Leeds General Infirmary. It includes its ODS site code, phone number, address, and specifies that it's a pediatric neonatal intensive care unit managed by Leeds Teaching Hospitals NHS Trust.</div>
+  </text>
   <identifier>
     <system value="https://fhir.nhs.uk/Id/ods-site-code" />
     <value value="RR8G5" />
